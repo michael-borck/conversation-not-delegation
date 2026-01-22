@@ -99,4 +99,22 @@ This book is designed for:
 
 No matter where you are in your programming journey, intentional prompting offers a framework for leveraging AI tools effectively while continuing to develop your own skills and understanding.
 
+## Related Materials
+
+This book is part of a comprehensive series for mastering modern software development in the AI era:
+
+**Foundational Methodology**
+
+- [Intentional Prompting: Mastering the Human-AI Development Process](https://michaelborck-books.github.io/intentional-prompting) (this book)
+
+**Python Track**
+
+- [Python Step by Step with AI: Learning with AI](https://michaelborck-books.github.io/python-step-by-step-ai) - Perfect for absolute beginners
+- [Python Jumpstart: Coding Fundamentals for the AI Era](https://michaelborck-books.github.io/python-jumpstart) - Focused Python fundamentals
+- [From Zero to Production: A Practical Python Development Pipeline](https://michaelborck-books.github.io/python-dev-book) - Professional-grade applications
+
+**Web Track**
+
+- [Web Development Step by Step: Building Business Solutions with AI](https://michaelborck-books.github.io/web-dev-step-by-ste-ai) - HTML, CSS, JavaScript, WordPress, React
+
 In the following chapters, we'll explore the principles of intentional prompting in depth, examine the six-step methodology with practical examples, and develop patterns for effective collaboration between human developers and AI assistants.
