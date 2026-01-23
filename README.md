@@ -1,19 +1,24 @@
 # Conversation, Not Delegation: Mastering Human-AI Development
 
-A book about effective programming techniques in the age of AI assistants.
+A book about working effectively with AI—treating it as a thinking partner, not a task executor.
 
 ## About this Book
 
-This book explores the concept of "intentional prompting" - a deliberate approach to programming that leverages AI tools while maintaining human control over the development process. Rather than simply asking AI for complete solutions, intentional prompting focuses on using AI as a collaborative partner in the software development journey.
+This book explores **intentional prompting**—a deliberate approach to AI collaboration that builds understanding, not just output. Rather than delegating tasks to AI and accepting whatever it produces, intentional prompting focuses on engaging AI in genuine conversation where you remain the architect of the outcome.
+
+While the methodology is applied to software development, the core philosophy—**Conversation, Not Delegation**—works in any domain where you collaborate with AI.
 
 ## Book Structure
 
 The book is organized into the following sections:
 
+- **Part 0: The Philosophy** - The core distinction between delegation and conversation, with definitions of key terms
 - **Part 1: Foundations** - Core concepts of intentional prompting and the human-AI partnership
 - **Part 2: Methodology** - The six-step programming methodology adapted for AI collaboration
 - **Part 3: Patterns & Practices** - Effective prompting patterns and practical coding examples
 - **Part 4: Advanced Topics** - Scaling to complex projects and future directions
+
+Throughout the book, examples are provided in both programming and business contexts, reinforcing that these principles apply wherever you work with AI.
 
 ## Related Materials
 

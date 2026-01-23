@@ -1,12 +1,16 @@
 # Introduction
 
-## A New Era of Software Development
+## Applying the Philosophy to Software Development
 
-The landscape of software development is undergoing a profound transformation. With the introduction of advanced AI assistants like GitHub Copilot, Amazon CodeWhisperer, and conversational models like Claude and ChatGPT, developers now have powerful tools that can generate code, explain concepts, debug problems, and assist with software design.
+In the previous chapter, we established the core philosophy: **Conversation, Not Delegation**. We defined intentional prompting as the practice of crafting each AI interaction deliberately—to build understanding, not just get output.
 
-These tools have ignited debates about the future of programming: Will AI replace programmers? Should we resist AI-generated code? Is programming fundamentally changing?
+Now we turn to software development specifically.
 
-This book proposes a different perspective: **Intentional Prompting**, a paradigm that positions AI as a collaborative partner in the development process rather than either a threat or a magical solution.
+The landscape of programming is undergoing a profound transformation. With AI assistants like GitHub Copilot, Claude, and ChatGPT, developers have powerful tools that can generate code, explain concepts, debug problems, and assist with software design.
+
+These tools have ignited debates: Will AI replace programmers? Should we resist AI-generated code? Is programming fundamentally changing?
+
+This book proposes a clear answer: **Intentional Prompting**—applying the "Conversation, Not Delegation" philosophy to position AI as a collaborative partner in development rather than either a threat or a magical solution.
 
 ## What is Intentional Prompting?
 

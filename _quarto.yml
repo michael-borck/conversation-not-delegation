@@ -3,11 +3,14 @@ project:
   output-dir: _book
 
 book:
-  title: "Intentional Prompting: Mastering the Human-AI Development Process"
+  title: "Conversation, Not Delegation: Mastering Human-AI Development"
   author: "Michael Borck"
   date: "last-modified"
   chapters:
     - index.qmd
+    - part: "The Philosophy"
+      chapters:
+        - chapters/00-philosophy.qmd
     - part: "Foundations"
       chapters:
         - chapters/01-introduction.qmd
