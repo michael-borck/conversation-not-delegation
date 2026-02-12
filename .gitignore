@@ -37,3 +37,4 @@ node_modules/
 
 # Scratch files
 _notes/
+**/*.quarto_ipynb
