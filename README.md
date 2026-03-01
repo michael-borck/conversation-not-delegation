@@ -1,5 +1,9 @@
 # Conversation, Not Delegation: Mastering Human-AI Development
 
+<!-- BADGES:START -->
+[![ai](https://img.shields.io/badge/-ai-ff6f00?style=flat-square)](https://github.com/topics/ai) [![css](https://img.shields.io/badge/-css-1572b6?style=flat-square)](https://github.com/topics/css) [![human-ai-interaction](https://img.shields.io/badge/-human--ai--interaction-blue?style=flat-square)](https://github.com/topics/human-ai-interaction) [![markdown](https://img.shields.io/badge/-markdown-blue?style=flat-square)](https://github.com/topics/markdown) [![programming-techniques](https://img.shields.io/badge/-programming--techniques-blue?style=flat-square)](https://github.com/topics/programming-techniques) [![quarto](https://img.shields.io/badge/-quarto-blue?style=flat-square)](https://github.com/topics/quarto) [![software-development](https://img.shields.io/badge/-software--development-blue?style=flat-square)](https://github.com/topics/software-development) [![tex](https://img.shields.io/badge/-tex-blue?style=flat-square)](https://github.com/topics/tex) [![book](https://img.shields.io/badge/-book-795548?style=flat-square)](https://github.com/topics/book) [![ai-partnership](https://img.shields.io/badge/-ai--partnership-blue?style=flat-square)](https://github.com/topics/ai-partnership)
+<!-- BADGES:END -->
+
 A book about working effectively with AI—treating it as a thinking partner, not a task executor.
 
 ## About this Book
