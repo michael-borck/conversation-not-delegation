@@ -279,9 +279,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-chaining-approaches" id="toc-sec-chaining-approaches" class="nav-link" data-scroll-target="#sec-chaining-approaches"><span class="header-section-number">9.2</span> Three Approaches</a></li>
   <li><a href="#practical-templates" id="toc-practical-templates" class="nav-link" data-scroll-target="#practical-templates"><span class="header-section-number">9.3</span> Practical Templates</a></li>
   <li><a href="#sec-chaining-advanced" id="toc-sec-chaining-advanced" class="nav-link" data-scroll-target="#sec-chaining-advanced"><span class="header-section-number">9.4</span> Advanced Techniques</a></li>
-  <li><a href="#when-not-to-chain" id="toc-when-not-to-chain" class="nav-link" data-scroll-target="#when-not-to-chain"><span class="header-section-number">9.5</span> When Not to Chain</a></li>
-  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">9.6</span> Best Practices</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">9.7</span> Key Takeaways</a></li>
+  <li><a href="#managing-long-conversations" id="toc-managing-long-conversations" class="nav-link" data-scroll-target="#managing-long-conversations"><span class="header-section-number">9.5</span> Managing Long Conversations</a></li>
+  <li><a href="#when-not-to-chain" id="toc-when-not-to-chain" class="nav-link" data-scroll-target="#when-not-to-chain"><span class="header-section-number">9.6</span> When Not to Chain</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">9.7</span> Best Practices</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">9.8</span> Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
@@ -310,6 +311,9 @@ ul.task-list li input[type="checkbox"] {
 <p>A single prompt gets you a single response. Sometimes that is enough. Often it is not.</p>
 <p>When the work is complex, when it has stages, when the output of one step shapes the next, a single prompt forces the AI to guess the whole path at once. The result is usually broad, shallow, and not quite right. You end up rewriting most of it anyway.</p>
 <p>Prompt chaining is the alternative. You break the work into multiple, sequential prompts. Each one builds on the output of the last. Rather than asking AI to do everything at once, you guide it through a structured workflow, checking the results at every stage.</p>
+<blockquote class="blockquote">
+<p>The power of a chain is not in any single link. It is in the pauses between them, where your judgement shapes what comes next.</p>
+</blockquote>
 <p>If this sounds familiar, it should. Prompt chaining is the Iterate stage of the Conversation Loop (<a href="05-the-conversation-loop.html" class="quarto-xref"><span>Chapter 5</span></a>) made explicit. Each link in the chain is a moment where you review the output, apply your judgement, and steer what comes next. Without that review step, you are not chaining. You are just queuing up requests and hoping for the best.</p>
 <section id="why-it-works" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="why-it-works"><span class="header-section-number">9.1</span> Why It Works</h2>
@@ -473,8 +477,34 @@ Prompt 2: "Now turn that analysis into:
 <p>This is one of the most underused techniques. It forces the AI to stress-test its own output, and it often surfaces blind spots you would not have found otherwise.</p>
 </section>
 </section>
-<section id="when-not-to-chain" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="when-not-to-chain"><span class="header-section-number">9.5</span> When Not to Chain</h2>
+<section id="managing-long-conversations" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="managing-long-conversations"><span class="header-section-number">9.5</span> Managing Long Conversations</h2>
+<p>There is a practical reality that prompt chaining runs into: AI has a finite memory.</p>
+<p>Every AI conversation has a context window, a limit on how much text the model can hold in its head at once. Early in a conversation, the AI has your full prompt and its full response. Twenty exchanges later, the earliest parts of the conversation are fading. The model does not forget all at once. It loses precision gradually, like a person trying to remember the first thing said in a two-hour meeting.</p>
+<p>This matters for chaining because long chains are long conversations. If your chain runs to fifteen or twenty exchanges, the AI may lose track of decisions you made in step two while it works on step twelve. The output starts to drift, contradict earlier work, or quietly drop constraints you set at the beginning.</p>
+<p>A few practical habits keep this under control:</p>
+<p><strong>Start new conversations for new topics.</strong> If your chain is done and you are moving to a different task, open a fresh session. Do not try to do everything in one conversation.</p>
+<p><strong>One task per prompt.</strong> When you ask the AI to do three things at once, it divides its attention across all three. The result is three shallow responses instead of one deep one. Break it up.</p>
+<p><strong>Summarise and hand off.</strong> When a conversation is getting long (roughly fifty exchanges or more), ask the AI to summarise everything you have accomplished and decided so far. Copy that summary into a new conversation and continue from there. You reset the AI’s attention without losing the thread.</p>
+<p><strong>Make context explicit every time.</strong> Do not assume the AI remembers what you said earlier. If a constraint matters for this step, state it again. “Remember, we are working within a six-week timeline and a team of four” takes five seconds to type and prevents the AI from drifting back to generic assumptions.</p>
+<p><strong>Watch for signs of drift.</strong> If the AI starts contradicting something it said earlier, or produces output that ignores a constraint you set, the context window is likely the problem. Summarise, hand off, and continue in a fresh session.</p>
+<p>These are not advanced techniques. They are housekeeping. But they make the difference between a chain that holds together over ten steps and one that quietly falls apart at step six.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="The golden rule of chaining">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The golden rule of chaining
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Review each step before moving to the next. Without that review, you are not chaining. You are queuing up requests and hoping for the best.</p>
+</div>
+</div>
+</section>
+<section id="when-not-to-chain" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="when-not-to-chain"><span class="header-section-number">9.6</span> When Not to Chain</h2>
 <p>Not every task needs a chain. Skip it when:</p>
 <ul>
 <li><strong>The task is simple.</strong> A single clear prompt is more efficient.</li>
@@ -482,8 +512,8 @@ Prompt 2: "Now turn that analysis into:
 <li><strong>Context is thin.</strong> Without enough input, chains do not add much value. Start with a better first prompt instead. RTCF (<a href="08-rtcf.html" class="quarto-xref"><span>Chapter 8</span></a>) helps here.</li>
 </ul>
 </section>
-<section id="best-practices" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">9.6</span> Best Practices</h2>
+<section id="best-practices" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">9.7</span> Best Practices</h2>
 <ol type="1">
 <li><strong>Start clear.</strong> Your first prompt sets the direction. Use RTCF framework to structure it.</li>
 <li><strong>Review each step.</strong> Do not blindly proceed. Check each output before moving on.</li>
@@ -493,8 +523,8 @@ Prompt 2: "Now turn that analysis into:
 <li><strong>Know when to stop.</strong> Iteration has diminishing returns. Three rounds of refinement usually beats seven.</li>
 </ol>
 </section>
-<section id="key-takeaways" class="level2" data-number="9.7">
-<h2 data-number="9.7" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">9.7</span> Key Takeaways</h2>
+<section id="key-takeaways" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">9.8</span> Key Takeaways</h2>
 <ul>
 <li>Prompt chaining breaks complexity into steps. Each step is simpler and produces better output.</li>
 <li>You maintain control. Review after each step. Adjust direction when needed.</li>
