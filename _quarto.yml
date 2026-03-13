@@ -1,0 +1,52 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Conversation, Not Delegation"
+  subtitle: "Your expertise + AI's breadth = amplified thinking"
+  author: "Michael Borck"
+  date: today
+  license: "MIT"
+  chapters:
+    - index.qmd
+    - part: "Part 1: Understanding the Landscape"
+      chapters:
+        - chapters/01-what-is-ai.qmd
+        - chapters/02-what-are-llms.qmd
+        - chapters/03-the-delegation-trap.qmd
+        - chapters/04-does-ai-make-us-dumber.qmd
+    - part: "Part 2: Principles"
+      chapters:
+        - chapters/05-the-conversation-loop.qmd
+        - chapters/06-ai-last.qmd
+        - chapters/07-staying-critical.qmd
+    - part: "Part 3: The Methodology"
+      chapters:
+        - chapters/08-rtcf.qmd
+        - chapters/09-prompt-chaining.qmd
+        - chapters/10-seven-techniques.qmd
+        - chapters/11-using-ai-to-help-you-use-ai.qmd
+        - chapters/12-vet-your-ai.qmd
+    - part: "Part 4: Putting It Together"
+      chapters:
+        - chapters/13-conversations-across-disciplines.qmd
+        - chapters/14-becoming-more-capable.qmd
+  appendices:
+    - appendices/a-craft-framework.qmd
+    - appendices/b-quick-reference.qmd
+    - appendices/c-for-educators.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    mermaid-format: js
+  pdf:
+    documentclass: book
+    papersize: letter
+    toc: true
+    number-sections: true
+    colorlinks: true

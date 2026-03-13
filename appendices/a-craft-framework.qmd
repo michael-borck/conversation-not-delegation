@@ -1,0 +1,45 @@
+# CRAFT Prompting Framework {#sec-craft .appendix}
+
+CRAFT (Context, Role, Action, Format, Tone/Target) is a five-element prompting framework. If you have encountered it in workshops, courses, or other resources, this appendix shows how it relates to the RTCF framework used throughout this book.
+
+Same family. Slightly more detailed. Equally valid.
+
+
+## The Five Elements
+
+| Letter | Element | What It Means | Example |
+|--------|---------|---------------|---------|
+| **C** | **Context** | What's the background? | "This is student enrolment data from business units over three semesters." |
+| **R** | **Role** | What role should the AI take? | "You are an experienced teaching coordinator." |
+| **A** | **Action** | What specifically should the AI do? | "Analyse trends and identify units at risk." |
+| **F** | **Format** | How should the output be structured? | "Provide results as bullet points." |
+| **T** | **Tone/Target** | What tone, and who's the audience? | "Use clear language suitable for a team meeting." |
+
+: The CRAFT framework: five elements that structure a prompt for clarity. {.striped}
+
+You do not need all five every time. They are a scaffold, not a checklist you must complete. Some prompts need heavy context. Others need only a clear action and format. Use what serves the conversation.
+
+
+## How CRAFT Relates to RTCF
+
+This book uses RTCF (Role, Task, Context, Format) as its primary framework. The two are closely related.
+
+RTCF's **Task** maps to CRAFT's **Action**. RTCF's **Context** absorbs what CRAFT splits into **Context** and **Tone/Target**. The result is a simpler four-element structure that covers the same ground with fewer moving parts.
+
+Neither is better. CRAFT gives you a finer-grained prompt when you want to be explicit about audience and tone as separate decisions. RTCF keeps things compact when you want to move quickly.
+
+If CRAFT clicks for how you think, use it. If RTCF feels more natural, use that. The point of both frameworks is the same: slow down for thirty seconds before typing, think about what the AI actually needs to know, then start the conversation.
+
+
+## When CRAFT Is Especially Useful
+
+CRAFT earns its extra element when audience and tone are genuinely distinct decisions. Writing a risk summary for a board meeting is a different tone and target than writing the same information for a project team standup. Making that explicit in your prompt, rather than bundling it into context, can sharpen the output.
+
+For most everyday prompting, RTCF is sufficient. For high-stakes communication where tone matters as much as content, CRAFT gives you a dedicated place to specify it.
+
+
+## The Deeper Point
+
+Frameworks are training wheels. They help you build the habit of thinking before prompting. After enough practice, you stop reciting letters and start instinctively asking yourself: what does the AI need to know to help me here?
+
+That instinct is the goal. CRAFT and RTCF are both paths to the same destination.

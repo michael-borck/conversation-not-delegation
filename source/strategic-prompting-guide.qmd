@@ -1,0 +1,425 @@
+---
+title: "Strategic Prompting Guide"
+---
+
+**Reference guide for using AI tools in strategic analysis**
+
+---
+
+## Three Core Techniques
+
+### 1. Risk Deep-Dive
+Ask AI to identify what you're missing or underestimating
+
+### 2. Reverse Prompting
+Have AI ask YOU questions to reveal hidden opportunities
+
+### 3. AI Debate
+Use multiple AIs (or roles) to explore different perspectives
+
+---
+
+## 1. Risk Deep-Dive Prompt Template
+
+**Use when:** Evaluating an AI investment, strategic decision, or competitive threat
+
+**Copy and customise:**
+
+```
+You are a strategic [YOUR INDUSTRY] consultant specialising in AI.
+
+Our team is considering: [DESCRIBE THE INITIATIVE/DECISION]
+
+We've identified these risks:
+- [RISK 1]
+- [RISK 2]
+- [RISK 3]
+
+Help us think deeper:
+1. What risks are we missing or underestimating?
+2. What second-order effects should we consider?
+3. Which risk is most likely to be existential?
+4. What early warning signs should we watch for?
+
+Be specific to our industry. Challenge our assumptions.
+Use concrete examples from similar situations if relevant.
+```
+
+**Follow-up prompts:**
+- "Which risk should we address FIRST and why?"
+- "What would a mitigation plan for [SPECIFIC RISK] look like?"
+- "If this initiative fails, what's the most likely cause?"
+
+**What this is good for:**
+- Identifying blind spots in risk analysis
+- Connecting dots between related risks
+- Bringing perspectives from adjacent industries
+- Challenging overly optimistic assumptions
+
+**What this is NOT good for:**
+- Knowing your specific organisation's internal politics
+- Understanding proprietary competitive intelligence
+- Making the final risk decision (that's your job)
+
+---
+
+## 2. Reverse Prompting Template
+
+**Use when:** Looking for opportunities, trying to break out of conventional thinking
+
+**The key insight:** Instead of asking AI for answers, ask AI to ask YOU questions
+
+**Copy and customise:**
+
+```
+You are an expert on [DOMAIN: e.g., AI business innovation, digital transformation].
+
+Your role is to ask ME probing questions to help me discover opportunities
+I'm overlooking.
+
+About my situation:
+- Industry: [YOUR INDUSTRY]
+- Company type: [YOUR ORGANIZATION]
+- Current challenge: [DESCRIBE THE PROBLEM/DECISION]
+- Current approach: [WHAT YOU'RE CURRENTLY CONSIDERING]
+
+Your task: Ask me 5 probing questions that will reveal:
+- Hidden opportunities I'm not seeing
+- Assumptions I should challenge
+- Alternative approaches I should consider
+
+IMPORTANT: Ask ONE question at a time. Wait for my answer before
+asking the next question.
+
+Start with your first question now.
+```
+
+**How to respond to AI's questions:**
+- Be honest and specific in your answers
+- If a question confuses you, that's often where insight hides. Ask for clarification
+- Don't rush. Take time to think through each answer
+
+**Example dialogue:**
+
+> **AI:** "What manual process takes your team the most time that you've never thought to automate?"
+>
+> **You:** "Probably the weekly pricing review meeting, 4 hours every Monday with 8 people"
+>
+> **AI:** "What prevents you from making those pricing decisions more frequently or in real-time?"
+>
+> **You:** "Hmm... we've always done it weekly. I guess we could do it daily, or... wait, AI could optimise prices continuously..."
+>
+> **AI:** "What data would that real-time pricing system need that you don't currently capture?"
+>
+> **You:** "Oh, we'd need competitor pricing data, which we don't systematically collect. That's the blocker!"
+
+**The power:** AI's questions often reveal opportunities hiding in plain sight.
+
+**Advanced technique:**
+After the 5 questions, ask: "Based on my answers, what's the ONE opportunity I should prioritise and why?"
+
+---
+
+## 3. AI Debate Template
+
+**Use when:** Facing a tough decision with valid arguments on both sides
+
+**The setup:** Give two AIs (or one AI with two roles) opposing positions, let them debate
+
+**Method A: Two Different AIs (ChatGPT vs. Claude)**
+
+**Prompt for AI #1 (e.g., ChatGPT):**
+
+```
+Context: We are considering [DESCRIBE THE DECISION/INVESTMENT].
+
+Current situation:
+- [KEY FACT 1]
+- [KEY FACT 2]
+- [KEY CONSTRAINT]
+
+Your role: You are "The Advocate"
+
+Make the STRONGEST case for [OPTION A: e.g., investing now, proceeding aggressively].
+
+Address:
+- Why this is strategically necessary
+- What we lose if we wait
+- How to mitigate the risks
+
+Keep responses to 3-4 sentences. Be persuasive but acknowledge real concerns.
+
+Present your opening argument now.
+```
+
+**Prompt for AI #2 (e.g., Claude):**
+
+```
+[SAME CONTEXT AS ABOVE]
+
+Your role: You are "The Skeptic"
+
+Make the STRONGEST case for [OPTION B: e.g., waiting, proceeding cautiously].
+
+Address:
+- What risks we're underestimating
+- Why timing matters
+- What we should do BEFORE committing
+
+Keep responses to 3-4 sentences. Be persuasive but acknowledge opportunity costs.
+
+Present your opening argument now.
+```
+
+**How to facilitate the debate:**
+1. Get opening arguments from both AIs
+2. Copy Advocate's argument → Paste into Skeptic's chat: "Respond to this argument:"
+3. Copy Skeptic's response → Paste into Advocate's chat: "Counter this point:"
+4. Let them debate 2-3 rounds
+
+**Method B: One AI, Two Roles (if you only have access to one)**
+
+```
+You are facilitating a debate about [THE DECISION].
+
+Participants:
+- "The Advocate" argues for [OPTION A]
+- "The Skeptic" argues for [OPTION B]
+
+Context: [PROVIDE KEY FACTS]
+
+Please conduct a debate:
+1. Advocate presents opening argument (3-4 sentences)
+2. Skeptic responds with counterarguments (3-4 sentences)
+3. Advocate counters (3-4 sentences)
+4. Skeptic makes final point (3-4 sentences)
+
+Label each speaker. Keep each response to 3-4 sentences. Be substantive.
+
+Begin the debate now.
+```
+
+**What to look for in the debate:**
+- Which arguments resonate with your gut instinct?
+- Are there considerations you hadn't thought of?
+- Does one side have stronger evidence?
+- What's the synthesis position? (Often: "Do X in short term while preparing for Y")
+
+**After the debate, ask AI:**
+```
+Based on this debate, if you were the decision-maker, what would you decide and why?
+What additional information would you need to be confident in the decision?
+```
+
+---
+
+## Principles of Effective Prompting
+
+### 1. Provide Context
+**Bad:** "What AI should we invest in?"
+**Good:** "We're a $500M retail company, Level 3 data maturity, facing aggressive online competitors. We have $2M to invest. What AI investments should we prioritise?"
+
+### 2. Be Specific About Output
+**Bad:** "Tell me about AI risks."
+**Good:** "List the top 5 AI-specific risks for a customer-facing fraud detection system, ranked by likelihood and impact."
+
+### 3. Assign a Role
+**Bad:** "What do you think?"
+**Good:** "You are a CFO evaluating this proposal. What financial concerns would you raise?"
+
+### 4. Request Structured Output
+**Bad:** "Analyse this."
+**Good:** "Analyse this in 3 parts: (1) Strengths, (2) Weaknesses, (3) Recommended decision with rationale."
+
+### 5. Ask AI to Challenge You
+**Bad:** "Is this a good idea?"
+**Good:** "I think this is a good idea. Play devil's advocate and identify the strongest arguments AGAINST it."
+
+### 6. Use Follow-Up Prompts
+Don't accept first response. Go deeper:
+- "Elaborate on point #3"
+- "What evidence would change your assessment?"
+- "Give me a concrete example of that risk"
+- "What would [PERSON/COMPANY] say about this?"
+
+---
+
+## Common Use Cases
+
+### Strategic Planning
+**Prompt:** "You're a strategy consultant. We're developing our 3-year AI roadmap. Ask me 10 questions to ensure we're thinking comprehensively about threats, opportunities, and organisational readiness."
+
+### Investment Evaluation
+**Prompt:** "We're evaluating this AI investment: [DETAILS]. Use the AI Investment Checklist framework: assess data readiness (0-10), continuous learning needs, accuracy requirements, explainability, and ethical risks. Be critical."
+
+### Competitive Analysis
+**Prompt:** "You're our competitor [COMPETITOR NAME] who just hired a new AI-focused CEO. Outline your AI strategy to disrupt our business over the next 18 months. Be aggressive and specific."
+
+### Risk Mitigation
+**Prompt:** "We're launching this AI system: [DETAILS]. It fails catastrophically 6 months after launch. Walk me through the most likely failure scenarios step-by-step, from initial warning signs to complete failure."
+
+### Change Management
+**Prompt:** "You're a skeptical VP of Operations who doesn't trust AI. I'm pitching this AI initiative: [DETAILS]. Push back on it. What are your strongest objections?"
+
+---
+
+## What AI Is Good At (Use It For This)
+
+- **Generating alternatives** - "What are 10 different ways to solve this problem?"
+- **Challenging assumptions** - "What am I taking for granted that might be wrong?"
+- **Breadth of knowledge** - Bringing examples from other industries/contexts
+- **Structured analysis** - Breaking complex decisions into components
+- **Playing roles** - Devil's advocate, different stakeholders, competitors
+- **Connecting dots** - "If we do X, what second-order effects happen?"
+- **Identifying patterns** - "What are common failure modes for this type of initiative?"
+
+---
+
+## What AI Is NOT Good At (Don't Rely On It For This)
+
+- **Your specific context** - AI doesn't know your organisation's politics, culture, history
+- **Proprietary information** - AI doesn't have your competitive intelligence
+- **Gut instinct** - AI can't replicate your years of industry experience
+- **Making the decision** - AI provides input, YOU decide
+- **Accountability** - If it goes wrong, you can't blame the AI
+- **Real-time data** - AI's knowledge has a cutoff date
+- **Nuanced judgement** - Especially political, ethical, cultural trade-offs
+
+---
+
+## The Right Mental Model
+
+**AI is your strategic thought partner, not your boss.**
+
+Think of AI as:
+- A smart colleague who challenges your thinking
+- A research assistant who brings different perspectives
+- A brainstorming partner who never runs out of ideas
+- A devil's advocate who stress-tests your assumptions
+
+NOT as:
+- An oracle that provides THE answer
+- A replacement for your judgement and experience
+- A decision-maker (you are still accountable)
+- A source of truth about your specific situation
+
+**Best results:** Human expertise + AI analysis
+
+You bring:
+- Deep context about your organisation
+- Industry experience and intuition
+- Understanding of stakeholders and politics
+- Ability to judge what's realistic
+- Accountability for the decision
+
+AI brings:
+- Breadth of examples from many industries
+- Ability to generate many alternatives quickly
+- Structured analytical frameworks
+- Tireless questioning and challenge
+- Different perspectives
+
+**Together:** Better strategic decisions than either alone.
+
+---
+
+## Ethical Considerations
+
+When using AI for strategic decisions:
+
+**1. Don't share confidential information**
+- Don't paste proprietary financials, competitive intelligence, or sensitive data
+- Use generic descriptions: "We're a mid-sized manufacturer" not "Our Q3 EBITDA is..."
+
+**2. Verify AI outputs**
+- AI can be confidently wrong
+- Check facts, especially statistics and specific claims
+- Treat AI suggestions as hypotheses to validate, not conclusions
+
+**3. Cite AI when appropriate**
+- If AI insight influences your decision: "AI analysis suggested we consider [X]"
+- Helps others understand your reasoning
+- Models good practice for your organisation
+
+**4. Don't outsource judgement**
+- AI provides input, humans make decisions
+- You are accountable for outcomes, not the AI
+- Use AI to inform, not to abdicate responsibility
+
+---
+
+## Practice Exercise: Try These Prompts
+
+**Beginner:**
+```
+You are a strategic consultant. I lead [YOUR ROLE] at [YOUR ORGANIZATION TYPE].
+
+What are the 5 most important questions I should be asking about AI investment
+in the next 12 months?
+
+For each question, explain why it matters.
+```
+
+**Intermediate:**
+```
+I'm preparing a board presentation on AI strategy.
+
+You are a skeptical board member who worries about:
+- Wasting money on AI hype
+- Data security and bias risks
+- Distracting from core business
+
+What tough questions will you ask me? Give me your 5 hardest questions.
+```
+
+**Advanced:**
+```
+We're choosing between three AI investments:
+
+A) [DESCRIBE OPTION A]
+B) [DESCRIBE OPTION B]
+C) [DESCRIBE OPTION C]
+
+Use the AI Investment Checklist framework (data readiness, continuous learning,
+accuracy, explainability, ethics) to compare them.
+
+Create a scoring matrix. Then recommend which to fund and why.
+Be critical. Identify red flags.
+```
+
+---
+
+## Quick Reference Card
+
+**Three Core Templates:**
+
+**1. Risk Deep-Dive**
+"You are a [INDUSTRY] consultant. We're considering [X]. Help identify risks we're missing: [1] What are we underestimating? [2] Second-order effects? [3] Early warning signs?"
+
+**2. Reverse Prompting**
+"You are an expert on [TOPIC]. Ask ME questions to help me discover opportunities I'm overlooking about [SITUATION]. Ask one question at a time."
+
+**3. AI Debate**
+"You are 'The Advocate' arguing for [OPTION A]. You are 'The Skeptic' arguing for [OPTION B]. Context: [SITUATION]. Debate this decision (3-4 sentences each)."
+
+**Effective Prompting Rules:**
+1. Provide context
+2. Be specific about output
+3. Assign a role
+4. Ask AI to challenge you
+5. Use follow-up prompts
+
+**Remember:** AI augments your judgement, doesn't replace it.
+
+
+---
+
+## Further Reading
+
+- Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. V., & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. In *Advances in Neural Information Processing Systems, 35*, 24824--24837. https://arxiv.org/abs/2201.11903
+- Sahoo, P., Singh, A. K., Saha, S., Jain, V., Mondal, S., & Chadha, A. (2024). A systematic survey of prompt engineering in large language models: Techniques and applications. *arXiv preprint arXiv:2402.07927.* https://arxiv.org/abs/2402.07927
+
+
+---
+
+*This resource reflects the author's perspective informed by current research and practice. It is intended as a discussion starter and a baseline for your own exploration, not a definitive guide. References will be added progressively. If something here challenges your thinking, good, that's the point.*

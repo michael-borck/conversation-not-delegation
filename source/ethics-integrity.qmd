@@ -1,0 +1,198 @@
+---
+title: "Ethics, Data Governance & Integrity"
+subtitle: "Using AI responsibly in your studies and career"
+format:
+  html:
+    embed-resources: true
+    toc-depth: 2
+---
+
+# Why This Matters
+
+AI tools will be part of your professional toolkit in HR, finance, supply chain, marketing, information systems, and professional services. The question isn't whether you'll use AI - you will. The question is whether you'll use it **competently and ethically**.
+
+This guide helps you:
+
+- Understand when and how to use AI **transparently**
+- Develop **critical oversight** skills that employers value
+- Make informed decisions about **data governance**
+- Build habits that serve you in both university and your career
+
+---
+
+# 1. The Real Stakes
+
+You might hear people ask: "Isn't using AI just cheating?"
+
+A better question is: **"How do I use AI responsibly so it helps me learn and prepares me for my career?"**
+
+Why this reframing matters:
+
+- **Old thinking:** AI is a shortcut to avoid; the goal is to hide its use
+- **New thinking:** AI literacy is a professional skill; the goal is transparent, critical, responsible use
+
+The real risk isn't that you use AI - it's that you use it **incompetently or unethically**. That's what will hurt you in both your studies and your career.
+
+---
+
+# 2. Three-Part Framework for Ethical AI Use
+
+Use this framework to guide your AI use in coursework and beyond.
+
+## 2.1 Transparency (Not Secrecy)
+
+**Principle:** Make your AI use explicit rather than hidden.
+
+**What this means for you:**
+
+- Know when AI is **expected, permitted, or not permitted** for each task
+- Be ready to **explain how you used AI** and what you did with its output
+- Focus on **how you use and critique AI**, not on hiding that you used it
+- Get credit for **identifying and correcting AI's errors**
+
+**Why it matters:** When you're transparent about AI use, you develop professional habits of documenting your process. Secret use means you're not learning - just outsourcing.
+
+## 2.2 Critical Oversight (Not Blind Trust)
+
+**Principle:** AI is a tool that requires your judgement, not an authority to trust.
+
+**What this means for you:**
+
+- **Critique, correct, and improve** AI outputs - don't just copy-paste
+- Identify **what AI got wrong or missed** for your specific context
+- Remember: your work is judged by the **quality of your thinking**, not AI's first answer
+- Watch for **hallucination, bias, oversimplification, or wrong jurisdiction**
+
+**Why it matters:** Thoughtful use is harder than blind reliance. You're building professional habits of checking context, evidence, and consequences before acting on AI recommendations.
+
+## 2.3 Professional Relevance (Not Academic Shortcut)
+
+**Principle:** Connect your AI use to how you'll use it in real workplaces.
+
+**What this means for you:**
+
+- Think of coursework as **practice for professional scenarios**
+- Consider **workplace ethics and accountability**: Who is responsible when AI is wrong?
+- Build **AI literacy** as a skill that makes you more valuable to employers
+
+**Why it matters:** AI isn't a shortcut around academic work - it's a **tool you must learn to handle responsibly** for your career.
+
+---
+
+# 3. Data Governance: Protecting Information
+
+When you use AI tools, you're making decisions about data security - often without realising it. Understanding the difference between enterprise and consumer tools is a professional skill.
+
+## 3.1 Enterprise vs Consumer Tools
+
+| Tool Type | Examples | Data Handling | Use For |
+|-----------|----------|---------------|---------|
+| **Enterprise/Approved** | MS Copilot Enterprise, institutional tools | Data stays within institution, not used to train public models | Course materials, assessments, case data |
+| **Consumer/Free** | ChatGPT free, Gemini free, public web interfaces | May be retained, used to improve services, less transparent | General brainstorming, concept exploration only |
+
+## 3.2 What You Should Never Upload to Free AI Tools
+
+- Confidential or identifying information about real people or organisations
+- Unpublished course materials or other students' work
+- Assessment answers or submissions
+- Anything you wouldn't post publicly on social media
+
+## 3.3 Good Practice
+
+When using public AI tools:
+
+1. **De-identify first**: Remove names, specific details, identifying information
+2. **Use fictional scenarios**: When exploring sensitive topics
+3. **Document your process**: Keep track of key prompts and decisions
+4. **Be prepared to explain**: What you used, how you checked it, what you changed
+
+This isn't just about following rules - it's about building habits that protect you and others in your professional career.
+
+---
+
+# 4. Understanding AI Expectations in Coursework
+
+Different tasks have different expectations. Here's a typical framework:
+
+## When AI is Expected
+- Activities specifically designed to teach AI skills
+- Critiquing AI outputs
+- Stress-testing your work with AI feedback
+
+## When AI is Permitted
+- Brainstorming ideas
+- Generating practice questions
+- Checking grammar or clarity
+- Exploring concepts you don't fully understand yet
+
+## When AI is Not Permitted
+- Closed-book exams
+- Tasks that explicitly say "no AI tools"
+- Always check your unit outline for specific guidance
+
+## When You Use AI, You Must:
+
+1. **Treat it as support for your thinking**, not a replacement
+2. **Critically evaluate** outputs and adapt them for the specific context
+3. **Be able to explain and defend** your work in your own words
+4. **Acknowledge AI use** when required (e.g., "I used Copilot to draft initial bullet points, then revised them based on X, Y, Z")
+
+**Important:** Using AI to avoid thinking, or submitting AI output as if it were entirely your own work, is **academic misconduct** - and it also means you're not learning the skills you're paying to develop.
+
+---
+
+# 5. Why "AI-Proof" Assessments Actually Help You
+
+You might encounter assessments designed to require your genuine thinking. Here's why that's good for you:
+
+## Process Over Product
+Instead of just submitting a polished final product, you might be asked to show your decisions, what you would change, and your self-assessment. This builds skills employers actually want.
+
+## Visible Thinking
+You might be asked to critique AI-generated solutions, choose the best approach, and explain what AI missed. This is exactly what professionals do - AI becomes your **starting point**, not your answer.
+
+## Context Matters
+Tasks tied to specific simulations, placements, or local contexts require you to adapt generic AI output to real situations. This is a core professional skill.
+
+## Iteration and Reflection
+Submitting drafts, revisions, and reflections shows your learning process. This mirrors how real projects work - nobody gets it right the first time.
+
+**The bottom line:** Assessments that require your genuine engagement aren't obstacles - they're opportunities to build skills that make you valuable.
+
+---
+
+# 6. Self-Check: Are You Using AI Well?
+
+Before submitting work, ask yourself:
+
+| Question | Good Sign | Warning Sign |
+|----------|-----------|--------------|
+| Can I explain every part of this work? | Yes, I understand it deeply | I'm not sure what some parts mean |
+| Does it fit the specific context? | Addresses local details, correct jurisdiction | Generic, could apply to anything |
+| Did I show my process? | Clear evidence of my thinking | Just a polished final product |
+| Could I defend this in a conversation? | Absolutely, I did the thinking | I'd struggle to explain my reasoning |
+
+**If you have warning signs:** Go back and do the thinking. Use AI as a tool to help you understand, not to replace your understanding.
+
+---
+
+# 7. Your Action Step
+
+Create your own **personal AI use policy**. Write down:
+
+1. **What I'll use AI for:** (brainstorming, checking my work, exploring concepts)
+2. **What I won't use AI for:** (replacing my thinking, final submissions without review)
+3. **How I'll stay accountable:** (always be able to explain my work, document my process)
+4. **How I'll protect data:** (de-identify, use approved tools for sensitive content)
+
+This isn't just an academic exercise - it's preparation for your career. Professionals who can articulate and follow responsible AI practices are more valuable than those who can't.
+
+---
+
+# Summary
+
+- AI use is a **professional skill**, not a shortcut to avoid
+- **Transparency** and **critical oversight** are more valuable than secrecy
+- **Data governance** decisions have real consequences
+- Your ability to **explain and defend your work** is what matters
+- Build habits now that will serve you throughout your career

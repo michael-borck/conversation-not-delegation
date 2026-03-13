@@ -1,0 +1,334 @@
+---
+title: "Using AI to Help You Use AI"
+---
+
+# Using AI to Help You Use AI: Meta-Skills for Learning
+
+## The One Thing AI Can Do That Other Tools Can't
+
+AI can teach you how to use itself.
+
+Excel can't teach you how to use Excel. PowerPoint can't walk you through making better slides. Email can't help you write better emails.
+
+But AI can, because it can ask you questions, understand your context, evaluate its own suggestions, and adjust based on your feedback.
+
+This means you don't need a course or a manual to get started. You can use AI to figure out how AI fits into your work.
+
+---
+
+## The Core Idea: Meta-Prompting
+
+Instead of asking AI to solve a problem directly, ask AI to help you figure out how to approach the problem.
+
+**Example comparison:**
+
+| Direct Approach | Meta Approach |
+|---|---|
+| "How should I answer this question?" | "What's the best way to frame this question for an AI so I get useful help?" |
+| "Give me strategies for using AI in my teaching." | "Ask me questions to understand my teaching context, then recommend both obvious and unexpected ways I could use AI." |
+| "How do I improve my workflow?" | "Interview me about my role and responsibilities, then suggest AI tools and strategies I might not have considered." |
+
+The meta approach works better because AI asks clarifying questions first, learns your context, and gives you recommendations that fit your actual situation. Not generic advice aimed at nobody in particular.
+
+---
+
+## The Consultation Prompt: Your Starting Point
+
+Here's a prompt you can use right now. Copy it, paste it into any AI tool (ChatGPT, Claude, Copilot, Gemini, etc.), and adapt it to your role:
+
+```
+You're an AI expert consultant. I'd love your help understanding how I could
+better use AI in my work.
+
+Please ask me one question at a time. I'll answer, then you'll ask the next
+question. Keep asking until you understand:
+- My role and responsibilities
+- My main workflows and challenges
+- My key objectives and KPIs (what matters for success)
+- My constraints (time, resources, skills, institutional requirements)
+
+Once you have enough context, provide TWO types of recommendations:
+1. Obvious opportunities: Clear, straightforward AI applications
+   (the low-hanging fruit most people think of)
+2. Non-obvious opportunities: Unexpected or creative uses of AI I might not
+   have considered
+
+Format your recommendations clearly with implementation tips for each.
+```
+
+That's it. Paste it, start answering questions, and see what comes back.
+
+---
+
+## Why This Works
+
+When you ask AI to interview you before making recommendations, a few useful things happen:
+
+### 1. It Gets Your Actual Context
+AI doesn't know anything about you at the start. By asking sequential questions, it builds up a picture of your discipline, your students or stakeholders, your constraints, and what success looks like for you.
+
+Generic AI advice for "educators" doesn't account for the fact that you teach engineering capstones, or manage compliance for a large faculty, or support early-career researchers. Context changes the recommendations significantly.
+
+### 2. You Get Both Obvious and Non-Obvious Ideas
+AI tends to suggest the predictable stuff first: automating grading, generating ideas, answering questions. Those are useful, but you've probably already thought of them.
+
+By asking for both obvious *and* non-obvious recommendations, you push it further:
+
+- **Obvious:** Use AI to generate discussion questions for your seminar
+- **Non-obvious:** Use AI as a "sceptical peer reviewer" to critique your teaching materials before students see them
+- **Non-obvious:** Use AI to surface common misconceptions your students hold (based on their questions and assignments)
+- **Non-obvious:** Use AI to design assessments that are harder for AI to shortcut
+
+The non-obvious ideas tend to be more useful.
+
+### 3. AI Can Evaluate Its Own Suggestions
+Once it generates a list of recommendations, you can ask it to:
+
+- Assess which are most feasible for your context
+- Identify trade-offs
+- Refine implementation steps
+- Suggest variations or combinations
+
+This lets you iterate toward something practical rather than accepting the first answer.
+
+### 4. It's a Conversation, Not a Lecture
+Unlike reading a guide or sitting through a workshop, you're actively shaping the advice by:
+
+- Answering questions honestly
+- Pushing back on ideas that don't fit
+- Asking follow-up questions
+- Exploring what's actually possible
+
+The back-and-forth is where the useful stuff tends to surface.
+
+---
+
+## A Real Example: What This Conversation Looks Like
+
+Here's a simplified version of how the conversation might go:
+
+### Your Initial Prompt:
+*[You paste the consultation prompt above]*
+
+### AI's First Question:
+> "Thanks for that. Let's start with the basics. What's your primary role? Are you an educator, researcher, administrator, or something else? And what's your discipline or field?"
+
+### You:
+> "I'm a teaching coordinator in the business faculty. I manage unit approvals, coordinate teaching support across 15 units, and help faculty integrate new teaching approaches."
+
+### AI's Next Question:
+> "That's helpful context. What's your biggest pain point right now? What's taking up most of your time or causing the most frustration?"
+
+### You:
+> "Definitely the administrative stuff. Tracking who needs what support, scheduling meetings, writing emails summarising policies to faculty who haven't read them, managing compliance documentation."
+
+### AI's Next Question:
+> "Now, thinking about your faculty members, what's one thing they struggle with that you think AI could help them with? And what's one thing *you* struggle with in supporting them?"
+
+### You:
+> "Faculty struggle with writing clear learning outcomes and designing assessments. And I struggle with translating compliance requirements into plain language they actually understand."
+
+### AI's Next Question:
+> "One more: What would success look like for you? If you had more time back and your faculty felt better supported, what would change?"
+
+### You:
+> "I'd have time for strategic work instead of just admin. And faculty would feel confident designing assessments without constantly asking me questions."
+
+### AI's Synthesis:
+> "Okay, here are my recommendations:
+>
+> **OBVIOUS OPPORTUNITIES:**
+> - Use AI to draft plain-language policy summaries for faculty
+> - Use AI to help faculty write learning outcomes (with your review)
+> - Use AI to generate assessment design templates
+>
+> **NON-OBVIOUS OPPORTUNITIES:**
+> - Use AI to analyse faculty questions/emails and identify common gaps in understanding, then create targeted guidance
+> - Use AI as a 'quality check' tool: paste a unit outline and ask it to flag compliance risks or unclear learning outcomes
+> - Use AI to design a simple chatbot or FAQ that answers routine faculty questions about policies
+> - Use AI to help you create training materials that explain 'why' policies exist, not just 'what' they are"
+
+---
+
+Notice the difference. The AI didn't give generic suggestions. It understood the specific role, constraints, and challenges, so the recommendations are grounded in something real.
+
+---
+
+## How to Use This Guide Alongside Others
+
+This guide helps you figure out your own starting point. After the consultation, you might:
+
+1. **Go deeper into specific techniques:**
+   - If AI recommends using prompts with students → explore the **Seven Essential Techniques**
+   - If AI suggests analysis and reporting tasks → explore **C.R.A.F.T. Prompting** and **Prompt Chaining**
+   - If you're new to AI generally → start with **What is AI?** and **What are LLMs?**
+
+2. **Use AI to help you understand other guides:**
+   - "I'm reading a guide about prompt chaining. Can you ask me questions about my use case, then explain how prompt chaining would help?"
+   - "I don't fully understand the C.R.A.F.T. framework. Can you interview me about a specific prompt I want to write, then help me structure it using CRAFT?"
+
+3. **Come back to this periodically:**
+   - Your role, context, and goals change over time
+   - Run this consultation every few months
+   - Each time, you'll be ready for different ideas
+
+---
+
+## Variations: Tailored Consultation Prompts
+
+Depending on your role, you might adapt the consultation prompt:
+
+### For Educators
+```
+You're an AI expert in pedagogical technology. Ask me questions about my teaching
+(students, discipline, learning goals, constraints) so you can recommend both
+obvious and non-obvious ways to use AI to enhance student learning without
+replacing authentic work.
+```
+
+### For Researchers
+```
+You're an AI expert in research methodology. Ask me about my research area,
+methods, and challenges. Then recommend both obvious and non-obvious ways AI
+could support my research process (not the research itself, but the process).
+```
+
+### For Professional Staff
+```
+You're an AI expert in academic operations. Ask me about my role (responsibilities,
+workflows, stakeholders, success metrics). Then recommend both obvious and
+non-obvious ways AI could help me work more strategically and reduce administrative burden.
+```
+
+### For Anyone New to AI
+```
+You're an AI expert in helping people get started with AI.
+Ask me questions about my work, my goals, what frustrates me, what excites me.
+Then recommend how I could start experimenting with AI in ways that matter to me.
+```
+
+---
+
+## The Deeper Principle: AI as a Mirror
+
+Here's what's actually going on when you ask AI to interview you:
+
+**It forces you to articulate your own work clearly.**
+
+By answering its questions, you end up spelling out:
+
+- What you actually do (vs. what you think you do)
+- What matters most (vs. what's just urgent)
+- What's possible (vs. what feels impossible)
+- What you haven't tried (because you didn't know it was an option)
+
+Often, the most useful part of this conversation isn't the AI's recommendations. It's the clarity you gain about your own work by having to explain it to someone (something) that knows nothing about you.
+
+People often say things like:
+
+- "I didn't realise how much time I was spending on [task] until the AI asked about it"
+- "Talking through my role, I realised I could combine AI with [other tool] in a way I'd never thought of"
+- "Just explaining my challenges helped me see a solution on my own"
+
+AI is a thinking partner, not a replacement for your thinking.
+
+---
+
+## Practical Tips for Your Consultation
+
+### Be Honest and Specific
+- Don't try to give polished answers
+- The more honest you are about constraints and challenges, the better the recommendations
+- "We have no budget," "I don't have time to learn new tools," "My institution is sceptical of AI", these are all useful context
+
+### Ask Follow-Up Questions
+After getting recommendations, ask:
+
+- "How would I actually implement the non-obvious ones?"
+- "Which of these could I start with this week?"
+- "What are the risks or drawbacks?"
+- "How would I know if this is working?"
+
+### Test the Recommendations
+- Pick ONE obvious and ONE non-obvious recommendation
+- Try them for a week or two
+- Come back to the same conversation: "I tried [recommendation]. Here's what happened..."
+- Iterate from there
+
+### Treat It as Ongoing
+- This isn't a one-off conversation
+- Your context changes; your needs shift
+- Run this consultation again in 3–6 months
+- Each time you'll be ready for different ideas
+
+### Share What You Learn
+- If something works, tell a colleague
+- "I asked AI to help me figure out how to use AI, and it suggested [X]. Here's how it went..."
+- Others might try their own version and find something useful too
+
+---
+
+## Why This is Different From Other Guides
+
+Most guides tell you *what* to do:
+
+- "Use these seven techniques with your students"
+- "Structure your prompts using CRAFT"
+- "Chain prompts together for complex analysis"
+
+This guide helps you work out *what's right for you*:
+
+- What matters in your context?
+- What are you struggling with that AI could help with?
+- What's possible that you hadn't considered?
+
+By getting AI to diagnose before it recommends, you get advice that's tailored to your situation rather than aimed at a generic audience.
+
+---
+
+## Getting Started Right Now
+
+1. **Open your AI tool** (ChatGPT, Claude, Copilot, Gemini, any of them)
+2. **Copy the consultation prompt** from above
+3. **Paste it and press send**
+4. **Answer the questions honestly**
+5. **Review the recommendations** and pick one or two to try
+6. **Come back to the same conversation** with what you learned
+7. **Keep going**
+
+---
+
+## Further Learning
+
+After your consultation, you might explore:
+
+- **C.R.A.F.T. Prompting Framework** – Structure your individual prompts effectively
+- **Prompt Chaining Techniques** – Build complex workflows with AI
+- **Seven Essential Prompt Techniques** – Pedagogical approaches for student learning
+- **AI for Professional Staff** – Guidance specific to operational and support roles
+- **What is AI? / What are LLMs?** – Foundation concepts if you're new to AI
+
+But start with the consultation. Let AI help you figure out what you actually need to learn next.
+
+---
+
+## One Last Thing
+
+Yes, this guide is telling you to use AI to learn how to use AI. That's a bit meta. But it works, and the best way to see that is to try it.
+
+> **The best way to learn how to use AI is to use AI.**
+
+Copy the prompt. Start the conversation. See what happens.
+
+
+---
+
+## Further Reading
+
+- Mollick, E. R., & Mollick, L. (2023). Using AI to implement effective teaching strategies in classrooms: Five strategies, including prompts. *SSRN.* https://doi.org/10.2139/ssrn.4391243
+- Mollick, E. R., & Mollick, L. (2024). Instructors as innovators: A future-focused approach to new AI learning opportunities, with prompts. *SSRN.* https://doi.org/10.2139/ssrn.4802463
+
+
+---
+
+*This resource reflects the author's perspective informed by current research and practice. It is intended as a discussion starter and a baseline for your own exploration, not a definitive guide. References will be added progressively. If something here challenges your thinking, good, that's the point.*

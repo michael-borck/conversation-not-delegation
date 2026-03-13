@@ -1,0 +1,433 @@
+---
+format:
+  html:
+    embed-resources: true
+---
+
+# C.R.A.F.T. Prompting Framework
+
+## Introduction
+
+The C.R.A.F.T. framework is a practical, structured approach to writing better prompts for AI tools.
+
+> **Getting started?** If you're new to AI or unsure where to begin, consider starting with **"Using AI to Help You Use AI"** first. That meta-skill will help you discover your own starting point, and then CRAFT becomes a powerful tool for structuring the prompts you actually need.
+
+Whether you're an educator, researcher, or professional staff member, CRAFT helps you communicate clearly with AI and get more relevant, high-quality results.
+
+Most disappointing AI outputs result from vague or context-free prompts. The good news? Structured prompts produce dramatically better results with less rework.
+
+> **Think of prompting like briefing a colleague:** The better you brief the AI, the better its draft.
+
+---
+
+## The C.R.A.F.T. Framework
+
+The framework has five elements. You don't need to use all of them every time, but they provide a useful scaffold:
+
+| Letter | Element | What It Means | Example |
+|--------|---------|---------------|---------|
+| **C** | **Context** | What's the background? What data or situation are we working with? | "This is student enrolment data from business units over three semesters." |
+| **R** | **Role** | What role should the AI take on? | "You are an experienced teaching coordinator." |
+| **A** | **Action** | What specifically should the AI do? | "Analyse trends and identify units at risk." |
+| **F** | **Format** | How should the output be structured? | "Provide results as bullet points." |
+| **T** | **Tone/Target** | What tone, and who's the audience? | "Use clear language suitable for faculty meetings." |
+
+---
+
+## Why CRAFT Works
+
+1. **Clarity:** Removes ambiguity from what you're asking
+2. **Consistency:** Works across all AI tools (ChatGPT, Claude, Copilot, Gemini, etc.)
+3. **Quality:** Reduces rework by 30–50% in most cases
+4. **Speed:** Takes just a few extra seconds to set up
+5. **Collaboration:** Frames AI as a thinking partner, not just a tool
+
+---
+
+## CRAFT is a Starting Point, Not a Rule
+
+**Important:** CRAFT is one framework among many. Different prompting techniques work better for different people and different tasks. There's no single "correct" way to prompt AI.
+
+Some educators and professionals find CRAFT helpful and structured. Others prefer simpler, more conversational approaches. **The goal is clarity—not adherence to a framework.**
+
+### Other Simple Techniques That Work Well:
+
+**1. Ask for step-by-step thinking**
+Instead of asking for a final answer, ask the AI to walk through its reasoning first:
+> "Before answering, walk me through how you'd approach this problem. Then provide your recommendation."
+
+**2. Request explicit reasoning**
+Ask the AI to show its work:
+> "Explain your thinking before providing the assessment rubric."
+> "How did you arrive at that conclusion?"
+
+**3. Provide good and bad examples**
+Show the AI what you want (and what you don't):
+> "Here's an example of a good discussion question: [example]. Here's a weak one: [bad example]. Now create three questions in the style of the good example."
+
+**4. Use comparative framing**
+Ask the AI to compare or contrast:
+> "Show me three different ways to explain this concept. What are the trade-offs of each?"
+
+**5. Break tasks into explicit steps**
+Similar to prompt chaining, but simpler:
+> "First, summarise this. Then identify problems. Finally, suggest solutions."
+
+**6. Ask for constraints**
+Tell the AI what matters:
+> "Keep this under 150 words. Make it suitable for high school students. Use simple language."
+
+**7. Request revision and refinement**
+Most first drafts improve with feedback:
+> "That's a good start. Now make it more concise / more detailed / more critical / more encouraging."
+
+---
+
+## Experiment and Find What Works for You
+
+The best approach is the one that:
+- **Makes sense to you** (you understand why you're structuring the prompt that way)
+- **Works for your context** (some frameworks fit teaching, others fit analysis)
+- **Gets consistent results** (you can repeat it and improve it)
+
+Some people love the CRAFT framework. Others find it overly formal. Some prefer conversational, exploratory prompting. Others prefer ultra-specific, constraint-based prompting.
+
+**Try different techniques and notice what works:**
+- Does CRAFT help you think through what you need?
+- Or do you prefer just asking clearly and iterating?
+- Do you like step-by-step structure, or does it feel rigid?
+- Do examples help you, or do you work better with descriptions?
+
+There's no "wrong" answer—just what works for your brain and your context.
+
+---
+
+## Key Principle: Clarity Over Framework
+
+Whatever technique you use, the underlying principle is the same:
+
+> **Help the AI understand what you actually want.**
+
+Whether you do that through CRAFT, through examples, through step-by-step instructions, or through something else entirely—the goal is clarity. If your current approach isn't getting good results, try something different.
+
+**No framework is universal.** CRAFT happens to be structured and teachable, which is why we highlight it. But your own conversational style, combined with iteration, is often just as effective.
+
+---
+
+## Examples: Improving Prompts with CRAFT
+
+### Example 1: Teaching & Learning
+
+**Weak Prompt:**
+> "How can I use AI in my class?"
+
+**CRAFT-Improved Prompt:**
+> "I teach first-year business students in a capstone project unit. You are an instructional designer. Suggest three practical ways to integrate AI tools without replacing authentic student work. Format as a bulleted list with implementation tips. Use language suitable for sharing with faculty colleagues."
+
+**Why it's better:**
+- **Context:** We know the student level, discipline, and unit type
+- **Role:** AI knows what perspective to take (instructional designer)
+- **Action:** Clear, specific request (three ways, with implementation)
+- **Format:** Structured output (bullets + tips)
+- **Tone:** Colleague-appropriate language
+
+---
+
+### Example 2: Research & Analysis
+
+**Weak Prompt:**
+> "Analyse this data."
+
+**CRAFT-Improved Prompt:**
+> "This CSV contains survey responses from 200 educators about AI adoption barriers. You are a research analyst. Identify the top 5 themes and frequency for each. Flag any surprising or contradictory patterns. Output as a structured summary with key quotes. Keep language technical but accessible for a research paper methods section."
+
+**Why it's better:**
+- **Context:** Dataset size, content, source
+- **Role:** Research analyst (appropriate perspective)
+- **Action:** Specific analyses (themes, frequencies, contradictions, quotes)
+- **Format:** Structured summary
+- **Tone:** Suitable for academic writing
+
+---
+
+### Example 3: Professional Operations
+
+**Weak Prompt:**
+> "Summarise this compliance document."
+
+**CRAFT-Improved Prompt:**
+> "This is a TEQSA compliance framework document. You are a senior teaching support officer. Extract the three most critical requirements for our business faculty. Highlight any compliance gaps we might have. Format as a one-page summary with clear action items. Use plain English suitable for a faculty board update."
+
+**Why it's better:**
+- **Context:** Document type and regulatory body
+- **Role:** TSO (operational expertise)
+- **Action:** Extract + identify gaps + recommend actions
+- **Format:** One-page, action-oriented
+- **Tone:** Board-appropriate
+
+---
+
+## Prompting as a Conversation: The Real Power
+
+Here's something important: **One-shot prompts tend toward sameness and averageness.** When you ask AI a single question and take the first answer, you get polished, predictable, middle-of-the-road output. That's not because AI is limited—it's because you haven't had a conversation yet.
+
+The real exploration happens in the **follow-up prompts**. That's where you push thinking deeper, challenge assumptions, ask for nuance, and steer toward *your* specific context and needs.
+
+> **Think of AI prompting like a conversation with a capable colleague, not like asking a search engine for an answer.**
+
+### Why Conversation Matters
+
+1. **First answers are drafts, not final thoughts.** AI hasn't yet understood your actual needs, constraints, or what matters to you.
+2. **Follow-ups reveal depth.** "What am I missing?" or "Now dig deeper on that second point" pushes AI toward more thoughtful output.
+3. **You shape the thinking through dialogue.** Each question you ask steers the conversation in new directions.
+4. **Specificity emerges through iteration.** Vague initial responses become sharp and contextual through rounds of back-and-forth.
+5. **Your expertise guides the exploration.** You know your discipline, your students, your institution. AI should adapt to that, not the other way around.
+
+### Example: How Conversation Changes Everything
+
+**One-shot prompt (what many people do):**
+> "How can I use AI in my teaching?"
+
+*Output: Generic, average, 3–4 safe suggestions that apply to everyone*
+
+---
+
+**Conversational approach (what actually works):**
+
+**Prompt 1 (CRAFT starting point):**
+> "I teach business ethics to 2nd-year students. You are a pedagogy expert. What are 3 ways to use AI that *deepen* ethical thinking rather than replacing it? Include one activity for each. Format for colleague discussion."
+
+*Output: Reasonable, but still somewhat generic*
+
+**Prompt 2 (Follow-up - push toward depth):**
+> "Those are helpful. The third one about 'AI bias analysis'—that's interesting. Can you walk me through what a student would actually *do* in that activity? What would the AI's role be, what would the student's role be, and how would you know if they're thinking critically versus just using AI?"
+
+*Output: Much more specific. You're now co-designing the activity.*
+
+**Prompt 3 (Follow-up - address your specific concern):**
+> "Here's my real worry: won't students just copy what the AI says instead of forming their own ethical positions? How would you redesign this to force genuine student thinking?"
+
+*Output: Now AI is addressing your actual concern, not a hypothetical one.*
+
+**Prompt 4 (Follow-up - make it practical):**
+> "I like that. Now create a rubric I could actually use to grade this. What would 'demonstrates genuine ethical reasoning' look like versus 'used AI as a crutch'? Make it specific enough that I can show it to students."
+
+*Output: Practical tool, directly usable in your classroom.*
+
+**Prompt 5 (Follow-up - iterate toward refinement):**
+> "Good rubric. But I think 'Excellent' is too hard to achieve. Can you adjust the criteria so that most engaged students could reach 'Proficient'? I don't want to discourage them."
+
+*Output: Refined rubric that matches your teaching philosophy.*
+
+---
+
+### See the Difference?
+
+- **One-shot:** Generic advice, moderate usefulness, minimal iteration
+- **Conversation:** Specific to your context, increasingly useful, deeply refined
+
+The first prompt got you in the ballpark. **Prompts 2–5 got you a tool you'll actually use.**
+
+---
+
+## Start With CRAFT (or Your Preferred Approach), Then Explore
+
+Here's the workflow that actually works:
+
+1. **Use CRAFT (or another framework) for your first prompt.** This ensures clarity and sets a good foundation.
+
+2. **Review the output.** What's helpful? What's missing? What surprised you?
+
+3. **Ask follow-up questions.** This is where the real thinking happens:
+   - "Tell me more about..."
+   - "Why would that work for...?"
+   - "How would I actually implement that?"
+   - "What am I not considering?"
+   - "Now adapt that for [specific context]..."
+   - "Push back on that idea—what are the risks?"
+
+4. **Use CRAFT in your follow-ups too.** You can apply the framework again (Context, Role, Action, Format, Tone) to make follow-up prompts just as clear as your first one.
+
+5. **Keep exploring until you have what you need.** There's no "right" number of follow-ups. Stop when the output matches your thinking, not before.
+
+### Example of CRAFT in Follow-Up Prompts
+
+**Initial Prompt (CRAFT):**
+> Context: I teach supply chain management. Role: You are a operations expert. Action: Suggest assessment methods for sustainability thinking. Format: 3 approaches with pros/cons. Tone: Suitable for faculty planning.
+
+**Follow-up 1 (Simple follow-up):**
+> "That middle approach about portfolio assessment—tell me more. What would students actually submit? How often?"
+
+**Follow-up 2 (CRAFT framework in follow-up):**
+> "Context: We have 60 students per semester. Role: You're a teaching coordinator worried about marking time. Action: Adapt portfolio approach to be feasible with 60 students. What can be automated, what must be human-marked? Format: Step-by-step implementation. Tone: Realistic about constraints."
+
+**Follow-up 3 (Simple exploration):**
+> "That's helpful. What are the trade-offs? What would we lose by streamlining it that way?"
+
+---
+
+## The Nuance: Conversational AI Isn't Magic, It's Dialogue
+
+Here's what's actually happening in this back-and-forth:
+
+- **You're not training the AI.** (It doesn't learn or remember between sessions)
+- **You're narrowing the scope.** (Each question focuses attention on what matters to *you*)
+- **You're surfacing your expertise.** (Your follow-ups reveal what you know and what you care about)
+- **You're iterating toward clarity.** (Neither you nor the AI knew exactly what you wanted until you started talking)
+- **You're quality-checking.** (You catch generic advice and push for specificity)
+
+The conversation works because **you're applying human judgment** throughout. You're not accepting outputs blindly; you're critically engaging with them, asking for depth, pushing back, and steering toward what actually matters in your context.
+
+That's where value emerges.
+
+---
+
+## Why One-Shot Prompts Tend Toward Average
+
+When you ask a single question and take the first answer:
+
+- **No context refinement.** The AI made assumptions; you didn't correct them.
+- **Surface-level output.** First answers are often polished but generic.
+- **No personal touch.** You got advice for "educators" generally, not advice for *you* specifically.
+- **Missed opportunities.** The AI has more to offer, but you didn't ask.
+
+Conversely, when you engage in dialogue:
+
+- **The AI learns your context.** (Within the conversation)
+- **You surface your expertise.** (Through follow-up questions)
+- **Output becomes increasingly specific.** (With each round of refinement)
+- **You maintain agency.** (You're steering, not just receiving)
+
+### A Simple Rule of Thumb
+
+> **If your first output feels generic or "average," you haven't asked enough follow-up questions yet.**
+
+That's not a failure. That's a signal to keep exploring.
+
+---
+
+## CRAFT in Action: Step-by-Step
+
+### Step 1: Identify Your Goal
+- What do you actually want to accomplish?
+- What's the starting point (data, concept, problem)?
+- Who's the audience?
+
+### Step 2: Build Your CRAFT Prompt
+- **C:** Provide context (what's the background/data?)
+- **R:** State the role (what expertise should AI bring?)
+- **A:** State the action (what specifically should it do?)
+- **F:** Specify format (bullets, paragraphs, table, etc.)
+- **T:** Define tone/target (who reads this, what tone works?)
+
+### Step 3: Try It
+- Paste your prompt into your AI tool
+- Review the output
+- Note what's helpful and what's missing
+
+### Step 4: Iterate
+- Use follow-ups to refine, extend, or adapt
+- Try "Now rewrite that for [different audience]"
+- Try "What's one thing we missed?"
+- Try "Make that more/less technical"
+
+### Step 5: Document Your Process
+- What prompt worked best?
+- What follow-ups added the most value?
+- What would you do differently next time?
+
+---
+
+## CRAFT Prompt Templates
+
+Feel free to adapt these templates for your context:
+
+### For Teaching & Learning Design
+```
+Context: [Describe your students, unit, discipline, learning outcome]
+Role: You are [pedagogical expertise needed: instructional designer, curriculum specialist, etc.]
+Action: [Specific task: suggest strategies, design activities, develop rubric, etc.]
+Format: [How should output be structured?]
+Tone: [Audience and tone: colleague workshop, student-facing, etc.]
+```
+
+### For Research & Analysis
+```
+Context: [Data source, sample size, research question, discipline]
+Role: You are [research role: data analyst, methodologist, literature reviewer, etc.]
+Action: [Specific analysis: identify themes, compare approaches, evaluate evidence, etc.]
+Format: [Structure: summary, table, narrative, etc.]
+Tone: [Suitable for: research paper, conference presentation, grant proposal, etc.]
+```
+
+### For Professional Operations
+```
+Context: [Document/data type, organisational context, compliance/operational need]
+Role: You are [professional role: teaching coordinator, policy analyst, compliance officer, etc.]
+Action: [Specific task: extract requirements, identify risks, recommend actions, etc.]
+Format: [Structure: summary, action list, comparison, etc.]
+Tone: [Audience: leadership, faculty, staff, etc.]
+```
+
+---
+
+## Key Principles
+
+1. **Be specific, not verbose.** CRAFT doesn't require long prompts—just clear ones.
+
+2. **Context is crucial.** The more relevant background you provide, the better the output.
+
+3. **Role matters.** Assigning a role helps AI understand what perspective and expertise to bring.
+
+4. **Format guides quality.** Specifying bullet points vs. paragraphs vs. tables changes output structure significantly.
+
+5. **Tone prevents misfits.** What works for a faculty meeting doesn't work for a student email. Be explicit.
+
+6. **Follow-ups are where the value lives.** First outputs are drafts; follow-ups are refinement.
+
+---
+
+## Common Mistakes to Avoid
+
+| Mistake | What Happens | Fix |
+|---------|--------------|-----|
+| **No context** | AI makes too many assumptions or produces generic output | Provide relevant background (data, students, discipline, situation) |
+| **Vague role** | Output lacks appropriate perspective or expertise | Specify a concrete role (e.g., "instructional designer" not just "expert") |
+| **Unclear action** | You get something but not what you needed | Say exactly what you want it to do (analyse, design, critique, summarise, etc.) |
+| **No format specification** | Output is unstructured or in wrong format | Say "bullet points" or "three paragraphs" or "comparison table" |
+| **Mismatched tone** | Good content but wrong for your audience | Name your audience explicitly |
+
+---
+
+## Practice Exercise
+
+Try improving this weak prompt using CRAFT:
+
+**Weak Prompt:**
+> "How do I teach AI literacy?"
+
+**Your Task:**
+Using the CRAFT framework:
+1. Add context (what students? what discipline? what level?)
+2. Define a role (what expertise?)
+3. Clarify the action (what specifically do you want?)
+4. Specify format (how should it be organised?)
+5. State the tone/target (who's the audience?)
+
+Then try your CRAFT prompt in an AI tool and see how the output improves.
+
+---
+
+## Final Thought
+
+> **CRAFT isn't about creating the perfect prompt.** It's about starting a better conversation with AI.
+>
+> You don't need the ideal prompt on the first try. You need clarity, curiosity, and a willingness to iterate. AI will meet you halfway—but only if you bring specificity and a challenge worth solving.
+
+---
+
+## Further Reading
+
+- **"The Art of the Prompt"** - Seven Techniques guide (for pedagogical prompts)
+- **"Prompt Chaining Techniques"** - Multi-step workflows and reasoning
+- **Seven Essential Prompt Techniques for Business Teaching** - Deep dive into discipline-specific prompts

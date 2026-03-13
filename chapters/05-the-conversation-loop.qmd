@@ -1,0 +1,79 @@
+# The Conversation Loop {#sec-conversation-loop}
+
+This is the model. Not a framework with twelve steps and a certification programme. A loop with four stages and one rule: you stay in the conversation.
+
+```{mermaid}
+%%| label: fig-conversation-loop
+%%| fig-cap: "The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Repeat."
+flowchart LR
+  A[Brainstorm] --> B[Ideate]
+  B --> C[Iterate]
+  C --> D[Amplify]
+  D -->|Repeat| A
+```
+
+Four stages. One feedback arc. Most good work passes through the loop more than once. That is the whole picture. Now let's walk through it.
+
+
+## Brainstorm
+
+You arrive with a question, a problem, or a half-formed idea. Not a task to outsource. Not a prompt engineered to extract a finished deliverable in one shot. You bring something you are genuinely thinking about.
+
+This matters more than it sounds. The quality of what comes out of the loop is bounded by what you bring into it. A vague "write me a strategy document" produces vague strategy. A specific "I'm stuck on how to position this product for buyers who already use a competitor" gives the conversation something to grip.
+
+You do not need a polished brief. You need a real starting point.
+
+
+## Ideate
+
+Now you and the AI explore together. This stage is generative and divergent. You are not looking for the answer. You are looking for more angles, adjacent ideas, framings you had not considered.
+
+Ask for alternatives. Ask for the version that would make your sceptical colleague pause. Ask what you might be missing. The AI's breadth across domains is genuinely useful here, not because it knows your context better than you do, but because it can surface patterns and connections faster than you can scan for them alone.
+
+The temptation is to stop here, take the first interesting output, and move on. Resist that. Ideation is cheap. The next stage is where value gets made.
+
+
+## Iterate
+
+This is where conversation happens and where delegation is most tempting. You push back. You refine. You redirect.
+
+"That second option is closer, but it assumes we have six months. We have six weeks."
+
+"The tone is wrong. Less corporate, more direct."
+
+"You're solving the wrong problem. The real constraint is budget, not timeline."
+
+Every one of those responses sharpens the output. Every one requires your judgement. If you skip this stage, you are copying, not thinking. If you delegate here, you get something that is fluent, plausible, and not quite right in ways you will only notice later.
+
+Iteration is work. It is also the stage that makes the output yours. Stay in it longer than feels necessary.
+
+
+## Amplify
+
+You take the best of what emerged and make it yours. You edit, restructure, combine, cut. You bring it into your voice, your context, your standards.
+
+Amplification is not "copy and paste with minor tweaks." It is the act of owning the output. You know things the AI does not: your audience, your constraints, the political dynamics of the room you will present in, the history behind the decision. This is where all of that knowledge gets folded in.
+
+The result should be something you would put your name on without hesitation. If it is not, you are not done.
+
+
+## Repeat
+
+Most good work loops more than once. The first pass through gives you a draft, a direction, a clearer version of your own thinking. The second pass sharpens it. The third might transform it entirely.
+
+Knowing when to re-enter the loop is a skill. Sometimes you amplify and realise the framing is wrong, so you loop back to brainstorm with a better question. Sometimes iteration reveals a gap, so you return to ideation. The loop is not linear. The arrows point forward, but the feedback arc is always available.
+
+The sign that you are done is not that the AI has stopped producing output. It is that your thinking has landed somewhere solid.
+
+
+## The two things to remember
+
+The loop works because of a simple relationship. You bring expertise, context, and judgement. The AI brings breadth, speed, and tireless availability. Neither is sufficient alone.
+
+*Your expertise + AI's breadth = amplified thinking.*
+
+*The bottleneck is your thinking, not the model.*
+
+A better model will not fix a lazy prompt. A faster response will not help if you skip iteration. The constraint on quality is always your willingness to stay in the conversation, to push back, to think harder, to loop again.
+
+Your expertise + AI's breadth = amplified thinking. The bottleneck is your thinking, not the model.

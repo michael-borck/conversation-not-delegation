@@ -1,0 +1,6 @@
+/.quarto/
+/_book/
+/_freeze/
+*.html
+*.pdf
+.DS_Store

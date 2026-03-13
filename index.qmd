@@ -1,0 +1,25 @@
+# About This Book {.unnumbered}
+
+This book is for anyone who uses AI as a thinking tool.
+
+Students, professionals, researchers, educators: if you interact with large language models as part of your work or study, this book will change how you approach those interactions.
+
+The core argument is simple. Most people use AI to get outputs. They delegate tasks, collect answers, and move on. That approach gets you something, but it costs you something too. It costs you the thinking that would have made you better at your work.
+
+There is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it.
+
+This book teaches you how.
+
+Part 1 gives you enough understanding of AI and large language models to use them well. Part 2 establishes the principles that make AI conversations productive rather than passive. Part 3 gives you practical tools and techniques you can use immediately. Part 4 shows it all working together across disciplines, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.
+
+## Who This Book Is For
+
+You do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.
+
+If you work with AI in any capacity, or plan to, this book will give you a framework for doing it well.
+
+## A Note on the Sibling Book
+
+This book has a companion: *Converse Python, Partner AI*, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place.
+
+Both books are independently complete. You do not need one to benefit from the other.

@@ -1,0 +1,969 @@
+---
+title: "Seven Essential Prompt Techniques"
+---
+
+## A Quick Note: Prompting Fundamentals
+
+Before diving into the seven techniques, you might find it helpful to understand the **C.R.A.F.T. Prompting Framework**, a structured approach to writing clear, effective prompts in general.
+
+The seven techniques in this guide are *pedagogical prompts* (teaching techniques you use *with* students). C.R.A.F.T. is a *prompting methodology* (how to write better prompts overall).
+
+**They complement each other:**
+- Use **C.R.A.F.T.** to structure how you ask the AI to generate student prompts
+- Use these **Seven Techniques** to choose *which* type of prompt helps students develop specific skills
+
+For example, when creating a Reverse Prompting exercise (Technique 1), you'd use C.R.A.F.T. to write clearer instructions to the AI about what kind of questions to generate.
+
+→ **Learn more:** See the [C.R.A.F.T. Prompting Framework](craft-prompting-framework.html) guide for a complete overview.
+
+---
+
+## Why These Seven?
+
+These aren't random AI tricks. These are seven proven prompting techniques specifically chosen because they develop critical thinking skills that business professionals across all disciplines need:
+
+1. **Reverse Prompting** → Teaches comprehensive scoping and requirement gathering
+2. **Pros and Cons** → Builds analytical decision-making skills
+3. **Stepwise Chain of Thought** → Reinforces process adherence and documentation
+4. **Role Play** → Develops communication and interpersonal skills
+5. **Debating** → Strengthens strategic thinking and ethical reasoning
+6. **Formative Assessment Generator** → Provides unlimited low-stakes practice and immediate feedback
+7. **The Expert Panel** → Develops multi-perspective analysis and synthesis skills
+
+Each technique is easy to adapt and can be used by students directly or by you to generate teaching materials. Let's explore each one with ready-to-use examples.
+
+---
+
+## Technique 1: Reverse Prompting (for Scoping and Policy Design)
+
+### What It Does
+Instead of the student immediately solving a problem, the AI asks *them* questions to help scope out all the requirements, considerations, and potential issues. This mirrors real HR work, where defining the problem properly is half the battle.
+
+### Why It Works Across Disciplines
+Complex problem scoping is fundamental to all business disciplines. Whether designing policies, strategies, systems, or solutions, professionals must think through multiple stakeholders, constraints, legal/ethical implications, and trade-offs. This technique forces students to move beyond obvious surface issues and consider the full complexity before starting to solve.
+
+**Discipline-specific contexts:**
+- **HR:** Policy and program design with stakeholder, legal, operational, and fairness considerations
+- **Business/Marketing:** Strategy development with market, competitive, financial, and capability considerations
+- **Management:** Organisational change with stakeholder, cultural, operational, and risk considerations
+- **Supply Chain:** Network design with cost, resilience, sustainability, and operational considerations
+- **Accounting/Finance:** Audit or valuation scope with compliance, materiality, and stakeholder considerations
+- **Economics:** Policy design with trade-offs, stakeholder impacts, and evidence considerations
+
+### The Student Prompt (Ready to Use)
+
+```
+I need to draft a new "Flexible Work Arrangement" policy for a 500-employee
+company that has both office-based and remote staff. I need to make sure I
+cover all the key areas.
+
+Your task: Ask me a series of yes/no or short-answer questions to help me
+clarify all the requirements, considerations, and potential pitfalls for
+this policy.
+
+Ask one question at a time. Wait for my response before asking the next
+question. Continue until you've helped me think through at least 10
+different aspects of this policy.
+
+Begin with your first question.
+```
+
+### What Happens
+The AI will start asking questions like:
+- "Will all roles be eligible for flexible arrangements, or will there be specific criteria?"
+- "Have you considered how this will affect team collaboration and meeting schedules?"
+- "What equipment or technology support will the company provide for remote workers?"
+- "How will you handle performance measurement for remote versus office staff?"
+- "Are there legal or insurance implications you need to address?"
+
+The student must think through each question before responding. By the end, they've been guided to consider fairness, logistics, legal compliance, technology needs, and cultural impact, all before drafting a single policy sentence.
+
+### Variations for Different Disciplines
+
+::: {.panel-tabset}
+
+## HR
+- "I need to design an onboarding program for graduate hires. Ask me questions to ensure I've thought through all the key elements."
+- "I'm planning a diversity and inclusion initiative. Help me identify all the stakeholders and considerations through questioning."
+- "I need to restructure our performance review process. What questions should I be asking myself to ensure it's fair and effective?"
+
+## Business & Marketing
+- "I need to develop a market entry strategy for a new geographic region. Ask me questions to help me think through all the market, competitive, and operational considerations."
+- "I'm launching a new product. Ask me questions to ensure I've scoped out the customer, competitive, and capability requirements."
+- "I need to design a customer loyalty program. What questions should I be asking to ensure it's viable and profitable?"
+
+## Management
+- "I need to plan an organisational restructure. Ask me questions to help me think through all the stakeholder, cultural, and operational impacts."
+- "I'm implementing a new management model. What questions should I ask myself about change management, training, and stakeholder readiness?"
+- "I need to design a change management strategy. Help me identify all the resistance points and engagement considerations."
+
+## Supply Chain & Logistics
+- "I need to redesign our supply chain network. Ask me questions to help me think through cost, resilience, sustainability, and service considerations."
+- "I'm evaluating a supplier consolidation strategy. What questions should I be asking about risk, quality, and financial implications?"
+- "I need to implement demand planning. Ask me questions about data, systems, and organisational capability requirements."
+
+## Information Systems
+- "I need to plan a systems implementation. Ask me questions to help me think through stakeholder requirements, technical feasibility, and change management."
+- "I'm designing an IT governance framework. What questions should I be asking about risk, compliance, and organisational adoption?"
+- "I need to scope a digital transformation initiative. Help me identify all the technical, organisational, and capability considerations."
+
+## Accounting & Finance
+- "I need to plan an audit approach for a complex client. Ask me questions to help me scope the audit scope, materiality, and key risks."
+- "I'm designing a financial reporting control system. What questions should I be asking about stakeholders, compliance, and operational constraints?"
+- "I need to evaluate a valuation approach. Ask me questions about assumptions, stakeholders, and regulatory considerations."
+
+## Economics
+- "I need to design a policy recommendation to address economic inequality. Ask me questions to help me think through trade-offs, stakeholders, and evidence."
+- "I'm analysing an economic model. What questions should I ask about assumptions, limitations, and stakeholder impacts?"
+- "I need to scope an economic impact analysis. Help me identify all the affected parties and considerations."
+
+:::
+
+
+### Teaching Tip
+Use this as a **pre-writing exercise**. Have students complete the AI questioning session, then require them to submit both the transcript and their subsequent policy draft. You can assess whether they actually incorporated the insights from the questions.
+
+---
+
+## Technique 2: Pros and Cons (for Decision Making)
+
+### What It Does
+The AI systematically analyses multiple approaches to a business problem, evaluating each option against specific criteria. This develops the ability to make justified recommendations rather than just stating preferences.
+
+### Why It Works Across Disciplines
+All business professionals must evaluate competing strategies and make balanced, evidence-based recommendations. This technique builds the muscle for weighing trade-offs, considering multiple stakeholder perspectives, and justifying strategic choices.
+
+### The Student Prompt (Ready to Use)
+
+```
+What are the main models for conducting performance reviews in a hybrid
+workforce? For each model you identify, provide:
+
+1. A brief description of how it works
+2. Three key advantages
+3. Three key disadvantages
+
+Evaluate each model specifically in terms of:
+- Fairness and perceived equity
+- Administrative overhead and manager workload
+- Impact on employee morale and development
+
+Conclude with a recommendation for which model would be most appropriate
+for a mid-sized tech company (300 employees, 60% hybrid, 40% fully remote)
+and justify your recommendation.
+```
+
+### What Happens
+The AI will identify 3-4 performance review models (e.g., annual reviews, continuous feedback, 360-degree feedback, OKR-based systems) and analyse each systematically. The student receives a structured comparison that they must then critically evaluate.
+
+### The Follow-Up Task
+Don't let students simply accept the AI's recommendation. Require them to:
+- Challenge one of the "pros" listed. Is it really an advantage in all contexts?
+- Add a disadvantage the AI missed
+- Argue for a *different* model than the AI recommended, using evidence
+- Identify which psychological or motivational theory supports or contradicts each approach
+
+This transforms the AI output from an answer into a starting point for deeper analysis.
+
+### Variations for Different Disciplines
+
+::: {.panel-tabset}
+
+## HR
+- "Compare different approaches to managing workplace conflict: mediation, formal grievance process, restorative justice. Evaluate each for speed, fairness, and relationship preservation."
+- "Analyse three different redundancy selection methods. What are the legal risks and ethical considerations of each?"
+- "What are the pros and cons of using AI-powered resume screening tools versus traditional human review?"
+
+## Business & Marketing
+- "Compare different market entry strategies: direct investment, partnership, acquisition. Evaluate each for speed to market, cost, risk, and control."
+- "Analyse different pricing strategies: penetration pricing, value-based pricing, competitive pricing. What are the trade-offs for market share, profitability, and customer perception?"
+- "What are the pros and cons of expanding through new products versus new markets?"
+
+## Management
+- "Compare different organisational structures: functional, divisional, matrix, networked. Evaluate each for agility, accountability, and collaboration."
+- "Analyse different change management approaches: top-down, participative, emergent. What are the trade-offs for speed, buy-in, and sustainability?"
+- "What are the pros and cons of different leadership models: directive, participative, delegative?"
+
+## Supply Chain & Logistics
+- "Compare different supply chain strategies: make-to-stock, make-to-order, mass customisation. Evaluate each for cost, responsiveness, and flexibility."
+- "Analyse different supplier relationship models: single-source, multi-source, supplier partnerships. What are the trade-offs for cost, quality, and resilience?"
+- "What are the pros and cons of vertical integration versus outsourcing key functions?"
+
+## Information Systems
+- "Compare different systems implementation approaches: big bang, phased, modular. Evaluate each for speed, risk, and user adoption."
+- "Analyse different IT governance models: centralized, decentralized, federated. What are the trade-offs for control, innovation, and efficiency?"
+- "What are the pros and cons of cloud-based versus on-premises systems?"
+
+## Accounting & Finance
+- "Compare different valuation methods: discounted cash flow, comparable companies, precedent transactions. What are the pros and cons of each?"
+- "Analyse different audit approaches: statistical sampling, risk-based audit, controls-based audit. Evaluate each for efficiency, effectiveness, and client relationships."
+- "What are the pros and cons of different capital structure options: debt, equity, retained earnings?"
+
+## Economics
+- "Compare different policy approaches to addressing unemployment: fiscal stimulus, labour market training, labour market deregulation. Evaluate each for effectiveness, cost, and trade-offs."
+- "Analyse different economic models: Keynesian, neoclassical, behavioural. What assumptions and limitations does each have?"
+- "What are the pros and cons of different monetary policy tools: interest rates, quantitative easing, forward guidance?"
+
+:::
+
+
+### Teaching Tip
+This technique works brilliantly for **in-class discussions**. Project the AI's analysis on screen, then divide students into groups where each group must argue for one of the models. They have to use the AI's framework but add their own reasoning.
+
+---
+
+## Technique 3: Stepwise Chain of Thought (for Process Management)
+
+### What It Does
+The AI walks through a complex business process one step at a time, pausing after each step until the student signals they're ready to continue. This slows down high-stakes processes that students often rush through.
+
+### Why It Works Across Disciplines
+Many professional processes are legally, ethically, or operationally sensitive. Students need to understand *why* each step exists and what considerations apply at that stage. This technique forces deliberate, sequential thinking and deep engagement with process logic.
+
+### The Student Prompt (Ready to Use)
+
+```
+I am learning how to properly conduct a disciplinary action process for an
+employee with a pattern of repeated lateness.
+
+Your task: Walk me through the entire disciplinary process, starting from
+the very first informal conversation. For each step, tell me:
+
+1. What action to take
+2. What to document
+3. What legal or procedural consideration is important at this stage
+
+After you explain each step, STOP and wait for me to type "next" before
+moving to the next step. Do not provide the entire process at once.
+
+Begin with Step 1.
+```
+
+### What Happens
+The AI will provide the first step:
+
+> **Step 1: Informal Verbal Warning**
+>
+> **Action:** Meet privately with the employee to discuss the lateness pattern. Use a calm, non-accusatory tone. Ask if there are any circumstances contributing to the issue (e.g., transport problems, personal issues, health concerns).
+>
+> **Documentation:** Make a brief file note recording the date, what was discussed, and the employee's response. This is informal, so no formal warning letter yet.
+>
+> **Legal/Procedural Consideration:** At this stage, you're gathering information and providing an opportunity for the employee to explain. Under principles of procedural fairness, you must give them a chance to be heard before escalating.
+>
+> Type "next" when you're ready for Step 2.
+
+The student must actively engage with each step before progressing. This prevents them from skipping to "just fire them" without understanding the required process.
+
+### Variations for Different Disciplines
+
+::: {.panel-tabset}
+
+## HR
+- "Walk me through conducting a workplace investigation into a bullying complaint. One step at a time."
+- "Take me through the proper process for making an employee redundant in Australia. Pause after each step."
+- "Show me the recruitment process from job analysis through to onboarding, step by step with legal checkpoints."
+
+## Business & Marketing
+- "Walk me through developing a market entry strategy for a new region. Pause after each step so I can understand the rationale."
+- "Take me through the customer journey mapping process step by step, explaining the key decisions at each stage."
+- "Show me the new product development process from concept through launch, pausing to explain checkpoints and risk mitigation."
+
+## Management
+- "Walk me through conducting an organisational change initiative. Explain each step and the risk if we skip it."
+- "Take me through creating a strategic plan from situational analysis through execution. Pause after each step."
+- "Show me the merger integration process step by step, explaining what happens if we get the sequencing wrong."
+
+## Supply Chain & Logistics
+- "Walk me through designing a demand planning process. Pause after each step to explain the dependencies."
+- "Take me through establishing a supplier relationship from selection through strategic partnership. One step at a time."
+- "Show me the logistics network optimisation process step by step, explaining decisions at each stage."
+
+## Information Systems
+- "Walk me through a systems implementation project from requirements through go-live. Pause after each step."
+- "Take me through the software development lifecycle step by step, explaining quality controls at each stage."
+- "Show me the IT disaster recovery process step by step, explaining what could go wrong at each stage."
+
+## Accounting & Finance
+- "Walk me through the financial close process. Explain each step and why it matters."
+- "Take me through an audit engagement from planning through audit opinion. Pause after each phase."
+- "Show me the capital budgeting process step by step, from proposal through post-implementation review."
+
+## Economics
+- "Walk me through conducting an economic impact analysis. Explain each step and the assumptions involved."
+- "Take me through developing a policy recommendation. Pause after each step to explain the reasoning."
+- "Show me how to construct an economic model from theory through validation. One step at a time."
+
+:::
+
+
+### Teaching Tip
+This is excellent for **individual revision or exam prep**. Students can practice the process multiple times, and each time they can ask the AI to introduce complications: "In Step 3, what if the employee refuses to sign the written warning?" The AI will explain how to handle variations.
+
+You can also use this to **generate assessment materials**: Have the AI walk through a process, then you create an exam question where one of the steps was done incorrectly and students must identify the error and its consequences.
+
+---
+
+## Technique 4: Role Play (for Skill Building)
+
+### What It Does
+The AI adopts a specific persona and engages in a realistic conversation with the student. This is the "flight simulator" concept in action.
+
+### Why It Works Across Disciplines
+Business work is fundamentally about interaction, with clients, stakeholders, teams, and colleagues. Students can memorize theory, but until they practice *actually having* difficult conversations where others push back, get emotional, or raise objections, they won't develop genuine interpersonal competence.
+
+### The Student Prompt (Ready to Use)
+
+```
+You are an experienced and empathetic HR Business Partner. I am a new,
+nervous manager who needs to put one of my team members on a Performance
+Improvement Plan (PIP).
+
+Your goal is to coach me through preparing for and conducting this meeting
+successfully.
+
+Guide me through this step by step:
+1. First, ask me why the employee is being put on a PIP
+2. Wait for my answer
+3. If my answer is vague or subjective (e.g., "bad attitude"), challenge me
+   gently and ask me to be more specific and behavioural
+4. Once I give you a solid answer, move to the next aspect: helping me
+   draft clear, measurable objectives for the PIP
+5. Continue coaching me through each element of the conversation I need to
+   have with the employee
+
+Throughout this process, if I say something that could be problematic
+(legally risky, unfair, too harsh, or too vague), pause and give me
+feedback on how to improve it.
+
+Begin by asking me your first question.
+```
+
+### What Happens
+The AI becomes a coach who actively guides the student through preparation. If the student says "I'm putting them on a PIP because they're lazy," the AI will respond:
+
+> "I understand you're frustrated, but 'lazy' is subjective and not something we can measure or document defensibly. Let's try again: what specific behaviours or performance gaps have you observed? For example, are they missing deadlines, producing work below the required standard, or not completing their assigned tasks?"
+
+This iterative coaching helps students learn to think and speak like HR professionals.
+
+### Advanced Variation: The Difficult Conversation
+
+Once students are comfortable, flip the scenario:
+
+```
+You are Sarah, a high-performing marketing manager who has just been told
+you're being put on a Performance Improvement Plan. You are shocked,
+defensive, and angry because you believe this is unfair and politically
+motivated.
+
+I am the HR representative who has to conduct this PIP meeting with you.
+
+Your behaviour:
+- Start the conversation by immediately challenging the fairness of the PIP
+- Bring up a recent successful project you led
+- Hint that you believe this is retaliation for raising a complaint about
+  your manager last month
+- Be emotional but not abusive. Show genuine distress
+
+I will attempt to conduct this meeting professionally. Stay in character
+until I manage to de-escalate the situation and establish a constructive
+dialogue.
+
+Begin the meeting. I will speak first.
+```
+
+Now the student has to manage a realistic, emotionally charged scenario. They must practice de-escalation, empathy, procedural fairness, and documentation, all while the AI responds dynamically to what they say.
+
+### Variations for Different Disciplines
+
+::: {.panel-tabset}
+
+## HR
+- AI plays a union representative in an enterprise bargaining negotiation
+- AI plays a candidate in a behavioural interview who gives weak answers that need probing
+- AI plays a manager who resists implementing a diversity initiative
+- AI plays an employee making an informal discrimination complaint
+
+## Business & Marketing
+- AI plays a difficult customer objecting to pricing and demanding better terms
+- AI plays a competitor in a market negotiation
+- AI plays a skeptical internal stakeholder who needs to be convinced of a strategy
+- AI plays a partner company executive in a partnership negotiation
+
+## Management
+- AI plays an employee resistant to organisational change
+- AI plays a union representative in a labour negotiation
+- AI plays a direct report who is underperforming and defensive
+- AI plays a peer manager with competing priorities
+
+## Supply Chain & Logistics
+- AI plays a demanding supplier or customer
+- AI plays an internal stakeholder questioning cost cuts
+- AI plays a logistics partner with implementation concerns
+- AI plays a regulator questioning compliance
+
+## Information Systems
+- AI plays a resistant end-user during system implementation
+- AI plays a business stakeholder with changing requirements
+- AI plays a project team member questioning a technical decision
+- AI plays a vendor in a software licensing negotiation
+
+## Accounting & Finance
+- AI plays a client questioning an audit finding
+- AI plays a board member scrutinizing a financial decision
+- AI plays an internal stakeholder challenging a budget proposal
+- AI plays a regulator questioning financial reporting
+
+## Economics
+- AI plays a policymaker questioning an economic recommendation
+- AI plays a stakeholder affected by proposed policy
+- AI plays a peer economist with a competing analysis
+- AI plays a business leader concerned about economic impacts
+
+:::
+
+
+### Teaching Tip
+**Assessment approach:** Require students to submit the full transcript of the conversation along with a reflective analysis answering:
+- What communication techniques did you use?
+- Where did the conversation go well or poorly?
+- What would you do differently next time?
+- What HR theory or legal principle guided your approach?
+
+This makes the process visible and assessable.
+
+---
+
+## Technique 5: Debating (for Strategic and Ethical Analysis)
+
+### What It Does
+The AI examines multiple perspectives on a contentious issue, argues for and against different positions, and helps students see the complexity and trade-offs in strategic decisions.
+
+### Why It Works Across Disciplines
+Modern business work exists in gray areas where competing legitimate perspectives exist. Whether addressing HR challenges, business strategy, operational trade-offs, financial decisions, or policy questions, professionals need to develop the ability to argue multiple sides of an issue before making a defensible recommendation.
+
+### Variation A: Critique and Compare
+
+```
+I will provide you with two different "Bring Your Own Device (BYOD)"
+policies from two fictional companies.
+
+Your task:
+1. Critique the strengths and weaknesses of each policy in terms of
+   security, employee privacy, and clarity
+2. Tell me which policy is stronger overall and why
+3. Identify one element from the weaker policy that could improve the
+   stronger one
+
+Here is Policy A: [paste policy]
+Here is Policy B: [paste policy]
+
+Begin your analysis.
+```
+
+**Teaching use:** You draft two policies (or have the AI generate them), one deliberately flawed. Students must identify which is better and justify their reasoning. This develops critical evaluation skills.
+
+### Variation B: Argue Both Sides
+
+```
+I want you to debate the pros and cons of using AI-powered tools to scan
+resumes and filter job applicants.
+
+Structure your response in three parts:
+
+**Part 1: The Case FOR Using AI Resume Screening**
+Make the strongest possible argument in favour of this technology. Consider
+efficiency, consistency, potential to reduce human bias, cost savings, and
+scalability.
+
+**Part 2: The Case AGAINST Using AI Resume Screening**
+Make the strongest possible argument against this technology. Consider
+algorithmic bias, legal risk, lack of contextual understanding, potential
+discrimination, and dehumanization of the recruitment process.
+
+**Part 3: Critical Synthesis**
+Critique both arguments you just made. What did each side get right? What
+did each side oversimplify or ignore? Provide a balanced recommendation
+with conditions (e.g., "Use AI screening only if X, Y, and Z safeguards
+are in place").
+```
+
+**What Happens:**
+The AI will construct sophisticated arguments for both positions, then provide a nuanced synthesis. Students can't just pick a side. They have to understand the legitimate concerns and benefits on both sides.
+
+### Variation C: Multi-Stakeholder Debate
+
+This is the most sophisticated version:
+
+```
+You will simulate a leadership debate on whether to implement a "mandatory
+return to office" policy requiring all employees to work in-office four
+days per week.
+
+Create three distinct personas and have them debate this issue:
+
+**Persona 1: The CFO (Chief Financial Officer)**
+Focus on: Real estate costs, productivity metrics, and financial efficiency
+
+**Persona 2: The CHRO (Chief HR Officer)**
+Focus on: Employee morale, retention, recruitment competitiveness, and
+diversity/equity/inclusion implications
+
+**Persona 3: The COO (Chief Operating Officer)**
+Focus on: Team collaboration, operational consistency, training
+effectiveness, and company culture
+
+Have each persona make their opening argument (3-4 sentences each). Then
+have them respond to each other's points. Continue the debate through three
+rounds until they need to make a recommendation to the CEO.
+
+After the debate, summarise the key tension points and what a compromise
+policy might look like.
+
+Begin the debate.
+```
+
+**What Happens:**
+The AI will create a realistic executive debate where each stakeholder has legitimate but competing priorities. Students see that there's rarely a perfect answer, only trade-offs and compromise.
+
+### Follow-Up Task for Students
+
+After reading the debate, students must:
+1. Identify which stakeholder made the strongest argument and why
+2. Propose a policy that addresses the COO's concerns while minimising the CHRO's risks
+3. Explain what data or evidence would help resolve the CFO's questions
+4. Reflect on which psychological or organisational theory best explains the tension between these perspectives
+
+### Teaching Tip
+This technique is perfect for **preparing students for case study exams**. Instead of memorizing model answers, they practice analysing competing priorities and justifying nuanced positions, exactly what they'll need to do in professional practice.
+
+---
+
+## Technique 6: Formative Assessment Generator (for Practice and Mastery)
+
+### What It Does
+The AI generates unlimited practice questions, scenarios, or quizzes that students can use to test their knowledge and build confidence. This provides low-stakes repetition and immediate feedback, essential for skill development.
+
+### Why It Works for HR
+Many HR competencies require both knowledge (legislation, theory) and application (recognising situations where that knowledge applies). Students need more practice than traditional homework provides, but creating dozens of unique practice scenarios is time-prohibitive for lecturers. AI solves this.
+
+### Use Case 1: Self-Testing Knowledge
+
+**Student Prompt:**
+```
+I'm studying for an exam on Australian employment law. I need to practice
+identifying which legislation applies in different workplace scenarios.
+
+Generate 10 short scenario descriptions (2-3 sentences each) where I need
+to identify:
+1. Which legislation is relevant (e.g., Fair Work Act, WHS Act,
+   Anti-Discrimination Act)
+2. What the employer's legal obligation is
+3. What risk exists if the employer doesn't comply
+
+After I answer each one, tell me if I'm correct and explain why.
+
+Begin with Scenario 1.
+```
+
+**What Happens:**
+The AI creates scenario after scenario. Students test themselves, get immediate feedback, and can continue until they achieve mastery. Unlike a textbook with 5 practice problems, this provides unlimited practice.
+
+**Key feature:** AI adapts. If student gets several wrong, AI can simplify. If student masters basic scenarios, AI can make them more complex.
+
+---
+
+### Use Case 2: Application Practice
+
+**Student Prompt:**
+```
+I'm learning to identify different types of workplace conflict (task
+conflict, relationship conflict, process conflict).
+
+Create 8 brief workplace scenarios. For each one, I'll identify the type
+of conflict and suggest an appropriate intervention approach.
+
+After each scenario, provide feedback on my classification and intervention
+suggestion. If I'm wrong, explain why and what I missed.
+
+Make the scenarios progressively more complex. Start easy, end with
+ambiguous situations where multiple interpretations are valid.
+
+Begin with Scenario 1.
+```
+
+**What Happens:**
+Progressive difficulty builds confidence and competence. Students move from obvious cases to nuanced judgement calls.
+
+---
+
+### Use Case 3: Exam Preparation
+
+**Student Prompt:**
+```
+Create a practice exam for me based on the topics we've covered in my
+Workplace Conflict Resolution unit.
+
+Include:
+- 10 multiple choice questions (4 options each)
+- 3 short-answer questions (each requiring 150-200 word response)
+- 1 case study with 4 analysis questions
+
+Topics to cover:
+- Conflict theory (Thomas-Kilmann, interest-based bargaining)
+- Investigation processes
+- Mediation approaches
+- Legal requirements (procedural fairness, natural justice)
+
+After I complete the exam, grade my answers and provide detailed feedback
+on what I got right/wrong and why.
+```
+
+**What Happens:**
+Students can generate multiple practice exams with different questions each time. They enter the real exam having practiced extensively.
+
+---
+
+### Use Case 4: Targeted Remediation
+
+**Lecturer Prompt (to create remediation resource):**
+```
+I have students who struggled with understanding procedural fairness in
+workplace investigations. Many think it just means "being nice" and don't
+understand the specific legal requirements.
+
+Create a 10-question diagnostic quiz that tests whether students understand:
+1. The right to be informed of allegations
+2. The right to respond to allegations
+3. The requirement for impartial decision-making
+4. The requirement to consider the response before deciding
+5. The right to representation/support
+
+For each question, use a scenario format. After each answer, provide
+immediate teaching feedback explaining the principle, not just whether
+they're right or wrong.
+
+Generate the quiz.
+```
+
+**What You Get:**
+A targeted remediation tool that teaches while testing. Students who failed your assessment can use this to identify and fix their knowledge gaps.
+
+---
+
+### Teaching Tip: How to Integrate This
+
+**Option 1: Recommended Practice (Ungraded)**
+
+In your unit outline:
+> "Before each assessment, I recommend using AI to generate practice questions and scenarios. Spend 30-60 minutes testing yourself until you feel confident. This is optional but strongly encouraged."
+
+**Option 2: Required Pre-Assessment Activity (Low Stakes)**
+
+> "Before the Week 8 exam, complete a self-generated practice test (minimum 20 questions). Submit a screenshot showing completion and a 100-word reflection: What did you learn from this practice? What areas do you still need to review?"
+
+Worth 5% of final grade, graded on completion and reflection quality, not on how many they got right.
+
+**Option 3: Study Group Activity**
+
+> "In your study groups, use AI to generate practice scenarios. Each person generates 5 scenarios and tests the group. Discuss answers and explanations together."
+
+Combines AI efficiency with peer learning.
+
+---
+
+### Critical Principle: Formative, Not Summative
+
+**Important:** This technique is for *practice*, not for graded assessment.
+
+**Why?**
+- Students can regenerate until they get "good" questions they already know answers to
+- AI-generated questions lack the rigor of carefully designed exam questions
+- Students need to struggle and make mistakes in low-stakes practice
+
+**The value:** Unlimited, personalised practice that builds confidence and competence before high-stakes assessment.
+
+---
+
+### Variation: Adaptive Difficulty
+
+**Advanced Student Prompt:**
+```
+I want to practice identifying workplace bullying vs. performance management
+vs. legitimate reasonable management action.
+
+Create scenarios for me to classify. After each one:
+- If I get it right, make the next scenario more nuanced and ambiguous
+- If I get it wrong, make the next scenario clearer and more obvious
+- Continue until I can correctly identify 5 difficult/ambiguous cases in a row
+
+Track my progress and tell me when I've achieved mastery.
+
+Begin.
+```
+
+This creates a personalised learning path. AI adjusts difficulty based on student performance.
+
+---
+
+### Why This Matters
+
+Traditional practice is limited by:
+- Finite textbook questions
+- Lecturer time to create practice materials
+- Inability to provide immediate feedback at scale
+
+AI removes these constraints:
+- Infinite practice scenarios
+- Instant generation
+- Immediate feedback
+- Adaptive difficulty
+
+**Result:** Students can practice until they achieve mastery, not until they run out of practice problems.
+
+---
+
+### Simulating Adaptive Difficulty
+
+While true adaptive AI systems require technical infrastructure, students can manually create adaptive difficulty through smart prompting:
+
+**Student Prompt: Self-Directed Progression**
+```
+I want to practice identifying workplace bullying vs. legitimate performance
+management vs. reasonable management action.
+
+Generate scenarios for me to classify. After I answer each one, tell me if
+I'm correct.
+
+Track my performance. When I get 8 out of 10 correct, automatically make
+the next batch of scenarios more complex and ambiguous. When I get fewer
+than 5 out of 10 correct, make the next batch clearer and more obvious.
+
+Continue until I can correctly identify 5 difficult, ambiguous cases in a row.
+
+Begin with Scenario 1 at medium difficulty.
+```
+
+**What This Achieves:**
+- Student-controlled difficulty progression
+- Mastery-based advancement
+- Builds confidence through appropriate challenge
+- No technical setup required, just good prompting
+
+**Teaching Tip:**
+
+Encourage students to track their progress:
+> "Before your next exam, use AI to practice until you achieve 90% accuracy on hard scenarios. Submit a screenshot showing your progression and a 100-word reflection on what you learned."
+
+This creates accountability without requiring sophisticated adaptive systems.
+
+---
+
+## Technique 7: The Expert Panel (for Multi-Perspective Analysis)
+
+### What It Does
+Students consult multiple AI "experts" with different theoretical or professional perspectives on the same HR problem, then synthesize the competing advice into a strategic recommendation.
+
+### Why It Works for HR
+HR problems rarely have single "correct" answers. They exist at the intersection of psychology, law, business strategy, and ethics. This technique forces students to consider legitimate but competing perspectives and make informed choices about priorities and trade-offs.
+
+### The Student Prompt (Ready to Use)
+
+```
+I need to address high turnover in our sales department (35% annual turnover;
+industry average is 18%). This is affecting team morale, increasing
+recruitment costs, and impacting customer relationships.
+
+Create three expert personas who will each analyse this problem from their
+professional perspective:
+
+**Expert 1: Organisational Psychologist**
+Focus on: Employee motivation, job satisfaction, workplace culture, team
+dynamics, psychological contracts
+
+**Expert 2: Compensation & Benefits Specialist**
+Focus on: Pay equity, market competitiveness, incentive structures, total
+rewards, cost-benefit analysis
+
+**Expert 3: Talent Management Strategist**
+Focus on: Career development, succession planning, retention programs,
+employee value proposition, organisational capability
+
+Have each expert independently provide:
+1. Their diagnosis of why turnover is high (from their perspective)
+2. Their recommended intervention strategy
+3. Potential risks or limitations of their recommended approach
+4. What data they would need to validate their hypothesis
+
+After all three experts have provided their analysis, I will synthesize
+their recommendations and develop my own strategic recommendation.
+
+Begin with Expert 1: Organisational Psychologist.
+```
+
+### What Happens
+
+**The AI creates three distinct voices:**
+
+**Organisational Psychologist:**
+> "The 35% turnover suggests a breakdown in psychological contract or poor person-organisation fit. Sales roles are inherently stressful, but this level suggests systemic issues, possibly unrealistic targets, poor management relationships, or lack of autonomy. I recommend: (1) Conduct stay/exit interview analysis focusing on psychological factors, (2) Assess manager-employee relationship quality, (3) Review goal-setting processes..."
+
+**Compensation Specialist:**
+> "At 35% turnover, you're likely seeing pay inequity or uncompetitive base/commission structures. Sales talent is mobile and market-driven. I recommend: (1) Conduct compensation benchmarking against competitors, (2) Analyse pay dispersion within the team, (3) Review commission structures for fairness and achievability..."
+
+**Talent Management Strategist:**
+> "High turnover in sales suggests limited growth opportunities or unclear career paths. Top performers leave when they plateau. I recommend: (1) Map career progression pathways, (2) Implement mentoring for high-potentials, (3) Create lateral development opportunities..."
+
+### The Follow-Up Task
+
+After receiving all three perspectives, students must:
+
+1. **Compare and Contrast:**
+   - Where do the experts agree?
+   - Where do they conflict?
+   - Which diagnosis seems most plausible given the evidence?
+
+2. **Synthesize:**
+   - "If I could only implement one intervention, which would have the most impact?"
+   - "How could I combine elements from multiple recommendations?"
+   - "What's the minimum viable intervention that addresses multiple root causes?"
+
+3. **Justify with Theory:**
+   - "Which HR theory best explains my chosen approach?" (e.g., Herzberg's two-factor theory, social exchange theory, expectancy theory)
+   - "What evidence would I need to collect to validate my choice?"
+
+4. **Acknowledge Trade-offs:**
+   - "What am I deprioritising by choosing this approach?"
+   - "What are the risks if my diagnosis is wrong?"
+
+### Variations for Different Topics
+
+**Variation 1: Policy Design**
+```
+Three experts debate a proposed "Bring Your Own Device" policy:
+- IT Security Officer (focus: data protection, cybersecurity)
+- HR Manager (focus: employee experience, equity, privacy)
+- CFO (focus: cost savings, business case, ROI)
+
+Each argues for their priorities. Student must design a policy that
+balances all three perspectives.
+```
+
+**Variation 2: Ethical Dilemma**
+```
+Three experts analyse whether to implement mandatory return-to-office:
+- Employee Relations Specialist (focus: morale, retention, fairness)
+- Operations Manager (focus: productivity, collaboration, efficiency)
+- Legal Counsel (focus: contractual obligations, discrimination risk, WHS)
+
+Student must recommend a policy that is ethical, legal, and operationally sound.
+```
+
+**Variation 3: Change Management**
+```
+Three experts advise on implementing AI resume screening:
+- Diversity & Inclusion Officer (focus: algorithmic bias, equity)
+- Recruitment Lead (focus: efficiency, candidate experience)
+- Risk & Compliance Manager (focus: legal compliance, audit trails)
+
+Student must design an implementation plan that addresses all concerns.
+```
+
+### Teaching Tip: Assessment Application
+
+**Assignment: Multi-Expert Consultation Report**
+
+**Student Requirements:**
+1. Generate consultation with 3 experts on an assigned HR problem
+2. Submit full transcript of expert advice
+3. Write 1000-word synthesis report including:
+   - Summary of each expert's position
+   - Analysis of agreements and conflicts
+   - Your strategic recommendation with justification
+   - Theoretical framework supporting your choice
+   - Implementation risks and mitigation strategies
+
+**What You're Assessing:**
+- Ability to understand multiple valid perspectives
+- Synthesis and integration skills
+- Strategic decision-making under ambiguity
+- Application of HR theory to justify choices
+- Recognition of trade-offs and constraints
+
+### Why This Is Powerful
+
+Most business teaching presents one "correct" approach. But professional practice requires navigating competing legitimate perspectives.
+
+**This technique teaches:**
+- No single expert has the complete answer
+- Good business decisions balance multiple priorities and perspectives
+- Strategic thinking means choosing which perspective to prioritise when
+- Justification matters more than the specific choice
+- Real problems require synthesis, not just analysis
+
+### Combining with Other Techniques
+
+**Expert Panel** works brilliantly with:
+
+**Pros and Cons** (Technique 2):
+> "After consulting the expert panel, use the Pros and Cons technique to evaluate each expert's recommended intervention systematically."
+
+**Debating** (Technique 5):
+> "Have the three experts debate each other's recommendations. Then you arbitrate and make the final decision."
+
+**Role Play** (Technique 4):
+> "After developing your strategy based on expert consultation, role-play presenting it to a skeptical stakeholder (CFO, union rep, CEO) and defend your choices."
+
+---
+
+## How to Choose Which Technique to Use
+
+Match the technique to the learning objective:
+
+| If you want students to... | Use this technique |
+|---|---|
+| Define a complex problem or policy comprehensively | **Reverse Prompting** |
+| Evaluate competing options and justify a choice | **Pros and Cons** |
+| Follow a legally/ethically sensitive process correctly | **Stepwise Chain of Thought** |
+| Practice difficult conversations and communication | **Role Play** |
+| Understand multiple perspectives and strategic trade-offs | **Debating** |
+| Build confidence and test knowledge through repetition | **Formative Assessment Generator** |
+| Synthesize expert advice from different disciplines/roles | **The Expert Panel** |
+
+## Combining Techniques
+
+The real power comes from combining these techniques. For example:
+
+**Complex Assessment Sequence:**
+1. Student uses **Reverse Prompting** to scope out all the requirements for a new parental leave policy
+2. Student uses **Pros and Cons** to evaluate three different policy models
+3. Student drafts their chosen policy
+4. Student uses **Role Play** to practice explaining the policy to a skeptical manager
+5. Student uses **Debating** to analyse potential criticisms from different stakeholders
+
+This sequence takes the student through analysis, decision-making, communication, and critical reflection, a complete professional process.
+
+---
+
+## Your Action Step
+
+Choose **one technique** from this guide and try it yourself. Pick the one that feels most immediately useful for a topic you're currently working with.
+
+Copy one of the example prompts in your discipline's tab, adapt it to your specific content, and see what happens. Get comfortable with at least one of these techniques before exploring the more complex applications.
+
+Remember: these aren't just AI tools. They're pedagogical strategies. The AI just makes them scalable and available to every student, any time they want to practice.
+
+
+---
+
+## Further Reading
+
+- Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q. V., & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. In *Advances in Neural Information Processing Systems, 35*, 24824--24837. https://arxiv.org/abs/2201.11903
+- Mollick, E. R., & Mollick, L. (2023). Assigning AI: Seven approaches for students, with prompts. *arXiv preprint.* https://doi.org/10.48550/arXiv.2306.10052
+- Mollick, E. R., & Mollick, L. (2024). Instructors as innovators: A future-focused approach to new AI learning opportunities, with prompts. *SSRN.* https://doi.org/10.2139/ssrn.4802463
+- Labadze, L., Grigolia, M., & Machaidze, L. (2023). Role of AI chatbots in education: Systematic literature review. *International Journal of Educational Technology in Higher Education, 20*, Article 56. https://doi.org/10.1186/s41239-023-00426-1
+- Sahoo, P., Singh, A. K., Saha, S., Jain, V., Mondal, S., & Chadha, A. (2024). A systematic survey of prompt engineering in large language models: Techniques and applications. *arXiv preprint arXiv:2402.07927.* https://arxiv.org/abs/2402.07927
+
+
+---
+
+*This resource reflects the author's perspective informed by current research and practice. It is intended as a discussion starter and a baseline for your own exploration, not a definitive guide. References will be added progressively. If something here challenges your thinking, good. That's the point.*

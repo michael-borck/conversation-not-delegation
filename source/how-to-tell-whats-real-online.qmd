@@ -1,0 +1,52 @@
+---
+title: "How to Tell What's Real Online"
+subtitle: "The Flag System for critical evaluation of digital information"
+format:
+  html:
+    embed-resources: true
+    toc-depth: 2
+---
+
+Here's a distilled framework for extracting wisdom and objective truth from the digital ocean, 
+structured around the speaker's core principles and "flag" system:
+
+### Core Principles for Extracting Wisdom
+1.  **scepticism is Essential:** Never blindly accept information, especially from AI or biased sources. Assume claims need verification until proven otherwise.
+2.  **Objectivity is the Goal:** Strive for facts supported by evidence, not opinions that feel good or align with existing beliefs.
+3.  **Verification is Mandatory:** Cross-check claims using multiple, credible sources. Look for primary sources and context.
+4.  **Bias Awareness is Crucial:** Actively recognise potential biases (financial, ideological, tribal) in sources and your own thinking.
+
+### The "Flag" System: Your Signal for Caution & Action
+
+| **Flag Colour** | **Triggering Scenario**                                                                 | **Meaning & Action Required**                                                                                                                               |
+| :------------- | :------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Yellow Flag** | ⚠️ **Proceed with Caution & Verification**                                                                 |                                                                                             |
+|                | Information from non-`.edu` sources (especially commercial or personal sites).          | **Action:** Cross-reference with `.edu`, `.gov`, or highly reputable `.org` sources.                                                                       |
+|                | Source defending actions of an industry they work for (financial vested interest).      | **Action:** Scrutinise claims for bias. Seek independent verification. Don't dismiss outright, but be highly sceptical.                                  |
+|                | Podcast host lacks expertise to critically challenge guest (especially "fringe" views). | **Action:** Find independent sources to verify the guest's claims. Don't take the host's uncritical engagement as endorsement.                           |
+|                | Content is clipped/reposted (not original source/platform/full context).                | **Action:** Seek the original source. Understand the context before judging the clipped content.                                                          |
+|                | Single, preliminary scientific study with no independent verification yet.               | **Action:** Treat as interesting but unproven. Don't act on it. Wait for replication and consensus.                                                      |
+|                | Someone presents their *opinion* as fact or tells you *how to feel* about information.   | **Action:** Separate opinion from fact. Seek objective data to form *your own* opinion.                                                                   |
+| **Red Flag**   | ❌ **High Risk of Misinformation/Deception - Demand Rigorous Proof**                                                                 |                                                                                             |
+|                | Content invokes "conspiracy" to explain away conflicting evidence.                      | **Action:** Massive red flag. Extraordinary claims require extraordinary, verifiable evidence. Be highly sceptical of data denial ("fake data," "cover-up"). |
+|                | Source claims "mainstream science/thinking is wrong *and* I alone have the answer."    | **Action:** Extremely high risk. True paradigm shifts (like relativity) were rigorously peer-reviewed and absorbed prior knowledge, not rejected it.       |
+|                | Source indicts an entire demographic (group of people) based on group identity.          | **Action:** Strong indicator of prejudice, ignorance, or oversimplification. Reject this generalization.                                                  |
+|                | Source indicts an entire industry as a monolith (e.g., "all of Big Pharma is evil").    | **Action:** Ignores nuance and diversity within large groups. Be highly sceptical. Look for specific, evidence-based critiques, not blanket condemnation. |
+|                | Claim of discovery defying known, well-established laws of physics.                    | **Action:** Requires extraordinary, repeatable evidence under controlled conditions. Highly improbable.                                                   |
+|                | Claim of invention that will destroy an entire industry if you don't buy it *now*.      | **Action:** Classic scam/scare tactic. Demand independent verification and transparent business practices.                                                |
+|                | Claim of personal contact with aliens (without extraordinary, verifiable proof).       | **Action:** Requires evidence far beyond eyewitness testimony or blurry video. Demand demonstrable, testable proof (e.g., public meeting with the being). |
+
+### Key Actions for Truth-Seeking
+*   **Prioritise Sources:** Trust `.edu`, `.gov`, and established scientific/medical institutions (.org) *more* than commercial sites, personal blogs, or social media posts.
+*   **Demand Links & Sources:** If using AI, insist it provides verifiable links to its sources. Always check them.
+*   **Seek the Original:** Always try to find the original source of information, especially if it's clipped or summarised.
+*   **Verify Independently:** Don't rely on one source, especially if it's biased or has a vested interest. Check multiple credible sources.
+*   **Separate Opinion from Fact:** Be wary of sources telling you *what to think* or *how to feel*. Focus on the underlying data first.
+*   **Understand Context:** Never judge information without its full context. Snippets are easily misleading.
+*   **Apply Scientific Method:** Understand that science progresses through consensus. Isolated, preliminary studies (Yellow Flag) need verification. Cherry-picking studies against consensus (Red Flag) is flawed.
+*   **Challenge Extraordinary Claims:** Claims that overturn vast bodies of established knowledge require extraordinary, repeatable evidence.
+*   **Reject Stereotyping:** Indicting entire groups of people or industries based on group identity is a major red flag indicating prejudice or oversimplification.
+*   **Be Aware of AI Limitations:** Remember LLMs assemble patterns from data; they don't "know" or "understand" truth. They can confidently state falsehoods.
+
+### In Essence
+Extracting wisdom in the digital age requires **active scepticism, rigorous verification, bias awareness, and a relentless demand for evidence**. The "flag" system helps quickly identify points needing extra scrutiny. Ultimately, objective truth isn't found passively; it's **actively sought, verified, and synthesised** from credible sources, while consciously filtering out noise, bias, and misinformation. The speaker's core message: **"Work really hard to base your opinions on objective truths that you obtain for yourself."**

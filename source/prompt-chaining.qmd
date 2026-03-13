@@ -1,0 +1,452 @@
+---
+title: "Prompt Chaining Techniques"
+---
+
+## Getting Started
+
+Before diving into specific techniques, consider reading **"Using AI to Help You Use AI"** if you're new to AI prompting. That meta-skill will help you discover what kinds of complex tasks you actually want to tackle with prompt chaining.
+
+---
+
+## Introduction
+
+Prompt chaining is the practice of using multiple, sequential prompts to break complex tasks into manageable steps. Rather than asking AI to "do everything at once," you guide it through a structured workflow, like having a conversation with a thinking partner.
+
+This approach is particularly valuable for:
+- Complex analysis or research
+- Multi-stage problem-solving
+- Iterative refinement and editing
+- Building arguments or evidence chains
+- Creating structured outputs from unstructured inputs
+
+> **Think of it like scaffolding:** Each prompt builds on previous output, creating a stronger final result.
+
+---
+
+## Why Prompt Chaining Works
+
+1. **Better reasoning:** Breaking tasks into steps produces more thoughtful outputs
+2. **Control:** You can review and adjust after each step
+3. **Flexibility:** You can change direction mid-process without starting over
+4. **Quality:** Multi-step outputs often have fewer errors and better structure
+5. **Learning:** You see the AI's reasoning process, not just the final answer
+
+---
+
+## Three Prompt Chaining Approaches
+
+### Approach 1: Guided Workflow (Full Chain in One Prompt)
+
+**When to use:** You want multi-step processing but prefer single-prompt efficiency.
+
+**How it works:** Provide all steps in a single prompt with explicit instructions.
+
+#### Example 1: For Teaching
+```
+You are a curriculum designer. I'm redesigning a unit on data literacy.
+
+Follow these steps:
+1. Summarise the key learning outcomes I should include
+2. Identify 3 common student misconceptions about data
+3. Suggest assessment methods that test understanding, not just knowledge
+4. Draft a one-paragraph unit description combining outcomes + assessments
+
+Here's my current unit outline:
+[Paste unit outline]
+
+Output each step clearly labelled.
+```
+
+#### Example 2: For Research
+```
+You are a research methodologist. I'm writing a methods section for a paper on student retention.
+
+Follow these steps:
+1. Identify the key variables I need to measure
+2. Suggest appropriate data collection methods
+3. Outline potential confounding variables
+4. Recommend how to control for them
+
+Here's my research question: [Paste research question]
+
+Output each step clearly labelled.
+```
+
+#### Example 3: For Professional Operations
+```
+You are a teaching support analyst. I'm preparing a compliance report on unit assessment practices.
+
+Follow these steps:
+1. Summarise the TEQSA assessment standards
+2. Analyse our current assessment methods against these standards
+3. Identify any gaps or risks
+4. Recommend specific improvements with implementation timeline
+
+Here's our current assessment summary:
+[Paste assessment data/documents]
+
+Output each step clearly labelled with clear action items.
+```
+
+---
+
+### Approach 2: Modular Prompt Chain (Explicit Sequential Steps)
+
+**When to use:** You want more control over each step; you may review/modify between steps.
+
+**How it works:** Submit one prompt, review output, then submit follow-up prompts based on results.
+
+#### Example: Teaching Design Workflow
+
+**Step 1 - Analysis:**
+```
+I'm redesigning a unit on critical thinking. Here's my current learning outcomes list:
+[Paste outcomes]
+
+Analyse these outcomes. Which are outcomes-level (knowledge/skills) and which are too vague to assess? Flag any missing outcomes.
+```
+
+*[Review AI output, discuss with colleagues]*
+
+**Step 2 - Design:**
+```
+Based on those outcomes, suggest three different assessment approaches. For each, explain:
+- What students will do
+- How you'll evaluate
+- Why this method tests critical thinking
+
+Use examples from business education where possible.
+```
+
+*[Review AI output, choose preferred approach]*
+
+**Step 3 - Development:**
+```
+We're going with the [chosen approach]. Now draft:
+- A brief rubric (4–5 criteria)
+- Student instructions (what they'll do)
+- Grading guidelines for staff
+
+Make it specific and actionable.
+```
+
+*[Review, iterate, refine]*
+
+**Step 4 - Communication:**
+```
+Turn the rubric and student instructions into a clear, encouraging one-page handout for students. Include:
+- What the assessment is
+- Why it matters
+- What success looks like
+- How to get help
+```
+
+---
+
+### Approach 3: Interactive Chain (Pause Between Steps)
+
+**When to use:** You want the AI to guide you through a process, pausing for your input.
+
+**How it works:** AI completes a step, then waits for your feedback before continuing.
+
+#### Example: Research Analysis Chain
+```
+You are a research analyst. We're analysing survey data about AI adoption in universities.
+I'll share data, and we'll work through analysis together.
+
+Here's how we'll proceed:
+1. I'll paste the survey summary
+2. You analyse and suggest top 3 themes
+3. I'll respond with feedback or approval
+4. You develop deeper analysis of approved themes
+5. We continue iteratively until complete
+
+Here's the data:
+[Paste survey summary]
+
+Start with step 2: analyse and suggest top 3 themes. Then wait for my response before continuing.
+```
+
+*[AI responds with themes]*
+
+**Your response:**
+> "Good. Theme 1 is spot-on. Theme 2 needs clarification. Can you break down the 'resistance factors' more specifically? For theme 3, I'd like to explore 'implementation barriers' more deeply."
+
+*[AI refines and waits]*
+
+---
+
+## Practical Templates
+
+### Template 1: Analysis Chain (For Data, Documents, or Research)
+```
+Context: [What data/documents are we analysing?]
+Goal: [What decision/insight do we need?]
+
+Step 1: Summarise [the data/document/situation]
+Step 2: Identify [key patterns, issues, or opportunities]
+Step 3: Assess [impact, risk, or significance]
+Step 4: Recommend [specific actions or next steps]
+
+Output each step clearly. After step 1, I'll review before we continue.
+```
+
+### Template 2: Design Chain (For Creating Teaching Materials, Assessments, Rubrics)
+```
+Context: [Unit, students, discipline, learning outcome]
+
+Step 1: Analyse [current approach or gaps]
+Step 2: Design [new assessment/material/approach]
+Step 3: Detail [rubric/guidelines/student instructions]
+Step 4: Adapt [for accessibility or different audience]
+
+Output each step. I'll review after each step before continuing.
+```
+
+### Template 3: Argument Chain (For Building Systematic Analysis)
+```
+Claim: [The main argument or recommendation]
+
+Step 1: Define [key concepts or terms]
+Step 2: Provide [evidence or examples]
+Step 3: Address [counterarguments or limitations]
+Step 4: Synthesise [into a clear position statement]
+
+Output each step with supporting detail. I'll provide feedback after each step.
+```
+
+---
+
+## Advanced Techniques
+
+### Technique 1: Iterative Refinement
+After completing a chain, ask for refinement without restarting:
+
+**Prompt:**
+> "That analysis is helpful. Now go deeper on [specific theme]. Add:
+> - Statistical evidence or examples
+> - Implications for [your context]
+> - One alternative perspective"
+
+### Technique 2: Format Shifting
+Chain different formats from the same underlying content:
+
+**Prompt Chain:**
+```
+Prompt 1: "Analyse this unit assessment data. [Full analysis request]"
+[Get detailed analysis]
+
+Prompt 2: "Now turn that analysis into:
+- A 2-minute faculty meeting talking points
+- A one-paragraph student update
+- A set of action items for the teaching team"
+```
+
+### Technique 3: Perspective Shifting
+Redo analysis from different viewpoints:
+
+**Prompt:**
+> "Now redo that analysis from the perspective of:
+> - A student taking this unit
+> - A teaching coordinator managing workload
+> - A faculty leader concerned about quality
+>
+> How does each perspective change the recommendations?"
+
+### Technique 4: Evidence Layering
+Build an argument by adding evidence incrementally:
+
+**Prompt Chain:**
+```
+Prompt 1: "What's the core argument for [topic]?"
+Prompt 2: "What evidence supports that? Find 3 types."
+Prompt 3: "What are the strongest counterarguments?"
+Prompt 4: "How would you respond to those counterarguments?"
+Prompt 5: "Synthesise this into a 200-word position statement."
+```
+
+---
+
+## Examples: From Start to Finish
+
+### Example 1: Teaching Assessment Design
+
+**Starting Point:** "I need to redesign assessment for my data literacy unit. The old exam doesn't test real-world skills."
+
+**Prompt 1 (Analysis):**
+```
+I teach data literacy to business students (2nd year, mixed abilities). Currently, we use a final exam. I want authentic assessment instead.
+
+What are the pros and cons of these alternatives?
+1. Portfolio of data projects
+2. Industry-style case study analysis
+3. Peer-reviewed data reports
+
+Which suits business education best?
+```
+
+*[AI provides comparison]*
+
+**Prompt 2 (Design):**
+```
+Let's go with the portfolio approach. Now design the portfolio requirements:
+- What 3–4 pieces should students include?
+- What authentic context/scenario for each?
+- How do you avoid it becoming "busy work"?
+
+Use examples from business analytics.
+```
+
+*[AI provides portfolio design]*
+
+**Prompt 3 (Rubric):**
+```
+Now draft a clear rubric for evaluating the portfolio. Include:
+- 4–5 key criteria
+- What excellence, competence, and developing look like for each
+- One line of guidance for markers
+
+Make it specific, not vague.
+```
+
+*[AI provides rubric]*
+
+**Prompt 4 (Student-Facing):**
+```
+Turn this rubric and portfolio requirements into a one-page student guide. Include:
+- What the portfolio is
+- Why this matters for their career
+- What makes a strong portfolio
+- How to get feedback during development
+
+Use encouraging, clear language.
+```
+
+*[Final output ready to share with students]*
+
+---
+
+### Example 2: Research Methods Development
+
+**Starting Point:** "I'm researching what helps students transition from secondary to university. How do I structure this study?"
+
+**Prompt 1 (Variables):**
+```
+I'm researching transition support for first-year students. Key outcomes I'm interested in:
+- Student sense of belonging
+- Academic confidence
+- Persistence (staying enrolled)
+
+What variables should I measure for each outcome? Include demographic variables too.
+```
+
+*[AI provides comprehensive variable list]*
+
+**Prompt 2 (Methods):**
+```
+Now suggest data collection approaches for measuring these variables. Consider:
+- Feasibility (cost, time, access)
+- Reliability
+- What captures authentic student experience
+
+Should I use surveys, interviews, both?
+```
+
+*[AI provides methods recommendation]*
+
+**Prompt 3 (Design Details):**
+```
+Let's use a mixed-methods approach. Design:
+- Survey questions (3–4 per outcome)
+- Interview questions (3–4 per outcome)
+- Timeline for data collection
+
+Make questions specific and answerable.
+```
+
+*[AI provides detailed instruments]*
+
+**Prompt 4 (Analysis Plan):**
+```
+Now outline how you'd analyse this data:
+- Quantitative analysis (what stats?)
+- Qualitative analysis (what themes to code?)
+- How you'd integrate findings
+
+Keep it feasible for a master's thesis.
+```
+
+*[AI provides analysis plan ready for methods section]*
+
+---
+
+## When NOT to Use Prompt Chaining
+
+- **Simple, one-step tasks:** A single clear prompt is more efficient
+- **When you need real-time feedback:** Chaining works within conversation, not across sessions
+- **For creative or exploratory work:** Sometimes one free-form prompt beats structured chaining
+- **When context is minimal:** Without good context, chains don't add much value
+
+---
+
+## Best Practices
+
+1. **Start clear:** Your first prompt sets the tone. Use CRAFT framework.
+2. **Review each step:** Don't blindly proceed. Check each output.
+3. **Provide feedback:** Tell AI what's working and what needs adjustment.
+4. **Build incrementally:** Small steps often beat big jumps.
+5. **Document the process:** Save your prompt chain. You'll use similar ones again.
+6. **Know when to stop:** Iteration has diminishing returns.
+7. **Stay in one conversation:** Keep related prompts in the same chat for context.
+
+---
+
+## Practice Exercise
+
+Pick one of these scenarios and design a prompt chain:
+
+**Option A (Teaching):**
+You're designing a new capstone project for your students. Design a 4-step chain to:
+1. Define learning outcomes
+2. Design the project brief
+3. Create an assessment rubric
+4. Develop student guidance
+
+**Option B (Research):**
+You're planning a small research project. Design a 4-step chain to:
+1. Clarify your research question
+2. Identify key variables
+3. Outline methods
+4. Plan analysis
+
+**Option C (Professional Operations):**
+You're preparing a faculty workshop on AI integration. Design a 4-step chain to:
+1. Identify key misconceptions
+2. Design workshop activities
+3. Create handouts
+4. Develop facilitator notes
+
+---
+
+## Key Takeaways
+
+- **Prompt chaining breaks complexity into steps:** Each step is simpler and produces better output
+- **You maintain control:** Review after each step; adjust direction if needed
+- **It works for analysis, design, and argument-building:** Not just for content generation
+- **Quality compounds:** Good step 1 output → better step 2 input → better final result
+- **It's a conversation:** The back-and-forth with AI is where the real value emerges
+
+> The power of prompt chaining isn't in the individual steps. It's in how each step builds on the previous one, refining your thinking as you go.
+
+---
+
+## Further Reading
+
+- **C.R.A.F.T. Prompting Framework** - Structure your individual prompts
+- **Seven Essential Prompt Techniques for Business Teaching** - Pedagogical approaches
+- **Managing Context with AI** - Context management in operational workflows
+
+
+---
+
+*This resource reflects the author's perspective informed by current research and practice. It is intended as a discussion starter and a baseline for your own exploration, not a definitive guide. References will be added progressively. If something here challenges your thinking, good, that's the point.*

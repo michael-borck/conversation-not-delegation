@@ -1,0 +1,50 @@
+---
+title: "Cognitive Prompting in Education"
+---
+
+# Cognitive Prompting in Education: A New Pedagogical Frontier
+
+Cognitive prompting represents a fundamental shift in how educators approach AI integration, moving beyond simple content generation to intentional instructional design that enhances cognitive development and deeper learning.
+
+### Core Philosophy & Vision
+
+**Key Takeaway:** AI prompting is not a technological shortcut but a **"new pedagogical frontier"** that enhances intentional teaching, learning design, and deeper cognitive engagement. The focus shifts from "What can AI produce?" to **"How can AI enhance cognitive development?"**, prioritising analysis, synthesis, reflection, and metacognition over mere content creation.
+
+**Analogy:** Cognitive prompting is like learning to conduct an orchestra. Rather than just asking musicians to play notes (basic AI queries), the conductor (educator) learns to shape the performance through intentional cues, timing, and emphasis (sophisticated prompts) that bring out the depth and emotion of the music (cognitive development). The conductor's artistry lies not in playing instruments, but in eliciting the most meaningful performance from each musician.
+
+### The "Prompting as Pedagogy" Model
+
+**Key Takeaway:** This framework aligns AI prompts with **Bloom's Taxonomy** and **Webb's Depth of Knowledge** to match cognitive rigor, transforming prompting from a technical trick into an **intentional instructional move** requiring learning theory, design principles, and content expertise. The model evolves based on faculty and student feedback, ensuring practical relevance.
+
+**Analogy:** If traditional AI use was like using a calculator for basic arithmetic, cognitive prompting is like using advanced mathematical modelling software. Both tools compute, but the latter requires deep understanding of mathematical principles to design models that solve complex problems and reveal insights beyond simple calculations.
+
+### Implementation & Educational Impact
+
+**Key Takeaway:** Effective implementation requires **capacity building** through ethical, meaningful integration and professional development. Educators need **structures, not just tools**, to use AI effectively. Prompting fluency emerges as a **core digital competency**, essentially teaching AI interaction as a "second language" for student success in an AI-driven world.
+
+**Analogy:** Teaching cognitive prompting is like teaching a foreign language. Students don't just learn vocabulary (basic commands); they learn grammar, cultural context, and conversational nuance (strategic prompting) that allows them to express complex ideas and navigate sophisticated interactions. Without this deeper understanding, they're limited to tourist-level communication.
+
+### Future Challenges & Human-Centric Balance
+
+**Key Takeaway:** As LLMs advance, prompting sophistication will require **ongoing professional development**. The critical challenge is maintaining **human connection and emotional intelligence** as central to education, avoiding the devaluation of the human element while leveraging AI's efficiency. Institutions need **reproducibility frameworks** and clear documentation for AI-driven educational practices.
+
+**Analogy:** The evolution of cognitive prompting is like the development of aviation. Early pilots (basic AI users) could handle simple flights in good weather. Modern pilots (advanced prompters) must understand complex systems, weather patterns, and emergency procedures (sophisticated prompting strategies) to navigate challenging conditions safely. However, no matter how advanced the autopilot becomes, passengers still need human pilots for judgement, empathy, and critical decision-making during turbulence.
+
+> **Wisdom in a Nutshell:** "Prompting isn't about getting better AI responses. It's about thinking more intentionally about our goals, methods, and how we design learning for students." This mindset shift transforms AI from a tool into a catalyst for pedagogical innovation.
+
+
+---
+
+## Further Reading
+
+- Bloom, B. S. (Ed.). (1956). *Taxonomy of educational objectives: The classification of educational goals. Handbook I: Cognitive domain.* David McKay Company.
+- Anderson, L. W., & Krathwohl, D. R. (Eds.). (2001). *A taxonomy for learning, teaching, and assessing: A revision of Bloom's taxonomy of educational objectives* (Complete ed.). Longman.
+- Webb, N. L. (2002). *Depth-of-knowledge levels for four content areas.* Wisconsin Center for Education Research.
+- Federiakin, D., Molerov, D., Zlatkin-Troitschanskaia, O., & Maur, A. (2024). Prompt engineering as a new 21st century skill. *Frontiers in Education, 9*, 1366434. https://doi.org/10.3389/feduc.2024.1366434
+- Knoth, N., Tolzin, A., Janson, A., & Leimeister, J. M. (2024). AI literacy and its implications for prompt engineering strategies. *Computers and Education: Artificial Intelligence, 6*, 100225. https://doi.org/10.1016/j.caeai.2024.100225
+- Mollick, E. R., & Mollick, L. (2023). Using AI to implement effective teaching strategies in classrooms: Five strategies, including prompts. *SSRN.* https://doi.org/10.2139/ssrn.4391243
+
+
+---
+
+*This resource reflects the author's perspective informed by current research and practice. It is intended as a discussion starter and a baseline for your own exploration, not a definitive guide. References will be added progressively. If something here challenges your thinking, good, that's the point.*

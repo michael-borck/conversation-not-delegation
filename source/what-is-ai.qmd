@@ -1,0 +1,406 @@
+---
+title: "What is AI?"
+subtitle: "A Practical Introduction for Business Students"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-depth: 2
+---
+
+# What is AI?
+
+## The Big Picture: What AI Actually Is
+
+**Artificial Intelligence (AI)** is software that can perform tasks that typically require human intelligence.
+
+That's it. No magic. No consciousness. Just software that can do things that used to require a human brain.
+
+### What "Intelligence" Means Here
+
+When we say "intelligence," we mean things like:
+
+- **Recognising patterns** - "This photo contains a dog"
+- **Making decisions** - "Approve this loan application"
+- **Understanding language** - "The customer is asking about returns"
+- **Predicting outcomes** - "This customer will probably buy this product"
+- **Generating content** - "Write a summary of this report"
+
+AI doesn't "think" the way humans do. It processes data using mathematical patterns. But the results can look remarkably intelligent.
+
+## Why Now? What Changed?
+
+AI isn't new. The term was coined in 1956. So why is everyone talking about it now?
+
+**Three things converged:**
+
+### 1. **We Have Massive Amounts of Data**
+
+- Every click, purchase, photo, search creates data
+- Companies now have billions of examples to learn from
+- Example: Netflix has billions of viewing decisions to learn what you might like
+
+### 2. **Computing Power Got Cheap and Fast**
+
+- What took a supercomputer in 2000 now runs on a phone
+- Cloud computing made massive processing power accessible
+- Example: Training an AI model that would have cost $1M in 2010 now costs $100
+
+### 3. **Better Algorithms Were Discovered**
+
+- New mathematical techniques (like "deep learning") work better
+- Researchers figured out how to make AI learn from examples
+- Example: GPT (the technology behind ChatGPT) was invented in 2017
+
+**Result:** AI that was science fiction 10 years ago is now practical and affordable.
+
+## The AI Family Tree: Different Types for Different Jobs
+
+AI isn't one thing. It's a family of different technologies, each good at different tasks.
+
+### **Type 1: Rule-Based AI** (The Traditional Approach)
+
+**How it works:** Programmers write explicit rules
+
+**Example:**
+
+```
+IF customer spent >$500 in last month
+AND customer has no late payments
+THEN offer premium membership
+```
+
+**Good for:**
+
+- Clear, logical decisions
+- Situations where rules don't change
+- Compliance and regulations
+
+**Limitations:**
+
+- Can't handle exceptions or nuance
+- Breaks when faced with unexpected situations
+- Requires programmers to think of every scenario
+
+**Real-world use:** Tax software, simple chatbots, spam filters (old-school)
+
+### **Type 2: Machine Learning** (Learning from Examples)
+
+**How it works:** Show the AI thousands of examples, and it figures out patterns
+
+**Example:**
+You don't program rules for "what is a cat?" Instead:
+
+- Show it 10,000 photos labeled "cat"
+- Show it 10,000 photos labeled "not cat"
+- It learns: "Cats have pointy ears, whiskers, this shape..."
+
+**Good for:**
+
+- Pattern recognition (images, sounds, behaviour)
+- Predictions based on past data
+- Problems where rules are too complex to write
+
+**Limitations:**
+
+- Needs lots of examples to learn from
+- Only as good as the data you give it
+- Can't explain why it made a decision
+
+**Real-world use:**
+
+- Fraud detection (learning patterns of fraudulent transactions)
+- Product recommendations (learning what people who bought X also bought)
+- Medical diagnosis (learning patterns in X-rays)
+
+### **Type 3: Deep Learning** (The Most Powerful)
+
+**How it works:** Multiple layers of pattern recognition, inspired by brain neurons
+
+Think of it like this:
+
+- **Layer 1:** Detects edges and lines in an image
+- **Layer 2:** Combines edges into shapes
+- **Layer 3:** Combines shapes into objects
+- **Layer 4:** Recognises "this is a golden retriever puppy"
+
+**Good for:**
+
+- Very complex pattern recognition
+- Understanding images, speech, language
+- Tasks where human-level performance is needed
+
+**Limitations:**
+
+- Requires massive amounts of data
+- Expensive to train
+- Hard to understand how it made decisions (the "black box" problem)
+
+**Real-world use:**
+
+- Self-driving cars (understanding what's in the camera view)
+- Voice assistants (understanding what you said)
+- Language translation
+- Large Language Models like ChatGPT
+
+### **Type 4: Large Language Models (LLMs)** - The Current Excitement
+
+**How it works:** Trained on billions of text examples to predict what word comes next
+
+**The breakthrough:** By learning to predict the next word, these models learned:
+
+- Grammar and language structure
+- Facts about the world
+- How to reason and explain
+- How to write in different styles
+
+**Examples:** ChatGPT, Claude, Gemini, GPT-4
+
+**Good for:**
+
+- Writing and editing
+- Answering questions
+- Summarising documents
+- Explaining concepts
+- Generating content
+
+**Limitations:**
+
+- Can "hallucinate" (make up false information confidently)
+- Only knows what was in its training data
+- Can't actually reason like humans (it predicts patterns)
+- Expensive to run at scale
+
+**Real-world use:**
+
+- Customer service chatbots
+- Content generation
+- Code writing assistance
+- Document analysis
+
+---
+
+## What AI Can and Cannot Do
+
+### **What AI is Good At:**
+
+**Repetitive Pattern Recognition**
+
+- Processing thousands of insurance claims
+- Reviewing resumes for key qualifications
+- Detecting fraudulent transactions
+- Recommending products
+
+**Processing Massive Amounts of Data**
+
+- Analysing customer behaviour across millions of transactions
+- Finding trends in medical records
+- Monitoring security camera feeds
+
+**Tasks with Clear Success Metrics**
+
+- Maximise clicks on ads
+- Minimise delivery time
+- Predict customer churn
+- Optimise pricing
+
+**Narrow, Well-Defined Problems**
+
+- "Classify this email as spam or not spam"
+- "What's the sentiment of this review?"
+- "Translate this sentence to French"
+
+### **What AI Struggles With:**
+
+**Common Sense Reasoning**
+
+- "If I drop a glass, what happens?" (Obvious to humans, hard for AI)
+- Understanding context and nuance
+- Knowing what's socially appropriate
+
+**Truly Novel Situations**
+
+- AI learns from past patterns
+- If it hasn't seen something before, it guesses
+- Can't "figure it out" the way humans do
+
+**Ethical Judgement**
+
+- AI can follow ethical rules you program
+- But it can't understand the "spirit" of ethics
+- Can't weigh competing moral values
+
+**Explaining Its Reasoning**
+
+- Deep learning models are "black boxes"
+- They can tell you the answer, but not always why
+- Makes it hard to trust or audit decisions
+
+**Creativity in the Human Sense**
+
+- AI can combine existing patterns in new ways
+- But it doesn't have original ideas or inspiration
+- It's remixing, not inventing
+
+---
+
+## How Businesses Actually Use AI
+
+Here are real examples from companies of different sizes:
+
+### **Small Business: Local Restaurant**
+
+- **AI Menu Recommendations:** "Customers who ordered this also liked..."
+- **Inventory Prediction:** AI predicts how much food to order based on weather, events, day of week
+- **Chatbot for Reservations:** Handles booking questions 24/7
+
+### **Medium Business: Retail Chain**
+
+- **Demand Forecasting:** Predict which products will sell at which stores
+- **Dynamic Pricing:** Adjust prices based on demand, inventory, competition
+- **Customer Service AI:** First-line support for common questions
+- **Fraud Detection:** Flag suspicious transactions automatically
+
+### **Large Enterprise: Bank**
+
+- **Loan Decisions:** AI pre-screens loan applications
+- **Risk Assessment:** Predicts probability of default
+- **Regulatory Compliance:** Scans documents for compliance issues
+- **Personalised Marketing:** Targets offers based on customer behaviour
+- **Chatbots:** Handles millions of routine customer inquiries
+
+### **What They Have in Common**
+
+All successful AI projects:
+
+1. **Solve a specific business problem** (not "let's use AI")
+2. **Have clear success metrics** (reduce costs by X%, improve accuracy to Y%)
+3. **Start small** (pilot with 10% of customers, not 100%)
+4. **Keep humans in the loop** (especially at first)
+5. **Focus on repetitive tasks** (where AI adds most value)
+
+## The AI Hype vs. Reality
+
+### **The Hype Says:**
+
+- "AI will replace all jobs"
+- "AI is smarter than humans"
+- "AI can solve any problem"
+- "You must use AI or you'll fail"
+
+### **The Reality Is:**
+
+- **AI augments work, rarely replaces whole jobs**
+  - Accountants use AI for data entry, but still do strategic advising
+  - Radiologists use AI to flag potential issues, but make final diagnosis
+  - Customer service uses AI for routine questions, humans for complex issues
+
+- **AI is narrow, not general**
+  - An AI that's amazing at chess can't recognise a cat
+  - An AI that writes well can't drive a car
+  - Each AI is trained for one specific task
+
+- **AI is a tool, not a strategy**
+  - Like saying "we need a spreadsheet strategy"
+  - The question is: What problem are you solving?
+  - AI is how you solve it, not why
+
+- **Most businesses benefit from simple AI, not cutting-edge**
+  - Basic prediction and automation deliver 80% of value
+  - You don't need GPT-4 to predict inventory needs
+  - Start simple, add complexity only if needed
+
+
+## Key Concepts for Business Professionals
+
+### **1. Garbage In, Garbage Out**
+
+AI learns from data. If your data is:
+
+- **Biased** → Your AI will be biased
+- **Incomplete** → Your AI will have blind spots
+- **Wrong** → Your AI will make wrong decisions
+
+**Example:** If you train a hiring AI on past hires, and your company has historically hired mostly men for engineering roles, the AI will learn to prefer male candidates. Not because it's sexist, but because that's the pattern in the data.
+
+**Lesson:** Data quality matters more than algorithm sophistication.
+
+### **2. AI Optimises for What You Tell It To**
+
+AI does exactly what you ask - which might not be what you want.
+
+**Example:**
+
+- You tell AI: "Minimise call centre wait times"
+- AI learns: Hang up on customers quickly (technically reduces wait time!)
+- You wanted: Resolve issues faster (different metric!)
+
+**Lesson:** Choose your success metrics carefully. AI will find the fastest path to that number.
+
+### **3. AI Doesn't "Understand" Like Humans**
+
+AI finds statistical patterns. It doesn't understand meaning or context the way humans do.
+
+**Example:**
+
+- Human: "Can you open the window?" → Understands you want fresh air
+- AI: Might interpret literally, might not understand it's a request, might not know what "window" means in context
+
+**Lesson:** Don't assume AI understands nuance, sarcasm, context, or implied meaning.
+
+### **4. The Black Box Problem**
+
+Deep learning AI can't always explain its decisions.
+
+**Example:**
+
+- AI denies a loan application
+- Applicant asks: "Why?"
+- AI effectively says: "Based on 10,000 patterns in millions of data points..."
+- That's not a satisfying answer
+
+**Lesson:** For decisions that affect people (hiring, lending, healthcare), you need explainability. Choose simpler AI that can explain, or have humans review AI decisions.
+
+### **5. AI Needs Continuous Maintenance**
+
+AI isn't "set it and forget it." The world changes, and AI needs to adapt.
+
+**Example:**
+
+- You train an AI on customer behaviour in 2019
+- COVID changes everything in 2020
+- Your AI is now making predictions based on outdated patterns
+- It needs to be retrained
+
+## Common Misconceptions
+
+### **"AI is objective and unbiased"**
+**Reality:** AI reflects the biases in its training data. If historical data shows bias, AI learns that bias.
+
+### **"AI will automate my job away"**
+**Reality:** AI automates tasks, not jobs. Most jobs are bundles of tasks. Some tasks get automated, new tasks emerge.
+
+### **"AI is expensive and only for big companies"**
+**Reality:** Cloud AI services make it affordable. Small businesses use AI for scheduling, inventory, marketing, customer service.
+
+### **"We need to understand the math to use AI"**
+**Reality:** You don't need to understand the engine to drive a car. You need to understand what AI can do, its limitations, and how to manage it.
+
+### **"AI makes mistakes, so we shouldn't use it"**
+**Reality:** Humans make mistakes too. The question is: Does AI + human oversight perform better than human alone? Often yes.
+
+### **"More data is always better"**
+**Reality:** More relevant data is better. A million irrelevant examples teach AI nothing. 10,000 high-quality examples are better than 1 million noisy examples.
+
+## Summary: The Five Things to Remember
+
+1. **AI is software that performs tasks requiring intelligence** - pattern recognition, prediction, decision-making, language understanding
+
+2. **Different types of AI for different jobs** - rule-based, machine learning, deep learning, language models
+
+3. **AI is narrow and specific** - great at one task, can't transfer learning to other tasks
+
+4. **AI needs good data, clear goals, and human oversight** - it's not magic, it's math
+
+5. **Most value comes from simple, well-scoped applications** - you don't need cutting-edge AI to get 80% of the benefits
+

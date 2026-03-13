@@ -1,0 +1,93 @@
+# Staying Critical {#sec-staying-critical}
+
+AI is confident even when it is wrong. It does not hedge. It does not say "I'm not sure about this part." It produces fluent, plausible, well-structured text regardless of whether the content is accurate, current, or applicable to your situation.
+
+This is not a flaw that will be fixed in the next model. It is a structural feature of how these tools work. They generate the most probable next token, not the most truthful one. Confidence and correctness are completely unrelated.
+
+Your critical eye is not optional. It is the only thing standing between useful output and confident nonsense.
+
+This chapter is about building that eye. Not as an abstract virtue, but as a set of concrete habits you can apply every time you sit down with an AI tool.
+
+
+## Transparency, Not Secrecy
+
+There is a simple test for whether you are using AI well or poorly: would you be comfortable explaining exactly how you used it?
+
+If the answer is yes, you are probably in good shape. You used it to explore ideas, to stress-test your reasoning, to draft something you then made your own. You can walk someone through your process and point to where your thinking shaped the result.
+
+If the answer is no, something has gone wrong. You are hiding the tool because you know the output is not really yours. You cannot explain the reasoning behind it. You could not defend it if challenged. This is the difference between using AI as a thinking partner and using it as a ghostwriter. One builds capability. The other borrows it, temporarily, and builds nothing.
+
+This applies everywhere. In professional work, the person who says "I used AI to generate three options, then selected and adapted this one because of X and Y" is demonstrating judgement. The person who submits AI output as their own and hopes nobody notices is demonstrating something else entirely.
+
+
+## Academic Integrity as a Specific Case
+
+If you are a student, the stakes are concrete and immediate. Universities have policies on AI use, and those policies are getting sharper. Submitting AI-generated work as your own is academic misconduct. Full stop.
+
+But the deeper problem is not the policy violation. It is what you lose. You are paying for an education. The point of an assignment is not the artifact you submit. It is the thinking you do to produce it. When you delegate that thinking to AI, you get a grade for work you did not do and a gap in capability you will carry forward. Nobody wins.
+
+The practical habit is straightforward. Use AI to help you think, not to think for you. Draft first, then use AI to challenge your draft. Ask it to find the holes in your argument, not to write the argument. When you submit, be able to explain every sentence as if someone asked you about it in conversation. If you cannot, you are not done yet.
+
+
+## The Flag System
+
+Not everything AI produces needs the same level of scrutiny. A brainstormed list of marketing angles does not carry the same risk as a legal citation or a medical dosage recommendation. Some outputs are low-risk. Some should make you stop and verify before acting on them.
+
+The flag system gives you a quick way to calibrate your response. It works for AI output, but it works just as well for anything you encounter online, in a report, or in a meeting. The underlying skill is the same: reading with appropriate scepticism.
+
+### Yellow Flags: Proceed with Caution
+
+These do not mean the information is wrong. They mean you need to verify before relying on it.
+
+| Signal | What to do |
+|---|---|
+| Source is unverified or not clearly credible | Cross-reference with established sources before using |
+| Based on a single preliminary study | Treat as interesting but unproven. Do not act on it alone |
+| Opinion presented as fact | Separate the claim from the evidence. Find the data yourself |
+| Content is clipped, summarised, or taken out of context | Find the original source. Context changes meaning |
+| Source has a financial vested interest in the claim | Scrutinise for bias. Seek independent verification |
+
+: Yellow Flags: signals that warrant verification before you rely on the information. {.striped}
+
+
+### Red Flags: High Risk
+
+These are patterns strongly associated with misinformation. When you see them, demand rigorous, independently verifiable evidence before taking the claim seriously.
+
+| Signal | Why it matters |
+|---|---|
+| Conspiracy framing: "they" are hiding the truth | Uses unfalsifiability as a feature. Any counter-evidence becomes part of the conspiracy |
+| "Mainstream science is wrong and I alone have the answer" | Real paradigm shifts are rigorously peer-reviewed. They build on existing knowledge, not reject it wholesale |
+| Indicting an entire group based on identity | Strong indicator of prejudice or oversimplification. Always a sign to look for specific, evidence-based claims instead |
+| Extraordinary claims with no credible evidence | The bigger the claim, the stronger the evidence needs to be. If it is missing, that tells you something |
+
+: Red Flags: patterns strongly associated with misinformation or deception. {.striped}
+
+The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
+
+
+## The Self-Check
+
+Before you act on anything AI has produced, especially anything that matters, run through these questions.
+
+| Question | Good sign | Warning sign |
+|---|---|---|
+| Can I explain this in my own words? | Yes, I understand the reasoning | I would struggle to explain it |
+| Does it fit my specific context? | Addresses my situation, constraints, audience | Generic enough to apply to anything |
+| Have I verified the key claims? | Checked against credible sources | Took the AI's word for it |
+| Could I defend this if challenged? | Confident in the substance | Would need to go back and check |
+
+: Self-check before acting on AI output. {.striped}
+
+If you have warning signs in more than one row, do not use the output yet. Go back. Verify. Iterate. The whole point of the conversation loop is that you can always go around again.
+
+This is not busywork. It takes thirty seconds. The cost of skipping it is much higher: acting on something that sounds right but is not, and only finding out when it matters.
+
+
+## Where This Goes Next
+
+Everything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, @sec-vet-your-ai introduces VET Your AI, a practical method for **V**erifying claims, **E**valuating reasoning, and **T**esting outputs against your own knowledge and context. It turns "stay critical" from a mindset into a repeatable process.
+
+The critical eye you bring to AI output is not a burden. It is the thing that makes the output worth using. Without it, you have fluent text and no idea whether it is right. With it, you have a genuine thinking advantage.
+
+Stay in the conversation. Stay critical. They are the same instruction.
