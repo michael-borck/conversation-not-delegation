@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Michael Borck">
-<meta name="dcterms.date" content="2026-03-14">
 
-<title>Conversation, Not Delegation</title>
+<title>9&nbsp; Prompt Chaining: Building on What You Started – Conversation, Not Delegation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,29 +23,30 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./chapters/what-is-ai.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-234501a227967ac462f24af7be37efa8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/seven-techniques.html" rel="next">
+<link href="../chapters/rtcf.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-234501a227967ac462f24af7be37efa8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -250,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About This Book</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/rtcf.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/prompt-chaining.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -265,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Conversation, Not Delegation</a> 
+      <a href="../">Conversation, Not Delegation</a> 
         <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
@@ -280,7 +279,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About This Book</span></a>
   </div>
 </li>
@@ -295,25 +294,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/does-ai-make-us-dumber.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/does-ai-make-us-dumber.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></span></a>
   </div>
 </li>
@@ -330,19 +329,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
   </div>
 </li>
@@ -359,31 +358,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/rtcf.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
@@ -400,13 +399,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
+  <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
@@ -423,19 +422,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendices/a-craft-framework.html" class="sidebar-item-text sidebar-link">
+  <a href="../appendices/a-craft-framework.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CRAFT Prompting Framework</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendices/b-quick-reference.html" class="sidebar-item-text sidebar-link">
+  <a href="../appendices/b-quick-reference.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Quick Reference Cards</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about-author.html" class="sidebar-item-text sidebar-link">
+  <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
 </li>
@@ -451,11 +450,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about-this-book" id="toc-about-this-book" class="nav-link active" data-scroll-target="#about-this-book">About This Book</a>
+  <li><a href="#why-it-works" id="toc-why-it-works" class="nav-link active" data-scroll-target="#why-it-works"><span class="header-section-number">9.1</span> Why It Works</a></li>
+  <li><a href="#sec-chaining-approaches" id="toc-sec-chaining-approaches" class="nav-link" data-scroll-target="#sec-chaining-approaches"><span class="header-section-number">9.2</span> Three Approaches</a>
   <ul class="collapse">
-  <li><a href="#who-this-book-is-for" id="toc-who-this-book-is-for" class="nav-link" data-scroll-target="#who-this-book-is-for">Who This Book Is For</a></li>
-  <li><a href="#a-note-on-the-sibling-book" id="toc-a-note-on-the-sibling-book" class="nav-link" data-scroll-target="#a-note-on-the-sibling-book">A Note on the Sibling Book</a></li>
+  <li><a href="#approach-1-guided-workflow" id="toc-approach-1-guided-workflow" class="nav-link" data-scroll-target="#approach-1-guided-workflow"><span class="header-section-number">9.2.1</span> Approach 1: Guided Workflow</a></li>
+  <li><a href="#approach-2-sequential-chain" id="toc-approach-2-sequential-chain" class="nav-link" data-scroll-target="#approach-2-sequential-chain"><span class="header-section-number">9.2.2</span> Approach 2: Sequential Chain</a></li>
+  <li><a href="#approach-3-interactive-chain" id="toc-approach-3-interactive-chain" class="nav-link" data-scroll-target="#approach-3-interactive-chain"><span class="header-section-number">9.2.3</span> Approach 3: Interactive Chain</a></li>
   </ul></li>
+  <li><a href="#practical-templates" id="toc-practical-templates" class="nav-link" data-scroll-target="#practical-templates"><span class="header-section-number">9.3</span> Practical Templates</a>
+  <ul class="collapse">
+  <li><a href="#analysis-chain" id="toc-analysis-chain" class="nav-link" data-scroll-target="#analysis-chain"><span class="header-section-number">9.3.1</span> Analysis Chain</a></li>
+  <li><a href="#argument-chain" id="toc-argument-chain" class="nav-link" data-scroll-target="#argument-chain"><span class="header-section-number">9.3.2</span> Argument Chain</a></li>
+  <li><a href="#planning-chain" id="toc-planning-chain" class="nav-link" data-scroll-target="#planning-chain"><span class="header-section-number">9.3.3</span> Planning Chain</a></li>
+  </ul></li>
+  <li><a href="#sec-chaining-advanced" id="toc-sec-chaining-advanced" class="nav-link" data-scroll-target="#sec-chaining-advanced"><span class="header-section-number">9.4</span> Advanced Techniques</a>
+  <ul class="collapse">
+  <li><a href="#iterative-refinement" id="toc-iterative-refinement" class="nav-link" data-scroll-target="#iterative-refinement"><span class="header-section-number">9.4.1</span> Iterative Refinement</a></li>
+  <li><a href="#format-shifting" id="toc-format-shifting" class="nav-link" data-scroll-target="#format-shifting"><span class="header-section-number">9.4.2</span> Format Shifting</a></li>
+  <li><a href="#perspective-shifting" id="toc-perspective-shifting" class="nav-link" data-scroll-target="#perspective-shifting"><span class="header-section-number">9.4.3</span> Perspective Shifting</a></li>
+  </ul></li>
+  <li><a href="#managing-long-conversations" id="toc-managing-long-conversations" class="nav-link" data-scroll-target="#managing-long-conversations"><span class="header-section-number">9.5</span> Managing Long Conversations</a></li>
+  <li><a href="#when-not-to-chain" id="toc-when-not-to-chain" class="nav-link" data-scroll-target="#when-not-to-chain"><span class="header-section-number">9.6</span> When Not to Chain</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">9.7</span> Best Practices</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">9.8</span> Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
@@ -463,29 +480,16 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/rtcf.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/prompt-chaining.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Conversation, Not Delegation</h1>
-<p class="subtitle lead">Your expertise + AI’s breadth = amplified thinking</p>
+<h1 class="title"><span id="sec-prompt-chaining" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Michael Borck </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 14, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -495,26 +499,233 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="about-this-book" class="level1 unnumbered">
-<h1 class="unnumbered">About This Book</h1>
-<p>This book is for anyone who uses AI as a thinking tool.</p>
-<p>Students, professionals, researchers, educators: if you interact with large language models as part of your work or study, this book will change how you approach those interactions.</p>
-<p>The core argument is simple. Most people use AI to get outputs. They delegate tasks, collect answers, and move on. That approach gets you something, but it costs you something too. It costs you the thinking that would have made you better at your work.</p>
-<p>There is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it.</p>
-<p>This book teaches you how.</p>
-<p>Part 1 gives you enough understanding of AI and large language models to use them well. Part 2 establishes the principles that make AI conversations productive rather than passive. Part 3 gives you practical tools and techniques you can use immediately. Part 4 shows it all working together across disciplines, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.</p>
-<section id="who-this-book-is-for" class="level2">
-<h2 class="anchored" data-anchor-id="who-this-book-is-for">Who This Book Is For</h2>
-<p>You do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.</p>
-<p>If you work with AI in any capacity, or plan to, this book will give you a framework for doing it well.</p>
+<p>A single prompt gets you a single response. Sometimes that is enough. Often it is not.</p>
+<p>When the work is complex, when it has stages, when the output of one step shapes the next, a single prompt forces the AI to guess the whole path at once. The result is usually broad, shallow, and not quite right. You end up rewriting most of it anyway.</p>
+<p>Prompt chaining is the alternative. You break the work into multiple, sequential prompts. Each one builds on the output of the last. Rather than asking AI to do everything at once, you guide it through a structured workflow, checking the results at every stage.</p>
+<blockquote class="blockquote">
+<p>The power of a chain is not in any single link. It is in the pauses between them, where your judgement shapes what comes next.</p>
+</blockquote>
+<p>If this sounds familiar, it should. Prompt chaining is the Iterate stage of the Conversation Loop (<a href="the-conversation-loop.html" class="quarto-xref"><span>Chapter 5</span></a>) made explicit. Each link in the chain is a moment where you review the output, apply your judgement, and steer what comes next. Without that review step, you are not chaining. You are just queuing up requests and hoping for the best.</p>
+<section id="why-it-works" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="why-it-works"><span class="header-section-number">9.1</span> Why It Works</h2>
+<p>Breaking a task into steps produces better results for the same reasons it works when humans do it.</p>
+<ol type="1">
+<li><strong>Better reasoning.</strong> Smaller steps mean more focused output at each stage.</li>
+<li><strong>Control.</strong> You review and adjust after each step, catching problems early.</li>
+<li><strong>Flexibility.</strong> You can change direction mid-process without starting over.</li>
+<li><strong>Quality.</strong> Each step’s output becomes the next step’s input. Good foundations compound.</li>
+<li><strong>Visibility.</strong> You see the AI’s reasoning process, not just the final product.</li>
+</ol>
 </section>
-<section id="a-note-on-the-sibling-book" class="level2">
-<h2 class="anchored" data-anchor-id="a-note-on-the-sibling-book">A Note on the Sibling Book</h2>
-<p>This book has a companion: <em>Converse Python, Partner AI</em>, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place.</p>
-<p>Both books are independently complete. You do not need one to benefit from the other.</p>
+<section id="sec-chaining-approaches" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="sec-chaining-approaches"><span class="header-section-number">9.2</span> Three Approaches</h2>
+<p>There is no single right way to chain prompts. The best approach depends on how much control you need and how predictable the process is. Here are three patterns, from least to most interactive.</p>
+<section id="approach-1-guided-workflow" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="approach-1-guided-workflow"><span class="header-section-number">9.2.1</span> Approach 1: Guided Workflow</h3>
+<p><strong>When to use it:</strong> You want multi-step processing but prefer to stay in a single prompt.</p>
+<p><strong>How it works:</strong> Provide all steps upfront with explicit instructions. The AI processes them sequentially and returns structured output.</p>
+<p><strong>Example: Research methodology review</strong></p>
+<pre><code>You are a research methodologist. I'm writing a methods section
+for a paper on employee retention in remote teams.
+
+Follow these steps:
+1. Identify the key variables I need to measure
+2. Suggest appropriate data collection methods
+3. Outline potential confounding variables
+4. Recommend how to control for them
+
+Here's my research question: [Paste research question]
+
+Output each step clearly labelled.</code></pre>
+<p>This works well when you have a clear process in mind and trust it enough to let the AI work through it in one pass. You still review the output. You just review it all at once rather than step by step.</p>
+</section>
+<section id="approach-2-sequential-chain" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="approach-2-sequential-chain"><span class="header-section-number">9.2.2</span> Approach 2: Sequential Chain</h3>
+<p><strong>When to use it:</strong> You want to review and adjust between steps. Each prompt depends on what the previous one produced.</p>
+<p><strong>How it works:</strong> Submit one prompt. Review the output. Then submit a follow-up that builds on it.</p>
+<p><strong>Example: Writing a proposal</strong></p>
+<p><strong>Step 1, Analysis:</strong></p>
+<pre><code>I'm writing a funding proposal for a community health programme.
+Here's a summary of the problem we're trying to address:
+[Paste summary]
+
+Analyse this. What are the strongest arguments for funding?
+What gaps in the evidence should I be aware of?</code></pre>
+<p><em>Review the output. Note what resonates and what is missing.</em></p>
+<p><strong>Step 2, Structure:</strong></p>
+<pre><code>Based on that analysis, outline a proposal structure.
+Include sections for: problem statement, proposed approach,
+expected outcomes, and evaluation plan.
+For each section, note the key point it should make.</code></pre>
+<p><em>Review. Adjust the structure before proceeding.</em></p>
+<p><strong>Step 3, Draft:</strong></p>
+<pre><code>Now draft the problem statement and proposed approach sections.
+Use a direct, evidence-informed tone. Keep it under 800 words total.
+Emphasise the points we identified in Step 1.</code></pre>
+<p><em>Review, revise, continue with remaining sections.</em></p>
+<p>The value here is in the pauses. Each review point is a chance to correct course, add something the AI missed, or redirect entirely.</p>
+</section>
+<section id="approach-3-interactive-chain" class="level3" data-number="9.2.3">
+<h3 data-number="9.2.3" class="anchored" data-anchor-id="approach-3-interactive-chain"><span class="header-section-number">9.2.3</span> Approach 3: Interactive Chain</h3>
+<p><strong>When to use it:</strong> You want the AI to guide you through a process, pausing for your input at each stage.</p>
+<p><strong>How it works:</strong> You set up the process, then the AI works through it collaboratively, waiting for your feedback before continuing.</p>
+<p><strong>Example: Analysing survey data</strong></p>
+<pre><code>You are a research analyst. We're analysing survey data about
+workplace satisfaction across three departments.
+
+Here's how we'll proceed:
+1. I'll share the survey summary
+2. You identify the top 3 themes
+3. I'll respond with feedback
+4. You develop deeper analysis of the themes I approve
+5. We continue iteratively until complete
+
+Here's the data:
+[Paste survey summary]
+
+Start with step 2. Then wait for my response before continuing.</code></pre>
+<p>The AI responds with themes. You reply:</p>
+<blockquote class="blockquote">
+<p>“Theme 1 is spot on. Theme 2 needs more nuance. Can you break down the ‘communication issues’ into specific types? For theme 3, I’d like to explore the relationship between workload and satisfaction more deeply.”</p>
+</blockquote>
+<p>The AI refines and waits. You stay in the driver’s seat.</p>
+<p>This approach works especially well for analysis and research tasks where you cannot know in advance what the interesting findings will be. The chain emerges from the work itself.</p>
+</section>
+</section>
+<section id="practical-templates" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="practical-templates"><span class="header-section-number">9.3</span> Practical Templates</h2>
+<p>These are starting points, not scripts. Adapt them to your work. The structure matters more than the specific wording.</p>
+<section id="analysis-chain" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="analysis-chain"><span class="header-section-number">9.3.1</span> Analysis Chain</h3>
+<p>For working through data, documents, or any situation that needs structured examination.</p>
+<pre><code>Context: [What are we analysing?]
+Goal: [What decision or insight do we need?]
+
+Step 1: Summarise [the data, document, or situation]
+Step 2: Identify [key patterns, issues, or opportunities]
+Step 3: Assess [impact, risk, or significance]
+Step 4: Recommend [specific actions or next steps]
+
+Output each step clearly. After step 1, I'll review before
+we continue.</code></pre>
+</section>
+<section id="argument-chain" class="level3" data-number="9.3.2">
+<h3 data-number="9.3.2" class="anchored" data-anchor-id="argument-chain"><span class="header-section-number">9.3.2</span> Argument Chain</h3>
+<p>For building a case, writing a position paper, or developing a systematic analysis.</p>
+<pre><code>Claim: [The main argument or recommendation]
+
+Step 1: Define [key concepts or terms]
+Step 2: Provide [evidence or examples]
+Step 3: Address [counterarguments or limitations]
+Step 4: Synthesise [into a clear position statement]
+
+Output each step with supporting detail. I'll provide feedback
+after each step.</code></pre>
+</section>
+<section id="planning-chain" class="level3" data-number="9.3.3">
+<h3 data-number="9.3.3" class="anchored" data-anchor-id="planning-chain"><span class="header-section-number">9.3.3</span> Planning Chain</h3>
+<p>For scoping a project, structuring a strategy, or working through any multi-stage plan.</p>
+<pre><code>Objective: [What are we trying to achieve?]
+Constraints: [Timeline, budget, resources, scope limits]
+
+Step 1: Define [the key deliverables or milestones]
+Step 2: Identify [dependencies, risks, and assumptions]
+Step 3: Sequence [the work into phases or stages]
+Step 4: Detail [the first phase with specific action items]
+
+Output each step. I'll review and adjust before we continue.</code></pre>
+</section>
+</section>
+<section id="sec-chaining-advanced" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="sec-chaining-advanced"><span class="header-section-number">9.4</span> Advanced Techniques</h2>
+<p>Once you are comfortable with basic chaining, these techniques let you extract more from the same conversation.</p>
+<section id="iterative-refinement" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="iterative-refinement"><span class="header-section-number">9.4.1</span> Iterative Refinement</h3>
+<p>After completing a chain, push deeper without starting over:</p>
+<blockquote class="blockquote">
+<p>“That analysis is helpful. Now go deeper on [specific theme]. Add statistical evidence or examples, implications for [your context], and one alternative perspective.”</p>
+</blockquote>
+<p>This is the Conversation Loop in miniature. You have already iterated once. Now you iterate again, on a narrower target.</p>
+</section>
+<section id="format-shifting" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="format-shifting"><span class="header-section-number">9.4.2</span> Format Shifting</h3>
+<p>Take the same underlying content and chain it into different formats:</p>
+<pre><code>Prompt 1: "Analyse this project data." [Full analysis request]
+[Get detailed analysis]
+
+Prompt 2: "Now turn that analysis into:
+- A 2-minute briefing for the executive team
+- A one-paragraph update for stakeholders
+- A set of action items for the project team"</code></pre>
+<p>Same thinking, three audiences. The analysis does the heavy lifting. The format shift makes it useful.</p>
+</section>
+<section id="perspective-shifting" class="level3" data-number="9.4.3">
+<h3 data-number="9.4.3" class="anchored" data-anchor-id="perspective-shifting"><span class="header-section-number">9.4.3</span> Perspective Shifting</h3>
+<p>Rerun analysis from different viewpoints:</p>
+<blockquote class="blockquote">
+<p>“Now redo that analysis from the perspective of: a new customer encountering this product for the first time, a support team handling complaints, and a competitor evaluating the market. How does each perspective change the recommendations?”</p>
+</blockquote>
+<p>This is one of the most underused techniques. It forces the AI to stress-test its own output, and it often surfaces blind spots you would not have found otherwise.</p>
+</section>
+</section>
+<section id="managing-long-conversations" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="managing-long-conversations"><span class="header-section-number">9.5</span> Managing Long Conversations</h2>
+<p>There is a practical reality that prompt chaining runs into: AI has a finite memory.</p>
+<p>Every AI conversation has a context window, a limit on how much text the model can hold in its head at once. Early in a conversation, the AI has your full prompt and its full response. Twenty exchanges later, the earliest parts of the conversation are fading. The model does not forget all at once. It loses precision gradually, like a person trying to remember the first thing said in a two-hour meeting.</p>
+<p>This matters for chaining because long chains are long conversations. If your chain runs to fifteen or twenty exchanges, the AI may lose track of decisions you made in step two while it works on step twelve. The output starts to drift, contradict earlier work, or quietly drop constraints you set at the beginning.</p>
+<p>A few practical habits keep this under control:</p>
+<p><strong>Start new conversations for new topics.</strong> If your chain is done and you are moving to a different task, open a fresh session. Do not try to do everything in one conversation.</p>
+<p><strong>One task per prompt.</strong> When you ask the AI to do three things at once, it divides its attention across all three. The result is three shallow responses instead of one deep one. Break it up.</p>
+<p><strong>Summarise and hand off.</strong> When a conversation is getting long (roughly fifty exchanges or more), ask the AI to summarise everything you have accomplished and decided so far. Copy that summary into a new conversation and continue from there. You reset the AI’s attention without losing the thread.</p>
+<p><strong>Make context explicit every time.</strong> Do not assume the AI remembers what you said earlier. If a constraint matters for this step, state it again. “Remember, we are working within a six-week timeline and a team of four” takes five seconds to type and prevents the AI from drifting back to generic assumptions.</p>
+<p><strong>Watch for signs of drift.</strong> If the AI starts contradicting something it said earlier, or produces output that ignores a constraint you set, the context window is likely the problem. Summarise, hand off, and continue in a fresh session.</p>
+<p>These are not advanced techniques. They are housekeeping. But they make the difference between a chain that holds together over ten steps and one that quietly falls apart at step six.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="The golden rule of chaining">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The golden rule of chaining
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Review each step before moving to the next. Without that review, you are not chaining. You are queuing up requests and hoping for the best.</p>
+</div>
+</div>
+</section>
+<section id="when-not-to-chain" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="when-not-to-chain"><span class="header-section-number">9.6</span> When Not to Chain</h2>
+<p>Not every task needs a chain. Skip it when:</p>
+<ul>
+<li><strong>The task is simple.</strong> A single clear prompt is more efficient.</li>
+<li><strong>You are exploring, not building.</strong> Free-form conversation sometimes beats structured chaining.</li>
+<li><strong>Context is thin.</strong> Without enough input, chains do not add much value. Start with a better first prompt instead. RTCF (<a href="rtcf.html" class="quarto-xref"><span>Chapter 8</span></a>) helps here.</li>
+</ul>
+</section>
+<section id="best-practices" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="best-practices"><span class="header-section-number">9.7</span> Best Practices</h2>
+<ol type="1">
+<li><strong>Start clear.</strong> Your first prompt sets the direction. Use RTCF framework to structure it.</li>
+<li><strong>Review each step.</strong> Do not blindly proceed. Check each output before moving on.</li>
+<li><strong>Provide feedback.</strong> Tell the AI what is working and what needs adjustment.</li>
+<li><strong>Build incrementally.</strong> Small steps beat big jumps.</li>
+<li><strong>Save your chains.</strong> A good chain is reusable. Document the ones that work.</li>
+<li><strong>Know when to stop.</strong> Iteration has diminishing returns. Three rounds of refinement usually beats seven.</li>
+</ol>
+</section>
+<section id="key-takeaways" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">9.8</span> Key Takeaways</h2>
+<ul>
+<li>Prompt chaining breaks complexity into steps. Each step is simpler and produces better output.</li>
+<li>You maintain control. Review after each step. Adjust direction when needed.</li>
+<li>It works for analysis, writing, planning, and argument-building. Not just content generation.</li>
+<li>Quality compounds. Good output at step 1 becomes better input at step 2.</li>
+<li>It is a conversation. The back-and-forth is where value gets made. Each link in the chain is a chance to think, not just a chance to prompt.</li>
+</ul>
+<p>The power of prompt chaining is not in any individual step. It is in how each step builds on the previous one, refining your thinking as you go. That is what makes the output yours, not the AI’s.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -933,10 +1144,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../chapters/rtcf.html" class="pagination-link" aria-label="RTCF: Starting Conversations Well">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapters/what-is-ai.html" class="pagination-link" aria-label="What Is AI?">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/seven-techniques.html" class="pagination-link" aria-label="Eight Techniques for Deeper Thinking">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
