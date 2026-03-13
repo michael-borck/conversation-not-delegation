@@ -84,7 +84,7 @@ There is a common assumption that better AI models produce better results. For l
 
 But most of the work this book describes is not lookup work. It is thinking work: analysing a situation, weighing options, constructing an argument, identifying what you have missed. For thinking work, you do not need the AI to be right. You need it to be generative enough to be worth arguing with.
 
-A smaller model that surfaces three plausible but imperfect framings of a problem, challenged and refined through genuine conversation, may produce better thinking than a frontier model that delivers one polished answer you accept without question.
+A smaller model that surfaces three plausible but imperfect framings of a problem, challenged and refined through genuine conversation, may produce better thinking than a frontier model (the most advanced available) that delivers one polished answer you accept without question.
 
 This is not a hypothetical. It is what the conversation loop is designed to do. When you iterate, push back, and refine, you are compensating for whatever the model gets wrong. The friction of correcting an imperfect response is not a cost. It is the mechanism through which your own thinking sharpens. A "worse" model that forces you to think harder may serve you better than a "better" model that makes acceptance too easy.
 
@@ -108,11 +108,11 @@ This means you already know more about effective AI interaction than you think.
 
 | Human Domain | Human Strategy | AI Equivalent |
 |---|---|---|
-| Exam technique | "Show your working" | Chain-of-thought prompting |
-| Exam technique | "Check your answers" | Self-verification prompts |
-| Management | Written brief with clear objectives | System prompts with role and goal |
+| Exam technique | "Show your working" | Chain-of-thought prompting (asking AI to reason step by step) |
+| Exam technique | "Check your answers" | Self-verification prompts (asking AI to review its own output) |
+| Management | Written brief with clear objectives | System prompts (initial instructions that set the AI's role and goal) |
 | Management | Breaking projects into milestones | Task decomposition / prompt chaining |
-| Teaching | Worked examples | Few-shot prompting |
+| Teaching | Worked examples | Few-shot prompting (giving the AI examples of what you want) |
 | Teaching | Rubrics and marking criteria | Evaluation criteria in prompts |
 
 : Cognitive strategies transfer from human domains to AI interaction because the model learned from the output of those same strategies. {.striped}

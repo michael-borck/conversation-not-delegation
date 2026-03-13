@@ -28,7 +28,7 @@ LLMs were trained on enormous amounts of text: books, articles, websites, academ
 
 Three things make these models "large."
 
-First, the training data. Hundreds of billions of words, equivalent to millions of books. Second, the parameters. These are the patterns the model learned, numbered in the hundreds of billions. Think of each parameter as a tiny piece of knowledge: "in this kind of context, this word is more likely than that one." Third, the computing power. Training a frontier model costs millions of dollars and takes months of continuous processing on thousands of specialised chips.
+First, the training data. Hundreds of billions of words, equivalent to millions of books. Second, the parameters. These are the patterns the model learned, numbered in the hundreds of billions. Think of each parameter as a tiny piece of knowledge: "in this kind of context, this word is more likely than that one." Third, the computing power. Training a frontier model — the most advanced, state-of-the-art version — costs millions of dollars and takes months of continuous processing on thousands of specialised chips.
 
 Scale matters because bigger models learn more subtle patterns. They handle more complex tasks. They generalise better to situations they were not explicitly trained on. This is the key insight: LLMs were trained on prediction, but they generalised to something that looks remarkably like reasoning.
 
@@ -36,7 +36,7 @@ Scale matters because bigger models learn more subtle patterns. They handle more
 
 There is a detail about how LLMs process text that is worth understanding, because it has practical consequences for how you talk to them.
 
-When you read a sentence, you take in the whole thing. You can glance back at the beginning while reading the end. LLMs cannot do this. They process text in one direction, left to right, one token at a time. Each word can only "see" the words that came before it, never the words that come after. This is called unidirectional attention, and it is a fundamental architectural choice that shapes everything the model can and cannot do.
+When you read a sentence, you take in the whole thing. You can glance back at the beginning while reading the end. LLMs cannot do this. They process text in one direction, left to right, one token (roughly one word or word-piece) at a time. Each word can only "see" the words that came before it, never the words that come after. This is called unidirectional attention, and it is a fundamental architectural choice that shapes everything the model can and cannot do.
 
 This explains a surprising finding from recent research. When you repeat your question in a prompt — adding something like "Read the question again:" followed by the question a second time — the model reasons more accurately on complex tasks. The reason is structural. On the second pass, tokens in the repeated question can attend to everything that appeared between the two copies, including context and framing they could not see the first time around. The model effectively gets a second look at the problem, compensating for the limitation of only reading forward.
 
