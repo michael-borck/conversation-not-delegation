@@ -38,6 +38,8 @@ The key is to answer honestly, especially when a question catches you off guard.
 
 After the questioning round, try this follow-up: "Based on my answers, what is the single biggest gap in my thinking?"
 
+Reverse Prompting works best at the start of something, when the shape of the problem is still forming. But once you have a clearer picture and need to choose a direction, you need a different kind of thinking.
+
 
 ## 2. Pros and Cons
 
@@ -70,6 +72,8 @@ the strongest argument against your recommendation.
 
 Do not accept the AI's recommendation uncritically. The real value is in the structured comparison. Challenge at least one of the listed pros. Ask yourself what disadvantage the AI missed. Argue for a different option than the one AI recommended and see if your reasoning holds up.
 
+Pros and Cons gives you a snapshot of the decision landscape. But some decisions are not about choosing between options. They are about understanding a process with many moving parts, where the sequence matters and skipping a step has consequences.
+
 
 ## 3. Stepwise Chain of Thought
 
@@ -97,6 +101,8 @@ Begin with Step 1.
 :::
 
 At any step, you can ask the AI to go deeper: "What if the client pushes back at this stage?" or "What happens if I skip this step?" These side conversations are where the real learning happens. You are not just memorizing a sequence. You are understanding why each step matters.
+
+The first three techniques help you think through problems, weigh options, and understand processes. But some of the hardest challenges are not analytical. They are interpersonal. You know what you want to say, but you are not sure how the other person will respond.
 
 
 ## 4. Role Play
@@ -129,6 +135,8 @@ Let's begin. I'll speak first.
 :::
 
 The feedback at the end is critical. It turns the exercise from mere practice into a structured debrief. Pay special attention to moments where the AI pushed back and you felt stuck. Those are the moments to rehearse differently.
+
+Role Play prepares you for a specific conversation. But sometimes the challenge is not a person. It is a decision where you already have a preference and you suspect you have not fully examined the other side. That calls for a different kind of pressure.
 
 
 ## 5. Debating
@@ -166,6 +174,8 @@ Watch for arguments that surprise you. If the Skeptic raises a point you had not
 
 A useful follow-up: "Now argue for a third option that synthesizes the best of both positions."
 
+The previous five techniques help you explore, decide, learn processes, practise interactions, and stress-test positions. But sometimes the question is simpler and more personal: do I actually understand this topic as well as I think I do?
+
 
 ## 6. Formative Self-Testing
 
@@ -195,6 +205,8 @@ Start with Question 1.
 
 Be honest with your answers. Do not look things up first. The point is to find out what you actually know versus what you think you know. Pay close attention to the "partially correct" answers. That is where the most useful learning lives, in the gap between what you said and what you missed.
 
+Self-testing reveals what you know and what you do not. But even when you understand a topic well, you are still seeing it from one vantage point — your own expertise, your own role, your own assumptions. Some problems need more than one perspective.
+
 
 ## 7. The Expert Panel
 
@@ -223,6 +235,8 @@ should I investigate further?
 The synthesis at the end matters most. Look for where the experts disagree. That tension usually points to the hardest part of your decision, the part that requires your judgement, not more AI output.
 
 For a deeper conversation, pick one panelist and say: "I want to push back on [Expert Name]'s point about [specific claim]. Have them defend their position."
+
+The Expert Panel broadens your perspective. But there is a particular kind of blind spot that multiple perspectives alone will not catch: the risks hiding inside your own confidence. When you have a plan you feel good about, you need someone to tell you what could go wrong.
 
 
 ## 8. Risk Deep-Dive

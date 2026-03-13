@@ -51,6 +51,8 @@ These do not mean the information is wrong. They mean you need to verify before 
 
 : Yellow Flags: signals that warrant verification before you rely on the information. {.striped}
 
+The common thread across all of these is missing provenance. The information might be perfectly accurate, but something about how it reached you — an absent source, a single study, a vested interest — means you cannot yet trust it enough to act on it. Yellow flags do not mean stop. They mean check before you proceed.
+
 
 ### Red Flags: High Risk
 
@@ -64,6 +66,8 @@ These are patterns strongly associated with misinformation. When you see them, d
 | Extraordinary claims with no credible evidence | The bigger the claim, the stronger the evidence needs to be. If it is missing, that tells you something |
 
 : Red Flags: patterns strongly associated with misinformation or deception. {.striped}
+
+Red flags are qualitatively different from yellow flags. Yellow flags say the evidence is incomplete. Red flags say the reasoning itself is compromised. Conspiracy framing, lone-genius claims, group indictments, and extraordinary claims without evidence all share a common structure: they demand you accept a conclusion while actively discouraging you from checking it. That inversion — trust more, verify less — is the hallmark of misinformation.
 
 The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
 
@@ -137,6 +141,8 @@ Before you act on anything AI has produced, especially anything that matters, ru
 | Could I defend this if challenged? | Confident in the substance | Would need to go back and check |
 
 : Self-check before acting on AI output. {.striped}
+
+These four questions test different things. The first checks comprehension: do you understand what the AI produced, or are you just passing it along? The second checks relevance: is this tailored to your situation, or could it have been generated for anyone? The third checks accuracy: have you verified the substance, or are you taking the AI's confidence at face value? The fourth checks ownership: could you stand behind this work, or would you need the AI to defend it for you?
 
 If you have warning signs in more than one row, do not use the output yet. Go back. Verify. Iterate. The whole point of the conversation loop is that you can always go around again.
 
