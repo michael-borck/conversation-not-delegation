@@ -27,6 +27,12 @@ This matters more than it sounds. The quality of what comes out of the loop is b
 
 You do not need a polished brief. You need a real starting point: a question worth exploring.
 
+Watch for a common trap: arriving with your attempted solution instead of your actual problem. Someone asks the AI "how do I make this spreadsheet sort by colour?" when their real question is "how do I show my team which tasks are overdue?" The AI will helpfully solve the spreadsheet problem. But the spreadsheet was never the point. A chart, a dashboard, or a simple filtered list might have been a better answer to the question they never asked.
+
+This happens constantly. You get stuck, you start down a path, and by the time you reach for AI you have already framed the problem as your solution. The AI cannot know you are asking the wrong question. It will answer the one you gave it.
+
+The fix is simple. Before you prompt, ask yourself: am I describing my problem, or am I describing my attempted fix? If it is the fix, step back one level. State the problem. Let the conversation find the solution.
+
 
 ## Ideate: Explore Possibilities
 
