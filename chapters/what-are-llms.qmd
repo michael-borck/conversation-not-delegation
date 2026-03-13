@@ -32,6 +32,19 @@ First, the training data. Hundreds of billions of words, equivalent to millions 
 
 Scale matters because bigger models learn more subtle patterns. They handle more complex tasks. They generalise better to situations they were not explicitly trained on. This is the key insight: LLMs were trained on prediction, but they generalised to something that looks remarkably like reasoning.
 
+## One Direction at a Time
+
+There is a detail about how LLMs process text that is worth understanding, because it has practical consequences for how you talk to them.
+
+When you read a sentence, you take in the whole thing. You can glance back at the beginning while reading the end. LLMs cannot do this. They process text in one direction, left to right, one token at a time. Each word can only "see" the words that came before it, never the words that come after. This is called unidirectional attention, and it is a fundamental architectural choice that shapes everything the model can and cannot do.
+
+This explains a surprising finding from recent research. When you repeat your question in a prompt — adding something like "Read the question again:" followed by the question a second time — the model reasons more accurately on complex tasks. The reason is structural. On the second pass, tokens in the repeated question can attend to everything that appeared between the two copies, including context and framing they could not see the first time around. The model effectively gets a second look at the problem, compensating for the limitation of only reading forward.
+
+The practical takeaway is small but revealing. For reasoning-heavy tasks — arithmetic, logic, multi-step problems — repeating the key question once can improve results. More than twice degrades performance, as the model starts echoing rather than reasoning. And an explicit instruction like "Read the question again:" works better than simply pasting the question twice.
+
+This is not a trick to memorise. It is an illustration of something deeper: the way you structure a prompt is not just about clarity for you. It shapes what the model can literally attend to. Understanding the architecture, even at this level, helps you understand why some prompts work better than others.
+
+
 ## What They Can Do
 
 LLMs are strong at tasks that involve language and pattern recognition.
