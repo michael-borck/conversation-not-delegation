@@ -1,0 +1,109 @@
+# Further Reading {#sec-further-reading .appendix}
+
+This book is practitioner-focused, but its ideas are grounded in research. The references below point to the studies, papers, and books behind the key claims. They are organised by chapter so you can follow up on whatever interests you most.
+
+This is not a comprehensive literature review. It is a trail of breadcrumbs for curious readers.
+
+
+## Part 1: Understanding the Landscape
+
+### What Are Large Language Models?
+
+**How LLMs work (prediction as the core mechanism):**
+
+- Vaswani, A. et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*. The foundational paper introducing the transformer architecture that underpins all modern LLMs.
+
+**RE2 (Re-Reading) prompting and unidirectional attention:**
+
+- Xu, X. et al. (2024). "RE2: Region-Enhanced Re-Reading Improves Large Language Models." *EMNLP 2024*. Demonstrates that repeating a question in the prompt creates pseudo-bidirectional attention, improving reasoning accuracy. Twice is the sweet spot; more repetitions degrade performance.
+
+**Hallucination:**
+
+- Ji, Z. et al. (2023). "Survey of Hallucination in Natural Language Generation." *ACM Computing Surveys*. A comprehensive overview of why LLMs generate plausible but false content, and the structural reasons this problem persists across model generations.
+
+
+### Does AI Make Us Dumber?
+
+**Cognitive offloading:**
+
+- Risko, E.F. and Gilbert, S.J. (2016). "Cognitive Offloading." *Trends in Cognitive Sciences*. The foundational paper on how humans use external tools to reduce cognitive demand, and when this helps versus hinders learning.
+
+**The generation effect (producing information improves retention):**
+
+- Slamecka, N.J. and Graf, P. (1978). "The Generation Effect: Delineation of a Phenomenon." *Journal of Experimental Psychology: Human Learning and Memory*. Demonstrates that actively generating information leads to better memory than passively receiving it — the research basis for why doing your own thinking first matters.
+
+**AI and cognitive decline concerns:**
+
+- Bastani, H. et al. (2024). "Generative AI Can Harm Learning." *Working paper*. Evidence that students using AI without guardrails perform worse on subsequent unaided tasks, supporting the book's argument for conversation over delegation.
+
+
+## Part 2: Principles
+
+### The Conversation Loop
+
+**Cognitive strategy transfer:**
+
+- Wei, J. et al. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models." *NeurIPS 2022*. The paper that formalised "show your working" as a prompting strategy, demonstrating that step-by-step reasoning prompts dramatically improve performance on complex tasks.
+
+- Wang, X. et al. (2023). "Self-Consistency Improves Chain of Thought Reasoning in Language Models." *ICLR 2023*. Shows that sampling multiple reasoning paths and selecting the most consistent answer improves accuracy — the AI equivalent of "check your answers."
+
+**Few-shot prompting (worked examples):**
+
+- Brown, T. et al. (2020). "Language Models are Few-Shot Learners." *NeurIPS 2020*. The GPT-3 paper that demonstrated giving a model a few examples in the prompt dramatically improves task performance — the research behind the "worked examples → few-shot prompting" transfer.
+
+
+### Staying Critical
+
+**The Gell-Mann Amnesia Effect:**
+
+- Crichton, M. (2002). "Why Speculate?" Lecture. The original articulation of the phenomenon, attributed to physicist Murray Gell-Mann. Not a formal study, but a widely recognised observation about how we selectively apply scepticism.
+
+**Sycophancy in LLMs:**
+
+- Sharma, M. et al. (2023). "Towards Understanding Sycophancy in Language Models." *arXiv preprint*. Documents how LLMs systematically tailor responses to match user beliefs, even when those beliefs are incorrect. Demonstrates that sycophancy is a persistent feature of RLHF-trained models, not a bug that will be fixed.
+
+- Perez, E. et al. (2023). "Discovering Language Model Behaviors with Model-Written Evaluations." *ACL 2023*. Includes evidence of sycophantic behaviour across multiple model families and scales.
+
+**Bias in training data:**
+
+- Bender, E.M. et al. (2021). "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" *FAccT 2021*. A widely discussed paper on how training data biases propagate through LLMs, relevant to the book's warnings about not taking AI output at face value.
+
+
+## Part 3: The Methodology
+
+### RTCF and Prompt Engineering
+
+**Role prompting:**
+
+- Zheng, H. et al. (2023). "Is ChatGPT a Good NLG Evaluator?" *arXiv preprint*. Among other findings, demonstrates that assigning specific roles to LLMs measurably changes output quality and focus — the research basis for the "R" in RTCF.
+
+**One-shot vs iterative prompting:**
+
+- Madaan, A. et al. (2023). "Self-Refine: Iterative Refinement with Self-Feedback." *NeurIPS 2023*. Shows that iterative refinement consistently outperforms single-pass generation, supporting the book's argument that RTCF is a starting point, not a destination.
+
+### Prompt Chaining
+
+**Task decomposition:**
+
+- Zhou, D. et al. (2023). "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models." *ICLR 2023*. Demonstrates that breaking complex problems into sequential subproblems and solving them in order significantly improves accuracy — the formal basis for prompt chaining.
+
+### Eight Techniques for Deeper Thinking
+
+**Debating and adversarial prompting:**
+
+- Du, Y. et al. (2023). "Improving Factuality and Reasoning in Language Models through Multiagent Debate." *arXiv preprint*. Shows that having multiple LLM instances debate produces more accurate and well-reasoned outputs than single-model generation.
+
+**Formative self-testing (retrieval practice):**
+
+- Roediger, H.L. and Butler, A.C. (2011). "The Critical Role of Retrieval Practice in Long-Term Retention." *Trends in Cognitive Sciences*. The research basis for why testing yourself improves learning more than re-reading — the principle behind the Formative Self-Testing technique.
+
+
+## General Background
+
+For readers who want a broader foundation in how AI systems work and how to think about their role in society:
+
+- Mitchell, M. (2019). *Artificial Intelligence: A Guide for Thinking Humans*. New York: Farrar, Straus and Giroux. An accessible, rigorous introduction to AI for non-specialists.
+
+- Christian, B. (2020). *The Alignment Problem*. New York: W.W. Norton. Explores the gap between what we want AI to do and what it actually does — relevant to understanding why sycophancy, hallucination, and bias persist.
+
+- Mollick, E. (2024). *Co-Intelligence: Living and Working with AI*. New York: Portfolio. A practitioner-oriented book on integrating AI into professional work, with a similar emphasis on human judgement.

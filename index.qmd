@@ -12,6 +12,12 @@ This book teaches you how.
 
 Part 1 gives you enough understanding of AI and large language models to use them well. Part 2 establishes the principles that make AI conversations productive rather than passive. Part 3 gives you practical tools and techniques you can use immediately. Part 4 shows it all working together across disciplines, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.
 
+## How to Read This Book
+
+This is not a textbook and it is not a research paper. The ideas here reflect one practitioner's perspective, informed by research, experience, and ongoing experimentation. They are starting points — baselines to work from as you discover your own approach to AI.
+
+Where claims rest on published research, you will find pointers in the Further Reading appendix (@sec-further-reading). Where they rest on practice and observation, that should be obvious from the writing. In both cases, the advice in this book applies to itself: engage with it critically, push back where your experience says otherwise, and make the ideas your own. A book about not delegating your thinking to AI would be contradicting itself if it asked you to accept its arguments uncritically.
+
 ## Who This Book Is For
 
 You do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.
