@@ -98,6 +98,32 @@ The practical implication is freeing. You do not need the most expensive subscri
 :::
 
 
+## Why Your Existing Skills Already Transfer
+
+You might have noticed something familiar about the techniques in this book. Breaking a project into milestones. Writing a clear brief. Showing your working. Checking your answers. These are not new skills invented for AI. They are strategies humans have used to manage complexity for decades, in classrooms, in boardrooms, in software teams.
+
+The reason they work with AI is not a coincidence. Large language models learned from the output of human cognition — millions of documents, textbooks, working papers, and problem solutions produced by people using exactly these strategies. When you tell a student "show your working" and their performance improves, then tell an AI "think step by step" and its performance also improves, you are activating the same underlying pattern. The model internalised structured human reasoning during training, and your prompt activates it.
+
+This means you already know more about effective AI interaction than you think.
+
+| Human Domain | Human Strategy | AI Equivalent |
+|---|---|---|
+| Exam technique | "Show your working" | Chain-of-thought prompting |
+| Exam technique | "Check your answers" | Self-verification prompts |
+| Management | Written brief with clear objectives | System prompts with role and goal |
+| Management | Breaking projects into milestones | Task decomposition / prompt chaining |
+| Teaching | Worked examples | Few-shot prompting |
+| Teaching | Rubrics and marking criteria | Evaluation criteria in prompts |
+
+: Cognitive strategies transfer from human domains to AI interaction because the model learned from the output of those same strategies. {.striped}
+
+The transfer works for a straightforward reason. Human cognition and AI inference face structurally similar challenges: limited working context, sensitivity to how a problem is framed, and difficulty with multi-step reasoning. The strategies humans developed to overcome those challenges — breaking problems into steps, making thinking explicit, providing clear criteria — address the same bottlenecks in both cases. Natural language is the shared medium, and scaffolding strategies are properties of the medium as much as the agent.
+
+This has a practical implication that matters. You do not need to learn a new discipline called "prompt engineering" from scratch. You need to recognise which of your existing professional and cognitive strategies apply, then translate them into the conversation. A project manager who writes good briefs already knows how to write good prompts. A teacher who designs clear rubrics already knows how to set evaluation criteria. A researcher who breaks a study into phases already knows how to chain prompts.
+
+The conversation loop works because it maps onto something you already do: think carefully, get feedback, refine, and repeat. The AI is a new interlocutor, but the shape of good thinking has not changed.
+
+
 ## The Two Things to Remember
 
 The loop works because of a simple relationship. You bring expertise, context, and judgement. The AI brings breadth, speed, and tireless availability. Neither is sufficient alone.

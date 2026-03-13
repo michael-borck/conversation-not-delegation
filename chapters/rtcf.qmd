@@ -192,7 +192,7 @@ Notice what is happening across all three examples. The RTCF version is longer, 
 
 If you have spent any time reading about AI, you have encountered the term "prompt engineering." It describes the practice of crafting a single, carefully worded prompt to extract the best possible response from the AI in one shot.
 
-There is nothing wrong with this. A well-structured prompt is better than a vague one. RTCF is itself a form of prompt engineering — a condensed, intentional way of giving the AI what it needs upfront. In that sense, everything in this chapter so far has been about writing better single prompts.
+There is nothing wrong with this. A well-structured prompt is better than a vague one. RTCF is itself a form of prompt engineering — a condensed, intentional way of giving the AI what it needs upfront. In that sense, everything in this chapter so far has been about writing better single prompts. And it works for a reason worth understanding: the strategies behind RTCF — writing a clear brief, specifying who the audience is, stating constraints — are strategies you already use in professional and academic life. They transfer to AI because the model learned from the output of human cognition that used those same strategies (@sec-conversation-loop).
 
 But here is the problem with stopping there.
 
