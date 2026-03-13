@@ -56,7 +56,7 @@
     "href": "chapters/01-what-is-ai.html#the-ai-family-tree",
     "title": "1  What Is AI?",
     "section": "1.2 The AI Family Tree",
-    "text": "1.2 The AI Family Tree\nAI is not one thing. It is a family of technologies, each suited to different problems.\nRule-based systems are the oldest approach. Programmers write explicit rules: if this condition, then that action. These work well for clear, logical decisions that do not change much. Tax software and simple chatbots use this approach. The limitation is obvious: someone has to anticipate every scenario in advance.\nMachine learning flips the process. Instead of writing rules, you show the system thousands of examples and let it figure out the patterns. Show it ten thousand photos labelled “cat” and ten thousand labelled “not cat,” and it learns to tell the difference. This works well for pattern recognition, predictions, and problems where the rules are too complex to write by hand. The catch is that it needs lots of good examples and it is only as good as the data you give it.\nDeep learning extends machine learning with multiple layers of pattern recognition, loosely inspired by how neurons work. The first layer might detect edges in an image. The second combines edges into shapes. The third combines shapes into objects. The fourth recognises that the object is a golden retriever. This layered approach handles very complex tasks: understanding speech, translating languages, driving cars, and generating text.\nLarge language models are the most recent breakthrough. Trained on billions of text examples to predict what word comes next, they turned out to learn far more than grammar along the way. They learned facts, reasoning patterns, writing styles, and the ability to follow complex instructions. ChatGPT, Claude, and Gemini are all large language models.\nEach of these builds on the one before it. Rule-based systems gave way to machine learning, which gave way to deep learning, which produced large language models. The progression is toward systems that need less hand-coding and can handle more ambiguity.",
+    "text": "1.2 The AI Family Tree\nAI is not one thing. It is a family of technologies, each suited to different problems.\nRule-based systems are the oldest approach. Programmers write explicit rules: if this condition, then that action. These work well for clear, logical decisions that do not change much. Tax software and simple chatbots use this approach. The limitation is obvious: someone has to anticipate every scenario in advance.\nMachine learning flips the process. Instead of writing rules, you show the system thousands of examples and let it figure out the patterns. Show it ten thousand photos labelled “cat” and ten thousand labelled “not cat,” and it learns to tell the difference. This works well for pattern recognition, predictions, and problems where the rules are too complex to write by hand. The catch is that it needs lots of good examples and it is only as good as the data you give it.\nDeep learning extends machine learning with multiple layers of pattern recognition, loosely inspired by how neurons work. The first layer might detect edges in an image. The second combines edges into shapes. The third combines shapes into objects. The fourth recognises that the object is a golden retriever. This layered approach handles very complex tasks: understanding speech, translating languages, driving cars, and generating text.\nLarge language models are the most recent breakthrough, and the focus of this book. They are covered in depth in the next chapter.\nEach of these approaches builds on the one before it. Rule-based systems gave way to machine learning, which gave way to deep learning, which produced large language models. The progression is toward systems that need less hand-coding and can handle more ambiguity.",
     "crumbs": [
       "Part 1: Understanding the Landscape",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is AI?</span>"
@@ -140,11 +140,22 @@
     ]
   },
   {
+    "objectID": "chapters/02-what-are-llms.html#beyond-text",
+    "href": "chapters/02-what-are-llms.html#beyond-text",
+    "title": "2  What Are Large Language Models?",
+    "section": "2.5 Beyond Text",
+    "text": "2.5 Beyond Text\nModern LLMs are no longer text-only. Many can process images, PDFs, spreadsheets, and other files as inputs. Some can generate images. Some can speak and listen through audio interfaces.\nThis matters, but it is worth being precise about how.\nImages, PDFs, and data files are inputs. They provide context. You can upload a chart and ask the AI to interpret it, or attach a contract and ask it to summarise the key terms. This is useful, and the same principles in this book apply: you still need to verify the output, still need to bring your own judgement, still need to stay in the conversation.\nBut context is not conversation. Uploading a document is closer to handing someone a file than to thinking alongside them. The conversational techniques in this book, pushing back, iterating, challenging, are fundamentally about the back-and-forth of language.\nWhere multimodal AI may change the nature of conversation itself is voice. Audio interfaces let you talk with AI rather than type. The rhythm is different. You interrupt. You think out loud. You correct yourself mid-sentence. For many people, this is closer to how they actually think, and it may turn out to be a more natural way to stay in the conversation loop than typing prompts into a text box.\nThe underlying process does not change. Whether you type or speak, upload a file or paste text, the principles are the same: bring your question, engage with what comes back, and own the result.",
+    "crumbs": [
+      "Part 1: Understanding the Landscape",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What Are Large Language Models?</span>"
+    ]
+  },
+  {
     "objectID": "chapters/02-what-are-llms.html#the-line-worth-remembering",
     "href": "chapters/02-what-are-llms.html#the-line-worth-remembering",
     "title": "2  What Are Large Language Models?",
-    "section": "2.5 The Line Worth Remembering",
-    "text": "2.5 The Line Worth Remembering\nThey have read everything and experienced nothing.\nThat single sentence captures more about LLMs than most technical explanations. These models have processed more text than any human could read in a thousand lifetimes. They have seen how experts write, how arguments are structured, how evidence is presented. But they have never been wrong and learned from it. They have never felt confused and pushed through to clarity. They have never had a stake in being right.\nThis is not a flaw to be fixed in the next version. It is the nature of the technology. LLMs are extraordinarily capable pattern matchers trained on the written record of human thought. That makes them powerful tools. It also means they have real limits, limits that do not go away just because the outputs sound confident.",
+    "section": "2.6 The Line Worth Remembering",
+    "text": "2.6 The Line Worth Remembering\nThey have read everything and experienced nothing.\nThat single sentence captures more about LLMs than most technical explanations. These models have processed more text than any human could read in a thousand lifetimes. They have seen how experts write, how arguments are structured, how evidence is presented. But they have never been wrong and learned from it. They have never felt confused and pushed through to clarity. They have never had a stake in being right.\nThis is not a flaw to be fixed in the next version. It is the nature of the technology. LLMs are extraordinarily capable pattern matchers trained on the written record of human thought. That makes them powerful tools. It also means they have real limits, limits that do not go away just because the outputs sound confident.",
     "crumbs": [
       "Part 1: Understanding the Landscape",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>What Are Large Language Models?</span>"
@@ -154,8 +165,8 @@
     "objectID": "chapters/02-what-are-llms.html#why-this-matters-for-you",
     "href": "chapters/02-what-are-llms.html#why-this-matters-for-you",
     "title": "2  What Are Large Language Models?",
-    "section": "2.6 Why This Matters for You",
-    "text": "2.6 Why This Matters for You\nIf you understand that LLMs are sophisticated prediction engines, not omniscient oracles, you will use them differently.\nYou will not hand over a task and trust the output. You will use the model to generate a draft and then apply your own judgement. You will not ask it for the answer. You will ask it to help you think through the problem. You will recognise when the output is echoing a pattern rather than reflecting genuine reasoning, and you will push back.\nThe difference between someone who uses AI well and someone who uses it poorly is rarely about technical skill. It is about understanding what the tool actually is and what it is not.\nThat understanding is exactly what the next chapter builds on. Knowing what LLMs are, and are not, is the foundation for learning how to work with them. The question is not “what can AI do for me?” but “how should I think alongside this thing?” Chapter 3 takes up that question directly.",
+    "section": "2.7 Why This Matters for You",
+    "text": "2.7 Why This Matters for You\nIf you understand that LLMs are sophisticated prediction engines, not omniscient oracles, you will use them differently.\nYou will not hand over a task and trust the output. You will use the model to generate a draft and then apply your own judgement. You will not ask it for the answer. You will ask it to help you think through the problem. You will recognise when the output is echoing a pattern rather than reflecting genuine reasoning, and you will push back.\nThe difference between someone who uses AI well and someone who uses it poorly is rarely about technical skill. It is about understanding what the tool actually is and what it is not.\nThat understanding is exactly what the next chapter builds on. Knowing what LLMs are, and are not, is the foundation for learning how to work with them. The question is not “what can AI do for me?” but “how should I think alongside this thing?” Chapter 3 takes up that question directly.",
     "crumbs": [
       "Part 1: Understanding the Landscape",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>What Are Large Language Models?</span>"
@@ -298,7 +309,7 @@
     "href": "chapters/04-does-ai-make-us-dumber.html#the-conversation-not-delegation-connection",
     "title": "4  Does AI Make Us Dumber?",
     "section": "4.7 The Conversation, Not Delegation Connection",
-    "text": "4.7 The Conversation, Not Delegation Connection\nThis whole discussion circles back to a foundational idea from ?sec-conversation-not-delegation: conversation, not delegation.\nWhen you delegate to AI, “just give me the answer,” cognitive offload becomes cognitive abdication. You get output without understanding. Over time, your own capabilities erode.\nWhen you converse with AI, “help me think through this,” cognitive offload becomes cognitive amplification. You engage with material at a deeper level, with AI as a thinking partner that challenges, extends, and enriches your understanding.\nThe difference between offload that harms and offload that helps is whether the human stays in the loop. Not just approving output, but actively thinking alongside the tool.",
+    "text": "4.7 The Conversation, Not Delegation Connection\nThis whole discussion circles back to a foundational idea from Chapter 3: conversation, not delegation.\nWhen you delegate to AI, “just give me the answer,” cognitive offload becomes cognitive abdication. You get output without understanding. Over time, your own capabilities erode.\nWhen you converse with AI, “help me think through this,” cognitive offload becomes cognitive amplification. You engage with material at a deeper level, with AI as a thinking partner that challenges, extends, and enriches your understanding.\nThe difference between offload that harms and offload that helps is whether the human stays in the loop. Not just approving output, but actively thinking alongside the tool.",
     "crumbs": [
       "Part 1: Understanding the Landscape",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Does AI Make Us Dumber?</span>"
@@ -331,51 +342,62 @@
     "href": "chapters/05-the-conversation-loop.html",
     "title": "5  The Conversation Loop",
     "section": "",
-    "text": "5.1 Brainstorm\nThis is the model. Not a framework with twelve steps and a certification programme. A loop with four stages and one rule: you stay in the conversation.\nFour stages. One feedback arc. Most good work passes through the loop more than once. That is the whole picture. Now let’s walk through it.\nYou arrive with a question, a problem, or a half-formed idea. Not a task to outsource. Not a prompt engineered to extract a finished deliverable in one shot. You bring something you are genuinely thinking about.\nThis matters more than it sounds. The quality of what comes out of the loop is bounded by what you bring into it. A vague “write me a strategy document” produces vague strategy. A specific “I’m stuck on how to position this product for buyers who already use a competitor” gives the conversation something to grip.\nYou do not need a polished brief. You need a real starting point.",
+    "text": "5.1 Brainstorm: Define Your Question\nYou now know what AI is and what it is not. You know that large language models have read everything and experienced nothing. You know the trap: delegation feels productive but erodes your capability over time. And you know that the protective practice is conversation, not delegation.\nThe question becomes: what does that conversation actually look like?\nThis is the model. Not a framework with twelve steps and a certification programme. A loop with four stages and one rule: you stay in the conversation.\nFour stages. One feedback arc. Most good work passes through the loop more than once. That is the whole picture. Now let’s walk through it.\nYou arrive with a question, a problem, or a half-formed idea. Not a task to outsource. Not a prompt engineered to extract a finished deliverable in one shot. You bring something you are genuinely thinking about.\nThis matters more than it sounds. The quality of what comes out of the loop is bounded by what you bring into it. A vague “write me a strategy document” produces vague strategy. A specific “I’m stuck on how to position this product for buyers who already use a competitor” gives the conversation something to grip.\nYou do not need a polished brief. You need a real starting point: a question worth exploring.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Conversation Loop</span>"
     ]
   },
   {
-    "objectID": "chapters/05-the-conversation-loop.html#ideate",
-    "href": "chapters/05-the-conversation-loop.html#ideate",
+    "objectID": "chapters/05-the-conversation-loop.html#ideate-explore-possibilities",
+    "href": "chapters/05-the-conversation-loop.html#ideate-explore-possibilities",
     "title": "5  The Conversation Loop",
-    "section": "5.2 Ideate",
-    "text": "5.2 Ideate\nNow you and the AI explore together. This stage is generative and divergent. You are not looking for the answer. You are looking for more angles, adjacent ideas, framings you had not considered.\nAsk for alternatives. Ask for the version that would make your sceptical colleague pause. Ask what you might be missing. The AI’s breadth across domains is genuinely useful here, not because it knows your context better than you do, but because it can surface patterns and connections faster than you can scan for them alone.\nThe temptation is to stop here, take the first interesting output, and move on. Resist that. Ideation is cheap. The next stage is where value gets made.",
+    "section": "5.2 Ideate: Explore Possibilities",
+    "text": "5.2 Ideate: Explore Possibilities\nBrainstorm gave you a clear question. Ideate is where you and the AI go wide. This stage is generative and divergent. You are not looking for the answer. You are looking for more angles, adjacent ideas, framings you had not considered.\nAsk for alternatives. Ask for the version that would make your sceptical colleague pause. Ask what you might be missing. The AI’s breadth across domains is genuinely useful here, not because it knows your context better than you do, but because it can surface patterns and connections faster than you can scan for them alone.\nThe temptation is to stop here, take the first interesting output, and move on. Resist that. Ideation is cheap. The next stage is where value gets made.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Conversation Loop</span>"
     ]
   },
   {
-    "objectID": "chapters/05-the-conversation-loop.html#iterate",
-    "href": "chapters/05-the-conversation-loop.html#iterate",
+    "objectID": "chapters/05-the-conversation-loop.html#iterate-push-back-and-refine",
+    "href": "chapters/05-the-conversation-loop.html#iterate-push-back-and-refine",
     "title": "5  The Conversation Loop",
-    "section": "5.3 Iterate",
-    "text": "5.3 Iterate\nThis is where conversation happens and where delegation is most tempting. You push back. You refine. You redirect.\n“That second option is closer, but it assumes we have six months. We have six weeks.”\n“The tone is wrong. Less corporate, more direct.”\n“You’re solving the wrong problem. The real constraint is budget, not timeline.”\nEvery one of those responses sharpens the output. Every one requires your judgement. If you skip this stage, you are copying, not thinking. If you delegate here, you get something that is fluent, plausible, and not quite right in ways you will only notice later.\nIteration is work. It is also the stage that makes the output yours. Stay in it longer than feels necessary.",
+    "section": "5.3 Iterate: Push Back and Refine",
+    "text": "5.3 Iterate: Push Back and Refine\nThis is where conversation happens and where delegation is most tempting. You push back. You refine. You redirect.\n“That second option is closer, but it assumes we have six months. We have six weeks.”\n“The tone is wrong. Less corporate, more direct.”\n“You’re solving the wrong problem. The real constraint is budget, not timeline.”\nEvery one of those responses sharpens the output. Every one requires your judgement. If you skip this stage, you are copying, not thinking. If you delegate here, you get something that is fluent, plausible, and not quite right in ways you will only notice later.\nIteration is work. It is also the stage that makes the output yours. Stay in it longer than feels necessary.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Conversation Loop</span>"
     ]
   },
   {
-    "objectID": "chapters/05-the-conversation-loop.html#amplify",
-    "href": "chapters/05-the-conversation-loop.html#amplify",
+    "objectID": "chapters/05-the-conversation-loop.html#amplify-make-it-yours",
+    "href": "chapters/05-the-conversation-loop.html#amplify-make-it-yours",
     "title": "5  The Conversation Loop",
-    "section": "5.4 Amplify",
-    "text": "5.4 Amplify\nYou take the best of what emerged and make it yours. You edit, restructure, combine, cut. You bring it into your voice, your context, your standards.\nAmplification is not “copy and paste with minor tweaks.” It is the act of owning the output. You know things the AI does not: your audience, your constraints, the political dynamics of the room you will present in, the history behind the decision. This is where all of that knowledge gets folded in.\nThe result should be something you would put your name on without hesitation. If it is not, you are not done.",
+    "section": "5.4 Amplify: Make It Yours",
+    "text": "5.4 Amplify: Make It Yours\nYou take the best of what emerged and make it yours. You edit, restructure, combine, cut. You bring it into your voice, your context, your standards.\nAmplification is not “copy and paste with minor tweaks.” It is the act of owning the output. You know things the AI does not: your audience, your constraints, the political dynamics of the room you will present in, the history behind the decision. This is where all of that knowledge gets folded in.\nThe result should be something you would put your name on without hesitation. If it is not, you are not done.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Conversation Loop</span>"
     ]
   },
   {
-    "objectID": "chapters/05-the-conversation-loop.html#repeat",
-    "href": "chapters/05-the-conversation-loop.html#repeat",
+    "objectID": "chapters/05-the-conversation-loop.html#repeat-go-around-again",
+    "href": "chapters/05-the-conversation-loop.html#repeat-go-around-again",
     "title": "5  The Conversation Loop",
-    "section": "5.5 Repeat",
-    "text": "5.5 Repeat\nMost good work loops more than once. The first pass through gives you a draft, a direction, a clearer version of your own thinking. The second pass sharpens it. The third might transform it entirely.\nKnowing when to re-enter the loop is a skill. Sometimes you amplify and realise the framing is wrong, so you loop back to brainstorm with a better question. Sometimes iteration reveals a gap, so you return to ideation. The loop is not linear. The arrows point forward, but the feedback arc is always available.\nThe sign that you are done is not that the AI has stopped producing output. It is that your thinking has landed somewhere solid.",
+    "section": "5.5 Repeat: Go Around Again",
+    "text": "5.5 Repeat: Go Around Again\nMost good work loops more than once. The first pass through gives you a draft, a direction, a clearer version of your own thinking. The second pass sharpens it. The third might transform it entirely.\nKnowing when to re-enter the loop is a skill. Sometimes you amplify and realise the framing is wrong, so you loop back to brainstorm with a better question. Sometimes iteration reveals a gap, so you return to ideation. The loop is not linear. The arrows point forward, but the feedback arc is always available.\nThe sign that you are done is not that the AI has stopped producing output. It is that your thinking has landed somewhere solid.",
+    "crumbs": [
+      "Part 2: Principles",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Conversation Loop</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/05-the-conversation-loop.html#you-do-not-need-the-best-model",
+    "href": "chapters/05-the-conversation-loop.html#you-do-not-need-the-best-model",
+    "title": "5  The Conversation Loop",
+    "section": "5.6 You Do Not Need the Best Model",
+    "text": "5.6 You Do Not Need the Best Model\nThere is a common assumption that better AI models produce better results. For lookup tasks, where you need a precise fact, an accurate citation, or a verified figure, this is largely true. A more capable model is more likely to get it right.\nBut most of the work this book describes is not lookup work. It is thinking work: analysing a situation, weighing options, constructing an argument, identifying what you have missed. For thinking work, you do not need the AI to be right. You need it to be generative enough to be worth arguing with.\nA smaller model that surfaces three plausible but imperfect framings of a problem, challenged and refined through genuine conversation, may produce better thinking than a frontier model that delivers one polished answer you accept without question.\nThis is not a hypothetical. It is what the conversation loop is designed to do. When you iterate, push back, and refine, you are compensating for whatever the model gets wrong. The friction of correcting an imperfect response is not a cost. It is the mechanism through which your own thinking sharpens. A “worse” model that forces you to think harder may serve you better than a “better” model that makes acceptance too easy.\nThere is a real danger on the other end. The more fluent and confident a model sounds, the harder its errors are to detect. A frontier model that gets something subtly wrong can leave you holding a plausible, well-written, and incorrect conclusion that you absorbed without the friction that would have revealed its flaws. Uncritical acceptance of a capable model’s output can produce worse outcomes than no AI assistance at all.\nThe practical implication is freeing. You do not need the most expensive subscription to get value from this approach. Any general-purpose language model, free or paid, is sufficient for the kind of conversational work described in this book. What matters is not which model you use. It is whether you stay in the conversation.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Conversation Loop</span>"
@@ -385,8 +407,8 @@
     "objectID": "chapters/05-the-conversation-loop.html#the-two-things-to-remember",
     "href": "chapters/05-the-conversation-loop.html#the-two-things-to-remember",
     "title": "5  The Conversation Loop",
-    "section": "5.6 The two things to remember",
-    "text": "5.6 The two things to remember\nThe loop works because of a simple relationship. You bring expertise, context, and judgement. The AI brings breadth, speed, and tireless availability. Neither is sufficient alone.\nYour expertise + AI’s breadth = amplified thinking.\nThe bottleneck is your thinking, not the model.\nA better model will not fix a lazy prompt. A faster response will not help if you skip iteration. The constraint on quality is always your willingness to stay in the conversation, to push back, to think harder, to loop again.\nYour expertise + AI’s breadth = amplified thinking. The bottleneck is your thinking, not the model.",
+    "section": "5.7 The Two Things to Remember",
+    "text": "5.7 The Two Things to Remember\nThe loop works because of a simple relationship. You bring expertise, context, and judgement. The AI brings breadth, speed, and tireless availability. Neither is sufficient alone.\nYour expertise + AI’s breadth = amplified thinking.\nThe bottleneck is your thinking, not the model.\nA better model will not fix a lazy prompt. A faster response will not help if you skip iteration. The constraint on quality is always your willingness to stay in the conversation, to push back, to think harder, to loop again.\nYour expertise + AI’s breadth = amplified thinking. The bottleneck is your thinking, not the model.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>The Conversation Loop</span>"
@@ -470,11 +492,22 @@
     ]
   },
   {
+    "objectID": "chapters/07-staying-critical.html#watch-what-you-share",
+    "href": "chapters/07-staying-critical.html#watch-what-you-share",
+    "title": "7  Staying Critical",
+    "section": "7.4 Watch What You Share",
+    "text": "7.4 Watch What You Share\nStaying critical is not only about evaluating what the AI gives you. It is also about being careful with what you give it.\nWhen you type a prompt into a consumer AI tool, that text leaves your device. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.\nThe practical rules are simple:\n\nNever paste confidential information into a free or consumer AI tool. If you would not post it on social media, do not paste it into a prompt.\nDe-identify before you prompt. Replace real names with “Client A.” Replace specific figures with ranges. Remove anything that could identify a person or organisation.\nKnow the difference between consumer and enterprise tools. Enterprise AI platforms (your organisation’s licensed tools) typically offer data protection guarantees. Free-tier consumer tools typically do not. If you are unsure which you are using, treat it as consumer.\nWhen in doubt, use fictional scenarios. You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.\n\nThis is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.",
+    "crumbs": [
+      "Part 2: Principles",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Staying Critical</span>"
+    ]
+  },
+  {
     "objectID": "chapters/07-staying-critical.html#the-self-check",
     "href": "chapters/07-staying-critical.html#the-self-check",
     "title": "7  Staying Critical",
-    "section": "7.4 The Self-Check",
-    "text": "7.4 The Self-Check\nBefore you act on anything AI has produced, especially anything that matters, run through these questions.\n\nSelf-check before acting on AI output.\n\n\n\n\n\n\n\nQuestion\nGood sign\nWarning sign\n\n\n\n\nCan I explain this in my own words?\nYes, I understand the reasoning\nI would struggle to explain it\n\n\nDoes it fit my specific context?\nAddresses my situation, constraints, audience\nGeneric enough to apply to anything\n\n\nHave I verified the key claims?\nChecked against credible sources\nTook the AI’s word for it\n\n\nCould I defend this if challenged?\nConfident in the substance\nWould need to go back and check\n\n\n\nIf you have warning signs in more than one row, do not use the output yet. Go back. Verify. Iterate. The whole point of the conversation loop is that you can always go around again.\nThis is not busywork. It takes thirty seconds. The cost of skipping it is much higher: acting on something that sounds right but is not, and only finding out when it matters.",
+    "section": "7.5 The Self-Check",
+    "text": "7.5 The Self-Check\nBefore you act on anything AI has produced, especially anything that matters, run through these questions.\n\nSelf-check before acting on AI output.\n\n\n\n\n\n\n\nQuestion\nGood sign\nWarning sign\n\n\n\n\nCan I explain this in my own words?\nYes, I understand the reasoning\nI would struggle to explain it\n\n\nDoes it fit my specific context?\nAddresses my situation, constraints, audience\nGeneric enough to apply to anything\n\n\nHave I verified the key claims?\nChecked against credible sources\nTook the AI’s word for it\n\n\nCould I defend this if challenged?\nConfident in the substance\nWould need to go back and check\n\n\n\nIf you have warning signs in more than one row, do not use the output yet. Go back. Verify. Iterate. The whole point of the conversation loop is that you can always go around again.\nThis is not busywork. It takes thirty seconds. The cost of skipping it is much higher: acting on something that sounds right but is not, and only finding out when it matters.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Staying Critical</span>"
@@ -484,8 +517,8 @@
     "objectID": "chapters/07-staying-critical.html#where-this-goes-next",
     "href": "chapters/07-staying-critical.html#where-this-goes-next",
     "title": "7  Staying Critical",
-    "section": "7.5 Where This Goes Next",
-    "text": "7.5 Where This Goes Next\nEverything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, ?sec-vet-your-ai introduces VET Your AI, a practical method for Verifying claims, Evaluating reasoning, and Testing outputs against your own knowledge and context. It turns “stay critical” from a mindset into a repeatable process.\nThe critical eye you bring to AI output is not a burden. It is the thing that makes the output worth using. Without it, you have fluent text and no idea whether it is right. With it, you have a genuine thinking advantage.\nStay in the conversation. Stay critical. They are the same instruction.",
+    "section": "7.6 Where This Goes Next",
+    "text": "7.6 Where This Goes Next\nEverything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, ?sec-vet-your-ai introduces VET Your AI, a practical method for Verifying claims, Evaluating reasoning, and Testing outputs against your own knowledge and context. It turns “stay critical” from a mindset into a repeatable process.\nThe critical eye you bring to AI output is not a burden. It is the thing that makes the output worth using. Without it, you have fluent text and no idea whether it is right. With it, you have a genuine thinking advantage.\nStay in the conversation. Stay critical. They are the same instruction.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Staying Critical</span>"
@@ -540,7 +573,7 @@
     "href": "chapters/08-rtcf.html#context",
     "title": "8  RTCF: Starting Conversations Well",
     "section": "8.4 Context",
-    "text": "8.4 Context\nThis is the component most people skip. It is also the one that matters most.\nAI cannot read your mind. It does not know your deadline, your audience, your constraints, or your data. If you do not provide that background, it will guess. And its guesses will be generic.\nContext includes:\n\nThe domain or field you are working in\nWho will read or use the output\nConstraints (word count, time, resources, scope)\nRelevant data, prior work, or decisions already made\nWhat you have tried so far\n\nYou do not need to write an essay. A few sentences of well-chosen context dramatically changes the quality of what comes back.",
+    "text": "8.4 Context\nThis is the component most people skip. It is also the one that matters most.\nAI cannot read your mind. It does not know your deadline, your audience, your constraints, or your data. If you do not provide that background, it will guess. And its guesses will be generic.\nContext includes:\n\nThe domain or field you are working in\nWho will read or use the output\nConstraints (word count, time, resources, scope)\nRelevant data, prior work, or decisions already made\nWhat you have tried so far\n\nYou do not need to write an essay. A few sentences of well-chosen context dramatically changes the quality of what comes back.\nOne caution: context often involves real data, real names, and real situations. Before pasting anything sensitive, review the guidance in Chapter 7 on what to share and what to de-identify. Good context does not require confidential details. You can describe the structure of your situation without exposing the specifics.",
     "crumbs": [
       "Part 3: The Methodology",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>RTCF: Starting Conversations Well</span>"
@@ -1053,11 +1086,22 @@
     ]
   },
   {
+    "objectID": "chapters/14-becoming-more-capable.html#the-loop-one-last-time",
+    "href": "chapters/14-becoming-more-capable.html#the-loop-one-last-time",
+    "title": "14  Becoming More Capable",
+    "section": "14.5 The Loop, One Last Time",
+    "text": "14.5 The Loop, One Last Time\nThe Conversation Loop is simple. Define your question. Explore possibilities. Push back and refine. Make the result yours. Go around again.\nThat loop is not a technique. It is a description of what thinking with another mind looks like. The AI is the other mind. You are the one deciding when to explore, when to push back, when to stop, and when the output is truly yours. Every time you make those decisions well, you get better at making them. That is the compound effect in action.\nThe loop does not require AI. You can run it with a colleague, a mentor, a blank page. But AI makes it available on demand, at any hour, on any problem. The practice becomes as frequent as you want it to be. And frequency is what turns a technique into a capability.",
+    "crumbs": [
+      "Part 4: Putting It Together",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Becoming More Capable</span>"
+    ]
+  },
+  {
     "objectID": "chapters/14-becoming-more-capable.html#the-closing-argument",
     "href": "chapters/14-becoming-more-capable.html#the-closing-argument",
     "title": "14  Becoming More Capable",
-    "section": "14.5 The Closing Argument",
-    "text": "14.5 The Closing Argument\nThere is a line that has appeared twice before in this book, and it belongs here at the end.\nJudgement cannot be delegated to something that has read everything but experienced nothing.\nThat sentence is not a limitation of AI. It is a statement about what makes you irreplaceable. Your experience. Your judgement. Your ability to weigh competing priorities, read a room, know when the data is pointing in the right direction and when it is lying to you. No model has that. No model will.\nWhat a model can do is help you sharpen those capacities. It can surface what you had not considered. It can pressure-test your reasoning. It can show you the gap between what you think you know and what you actually know. But only if you stay in the conversation. Only if you do the thinking.\nThe goal was never to get AI to do more.\nIt was to become more capable yourself.\nThat is the practice. That is the point. And if you have read this far, you already know how to begin.",
+    "section": "14.6 The Closing Argument",
+    "text": "14.6 The Closing Argument\nThere is a line that has appeared twice before in this book, and it belongs here at the end.\nJudgement cannot be delegated to something that has read everything but experienced nothing.\nThat sentence is not a limitation of AI. It is a statement about what makes you irreplaceable. Your experience. Your judgement. Your ability to weigh competing priorities, read a room, know when the data is pointing in the right direction and when it is lying to you. No model has that. No model will.\nWhat a model can do is help you sharpen those capacities. It can surface what you had not considered. It can pressure-test your reasoning. It can show you the gap between what you think you know and what you actually know. But only if you stay in the conversation. Only if you do the thinking.\nThe goal was never to get AI to do more.\nIt was to become more capable yourself.\nThat is the practice. That is the point. And if you have read this far, you already know how to begin.",
     "crumbs": [
       "Part 4: Putting It Together",
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Becoming More Capable</span>"
@@ -1145,7 +1189,7 @@
     "href": "appendices/b-quick-reference.html#vet-your-ai",
     "title": "Appendix B — Quick Reference Cards",
     "section": "B.2 VET Your AI",
-    "text": "B.2 VET Your AI\nThree steps to run before you trust any AI output that matters.\n\nThe VET framework: Verify, Explain, Test.\n\n\n\n\n\n\n\nStep\nQuestion\nWhat you do\n\n\n\n\nV – Verify\nCan I find this independently?\nCross-reference claims against credible sources. If the AI cites something, look it up.\n\n\nE – Explain\nCan I explain this in my own words?\nIf you cannot walk someone through the reasoning, you do not understand it well enough to use it.\n\n\nT – Test\nDoes this hold up under scrutiny?\nChallenge the output. Change the assumptions. Ask “what if the opposite were true?”\n\n\n\nIf you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See ?sec-vet-your-ai for the full chapter.",
+    "text": "B.2 VET Your AI\nThree steps to run before you trust any AI output that matters.\n\nThe VET framework: Verify, Explain, Test.\n\n\n\n\n\n\n\nStep\nQuestion\nWhat you do\n\n\n\n\nV – Verify\nCan I find this independently?\nCross-reference claims against credible sources. If the AI cites something, look it up.\n\n\nE – Explain\nCan I explain this in my own words?\nIf you cannot walk someone through the reasoning, you do not understand it well enough to use it.\n\n\nT – Test\nDoes this hold up under scrutiny?\nChallenge the output. Change the assumptions. Ask “what if the opposite were true?”\n\n\n\nVET in practice:\n\nVET applied to real AI output. The domain does not matter. The habit does.\n\n\n\n\n\n\n\n\nAI says…\nV: Verify\nE: Explain\nT: Test\n\n\n\n\n“Studies show pH drops faster in co-culture”\nFind the actual studies\nCan I explain the mechanism?\nWhat about different substrates?\n\n\n“Optimal temperature is 37C”\nCheck the literature\nWhy 37C specifically?\nWhat happens at 35C or 40C?\n\n\n“This method has 95% recovery rate”\nWhere is that number from?\nWhat does 95% mean here?\nUnder what conditions?\n\n\n\nIf you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See ?sec-vet-your-ai for the full chapter.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Quick Reference Cards</span>"
@@ -1156,7 +1200,7 @@
     "href": "appendices/b-quick-reference.html#the-conversation-loop",
     "title": "Appendix B — Quick Reference Cards",
     "section": "B.3 The Conversation Loop",
-    "text": "B.3 The Conversation Loop\nFour stages. One feedback arc. Most good work passes through more than once.\n\nThe Conversation Loop: Brainstorm, Ideate, Iterate, Amplify.\n\n\n\n\n\n\n\nStage\nWhat happens\nYour mindset\n\n\n\n\nBrainstorm\nArrive with a question, not a task.\n“What am I actually trying to figure out?”\n\n\nIdeate\nExplore possibilities together.\n“What angles haven’t I considered?”\n\n\nIterate\nPush back, refine, redirect.\n“That’s close, but here’s what’s wrong…”\n\n\nAmplify\nMake the best of it yours.\n“How do I fold in what I know that the AI doesn’t?”\n\n\n\nThe loop is not linear. You can jump from Iterate back to Brainstorm when you realise the question was wrong. You can loop from Amplify back to Ideate when a new angle emerges. The sign that you are done is not that the AI stopped producing output. It is that your thinking has landed somewhere solid. See Chapter 5 for the full chapter.",
+    "text": "B.3 The Conversation Loop\nFour stages. One feedback arc. Most good work passes through more than once.\n\nThe Conversation Loop: Brainstorm, Ideate, Iterate, Amplify.\n\n\n\n\n\n\n\nStage\nWhat happens\nYour mindset\n\n\n\n\nBrainstorm: Define your question\nArrive with a question, not a task.\n“What am I actually trying to figure out?”\n\n\nIdeate: Explore possibilities\nGo wide with the AI.\n“What angles haven’t I considered?”\n\n\nIterate: Push back and refine\nChallenge, redirect, sharpen.\n“That’s close, but here’s what’s wrong…”\n\n\nAmplify: Make it yours\nFold in what you know. Own the result.\n“How do I bring in what the AI doesn’t know?”\n\n\n\nThe loop is not linear. You can jump from Iterate back to Brainstorm when you realise the question was wrong. You can loop from Amplify back to Ideate when a new angle emerges. The sign that you are done is not that the AI stopped producing output. It is that your thinking has landed somewhere solid. See Chapter 5 for the full chapter.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Quick Reference Cards</span>"
@@ -1171,17 +1215,6 @@
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Quick Reference Cards</span>"
-    ]
-  },
-  {
-    "objectID": "appendices/c-for-educators.html",
-    "href": "appendices/c-for-educators.html",
-    "title": "Appendix C — For Educators",
-    "section": "",
-    "text": "If you teach, you have probably already been thinking about how the ideas in this book apply to your students. How do you design assessments that reward conversation over delegation? How do you build rubrics that distinguish genuine AI-assisted thinking from copy-paste submission? How do you create classroom environments where AI use is transparent and productive?\nThose questions deserve more than an appendix. They deserve their own book.\nPartner, Don’t Police: Designing Assessment for the AI Era is a companion volume that applies the “Conversation, Not Delegation” philosophy directly to teaching and assessment design. It covers rubric frameworks, assignment structures, integrity conversations, and practical strategies for educators across disciplines. Where this book asks “how should I think with AI?”, that book asks “how do I help my students think with AI?”\nYou can find it at github.com/mborck/partner-dont-police.\nIf you are an educator reading this book for your own professional development, everything here applies to your work as written. The techniques, frameworks, and habits are discipline-agnostic and role-agnostic. Use them. Then, when you are ready to redesign how your students engage with AI, the companion book picks up where this one leaves off.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>For Educators</span>"
     ]
   }
 ]
