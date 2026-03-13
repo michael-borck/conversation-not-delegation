@@ -117,6 +117,25 @@ The most effective AI users aren't those who delegate everything to AI, nor thos
 This symbiosis is itself a skill. It requires self-awareness about your own strengths and blind spots. Understanding of AI's capabilities and limitations. The discipline to pause and think before accepting AI output. The humility to recognise when AI has a better perspective. The confidence to override AI when your judgement says otherwise.
 
 
+## What History Actually Shows
+
+There is a fear underneath the "AI makes us dumber" question that is worth naming directly: the fear that AI will make us obsolete. That the skills we have spent years building will stop mattering.
+
+History suggests the opposite.
+
+When ATMs arrived, people predicted the end of bank tellers. Instead, cheaper branches meant more branches, and total teller employment rose. The job changed. Tellers spent less time counting cash and more time advising customers. The human skill that mattered shifted from processing to judgement.
+
+When spreadsheets arrived, people predicted the end of accountants. Instead, the cost of financial analysis dropped so far that demand for it exploded. Every department wanted forecasts, models, scenarios. There were more accounting jobs after spreadsheets, not fewer. The work was different, but there was more of it.
+
+When containerised shipping arrived, people predicted the end of dock workers. Instead, global trade expanded so dramatically that port employment grew. The containers did not eliminate the work. They changed its shape and multiplied its volume.
+
+This pattern has a name: the Jevons Paradox. When a technology makes something cheaper or more efficient, demand for that thing tends to increase, not decrease. The technology does not replace the work. It refactors it. The routine parts get absorbed by the tool. The parts that require judgement, context, creativity, and trust become more central, not less.
+
+AI is following the same pattern. The people who will thrive are not the ones who resist AI or the ones who delegate everything to it. They are the ones who develop the skill of working alongside it: knowing when to lean on it, when to override it, and when to do the hard thinking themselves.
+
+That skill is not threatened by AI. It is amplified by it.
+
+
 ## The Conversation, Not Delegation Connection
 
 This whole discussion circles back to a foundational idea from @sec-delegation-trap: conversation, not delegation.

@@ -217,6 +217,29 @@ Rerun analysis from different viewpoints:
 This is one of the most underused techniques. It forces the AI to stress-test its own output, and it often surfaces blind spots you would not have found otherwise.
 
 
+## Managing Long Conversations
+
+There is a practical reality that prompt chaining runs into: AI has a finite memory.
+
+Every AI conversation has a context window, a limit on how much text the model can hold in its head at once. Early in a conversation, the AI has your full prompt and its full response. Twenty exchanges later, the earliest parts of the conversation are fading. The model does not forget all at once. It loses precision gradually, like a person trying to remember the first thing said in a two-hour meeting.
+
+This matters for chaining because long chains are long conversations. If your chain runs to fifteen or twenty exchanges, the AI may lose track of decisions you made in step two while it works on step twelve. The output starts to drift, contradict earlier work, or quietly drop constraints you set at the beginning.
+
+A few practical habits keep this under control:
+
+**Start new conversations for new topics.** If your chain is done and you are moving to a different task, open a fresh session. Do not try to do everything in one conversation.
+
+**One task per prompt.** When you ask the AI to do three things at once, it divides its attention across all three. The result is three shallow responses instead of one deep one. Break it up.
+
+**Summarise and hand off.** When a conversation is getting long (roughly fifty exchanges or more), ask the AI to summarise everything you have accomplished and decided so far. Copy that summary into a new conversation and continue from there. You reset the AI's attention without losing the thread.
+
+**Make context explicit every time.** Do not assume the AI remembers what you said earlier. If a constraint matters for this step, state it again. "Remember, we are working within a six-week timeline and a team of four" takes five seconds to type and prevents the AI from drifting back to generic assumptions.
+
+**Watch for signs of drift.** If the AI starts contradicting something it said earlier, or produces output that ignores a constraint you set, the context window is likely the problem. Summarise, hand off, and continue in a fresh session.
+
+These are not advanced techniques. They are housekeeping. But they make the difference between a chain that holds together over ten steps and one that quietly falls apart at step six.
+
+
 ## When Not to Chain
 
 Not every task needs a chain. Skip it when:
