@@ -18,6 +18,8 @@ flowchart LR
 
 Four stages. One feedback arc. Most good work passes through the loop more than once. That is the whole picture. Now let's walk through it.
 
+> A good conversation with AI does not end with a better output. It ends with a better question.
+
 
 ## Brainstorm: Define Your Question
 
@@ -89,6 +91,11 @@ This is not a hypothetical. It is what the conversation loop is designed to do. 
 There is a real danger on the other end. The more fluent and confident a model sounds, the harder its errors are to detect. A frontier model that gets something subtly wrong can leave you holding a plausible, well-written, and incorrect conclusion that you absorbed without the friction that would have revealed its flaws. Uncritical acceptance of a capable model's output can produce worse outcomes than no AI assistance at all.
 
 The practical implication is freeing. You do not need the most expensive subscription to get value from this approach. Any general-purpose language model, free or paid, is sufficient for the kind of conversational work described in this book. What matters is not which model you use. It is whether you stay in the conversation.
+
+
+::: {.callout-tip title="The loop at a glance"}
+**Brainstorm** -- define your real question, not your attempted solution. **Ideate** -- go wide, explore angles you had not considered. **Iterate** -- push back, refine, redirect. **Amplify** -- make the result yours. **Repeat** -- loop again when your thinking has not landed.
+:::
 
 
 ## The Two Things to Remember

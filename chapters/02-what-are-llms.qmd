@@ -4,6 +4,8 @@ A large language model is AI trained to predict the next word in a sentence.
 
 That is the core idea. Everything else follows from it.
 
+> Fluency is not truth. The smoothest sentence and the most accurate sentence are produced by the exact same process.
+
 From that single task, predicting the next word, these models learned to write essays, answer questions, translate languages, summarise documents, explain complex topics, and hold conversations. The gap between "predict the next word" and "do all of that" is where the interesting story lives.
 
 ## How Predicting Words Becomes Something More
@@ -49,6 +51,10 @@ Here is where it matters that you know what these models actually are.
 **They have no access to real-time information.** An LLM's knowledge stops at its training cutoff. It cannot tell you what happened yesterday unless it has been connected to external tools that can.
 
 These are not minor caveats. They are fundamental to what these systems are. An LLM is a model of language, not a model of truth.
+
+::: {.callout-warning title="Remember"}
+AI does not know when it is wrong. It generates plausible text with complete confidence whether the content is accurate or fabricated. Verification is always your responsibility.
+:::
 
 ## Beyond Text
 

@@ -10,6 +10,8 @@ The question this book has been answering, from the first page, is not "how do I
 
 Those are different questions. The first one makes you a better operator. The second one makes you better at your work, with or without the tool.
 
+> You started this book learning how to work with AI. You are finishing it having learned how to think more clearly. That was always the point.
+
 
 ## The Compound Loop
 
@@ -68,6 +70,11 @@ The Conversation Loop is simple. Define your question. Explore possibilities. Pu
 That loop is not a technique. It is a description of what thinking with another mind looks like. The AI is the other mind. You are the one deciding when to explore, when to push back, when to stop, and when the output is truly yours. Every time you make those decisions well, you get better at making them. That is the compound effect in action.
 
 The loop does not require AI. You can run it with a colleague, a mentor, a blank page. But AI makes it available on demand, at any hour, on any problem. The practice becomes as frequent as you want it to be. And frequency is what turns a technique into a capability.
+
+
+::: {.callout-tip title="The compound test"}
+Take the AI away. Are you better at your work than you were six months ago? If yes, you have been conversing. If no, you have been delegating.
+:::
 
 
 ## The Closing Argument

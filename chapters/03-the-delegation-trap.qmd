@@ -98,6 +98,11 @@ The comfortable lie is that delegation is efficiency. Sometimes it is. Often, it
 The test is simple: after using AI on a task, do you understand the problem better than you did before? If yes, you were conversing. If no, you were delegating. And if you cannot tell the difference, that should worry you.
 
 
+::: {.callout-warning title="The delegation test"}
+After using AI on a task, do you understand the problem better than before? If yes, you were conversing. If no, you were delegating. If you cannot tell the difference, that should worry you.
+:::
+
+
 ## What This Book Is Really About
 
 This is not a book about getting more from AI. It is a book about getting more from yourself, with AI as the catalyst.

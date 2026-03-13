@@ -4,6 +4,8 @@ Artificial intelligence is software that can perform tasks that typically requir
 
 That is it. No magic. No consciousness. Just software that can do things that used to require a human brain.
 
+> The gap between what AI appears to do and what it actually does is where good usage begins.
+
 When we say "intelligence" here, we mean specific capabilities: recognising patterns in images, making predictions from data, understanding language, generating text. AI does not "think" the way you do. It processes data using mathematical patterns. But the results can look remarkably intelligent, and that gap between appearance and reality is worth understanding from the start.
 
 ## Why Now?
@@ -72,6 +74,10 @@ AI is narrow, not general. An AI that writes well cannot drive a car. An AI that
 AI is a tool, not a strategy. Saying "we need an AI strategy" is like saying "we need a spreadsheet strategy." The real question is always: what problem are you solving? AI is one way to solve it.
 
 And AI reflects its training data. If that data contains biases, the AI learns those biases. It is not objective. It is a mirror of the information it was trained on, with all the distortions that implies.
+
+::: {.callout-tip title="Key insight"}
+AI automates tasks, not jobs. It is one tool among many. Start with the problem, not the technology.
+:::
 
 ## The Practical Framing
 

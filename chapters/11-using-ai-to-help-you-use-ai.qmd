@@ -10,6 +10,8 @@ But AI can, because it can ask you questions, understand your context, evaluate 
 
 This means you do not need a course or a manual to get started. You can use AI to figure out how AI fits into your work.
 
+> The most useful thing AI can do is not answer your question. It is help you figure out what question to ask.
+
 
 ## The Core Idea: Meta-Prompting
 
@@ -122,6 +124,11 @@ This is not a side effect. It is the point. The consultation prompt works becaus
 **Come back periodically.** This is not a one-off exercise. Your context changes. Your needs shift. The tools themselves change. Run this consultation again in a few months. Each time, you will be ready for different ideas, and you will ask sharper questions because you have more experience to draw on.
 
 **Share what you learn.** If something works, tell a colleague. "I asked AI to help me figure out how to use AI, and it suggested this. Here is how it went." Others might try their own version and find something entirely different that is useful for their context. That is the point.
+
+
+::: {.callout-note title="The real value"}
+Often, the most useful part of asking AI to interview you is not the recommendations it gives. It is the clarity you gain about your own work by having to explain it.
+:::
 
 
 ## Getting Started Right Now

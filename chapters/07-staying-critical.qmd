@@ -8,6 +8,8 @@ Your critical eye is not optional. It is the only thing standing between useful 
 
 This chapter is about building that eye. Not as an abstract virtue, but as a set of concrete habits you can apply every time you sit down with an AI tool.
 
+> The most dangerous AI output is not the one that is obviously wrong. It is the one that sounds exactly right.
+
 
 ## Transparency, Not Secrecy
 
@@ -146,5 +148,9 @@ This is not busywork. It takes thirty seconds. The cost of skipping it is much h
 Everything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, @sec-vet-your-ai introduces VET Your AI, a practical method for **V**erifying claims, **E**valuating reasoning, and **T**esting outputs against your own knowledge and context. It turns "stay critical" from a mindset into a repeatable process.
 
 The critical eye you bring to AI output is not a burden. It is the thing that makes the output worth using. Without it, you have fluent text and no idea whether it is right. With it, you have a genuine thinking advantage.
+
+::: {.callout-important title="The thirty-second habit"}
+Before acting on AI output that matters, ask: Can I verify the key claims? Can I explain this in my own words? Could I defend it if challenged? If not, you are not done yet.
+:::
 
 Stay in the conversation. Stay critical. They are the same instruction.

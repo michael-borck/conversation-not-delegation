@@ -14,6 +14,8 @@ This isn't a fringe concern. There's genuine research behind it. And anyone who'
 
 So: is it true?
 
+> The same tool that can deepen your understanding can make it effortless to avoid understanding altogether. The difference is not the tool. It is you.
+
 The answer is more interesting than yes or no.
 
 
@@ -159,6 +161,10 @@ Instead of the broad fear that "AI makes us dumber," here are the specific risks
 
 **Metacognitive atrophy.** The biggest risk. You stop monitoring your own understanding because AI gives you a false sense of competence. The antidote is the simplest thing in the world, and the hardest to maintain: keep asking yourself, "Do I actually understand this, or does it just sound right?"
 
+
+::: {.callout-tip title="The honest position"}
+The goal is not to avoid cognitive offload. It is to offload wisely -- knowing when to lean on AI and when to lean on your own mind.
+:::
 
 ## A More Honest Position
 

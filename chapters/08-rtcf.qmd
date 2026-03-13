@@ -8,6 +8,8 @@ This is where most people stall. Not because they lack ideas, but because they d
 
 The problem is rarely the AI. The problem is that you have not told it what it needs to know.
 
+> A clear prompt is not about pleasing the AI. It is evidence that you have thought clearly about what you need.
+
 
 ## The Framework
 
@@ -187,6 +189,11 @@ At that point, you will not always write out all four components explicitly. Som
 This is the goal. RTCF is not a permanent set of training wheels. It is a scaffold you build with, then internalise, then leave behind. The four questions remain, but they become part of how you think about AI conversations, not a form you fill out.
 
 You will know you have internalised RTCF when you can feel that a prompt is missing something before you send it. That instinct, the sense that the AI does not yet have what it needs, is worth more than any framework. RTCF just gets you there faster.
+
+
+::: {.callout-tip title="Remember"}
+RTCF is a scaffold, not a script. Use it as a checklist until the four questions become second nature, then let it go.
+:::
 
 
 ## Key Takeaways

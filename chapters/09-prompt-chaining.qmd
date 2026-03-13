@@ -6,6 +6,8 @@ When the work is complex, when it has stages, when the output of one step shapes
 
 Prompt chaining is the alternative. You break the work into multiple, sequential prompts. Each one builds on the output of the last. Rather than asking AI to do everything at once, you guide it through a structured workflow, checking the results at every stage.
 
+> The power of a chain is not in any single link. It is in the pauses between them, where your judgement shapes what comes next.
+
 If this sounds familiar, it should. Prompt chaining is the Iterate stage of the Conversation Loop (@sec-conversation-loop) made explicit. Each link in the chain is a moment where you review the output, apply your judgement, and steer what comes next. Without that review step, you are not chaining. You are just queuing up requests and hoping for the best.
 
 
@@ -238,6 +240,11 @@ A few practical habits keep this under control:
 **Watch for signs of drift.** If the AI starts contradicting something it said earlier, or produces output that ignores a constraint you set, the context window is likely the problem. Summarise, hand off, and continue in a fresh session.
 
 These are not advanced techniques. They are housekeeping. But they make the difference between a chain that holds together over ten steps and one that quietly falls apart at step six.
+
+
+::: {.callout-tip title="The golden rule of chaining"}
+Review each step before moving to the next. Without that review, you are not chaining. You are queuing up requests and hoping for the best.
+:::
 
 
 ## When Not to Chain

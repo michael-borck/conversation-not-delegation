@@ -10,6 +10,8 @@ For each technique, you will find a short explanation of what it does, when to r
 
 Pick the one that fits. Modify it. Make it yours.
 
+> The right technique is not the cleverest one. It is the one that matches the kind of thinking you need to do right now.
+
 
 ## 1. Reverse Prompting
 
@@ -263,5 +265,9 @@ You might start with **Reverse Prompting** to scope a new initiative, use **Pros
 Or you might use **Role Play** to prepare for a presentation, then **Formative Self-Testing** to make sure you can handle technical questions from the audience.
 
 The point is not to use all eight on every problem. The point is to have them available so you can reach for the right one when you need it.
+
+::: {.callout-tip title="Start simple"}
+You do not need to master all eight techniques. Pick the one that fits your current problem. Try it once. Modify the prompt. Try it again. Skill comes from repetition, not from reading.
+:::
 
 Start with whichever technique matches the kind of thinking you need to do right now. Try it once. Modify the prompt. Try it again. These are conversation starters, not scripts.

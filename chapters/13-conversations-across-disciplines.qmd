@@ -8,6 +8,8 @@ This chapter walks through four complete examples across four different domains.
 
 Pay attention to those steering decisions. They are the difference between conversation and delegation. They are always human. They are always specific. And they always make the output better than the AI would have produced alone.
 
+> The human brought something the AI could not. The AI brought something the human could not match. Neither was sufficient alone.
+
 
 ## Writing and Research: Building an Argument That Holds Up
 
@@ -95,4 +97,6 @@ The human brought something the AI could not: a position, domain knowledge, a li
 
 Every example used the Conversation Loop. Every one involved a moment where the human rejected or redirected the AI's output based on something only they knew. Every one ended with an output the human could put their name on and defend.
 
-That is the method. Not a formula. A way of working.
+::: {.callout-note title="The pattern"}
+In every example, the turning point was a moment where the human rejected or redirected the AI's output based on something only they knew. That is the method. Not a formula. A way of working.
+:::
