@@ -70,7 +70,22 @@ Knowing when to re-enter the loop is a skill. Sometimes you amplify and realise 
 The sign that you are done is not that the AI has stopped producing output. It is that your thinking has landed somewhere solid.
 
 
-## The two things to remember
+## You Do Not Need the Best Model
+
+There is a common assumption that better AI models produce better results. For lookup tasks, where you need a precise fact, an accurate citation, or a verified figure, this is largely true. A more capable model is more likely to get it right.
+
+But most of the work this book describes is not lookup work. It is thinking work: analysing a situation, weighing options, constructing an argument, identifying what you have missed. For thinking work, you do not need the AI to be right. You need it to be generative enough to be worth arguing with.
+
+A smaller model that surfaces three plausible but imperfect framings of a problem, challenged and refined through genuine conversation, may produce better thinking than a frontier model that delivers one polished answer you accept without question.
+
+This is not a hypothetical. It is what the conversation loop is designed to do. When you iterate, push back, and refine, you are compensating for whatever the model gets wrong. The friction of correcting an imperfect response is not a cost. It is the mechanism through which your own thinking sharpens. A "worse" model that forces you to think harder may serve you better than a "better" model that makes acceptance too easy.
+
+There is a real danger on the other end. The more fluent and confident a model sounds, the harder its errors are to detect. A frontier model that gets something subtly wrong can leave you holding a plausible, well-written, and incorrect conclusion that you absorbed without the friction that would have revealed its flaws. Uncritical acceptance of a capable model's output can produce worse outcomes than no AI assistance at all.
+
+The practical implication is freeing. You do not need the most expensive subscription to get value from this approach. Any general-purpose language model, free or paid, is sufficient for the kind of conversational work described in this book. What matters is not which model you use. It is whether you stay in the conversation.
+
+
+## The Two Things to Remember
 
 The loop works because of a simple relationship. You bring expertise, context, and judgement. The AI brings breadth, speed, and tireless availability. Neither is sufficient alone.
 
