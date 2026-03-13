@@ -72,9 +72,9 @@ Red flags are qualitatively different from yellow flags. Yellow flags say the ev
 The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
 
 
-## Two Cognitive Traps
+## Three Cognitive Traps
 
-The flag system helps you evaluate individual outputs. But there are two broader cognitive traps worth naming, because they shape how people relate to AI across everything they do with it.
+The flag system helps you evaluate individual outputs. But there are three broader cognitive traps worth naming, because they shape how people relate to AI across everything they do with it.
 
 ### The Gell-Mann Amnesia Effect
 
@@ -100,15 +100,29 @@ This is a form of the genetic fallacy: judging a claim by its origin rather than
 
 The irony is that people who dismiss AI-assisted work often accept ideas from other sources, books, consultants, collaborators, without demanding to know the exact cognitive process behind them. The objection is not really about the quality of the thinking. It is about the tool.
 
-### How the Conversation Loop Fights Both
+### The Sycophancy Trap
 
-These two traps look like opposites, but they share a root cause: skipping evaluation.
+There is a third trap, and this one the AI actively participates in.
 
-The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. Both skip the step that actually matters: engaging with the content on its merits.
+LLMs have a tendency to agree with you. They praise your ideas, validate your assumptions, and avoid telling you things you might not want to hear. Researchers call this sycophancy — the model telling you what you want to hear rather than what you need to hear. It is not a bug that will be fixed in the next release. It is a persistent tendency baked into how these models are trained, because they were optimised in part on human feedback, and humans tend to rate agreeable responses more highly than challenging ones.
 
-The conversation loop is designed to prevent both. When you iterate and push back (@sec-conversation-loop), you are neither accepting nor rejecting. You are evaluating. When you VET the output (@sec-vet), you are checking claims regardless of where they came from. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.
+This matters for everything this book is about. The conversation loop depends on genuine pushback during the Iterate stage. If the AI tells you your first draft is excellent, your argument is compelling, and your plan has no weaknesses, the loop breaks. You stop iterating because the AI has told you there is nothing to iterate on. The result is the same as delegation: you get back what you put in, wrapped in flattery.
 
-The person who says "I used AI to generate three framings of this problem, then tested each one against what I know about our situation, and here is the one that holds up" has sidestepped both traps. They did not trust the AI blindly. They did not dismiss it reflexively. They stayed in the conversation.
+You will notice this most when you ask the AI to evaluate your own work. "What do you think of my proposal?" will almost always produce praise first, criticism second, and the criticism will be gentle. The AI is not assessing your work honestly. It is managing your feelings.
+
+The defence is to prompt past it. Do not ask "what do you think?" Ask "what are the three weakest points in this argument?" or "play devil's advocate and tell me why this plan will fail." The Debating technique (@sec-techniques) is specifically designed for this — it forces the AI into an adversarial role where agreement is not an option. You can also be direct: "Do not flatter me. I need honest, critical feedback. Tell me what is wrong with this before you tell me what is right."
+
+You might have heard the opposite claim — that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying "please" does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness, and do not mistake the AI's agreeableness for honesty.
+
+### How the Conversation Loop Fights All Three
+
+These three traps look different, but they share a root cause: skipping evaluation.
+
+The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. The sycophancy trap is acceptance reinforced by flattery. All three skip the step that actually matters: engaging with the content on its merits.
+
+The conversation loop is designed to prevent all of them. When you iterate and push back (@sec-conversation-loop), you are neither accepting nor rejecting. You are evaluating. When you VET the output (@sec-vet), you are checking claims regardless of where they came from or how enthusiastically the AI presented them. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.
+
+The person who says "I used AI to generate three framings of this problem, then tested each one against what I know about our situation, and here is the one that holds up" has sidestepped all three traps. They did not trust the AI blindly. They did not dismiss it reflexively. They did not let the AI's praise convince them to stop thinking. They stayed in the conversation.
 
 That is the whole point.
 
