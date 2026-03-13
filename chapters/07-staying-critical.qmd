@@ -66,6 +66,47 @@ These are patterns strongly associated with misinformation. When you see them, d
 The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
 
 
+## Two Cognitive Traps
+
+The flag system helps you evaluate individual outputs. But there are two broader cognitive traps worth naming, because they shape how people relate to AI across everything they do with it.
+
+### The Gell-Mann Amnesia Effect
+
+The physicist Murray Gell-Mann gave this pattern its name, but you have almost certainly experienced it. You read a news article about something you know well and spot the errors immediately. The reporter misunderstood the mechanism, conflated two concepts, or drew a conclusion the evidence does not support. You notice because you have the expertise to notice.
+
+Then you turn the page to an article about a subject you know nothing about, and you read it with full trust.
+
+That is the Gell-Mann Amnesia Effect: recognising unreliability in familiar territory, then forgetting that unreliability the moment you move to unfamiliar territory.
+
+With AI, this trap is especially dangerous. You might catch an AI's mistakes when it writes about your area of expertise, and rightly so. But the same AI, using the same process, producing the same mix of accurate and inaccurate content, will generate output on topics you do not know well. And because the output is fluent, well-structured, and confident, you will be tempted to trust it in exactly the areas where you are least equipped to check it.
+
+This is not a flaw in the AI. It is a flaw in how we respond to fluency. Polished language feels authoritative. The smoother the prose, the harder it is to remember that smoothness and accuracy are unrelated.
+
+The practical defence is straightforward: apply the same scepticism to AI output on unfamiliar topics that you would apply to output on topics you know. If anything, be more sceptical, because you have fewer tools to detect errors.
+
+### The AI Dismissal Fallacy
+
+The opposite trap is just as damaging. This is the tendency to reject an argument, an idea, or a piece of work solely because AI was involved in producing it.
+
+"That is just ChatGPT" is not a critique. It is a refusal to engage. The validity of an idea does not depend on whether a human or a machine produced it. If someone presents a well-reasoned argument and it is dismissed without engaging the reasoning, the dismissal is the intellectual failure, not the use of AI.
+
+This is a form of the genetic fallacy: judging a claim by its origin rather than its content. It shows up in workplaces where people dismiss a colleague's analysis because they know AI was involved, in academic settings where the presence of AI is treated as proof of intellectual dishonesty regardless of how it was used, and in public discourse where "AI-generated" has become a shorthand for "not worth reading."
+
+The irony is that people who dismiss AI-assisted work often accept ideas from other sources, books, consultants, collaborators, without demanding to know the exact cognitive process behind them. The objection is not really about the quality of the thinking. It is about the tool.
+
+### How the Conversation Loop Fights Both
+
+These two traps look like opposites, but they share a root cause: skipping evaluation.
+
+The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. Both skip the step that actually matters: engaging with the content on its merits.
+
+The conversation loop is designed to prevent both. When you iterate and push back (@sec-conversation-loop), you are neither accepting nor rejecting. You are evaluating. When you VET the output (@sec-vet-your-ai), you are checking claims regardless of where they came from. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.
+
+The person who says "I used AI to generate three framings of this problem, then tested each one against what I know about our situation, and here is the one that holds up" has sidestepped both traps. They did not trust the AI blindly. They did not dismiss it reflexively. They stayed in the conversation.
+
+That is the whole point.
+
+
 ## Watch What You Share
 
 Staying critical is not only about evaluating what the AI gives you. It is also about being careful with what you give it.
