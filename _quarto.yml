@@ -35,7 +35,6 @@ book:
   appendices:
     - appendices/a-craft-framework.qmd
     - appendices/b-quick-reference.qmd
-    - appendices/c-for-educators.qmd
 
 format:
   html:
