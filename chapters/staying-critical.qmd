@@ -106,7 +106,7 @@ These two traps look like opposites, but they share a root cause: skipping evalu
 
 The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. Both skip the step that actually matters: engaging with the content on its merits.
 
-The conversation loop is designed to prevent both. When you iterate and push back (@sec-conversation-loop), you are neither accepting nor rejecting. You are evaluating. When you VET the output (@sec-vet-your-ai), you are checking claims regardless of where they came from. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.
+The conversation loop is designed to prevent both. When you iterate and push back (@sec-conversation-loop), you are neither accepting nor rejecting. You are evaluating. When you VET the output (@sec-vet), you are checking claims regardless of where they came from. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.
 
 The person who says "I used AI to generate three framings of this problem, then tested each one against what I know about our situation, and here is the one that holds up" has sidestepped both traps. They did not trust the AI blindly. They did not dismiss it reflexively. They stayed in the conversation.
 
@@ -151,7 +151,7 @@ This is not busywork. It takes thirty seconds. The cost of skipping it is much h
 
 ## Where This Goes Next
 
-Everything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, @sec-vet-your-ai introduces VET Your AI, a practical method for **V**erifying claims, **E**valuating reasoning, and **T**esting outputs against your own knowledge and context. It turns "stay critical" from a mindset into a repeatable process.
+Everything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, @sec-vet introduces VET Your AI, a practical method for **V**erifying claims, **E**valuating reasoning, and **T**esting outputs against your own knowledge and context. It turns "stay critical" from a mindset into a repeatable process.
 
 The critical eye you bring to AI output is not a burden. It is the thing that makes the output worth using. Without it, you have fluent text and no idea whether it is right. With it, you have a genuine thinking advantage.
 

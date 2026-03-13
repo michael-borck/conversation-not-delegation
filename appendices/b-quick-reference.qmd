@@ -49,7 +49,7 @@ Three steps to run before you trust any AI output that matters.
 
 : VET applied to real AI output. The domain does not matter. The habit does. {.striped}
 
-If you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See @sec-vet-your-ai for the full chapter.
+If you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See @sec-vet for the full chapter.
 
 
 ## The Conversation Loop
@@ -83,4 +83,4 @@ The loop is not linear. You can jump from Iterate back to Brainstorm when you re
 
 : Eight techniques for deeper thinking with AI. {.striped}
 
-Each technique is a different way to stay in conversation rather than delegating. Pick the one that matches your task. See @sec-seven-techniques for detailed walkthroughs and examples.
+Each technique is a different way to stay in conversation rather than delegating. Pick the one that matches your task. See @sec-techniques for detailed walkthroughs and examples.

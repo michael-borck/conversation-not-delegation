@@ -1,6 +1,6 @@
 # A Conversation Across Disciplines {#sec-across-disciplines}
 
-The tools are in place. You know the Conversation Loop (@sec-conversation-loop). You know how to start well with RTCF (@sec-rtcf). You know how to push back with VET (@sec-vet-your-ai). You know how to chain prompts into a sustained line of thinking (@sec-prompt-chaining).
+The tools are in place. You know the Conversation Loop (@sec-conversation-loop). You know how to start well with RTCF (@sec-rtcf). You know how to push back with VET (@sec-vet). You know how to chain prompts into a sustained line of thinking (@sec-prompt-chaining).
 
 Now let's see it work.
 
