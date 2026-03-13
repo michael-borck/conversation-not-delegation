@@ -1,8 +1,45 @@
+# Quarto
 /.quarto/
 /_book/
 /_freeze/
-*.html
-*.pdf
-.DS_Store
+*_files/
 
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if using any JS tools)
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Secrets
+.env
+.env.local
+*.key
+
+# Build artifacts
+*.log
+*.aux
+*.out
+*.toc
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Quarto ipynb
 **/*.quarto_ipynb

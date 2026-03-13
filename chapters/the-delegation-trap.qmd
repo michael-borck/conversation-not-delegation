@@ -7,7 +7,7 @@
 
 Most people, when they first sit down with an AI, ask it to do something for them.
 
-Write this email. Summarize this article. Draft this report. Generate this code.
+Write this email. summarise this article. Draft this report. Generate this code.
 
 This is natural. It is also a trap.
 
@@ -33,7 +33,7 @@ These sound similar. They are not. They lead to completely different outcomes, a
 | **What you ask** | "Write me a marketing plan." | "What are the weaknesses in my marketing plan?" |
 | **What you get** | A finished artifact | A sharper understanding of your own strategy |
 | **What you lose** | The thinking that would have made the plan yours | Nothing. You gain capability you did not have before. |
-| **What you ask** | "Summarize this research paper." | "What are the three strongest objections to this paper's methodology?" |
+| **What you ask** | "summarise this research paper." | "What are the three strongest objections to this paper's methodology?" |
 | **What you get** | A paragraph you could have written in ten minutes | A critical lens you might not have developed for years |
 | **What you lose** | The act of reading closely | Nothing. You read more carefully, not less. |
 | **What you ask** | "Generate a lesson plan for this topic." | "Here is my lesson plan. Where will students get stuck?" |

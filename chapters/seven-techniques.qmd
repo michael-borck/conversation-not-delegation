@@ -198,7 +198,7 @@ Be honest with your answers. Do not look things up first. The point is to find o
 
 ## 7. The Expert Panel
 
-**What it does.** The AI simulates multiple experts with different backgrounds, each analyzing your situation from their own perspective. A financial expert sees cost implications. A legal expert sees compliance risks. A customer experience expert sees user impact. You get multiple lenses on the same problem without needing to schedule five meetings.
+**What it does.** The AI simulates multiple experts with different backgrounds, each analysing your situation from their own perspective. A financial expert sees cost implications. A legal expert sees compliance risks. A customer experience expert sees user impact. You get multiple lenses on the same problem without needing to schedule five meetings.
 
 **When to use it.** You are making a decision that affects multiple domains and you want to make sure you are not thinking about it from only one angle.
 

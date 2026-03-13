@@ -79,7 +79,7 @@ I'm overlooking.
 
 About my situation:
 - Industry: [YOUR INDUSTRY]
-- Company type: [YOUR ORGANIZATION]
+- Company type: [YOUR organisation]
 - Current challenge: [DESCRIBE THE PROBLEM/DECISION]
 - Current approach: [WHAT YOU'RE CURRENTLY CONSIDERING]
 
@@ -352,7 +352,7 @@ When using AI for strategic decisions:
 
 **Beginner:**
 ```
-You are a strategic consultant. I lead [YOUR ROLE] at [YOUR ORGANIZATION TYPE].
+You are a strategic consultant. I lead [YOUR ROLE] at [YOUR organisation TYPE].
 
 What are the 5 most important questions I should be asking about AI investment
 in the next 12 months?

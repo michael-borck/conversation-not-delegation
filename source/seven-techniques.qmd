@@ -191,7 +191,7 @@ This transforms the AI output from an answer into a starting point for deeper an
 
 ## Information Systems
 - "Compare different systems implementation approaches: big bang, phased, modular. Evaluate each for speed, risk, and user adoption."
-- "Analyse different IT governance models: centralized, decentralized, federated. What are the trade-offs for control, innovation, and efficiency?"
+- "Analyse different IT governance models: centralised, decentralized, federated. What are the trade-offs for control, innovation, and efficiency?"
 - "What are the pros and cons of cloud-based versus on-premises systems?"
 
 ## Accounting & Finance

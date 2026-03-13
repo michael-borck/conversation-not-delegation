@@ -1,43 +1,81 @@
-# conversation-not-delegation
+# Conversation, Not Delegation
 
-Conversation, Not Delegation: Your expertise + AI's breadth = amplified thinking. This repository contains the source files for a book exploring the intersection of human knowledge and artificial intelligence, focusing on how to leverage AI as a collaborative tool rather than a replacement for human expertise.
+<!-- BADGES:START -->
+[![ai](https://img.shields.io/badge/-ai-ff6f00?style=flat-square)](https://github.com/topics/ai) [![human-ai-interaction](https://img.shields.io/badge/-human--ai--interaction-blue?style=flat-square)](https://github.com/topics/human-ai-interaction) [![critical-thinking](https://img.shields.io/badge/-critical--thinking-blue?style=flat-square)](https://github.com/topics/critical-thinking) [![prompting](https://img.shields.io/badge/-prompting-blue?style=flat-square)](https://github.com/topics/prompting) [![quarto](https://img.shields.io/badge/-quarto-blue?style=flat-square)](https://github.com/topics/quarto) [![book](https://img.shields.io/badge/-book-795548?style=flat-square)](https://github.com/topics/book) [![ai-partnership](https://img.shields.io/badge/-ai--partnership-blue?style=flat-square)](https://github.com/topics/ai-partnership)
+<!-- BADGES:END -->
 
-## Installation
+Your expertise + AI's breadth = amplified thinking
 
-To build the book locally, you'll need to have [Quarto](https://quarto.org/) installed. Once you have Quarto set up, you can clone the repository and build the book:
+## About this Book
 
-```
-git clone https://github.com/michael-borck/conversation-not-delegation.git
-cd conversation-not-delegation
+Most people use AI to get outputs. They delegate tasks, collect answers, and move on. That approach gets you something, but it costs you something too — it costs you the thinking that would have made you better at your work.
+
+This book teaches a different way. Instead of delegating to AI, you can **converse** with it — brainstorming, challenging assumptions, stress-testing reasoning, and exploring angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it.
+
+You do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.
+
+## Book Structure
+
+The book is organized into the following sections:
+
+### Part 1: Understanding the Landscape
+- What Is AI?
+- What Are Large Language Models?
+- The Delegation Trap
+- Does AI Make Us Dumber?
+
+### Part 2: Principles
+- The Conversation Loop
+- AI Last
+- Staying Critical
+
+### Part 3: The Methodology
+- RTCF: Starting Conversations Well
+- Prompt Chaining: Building on What You Started
+- Eight Techniques for Deeper Thinking
+- Using AI to Help You Use AI
+- VET Your AI: The Push-Back Framework
+
+### Part 4: Putting It Together
+- A Conversation Across Disciplines
+- Becoming More Capable
+
+### Appendices
+- CRAFT Prompting Framework
+- Quick Reference Cards
+
+## Related Materials
+
+This book is part of a comprehensive series for mastering modern software development in the AI era:
+
+### Foundational Methodology
+- **[Conversation, Not Delegation](https://michael-borck.github.io/conversation-not-delegation)** (this book): Your expertise + AI's breadth = amplified thinking
+- **[Converse Python, Partner AI](https://michael-borck.github.io/converse-python-partner-ai)**: The Python Edition — Intentional AI collaboration for programmers
+
+### Python Track
+- **[Think Python, Direct AI](https://michael-borck.github.io/think-python-direct-ai)**: Computational Thinking for Beginners
+- **[Code Python, Consult AI](https://michael-borck.github.io/code-python-consult-ai)**: Python Fundamentals for the AI Era
+- **[Ship Python, Orchestrate AI](https://michael-borck.github.io/ship-it-python-in-production)**: Professional Python in the AI Era
+
+### Web Track
+- **[Build Web, Guide AI](https://michael-borck.github.io/build-web-guide-ai)**: Business Web Development with AI
+
+## Development
+
+This book is being developed as a [Quarto](https://quarto.org/) project, with content written in Markdown format.
+
+To build the book locally:
+
+```bash
 quarto render
 ```
 
-This will generate the book's HTML output in the `_book/` directory.
-
-## Usage
-
-The book is divided into several chapters, each exploring a different aspect of the "conversation, not delegation" approach:
-
-1. **What is AI?**: An introduction to the core concepts and capabilities of artificial intelligence.
-2. **What are Large Language Models?**: A deep dive into the technology powering modern AI systems.
-3. **The Delegation Trap**: Exploring the pitfalls of over-relying on AI for tasks and decision-making.
-4. **Does AI Make Us Dumber?**: Examining the cognitive impacts of AI usage and how to avoid them.
-5. **The Conversation Loop**: Detailing a framework for integrating AI into human workflows in a collaborative manner.
-
-The appendices include additional resources and references for further exploration.
-
-## Sections
-
-- [Appendices](appendices/)
-  - [A Craft Framework](appendices/a-craft-framework.qmd)
-  - [Quick Reference](appendices/b-quick-reference.qmd)
-- [Chapters](chapters/)
-  - [What is AI?](chapters/01-what-is-ai.qmd)
-  - [What are LLMs?](chapters/02-what-are-llms.qmd)
-  - [The Delegation Trap](chapters/03-the-delegation-trap.qmd)
-  - [Does AI Make Us Dumber?](chapters/04-does-ai-make-us-dumber.qmd)
-  - [The Conversation Loop](chapters/05-the-conversation-loop.qmd)
+The rendered output will be in the `_book/` directory.
 
 ## License
 
-This project is licensed under the [Other](LICENSE) license.
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+## Contact
+
+Michael Borck — [GitHub](https://github.com/michael-borck)

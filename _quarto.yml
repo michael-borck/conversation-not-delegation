@@ -12,35 +12,38 @@ book:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"
       chapters:
-        - chapters/01-what-is-ai.qmd
-        - chapters/02-what-are-llms.qmd
-        - chapters/03-the-delegation-trap.qmd
-        - chapters/04-does-ai-make-us-dumber.qmd
+        - chapters/what-is-ai.qmd
+        - chapters/what-are-llms.qmd
+        - chapters/the-delegation-trap.qmd
+        - chapters/does-ai-make-us-dumber.qmd
     - part: "Part 2: Principles"
       chapters:
-        - chapters/05-the-conversation-loop.qmd
-        - chapters/06-ai-last.qmd
-        - chapters/07-staying-critical.qmd
+        - chapters/the-conversation-loop.qmd
+        - chapters/ai-last.qmd
+        - chapters/staying-critical.qmd
     - part: "Part 3: The Methodology"
       chapters:
-        - chapters/08-rtcf.qmd
-        - chapters/09-prompt-chaining.qmd
-        - chapters/10-seven-techniques.qmd
-        - chapters/11-using-ai-to-help-you-use-ai.qmd
-        - chapters/12-vet-your-ai.qmd
+        - chapters/rtcf.qmd
+        - chapters/prompt-chaining.qmd
+        - chapters/seven-techniques.qmd
+        - chapters/using-ai-to-help-you-use-ai.qmd
+        - chapters/vet-your-ai.qmd
     - part: "Part 4: Putting It Together"
       chapters:
-        - chapters/13-conversations-across-disciplines.qmd
-        - chapters/14-becoming-more-capable.qmd
+        - chapters/conversations-across-disciplines.qmd
+        - chapters/becoming-more-capable.qmd
   appendices:
     - appendices/a-craft-framework.qmd
     - appendices/b-quick-reference.qmd
+    - about-author.qmd
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
+      dark: darkly
     toc: true
-    toc-depth: 2
+    toc-depth: 3
     number-sections: true
     mermaid-format: js
   pdf:
@@ -49,3 +52,5 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
+  epub:
+    toc: true

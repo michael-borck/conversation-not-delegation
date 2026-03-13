@@ -266,7 +266,7 @@ Here's the workflow that actually works:
 
 ---
 
-## The Nuance: Conversational AI Isn't Magic, It's Dialogue
+## The Nuance: Conversational AI Isn't Magic, It's dialogue
 
 Here's what's actually happening in this back-and-forth:
 
