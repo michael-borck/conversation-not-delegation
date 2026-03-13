@@ -119,7 +119,7 @@ This symbiosis is itself a skill. It requires self-awareness about your own stre
 
 ## The Conversation, Not Delegation Connection
 
-This whole discussion circles back to a foundational idea from @sec-conversation-not-delegation: conversation, not delegation.
+This whole discussion circles back to a foundational idea from @sec-delegation-trap: conversation, not delegation.
 
 When you delegate to AI, "just give me the answer," cognitive offload becomes cognitive abdication. You get output without understanding. Over time, your own capabilities erode.
 

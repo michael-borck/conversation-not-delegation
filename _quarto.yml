@@ -7,7 +7,7 @@ book:
   subtitle: "Your expertise + AI's breadth = amplified thinking"
   author: "Michael Borck"
   date: today
-  license: "MIT"
+  license: "CC BY"
   chapters:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"

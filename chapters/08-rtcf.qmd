@@ -75,6 +75,8 @@ Context includes:
 
 You do not need to write an essay. A few sentences of well-chosen context dramatically changes the quality of what comes back.
 
+One caution: context often involves real data, real names, and real situations. Before pasting anything sensitive, review the guidance in @sec-staying-critical on what to share and what to de-identify. Good context does not require confidential details. You can describe the structure of your situation without exposing the specifics.
+
 
 ## Format
 

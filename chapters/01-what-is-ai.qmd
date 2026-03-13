@@ -36,9 +36,9 @@ AI is not one thing. It is a family of technologies, each suited to different pr
 
 **Deep learning** extends machine learning with multiple layers of pattern recognition, loosely inspired by how neurons work. The first layer might detect edges in an image. The second combines edges into shapes. The third combines shapes into objects. The fourth recognises that the object is a golden retriever. This layered approach handles very complex tasks: understanding speech, translating languages, driving cars, and generating text.
 
-**Large language models** are the most recent breakthrough. Trained on billions of text examples to predict what word comes next, they turned out to learn far more than grammar along the way. They learned facts, reasoning patterns, writing styles, and the ability to follow complex instructions. ChatGPT, Claude, and Gemini are all large language models.
+**Large language models** are the most recent breakthrough, and the focus of this book. They are covered in depth in the next chapter.
 
-Each of these builds on the one before it. Rule-based systems gave way to machine learning, which gave way to deep learning, which produced large language models. The progression is toward systems that need less hand-coding and can handle more ambiguity.
+Each of these approaches builds on the one before it. Rule-based systems gave way to machine learning, which gave way to deep learning, which produced large language models. The progression is toward systems that need less hand-coding and can handle more ambiguity.
 
 ## What AI Can and Cannot Do
 

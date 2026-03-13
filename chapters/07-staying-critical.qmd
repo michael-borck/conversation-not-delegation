@@ -66,6 +66,22 @@ These are patterns strongly associated with misinformation. When you see them, d
 The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
 
 
+## Watch What You Share
+
+Staying critical is not only about evaluating what the AI gives you. It is also about being careful with what you give it.
+
+When you type a prompt into a consumer AI tool, that text leaves your device. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.
+
+The practical rules are simple:
+
+- **Never paste confidential information into a free or consumer AI tool.** If you would not post it on social media, do not paste it into a prompt.
+- **De-identify before you prompt.** Replace real names with "Client A." Replace specific figures with ranges. Remove anything that could identify a person or organisation.
+- **Know the difference between consumer and enterprise tools.** Enterprise AI platforms (your organisation's licensed tools) typically offer data protection guarantees. Free-tier consumer tools typically do not. If you are unsure which you are using, treat it as consumer.
+- **When in doubt, use fictional scenarios.** You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.
+
+This is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.
+
+
 ## The Self-Check
 
 Before you act on anything AI has produced, especially anything that matters, run through these questions.

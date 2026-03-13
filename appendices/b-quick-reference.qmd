@@ -39,6 +39,16 @@ Three steps to run before you trust any AI output that matters.
 
 : The VET framework: Verify, Explain, Test. {.striped}
 
+**VET in practice:**
+
+| AI says... | V: Verify | E: Explain | T: Test |
+|---|---|---|---|
+| "Studies show pH drops faster in co-culture" | Find the actual studies | Can I explain the mechanism? | What about different substrates? |
+| "Optimal temperature is 37C" | Check the literature | Why 37C specifically? | What happens at 35C or 40C? |
+| "This method has 95% recovery rate" | Where is that number from? | What does 95% mean here? | Under what conditions? |
+
+: VET applied to real AI output. The domain does not matter. The habit does. {.striped}
+
 If you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See @sec-vet-your-ai for the full chapter.
 
 
@@ -48,10 +58,10 @@ Four stages. One feedback arc. Most good work passes through more than once.
 
 | Stage | What happens | Your mindset |
 |-------|-------------|--------------|
-| **Brainstorm** | Arrive with a question, not a task. | "What am I actually trying to figure out?" |
-| **Ideate** | Explore possibilities together. | "What angles haven't I considered?" |
-| **Iterate** | Push back, refine, redirect. | "That's close, but here's what's wrong..." |
-| **Amplify** | Make the best of it yours. | "How do I fold in what I know that the AI doesn't?" |
+| **Brainstorm**: Define your question | Arrive with a question, not a task. | "What am I actually trying to figure out?" |
+| **Ideate**: Explore possibilities | Go wide with the AI. | "What angles haven't I considered?" |
+| **Iterate**: Push back and refine | Challenge, redirect, sharpen. | "That's close, but here's what's wrong..." |
+| **Amplify**: Make it yours | Fold in what you know. Own the result. | "How do I bring in what the AI doesn't know?" |
 
 : The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify. {.striped}
 

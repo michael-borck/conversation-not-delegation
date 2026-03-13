@@ -4,3 +4,5 @@
 *.html
 *.pdf
 .DS_Store
+
+**/*.quarto_ipynb

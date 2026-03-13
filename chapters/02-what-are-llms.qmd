@@ -50,6 +50,21 @@ Here is where it matters that you know what these models actually are.
 
 These are not minor caveats. They are fundamental to what these systems are. An LLM is a model of language, not a model of truth.
 
+## Beyond Text
+
+Modern LLMs are no longer text-only. Many can process images, PDFs, spreadsheets, and other files as inputs. Some can generate images. Some can speak and listen through audio interfaces.
+
+This matters, but it is worth being precise about how.
+
+Images, PDFs, and data files are inputs. They provide context. You can upload a chart and ask the AI to interpret it, or attach a contract and ask it to summarise the key terms. This is useful, and the same principles in this book apply: you still need to verify the output, still need to bring your own judgement, still need to stay in the conversation.
+
+But context is not conversation. Uploading a document is closer to handing someone a file than to thinking alongside them. The conversational techniques in this book, pushing back, iterating, challenging, are fundamentally about the back-and-forth of language.
+
+Where multimodal AI may change the nature of conversation itself is voice. Audio interfaces let you talk with AI rather than type. The rhythm is different. You interrupt. You think out loud. You correct yourself mid-sentence. For many people, this is closer to how they actually think, and it may turn out to be a more natural way to stay in the conversation loop than typing prompts into a text box.
+
+The underlying process does not change. Whether you type or speak, upload a file or paste text, the principles are the same: bring your question, engage with what comes back, and own the result.
+
+
 ## The Line Worth Remembering
 
 They have read everything and experienced nothing.
