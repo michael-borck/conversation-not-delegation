@@ -1,5 +1,7 @@
 # What Is AI? {#sec-what-is-ai}
 
+![Understand the tool! It's pattern matching, not intelligence.](../images/comic-strip/01-what-is-ai.png){fig-alt="Comic strip: Two stick figures ask AI what it is. AI responds 'I am a very confident parrot.' Punchline: Confidence does not equal competence."}
+
 Artificial intelligence is software that can perform tasks that typically require human intelligence.
 
 That is it. No magic. No consciousness. Just software that can do things that used to require a human brain.

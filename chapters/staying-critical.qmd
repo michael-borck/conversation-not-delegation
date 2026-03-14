@@ -1,5 +1,7 @@
 # Staying Critical {#sec-staying-critical}
 
+![Confidence is not correctness. Verify everything.](../images/comic-strip/07-staying-critical.png){fig-alt="Comic strip: AI confidently states the Treaty of Paris was a 1912 agreement ending the Civil War. Two stick figures accept it uncritically. Panel 3: 'Wait... that's NOT RIGHT! I SHOULD HAVE CHECKED!' Punchline: Confidence is not correctness. Verify everything."}
+
 AI is confident even when it is wrong. It does not hedge. It does not say "I'm not sure about this part." It produces fluent, plausible, well-structured text regardless of whether the content is accurate, current, or applicable to your situation.
 
 This is not a flaw that will be fixed in the next model. It is a structural feature of how these tools work. They generate the most probable next token, not the most truthful one. Confidence and correctness are completely unrelated.

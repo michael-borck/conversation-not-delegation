@@ -1,5 +1,7 @@
 # The Conversation Loop {#sec-conversation-loop}
 
+![The prompt defines the shape of the conversation.](../images/comic-strip/05-the-conversation-loop.png){fig-alt="Comic strip: One stick figure demands 'give me the perfect answer' and gets generic text. Another asks 'help me find the core question' and gets thoughtful, specific output. Same AI. The conversation shape changes everything."}
+
 You now know what AI is and what it is not. You know that large language models have read everything and experienced nothing. You know the trap: delegation feels productive but erodes your capability over time. And you know that the protective practice is conversation, not delegation.
 
 The question becomes: what does that conversation actually look like?

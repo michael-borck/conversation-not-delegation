@@ -1,5 +1,7 @@
 # What Are Large Language Models? {#sec-what-are-llms}
 
+![AI read everything but experiences nothing.](../images/comic-strip/02-what-are-llms.png){fig-alt="Comic strip: Two stick figures learn that LLMs have read every book ever written. 'So that must make them wise, right?' AI responds: 'It makes me well-read. Different thing.'"}
+
 A large language model is AI trained to predict the next word in a sentence.
 
 That is the core idea. Everything else follows from it.

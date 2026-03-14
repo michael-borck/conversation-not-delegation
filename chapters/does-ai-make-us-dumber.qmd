@@ -1,5 +1,7 @@
 # Does AI Make Us Dumber? {#sec-cognitive-offload}
 
+![Don't blindly accept AI.](../images/comic-strip/04-does-ai-make-us-dumber.png){fig-alt="Comic strip: A stick figure relies on AI navigation for years. When the signal drops, she can't find the local shops she's used for twenty years. Punchline: Don't blindly accept AI."}
+
 ## The Honest Version
 
 I advocate for AI loudly and unapologetically. But advocacy without nuance is reckless.

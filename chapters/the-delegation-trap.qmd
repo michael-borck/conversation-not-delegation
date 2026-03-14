@@ -1,5 +1,7 @@
 # The Delegation Trap {#sec-delegation-trap}
 
+![Delegation is dependency, Conversation is Understanding.](../images/comic-strip/03-the-delegtion-trap.png){fig-alt="Comic strip: A stick figure delegates an essay to AI and gets an A+. When asked to explain it, they freeze. Punchline: Delegation is dependency, conversation is understanding."}
+
 > A single prompt gives you a single answer.
 > A **conversation** gives you **understanding**.
 
