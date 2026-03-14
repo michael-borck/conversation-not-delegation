@@ -45,3 +45,4 @@ venv/
 **/*.quarto_ipynb
 conversation-not-delegation.txt
 llm.txt
+rag-documents/
