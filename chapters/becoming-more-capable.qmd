@@ -1,5 +1,7 @@
 # Becoming More Capable {#sec-becoming-capable}
 
+![Become harder to replace by upgrading how you work.](../images/comic-strip/14-becoming-more-capable.png){fig-alt="Comic strip: A stick figure worries 'AI will replace me.' Another asks 'What if we let it replace THIS part instead?' Panel 3: 'I replaced my old workflow.' Punchline: Become harder to replace by upgrading how you work."}
+
 This book was never about AI.
 
 It was about you.
