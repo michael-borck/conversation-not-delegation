@@ -34,8 +34,9 @@ Transparency about process is more important than the comfort of pretending AI w
 
 - **Claude** (Anthropic) — conversational AI partner for drafting, iterating, and refining text
 - **Claude Code** — command-line tool for managing files, building, and publishing
-- **Google Gemini (Nano Banana)** — generative AI for creating the comic strip illustrations
-- **Python** and **Jupyter Notebooks** — the original medium in which the ideas were developed and tested
+- **Google Gemini (Nano Banana 2)** — generative AI for creating the comic strip illustrations (Chapters 1–8)
+- **FLUX Playground** (Black Forest Labs) — generative AI for creating the comic strip illustrations (Chapters 9–14)
+- **Python** and **Jupyter Notebooks** — the original medium in which the ideas were developed and tested; also used to generate the cover image (`create_cover.py`)
 - **Quarto** — open-source publishing system used to produce the HTML, PDF, and epub editions
 - **Git and GitHub** — version control and hosting, including GitHub Pages for the web edition
 

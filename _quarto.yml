@@ -42,11 +42,16 @@ book:
     - appendices/d-interactive-tools.qmd
     - about-author.qmd
 
+website:
+  favicon: favicon.svg
+
 format:
   html:
     theme:
       light: cosmo
       dark: darkly
+    css: styles.css
+    include-after-body: chatbot.html
     toc: true
     toc-depth: 3
     number-sections: true

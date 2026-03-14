@@ -1,0 +1,4 @@
+/* Invert line-art images in dark mode so black lines become white */
+.quarto-dark img {
+  filter: invert(1) hue-rotate(180deg);
+}
