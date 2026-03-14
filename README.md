@@ -41,23 +41,22 @@ The book is organized into the following sections:
 - Becoming More Capable
 
 ### Appendices
-- CRAFT Prompting Framework
+- Prompt Structuring Frameworks (RTCF, CRAFT, CO-STAR, RISEN, APE)
 - Quick Reference Cards
+- Further Reading
+- Interactive Tools
 
-## Related Materials
+## Related Books
 
-This book is part of a comprehensive series for mastering modern software development in the AI era:
+This book is a standalone guide to thinking with AI. It has a companion book that applies the same methodology to Python programming, but neither requires the other.
 
-### Foundational Methodology
-- **[Conversation, Not Delegation](https://michael-borck.github.io/conversation-not-delegation)** (this book): How to Think With AI, Not Just Use It
-- **[Converse Python, Partner AI](https://michael-borck.github.io/converse-python-partner-ai)**: The Python Edition — Intentional AI collaboration for programmers
+- **[Converse Python, Partner AI](https://michael-borck.github.io/converse-python-partner-ai)**: The same conversation-based methodology, through the lens of Python development
 
-### Python Track
+Other books by the same author cover specific technical tracks:
+
 - **[Think Python, Direct AI](https://michael-borck.github.io/think-python-direct-ai)**: Computational Thinking for Beginners
 - **[Code Python, Consult AI](https://michael-borck.github.io/code-python-consult-ai)**: Python Fundamentals for the AI Era
 - **[Ship Python, Orchestrate AI](https://michael-borck.github.io/ship-it-python-in-production)**: Professional Python in the AI Era
-
-### Web Track
 - **[Build Web, Guide AI](https://michael-borck.github.io/build-web-guide-ai)**: Business Web Development with AI
 
 ## Development
