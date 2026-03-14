@@ -13,6 +13,8 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 - Vaswani, A. et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*. The foundational paper introducing the transformer architecture that underpins all modern LLMs.
 
+- Bommasani, R. et al. (2021). "On the Opportunities and Risks of Foundation Models." *arXiv preprint*. Defines the category of "foundation models" — large models trained on broad data that can be adapted to many tasks — and maps their capabilities, risks, and societal implications.
+
 **RE2 (Re-Reading) prompting and unidirectional attention:**
 
 - Xu, X. et al. (2024). "RE2: Region-Enhanced Re-Reading Improves Large Language Models." *EMNLP 2024*. Demonstrates that repeating a question in the prompt creates pseudo-bidirectional attention, improving reasoning accuracy. Twice is the sweet spot; more repetitions degrade performance.
@@ -21,6 +23,14 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 - Ji, Z. et al. (2023). "Survey of Hallucination in Natural Language Generation." *ACM Computing Surveys*. A comprehensive overview of why LLMs generate plausible but false content, and the structural reasons this problem persists across model generations.
 
+**Bias and fairness:**
+
+- Gallegos, I.O. et al. (2024). "Bias and Fairness in Large Language Models: A Survey." *Computational Linguistics*. A thorough survey of how biases in training data manifest in LLM outputs, and the limitations of current approaches to mitigating them.
+
+**Deep learning foundations:**
+
+- LeCun, Y., Bengio, Y. and Hinton, G. (2015). "Deep Learning." *Nature*. The landmark review by the three pioneers of deep learning, providing accessible context for the layered pattern recognition that makes LLMs possible.
+
 
 ### Does AI Make Us Dumber?
 
@@ -28,13 +38,25 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 - Risko, E.F. and Gilbert, S.J. (2016). "Cognitive Offloading." *Trends in Cognitive Sciences*. The foundational paper on how humans use external tools to reduce cognitive demand, and when this helps versus hinders learning.
 
+- Sparrow, B., Liu, J. and Wegner, D.M. (2011). "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips." *Science*. The classic study showing that access to searchable information changes what we bother to remember — a pre-AI demonstration of cognitive offloading that foreshadowed current concerns about AI dependency.
+
 **The generation effect (producing information improves retention):**
 
 - Slamecka, N.J. and Graf, P. (1978). "The Generation Effect: Delineation of a Phenomenon." *Journal of Experimental Psychology: Human Learning and Memory*. Demonstrates that actively generating information leads to better memory than passively receiving it — the research basis for why doing your own thinking first matters.
 
 **AI and cognitive decline concerns:**
 
-- Bastani, H. et al. (2024). "Generative AI Can Harm Learning." *Working paper*. Evidence that students using AI without guardrails perform worse on subsequent unaided tasks, supporting the book's argument for conversation over delegation.
+- Bastani, H. et al. (2025). "Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics." *Proceedings of the National Academy of Sciences*. Evidence that students using AI without guardrails perform worse on subsequent unaided tasks, supporting the book's argument for conversation over delegation.
+
+**Metacognitive laziness:**
+
+- Fan, Y. et al. (2025). "Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance." *British Journal of Educational Technology*. Directly documents how AI use can erode the self-monitoring habits that distinguish deep learning from surface acceptance — the research behind the book's discussion of metacognitive laziness.
+
+- Gerlich, M. (2025). "AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking." *Societies*. Examines how widespread AI tool use affects critical thinking capacity at a societal level.
+
+**Cognitive surrender:**
+
+- Shaw, S.D. and Nave, G. (2026). "Thinking — Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning and the Rise of Cognitive Surrender." *Working paper, The Wharton School*. Introduces "cognitive surrender" — essentially what this book calls delegation — as a distinct phenomenon where people defer to AI not because it is right, but because thinking is effortful.
 
 
 ## Part 2: Principles
@@ -46,6 +68,10 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 - Wei, J. et al. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models." *NeurIPS 2022*. The paper that formalised "show your working" as a prompting strategy, demonstrating that step-by-step reasoning prompts dramatically improve performance on complex tasks.
 
 - Wang, X. et al. (2023). "Self-Consistency Improves Chain of Thought Reasoning in Language Models." *ICLR 2023*. Shows that sampling multiple reasoning paths and selecting the most consistent answer improves accuracy — the AI equivalent of "check your answers."
+
+**Human-AI collaboration:**
+
+- Wilson, H.J. and Daugherty, P.R. (2018). "Collaborative Intelligence: Humans and AI Are Joining Forces." *Harvard Business Review*. Argues that the greatest performance gains come not from AI alone or humans alone, but from structured collaboration — the professional case for conversation over delegation.
 
 **Few-shot prompting (worked examples):**
 
@@ -64,6 +90,10 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 - Perez, E. et al. (2023). "Discovering Language Model Behaviors with Model-Written Evaluations." *ACL 2023*. Includes evidence of sycophantic behaviour across multiple model families and scales.
 
+**The AI Dismissal Fallacy:**
+
+- Claessens, S., Veitch, P. and Everett, J.A.C. (2026). "Negative Perceptions of Outsourcing to Artificial Intelligence." *Computers in Human Behavior*. Research documenting that people systematically devalue work when they learn AI was involved in producing it — the empirical basis for the AI Dismissal Fallacy discussed in this book.
+
 **Bias in training data:**
 
 - Bender, E.M. et al. (2021). "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" *FAccT 2021*. A widely discussed paper on how training data biases propagate through LLMs, relevant to the book's warnings about not taking AI output at face value.
@@ -80,6 +110,10 @@ The underlying principles, however, are well-supported:
 **Structured prompts outperform unstructured ones:**
 
 - Zheng, H. et al. (2023). "Is ChatGPT a Good NLG Evaluator?" *arXiv preprint*. Among other findings, demonstrates that assigning specific roles to LLMs measurably changes output quality and focus — the research basis for the "R" in RTCF.
+
+- Federiakin, D. et al. (2024). "Prompt Engineering as a New 21st Century Skill." *Frontiers in Education*. Makes the case that structured prompting is a transferable professional skill, not a niche technical ability — supporting the book's argument that prompt structuring draws on existing competencies.
+
+- Sahoo, P. et al. (2024). "A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications." *arXiv preprint*. A comprehensive survey of prompting techniques, providing the broader landscape in which frameworks like RTCF, CRAFT, and CO-STAR sit.
 
 **The Explain step in VET (the Feynman Technique):**
 
@@ -105,6 +139,10 @@ The underlying principles, however, are well-supported:
 
 - Du, Y. et al. (2023). "Improving Factuality and Reasoning in Language Models through Multiagent Debate." *arXiv preprint*. Shows that having multiple LLM instances debate produces more accurate and well-reasoned outputs than single-model generation.
 
+**Practical AI prompting strategies:**
+
+- Mollick, E.R. and Mollick, L. (2023). "Assigning AI: Seven Approaches for Students, with Prompts." *arXiv preprint*. Seven structured approaches to using AI for learning, several of which map directly onto the techniques in this book (role play, debate, self-testing).
+
 **Formative self-testing (retrieval practice):**
 
 - Roediger, H.L. and Butler, A.C. (2011). "The Critical Role of Retrieval Practice in Long-Term Retention." *Trends in Cognitive Sciences*. The research basis for why testing yourself improves learning more than re-reading — the principle behind the Formative Self-Testing technique.
@@ -119,3 +157,5 @@ For readers who want a broader foundation in how AI systems work and how to thin
 - Christian, B. (2020). *The Alignment Problem*. New York: W.W. Norton. Explores the gap between what we want AI to do and what it actually does — relevant to understanding why sycophancy, hallucination, and bias persist.
 
 - Mollick, E. (2024). *Co-Intelligence: Living and Working with AI*. New York: Portfolio. A practitioner-oriented book on integrating AI into professional work, with a similar emphasis on human judgement.
+
+- Shneiderman, B. (2022). *Human-Centered AI*. Oxford University Press. Argues for AI systems designed around human control and oversight rather than full automation — the design philosophy that aligns with this book's emphasis on staying in the conversation.
