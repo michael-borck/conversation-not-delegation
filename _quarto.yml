@@ -11,6 +11,7 @@ book:
   date: today
   license: "CC BY"
   cover-image: images/cover.png
+  favicon: favicon.svg
   chapters:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"
@@ -41,9 +42,6 @@ book:
     - appendices/c-further-reading.qmd
     - appendices/d-interactive-tools.qmd
     - about-author.qmd
-
-website:
-  favicon: favicon.svg
 
 format:
   html:
