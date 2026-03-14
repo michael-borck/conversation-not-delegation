@@ -30,6 +30,15 @@ You may be thinking: if this book was written with AI, why should I trust it? Th
 
 Transparency about process is more important than the comfort of pretending AI was not involved. Every professional will face this question soon enough. This book's answer is to show the work.
 
+**Tools used in producing this book:**
+
+- **Claude** (Anthropic) — conversational AI partner for drafting, iterating, and refining text
+- **Claude Code** — command-line tool for managing files, building, and publishing
+- **Google Gemini (Nano Banana)** — generative AI for creating the comic strip illustrations
+- **Python** and **Jupyter Notebooks** — the original medium in which the ideas were developed and tested
+- **Quarto** — open-source publishing system used to produce the HTML, PDF, and epub editions
+- **Git and GitHub** — version control and hosting, including GitHub Pages for the web edition
+
 ## Who This Book Is For
 
 You do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.
