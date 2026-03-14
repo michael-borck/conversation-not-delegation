@@ -8,15 +8,7 @@ The question becomes: what does that conversation actually look like?
 
 This is the model. Not a framework with twelve steps and a certification programme. A loop with four stages and one rule: you stay in the conversation.
 
-```{mermaid}
-%%| label: fig-conversation-loop
-%%| fig-cap: "The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Repeat."
-flowchart LR
-  A[Brainstorm] --> B[Ideate]
-  B --> C[Iterate]
-  C --> D[Amplify]
-  D -->|Repeat| A
-```
+![The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Repeat.](../images/conversation-loop.png){#fig-conversation-loop fig-alt="Hand-drawn diagram showing four boxes — Brainstorm, Ideate, Iterate, Amplify — connected by arrows flowing left to right, with a Repeat arrow looping back from Amplify to Brainstorm."}
 
 Four stages. One feedback arc. Most good work passes through the loop more than once. That is the whole picture. Now let's walk through it.
 
