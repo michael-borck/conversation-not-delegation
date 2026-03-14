@@ -4,7 +4,7 @@
 [![ai](https://img.shields.io/badge/-ai-ff6f00?style=flat-square)](https://github.com/topics/ai) [![human-ai-interaction](https://img.shields.io/badge/-human--ai--interaction-blue?style=flat-square)](https://github.com/topics/human-ai-interaction) [![critical-thinking](https://img.shields.io/badge/-critical--thinking-blue?style=flat-square)](https://github.com/topics/critical-thinking) [![prompting](https://img.shields.io/badge/-prompting-blue?style=flat-square)](https://github.com/topics/prompting) [![quarto](https://img.shields.io/badge/-quarto-blue?style=flat-square)](https://github.com/topics/quarto) [![book](https://img.shields.io/badge/-book-795548?style=flat-square)](https://github.com/topics/book) [![ai-partnership](https://img.shields.io/badge/-ai--partnership-blue?style=flat-square)](https://github.com/topics/ai-partnership)
 <!-- BADGES:END -->
 
-Your expertise + AI's breadth = amplified thinking
+How to Think With AI, Not Just Use It
 
 ## About this Book
 
@@ -49,7 +49,7 @@ The book is organized into the following sections:
 This book is part of a comprehensive series for mastering modern software development in the AI era:
 
 ### Foundational Methodology
-- **[Conversation, Not Delegation](https://michael-borck.github.io/conversation-not-delegation)** (this book): Your expertise + AI's breadth = amplified thinking
+- **[Conversation, Not Delegation](https://michael-borck.github.io/conversation-not-delegation)** (this book): How to Think With AI, Not Just Use It
 - **[Converse Python, Partner AI](https://michael-borck.github.io/converse-python-partner-ai)**: The Python Edition — Intentional AI collaboration for programmers
 
 ### Python Track

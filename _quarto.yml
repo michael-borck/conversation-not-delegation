@@ -6,11 +6,11 @@ project:
 
 book:
   title: "Conversation, Not Delegation"
-  subtitle: "Your expertise + AI's breadth = amplified thinking"
+  subtitle: "How to Think With AI, Not Just Use It"
   author: "Michael Borck"
   date: today
   license: "CC BY"
-  cover-image: images/comic-strip/00-conversation-not-delegation.png
+  cover-image: images/cover.png
   chapters:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"

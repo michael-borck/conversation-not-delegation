@@ -79,7 +79,7 @@ def main():
 
     sections = []
     sections.append("CONVERSATION, NOT DELEGATION")
-    sections.append("Your expertise + AI's breadth = amplified thinking")
+    sections.append("How to Think With AI, Not Just Use It")
     sections.append("By Michael Borck")
     sections.append("=" * 60)
 
