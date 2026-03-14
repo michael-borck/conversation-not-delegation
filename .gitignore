@@ -43,3 +43,4 @@ venv/
 
 # Quarto ipynb
 **/*.quarto_ipynb
+conversation-not-delegation.txt

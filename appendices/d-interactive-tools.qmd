@@ -22,3 +22,18 @@ Paste any prompt and get instant feedback on which RTCF elements are present, pa
 A short quiz (3-4 minutes) that maps your current AI experience level and recommends which chapters of this book to prioritise. Whether you are a newcomer or a power user, it points you to the sections that will be most useful for where you are now.
 
 **[Take the AI Readiness Assessment](tools/ai-readiness-quiz.html){target="_blank"}**
+
+
+## Converse with This Book
+
+A book about conversation with AI should be available as a conversation with AI.
+
+The `prepare_for_ai.py` script in the `tools/` folder strips the formatting from every chapter and produces a single clean text file you can paste into ChatGPT, Claude, NotebookLM, or any other AI tool. Then ask it questions, challenge its interpretation of the ideas, or use it to explore how the frameworks apply to your specific situation.
+
+To generate the file, run:
+
+```bash
+python tools/prepare_for_ai.py
+```
+
+This creates `conversation-not-delegation.txt` (~31,000 words) in the project root. The book's own methodology applies: do not accept the AI's summary of the book uncritically. Push back. VET the answers. Stay in the conversation.
