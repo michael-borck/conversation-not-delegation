@@ -18,6 +18,18 @@ This is not a textbook and it is not a research paper. The ideas here reflect on
 
 Where claims rest on published research, you will find pointers in the Further Reading appendix (@sec-further-reading). Where they rest on practice and observation, that should be obvious from the writing. In both cases, the advice in this book applies to itself: engage with it critically, push back where your experience says otherwise, and make the ideas your own. A book about not delegating your thinking to AI would be contradicting itself if it asked you to accept its arguments uncritically.
 
+## How This Book Was Written
+
+This book was written using the methodology it describes.
+
+It began as a set of Python notebooks on computational thinking — practical exercises developed for teaching. Those notebooks evolved, through multiple conversation loops with AI, into the sibling book *Converse Python, Partner AI*. That process surfaced a methodology that was broader than programming: the principles of conversation over delegation, of staying critical, of using AI to amplify thinking rather than replace it. This book is the result of extracting and generalising that methodology for a wider audience.
+
+At every stage, the process looked like what you will read about in @sec-conversation-loop. Ideas were brainstormed, challenged, restructured, and refined across dozens of conversations. AI drafted, the author pushed back. AI suggested structures, the author broke them and rebuilt them. The frameworks in this book — RTCF, VET, the eight techniques — were tested in the writing of the book itself. Where AI was sycophantic, it was told to stop. Where it was generic, it was pressed for specifics. Where it was wrong, it was corrected.
+
+You may be thinking: if this book was written with AI, why should I trust it? That reaction is understandable, and this book has a name for it — the AI Dismissal Fallacy (@sec-staying-critical). The quality of an idea does not depend on whether a human or a machine contributed to its development. What matters is whether the author can explain, defend, and stand behind every sentence. The answer is yes, because conversation — real conversation, with pushback and judgement — is how the thinking was done.
+
+Transparency about process is more important than the comfort of pretending AI was not involved. Every professional will face this question soon enough. This book's answer is to show the work.
+
 ## Who This Book Is For
 
 You do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.
