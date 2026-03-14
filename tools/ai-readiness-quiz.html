@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Readiness Assessment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .quiz-intro {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .start-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+        }
+
+        .start-btn:focus {
+            outline: 2px solid #10b981;
+            outline-offset: 2px;
+        }
+
+        .quiz-container {
+            display: none;
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .progress-bar {
+            background: #1e293b;
+            border-radius: 10px;
+            height: 8px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .question-container {
+            display: none;
+        }
+
+        .question-container.active {
+            display: block;
+        }
+
+        .question-number {
+            color: #3b82f6;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .question-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .option {
+            background: #1e293b;
+            border: 2px solid #475569;
+            border-radius: 12px;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option:hover {
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .option:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+
+        .option.selected {
+            border-color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .option-radio {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #475569;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .option.selected .option-radio {
+            border-color: #10b981;
+            background: #10b981;
+        }
+
+        .option.selected .option-radio::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .option-text {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .question-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 20px rgba(107, 114, 128, 0.3);
+        }
+
+        .nav-btn:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .next-btn {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+
+        .results-container {
+            display: none;
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 30px;
+        }
+
+        .results-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .results-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .level-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .beginner { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+        .intermediate { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+        .advanced { background: rgba(139, 92, 246, 0.2); color: #a78bfa; }
+        .expert { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+
+        .results-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .recommendations {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .recommendation-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .recommendation-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .recommendation-content {
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .restart-btn {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 20px auto 0;
+        }
+
+        .restart-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 20px rgba(139, 92, 246, 0.3);
+        }
+
+        .restart-btn:focus {
+            outline: 2px solid #8b5cf6;
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .question-nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Readiness Assessment</h1>
+            <p class="subtitle">Discover where you are on the conversation-to-delegation spectrum</p>
+        </div>
+
+        <!-- Quiz Introduction -->
+        <div class="quiz-intro" id="quiz-intro">
+            <p class="intro-text">
+                This quick assessment will help you understand your current AI experience level and provide personalised recommendations for getting the most out of <em>Conversation, Not Delegation</em>.
+            </p>
+            <p class="intro-text">
+                <strong>Takes about 3-4 minutes • No right or wrong answers • Your results are private</strong>
+            </p>
+            <button class="start-btn" onclick="startQuiz()">Start Assessment</button>
+        </div>
+
+        <!-- Quiz Container -->
+        <div class="quiz-container" id="quiz-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <div id="questions-container">
+                <!-- Questions will be loaded here -->
+            </div>
+
+            <div class="question-nav">
+                <button class="nav-btn" id="prev-btn" onclick="previousQuestion()" disabled>← Previous</button>
+                <button class="nav-btn next-btn" id="next-btn" onclick="nextQuestion()" disabled>Next →</button>
+            </div>
+        </div>
+
+        <!-- Results Container -->
+        <div class="results-container" id="results-container">
+            <!-- Results will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        // Quiz state
+        let currentQuestion = 0;
+        let answers = [];
+        
+        // Quiz questions
+        const questions = [
+            {
+                id: 1,
+                text: "How often do you currently use AI tools (ChatGPT, Copilot, Claude, etc.)?",
+                options: [
+                    { text: "Never - this is completely new to me", value: 0 },
+                    { text: "Rarely - I've tried them once or twice", value: 1 },
+                    { text: "Occasionally - maybe once a week", value: 2 },
+                    { text: "Regularly - several times a week", value: 3 },
+                    { text: "Daily - they're part of my routine", value: 4 }
+                ]
+            },
+            {
+                id: 2,
+                text: "When you use AI tools, what do you typically ask them to do?",
+                options: [
+                    { text: "I don't use them yet", value: 0 },
+                    { text: "Simple questions - like definitions or basic explanations", value: 1 },
+                    { text: "Help with writing - emails, summaries, or editing", value: 2 },
+                    { text: "Problem-solving - research help, data interpretation, or planning", value: 3 },
+                    { text: "Complex tasks - data analysis, literature synthesis, experimental design", value: 4 }
+                ]
+            },
+            {
+                id: 3,
+                text: "How comfortable are you with refining and improving AI responses?",
+                options: [
+                    { text: "I don't know how to do this", value: 0 },
+                    { text: "I usually accept the first response", value: 1 },
+                    { text: "I sometimes ask follow-up questions", value: 2 },
+                    { text: "I often iterate to get better results", value: 3 },
+                    { text: "I systematically refine prompts for optimal outputs", value: 4 }
+                ]
+            },
+            {
+                id: 4,
+                text: "How do you typically structure your requests to AI?",
+                options: [
+                    { text: "I haven't used AI tools yet", value: 0 },
+                    { text: "Very basic - 'Help me with...' or 'What is...'", value: 1 },
+                    { text: "I provide some context but keep it simple", value: 2 },
+                    { text: "I try to be specific about what I want", value: 3 },
+                    { text: "I use structured approaches with role, context, and format", value: 4 }
+                ]
+            },
+            {
+                id: 5,
+                text: "How confident are you in evaluating AI responses for accuracy?",
+                options: [
+                    { text: "I wouldn't know how to check", value: 0 },
+                    { text: "I assume AI responses are mostly correct", value: 1 },
+                    { text: "I sometimes double-check important information", value: 2 },
+                    { text: "I regularly verify AI outputs against reliable sources", value: 3 },
+                    { text: "I critically evaluate all AI responses and know common pitfalls", value: 4 }
+                ]
+            },
+            {
+                id: 6,
+                text: "For research specifically, how have you used (or would you use) AI?",
+                options: [
+                    { text: "I haven't thought about using AI for research", value: 0 },
+                    { text: "Maybe for basic research questions or definitions", value: 1 },
+                    { text: "Help with literature searches or summarising papers", value: 2 },
+                    { text: "Assistance with methodology design or data interpretation", value: 3 },
+                    { text: "Integrated into my entire research workflow", value: 4 }
+                ]
+            },
+            {
+                id: 7,
+                text: "How aware are you of AI limitations and potential issues?",
+                options: [
+                    { text: "I don't know what limitations AI might have", value: 0 },
+                    { text: "I know AI can make mistakes but not sure what to watch for", value: 1 },
+                    { text: "I'm aware of some issues like bias or inaccuracy", value: 2 },
+                    { text: "I understand key limitations like hallucinations and training cutoffs", value: 3 },
+                    { text: "I'm well-versed in AI limitations and mitigation strategies", value: 4 }
+                ]
+            },
+            {
+                id: 8,
+                text: "What's your main goal for learning about AI in research?",
+                options: [
+                    { text: "Just getting started - want to understand the basics", value: 0 },
+                    { text: "Make my current work a bit easier and faster", value: 1 },
+                    { text: "Improve my research skills and productivity", value: 2 },
+                    { text: "Integrate AI strategically into my research process", value: 3 },
+                    { text: "Become a power user and help others learn", value: 4 }
+                ]
+            }
+        ];
+
+        function startQuiz() {
+            document.getElementById('quiz-intro').style.display = 'none';
+            document.getElementById('quiz-container').style.display = 'block';
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            const question = questions[currentQuestion];
+            const container = document.getElementById('questions-container');
+            
+            container.innerHTML = `
+                <div class="question-container active">
+                    <div class="question-number">Question ${currentQuestion + 1} of ${questions.length}</div>
+                    <div class="question-title">${question.text}</div>
+                    <div class="options-container">
+                        ${question.options.map((option, index) => `
+                            <div class="option" onclick="selectOption(${index}, ${option.value})">
+                                <div class="option-radio"></div>
+                                <div class="option-text">${option.text}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            
+            updateProgress();
+            updateNavigation();
+        }
+
+        function selectOption(optionIndex, value) {
+            // Clear previous selections
+            document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+            
+            // Select current option
+            document.querySelectorAll('.option')[optionIndex].classList.add('selected');
+            
+            // Store answer
+            answers[currentQuestion] = value;
+            
+            // Enable next button
+            document.getElementById('next-btn').disabled = false;
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                loadQuestion();
+                
+                // Restore previous selection
+                if (answers[currentQuestion] !== undefined) {
+                    const selectedValue = answers[currentQuestion];
+                    const question = questions[currentQuestion];
+                    const optionIndex = question.options.findIndex(opt => opt.value === selectedValue);
+                    if (optionIndex !== -1) {
+                        document.querySelectorAll('.option')[optionIndex].classList.add('selected');
+                        document.getElementById('next-btn').disabled = false;
+                    }
+                }
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestion + 1) / questions.length) * 100;
+            document.getElementById('progress-fill').style.width = progress + '%';
+        }
+
+        function updateNavigation() {
+            document.getElementById('prev-btn').disabled = currentQuestion === 0;
+            document.getElementById('next-btn').textContent = currentQuestion === questions.length - 1 ? 'Show Results' : 'Next →';
+            document.getElementById('next-btn').disabled = answers[currentQuestion] === undefined;
+        }
+
+        function calculateLevel() {
+            const totalScore = answers.reduce((sum, score) => sum + score, 0);
+            const maxScore = questions.length * 4;
+            const percentage = (totalScore / maxScore) * 100;
+            
+            if (percentage < 25) return 'beginner';
+            if (percentage < 50) return 'intermediate';
+            if (percentage < 75) return 'advanced';
+            return 'expert';
+        }
+
+        function getRecommendations(level) {
+            const recommendations = {
+                beginner: {
+                    title: "AI Newcomer",
+                    description: "You're just getting started with AI tools — that's the perfect time to build good habits. Start with Part 1 of the book to understand what AI actually is.",
+                    cards: [
+                        {
+                            title: "Start Here",
+                            content: "Read chapters 1-2 (What Is AI? and What Are LLMs?) to build a mental model of what these tools are and are not. Then jump to the RTCF chapter — it gives you a simple structure for your very first prompt."
+                        },
+                        {
+                            title: "First Steps",
+                            content: "Pick any free AI tool (ChatGPT, Claude, Gemini) and try the RTCF Prompt Builder on this site. Build a prompt, paste it in, and see what comes back. Then push back on the response."
+                        },
+                        {
+                            title: "The Key Habit",
+                            content: "Read The Delegation Trap (chapter 3) early. It will change how you think about AI from day one. The difference between good and poor AI use is not skill — it's whether you stay in the conversation."
+                        },
+                        {
+                            title: "Build Critical Habits",
+                            content: "Learn to VET your AI outputs: Verify (can I find this independently?), Explain (can I say this in my own words?), Test (does this hold up under scrutiny?). See the VET chapter."
+                        }
+                    ]
+                },
+                intermediate: {
+                    title: "AI Explorer",
+                    description: "You've experimented with AI and have some experience. Focus on moving from single prompts to genuine conversation — that's where the real value lives.",
+                    cards: [
+                        {
+                            title: "Level Up Your Prompts",
+                            content: "Use the RTCF Framework to structure your opening prompts, then read the Prompt Chaining chapter to learn how to sustain a conversation across multiple exchanges."
+                        },
+                        {
+                            title: "Try the Eight Techniques",
+                            content: "The Eight Techniques chapter gives you specific conversation shapes: Reverse Prompting, Debating, Expert Panel, and more. Pick one that matches your next task and try it."
+                        },
+                        {
+                            title: "Watch for Sycophancy",
+                            content: "Read Staying Critical — especially the section on the Sycophancy Trap. AI will flatter your ideas. Learn to prompt past it: 'What are the three weakest points in this argument?'"
+                        },
+                        {
+                            title: "Compare Tools",
+                            content: "Try the same prompt across ChatGPT, Claude, and Gemini. You'll learn each tool's strengths. The book's argument holds across all of them: the model matters less than your conversation."
+                        }
+                    ]
+                },
+                advanced: {
+                    title: "AI Practitioner",
+                    description: "You're comfortable with AI tools and use them regularly. Focus on the critical evaluation frameworks and the deeper 'why' behind what works.",
+                    cards: [
+                        {
+                            title: "Understand Why It Works",
+                            content: "Read the Cognitive Strategy Transfer and Why Conversation Scales sections in the Conversation Loop chapter. Understanding the architecture will sharpen your intuitions."
+                        },
+                        {
+                            title: "VET Everything",
+                            content: "At your level, the biggest risk is over-trusting AI. Apply the VET framework rigorously. The Sycophancy Trap section is especially relevant — fluent output is not honest output."
+                        },
+                        {
+                            title: "Advanced Techniques",
+                            content: "Try Expert Panel and Risk Deep-Dive from the Eight Techniques chapter. Use Debating to stress-test your own thinking, not just AI output."
+                        },
+                        {
+                            title: "Avoid the Drift",
+                            content: "Read 'Amplify Your Thinking, Not the Hallucinations' in the Conversation Loop chapter. The longer your AI workflows, the more important it is to stay in the loop at every step."
+                        }
+                    ]
+                },
+                expert: {
+                    title: "AI Power User",
+                    description: "You're already using AI effectively. This book will give you frameworks to articulate what you're doing intuitively, and sharpen the edges.",
+                    cards: [
+                        {
+                            title: "Sharpen Your Edge",
+                            content: "Focus on Staying Critical and the VET framework. Even experienced users fall into the trap of trusting fluent output. The Gell-Mann Amnesia section may surprise you."
+                        },
+                        {
+                            title: "The Meta Layer",
+                            content: "Read Using AI to Help You Use AI — it covers how to use AI to improve your own prompting, a recursive skill that compounds over time."
+                        },
+                        {
+                            title: "Help Others",
+                            content: "The Prompt Structuring Frameworks appendix compares RTCF, CRAFT, CO-STAR, RISEN, and APE — useful if you're teaching others. Pick the framework that fits your audience."
+                        },
+                        {
+                            title: "Stay Honest",
+                            content: "Remember: conversation, not delegation. Your expertise is the ingredient AI cannot supply. Read the Becoming More Capable chapter for the long view."
+                        }
+                    ]
+                }
+            };
+            
+            return recommendations[level];
+        }
+
+        function showResults() {
+            const level = calculateLevel();
+            const recommendations = getRecommendations(level);
+            
+            document.getElementById('quiz-container').style.display = 'none';
+            
+            const resultsContainer = document.getElementById('results-container');
+            resultsContainer.innerHTML = `
+                <div class="results-header">
+                    <div class="results-title">Your AI Readiness Level</div>
+                    <div class="level-badge ${level}">${recommendations.title}</div>
+                    <div class="results-description">${recommendations.description}</div>
+                </div>
+                
+                <div class="recommendations">
+                    ${recommendations.cards.map(card => `
+                        <div class="recommendation-card">
+                            <div class="recommendation-title">${card.title}</div>
+                            <div class="recommendation-content">${card.content}</div>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <button class="restart-btn" onclick="restartQuiz()">🔄 Take Assessment Again</button>
+            `;
+            
+            resultsContainer.style.display = 'block';
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            answers = [];
+            document.getElementById('results-container').style.display = 'none';
+            document.getElementById('quiz-intro').style.display = 'block';
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Quiz is ready
+        });
+    </script>
+</body>
+</html>

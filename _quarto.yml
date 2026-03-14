@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _book
+  resources:
+    - tools/**
 
 book:
   title: "Conversation, Not Delegation"
@@ -36,6 +38,7 @@ book:
     - appendices/a-craft-framework.qmd
     - appendices/b-quick-reference.qmd
     - appendices/c-further-reading.qmd
+    - appendices/d-interactive-tools.qmd
     - about-author.qmd
 
 format:
