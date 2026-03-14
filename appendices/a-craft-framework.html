@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix A — CRAFT Prompting Framework – Conversation, Not Delegation</title>
+<title>Appendix A — Prompt Structuring Frameworks – Conversation, Not Delegation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -249,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CRAFT Prompting Framework</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Prompt Structuring Frameworks</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -423,7 +423,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/a-craft-framework.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CRAFT Prompting Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Prompt Structuring Frameworks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -456,10 +456,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-five-elements" id="toc-the-five-elements" class="nav-link active" data-scroll-target="#the-five-elements"><span class="header-section-number">A.1</span> The Five Elements</a></li>
-  <li><a href="#how-craft-relates-to-rtcf" id="toc-how-craft-relates-to-rtcf" class="nav-link" data-scroll-target="#how-craft-relates-to-rtcf"><span class="header-section-number">A.2</span> How CRAFT Relates to RTCF</a></li>
-  <li><a href="#when-craft-is-especially-useful" id="toc-when-craft-is-especially-useful" class="nav-link" data-scroll-target="#when-craft-is-especially-useful"><span class="header-section-number">A.3</span> When CRAFT Is Especially Useful</a></li>
-  <li><a href="#the-deeper-point" id="toc-the-deeper-point" class="nav-link" data-scroll-target="#the-deeper-point"><span class="header-section-number">A.4</span> The Deeper Point</a></li>
+  <li><a href="#rtcf-before-and-after" id="toc-rtcf-before-and-after" class="nav-link active" data-scroll-target="#rtcf-before-and-after"><span class="header-section-number">A.1</span> RTCF: Before and After</a></li>
+  <li><a href="#the-family" id="toc-the-family" class="nav-link" data-scroll-target="#the-family"><span class="header-section-number">A.2</span> The Family</a>
+  <ul class="collapse">
+  <li><a href="#rtcf-role-task-context-format" id="toc-rtcf-role-task-context-format" class="nav-link" data-scroll-target="#rtcf-role-task-context-format"><span class="header-section-number">A.2.1</span> RTCF — Role, Task, Context, Format</a></li>
+  <li><a href="#craft-context-role-action-format-tonetarget" id="toc-craft-context-role-action-format-tonetarget" class="nav-link" data-scroll-target="#craft-context-role-action-format-tonetarget"><span class="header-section-number">A.2.2</span> CRAFT — Context, Role, Action, Format, Tone/Target</a></li>
+  <li><a href="#co-star-context-objective-style-tone-audience-response" id="toc-co-star-context-objective-style-tone-audience-response" class="nav-link" data-scroll-target="#co-star-context-objective-style-tone-audience-response"><span class="header-section-number">A.2.3</span> CO-STAR — Context, Objective, Style, Tone, Audience, Response</a></li>
+  <li><a href="#risen-role-instructions-steps-end-goal-narrowing" id="toc-risen-role-instructions-steps-end-goal-narrowing" class="nav-link" data-scroll-target="#risen-role-instructions-steps-end-goal-narrowing"><span class="header-section-number">A.2.4</span> RISEN — Role, Instructions, Steps, End goal, Narrowing</a></li>
+  <li><a href="#ape-action-purpose-expectation" id="toc-ape-action-purpose-expectation" class="nav-link" data-scroll-target="#ape-action-purpose-expectation"><span class="header-section-number">A.2.5</span> APE — Action, Purpose, Expectation</a></li>
+  </ul></li>
+  <li><a href="#choosing-a-framework" id="toc-choosing-a-framework" class="nav-link" data-scroll-target="#choosing-a-framework"><span class="header-section-number">A.3</span> Choosing a Framework</a></li>
+  <li><a href="#the-caveat" id="toc-the-caveat" class="nav-link" data-scroll-target="#the-caveat"><span class="header-section-number">A.4</span> The Caveat</a></li>
   </ul>
 </nav>
     </div>
@@ -467,9 +474,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CRAFT Prompting Framework</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Prompt Structuring Frameworks</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-craft" class="quarto-section-identifier">Appendix A — CRAFT Prompting Framework</span></h1>
+<h1 class="title"><span id="sec-prompt-frameworks" class="quarto-section-identifier">Appendix A — Prompt Structuring Frameworks</span></h1>
 </div>
 
 
@@ -486,77 +493,135 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>CRAFT (Context, Role, Action, Format, Tone/Target) is a five-element prompting framework. If you have encountered it in workshops, courses, or other resources, this appendix shows how it relates to the RTCF framework used throughout this book.</p>
-<p>Same family. Slightly more detailed. Equally valid.</p>
-<section id="the-five-elements" class="level2" data-number="A.1">
-<h2 data-number="A.1" class="anchored" data-anchor-id="the-five-elements"><span class="header-section-number">A.1</span> The Five Elements</h2>
+<p>RTCF is not the only prompt structuring framework. A family of mnemonics emerged in 2023-24 as practitioners and educators figured out what makes a good opening prompt. They all capture the same insight: telling the AI who to be, what to do, what background it needs, and how to format the output produces dramatically better results than an unstructured request.</p>
+<p>This appendix compares the most widely used frameworks side by side, using the same task so you can see how each one shapes the prompt differently. The task: getting AI to help analyse student feedback data.</p>
+<p>None of these frameworks have a single academic source. They are practitioner knowledge — patterns that emerged from use, were shared in workshops and online communities, and proved useful enough to stick. The underlying principle (structured communication outperforms unstructured communication) is well-established. The mnemonics are packaging, not discovery.</p>
+<p>We chose RTCF for this book because it has the fewest elements to remember and covers the ground that matters most. But if a different framework clicks better for how you think, use that one. The letters do not matter. The habit of thinking before prompting does.</p>
+<section id="rtcf-before-and-after" class="level2" data-number="A.1">
+<h2 data-number="A.1" class="anchored" data-anchor-id="rtcf-before-and-after"><span class="header-section-number">A.1</span> RTCF: Before and After</h2>
+<p>To see why structure matters, compare these two prompts for the same task.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Weak prompt">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Weak prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“What can you tell me about student feedback?”</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="RTCF prompt">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>RTCF prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“You are an experienced higher education analyst <strong>(R)</strong>. Identify the three strongest themes and two areas of concern in the student feedback data I will paste below <strong>(T)</strong>. This is from a second-year undergraduate unit with 85 responses across two campuses <strong>(C)</strong>. Present findings as a summary paragraph followed by a table with columns: Theme, Evidence, and Recommended Action <strong>(F)</strong>.”</p>
+</div>
+</div>
+<p>You do not need all four elements every time — use what is relevant. But when a prompt feels vague and you are not sure why, checking against RTCF will almost always reveal what is missing.</p>
+</section>
+<section id="the-family" class="level2" data-number="A.2">
+<h2 data-number="A.2" class="anchored" data-anchor-id="the-family"><span class="header-section-number">A.2</span> The Family</h2>
+<section id="rtcf-role-task-context-format" class="level3" data-number="A.2.1">
+<h3 data-number="A.2.1" class="anchored" data-anchor-id="rtcf-role-task-context-format"><span class="header-section-number">A.2.1</span> RTCF — Role, Task, Context, Format</h3>
+<p>The framework used throughout this book. Four elements, no extras. Role sets the expertise. Task specifies the action. Context provides the background. Format defines the output structure.</p>
+<p><strong>Same task:</strong></p>
+<blockquote class="blockquote">
+<p>“You are an experienced higher education analyst <strong>(R)</strong>. Identify the three strongest themes and two areas of concern in this student feedback data <strong>(T)</strong>. This is from a second-year undergraduate unit with 85 responses across two campuses <strong>(C)</strong>. Present as a summary paragraph followed by a themed table <strong>(F)</strong>.”</p>
+</blockquote>
+</section>
+<section id="craft-context-role-action-format-tonetarget" class="level3" data-number="A.2.2">
+<h3 data-number="A.2.2" class="anchored" data-anchor-id="craft-context-role-action-format-tonetarget"><span class="header-section-number">A.2.2</span> CRAFT — Context, Role, Action, Format, Tone/Target</h3>
+<p>Adds a fifth element: Tone or Target audience. Useful when the same content needs to be pitched differently for different readers — a board summary versus a team debrief, for example.</p>
+<p><strong>Same task:</strong></p>
+<blockquote class="blockquote">
+<p>“This is student feedback data from a second-year undergraduate unit with 85 responses across two campuses <strong>(C)</strong>. You are an experienced higher education analyst <strong>(R)</strong>. Identify the three strongest themes and two areas of concern <strong>(A)</strong>. Present as a summary paragraph followed by a themed table <strong>(F)</strong>. Use clear, non-technical language suitable for a faculty teaching committee <strong>(T)</strong>.”</p>
+</blockquote>
+</section>
+<section id="co-star-context-objective-style-tone-audience-response" class="level3" data-number="A.2.3">
+<h3 data-number="A.2.3" class="anchored" data-anchor-id="co-star-context-objective-style-tone-audience-response"><span class="header-section-number">A.2.3</span> CO-STAR — Context, Objective, Style, Tone, Audience, Response</h3>
+<p>Six elements. Splits what RTCF bundles into Context and Format into finer-grained components. Useful for communication-heavy tasks where style, tone, and audience are genuinely distinct decisions.</p>
+<p><strong>Same task:</strong></p>
+<blockquote class="blockquote">
+<p>“I have student feedback data from a second-year undergraduate unit, 85 responses across two campuses <strong>(C)</strong>. Identify the three strongest themes and two areas of concern <strong>(O)</strong>. Write in the style of an institutional quality report <strong>(S)</strong>. Professional but accessible, avoiding jargon <strong>(T)</strong>. For a faculty teaching committee that includes both academics and professional staff <strong>(A)</strong>. Summary paragraph followed by a themed table with columns: Theme, Evidence, Recommended Action <strong>(R)</strong>.”</p>
+</blockquote>
+</section>
+<section id="risen-role-instructions-steps-end-goal-narrowing" class="level3" data-number="A.2.4">
+<h3 data-number="A.2.4" class="anchored" data-anchor-id="risen-role-instructions-steps-end-goal-narrowing"><span class="header-section-number">A.2.4</span> RISEN — Role, Instructions, Steps, End goal, Narrowing</h3>
+<p>Five elements with a distinctive feature: it asks you to specify the steps the AI should follow and the end goal you are working toward. Useful for multi-stage tasks where the process matters as much as the output.</p>
+<p><strong>Same task:</strong></p>
+<blockquote class="blockquote">
+<p>“You are an experienced higher education analyst <strong>(R)</strong>. Analyse the student feedback data I will paste below <strong>(I)</strong>. First, read all responses and identify recurring themes. Then, categorise each theme as a strength or concern. Finally, assess which findings are actionable <strong>(S)</strong>. The end goal is a briefing document for a faculty teaching review <strong>(E)</strong>. Focus only on themes that appear in at least 10% of responses <strong>(N)</strong>.”</p>
+</blockquote>
+</section>
+<section id="ape-action-purpose-expectation" class="level3" data-number="A.2.5">
+<h3 data-number="A.2.5" class="anchored" data-anchor-id="ape-action-purpose-expectation"><span class="header-section-number">A.2.5</span> APE — Action, Purpose, Expectation</h3>
+<p>Three elements. The most minimal framework. Useful for quick, low-stakes prompts where brevity matters more than precision.</p>
+<p><strong>Same task:</strong></p>
+<blockquote class="blockquote">
+<p>“Analyse this student feedback data <strong>(A)</strong> to help me prepare for a teaching review meeting <strong>(P)</strong>. I expect a short summary of key themes and a table of findings with recommended actions <strong>(E)</strong>.”</p>
+</blockquote>
+</section>
+</section>
+<section id="choosing-a-framework" class="level2" data-number="A.3">
+<h2 data-number="A.3" class="anchored" data-anchor-id="choosing-a-framework"><span class="header-section-number">A.3</span> Choosing a Framework</h2>
 <table class="table-striped caption-top table">
-<caption>The CRAFT framework: five elements that structure a prompt for clarity.</caption>
+<caption>Prompt structuring frameworks compared. More elements give finer control but take longer to compose.</caption>
 <colgroup>
-<col style="width: 19%">
-<col style="width: 21%">
-<col style="width: 36%">
-<col style="width: 21%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Letter</th>
-<th>Element</th>
-<th>What It Means</th>
-<th>Example</th>
+<th>Framework</th>
+<th>Elements</th>
+<th>Best for</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>C</strong></td>
-<td><strong>Context</strong></td>
-<td>What’s the background?</td>
-<td>“This is student enrolment data from business units over three semesters.”</td>
+<td><strong>APE</strong></td>
+<td>3</td>
+<td>Quick tasks where speed matters more than precision</td>
 </tr>
 <tr class="even">
-<td><strong>R</strong></td>
-<td><strong>Role</strong></td>
-<td>What role should the AI take?</td>
-<td>“You are an experienced teaching coordinator.”</td>
+<td><strong>RTCF</strong></td>
+<td>4</td>
+<td>General-purpose prompting — covers most situations</td>
 </tr>
 <tr class="odd">
-<td><strong>A</strong></td>
-<td><strong>Action</strong></td>
-<td>What specifically should the AI do?</td>
-<td>“Analyse trends and identify units at risk.”</td>
+<td><strong>CRAFT</strong></td>
+<td>5</td>
+<td>Communication tasks where tone and audience are distinct decisions</td>
 </tr>
 <tr class="even">
-<td><strong>F</strong></td>
-<td><strong>Format</strong></td>
-<td>How should the output be structured?</td>
-<td>“Provide results as bullet points.”</td>
+<td><strong>RISEN</strong></td>
+<td>5</td>
+<td>Multi-step tasks where the process matters</td>
 </tr>
 <tr class="odd">
-<td><strong>T</strong></td>
-<td><strong>Tone/Target</strong></td>
-<td>What tone, and who’s the audience?</td>
-<td>“Use clear language suitable for a team meeting.”</td>
+<td><strong>CO-STAR</strong></td>
+<td>6</td>
+<td>High-stakes communication with specific style and audience requirements</td>
 </tr>
 </tbody>
 </table>
-<p>You do not need all five every time. They are a scaffold, not a checklist you must complete. Some prompts need heavy context. Others need only a clear action and format. Use what serves the conversation.</p>
+<p>The frameworks are listed from simplest to most detailed. Start with RTCF. If you find yourself repeatedly needing to specify tone separately from context, try CRAFT. If you need to define a multi-step process, try RISEN. If you never need more than three elements, APE is fine.</p>
+<p>The goal is not to memorise all five. It is to build the habit of structuring your thinking before you type. Any of these frameworks will get you there. Pick one, use it until it becomes instinct, then let it go.</p>
 </section>
-<section id="how-craft-relates-to-rtcf" class="level2" data-number="A.2">
-<h2 data-number="A.2" class="anchored" data-anchor-id="how-craft-relates-to-rtcf"><span class="header-section-number">A.2</span> How CRAFT Relates to RTCF</h2>
-<p>This book uses RTCF (Role, Task, Context, Format) as its primary framework. The two are closely related.</p>
-<p>RTCF’s <strong>Task</strong> maps to CRAFT’s <strong>Action</strong>. RTCF’s <strong>Context</strong> absorbs what CRAFT splits into <strong>Context</strong> and <strong>Tone/Target</strong>. The result is a simpler four-element structure that covers the same ground with fewer moving parts.</p>
-<p>Neither is better. CRAFT gives you a finer-grained prompt when you want to be explicit about audience and tone as separate decisions. RTCF keeps things compact when you want to move quickly.</p>
-<p>If CRAFT clicks for how you think, use it. If RTCF feels more natural, use that. The point of both frameworks is the same: slow down for thirty seconds before typing, think about what the AI actually needs to know, then start the conversation.</p>
-</section>
-<section id="when-craft-is-especially-useful" class="level2" data-number="A.3">
-<h2 data-number="A.3" class="anchored" data-anchor-id="when-craft-is-especially-useful"><span class="header-section-number">A.3</span> When CRAFT Is Especially Useful</h2>
-<p>CRAFT earns its extra element when audience and tone are genuinely distinct decisions. Writing a risk summary for a board meeting is a different tone and target than writing the same information for a project team standup. Making that explicit in your prompt, rather than bundling it into context, can sharpen the output.</p>
-<p>For most everyday prompting, RTCF is sufficient. For high-stakes communication where tone matters as much as content, CRAFT gives you a dedicated place to specify it.</p>
-</section>
-<section id="the-deeper-point" class="level2" data-number="A.4">
-<h2 data-number="A.4" class="anchored" data-anchor-id="the-deeper-point"><span class="header-section-number">A.4</span> The Deeper Point</h2>
-<p>Frameworks are training wheels. They help you build the habit of thinking before prompting. After enough practice, you stop reciting letters and start instinctively asking yourself: what does the AI need to know to help me here?</p>
-<p>That instinct is the goal. CRAFT and RTCF are both paths to the same destination.</p>
+<section id="the-caveat" class="level2" data-number="A.4">
+<h2 data-number="A.4" class="anchored" data-anchor-id="the-caveat"><span class="header-section-number">A.4</span> The Caveat</h2>
+<p>Every one of these frameworks improves your <em>opening</em> prompt. None of them replace the conversation that follows. A perfectly structured RTCF or CO-STAR prompt is still a single prompt. It is still one shot. The real value comes from what you do with the response: iterate, push back, refine, and make the output yours.</p>
+<p>Structured prompts are a better starting point. They are not a substitute for staying in the conversation.</p>
 
 
 </section>

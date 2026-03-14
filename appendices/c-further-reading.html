@@ -423,7 +423,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/a-craft-framework.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CRAFT Prompting Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Prompt Structuring Frameworks</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -468,7 +468,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#part-3-the-methodology" id="toc-part-3-the-methodology" class="nav-link" data-scroll-target="#part-3-the-methodology"><span class="header-section-number">C.3</span> Part 3: The Methodology</a>
   <ul class="collapse">
-  <li><a href="#rtcf-and-prompt-engineering" id="toc-rtcf-and-prompt-engineering" class="nav-link" data-scroll-target="#rtcf-and-prompt-engineering"><span class="header-section-number">C.3.1</span> RTCF and Prompt Engineering</a></li>
+  <li><a href="#rtcf-vet-and-the-prompt-structuring-frameworks" id="toc-rtcf-vet-and-the-prompt-structuring-frameworks" class="nav-link" data-scroll-target="#rtcf-vet-and-the-prompt-structuring-frameworks"><span class="header-section-number">C.3.1</span> RTCF, VET, and the Prompt Structuring Frameworks</a></li>
   <li><a href="#prompt-chaining" id="toc-prompt-chaining" class="nav-link" data-scroll-target="#prompt-chaining"><span class="header-section-number">C.3.2</span> Prompt Chaining</a></li>
   <li><a href="#eight-techniques-for-deeper-thinking" id="toc-eight-techniques-for-deeper-thinking" class="nav-link" data-scroll-target="#eight-techniques-for-deeper-thinking"><span class="header-section-number">C.3.3</span> Eight Techniques for Deeper Thinking</a></li>
   </ul></li>
@@ -567,15 +567,25 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="part-3-the-methodology" class="level2" data-number="C.3">
 <h2 data-number="C.3" class="anchored" data-anchor-id="part-3-the-methodology"><span class="header-section-number">C.3</span> Part 3: The Methodology</h2>
-<section id="rtcf-and-prompt-engineering" class="level3" data-number="C.3.1">
-<h3 data-number="C.3.1" class="anchored" data-anchor-id="rtcf-and-prompt-engineering"><span class="header-section-number">C.3.1</span> RTCF and Prompt Engineering</h3>
-<p><strong>Role prompting:</strong></p>
+<section id="rtcf-vet-and-the-prompt-structuring-frameworks" class="level3" data-number="C.3.1">
+<h3 data-number="C.3.1" class="anchored" data-anchor-id="rtcf-vet-and-the-prompt-structuring-frameworks"><span class="header-section-number">C.3.1</span> RTCF, VET, and the Prompt Structuring Frameworks</h3>
+<p>RTCF (Role, Task, Context, Format) and VET (Verify, Explain, Test) are not drawn from a single published source. They are practitioner frameworks that synthesise established practices into memorable mnemonics. The same is true of related frameworks like CRAFT, CO-STAR, RISEN, and APE — all emerged from the practitioner and educator community in 2023-24, none have a definitive academic origin, and all capture the same core insight about structured communication.</p>
+<p>The underlying principles, however, are well-supported:</p>
+<p><strong>Structured prompts outperform unstructured ones:</strong></p>
 <ul>
 <li>Zheng, H. et al.&nbsp;(2023). “Is ChatGPT a Good NLG Evaluator?” <em>arXiv preprint</em>. Among other findings, demonstrates that assigning specific roles to LLMs measurably changes output quality and focus — the research basis for the “R” in RTCF.</li>
 </ul>
+<p><strong>The Explain step in VET (the Feynman Technique):</strong></p>
+<ul>
+<li>Feynman, R. (1985). <em>“Surely You’re Joking, Mr.&nbsp;Feynman!”</em> The origin of the principle: if you cannot explain something in simple terms, you do not understand it. The “E” in VET is a direct application.</li>
+</ul>
+<p><strong>The Verify step in VET (information literacy):</strong></p>
+<ul>
+<li>Wineburg, S. et al.&nbsp;(2022). “Lateral Reading and the Nature of Expertise.” <em>Teachers College Record</em>. Demonstrates that experts verify claims by checking sources laterally rather than reading vertically — the same habit the Verify step builds.</li>
+</ul>
 <p><strong>One-shot vs iterative prompting:</strong></p>
 <ul>
-<li>Madaan, A. et al.&nbsp;(2023). “Self-Refine: Iterative Refinement with Self-Feedback.” <em>NeurIPS 2023</em>. Shows that iterative refinement consistently outperforms single-pass generation, supporting the book’s argument that RTCF is a starting point, not a destination.</li>
+<li>Madaan, A. et al.&nbsp;(2023). “Self-Refine: Iterative Refinement with Self-Feedback.” <em>NeurIPS 2023</em>. Shows that iterative refinement consistently outperforms single-pass generation, supporting the book’s argument that structured prompts are a starting point, not a destination.</li>
 </ul>
 </section>
 <section id="prompt-chaining" class="level3" data-number="C.3.2">
