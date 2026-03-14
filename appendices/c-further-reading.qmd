@@ -71,15 +71,27 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 ## Part 3: The Methodology
 
-### RTCF and Prompt Engineering
+### RTCF, VET, and the Prompt Structuring Frameworks
 
-**Role prompting:**
+RTCF (Role, Task, Context, Format) and VET (Verify, Explain, Test) are not drawn from a single published source. They are practitioner frameworks that synthesise established practices into memorable mnemonics. The same is true of related frameworks like CRAFT, CO-STAR, RISEN, and APE — all emerged from the practitioner and educator community in 2023-24, none have a definitive academic origin, and all capture the same core insight about structured communication.
+
+The underlying principles, however, are well-supported:
+
+**Structured prompts outperform unstructured ones:**
 
 - Zheng, H. et al. (2023). "Is ChatGPT a Good NLG Evaluator?" *arXiv preprint*. Among other findings, demonstrates that assigning specific roles to LLMs measurably changes output quality and focus — the research basis for the "R" in RTCF.
 
+**The Explain step in VET (the Feynman Technique):**
+
+- Feynman, R. (1985). *"Surely You're Joking, Mr. Feynman!"* The origin of the principle: if you cannot explain something in simple terms, you do not understand it. The "E" in VET is a direct application.
+
+**The Verify step in VET (information literacy):**
+
+- Wineburg, S. et al. (2022). "Lateral Reading and the Nature of Expertise." *Teachers College Record*. Demonstrates that experts verify claims by checking sources laterally rather than reading vertically — the same habit the Verify step builds.
+
 **One-shot vs iterative prompting:**
 
-- Madaan, A. et al. (2023). "Self-Refine: Iterative Refinement with Self-Feedback." *NeurIPS 2023*. Shows that iterative refinement consistently outperforms single-pass generation, supporting the book's argument that RTCF is a starting point, not a destination.
+- Madaan, A. et al. (2023). "Self-Refine: Iterative Refinement with Self-Feedback." *NeurIPS 2023*. Shows that iterative refinement consistently outperforms single-pass generation, supporting the book's argument that structured prompts are a starting point, not a destination.
 
 ### Prompt Chaining
 

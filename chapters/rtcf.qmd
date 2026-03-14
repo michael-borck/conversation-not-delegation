@@ -13,7 +13,11 @@ The problem is rarely the AI. The problem is that you have not told it what it n
 
 ## The Framework
 
-RTCF is a simple structure for opening a conversation well. Four components, four questions.
+RTCF is one of a family of prompt structuring mnemonics that emerged as people figured out how to communicate effectively with AI. Others exist — CRAFT, CO-STAR, RISEN, and more — and they all capture the same core insight: structured prompts outperform unstructured ones. Research consistently supports this. We chose RTCF for this book because it is the simplest to remember and the quickest to apply. If you are curious about the alternatives, @sec-prompt-frameworks compares them side by side.
+
+None of these frameworks are original inventions. They synthesise established practices — writing clear briefs, specifying audience, stating constraints — that professionals and educators have used for decades. The contribution is in joining the dots and packaging them for AI interaction, not in discovering something new.
+
+Four components, four questions.
 
 | Component | Question | Example |
 |---|---|---|

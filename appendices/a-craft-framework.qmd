@@ -1,45 +1,95 @@
-# CRAFT Prompting Framework {#sec-craft .appendix}
+# Prompt Structuring Frameworks {#sec-prompt-frameworks .appendix}
 
-CRAFT (Context, Role, Action, Format, Tone/Target) is a five-element prompting framework. If you have encountered it in workshops, courses, or other resources, this appendix shows how it relates to the RTCF framework used throughout this book.
+RTCF is not the only prompt structuring framework. A family of mnemonics emerged in 2023-24 as practitioners and educators figured out what makes a good opening prompt. They all capture the same insight: telling the AI who to be, what to do, what background it needs, and how to format the output produces dramatically better results than an unstructured request.
 
-Same family. Slightly more detailed. Equally valid.
+This appendix compares the most widely used frameworks side by side, using the same task so you can see how each one shapes the prompt differently. The task: getting AI to help analyse student feedback data.
 
+None of these frameworks have a single academic source. They are practitioner knowledge — patterns that emerged from use, were shared in workshops and online communities, and proved useful enough to stick. The underlying principle (structured communication outperforms unstructured communication) is well-established. The mnemonics are packaging, not discovery.
 
-## The Five Elements
-
-| Letter | Element | What It Means | Example |
-|--------|---------|---------------|---------|
-| **C** | **Context** | What's the background? | "This is student enrolment data from business units over three semesters." |
-| **R** | **Role** | What role should the AI take? | "You are an experienced teaching coordinator." |
-| **A** | **Action** | What specifically should the AI do? | "Analyse trends and identify units at risk." |
-| **F** | **Format** | How should the output be structured? | "Provide results as bullet points." |
-| **T** | **Tone/Target** | What tone, and who's the audience? | "Use clear language suitable for a team meeting." |
-
-: The CRAFT framework: five elements that structure a prompt for clarity. {.striped}
-
-You do not need all five every time. They are a scaffold, not a checklist you must complete. Some prompts need heavy context. Others need only a clear action and format. Use what serves the conversation.
+We chose RTCF for this book because it has the fewest elements to remember and covers the ground that matters most. But if a different framework clicks better for how you think, use that one. The letters do not matter. The habit of thinking before prompting does.
 
 
-## How CRAFT Relates to RTCF
+## RTCF: Before and After
 
-This book uses RTCF (Role, Task, Context, Format) as its primary framework. The two are closely related.
+To see why structure matters, compare these two prompts for the same task.
 
-RTCF's **Task** maps to CRAFT's **Action**. RTCF's **Context** absorbs what CRAFT splits into **Context** and **Tone/Target**. The result is a simpler four-element structure that covers the same ground with fewer moving parts.
+::: {.callout-warning title="Weak prompt"}
+"What can you tell me about student feedback?"
+:::
 
-Neither is better. CRAFT gives you a finer-grained prompt when you want to be explicit about audience and tone as separate decisions. RTCF keeps things compact when you want to move quickly.
+::: {.callout-tip title="RTCF prompt"}
+"You are an experienced higher education analyst **(R)**. Identify the three strongest themes and two areas of concern in the student feedback data I will paste below **(T)**. This is from a second-year undergraduate unit with 85 responses across two campuses **(C)**. Present findings as a summary paragraph followed by a table with columns: Theme, Evidence, and Recommended Action **(F)**."
+:::
 
-If CRAFT clicks for how you think, use it. If RTCF feels more natural, use that. The point of both frameworks is the same: slow down for thirty seconds before typing, think about what the AI actually needs to know, then start the conversation.
-
-
-## When CRAFT Is Especially Useful
-
-CRAFT earns its extra element when audience and tone are genuinely distinct decisions. Writing a risk summary for a board meeting is a different tone and target than writing the same information for a project team standup. Making that explicit in your prompt, rather than bundling it into context, can sharpen the output.
-
-For most everyday prompting, RTCF is sufficient. For high-stakes communication where tone matters as much as content, CRAFT gives you a dedicated place to specify it.
+You do not need all four elements every time — use what is relevant. But when a prompt feels vague and you are not sure why, checking against RTCF will almost always reveal what is missing.
 
 
-## The Deeper Point
+## The Family
 
-Frameworks are training wheels. They help you build the habit of thinking before prompting. After enough practice, you stop reciting letters and start instinctively asking yourself: what does the AI need to know to help me here?
+### RTCF — Role, Task, Context, Format
 
-That instinct is the goal. CRAFT and RTCF are both paths to the same destination.
+The framework used throughout this book. Four elements, no extras. Role sets the expertise. Task specifies the action. Context provides the background. Format defines the output structure.
+
+**Same task:**
+
+> "You are an experienced higher education analyst **(R)**. Identify the three strongest themes and two areas of concern in this student feedback data **(T)**. This is from a second-year undergraduate unit with 85 responses across two campuses **(C)**. Present as a summary paragraph followed by a themed table **(F)**."
+
+
+### CRAFT — Context, Role, Action, Format, Tone/Target
+
+Adds a fifth element: Tone or Target audience. Useful when the same content needs to be pitched differently for different readers — a board summary versus a team debrief, for example.
+
+**Same task:**
+
+> "This is student feedback data from a second-year undergraduate unit with 85 responses across two campuses **(C)**. You are an experienced higher education analyst **(R)**. Identify the three strongest themes and two areas of concern **(A)**. Present as a summary paragraph followed by a themed table **(F)**. Use clear, non-technical language suitable for a faculty teaching committee **(T)**."
+
+
+### CO-STAR — Context, Objective, Style, Tone, Audience, Response
+
+Six elements. Splits what RTCF bundles into Context and Format into finer-grained components. Useful for communication-heavy tasks where style, tone, and audience are genuinely distinct decisions.
+
+**Same task:**
+
+> "I have student feedback data from a second-year undergraduate unit, 85 responses across two campuses **(C)**. Identify the three strongest themes and two areas of concern **(O)**. Write in the style of an institutional quality report **(S)**. Professional but accessible, avoiding jargon **(T)**. For a faculty teaching committee that includes both academics and professional staff **(A)**. Summary paragraph followed by a themed table with columns: Theme, Evidence, Recommended Action **(R)**."
+
+
+### RISEN — Role, Instructions, Steps, End goal, Narrowing
+
+Five elements with a distinctive feature: it asks you to specify the steps the AI should follow and the end goal you are working toward. Useful for multi-stage tasks where the process matters as much as the output.
+
+**Same task:**
+
+> "You are an experienced higher education analyst **(R)**. Analyse the student feedback data I will paste below **(I)**. First, read all responses and identify recurring themes. Then, categorise each theme as a strength or concern. Finally, assess which findings are actionable **(S)**. The end goal is a briefing document for a faculty teaching review **(E)**. Focus only on themes that appear in at least 10% of responses **(N)**."
+
+
+### APE — Action, Purpose, Expectation
+
+Three elements. The most minimal framework. Useful for quick, low-stakes prompts where brevity matters more than precision.
+
+**Same task:**
+
+> "Analyse this student feedback data **(A)** to help me prepare for a teaching review meeting **(P)**. I expect a short summary of key themes and a table of findings with recommended actions **(E)**."
+
+
+## Choosing a Framework
+
+| Framework | Elements | Best for |
+|---|---|---|
+| **APE** | 3 | Quick tasks where speed matters more than precision |
+| **RTCF** | 4 | General-purpose prompting — covers most situations |
+| **CRAFT** | 5 | Communication tasks where tone and audience are distinct decisions |
+| **RISEN** | 5 | Multi-step tasks where the process matters |
+| **CO-STAR** | 6 | High-stakes communication with specific style and audience requirements |
+
+: Prompt structuring frameworks compared. More elements give finer control but take longer to compose. {.striped}
+
+The frameworks are listed from simplest to most detailed. Start with RTCF. If you find yourself repeatedly needing to specify tone separately from context, try CRAFT. If you need to define a multi-step process, try RISEN. If you never need more than three elements, APE is fine.
+
+The goal is not to memorise all five. It is to build the habit of structuring your thinking before you type. Any of these frameworks will get you there. Pick one, use it until it becomes instinct, then let it go.
+
+
+## The Caveat
+
+Every one of these frameworks improves your *opening* prompt. None of them replace the conversation that follows. A perfectly structured RTCF or CO-STAR prompt is still a single prompt. It is still one shot. The real value comes from what you do with the response: iterate, push back, refine, and make the output yours.
+
+Structured prompts are a better starting point. They are not a substitute for staying in the conversation.
