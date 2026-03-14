@@ -30,6 +30,16 @@
     ]
   },
   {
+    "objectID": "index.html#ways-to-engage-with-this-book",
+    "href": "index.html#ways-to-engage-with-this-book",
+    "title": "Conversation, Not Delegation",
+    "section": "Ways to Engage with This Book",
+    "text": "Ways to Engage with This Book\nA book about conversation should be available in more than one form. Pick the format that fits how you think and learn.\n\nRead it online — the full book is freely available at the companion website, with dark mode, search, and navigation\nRead it on paper or e-reader — available as a paperback and ebook through Amazon KDP, for those who prefer to read offline or away from a screen\nDownload the PDF or epub — generated from the same source, available from the website\nConverse with it — use the prepare_for_ai.py script (see Appendix D — Interactive Tools) to generate a clean text file of the entire book, then paste it into ChatGPT, Claude, or any AI tool and have a conversation about the ideas. Push back on its interpretation. Use the methodology on the methodology\nListen to it — upload the text file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content\nExplore the source — the full source is on GitHub, including every chapter, the build system, and the revision history. DeepWiki provides an AI-navigable view of the repository\nPractise the frameworks — interactive tools on the companion site let you build RTCF prompts, analyse your existing prompts, and assess your AI readiness (see Appendix D — Interactive Tools)\n\nThe online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it — you get the current edition.",
+    "crumbs": [
+      "About This Book"
+    ]
+  },
+  {
     "objectID": "index.html#who-this-book-is-for",
     "href": "index.html#who-this-book-is-for",
     "title": "Conversation, Not Delegation",
@@ -1400,6 +1410,50 @@
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>C</span>  <span class='chapter-title'>Further Reading</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/d-interactive-tools.html",
+    "href": "appendices/d-interactive-tools.html",
+    "title": "Appendix D — Interactive Tools",
+    "section": "",
+    "text": "D.1 RTCF Prompt Builder\nThese companion tools let you practise the frameworks from this book in your browser. No login required, no data stored — everything runs locally in your browser.\nBuild prompts step by step using the RTCF framework. Fill in Role, Task, Context, and Format, and the tool assembles a structured prompt you can copy and paste into any AI tool. Includes templates for Reverse Prompting, Devil’s Advocate, VET checks, and more.\nOpen the RTCF Prompt Builder",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Interactive Tools</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/d-interactive-tools.html#rtcf-prompt-analyser",
+    "href": "appendices/d-interactive-tools.html#rtcf-prompt-analyser",
+    "title": "Appendix D — Interactive Tools",
+    "section": "D.2 RTCF Prompt Analyser",
+    "text": "D.2 RTCF Prompt Analyser\nPaste any prompt and get instant feedback on which RTCF elements are present, partial, or missing. Useful for diagnosing why a prompt gave you a vague or unhelpful response — the answer is usually a missing element.\nOpen the RTCF Prompt Analyser",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Interactive Tools</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/d-interactive-tools.html#ai-readiness-assessment",
+    "href": "appendices/d-interactive-tools.html#ai-readiness-assessment",
+    "title": "Appendix D — Interactive Tools",
+    "section": "D.3 AI Readiness Assessment",
+    "text": "D.3 AI Readiness Assessment\nA short quiz (3-4 minutes) that maps your current AI experience level and recommends which chapters of this book to prioritise. Whether you are a newcomer or a power user, it points you to the sections that will be most useful for where you are now.\nTake the AI Readiness Assessment",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Interactive Tools</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/d-interactive-tools.html#converse-with-this-book",
+    "href": "appendices/d-interactive-tools.html#converse-with-this-book",
+    "title": "Appendix D — Interactive Tools",
+    "section": "D.4 Converse with This Book",
+    "text": "D.4 Converse with This Book\nA book about conversation with AI should be available as a conversation with AI.\nThe prepare_for_ai.py script in the tools/ folder strips the formatting from every chapter and produces a single clean text file you can paste into ChatGPT, Claude, NotebookLM, or any other AI tool. Then ask it questions, challenge its interpretation of the ideas, or use it to explore how the frameworks apply to your specific situation.\nTo generate the file, run:\npython tools/prepare_for_ai.py\nThis creates conversation-not-delegation.txt (~31,000 words) in the project root. The book’s own methodology applies: do not accept the AI’s summary of the book uncritically. Push back. VET the answers. Stay in the conversation.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>D</span>  <span class='chapter-title'>Interactive Tools</span>"
     ]
   },
   {
