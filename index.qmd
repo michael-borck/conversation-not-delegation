@@ -39,6 +39,20 @@ Transparency about process is more important than the comfort of pretending AI w
 - **Quarto** — open-source publishing system used to produce the HTML, PDF, and epub editions
 - **Git and GitHub** — version control and hosting, including GitHub Pages for the web edition
 
+## Ways to Engage with This Book
+
+A book about conversation should be available in more than one form. Pick the format that fits how you think and learn.
+
+- **Read it online** — the full book is freely available at the companion website, with dark mode, search, and navigation
+- **Read it on paper or e-reader** — available as a paperback and ebook through Amazon KDP, for those who prefer to read offline or away from a screen
+- **Download the PDF or epub** — generated from the same source, available from the website
+- **Converse with it** — use the `prepare_for_ai.py` script (see @sec-interactive-tools) to generate a clean text file of the entire book, then paste it into ChatGPT, Claude, or any AI tool and have a conversation about the ideas. Push back on its interpretation. Use the methodology on the methodology
+- **Listen to it** — upload the text file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content
+- **Explore the source** — the full source is on GitHub, including every chapter, the build system, and the revision history. DeepWiki provides an AI-navigable view of the repository
+- **Practise the frameworks** — interactive tools on the companion site let you build RTCF prompts, analyse your existing prompts, and assess your AI readiness (see @sec-interactive-tools)
+
+The online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it — you get the current edition.
+
 ## Who This Book Is For
 
 You do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.
