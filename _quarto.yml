@@ -10,6 +10,7 @@ book:
   author: "Michael Borck"
   date: today
   license: "CC BY"
+  cover-image: images/comic-strip/00-conversation-not-delegation.png
   chapters:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"
