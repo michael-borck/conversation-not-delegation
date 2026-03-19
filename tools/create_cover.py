@@ -2,15 +2,15 @@
 """
 Generate a KDP ebook cover for 'Conversation, Not Delegation'.
 
-Output: images/cover.png (2560 x 1600 px, KDP ebook standard)
+Output: images/cover.png (1600 x 2560 px, KDP ebook standard portrait)
 """
 
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-# Dimensions
-WIDTH = 2560
-HEIGHT = 1600
+# Dimensions — KDP ebook cover: 1600 x 2560 (portrait, 1:1.6 ratio)
+WIDTH = 1600
+HEIGHT = 2560
 
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -64,20 +64,24 @@ def main():
     img = Image.new("RGB", (WIDTH, HEIGHT), BG_COLOUR)
     draw = ImageDraw.Draw(img)
 
-    # Fonts
-    title_font = get_font(120, bold=True)
-    subtitle_font = get_font(56)
+    # Fonts — scaled for portrait layout
+    title_font_line1 = get_font(110, bold=True)
+    title_font_line2 = get_font(110, bold=True)
+    subtitle_font = get_font(52)
     author_font = get_font(48)
 
-    # Title
-    title = "Conversation, Not Delegation"
-    tx = (WIDTH - text_width(draw, title, title_font)) // 2
-    draw.text((tx, 80), title, fill=TITLE_COLOUR, font=title_font)
+    # Title — split across two lines for portrait
+    line1 = "Conversation,"
+    line2 = "Not Delegation"
+    l1x = (WIDTH - text_width(draw, line1, title_font_line1)) // 2
+    l2x = (WIDTH - text_width(draw, line2, title_font_line2)) // 2
+    draw.text((l1x, 120), line1, fill=TITLE_COLOUR, font=title_font_line1)
+    draw.text((l2x, 260), line2, fill=TITLE_COLOUR, font=title_font_line2)
 
     # Subtitle
     subtitle = "How to Think With AI, Not Just Use It"
     sx = (WIDTH - text_width(draw, subtitle, subtitle_font)) // 2
-    draw.text((sx, 220), subtitle, fill=SUBTITLE_COLOUR, font=subtitle_font)
+    draw.text((sx, 420), subtitle, fill=SUBTITLE_COLOUR, font=subtitle_font)
 
     # Comic strip
     comic = Image.open(COMIC_PATH)
@@ -87,22 +91,24 @@ def main():
         bg.paste(comic, mask=comic.split()[3])
         comic = bg
 
-    # Scale comic to fit width with padding
-    max_comic_width = WIDTH - 200
-    max_comic_height = HEIGHT - 500
+    # Scale comic to fit width with padding, leaving room for title and author
+    top_margin = 540
+    bottom_margin = 200
+    max_comic_width = WIDTH - 160
+    max_comic_height = HEIGHT - top_margin - bottom_margin
     ratio = min(max_comic_width / comic.width, max_comic_height / comic.height)
     new_size = (int(comic.width * ratio), int(comic.height * ratio))
     comic = comic.resize(new_size, Image.LANCZOS)
 
-    # Centre comic vertically in available space
+    # Centre comic in available space
     comic_x = (WIDTH - comic.width) // 2
-    comic_y = 320 + (max_comic_height - comic.height) // 2
+    comic_y = top_margin + (max_comic_height - comic.height) // 2
     img.paste(comic, (comic_x, comic_y))
 
-    # Author
+    # Author — positioned at bottom
     author = "Michael Borck"
     ax = (WIDTH - text_width(draw, author, author_font)) // 2
-    draw.text((ax, HEIGHT - 100), author, fill=AUTHOR_COLOUR, font=author_font)
+    draw.text((ax, HEIGHT - 120), author, fill=AUTHOR_COLOUR, font=author_font)
 
     # Save
     img.save(OUTPUT_PATH, "PNG", dpi=(300, 300))
