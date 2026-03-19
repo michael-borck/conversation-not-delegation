@@ -117,6 +117,8 @@ The goal is not to get AI to do your work. It is to become more capable yourself
 
 Every technique in the chapters that follow serves this principle. Not "how to get better outputs" but "how to think better in the process of working with AI." The output is a byproduct. The thinking is the point.
 
+A clarification worth making: not all delegation is a trap. Asking AI to reformat a table, convert units, or fix punctuation is delegation, and it is fine. You are not losing capability you need to build. The trap is delegating the thinking — the analysis, the judgement, the decisions that are your actual job. The test is always the same: does this task require my expertise, or is it mechanical? Delegate the mechanical. Converse on everything else.
+
 If you remember nothing else from this chapter, remember the table. Look at which column you spend most of your time in. Then decide which column you want to live in.
 
 The delegation trap is comfortable. The conversation path is harder. But only one of them makes you better.
