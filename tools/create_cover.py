@@ -14,7 +14,7 @@ HEIGHT = 2560
 
 # Paths
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-COMIC_PATH = PROJECT_ROOT / "images" / "comic-strip" / "00-conversation-not-delegation.png"
+COMIC_PATH = PROJECT_ROOT / "images" / "comic-strip" / "00-panel1.png"
 OUTPUT_PATH = PROJECT_ROOT / "images" / "cover.png"
 
 # Colours
@@ -75,13 +75,13 @@ def main():
     line2 = "Not Delegation"
     l1x = (WIDTH - text_width(draw, line1, title_font_line1)) // 2
     l2x = (WIDTH - text_width(draw, line2, title_font_line2)) // 2
-    draw.text((l1x, 120), line1, fill=TITLE_COLOUR, font=title_font_line1)
-    draw.text((l2x, 260), line2, fill=TITLE_COLOUR, font=title_font_line2)
+    draw.text((l1x, 320), line1, fill=TITLE_COLOUR, font=title_font_line1)
+    draw.text((l2x, 460), line2, fill=TITLE_COLOUR, font=title_font_line2)
 
     # Subtitle
     subtitle = "How to Think With AI, Not Just Use It"
     sx = (WIDTH - text_width(draw, subtitle, subtitle_font)) // 2
-    draw.text((sx, 420), subtitle, fill=SUBTITLE_COLOUR, font=subtitle_font)
+    draw.text((sx, 620), subtitle, fill=SUBTITLE_COLOUR, font=subtitle_font)
 
     # Comic strip
     comic = Image.open(COMIC_PATH)
@@ -92,7 +92,7 @@ def main():
         comic = bg
 
     # Scale comic to fit width with padding, leaving room for title and author
-    top_margin = 540
+    top_margin = 720
     bottom_margin = 200
     max_comic_width = WIDTH - 160
     max_comic_height = HEIGHT - top_margin - bottom_margin
