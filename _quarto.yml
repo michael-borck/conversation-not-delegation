@@ -62,7 +62,6 @@ format:
     number-sections: true
     colorlinks: true
     include-in-header: pdf-header.tex
-    include-before-body: cover-page.tex
   epub:
     toc: true
     cover-image: images/cover.png
