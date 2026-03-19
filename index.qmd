@@ -1,8 +1,6 @@
 # About This Book {.unnumbered}
 
-::: {.content-visible unless-format="html"}
 ![Delegation is quick. Conversation is how you actually learn.](images/comic-strip/00-conversation-not-delegation.png){fig-alt="Comic strip: A delegator demands 'AI! Write my entire book! Give me the chapters NOW!' while a conversationalist says 'Wait! Let's converse first. What's the core message? Who's the audience?' Three panels later, the delegator has generic junk they don't understand. The conversationalist has something they actually thought through. Punchline: AI is a conversation, not delegation. Think partner, not servant."}
-:::
 
 This book is for anyone who uses AI as a thinking tool.
 
