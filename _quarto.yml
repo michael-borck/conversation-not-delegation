@@ -12,6 +12,7 @@ book:
   license: "CC BY"
   cover-image: images/cover.png
   favicon: favicon.svg
+  downloads: [pdf, epub]
   chapters:
     - copyright.qmd
     - index.qmd
@@ -61,5 +62,7 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
+    include-before-body: cover-page.tex
   epub:
     toc: true
+    cover-image: images/cover.png
