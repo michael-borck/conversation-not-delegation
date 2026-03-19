@@ -62,6 +62,11 @@ format:
     toc-depth: 1
     number-sections: true
     colorlinks: true
+    geometry:
+      - inner=0.75in
+      - outer=0.5in
+      - top=0.75in
+      - bottom=0.75in
     include-in-header: pdf-header.tex
     include-before-body: copyright-page.tex
   epub:
