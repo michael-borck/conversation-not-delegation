@@ -1,3 +1,8 @@
+% Prevent images and tables from overflowing margins
+\usepackage{adjustbox}
+\let\oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{\oldincludegraphics[max width=\textwidth,#1]{#2}}
+
 % Modern ToC styling
 \usepackage{tocloft}
 \usepackage{xcolor}
