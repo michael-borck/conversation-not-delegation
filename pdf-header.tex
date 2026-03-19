@@ -1,7 +1,12 @@
-% Prevent images and tables from overflowing margins
-\usepackage{adjustbox}
-\let\oldincludegraphics\includegraphics
-\renewcommand{\includegraphics}[2][]{\oldincludegraphics[max width=\textwidth,#1]{#2}}
+% Prevent images from overflowing margins
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\makeatother
+
+% Prevent long URLs and text from overflowing margins
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-\do.\do:\do_\do\~}
+\sloppy
 
 % Modern ToC styling
 \usepackage{tocloft}
