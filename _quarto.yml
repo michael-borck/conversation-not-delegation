@@ -57,15 +57,14 @@ format:
     mermaid-format: js
   pdf:
     documentclass: book
-    papersize: letter
+    classoption: [6in:9in]
     toc: true
     toc-depth: 1
     number-sections: true
-    colorlinks: false
-    linkcolor: black
-    urlcolor: black
-    citecolor: black
+    hyperrefoptions: draft
     geometry:
+      - paperwidth=6in
+      - paperheight=9in
       - inner=0.75in
       - outer=0.5in
       - top=0.75in
