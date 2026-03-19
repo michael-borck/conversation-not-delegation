@@ -13,7 +13,6 @@ book:
   favicon: favicon.svg
   downloads: [pdf, epub]
   chapters:
-    - copyright.qmd
     - index.qmd
     - part: "Part 1: Understanding the Landscape"
       chapters:
@@ -65,8 +64,8 @@ format:
     geometry:
       - paperwidth=6in
       - paperheight=9in
-      - inner=0.875in
-      - outer=0.5in
+      - inner=1in
+      - outer=0.625in
       - top=0.75in
       - bottom=0.75in
     include-in-header: pdf-header.tex
