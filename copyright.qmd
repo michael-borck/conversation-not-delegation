@@ -1,0 +1,40 @@
+::: {.content-visible when-format="pdf"}
+
+\thispagestyle{empty}
+\vspace*{\fill}
+
+:::
+
+::: {.content-visible when-format="epub"}
+
+&nbsp;
+
+:::
+
+**Conversation, Not Delegation**\
+How to Think With AI, Not Just Use It
+
+Copyright © 2025 Michael Borck. All rights reserved.
+
+Published by Michael Borck\
+Perth, Western Australia
+
+**ISBN:** 978-X-XXXX-XXXX-X *(replace with your KDP ISBN)*
+
+First edition, 2025.
+
+No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author, except for brief quotations in reviews and certain non-commercial uses permitted by copyright law.
+
+This work is also available under a Creative Commons Attribution (CC BY) licence at the companion website. See below for details.
+
+**AI disclosure:** This book was written using the methodology it describes. AI tools were used as thinking partners throughout the drafting, iterating, and refining process. The author reviewed, challenged, and took responsibility for every sentence. Full details of the tools used are in the front matter.
+
+**Companion website:** [https://michael-borck.github.io/conversation-not-delegation](https://michael-borck.github.io/conversation-not-delegation)\
+**Amazon:** *(add your Amazon listing URL here)*\
+**Source:** [https://github.com/michael-borck/conversation-not-delegation](https://github.com/michael-borck/conversation-not-delegation)
+
+::: {.content-visible when-format="pdf"}
+
+\vspace*{\fill}
+
+:::

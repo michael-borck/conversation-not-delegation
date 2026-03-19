@@ -18,6 +18,29 @@ This is not a textbook and it is not a research paper. The ideas here reflect on
 
 Where claims rest on published research, you will find pointers in the Further Reading appendix (@sec-further-reading). Where they rest on practice and observation, that should be obvious from the writing. In both cases, the advice in this book applies to itself: engage with it critically, push back where your experience says otherwise, and make the ideas your own. A book about not delegating your thinking to AI would be contradicting itself if it asked you to accept its arguments uncritically.
 
+## Conventions Used in This Book
+
+Throughout the book you will encounter coloured callout boxes. Each serves a different purpose.
+
+::: {.callout-tip title="Try this"}
+**Green boxes** are hands-on exercises you can do right now, usually in two to ten minutes. They give you a way to experience the concept rather than just read about it.
+:::
+
+::: {.callout-note title="Key idea"}
+**Blue boxes** highlight important observations, ready-to-use prompts, or ideas worth pausing on.
+:::
+
+::: {.callout-warning title="Watch out"}
+**Yellow boxes** flag common mistakes, weak examples, or things that look right but are not.
+:::
+
+::: {.callout-important title="Critical point"}
+**Red boxes** mark habits or principles that are essential. Do not skip these.
+:::
+
+You will also find tables throughout the book that compare approaches, map strategies across domains, or summarise frameworks. These are reference material — worth bookmarking, not just reading once.
+
+
 ## How This Book Was Written
 
 This book was written using the methodology it describes.

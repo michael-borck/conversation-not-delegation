@@ -13,6 +13,7 @@ book:
   cover-image: images/cover.png
   favicon: favicon.svg
   chapters:
+    - copyright.qmd
     - index.qmd
     - part: "Part 1: Understanding the Landscape"
       chapters:
