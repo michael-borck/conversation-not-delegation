@@ -8,6 +8,17 @@
 \def\UrlBreaks{\do\/\do-\do.\do:\do_\do\~}
 \sloppy
 
+% Allow code blocks to wrap lines instead of overflowing
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breaksymbol={},commandchars=\\\{\}}
+
+% Truncate long section titles in page headers
+\usepackage{truncate}
+\makeatletter
+\renewcommand{\sectionmark}[1]{\markright{\truncate{0.9\textwidth}{\thesection.\ #1}}}
+\renewcommand{\chaptermark}[1]{\markboth{\truncate{0.9\textwidth}{\chaptername\ \thechapter.\ #1}}{}}
+\makeatother
+
 % Modern ToC styling
 \usepackage{tocloft}
 \usepackage{xcolor}
