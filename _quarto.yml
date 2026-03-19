@@ -66,5 +66,6 @@ format:
     include-before-body: copyright-page.tex
   epub:
     toc: true
+    toc-depth: 1
     cover-image: images/cover.png
     css: epub-styles.css
