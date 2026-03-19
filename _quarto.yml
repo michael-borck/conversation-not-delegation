@@ -66,3 +66,4 @@ format:
   epub:
     toc: true
     cover-image: images/cover.png
+    css: epub-styles.css
