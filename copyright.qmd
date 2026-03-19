@@ -1,3 +1,5 @@
+# Copyright {.unnumbered .unlisted}
+
 ::: {.content-visible when-format="pdf"}
 
 \thispagestyle{empty}
