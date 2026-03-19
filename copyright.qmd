@@ -1,11 +1,6 @@
 # Copyright {.unnumbered .unlisted}
 
-::: {.content-visible when-format="pdf"}
-
-\thispagestyle{empty}
-\vspace*{\fill}
-
-:::
+::: {.content-visible unless-format="pdf"}
 
 ::: {.content-visible when-format="epub"}
 
@@ -34,9 +29,5 @@ This work is also available under a Creative Commons Attribution (CC BY) licence
 **Companion website:** [https://michael-borck.github.io/conversation-not-delegation](https://michael-borck.github.io/conversation-not-delegation)\
 **Amazon:** *(add your Amazon listing URL here)*\
 **Source:** [https://github.com/michael-borck/conversation-not-delegation](https://github.com/michael-borck/conversation-not-delegation)
-
-::: {.content-visible when-format="pdf"}
-
-\vspace*{\fill}
 
 :::
