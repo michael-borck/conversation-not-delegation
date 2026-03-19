@@ -10,7 +10,6 @@ book:
   author: "Michael Borck"
   date: today
   license: "CC BY"
-  cover-image: images/cover.png
   favicon: favicon.svg
   downloads: [pdf, epub]
   chapters:
