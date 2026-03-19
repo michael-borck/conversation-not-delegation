@@ -64,6 +64,8 @@ If you spent the last year asking AI to write your emails, draft your reports, a
 
 Conversation compounds. Delegation does not. That distinction is worth more than every prompting trick in every guide ever written.
 
+An honest note: the compound effect described here is a claim grounded in pedagogical theory, professional experience, and the well-documented benefits of reflective practice. It is not yet backed by multi-year longitudinal studies of AI-assisted thinking. Those studies are underway, but the technology is too new for definitive long-term evidence. The argument rests on the same foundation as any claim about deliberate practice: that structured engagement with challenging material builds capability, and passive consumption does not. If that principle holds — and centuries of evidence from education, music, medicine, and sport suggest it does — then the conversational approach should compound. But should is not proof. The honest position is confidence in the principle, humility about the timeline for evidence, and a commitment to revising the claim if the data says otherwise.
+
 
 ## The Loop, One Last Time
 

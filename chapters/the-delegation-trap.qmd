@@ -51,7 +51,7 @@ The pattern is consistent. Delegation gets you an output. Conversation gets you 
 
 Here is the line you need to sit with:
 
-**Judgement cannot be delegated to something that has read everything but experienced nothing.**
+**Judgement cannot be delegated to a system that has no stake in the outcome.**
 
 An AI has processed more text than any human being will ever encounter. It can retrieve, recombine, and rephrase with extraordinary fluency. But it has never made a decision under pressure. It has never felt the weight of getting something wrong. It has never had a stake in the outcome.
 

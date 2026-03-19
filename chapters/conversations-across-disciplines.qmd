@@ -104,20 +104,4 @@ In every example, the turning point was a moment where the human rejected or red
 :::
 
 
-## The Two-Chat Workflow {#sec-two-chat-workflow}
-
-There is a workflow pattern that makes the conversation loop even more effective. Instead of doing everything in one session, run two.
-
-**Session 1: The Thinking Chat.** This is where you explore. Ask for angles. Challenge assumptions. Clarify what your actual question is. Push back, change direction, follow tangents. This session is messy by design. It is disposable. Its purpose is not to produce anything — it is to sharpen your thinking until you know what you actually need.
-
-**Session 2: The Build Chat.** This is where you produce. You arrive with a clear brief, not a vague question, because you have already done the thinking. The output is better because the input is better.
-
-The critical step is what happens between the two sessions. You do not copy and paste everything from session one into session two. You read through what emerged, decide what matters, discard what does not, and write a focused brief for the build session. This curation — deciding what crosses from thinking to building — is itself an act of thinking. It forces you to distil, to commit, to separate the insight from the noise. The transfer is where your judgement lives.
-
-Neither session has the full picture. The thinking chat does not know what you will build. The build chat does not know what you explored and discarded. Only you hold both. That is what makes you essential — not as a fact-checker at the end of an automated process, but as the one who holds the context, makes the judgement calls, and connects the dots.
-
-This is what "human in the loop" actually means. Not reviewing AI's work after it is done. Staying in the conversation at every stage, and being the bridge between the stages that the AI cannot see.
-
-::: {.callout-tip title="Try this (5 minutes)"}
-Next time you use AI for something substantial, open two sessions. In the first, explore your question — ask for angles, push back, refine your thinking. Do not worry about producing anything clean. Then take what you have landed on and use it to brief the second session for the actual output. Notice two things: how much better the result is when you have done the thinking first, and how much clearer your own thinking became in the act of deciding what to carry across.
-:::
+Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases — and the human was the bridge between them. This is the two-chat workflow (@sec-two-chat-workflow) in action, whether or not the person literally used two sessions.

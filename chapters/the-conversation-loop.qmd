@@ -2,7 +2,7 @@
 
 ![The prompt defines the shape of the conversation.](../images/comic-strip/05-the-conversation-loop.png){fig-alt="Comic strip: One stick figure demands 'give me the perfect answer' and gets generic text. Another asks 'help me find the core question' and gets thoughtful, specific output. Same AI. The conversation shape changes everything."}
 
-You now know what AI is and what it is not. You know that large language models have read everything and experienced nothing. You know the trap: delegation feels productive but erodes your capability over time. And you know that the protective practice is conversation, not delegation.
+You now know what AI is and what it is not. You know that large language models are fluent without being truthful, and capable without being experienced. You know the trap: delegation feels productive but erodes your capability over time. And you know that the protective practice is conversation, not delegation.
 
 The question becomes: what does that conversation actually look like?
 
@@ -115,7 +115,23 @@ This is what it means to be the human in the loop. Not a rubber stamp at the end
 
 The choice is straightforward. You can chain tasks and amplify the hallucinations. Or you can stay in the conversation and amplify your thinking. The process looks similar from the outside — both involve multiple exchanges with AI. The difference is whether you are thinking or just clicking.
 
-One practical way to build this discipline into your workflow is to separate thinking from building entirely — running two conversations instead of one, with you as the bridge between them. We will return to this in @sec-two-chat-workflow.
+### The Two-Chat Workflow {#sec-two-chat-workflow}
+
+One practical way to build this discipline into your workflow is to separate thinking from building entirely. Instead of doing everything in one session, run two.
+
+**Session 1: The Thinking Chat.** This is where you explore. Ask for angles. Challenge assumptions. Clarify what your actual question is. Push back, change direction, follow tangents. This session is messy by design. It is disposable. Its purpose is not to produce anything — it is to sharpen your thinking until you know what you actually need.
+
+**Session 2: The Build Chat.** This is where you produce. You arrive with a clear brief, not a vague question, because you have already done the thinking. The output is better because the input is better.
+
+The critical step is what happens between the two sessions. You do not copy and paste everything from session one into session two. You read through what emerged, decide what matters, discard what does not, and write a focused brief for the build session. This curation — deciding what crosses from thinking to building — is itself an act of thinking. It forces you to distil, to commit, to separate the insight from the noise. The transfer is where your judgement lives.
+
+Neither session has the full picture. The thinking chat does not know what you will build. The build chat does not know what you explored and discarded. Only you hold both. That is what makes you essential — not as a fact-checker at the end of an automated process, but as the one who holds the context, makes the judgement calls, and connects the dots.
+
+This is what "human in the loop" actually means. Not reviewing AI's work after it is done. Staying in the conversation at every stage, and being the bridge between the stages that the AI cannot see.
+
+::: {.callout-tip title="Try this (5 minutes)"}
+Next time you use AI for something substantial, open two sessions. In the first, explore your question — ask for angles, push back, refine your thinking. Do not worry about producing anything clean. Then take what you have landed on and use it to brief the second session for the actual output. Notice two things: how much better the result is when you have done the thinking first, and how much clearer your own thinking became in the act of deciding what to carry across.
+:::
 
 
 ::: {.callout-tip title="The loop at a glance"}
