@@ -8,7 +8,7 @@ The question becomes: what does that conversation actually look like?
 
 This is the model. Not a framework with twelve steps and a certification programme. A loop with four stages and one rule: you stay in the conversation.
 
-![The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Repeat.](../images/conversation-loop.png){#fig-conversation-loop fig-alt="Hand-drawn diagram showing four boxes — Brainstorm, Ideate, Iterate, Amplify — connected by arrows flowing left to right, with a Repeat arrow looping back from Amplify to Brainstorm."}
+![The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Repeat.](../images/conversation-loop.png){#fig-conversation-loop fig-alt="Hand-drawn diagram showing four boxes (Brainstorm, Ideate, Iterate, Amplify) connected by arrows flowing left to right, with a Repeat arrow looping back from Amplify to Brainstorm."}
 
 Four stages. One feedback arc. Most good work passes through the loop more than once. That is the whole picture. Now let's walk through it.
 
@@ -91,13 +91,13 @@ The practical implication is freeing. You do not need the most expensive subscri
 
 There is a reason we listen to podcasts, watch interviews, and find panel discussions more engaging than monologues. Conversation reveals things that prepared statements do not. When someone pushes back, follows up, or asks "why?", the thinking deepens. Ideas get tested in real time. Gaps surface. What survives the exchange is stronger than what either party brought in alone.
 
-Universities have known this for centuries. The viva — an oral examination where a student defends their work in conversation with an examiner — remains the gold standard for assessing genuine understanding. You cannot bluff a viva. The examiner asks you to explain your reasoning, challenges your assumptions, changes the variables, and watches whether your understanding holds up or falls apart. Written exams test recall. Vivas test comprehension. The difference is the conversation.
+Universities have known this for centuries. The viva, an oral examination where a student defends their work in conversation with an examiner, remains the gold standard for assessing genuine understanding. You cannot bluff a viva. The examiner asks you to explain your reasoning, challenges your assumptions, changes the variables, and watches whether your understanding holds up or falls apart. Written exams test recall. Vivas test comprehension. The difference is the conversation.
 
 This is why universities are returning to vivas and oral assessments in the age of AI. When a student can submit AI-generated written work that is indistinguishable from their own, the conversation becomes the one assessment that still reveals whether real learning occurred. The examiner is the human in the loop.
 
-The conversation loop in this book works on exactly the same principle. When you iterate with AI — pushing back, asking "why?", testing edge cases, demanding explanations — you are conducting a viva on the AI's output. You are the examiner. The AI's responses reveal whether the reasoning holds up or falls apart under scrutiny, and the process of examining it deepens your own understanding.
+The conversation loop in this book works on exactly the same principle. When you iterate with AI, pushing back, asking "why?", testing edge cases, and demanding explanations, you are conducting a viva on the AI's output. You are the examiner. The AI's responses reveal whether the reasoning holds up or falls apart under scrutiny, and the process of examining it deepens your own understanding.
 
-The difference is that vivas do not scale. One examiner, one student, thirty minutes. But conversations with AI scale infinitely. You get the benefits of viva-style engagement — the pushback, the "explain that differently," the "what if I changed this constraint?" — any time you want, on any topic, without needing another human to be available.
+The difference is that vivas do not scale. One examiner, one student, thirty minutes. But conversations with AI scale infinitely. You get the benefits of viva-style engagement (the pushback, the "explain that differently," the "what if I changed this constraint?") any time you want, on any topic, without needing another human to be available.
 
 ### Amplify Your Thinking, Not the Hallucinations
 
@@ -105,7 +105,7 @@ There is an alternative to conversation, and it is increasingly popular. Instead
 
 This is the most dangerous way to use AI.
 
-Every AI response carries some probability of error — a misunderstood nuance, a fabricated detail, a plausible-sounding conclusion that is subtly wrong. In a conversation, you catch these errors because you are engaged. You notice when something does not match your experience. You push back. You correct course.
+Every AI response carries some probability of error: a misunderstood nuance, a fabricated detail, a plausible-sounding conclusion that is subtly wrong. In a conversation, you catch these errors because you are engaged. You notice when something does not match your experience. You push back. You correct course.
 
 But in an unchecked chain, errors compound. The hallucination in step two becomes an assumption in step three, a foundation in step four, and a confident conclusion in step six. Each step builds faithfully on what came before, and what came before was wrong. The AI is not drifting randomly. It is drifting confidently, constructing an increasingly detailed edifice on a flawed foundation. By the end, you have something that looks thorough, reads well, and is built on sand.
 
@@ -113,24 +113,24 @@ The conversation loop prevents this. Every iteration is a checkpoint. Every push
 
 This is what it means to be the human in the loop. Not a rubber stamp at the end of an automated process. Not a supervisor who checks the final output and hopes for the best. An active participant in every stage, whose judgement, expertise, and critical eye are woven into the work as it develops.
 
-The choice is straightforward. You can chain tasks and amplify the hallucinations. Or you can stay in the conversation and amplify your thinking. The process looks similar from the outside — both involve multiple exchanges with AI. The difference is whether you are thinking or just clicking.
+The choice is straightforward. You can chain tasks and amplify the hallucinations. Or you can stay in the conversation and amplify your thinking. The process looks similar from the outside; both involve multiple exchanges with AI. The difference is whether you are thinking or just clicking.
 
 ### The Two-Chat Workflow {#sec-two-chat-workflow}
 
 One practical way to build this discipline into your workflow is to separate thinking from building entirely. Instead of doing everything in one session, run two.
 
-**Session 1: The Thinking Chat.** This is where you explore. Ask for angles. Challenge assumptions. Clarify what your actual question is. Push back, change direction, follow tangents. This session is messy by design. It is disposable. Its purpose is not to produce anything — it is to sharpen your thinking until you know what you actually need.
+**Session 1: The Thinking Chat.** This is where you explore. Ask for angles. Challenge assumptions. Clarify what your actual question is. Push back, change direction, follow tangents. This session is messy by design. It is disposable. Its purpose is not to produce anything; it is to sharpen your thinking until you know what you actually need.
 
 **Session 2: The Build Chat.** This is where you produce. You arrive with a clear brief, not a vague question, because you have already done the thinking. The output is better because the input is better.
 
-The critical step is what happens between the two sessions. You do not copy and paste everything from session one into session two. You read through what emerged, decide what matters, discard what does not, and write a focused brief for the build session. This curation — deciding what crosses from thinking to building — is itself an act of thinking. It forces you to distil, to commit, to separate the insight from the noise. The transfer is where your judgement lives.
+The critical step is what happens between the two sessions. You do not copy and paste everything from session one into session two. You read through what emerged, decide what matters, discard what does not, and write a focused brief for the build session. This curation, deciding what crosses from thinking to building, is itself an act of thinking. It forces you to distil, to commit, to separate the insight from the noise. The transfer is where your judgement lives.
 
-Neither session has the full picture. The thinking chat does not know what you will build. The build chat does not know what you explored and discarded. Only you hold both. That is what makes you essential — not as a fact-checker at the end of an automated process, but as the one who holds the context, makes the judgement calls, and connects the dots.
+Neither session has the full picture. The thinking chat does not know what you will build. The build chat does not know what you explored and discarded. Only you hold both. That is what makes you essential: not as a fact-checker at the end of an automated process, but as the one who holds the context, makes the judgement calls, and connects the dots.
 
 This is what "human in the loop" actually means. Not reviewing AI's work after it is done. Staying in the conversation at every stage, and being the bridge between the stages that the AI cannot see.
 
 ::: {.callout-tip title="Try this (5 minutes)"}
-Next time you use AI for something substantial, open two sessions. In the first, explore your question — ask for angles, push back, refine your thinking. Do not worry about producing anything clean. Then take what you have landed on and use it to brief the second session for the actual output. Notice two things: how much better the result is when you have done the thinking first, and how much clearer your own thinking became in the act of deciding what to carry across.
+Next time you use AI for something substantial, open two sessions. In the first, explore your question: ask for angles, push back, refine your thinking. Do not worry about producing anything clean. Then take what you have landed on and use it to brief the second session for the actual output. Notice two things: how much better the result is when you have done the thinking first, and how much clearer your own thinking became in the act of deciding what to carry across.
 :::
 
 
@@ -143,7 +143,7 @@ Next time you use AI for something substantial, open two sessions. In the first,
 
 You might have noticed something familiar about the techniques in this book. Breaking a project into milestones. Writing a clear brief. Showing your working. Checking your answers. These are not new skills invented for AI. They are strategies humans have used to manage complexity for decades, in classrooms, in boardrooms, in software teams.
 
-The reason they work with AI is not a coincidence. Large language models learned from the output of human cognition — millions of documents, textbooks, working papers, and problem solutions produced by people using exactly these strategies. When you tell a student "show your working" and their performance improves, then tell an AI "think step by step" and its performance also improves, you are activating the same underlying pattern. The model internalised structured human reasoning during training, and your prompt activates it.
+The reason they work with AI is not a coincidence. Large language models learned from the output of human cognition: millions of documents, textbooks, working papers, and problem solutions produced by people using exactly these strategies. When you tell a student "show your working" and their performance improves, then tell an AI "think step by step" and its performance also improves, you are activating the same underlying pattern. The model internalised structured human reasoning during training, and your prompt activates it.
 
 This means you already know more about effective AI interaction than you think.
 
@@ -158,7 +158,7 @@ This means you already know more about effective AI interaction than you think.
 
 : Cognitive strategies transfer from human domains to AI interaction because the model learned from the output of those same strategies. {.striped}
 
-The transfer works for a straightforward reason. Human cognition and AI inference face structurally similar challenges: limited working context, sensitivity to how a problem is framed, and difficulty with multi-step reasoning. The strategies humans developed to overcome those challenges — breaking problems into steps, making thinking explicit, providing clear criteria — address the same bottlenecks in both cases. Natural language is the shared medium, and scaffolding strategies are properties of the medium as much as the agent.
+The transfer works for a straightforward reason. Human cognition and AI inference face structurally similar challenges: limited working context, sensitivity to how a problem is framed, and difficulty with multi-step reasoning. The strategies humans developed to overcome those challenges (breaking problems into steps, making thinking explicit, providing clear criteria) address the same bottlenecks in both cases. Natural language is the shared medium, and scaffolding strategies are properties of the medium as much as the agent.
 
 This has a practical implication that matters. You do not need to learn a new discipline called "prompt engineering" from scratch. You need to recognise which of your existing professional and cognitive strategies apply, then translate them into the conversation. A project manager who writes good briefs already knows how to write good prompts. A teacher who designs clear rubrics already knows how to set evaluation criteria. A researcher who breaks a study into phases already knows how to chain prompts.
 

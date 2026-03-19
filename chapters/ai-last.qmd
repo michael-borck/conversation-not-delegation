@@ -73,7 +73,7 @@ Read what it gives you critically. Does it actually answer your question? Is it 
 Your job is to take what is useful, discard what is not, and integrate the result into your own work in a way that holds together. If you cannot evaluate whether the AI's output is good, that is a sign you skipped steps one through three.
 
 ::: {.callout-tip title="Try this (2 minutes)"}
-Take something you have already written — an email draft, meeting notes, a paragraph from a report. Paste it into AI and ask "Help me tighten this up." Compare the result to what you would get from a blank prompt asking AI to write the same thing from scratch. The version that started with your voice will sound like you. The version from scratch will sound like a machine. AI is far better at refining your thinking than generating from nothing.
+Take something you have already written, such as an email draft, meeting notes, or a paragraph from a report. Paste it into AI and ask "Help me tighten this up." Compare the result to what you would get from a blank prompt asking AI to write the same thing from scratch. The version that started with your voice will sound like you. The version from scratch will sound like a machine. AI is far better at refining your thinking than generating from nothing.
 :::
 
 ## Where AI Earns Its Keep

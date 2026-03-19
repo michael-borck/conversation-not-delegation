@@ -1,6 +1,6 @@
 # A Conversation Across Disciplines {#sec-across-disciplines}
 
-![Same AI, different disciplines. Understanding is still our job.](../images/comic-strip/13-across-disciplines.png){fig-alt="Comic strip: Different professionals — scientist, strategist, student — all use the same AI. Same request, different contexts. Punchline: Same AI, different disciplines. Understanding is still our job."}
+![Same AI, different disciplines. Understanding is still our job.](../images/comic-strip/13-across-disciplines.png){fig-alt="Comic strip: Different professionals (scientist, strategist, student) all use the same AI. Same request, different contexts. Punchline: Same AI, different disciplines. Understanding is still our job."}
 
 The tools are in place. You know the Conversation Loop (@sec-conversation-loop). You know how to start well with RTCF (@sec-rtcf). You know how to push back with VET (@sec-vet). You know how to chain prompts into a sustained line of thinking (@sec-prompt-chaining).
 
@@ -104,4 +104,4 @@ In every example, the turning point was a moment where the human rejected or red
 :::
 
 
-Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases — and the human was the bridge between them. This is the two-chat workflow (@sec-two-chat-workflow) in action, whether or not the person literally used two sessions.
+Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases, and the human was the bridge between them. This is the two-chat workflow (@sec-two-chat-workflow) in action, whether or not the person literally used two sessions.

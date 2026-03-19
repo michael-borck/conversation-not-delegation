@@ -207,7 +207,7 @@ Start with Question 1.
 
 Be honest with your answers. Do not look things up first. The point is to find out what you actually know versus what you think you know. Pay close attention to the "partially correct" answers. That is where the most useful learning lives, in the gap between what you said and what you missed.
 
-Self-testing reveals what you know and what you do not. But even when you understand a topic well, you are still seeing it from one vantage point — your own expertise, your own role, your own assumptions. Some problems need more than one perspective.
+Self-testing reveals what you know and what you do not. But even when you understand a topic well, you are still seeing it from one vantage point: your own expertise, your own role, your own assumptions. Some problems need more than one perspective.
 
 
 ## 7. The Expert Panel

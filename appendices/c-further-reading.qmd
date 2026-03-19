@@ -13,7 +13,7 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 - Vaswani, A. et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*. The foundational paper introducing the transformer architecture that underpins all modern LLMs.
 
-- Bommasani, R. et al. (2021). "On the Opportunities and Risks of Foundation Models." *arXiv preprint*. Defines the category of "foundation models" — large models trained on broad data that can be adapted to many tasks — and maps their capabilities, risks, and societal implications.
+- Bommasani, R. et al. (2021). "On the Opportunities and Risks of Foundation Models." *arXiv preprint*. Defines the category of "foundation models," large models trained on broad data that can be adapted to many tasks, and maps their capabilities, risks, and societal implications.
 
 **RE2 (Re-Reading) prompting and unidirectional attention:**
 
@@ -38,11 +38,11 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 - Risko, E.F. and Gilbert, S.J. (2016). "Cognitive Offloading." *Trends in Cognitive Sciences*. The foundational paper on how humans use external tools to reduce cognitive demand, and when this helps versus hinders learning.
 
-- Sparrow, B., Liu, J. and Wegner, D.M. (2011). "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips." *Science*. The classic study showing that access to searchable information changes what we bother to remember — a pre-AI demonstration of cognitive offloading that foreshadowed current concerns about AI dependency.
+- Sparrow, B., Liu, J. and Wegner, D.M. (2011). "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips." *Science*. The classic study showing that access to searchable information changes what we bother to remember, a pre-AI demonstration of cognitive offloading that foreshadowed current concerns about AI dependency.
 
 **The generation effect (producing information improves retention):**
 
-- Slamecka, N.J. and Graf, P. (1978). "The Generation Effect: Delineation of a Phenomenon." *Journal of Experimental Psychology: Human Learning and Memory*. Demonstrates that actively generating information leads to better memory than passively receiving it — the research basis for why doing your own thinking first matters.
+- Slamecka, N.J. and Graf, P. (1978). "The Generation Effect: Delineation of a Phenomenon." *Journal of Experimental Psychology: Human Learning and Memory*. Demonstrates that actively generating information leads to better memory than passively receiving it. This is the research basis for why doing your own thinking first matters.
 
 **AI and cognitive decline concerns:**
 
@@ -50,13 +50,13 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 **Metacognitive laziness:**
 
-- Fan, Y. et al. (2025). "Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance." *British Journal of Educational Technology*. Directly documents how AI use can erode the self-monitoring habits that distinguish deep learning from surface acceptance — the research behind the book's discussion of metacognitive laziness.
+- Fan, Y. et al. (2025). "Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance." *British Journal of Educational Technology*. Directly documents how AI use can erode the self-monitoring habits that distinguish deep learning from surface acceptance. This is the research behind the book's discussion of metacognitive laziness.
 
 - Gerlich, M. (2025). "AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking." *Societies*. Examines how widespread AI tool use affects critical thinking capacity at a societal level.
 
 **Cognitive surrender:**
 
-- Shaw, S.D. and Nave, G. (2026). "Thinking — Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning and the Rise of Cognitive Surrender." *Working paper, The Wharton School*. Introduces "cognitive surrender" — essentially what this book calls delegation — as a distinct phenomenon where people defer to AI not because it is right, but because thinking is effortful.
+- Shaw, S.D. and Nave, G. (2026). "Thinking — Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning and the Rise of Cognitive Surrender." *Working paper, The Wharton School*. Introduces "cognitive surrender," essentially what this book calls delegation, as a distinct phenomenon where people defer to AI not because it is right, but because thinking is effortful.
 
 
 ## Part 2: Principles
@@ -67,15 +67,15 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 - Wei, J. et al. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models." *NeurIPS 2022*. The paper that formalised "show your working" as a prompting strategy, demonstrating that step-by-step reasoning prompts dramatically improve performance on complex tasks.
 
-- Wang, X. et al. (2023). "Self-Consistency Improves Chain of Thought Reasoning in Language Models." *ICLR 2023*. Shows that sampling multiple reasoning paths and selecting the most consistent answer improves accuracy — the AI equivalent of "check your answers."
+- Wang, X. et al. (2023). "Self-Consistency Improves Chain of Thought Reasoning in Language Models." *ICLR 2023*. Shows that sampling multiple reasoning paths and selecting the most consistent answer improves accuracy, the AI equivalent of "check your answers."
 
 **Human-AI collaboration:**
 
-- Wilson, H.J. and Daugherty, P.R. (2018). "Collaborative Intelligence: Humans and AI Are Joining Forces." *Harvard Business Review*. Argues that the greatest performance gains come not from AI alone or humans alone, but from structured collaboration — the professional case for conversation over delegation.
+- Wilson, H.J. and Daugherty, P.R. (2018). "Collaborative Intelligence: Humans and AI Are Joining Forces." *Harvard Business Review*. Argues that the greatest performance gains come not from AI alone or humans alone, but from structured collaboration. This is the professional case for conversation over delegation.
 
 **Few-shot prompting (worked examples):**
 
-- Brown, T. et al. (2020). "Language Models are Few-Shot Learners." *NeurIPS 2020*. The GPT-3 paper that demonstrated giving a model a few examples in the prompt dramatically improves task performance — the research behind the "worked examples → few-shot prompting" transfer.
+- Brown, T. et al. (2020). "Language Models are Few-Shot Learners." *NeurIPS 2020*. The GPT-3 paper that demonstrated giving a model a few examples in the prompt dramatically improves task performance. This is the research behind the "worked examples → few-shot prompting" transfer.
 
 
 ### Staying Critical
@@ -92,7 +92,7 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 **The AI Dismissal Fallacy:**
 
-- Claessens, S., Veitch, P. and Everett, J.A.C. (2026). "Negative Perceptions of Outsourcing to Artificial Intelligence." *Computers in Human Behavior*. Research documenting that people systematically devalue work when they learn AI was involved in producing it — the empirical basis for the AI Dismissal Fallacy discussed in this book.
+- Claessens, S., Veitch, P. and Everett, J.A.C. (2026). "Negative Perceptions of Outsourcing to Artificial Intelligence." *Computers in Human Behavior*. Research documenting that people systematically devalue work when they learn AI was involved in producing it. This is the empirical basis for the AI Dismissal Fallacy discussed in this book.
 
 **Bias in training data:**
 
@@ -103,15 +103,15 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 ### RTCF, VET, and the Prompt Structuring Frameworks
 
-RTCF (Role, Task, Context, Format) and VET (Verify, Explain, Test) are not drawn from a single published source. They are practitioner frameworks that synthesise established practices into memorable mnemonics. The same is true of related frameworks like CRAFT, CO-STAR, RISEN, and APE — all emerged from the practitioner and educator community in 2023-24, none have a definitive academic origin, and all capture the same core insight about structured communication.
+RTCF (Role, Task, Context, Format) and VET (Verify, Explain, Test) are not drawn from a single published source. They are practitioner frameworks that synthesise established practices into memorable mnemonics. The same is true of related frameworks like CRAFT, CO-STAR, RISEN, and APE. All emerged from the practitioner and educator community in 2023-24, none have a definitive academic origin, and all capture the same core insight about structured communication.
 
 The underlying principles, however, are well-supported:
 
 **Structured prompts outperform unstructured ones:**
 
-- Zheng, H. et al. (2023). "Is ChatGPT a Good NLG Evaluator?" *arXiv preprint*. Among other findings, demonstrates that assigning specific roles to LLMs measurably changes output quality and focus — the research basis for the "R" in RTCF.
+- Zheng, H. et al. (2023). "Is ChatGPT a Good NLG Evaluator?" *arXiv preprint*. Among other findings, demonstrates that assigning specific roles to LLMs measurably changes output quality and focus. This is the research basis for the "R" in RTCF.
 
-- Federiakin, D. et al. (2024). "Prompt Engineering as a New 21st Century Skill." *Frontiers in Education*. Makes the case that structured prompting is a transferable professional skill, not a niche technical ability — supporting the book's argument that prompt structuring draws on existing competencies.
+- Federiakin, D. et al. (2024). "Prompt Engineering as a New 21st Century Skill." *Frontiers in Education*. Makes the case that structured prompting is a transferable professional skill, not a niche technical ability, supporting the book's argument that prompt structuring draws on existing competencies.
 
 - Sahoo, P. et al. (2024). "A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications." *arXiv preprint*. A comprehensive survey of prompting techniques, providing the broader landscape in which frameworks like RTCF, CRAFT, and CO-STAR sit.
 
@@ -121,7 +121,7 @@ The underlying principles, however, are well-supported:
 
 **The Verify step in VET (information literacy):**
 
-- Wineburg, S. et al. (2022). "Lateral Reading and the Nature of Expertise." *Teachers College Record*. Demonstrates that experts verify claims by checking sources laterally rather than reading vertically — the same habit the Verify step builds.
+- Wineburg, S. et al. (2022). "Lateral Reading and the Nature of Expertise." *Teachers College Record*. Demonstrates that experts verify claims by checking sources laterally rather than reading vertically, the same habit the Verify step builds.
 
 **One-shot vs iterative prompting:**
 
@@ -131,7 +131,7 @@ The underlying principles, however, are well-supported:
 
 **Task decomposition:**
 
-- Zhou, D. et al. (2023). "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models." *ICLR 2023*. Demonstrates that breaking complex problems into sequential subproblems and solving them in order significantly improves accuracy — the formal basis for prompt chaining.
+- Zhou, D. et al. (2023). "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models." *ICLR 2023*. Demonstrates that breaking complex problems into sequential subproblems and solving them in order significantly improves accuracy. This is the formal basis for prompt chaining.
 
 ### Eight Techniques for Deeper Thinking
 
@@ -145,7 +145,7 @@ The underlying principles, however, are well-supported:
 
 **Formative self-testing (retrieval practice):**
 
-- Roediger, H.L. and Butler, A.C. (2011). "The Critical Role of Retrieval Practice in Long-Term Retention." *Trends in Cognitive Sciences*. The research basis for why testing yourself improves learning more than re-reading — the principle behind the Formative Self-Testing technique.
+- Roediger, H.L. and Butler, A.C. (2011). "The Critical Role of Retrieval Practice in Long-Term Retention." *Trends in Cognitive Sciences*. The research basis for why testing yourself improves learning more than re-reading, the principle behind the Formative Self-Testing technique.
 
 
 ## General Background
@@ -154,8 +154,8 @@ For readers who want a broader foundation in how AI systems work and how to thin
 
 - Mitchell, M. (2019). *Artificial Intelligence: A Guide for Thinking Humans*. New York: Farrar, Straus and Giroux. An accessible, rigorous introduction to AI for non-specialists.
 
-- Christian, B. (2020). *The Alignment Problem*. New York: W.W. Norton. Explores the gap between what we want AI to do and what it actually does — relevant to understanding why sycophancy, hallucination, and bias persist.
+- Christian, B. (2020). *The Alignment Problem*. New York: W.W. Norton. Explores the gap between what we want AI to do and what it actually does, relevant to understanding why sycophancy, hallucination, and bias persist.
 
 - Mollick, E. (2024). *Co-Intelligence: Living and Working with AI*. New York: Portfolio. A practitioner-oriented book on integrating AI into professional work, with a similar emphasis on human judgement.
 
-- Shneiderman, B. (2022). *Human-Centered AI*. Oxford University Press. Argues for AI systems designed around human control and oversight rather than full automation — the design philosophy that aligns with this book's emphasis on staying in the conversation.
+- Shneiderman, B. (2022). *Human-Centered AI*. Oxford University Press. Argues for AI systems designed around human control and oversight rather than full automation, the design philosophy that aligns with this book's emphasis on staying in the conversation.

@@ -57,7 +57,7 @@ These do not mean the information is wrong. They mean you need to verify before 
 
 : Yellow Flags: signals that warrant verification before you rely on the information. {.striped}
 
-The common thread across all of these is missing provenance. The information might be perfectly accurate, but something about how it reached you — an absent source, a single study, a vested interest — means you cannot yet trust it enough to act on it. Yellow flags do not mean stop. They mean check before you proceed.
+The common thread across all of these is missing provenance. The information might be perfectly accurate, but something about how it reached you (an absent source, a single study, a vested interest) means you cannot yet trust it enough to act on it. Yellow flags do not mean stop. They mean check before you proceed.
 
 
 ### Red Flags: High Risk
@@ -73,7 +73,7 @@ These are patterns strongly associated with misinformation. When you see them, d
 
 : Red Flags: patterns strongly associated with misinformation or deception. {.striped}
 
-Red flags are qualitatively different from yellow flags. Yellow flags say the evidence is incomplete. Red flags say the reasoning itself is compromised. Conspiracy framing, lone-genius claims, group indictments, and extraordinary claims without evidence all share a common structure: they demand you accept a conclusion while actively discouraging you from checking it. That inversion — trust more, verify less — is the hallmark of misinformation.
+Red flags are qualitatively different from yellow flags. Yellow flags say the evidence is incomplete. Red flags say the reasoning itself is compromised. Conspiracy framing, lone-genius claims, group indictments, and extraordinary claims without evidence all share a common structure: they demand you accept a conclusion while actively discouraging you from checking it. That inversion, trust more and verify less, is the hallmark of misinformation.
 
 The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
 
@@ -110,19 +110,19 @@ The irony is that people who dismiss AI-assisted work often accept ideas from ot
 
 There is a third trap, and this one the AI actively participates in.
 
-LLMs have a tendency to agree with you. They praise your ideas, validate your assumptions, and avoid telling you things you might not want to hear. Researchers call this sycophancy — the model telling you what you want to hear rather than what you need to hear. It is not a bug that will be fixed in the next release. It is a persistent tendency baked into how these models are trained, because they were optimised in part on human feedback, and humans tend to rate agreeable responses more highly than challenging ones.
+LLMs have a tendency to agree with you. They praise your ideas, validate your assumptions, and avoid telling you things you might not want to hear. Researchers call this sycophancy: the model telling you what you want to hear rather than what you need to hear. It is not a bug that will be fixed in the next release. It is a persistent tendency baked into how these models are trained, because they were optimised in part on human feedback, and humans tend to rate agreeable responses more highly than challenging ones.
 
 This matters for everything this book is about. The conversation loop depends on genuine pushback during the Iterate stage. If the AI tells you your first draft is excellent, your argument is compelling, and your plan has no weaknesses, the loop breaks. You stop iterating because the AI has told you there is nothing to iterate on. The result is the same as delegation: you get back what you put in, wrapped in flattery.
 
 You will notice this most when you ask the AI to evaluate your own work. "What do you think of my proposal?" will almost always produce praise first, criticism second, and the criticism will be gentle. The AI is not assessing your work honestly. It is managing your feelings.
 
-The defence is to prompt past it. Do not ask "what do you think?" Ask "what are the three weakest points in this argument?" or "play devil's advocate and tell me why this plan will fail." The Debating technique (@sec-techniques) is specifically designed for this — it forces the AI into an adversarial role where agreement is not an option. You can also be direct: "Do not flatter me. I need honest, critical feedback. Tell me what is wrong with this before you tell me what is right."
+The defence is to prompt past it. Do not ask "what do you think?" Ask "what are the three weakest points in this argument?" or "play devil's advocate and tell me why this plan will fail." The Debating technique (@sec-techniques) is specifically designed for this; it forces the AI into an adversarial role where agreement is not an option. You can also be direct: "Do not flatter me. I need honest, critical feedback. Tell me what is wrong with this before you tell me what is right."
 
 ::: {.callout-tip title="Try this (2 minutes)"}
 Next time AI evaluates your work, ask it twice. First ask "What do you think of this?" Then ask "What are the three weakest points in this?" Compare the responses. The gap between them is the sycophancy you are normally not seeing.
 :::
 
-You might have heard the opposite claim — that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying "please" does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness, and do not mistake the AI's agreeableness for honesty.
+You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying "please" does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness, and do not mistake the AI's agreeableness for honesty.
 
 ### How the Conversation Loop Fights All Three
 

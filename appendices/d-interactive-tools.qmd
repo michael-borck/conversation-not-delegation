@@ -1,6 +1,6 @@
 # Interactive Tools {#sec-interactive-tools .appendix}
 
-These companion tools let you practise the frameworks from this book in your browser. No login required, no data stored — everything runs locally in your browser.
+These companion tools let you practise the frameworks from this book in your browser. No login required, no data stored. Everything runs locally in your browser.
 
 
 ## RTCF Prompt Builder
@@ -12,7 +12,7 @@ Build prompts step by step using the RTCF framework. Fill in Role, Task, Context
 
 ## RTCF Prompt Analyser
 
-Paste any prompt and get instant feedback on which RTCF elements are present, partial, or missing. Useful for diagnosing why a prompt gave you a vague or unhelpful response — the answer is usually a missing element.
+Paste any prompt and get instant feedback on which RTCF elements are present, partial, or missing. Useful for diagnosing why a prompt gave you a vague or unhelpful response; the answer is usually a missing element.
 
 **[Open the RTCF Prompt Analyser](tools/rtcf-analyser.html){target="_blank"}**
 
