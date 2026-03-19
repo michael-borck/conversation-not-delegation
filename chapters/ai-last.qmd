@@ -72,6 +72,10 @@ Read what it gives you critically. Does it actually answer your question? Is it 
 
 Your job is to take what is useful, discard what is not, and integrate the result into your own work in a way that holds together. If you cannot evaluate whether the AI's output is good, that is a sign you skipped steps one through three.
 
+::: {.callout-tip title="Try this (2 minutes)"}
+Take something you have already written — an email draft, meeting notes, a paragraph from a report. Paste it into AI and ask "Help me tighten this up." Compare the result to what you would get from a blank prompt asking AI to write the same thing from scratch. The version that started with your voice will sound like you. The version from scratch will sound like a machine. AI is far better at refining your thinking than generating from nothing.
+:::
+
 ## Where AI Earns Its Keep
 
 This principle is not "never use AI." It is "use AI where it adds value you cannot easily generate yourself."
@@ -97,3 +101,7 @@ How you use AI today shapes what you are capable of tomorrow. Use it as a crutch
 :::
 
 AI last is not about doing things the hard way. It is about doing things the smart way: you handle what you can, AI handles what you cannot, and the line between those two stays honest.
+
+::: {.callout-tip title="Try this (2 minutes)"}
+Give AI a vague prompt, then rewrite it with specific context, audience, and purpose. Compare the two outputs. The difference between them is not the AI getting smarter. It is your thinking making the AI useful.
+:::

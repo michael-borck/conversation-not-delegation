@@ -115,6 +115,8 @@ This is what it means to be the human in the loop. Not a rubber stamp at the end
 
 The choice is straightforward. You can chain tasks and amplify the hallucinations. Or you can stay in the conversation and amplify your thinking. The process looks similar from the outside — both involve multiple exchanges with AI. The difference is whether you are thinking or just clicking.
 
+One practical way to build this discipline into your workflow is to separate thinking from building entirely — running two conversations instead of one, with you as the bridge between them. We will return to this in @sec-two-chat-workflow.
+
 
 ::: {.callout-tip title="The loop at a glance"}
 **Brainstorm** -- define your real question, not your attempted solution. **Ideate** -- go wide, explore angles you had not considered. **Iterate** -- push back, refine, redirect. **Amplify** -- make the result yours. **Repeat** -- loop again when your thinking has not landed.

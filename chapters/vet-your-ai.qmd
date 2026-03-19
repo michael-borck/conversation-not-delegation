@@ -100,6 +100,10 @@ Building this habit takes deliberate practice at first. For the next week, try t
 
 This is the Iterate stage of the Conversation Loop made concrete. When you VET, you are not passively consuming output. You are actively evaluating it, pushing back on it, strengthening it. You are in conversation, not delegation.
 
+::: {.callout-tip title="Try this (10 minutes)"}
+Ask AI a factual question about your field — something you can check. Then VET the response fully. Verify one claim independently. Explain the answer in your own words. Test it with an edge case or a changed variable. The whole process takes ten minutes. What you learn about the AI's reliability in your domain is worth far more.
+:::
+
 
 ::: {.callout-tip title="Calibrate your effort"}
 Not everything needs the full VET treatment. A casual brainstorm gets a light pass. A client deliverable gets the full treatment. The higher the stakes, the more thorough your check should be.

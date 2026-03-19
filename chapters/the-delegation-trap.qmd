@@ -104,6 +104,10 @@ The test is simple: after using AI on a task, do you understand the problem bett
 After using AI on a task, do you understand the problem better than before? If yes, you were conversing. If no, you were delegating. If you cannot tell the difference, that should worry you.
 :::
 
+::: {.callout-tip title="Try this (2 minutes)"}
+Next time you use AI, do not accept the first response. Reply with "What did you assume?" or "What is the weakest part of this?" and see how the output improves. That second exchange is the conversation starting. The first response was just the opening.
+:::
+
 
 ## What This Book Is Really About
 
