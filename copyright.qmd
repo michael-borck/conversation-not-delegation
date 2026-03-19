@@ -1,12 +1,6 @@
-# Copyright {.unnumbered .unlisted}
-
 ::: {.content-visible unless-format="pdf"}
 
-::: {.content-visible when-format="epub"}
-
-&nbsp;
-
-:::
+# Copyright {.unnumbered .unlisted}
 
 **Conversation, Not Delegation**\
 How to Think With AI, Not Just Use It
