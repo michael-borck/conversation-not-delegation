@@ -2,11 +2,11 @@
 
 ![](images/author-photo.jpg){width=200px fig-align="center"}
 
-**Michael Borck** is a software developer and educator passionate about the intersection of human expertise and artificial intelligence. He developed the Intentional Prompting methodology to help programmers maintain agency and deepen their understanding while leveraging AI tools effectively.
+**Michael Borck** is a software developer and educator working at the intersection of human expertise and artificial intelligence. He developed the Conversation, Not Delegation methodology --- the idea that AI is most valuable not as a tool you delegate to, but as a thinking partner you converse with.
 
-Michael believes that the future of programming lies not in delegating to AI, but in conversing with it---treating AI as a collaborative partner that enhances human capability rather than replacing human understanding.
+The methodology grew out of a realisation: focusing on crafting the perfect prompt was just another form of delegation. The real value was never in the prompt. It was in the conversation that followed --- the pushback, the iteration, the moments where your own thinking sharpened because you stayed engaged. That insight shifted the focus from prompt engineering to something closer to how professionals have always done their best work: through structured dialogue, critical evaluation, and judgement that only comes from experience.
 
-When not writing about AI collaboration, Michael works on practical applications of these principles across software development, education, and creative projects. He creates educational software and resources, and explores the 80/20 principle in learning and productivity.
+Michael applies these principles across software development, education, and creative projects. He creates educational software and resources, and explores the 80/20 principle in learning and productivity.
 
 ---
 
