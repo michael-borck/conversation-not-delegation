@@ -1,0 +1,34 @@
+% Modern ToC styling
+\usepackage{tocloft}
+\usepackage{xcolor}
+
+% Define a muted colour for page numbers and leaders
+\definecolor{tocgray}{gray}{0.45}
+
+% ToC title styling
+\renewcommand{\cfttoctitlefont}{\hfill\Huge\bfseries\sffamily}
+\renewcommand{\cftaftertoctitle}{\hfill\mbox{}\vskip 1em}
+
+% Part styling — bold, large, sans-serif
+\renewcommand{\cftpartfont}{\large\bfseries\sffamily}
+\renewcommand{\cftpartpagefont}{\large\bfseries\sffamily}
+\setlength{\cftbeforepartskip}{1.5em}
+
+% Chapter styling — clean sans-serif
+\renewcommand{\cftchapfont}{\normalsize\sffamily}
+\renewcommand{\cftchappagefont}{\normalsize\sffamily\color{tocgray}}
+\renewcommand{\cftchapleader}{\color{tocgray}\cftdotfill{\cftchapdotsep}}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\setlength{\cftbeforechapskip}{0.4em}
+\setlength{\cftchapindent}{0em}
+
+% Section styling (appendices etc.)
+\renewcommand{\cftsecfont}{\small\sffamily}
+\renewcommand{\cftsecpagefont}{\small\sffamily\color{tocgray}}
+\renewcommand{\cftsecleader}{\color{tocgray}\cftdotfill{\cftsecdotsep}}
+\setlength{\cftsecindent}{1.5em}
+\setlength{\cftbeforesecskip}{0.1em}
+
+% Remove bold from chapter numbers in ToC
+\renewcommand{\cftchappresnum}{}
+\renewcommand{\cftchapaftersnum}{\hspace{0.5em}}
