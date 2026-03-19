@@ -10,6 +10,8 @@ Michael applies these principles across software development, education, and cre
 
 ---
 
+\newpage
+
 **Connect**
 
 - [michaelborck.dev](https://michaelborck.dev) --- Professional work and projects
