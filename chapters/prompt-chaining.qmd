@@ -37,8 +37,9 @@ There is no single right way to chain prompts. The best approach depends on how 
 **Example: Research methodology review**
 
 ```
-You are a research methodologist. I'm writing a methods section
-for a paper on employee retention in remote teams.
+You are a research methodologist.
+I'm writing a methods section for a paper
+on employee retention in remote teams.
 
 Follow these steps:
 1. Identify the key variables I need to measure
@@ -64,12 +65,15 @@ This works well when you have a clear process in mind and trust it enough to let
 
 **Step 1, Analysis:**
 ```
-I'm writing a funding proposal for a community health programme.
-Here's a summary of the problem we're trying to address:
+I'm writing a funding proposal
+for a community health programme.
+Here's a summary of the problem
+we're trying to address:
 [Paste summary]
 
-Analyse this. What are the strongest arguments for funding?
-What gaps in the evidence should I be aware of?
+Analyse this. What are the strongest
+arguments for funding? What gaps
+in the evidence should I be aware of?
 ```
 
 *Review the output. Note what resonates and what is missing.*
@@ -77,8 +81,9 @@ What gaps in the evidence should I be aware of?
 **Step 2, Structure:**
 ```
 Based on that analysis, outline a proposal structure.
-Include sections for: problem statement, proposed approach,
-expected outcomes, and evaluation plan.
+Include sections for: problem statement,
+proposed approach, expected outcomes,
+and evaluation plan.
 For each section, note the key point it should make.
 ```
 
@@ -86,9 +91,12 @@ For each section, note the key point it should make.
 
 **Step 3, Draft:**
 ```
-Now draft the problem statement and proposed approach sections.
-Use a direct, evidence-informed tone. Keep it under 800 words total.
-Emphasise the points we identified in Step 1.
+Now draft the problem statement
+and proposed approach sections.
+Use a direct, evidence-informed tone.
+Keep it under 800 words total.
+Emphasise the points we identified
+in Step 1.
 ```
 
 *Review, revise, continue with remaining sections.*
@@ -105,8 +113,9 @@ The value here is in the pauses. Each review point is a chance to correct course
 **Example: Analysing survey data**
 
 ```
-You are a research analyst. We're analysing survey data about
-workplace satisfaction across three departments.
+You are a research analyst. We're analysing
+survey data about workplace satisfaction
+across three departments.
 
 Here's how we'll proceed:
 1. I'll share the survey summary
@@ -118,7 +127,8 @@ Here's how we'll proceed:
 Here's the data:
 [Paste survey summary]
 
-Start with step 2. Then wait for my response before continuing.
+Start with step 2. Then wait for my
+response before continuing.
 ```
 
 The AI responds with themes. You reply:
@@ -163,8 +173,8 @@ Step 2: Provide [evidence or examples]
 Step 3: Address [counterarguments or limitations]
 Step 4: Synthesise [into a clear position statement]
 
-Output each step with supporting detail. I'll provide feedback
-after each step.
+Output each step with supporting detail.
+I'll provide feedback after each step.
 ```
 
 ### Planning Chain
@@ -178,9 +188,11 @@ Constraints: [Timeline, budget, resources, scope limits]
 Step 1: Define [the key deliverables or milestones]
 Step 2: Identify [dependencies, risks, and assumptions]
 Step 3: Sequence [the work into phases or stages]
-Step 4: Detail [the first phase with specific action items]
+Step 4: Detail [the first phase
+   with specific action items]
 
-Output each step. I'll review and adjust before we continue.
+Output each step. I'll review and adjust
+before we continue.
 ```
 
 
@@ -201,7 +213,8 @@ This is the Conversation Loop in miniature. You have already iterated once. Now 
 Take the same underlying content and chain it into different formats:
 
 ```
-Prompt 1: "Analyse this project data." [Full analysis request]
+Prompt 1: "Analyse this project data."
+   [Full analysis request]
 [Get detailed analysis]
 
 Prompt 2: "Now turn that analysis into:

@@ -23,14 +23,19 @@ Pick the one that fits. Modify it. Make it yours.
 
 ::: {.callout-note title="Try this prompt"}
 ```
-I'm planning [describe your project, decision, or problem].
+I'm planning [describe your project,
+decision, or problem].
 
-Your task: Ask me a series of short-answer questions to help me
-clarify all the requirements, considerations, and potential pitfalls.
+Your task: Ask me a series of
+short-answer questions to help me
+clarify all the requirements,
+considerations, and potential pitfalls.
 
-Ask one question at a time. Wait for my response before asking the
-next question. Continue until you've helped me think through at
-least 10 different aspects of this.
+Ask one question at a time. Wait for
+my response before asking the next
+question. Continue until you've helped
+me think through at least 10 different
+aspects of this.
 
 Begin with your first question.
 ```
@@ -51,7 +56,8 @@ Reverse Prompting works best at the start of something, when the shape of the pr
 
 ::: {.callout-note title="Try this prompt"}
 ```
-I'm deciding between these options for [describe the decision]:
+I'm deciding between these options
+for [describe the decision]:
 
 Option A: [describe]
 Option B: [describe]
@@ -67,8 +73,9 @@ Evaluate each specifically in terms of:
 - [Criterion 2, e.g., long-term flexibility]
 - [Criterion 3, e.g., risk if it goes wrong]
 
-Conclude with which option you'd recommend and why, but flag
-the strongest argument against your recommendation.
+Conclude with which option you'd recommend
+and why, but flag the strongest argument
+against your recommendation.
 ```
 :::
 
@@ -85,18 +92,21 @@ Pros and Cons gives you a snapshot of the decision landscape. But some decisions
 
 ::: {.callout-note title="Try this prompt"}
 ```
-I need to understand the process for [describe the task or procedure].
+I need to understand the process
+for [describe the task or procedure].
 
-Walk me through the entire process from start to finish. For each
-step, tell me:
+Walk me through the entire process
+from start to finish. For each step,
+tell me:
 
 1. What action to take
 2. What to document or record
 3. What could go wrong at this stage
 
-After you explain each step, STOP and wait for me to type "next"
-before moving to the next step. Do not provide the entire process
-at once.
+After you explain each step, STOP and
+wait for me to type "next" before moving
+to the next step. Do not provide
+the entire process at once.
 
 Begin with Step 1.
 ```
@@ -115,22 +125,31 @@ The first three techniques help you think through problems, weigh options, and u
 
 ::: {.callout-note title="Try this prompt"}
 ```
-You are [describe the persona: e.g., a senior executive who is
-skeptical of my proposal / a client who is unhappy with a delayed
-deliverable / a colleague who disagrees with my approach].
+You are [describe the persona: e.g.,
+a senior executive who is skeptical
+of my proposal / a client who is
+unhappy with a delayed deliverable /
+a colleague who disagrees with my
+approach].
 
-Your personality: [e.g., direct and impatient / friendly but
-unconvinced / emotional and defensive]
+Your personality: [e.g., direct and
+impatient / friendly but unconvinced /
+emotional and defensive]
 
-I will practice having this conversation with you. Stay in character.
-If I say something vague, push back. If I handle something well,
-acknowledge it briefly but keep pressing.
+I will practice having this
+conversation with you. Stay in
+character. If I say something vague,
+push back. If I handle something well,
+acknowledge it briefly but keep
+pressing.
 
-After we finish the conversation, break character and give me
-feedback on:
+After we finish the conversation,
+break character and give me feedback
+on:
 - What I handled well
 - What I could improve
-- Any phrases or approaches that would have been more effective
+- Any phrases or approaches that
+  would have been more effective
 
 Let's begin. I'll speak first.
 ```
@@ -162,13 +181,17 @@ Set up a debate between two positions:
 - "The Advocate" argues for [Option A]
 - "The Skeptic" argues for [Option B]
 
-Conduct the debate in four rounds. Each speaker gets 3-4 sentences
-per round. Label each speaker clearly. Make both sides as
-persuasive as possible.
+Conduct the debate in four rounds.
+Each speaker gets 3-4 sentences per
+round. Label each speaker clearly.
+Make both sides as persuasive as
+possible.
 
-After the debate, tell me: which arguments should weigh most
-heavily in my decision, and what additional information would I
-need to be confident either way?
+After the debate, tell me: which
+arguments should weigh most heavily
+in my decision, and what additional
+information would I need to be
+confident either way?
 ```
 :::
 
@@ -187,15 +210,18 @@ The previous five techniques help you explore, decide, learn processes, practise
 
 ::: {.callout-note title="Try this prompt"}
 ```
-I'm studying [topic or subject area]. Test my understanding.
+I'm studying [topic or subject area].
+Test my understanding.
 
 Ask me 5 questions, one at a time. Mix the difficulty:
 - 2 questions testing core concepts
 - 2 questions requiring application to realistic scenarios
-- 1 question that requires me to evaluate or critique something
+- 1 question that requires me to
+  evaluate or critique something
 
 After each answer I give, tell me:
-1. Whether my answer is correct, partially correct, or incorrect
+1. Whether my answer is correct,
+   partially correct, or incorrect
 2. What I got right
 3. What I missed or got wrong, with a brief explanation
 
@@ -220,13 +246,17 @@ Self-testing reveals what you know and what you do not. But even when you unders
 ```
 I need to make a decision about [describe the situation].
 
-Assemble a panel of 4 experts who would each have a different
-perspective on this decision:
-- Name each expert and describe their background
-- Have each expert analyse the situation from their perspective
+Assemble a panel of 4 experts who would
+each have a different perspective
+on this decision:
+- Name each expert and describe
+  their background
+- Have each expert analyse the
+  situation from their perspective
   (3-4 sentences each)
-- Have each expert identify the one thing they think I'm most
-  likely to overlook
+- Have each expert identify the one
+  thing they think I'm most likely
+  to overlook
 
 After all four experts have spoken, provide a synthesis:
 what do they agree on, where do they disagree, and what

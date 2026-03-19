@@ -33,23 +33,33 @@ The meta approach works better because AI asks clarifying questions first, learn
 Here is a prompt you can use right now. Copy it, paste it into any AI tool, and start the conversation.
 
 ```
-You are an AI expert consultant. I would like your help understanding how I
-could better use AI in my work.
+You are an AI expert consultant.
+I would like your help understanding
+how I could better use AI in my work.
 
-Please ask me one question at a time. I will answer, then you ask the next
-question. Keep asking until you understand:
+Please ask me one question at a time.
+I will answer, then you ask the next
+question. Keep asking until you
+understand:
 - My role and responsibilities
 - My main workflows and challenges
-- My key objectives (what matters for success)
-- My constraints (time, resources, skills, institutional requirements)
+- My key objectives
+  (what matters for success)
+- My constraints (time, resources,
+  skills, institutional requirements)
 
-Once you have enough context, provide TWO types of recommendations:
-1. Obvious opportunities: Clear, straightforward AI applications
-   (the low-hanging fruit most people think of)
-2. Non-obvious opportunities: Unexpected or creative uses of AI I might not
-   have considered
+Once you have enough context,
+provide TWO types of recommendations:
+1. Obvious opportunities: Clear,
+   straightforward AI applications
+   (the low-hanging fruit most
+   people think of)
+2. Non-obvious opportunities:
+   Unexpected or creative uses of AI
+   I might not have considered
 
-Format your recommendations clearly with implementation tips for each.
+Format your recommendations clearly
+with implementation tips for each.
 ```
 
 That is it. Paste it, start answering questions, and see what comes back.
