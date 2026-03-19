@@ -59,6 +59,7 @@ format:
     documentclass: book
     papersize: letter
     toc: true
+    toc-depth: 1
     number-sections: true
     colorlinks: true
     include-in-header: pdf-header.tex
