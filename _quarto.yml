@@ -61,7 +61,10 @@ format:
     toc: true
     toc-depth: 1
     number-sections: true
-    colorlinks: true
+    colorlinks: false
+    linkcolor: black
+    urlcolor: black
+    citecolor: black
     geometry:
       - inner=0.75in
       - outer=0.5in
