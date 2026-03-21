@@ -81,6 +81,8 @@ A book about conversation should be available in more than one form. Pick the fo
 
 The online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.
 
+- **Browse all books.** This book is part of a series. See all titles at [books.borck.education](https://books.borck.education).
+
 ## What This Book Is Not
 
 This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not.
