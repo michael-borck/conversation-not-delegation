@@ -68,7 +68,7 @@ Six elements with a distinctive feature: it builds iteration directly into the f
 
 **Same task:**
 
-> "Act as an experienced higher education analyst **(Character)**. Analyse this student feedback data and identify the strongest themes and areas of concern **(Request)**. Here is an example of the format I want: 'Theme: Student engagement — Evidence: 15 responses mentioned limited interaction — Action: Introduce weekly discussion activities' **(Examples)**. The initial output should focus on the three most prominent themes; I will refine the scope after reviewing **(Adjustment)**. Present as a themed table **(Type)**. Include a brief note on statistical confidence where relevant **(Extras)**."
+> "Act as an experienced higher education analyst **(Character)**. Analyse this student feedback data and identify the strongest themes and areas of concern **(Request)**. Here is an example of the format I want: 'Theme: Student engagement | Evidence: 15 responses mentioned limited interaction | Action: Introduce weekly discussion activities' **(Examples)**. The initial output should focus on the three most prominent themes; I will refine the scope after reviewing **(Adjustment)**. Present as a themed table **(Type)**. Include a brief note on statistical confidence where relevant **(Extras)**."
 
 ### APE: Action, Purpose, Expectation
 
@@ -84,7 +84,7 @@ Three elements. The most minimal framework. Useful for quick, low-stakes prompts
 | Framework | Elements | Best for |
 |---|---|---|
 | **APE** | 3 | Quick tasks where speed matters more than precision |
-| **RTCF** | 4 | General-purpose prompting — covers most situations |
+| **RTCF** | 4 | General-purpose prompting that covers most situations |
 | **CRAFT** | 5 | Communication tasks where tone and audience are distinct decisions |
 | **RISEN** | 5 | Multi-step tasks where the process matters |
 | **CREATE** | 6 | Tasks where you can show examples and expect to iterate |
