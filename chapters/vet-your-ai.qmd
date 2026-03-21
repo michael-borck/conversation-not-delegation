@@ -2,6 +2,8 @@
 
 ![VET your AI: Verify, Explain, Test.](../images/comic-strip/12-vet-your-ai.png){fig-alt="Comic strip: AI says 'Studies show...' A stick figure asks 'Which studies?' AI hesitates: 'Um... good ones?' Punchline: VET your AI. Verify, Explain, Test."}
 
+> If you cannot verify it, explain it, and test it, you are not done yet.
+
 The most dangerous AI output is the one that sounds right.
 
 Not the obvious hallucination. Not the garbled sentence. Not the response that makes you squint and say "that can't be correct." Those are easy to catch. You catch them because they feel wrong.

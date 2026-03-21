@@ -2,6 +2,8 @@
 
 ![More techniques, fewer stuck problems.](../images/comic-strip/10-eight-techniques.png){fig-alt="Comic strip: A stick figure uses one trick for everything and nothing works. Another has a full toolbox of eight techniques. Punchline: Different problems, different tools. Use all eight."}
 
+> The right technique is not the cleverest one. It is the one that matches the kind of thinking you need to do.
+
 You now have the mindset. You know AI works best as a thinking partner, not an answer machine. You know to do your own thinking first, then bring AI into the conversation.
 
 But what does that conversation actually look like?

@@ -2,6 +2,8 @@
 
 ![Thinking first leads to a faster finish.](../images/comic-strip/06-ai-last.png){fig-alt="Comic strip: One stick figure opens AI immediately and gets a generic mess. Another spends ten minutes thinking first, clarifies the problem, then uses AI and finishes faster. Punchline: Thinking first leads to a faster finish."}
 
+> The best time to use AI is after you have done enough thinking to know what to ask.
+
 There is a temptation, once you have access to a powerful AI, to reach for it immediately. Problem appears, AI gets asked. Every time.
 
 Resist that.

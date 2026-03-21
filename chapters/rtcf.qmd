@@ -2,6 +2,8 @@
 
 ![Specific guided structure defines outcome.](../images/comic-strip/08-rtcf.png){fig-alt="Comic strip: A stick figure sends a vague prompt and gets generic garbage. She blames the AI. Another stick figure uses a structured RTCF prompt with role, task, context, and format. Same AI, clear result. Punchline: Specific guided structure defines outcome."}
 
+> A clear question is worth more than a clever prompt.
+
 You now know what a conversation with AI looks like. You understand the loop. You know the difference between delegation and thinking together.
 
 But when you sit down and open a blank prompt window, where do you actually start?

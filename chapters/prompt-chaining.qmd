@@ -2,6 +2,8 @@
 
 ![Prompt chaining is just good cooking. Break it down, or bake a mess.](../images/comic-strip/09-prompt-chaining.png){fig-alt="Comic strip: A stick figure tells a recipe app to give the perfect cake in one step. It says 'combine everything and believe in yourself.' Another figure follows it step by step instead. Punchline: Prompts are just recipe steps."}
 
+> Complex problems do not have single-prompt solutions. They have conversations.
+
 A single prompt gets you a single response. Sometimes that is enough. Often it is not.
 
 When the work is complex, when it has stages, when the output of one step shapes the next, a single prompt forces the AI to guess the whole path at once. The result is usually broad, shallow, and not quite right. You end up rewriting most of it anyway.
