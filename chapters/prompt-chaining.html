@@ -298,12 +298,6 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Copyright</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About This Book</span></a>
   </div>
@@ -552,13 +546,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="why-it-works" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="why-it-works"><span class="header-section-number">9.1</span> Why It Works</h2>
 <p>Breaking a task into steps produces better results for the same reasons it works when humans do it.</p>
-<ol type="1">
-<li><strong>Better reasoning.</strong> Smaller steps mean more focused output at each stage.</li>
-<li><strong>Control.</strong> You review and adjust after each step, catching problems early.</li>
-<li><strong>Flexibility.</strong> You can change direction mid-process without starting over.</li>
-<li><strong>Quality.</strong> Each step’s output becomes the next step’s input. Good foundations compound.</li>
-<li><strong>Visibility.</strong> You see the AI’s reasoning process, not just the final product.</li>
-</ol>
+<p>Smaller steps mean more focused output at each stage, which improves reasoning. You review and adjust after each step, catching problems early rather than discovering them in the final product. You can change direction mid-process without starting over. Each step’s output becomes the next step’s input, so good foundations compound. And because you see the AI’s reasoning at each stage, not just the final product, you stay in the conversation rather than outsourcing it.</p>
 </section>
 <section id="sec-chaining-approaches" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="sec-chaining-approaches"><span class="header-section-number">9.2</span> Three Approaches</h2>
@@ -568,8 +556,9 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>When to use it:</strong> You want multi-step processing but prefer to stay in a single prompt.</p>
 <p><strong>How it works:</strong> Provide all steps upfront with explicit instructions. The AI processes them sequentially and returns structured output.</p>
 <p><strong>Example: Research methodology review</strong></p>
-<pre><code>You are a research methodologist. I'm writing a methods section
-for a paper on employee retention in remote teams.
+<pre><code>You are a research methodologist.
+I'm writing a methods section for a paper
+on employee retention in remote teams.
 
 Follow these steps:
 1. Identify the key variables I need to measure
@@ -588,23 +577,30 @@ Output each step clearly labelled.</code></pre>
 <p><strong>How it works:</strong> Submit one prompt. Review the output. Then submit a follow-up that builds on it.</p>
 <p><strong>Example: Writing a proposal</strong></p>
 <p><strong>Step 1, Analysis:</strong></p>
-<pre><code>I'm writing a funding proposal for a community health programme.
-Here's a summary of the problem we're trying to address:
+<pre><code>I'm writing a funding proposal
+for a community health programme.
+Here's a summary of the problem
+we're trying to address:
 [Paste summary]
 
-Analyse this. What are the strongest arguments for funding?
-What gaps in the evidence should I be aware of?</code></pre>
+Analyse this. What are the strongest
+arguments for funding? What gaps
+in the evidence should I be aware of?</code></pre>
 <p><em>Review the output. Note what resonates and what is missing.</em></p>
 <p><strong>Step 2, Structure:</strong></p>
 <pre><code>Based on that analysis, outline a proposal structure.
-Include sections for: problem statement, proposed approach,
-expected outcomes, and evaluation plan.
+Include sections for: problem statement,
+proposed approach, expected outcomes,
+and evaluation plan.
 For each section, note the key point it should make.</code></pre>
 <p><em>Review. Adjust the structure before proceeding.</em></p>
 <p><strong>Step 3, Draft:</strong></p>
-<pre><code>Now draft the problem statement and proposed approach sections.
-Use a direct, evidence-informed tone. Keep it under 800 words total.
-Emphasise the points we identified in Step 1.</code></pre>
+<pre><code>Now draft the problem statement
+and proposed approach sections.
+Use a direct, evidence-informed tone.
+Keep it under 800 words total.
+Emphasise the points we identified
+in Step 1.</code></pre>
 <p><em>Review, revise, continue with remaining sections.</em></p>
 <p>The value here is in the pauses. Each review point is a chance to correct course, add something the AI missed, or redirect entirely.</p>
 </section>
@@ -613,8 +609,9 @@ Emphasise the points we identified in Step 1.</code></pre>
 <p><strong>When to use it:</strong> You want the AI to guide you through a process, pausing for your input at each stage.</p>
 <p><strong>How it works:</strong> You set up the process, then the AI works through it collaboratively, waiting for your feedback before continuing.</p>
 <p><strong>Example: Analysing survey data</strong></p>
-<pre><code>You are a research analyst. We're analysing survey data about
-workplace satisfaction across three departments.
+<pre><code>You are a research analyst. We're analysing
+survey data about workplace satisfaction
+across three departments.
 
 Here's how we'll proceed:
 1. I'll share the survey summary
@@ -626,7 +623,8 @@ Here's how we'll proceed:
 Here's the data:
 [Paste survey summary]
 
-Start with step 2. Then wait for my response before continuing.</code></pre>
+Start with step 2. Then wait for my
+response before continuing.</code></pre>
 <p>The AI responds with themes. You reply:</p>
 <blockquote class="blockquote">
 <p>“Theme 1 is spot on. Theme 2 needs more nuance. Can you break down the ‘communication issues’ into specific types? For theme 3, I’d like to explore the relationship between workload and satisfaction more deeply.”</p>
@@ -662,8 +660,8 @@ Step 2: Provide [evidence or examples]
 Step 3: Address [counterarguments or limitations]
 Step 4: Synthesise [into a clear position statement]
 
-Output each step with supporting detail. I'll provide feedback
-after each step.</code></pre>
+Output each step with supporting detail.
+I'll provide feedback after each step.</code></pre>
 </section>
 <section id="planning-chain" class="level3" data-number="9.3.3">
 <h3 data-number="9.3.3" class="anchored" data-anchor-id="planning-chain"><span class="header-section-number">9.3.3</span> Planning Chain</h3>
@@ -674,9 +672,11 @@ Constraints: [Timeline, budget, resources, scope limits]
 Step 1: Define [the key deliverables or milestones]
 Step 2: Identify [dependencies, risks, and assumptions]
 Step 3: Sequence [the work into phases or stages]
-Step 4: Detail [the first phase with specific action items]
+Step 4: Detail [the first phase
+   with specific action items]
 
-Output each step. I'll review and adjust before we continue.</code></pre>
+Output each step. I'll review and adjust
+before we continue.</code></pre>
 </section>
 </section>
 <section id="sec-chaining-advanced" class="level2" data-number="9.4">
@@ -693,7 +693,8 @@ Output each step. I'll review and adjust before we continue.</code></pre>
 <section id="format-shifting" class="level3" data-number="9.4.2">
 <h3 data-number="9.4.2" class="anchored" data-anchor-id="format-shifting"><span class="header-section-number">9.4.2</span> Format Shifting</h3>
 <p>Take the same underlying content and chain it into different formats:</p>
-<pre><code>Prompt 1: "Analyse this project data." [Full analysis request]
+<pre><code>Prompt 1: "Analyse this project data."
+   [Full analysis request]
 [Get detailed analysis]
 
 Prompt 2: "Now turn that analysis into:

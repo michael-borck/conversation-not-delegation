@@ -298,12 +298,6 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Copyright</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About This Book</span></a>
   </div>
@@ -492,9 +486,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#one-direction-at-a-time" id="toc-one-direction-at-a-time" class="nav-link" data-scroll-target="#one-direction-at-a-time"><span class="header-section-number">2.3</span> One Direction at a Time</a></li>
   <li><a href="#what-they-can-do" id="toc-what-they-can-do" class="nav-link" data-scroll-target="#what-they-can-do"><span class="header-section-number">2.4</span> What They Can Do</a></li>
   <li><a href="#what-they-cannot-do" id="toc-what-they-cannot-do" class="nav-link" data-scroll-target="#what-they-cannot-do"><span class="header-section-number">2.5</span> What They Cannot Do</a></li>
-  <li><a href="#beyond-text" id="toc-beyond-text" class="nav-link" data-scroll-target="#beyond-text"><span class="header-section-number">2.6</span> Beyond Text</a></li>
-  <li><a href="#the-line-worth-remembering" id="toc-the-line-worth-remembering" class="nav-link" data-scroll-target="#the-line-worth-remembering"><span class="header-section-number">2.7</span> The Line Worth Remembering</a></li>
-  <li><a href="#why-this-matters-for-you" id="toc-why-this-matters-for-you" class="nav-link" data-scroll-target="#why-this-matters-for-you"><span class="header-section-number">2.8</span> Why This Matters for You</a></li>
+  <li><a href="#good-at-the-average-bad-at-the-precise" id="toc-good-at-the-average-bad-at-the-precise" class="nav-link" data-scroll-target="#good-at-the-average-bad-at-the-precise"><span class="header-section-number">2.6</span> Good at the Average, Bad at the Precise</a></li>
+  <li><a href="#beyond-text" id="toc-beyond-text" class="nav-link" data-scroll-target="#beyond-text"><span class="header-section-number">2.7</span> Beyond Text</a></li>
+  <li><a href="#the-line-worth-remembering" id="toc-the-line-worth-remembering" class="nav-link" data-scroll-target="#the-line-worth-remembering"><span class="header-section-number">2.8</span> The Line Worth Remembering</a></li>
+  <li><a href="#why-this-matters-for-you" id="toc-why-this-matters-for-you" class="nav-link" data-scroll-target="#why-this-matters-for-you"><span class="header-section-number">2.9</span> Why This Matters for You</a></li>
   </ul>
 </nav>
     </div>
@@ -584,8 +579,44 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="beyond-text" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="beyond-text"><span class="header-section-number">2.6</span> Beyond Text</h2>
+<section id="good-at-the-average-bad-at-the-precise" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="good-at-the-average-bad-at-the-precise"><span class="header-section-number">2.6</span> Good at the Average, Bad at the Precise</h2>
+<p>There is a useful way to think about where LLMs excel and where they fail. It comes down to two axes: <strong>average versus precise</strong>, and <strong>small versus large</strong>.</p>
+<p>LLMs are extraordinarily good at producing convincing averages. Ask for a marketing email and you get something that reads like a competent marketing email, because the model has absorbed thousands of them and can synthesise a plausible representative. Ask it to describe a dog on a mountain and the result looks right, because it is drawing on a distribution of dog-on-mountain descriptions. The output is not retrieved from a specific source. It is interpolated from the patterns of everything the model has seen. For a huge class of everyday tasks, this is exactly what you need.</p>
+<p>But ask for something precise and the same mechanism becomes a liability. A specific legal precedent, a particular person’s phone number, an exact statistical figure from a named study: these require retrieval, not interpolation. The model does not retrieve. It predicts what a plausible answer would look like, which is how you end up with confident citations to papers that do not exist.</p>
+<p>The second axis is scale. LLMs handle small, bounded tasks well. A single prompt that fits comfortably in context, with few assumptions and one clear shape for the answer, plays to the model’s strengths. But as tasks grow larger, with more interdependent decisions, conflicting constraints, and emergent complexity, the convincing average begins to fall apart. The model will produce something that looks like a coherent system architecture or a complete project plan, but the precise details will be inconsistent, the dependencies will not hold, and the confident surface will mask structural problems underneath.</p>
+<p>The relationship between these two axes matters. Being good at the average means the model will confidently produce plausible-looking large outputs that fall apart on the precise details. The convincing average scales badly with complexity.</p>
+<p>This gives you a practical decision framework. Before using AI on any task, ask two questions: <strong>How precise does this need to be?</strong> and <strong>How big is this?</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Small</th>
+<th>Large</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Average</strong></td>
+<td><strong>Sweet spot.</strong> Drafts, summaries, boilerplate, brainstorming. Trust with light review.</td>
+<td><strong>Plausible but brittle.</strong> Looks right at first glance, falls apart on inspection. Verify thoroughly.</td>
+</tr>
+<tr class="even">
+<td><strong>Precise</strong></td>
+<td><strong>Workable with verification.</strong> Facts, citations, specific code. Check before using.</td>
+<td><strong>Danger zone.</strong> Confident architecture that is wrong in subtle ways. Stay in the loop at every step.</td>
+</tr>
+</tbody>
+</table>
+<p>The sweet spot tasks can often be delegated with a light check. Everything else requires conversation, iteration, and human judgement proportional to where it sits on the grid. This is the practical argument for staying in the conversation loop: not because AI is bad, but because its strengths and weaknesses are predictable, and your role is to compensate for the weaknesses while leveraging the strengths.</p>
+</section>
+<section id="beyond-text" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="beyond-text"><span class="header-section-number">2.7</span> Beyond Text</h2>
 <p>Modern LLMs are no longer text-only. Many can process images, PDFs, spreadsheets, and other files as inputs. Some can generate images. Some can speak and listen through audio interfaces.</p>
 <p>This matters, but it is worth being precise about how.</p>
 <p>Images, PDFs, and data files are inputs. They provide context. You can upload a chart and ask the AI to interpret it, or attach a contract and ask it to summarise the key terms. This is useful, and the same principles in this book apply: you still need to verify the output, still need to bring your own judgement, still need to stay in the conversation.</p>
@@ -593,14 +624,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Where multimodal AI may change the nature of conversation itself is voice. Audio interfaces let you talk with AI rather than type. The rhythm is different. You interrupt. You think out loud. You correct yourself mid-sentence. For many people, this is closer to how they actually think, and it may turn out to be a more natural way to stay in the conversation loop than typing prompts into a text box.</p>
 <p>The underlying process does not change. Whether you type or speak, upload a file or paste text, the principles are the same: bring your question, engage with what comes back, and own the result.</p>
 </section>
-<section id="the-line-worth-remembering" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="the-line-worth-remembering"><span class="header-section-number">2.7</span> The Line Worth Remembering</h2>
+<section id="the-line-worth-remembering" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="the-line-worth-remembering"><span class="header-section-number">2.8</span> The Line Worth Remembering</h2>
 <p>They have read everything and experienced nothing.</p>
 <p>That single sentence captures more about LLMs than most technical explanations. These models have processed more text than any human could read in a thousand lifetimes. They have seen how experts write, how arguments are structured, how evidence is presented. But they have never been wrong and learned from it. They have never felt confused and pushed through to clarity. They have never had a stake in being right.</p>
 <p>This is not a flaw to be fixed in the next version. It is the nature of the technology. LLMs are extraordinarily capable pattern matchers trained on the written record of human thought. That makes them powerful tools. It also means they have real limits, limits that do not go away just because the outputs sound confident.</p>
 </section>
-<section id="why-this-matters-for-you" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="why-this-matters-for-you"><span class="header-section-number">2.8</span> Why This Matters for You</h2>
+<section id="why-this-matters-for-you" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="why-this-matters-for-you"><span class="header-section-number">2.9</span> Why This Matters for You</h2>
 <p>If you understand that LLMs are sophisticated prediction engines, not omniscient oracles, you will use them differently.</p>
 <p>You will not hand over a task and trust the output. You will use the model to generate a draft and then apply your own judgement. You will not ask it for the answer. You will ask it to help you think through the problem. You will recognise when the output is echoing a pattern rather than reflecting genuine reasoning, and you will push back.</p>
 <p>The difference between someone who uses AI well and someone who uses it poorly is rarely about technical skill. It is about understanding what the tool actually is and what it is not.</p>

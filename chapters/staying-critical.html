@@ -298,12 +298,6 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Copyright</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About This Book</span></a>
   </div>
@@ -501,7 +495,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-sycophancy-trap" id="toc-the-sycophancy-trap" class="nav-link" data-scroll-target="#the-sycophancy-trap"><span class="header-section-number">7.4.3</span> The Sycophancy Trap</a></li>
   <li><a href="#how-the-conversation-loop-fights-all-three" id="toc-how-the-conversation-loop-fights-all-three" class="nav-link" data-scroll-target="#how-the-conversation-loop-fights-all-three"><span class="header-section-number">7.4.4</span> How the Conversation Loop Fights All Three</a></li>
   </ul></li>
-  <li><a href="#watch-what-you-share" id="toc-watch-what-you-share" class="nav-link" data-scroll-target="#watch-what-you-share"><span class="header-section-number">7.5</span> Watch What You Share</a></li>
+  <li><a href="#watch-what-you-share" id="toc-watch-what-you-share" class="nav-link" data-scroll-target="#watch-what-you-share"><span class="header-section-number">7.5</span> Watch What You Share</a>
+  <ul class="collapse">
+  <li><a href="#what-the-risks-are-not" id="toc-what-the-risks-are-not" class="nav-link" data-scroll-target="#what-the-risks-are-not"><span class="header-section-number">7.5.1</span> What the Risks Are Not</a></li>
+  <li><a href="#what-the-risks-are" id="toc-what-the-risks-are" class="nav-link" data-scroll-target="#what-the-risks-are"><span class="header-section-number">7.5.2</span> What the Risks Are</a></li>
+  <li><a href="#the-risk-of-not-using-it" id="toc-the-risk-of-not-using-it" class="nav-link" data-scroll-target="#the-risk-of-not-using-it"><span class="header-section-number">7.5.3</span> The Risk of Not Using It</a></li>
+  </ul></li>
   <li><a href="#the-self-check" id="toc-the-self-check" class="nav-link" data-scroll-target="#the-self-check"><span class="header-section-number">7.6</span> The Self-Check</a></li>
   <li><a href="#where-this-goes-next" id="toc-where-this-goes-next" class="nav-link" data-scroll-target="#where-this-goes-next"><span class="header-section-number">7.7</span> Where This Goes Next</a></li>
   </ul>
@@ -690,7 +689,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Next time AI evaluates your work, ask it twice. First ask “What do you think of this?” Then ask “What are the three weakest points in this?” Compare the responses. The gap between them is the sycophancy you are normally not seeing.</p>
 </div>
 </div>
-<p>You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying “please” does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness, and do not mistake the AI’s agreeableness for honesty.</p>
+<p>You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying “please” does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness. Do not mistake the AI’s agreeableness for honesty.</p>
 </section>
 <section id="how-the-conversation-loop-fights-all-three" class="level3" data-number="7.4.4">
 <h3 data-number="7.4.4" class="anchored" data-anchor-id="how-the-conversation-loop-fights-all-three"><span class="header-section-number">7.4.4</span> How the Conversation Loop Fights All Three</h3>
@@ -713,6 +712,21 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>When in doubt, use fictional scenarios.</strong> You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.</li>
 </ul>
 <p>This is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.</p>
+<p>But it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.</p>
+<section id="what-the-risks-are-not" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="what-the-risks-are-not"><span class="header-section-number">7.5.1</span> What the Risks Are Not</h3>
+<p>The most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model’s behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users’ conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack.</p>
+<p>You will also hear stories of convergent development mistaken for theft: “I was working on an idea using AI, and then the company released something similar.” Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.</p>
+</section>
+<section id="what-the-risks-are" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="what-the-risks-are"><span class="header-section-number">7.5.2</span> What the Risks Are</h3>
+<p>The risks that matter are practical and specific. Pasting personally identifiable information into any external tool is a genuine compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) is subject to legislation that applies to AI tools just as it applies to email. Credentials and access tokens pasted into a prompt are an immediate security exposure. And using unverified AI output in high-stakes professional contexts is a liability issue, though that is a verification problem, not a data leakage problem.</p>
+</section>
+<section id="the-risk-of-not-using-it" class="level3" data-number="7.5.3">
+<h3 data-number="7.5.3" class="anchored" data-anchor-id="the-risk-of-not-using-it"><span class="header-section-number">7.5.3</span> The Risk of Not Using It</h3>
+<p>The “non-zero risk means do not use it” stance deserves scrutiny. Every professional tool involves trade-offs. Email can be intercepted. Cloud storage can be breached. We manage these risks through policy and practice, not prohibition. Refusing to engage with AI because of overestimated data risks carries consequences of its own: skills that do not develop, workflows that stay manual, and a widening gap between those who learned to use the tools thoughtfully and those who waited for certainty that never arrived.</p>
+<p>The question is not whether there is risk. It is whether the risk is proportionate to the concern, and whether avoidance creates risks of its own.</p>
+</section>
 </section>
 <section id="the-self-check" class="level2" data-number="7.6">
 <h2 data-number="7.6" class="anchored" data-anchor-id="the-self-check"><span class="header-section-number">7.6</span> The Self-Check</h2>
