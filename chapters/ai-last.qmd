@@ -100,7 +100,9 @@ If you use it as a lever, you get the opposite effect. You stay sharp. Your own 
 How you use AI today shapes what you are capable of tomorrow. Use it as a crutch and your skills erode. Use it as a lever and they compound.
 :::
 
-AI last is not about doing things the hard way. It is about doing things the smart way: you handle what you can, AI handles what you cannot, and the line between those two stays honest.
+AI Last is not about doing things the hard way. It is about doing things the smart way: you handle what you can, AI handles what you cannot, and the line between those two stays honest.
+
+The average-versus-precise, small-versus-large framework from @sec-what-are-llms helps you judge where that line sits for any given task. AI Last matters least in the sweet spot (small, average tasks where a draft is all you need) and most in the danger zone (large, precise tasks where confident-looking output masks structural problems). The more a task demands precision and the more complex its dependencies, the more important it is that you have done your own thinking before bringing AI into the conversation. That is not a rule about AI. It is a rule about the kind of work that matters.
 
 ::: {.callout-tip title="Try this (2 minutes)"}
 Give AI a vague prompt, then rewrite it with specific context, audience, and purpose. Compare the two outputs. The difference between them is not the AI getting smarter. It is your thinking making the AI useful.

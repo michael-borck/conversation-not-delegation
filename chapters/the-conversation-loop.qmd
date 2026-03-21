@@ -129,6 +129,10 @@ Neither session has the full picture. The thinking chat does not know what you w
 
 This is what "human in the loop" actually means. Not reviewing AI's work after it is done. Staying in the conversation at every stage, and being the bridge between the stages that the AI cannot see.
 
+There is a connection worth making explicit. The average-versus-precise, small-versus-large framework from @sec-what-are-llms describes where a task sits. The two-chat workflow describes what to do about it. Tasks in the sweet spot (small, average) can often be handled in a single prompt. Everything else benefits from splitting thinking from building.
+
+But tasks do not stay in one quadrant. A project that starts in the danger zone (large, precise) gets decomposed during the thinking chat into components that each sit in different quadrants. The assessment redesign that felt overwhelming as a single task becomes a set of manageable pieces: some in the sweet spot, some needing verification, each with its own appropriate level of trust. The exploratory session is where you map the territory. The build session is where you execute with that map in hand. The two frameworks are the same insight from different angles.
+
 ::: {.callout-tip title="Try this (5 minutes)"}
 Next time you use AI for something substantial, open two sessions. In the first, explore your question: ask for angles, push back, refine your thinking. Do not worry about producing anything clean. Then take what you have landed on and use it to brief the second session for the actual output. Notice two things: how much better the result is when you have done the thinking first, and how much clearer your own thinking became in the act of deciding what to carry across.
 :::

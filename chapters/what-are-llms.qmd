@@ -71,6 +71,27 @@ These are not minor caveats. They are fundamental to what these systems are. An 
 AI does not know when it is wrong. It generates plausible text with complete confidence whether the content is accurate or fabricated. Verification is always your responsibility.
 :::
 
+## Good at the Average, Bad at the Precise
+
+There is a useful way to think about where LLMs excel and where they fail. It comes down to two axes: **average versus precise**, and **small versus large**.
+
+LLMs are extraordinarily good at producing convincing averages. Ask for a marketing email and you get something that reads like a competent marketing email, because the model has absorbed thousands of them and can synthesise a plausible representative. Ask it to describe a dog on a mountain and the result looks right, because it is drawing on a distribution of dog-on-mountain descriptions. The output is not retrieved from a specific source. It is interpolated from the patterns of everything the model has seen. For a huge class of everyday tasks, this is exactly what you need.
+
+But ask for something precise and the same mechanism becomes a liability. A specific legal precedent, a particular person's phone number, an exact statistical figure from a named study: these require retrieval, not interpolation. The model does not retrieve. It predicts what a plausible answer would look like, which is how you end up with confident citations to papers that do not exist.
+
+The second axis is scale. LLMs handle small, bounded tasks well. A single prompt that fits comfortably in context, with few assumptions and one clear shape for the answer, plays to the model's strengths. But as tasks grow larger, with more interdependent decisions, conflicting constraints, and emergent complexity, the convincing average begins to fall apart. The model will produce something that looks like a coherent system architecture or a complete project plan, but the precise details will be inconsistent, the dependencies will not hold, and the confident surface will mask structural problems underneath.
+
+The relationship between these two axes matters. Being good at the average means the model will confidently produce plausible-looking large outputs that fall apart on the precise details. The convincing average scales badly with complexity.
+
+This gives you a practical decision framework. Before using AI on any task, ask two questions: **How precise does this need to be?** and **How big is this?**
+
+| | Small | Large |
+|---|---|---|
+| **Average** | **Sweet spot.** Drafts, summaries, boilerplate, brainstorming. Trust with light review. | **Plausible but brittle.** Looks right at first glance, falls apart on inspection. Verify thoroughly. |
+| **Precise** | **Workable with verification.** Facts, citations, specific code. Check before using. | **Danger zone.** Confident architecture that is wrong in subtle ways. Stay in the loop at every step. |
+
+The sweet spot tasks can often be delegated with a light check. Everything else requires conversation, iteration, and human judgement proportional to where it sits on the grid. This is the practical argument for staying in the conversation loop: not because AI is bad, but because its strengths and weaknesses are predictable, and your role is to compensate for the weaknesses while leveraging the strengths.
+
 ## Beyond Text
 
 Modern LLMs are no longer text-only. Many can process images, PDFs, spreadsheets, and other files as inputs. Some can generate images. Some can speak and listen through audio interfaces.

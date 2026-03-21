@@ -17,11 +17,7 @@ If this sounds familiar, it should. Prompt chaining is the Iterate stage of the 
 
 Breaking a task into steps produces better results for the same reasons it works when humans do it.
 
-1. **Better reasoning.** Smaller steps mean more focused output at each stage.
-2. **Control.** You review and adjust after each step, catching problems early.
-3. **Flexibility.** You can change direction mid-process without starting over.
-4. **Quality.** Each step's output becomes the next step's input. Good foundations compound.
-5. **Visibility.** You see the AI's reasoning process, not just the final product.
+Smaller steps mean more focused output at each stage, which improves reasoning. You review and adjust after each step, catching problems early rather than discovering them in the final product. You can change direction mid-process without starting over. Each step's output becomes the next step's input, so good foundations compound. And because you see the AI's reasoning at each stage, not just the final product, you stay in the conversation rather than outsourcing it.
 
 
 ## Three Approaches {#sec-chaining-approaches}

@@ -122,7 +122,7 @@ The defence is to prompt past it. Do not ask "what do you think?" Ask "what are 
 Next time AI evaluates your work, ask it twice. First ask "What do you think of this?" Then ask "What are the three weakest points in this?" Compare the responses. The gap between them is the sycophancy you are normally not seeing.
 :::
 
-You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying "please" does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness, and do not mistake the AI's agreeableness for honesty.
+You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying "please" does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness. Do not mistake the AI's agreeableness for honesty.
 
 ### How the Conversation Loop Fights All Three
 
@@ -151,6 +151,24 @@ The practical rules are simple:
 - **When in doubt, use fictional scenarios.** You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.
 
 This is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.
+
+But it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.
+
+### What the Risks Are Not
+
+The most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model's behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users' conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack.
+
+You will also hear stories of convergent development mistaken for theft: "I was working on an idea using AI, and then the company released something similar." Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.
+
+### What the Risks Are
+
+The risks that matter are practical and specific. Pasting personally identifiable information into any external tool is a genuine compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) is subject to legislation that applies to AI tools just as it applies to email. Credentials and access tokens pasted into a prompt are an immediate security exposure. And using unverified AI output in high-stakes professional contexts is a liability issue, though that is a verification problem, not a data leakage problem.
+
+### The Risk of Not Using It
+
+The "non-zero risk means do not use it" stance deserves scrutiny. Every professional tool involves trade-offs. Email can be intercepted. Cloud storage can be breached. We manage these risks through policy and practice, not prohibition. Refusing to engage with AI because of overestimated data risks carries consequences of its own: skills that do not develop, workflows that stay manual, and a widening gap between those who learned to use the tools thoughtfully and those who waited for certainty that never arrived.
+
+The question is not whether there is risk. It is whether the risk is proportionate to the concern, and whether avoidance creates risks of its own.
 
 
 ## The Self-Check

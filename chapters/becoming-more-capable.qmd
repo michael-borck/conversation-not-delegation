@@ -8,6 +8,10 @@ It was about you.
 
 The tools will change. The models will get faster, cheaper, more capable. The interfaces will shift. The names will change. None of that matters as much as what happens to the person sitting across from the machine.
 
+In fact, better models make the practices in this book more important, not less. A model that produces more convincing output raises the cost of uncritical acceptance. When the average output was obviously rough, people naturally reviewed it. When the average output reads like something a competent professional wrote, the temptation to accept it without thinking increases, and so does the cost of the errors you miss.
+
+The better AI gets at producing convincing averages, the more you need the habits of verification, critical engagement, and staying in the conversation that this book describes.
+
 The question this book has been answering, from the first page, is not "how do I use AI well?" It is "how do I become more capable by thinking alongside it?"
 
 Those are different questions. The first one makes you a better operator. The second one makes you better at your work, with or without the tool.
