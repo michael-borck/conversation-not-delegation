@@ -69,6 +69,20 @@ Here is where it matters that you know what these models actually are.
 
 These are not minor caveats. They are fundamental to what these systems are. An LLM is a model of language, not a model of truth.
 
+## Interpolation, Not Retrieval
+
+If you remember one thing from this chapter, make it this: **LLMs interpolate, they do not retrieve.**
+
+When you ask for a fact, the model is not looking it up in a database. It is predicting what a plausible answer would look like, based on everything it absorbed during training. It is synthesising a convincing representative from the patterns it has seen, not fetching a stored record.
+
+This is why LLMs are so useful and so unreliable at the same time. They can synthesise across vast amounts of knowledge, drawing connections between ideas in ways that would take a human hours. But they cannot guarantee that any specific fact, citation, or detail is correct, because a convincing-sounding answer and a correct answer are produced by exactly the same process. The model does not know the difference.
+
+Think of it this way: if you ask an LLM to describe a dog sitting on a mountain, the result will look right. It will be a plausible, convincing dog on a plausible, convincing mountain. But that specific dog, on that specific mountain, never existed. The model synthesised a representative from thousands of dog-and-mountain descriptions it absorbed. This is fine for a description. It is not fine when you need the name of the actual dog on the actual mountain.
+
+Almost every mistake people make with LLMs comes from treating them as retrieval engines. They ask "what does the Fair Work Act say about casual conversion?" and expect the model to look it up. The model does not look it up. It predicts what a plausible answer to that question would sound like. Sometimes the prediction is accurate. Sometimes it is a confident fabrication. You cannot tell which from the output alone.
+
+This single distinction, interpolation not retrieval, is why the verification habits in this book exist. It is why VET matters. It is why you check before you act. Not because AI is bad at its job, but because its job is prediction, not truth.
+
 ::: {.callout-warning title="Remember"}
 AI does not know when it is wrong. It generates plausible text with complete confidence whether the content is accurate or fabricated. Verification is always your responsibility.
 :::
