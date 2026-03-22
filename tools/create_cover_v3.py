@@ -11,8 +11,8 @@ Output: images/cover-v3.png (1800 x 2700 px, 300 DPI at 6x9 print)
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-WIDTH = 1800
-HEIGHT = 2700
+WIDTH = 1875
+HEIGHT = 2775
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 COMIC_PATH = PROJECT_ROOT / "images" / "comic-strip" / "00-panel1.png"
