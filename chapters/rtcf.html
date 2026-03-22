@@ -581,7 +581,12 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>That is the whole thing. Role, Task, Context, Format. It is not complicated. But it is surprisingly powerful, because it forces you to think about what you actually need before you start typing.</p>
-<p>Let’s walk through each one.</p>
+<p>Before we walk through each component, there is a principle worth naming: <strong>one prompt, one job.</strong></p>
+<p>When you ask AI to do ten things at once, you get ten shallow results. When you ask it to do one thing well, you get depth, nuance, and output you can actually use. This is not a hard rule, but it is a reliable pattern.</p>
+<p>The reason is less about running out of space and more about calibration. A prompt with ten tasks looks like a checklist, and the model responds in checklist mode: brief, surface-level, one line per item. A prompt with a single focused task signals that it deserves serious attention, and the model calibrates accordingly.</p>
+<p>In practice, this means instead of asking AI to “summarise the report, identify the risks, suggest recommendations, and rewrite the executive summary,” you ask it to summarise the report. Then, in the next message, you ask about the risks. Each message gets the model’s full attention. Each response is noticeably better.</p>
+<p>This connects to prompt chaining (<a href="prompt-chaining.html" class="quarto-xref"><span>Chapter 9</span></a>), where a series of focused prompts builds toward a larger goal. But the principle applies even when you are not chaining. Any time you catch yourself writing a prompt with “and” in it three times, consider splitting it. The conversation will be shorter than you think, because you spend less time fixing shallow output.</p>
+<p>Now let’s walk through each component.</p>
 </section>
 <section id="role" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="role"><span class="header-section-number">8.2</span> Role</h2>
