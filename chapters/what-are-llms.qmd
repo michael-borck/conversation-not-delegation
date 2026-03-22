@@ -4,11 +4,11 @@
 
 > It has read everything and experienced nothing. That single fact explains both its usefulness and its limitations.
 
+This chapter matters more than it might seem. Understanding how LLMs actually work is not academic background. It is the foundation for every practical decision you will make when using them. Why do they hallucinate? Because they predict plausible text, not true text. Why does a structured prompt work better? Because it gives the model better patterns to predict from. Why do you need to verify output? Because fluency and accuracy are produced by the same process, and the model cannot tell you which one you are getting. The frameworks later in this book (RTCF, VET, the two-chat workflow, the average-versus-precise grid) all follow directly from what you learn here.
+
 A large language model is AI trained to predict the next word in a sentence.
 
 That is the core idea. Everything else follows from it.
-
-> Fluency is not truth. The smoothest sentence and the most accurate sentence are produced by the exact same process.
 
 From that single task, predicting the next word, these models learned to write essays, answer questions, translate languages, summarise documents, explain complex topics, and hold conversations. The gap between "predict the next word" and "do all of that" is where the interesting story lives.
 
