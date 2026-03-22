@@ -46,3 +46,6 @@ venv/
 conversation-not-delegation.txt
 llm.txt
 rag-documents/
+
+# AnythingLLM workspace config
+.anythingllm.yml
