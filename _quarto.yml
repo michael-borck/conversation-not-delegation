@@ -51,9 +51,18 @@ book:
     - text: Download llm.txt
       icon: robot
       href: llm.txt
+    - text: GitHub
+      icon: github
+      href: https://github.com/michael-borck/conversation-not-delegation
     - text: DeepWiki
       icon: search
       href: https://deepwiki.com/michael-borck/conversation-not-delegation
+    - text: All Books
+      icon: collection
+      href: https://books.borck.education
+    - text: Amazon
+      icon: cart
+      href: https://www.amazon.com.au/dp/B0GTF9F4Q2
 
 format:
   html:
