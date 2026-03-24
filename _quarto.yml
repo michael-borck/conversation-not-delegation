@@ -11,7 +11,6 @@ book:
   date: today
   license: "CC BY"
   favicon: favicon.svg
-  downloads: [pdf, epub]
   chapters:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"
@@ -42,6 +41,19 @@ book:
     - appendices/c-further-reading.qmd
     - appendices/d-interactive-tools.qmd
     - about-author.qmd
+  other-links:
+    - text: Download PDF
+      icon: file-pdf
+      href: conversation-not-delegation.pdf
+    - text: Download EPUB
+      icon: book
+      href: conversation-not-delegation.epub
+    - text: Download llm.txt
+      icon: robot
+      href: llm.txt
+    - text: DeepWiki
+      icon: search
+      href: https://deepwiki.com/michael-borck/conversation-not-delegation
 
 format:
   html:
@@ -54,23 +66,3 @@ format:
     toc-depth: 3
     number-sections: true
     mermaid-format: js
-  pdf:
-    documentclass: book
-    classoption: [6in:9in]
-    toc: true
-    toc-depth: 1
-    number-sections: true
-    hyperrefoptions: draft
-    geometry:
-      - paperwidth=6in
-      - paperheight=9in
-      - inner=1in
-      - outer=0.625in
-      - top=0.75in
-      - bottom=0.75in
-    include-in-header: pdf-header.tex
-    include-before-body: copyright-page.tex
-  epub:
-    toc: true
-    toc-depth: 1
-    css: epub-styles.css
