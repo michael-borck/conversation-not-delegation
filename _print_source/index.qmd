@@ -97,7 +97,7 @@ A book about conversation should be available in more than one form. Pick the fo
 - **Download the PDF or epub.** Generated from the same source, available from the website.
 - **Converse with it.** The online edition includes a chatbot grounded in the book's content. Ask it questions, challenge its answers, and practise the methodology on the methodology itself. You can also use the `llm.txt` file to paste the entire book into ChatGPT, Claude, or any AI tool for a deeper conversation.
 - **Listen to it.** Upload the `llm.txt` file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content.
-- **Explore the source.** The full source is on GitHub, including every chapter, the build system, and the revision history. DeepWiki provides an AI-navigable view of the repository.
+- **Explore the source.** The full source is on GitHub (https://github.com/michael-borck/conversation-not-delegation), including every chapter, the build system, and the revision history. DeepWiki (https://deepwiki.com/michael-borck/conversation-not-delegation) provides an AI-navigable view of the repository.
 - **Practise the frameworks.** Interactive tools on the companion site let you build RTCF prompts, analyse your existing prompts, and assess your AI readiness (see @sec-interactive-tools).
 - **Browse all books.** This book is part of a series. See all titles at books.borck.education (https://books.borck.education).
 

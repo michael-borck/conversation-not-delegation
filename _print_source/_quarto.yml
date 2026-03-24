@@ -7,9 +7,6 @@ book:
   author: Michael Borck
   date: today
   license: CC BY
-  downloads:
-  - pdf
-  - epub
   chapters:
   - index.qmd
   - part: 'Part 1: Understanding the Landscape'
@@ -42,6 +39,7 @@ book:
   - about-author.qmd
 format:
   pdf:
+    output-file: conversation-not-delegation.pdf
     documentclass: book
     classoption:
     - 6in:9in
@@ -60,6 +58,7 @@ format:
     include-before-body:
     - copyright-page.tex
   epub:
+    output-file: conversation-not-delegation.epub
     toc: true
     toc-depth: 1
     css: epub-styles.css
