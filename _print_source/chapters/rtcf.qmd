@@ -1,0 +1,260 @@
+# RTCF: Starting Conversations Well {#sec-rtcf}
+
+![Specific guided structure defines outcome.](../images/comic-strip/08-rtcf.png){fig-alt="Comic strip: A stick figure sends a vague prompt and gets generic garbage. She blames the AI. Another stick figure uses a structured RTCF prompt with role, task, context, and format. Same AI, clear result. Punchline: Specific guided structure defines outcome."}
+
+> A clear question is worth more than a clever prompt.
+
+You now know what a conversation with AI looks like. You understand the loop. You know the difference between delegation and thinking together.
+
+But when you sit down and open a blank prompt window, where do you actually start?
+
+This is where most people stall. Not because they lack ideas, but because they dump everything into one shapeless paragraph and hope the AI figures it out. Sometimes it does. Often it gives you something vaguely useful but not quite right, and you are not sure why.
+
+The problem is rarely the AI. The problem is that you have not told it what it needs to know.
+
+> A clear prompt is not about pleasing the AI. It is evidence that you have thought clearly about what you need.
+
+
+## The Framework
+
+RTCF is one of a family of prompt structuring mnemonics that emerged as people figured out how to communicate effectively with AI. Others exist (CRAFT, CO-STAR, RISEN, and more) and they all capture the same core insight: structured prompts outperform unstructured ones. Research consistently supports this. We chose RTCF for this book because it is the simplest to remember and the quickest to apply. If you are curious about the alternatives, @sec-prompt-frameworks compares them side by side.
+
+None of these frameworks are original inventions. They synthesise established practices (writing clear briefs, specifying audience, stating constraints) that professionals and educators have used for decades. The contribution is in joining the dots and packaging them for AI interaction, not in discovering something new.
+
+Four components, four questions.
+
+| Component | Question | Example |
+|---|---|---|
+| **Role** | Who should AI be? | "You are an experienced editor of academic writing..." |
+| **Task** | What should it do? | "Review my argument structure and identify weak transitions..." |
+| **Context** | What background? | "Final-year thesis, 8000 words, comparative politics..." |
+| **Format** | How should output look? | "Numbered list with specific paragraph references..." |
+
+: The RTCF framework: four components that give AI what it needs to respond well. {.striped}
+
+That is the whole thing. Role, Task, Context, Format. It is not complicated. But it is surprisingly powerful, because it forces you to think about what you actually need before you start typing.
+
+Before we walk through each component, there is a principle worth naming: **one prompt, one job.**
+
+When you ask AI to do ten things at once, you get ten shallow results. When you ask it to do one thing well, you get depth, nuance, and output you can actually use. This is not a hard rule, but it is a reliable pattern.
+
+The reason is less about running out of space and more about calibration. A prompt with ten tasks looks like a checklist, and the model responds in checklist mode: brief, surface-level, one line per item. A prompt with a single focused task signals that it deserves serious attention, and the model calibrates accordingly.
+
+In practice, this means instead of asking AI to "summarise the report, identify the risks, suggest recommendations, and rewrite the executive summary," you ask it to summarise the report. Then, in the next message, you ask about the risks. Each message gets the model's full attention. Each response is noticeably better.
+
+This connects to prompt chaining (@sec-prompt-chaining), where a series of focused prompts builds toward a larger goal. But the principle applies even when you are not chaining. Any time you catch yourself writing a prompt with "and" in it three times, consider splitting it. The conversation will be shorter than you think, because you spend less time fixing shallow output.
+
+Now let's walk through each component.
+
+
+## Role
+
+Tell the AI who it should be for this conversation.
+
+This is not theatre. You are not asking it to pretend. You are activating a knowledge domain and setting an appropriate communication style. "You are a data analyst" produces different language, assumptions, and depth than "you are a secondary school teacher." Both are useful. Neither is universal.
+
+Good roles are specific:
+
+- "You are a developmental editor who works with first-time authors."
+- "You are a quantitative researcher experienced in survey design."
+- "You are a senior project manager in a consulting firm."
+
+A vague role ("be helpful") gives the AI nothing to anchor on. A specific role tells it which part of its knowledge to foreground and how to pitch its responses.
+
+
+## Task
+
+State clearly what you want the AI to do. Use a verb. Be specific about scope.
+
+Compare these:
+
+**Vague:** "Tell me about interview techniques."
+
+**Specific:** "Identify five common mistakes in behavioural interview questions and suggest a stronger alternative for each."
+
+The second version tells the AI exactly what to produce. The first invites a rambling overview that may or may not be useful.
+
+Strong task verbs: analyse, compare, summarise, critique, draft, evaluate, identify, recommend, outline, restructure.
+
+Each of those verbs implies a different kind of thinking. Choose the one that matches what you actually need.
+
+
+## Context
+
+This is the component most people skip. It is also the one that matters most.
+
+AI cannot read your mind. It does not know your deadline, your audience, your constraints, or your data. If you do not provide that background, it will guess. And its guesses will be generic.
+
+Context includes:
+
+- The domain or field you are working in
+- Who will read or use the output
+- Constraints (word count, time, resources, scope)
+- Relevant data, prior work, or decisions already made
+- What you have tried so far
+
+You do not need to write an essay. A few sentences of well-chosen context dramatically changes the quality of what comes back.
+
+One caution: context often involves real data, real names, and real situations. Before pasting anything sensitive, review the guidance in @sec-staying-critical on what to share and what to de-identify. Good context does not require confidential details. You can describe the structure of your situation without exposing the specifics.
+
+
+## Format
+
+Tell the AI how you want the output structured.
+
+This saves enormous amounts of back-and-forth. If you need a table, say so. If you need bullet points, say so. If you need the response kept under 200 words, say so.
+
+Format options to consider:
+
+- Bullet points, numbered lists, or prose paragraphs
+- Tables with specific columns
+- Step-by-step instructions
+- A specific word or length limit
+- Tone (formal, conversational, technical)
+- What to include or exclude
+
+
+## Three Examples
+
+The difference between a bare prompt and an RTCF prompt is not just length. It is clarity of thought.
+
+
+### Writing and Research
+
+Consider the difference between asking for generic help and telling the AI exactly what kind of help you need, who you need it from, and what your situation actually looks like.
+
+**Without RTCF:**
+
+> "Help me with my literature review."
+
+**With RTCF:**
+
+> **Role:** You are an academic writing mentor experienced in helping postgraduate students develop critical literature reviews.
+>
+> **Task:** Review the following three-paragraph draft of my literature review and identify where I am summarising sources instead of synthesising them. Suggest how to restructure each paragraph around a theme rather than a source.
+>
+> **Context:** This is for a Master's dissertation in environmental policy. The review covers competing frameworks for measuring urban resilience. My supervisor's feedback was that the current draft reads like a list of summaries.
+>
+> **Format:** For each paragraph, provide: (1) the current problem in one sentence, (2) a suggested restructure, (3) a model opening sentence that demonstrates synthesis. Keep your total response under 500 words.
+
+The bare prompt would produce a generic overview of how literature reviews work. The RTCF version gets feedback on *your specific draft*, tailored to your discipline, addressing the exact weakness your supervisor identified. The AI is not doing the work for you; it is showing you where your thinking shifted from synthesis to summary, which is a distinction you will carry into every review you write from now on.
+
+
+### Data and Analysis
+
+Data presents a different challenge. You are not asking for creative input; you are asking the AI to help you see patterns in something concrete. The role and context become especially important here, because the same numbers mean different things depending on what decisions they are supposed to inform.
+
+**Without RTCF:**
+
+> "Help me understand this data."
+
+**With RTCF:**
+
+> **Role:** You are a data analyst helping someone with intermediate spreadsheet skills interpret survey results.
+>
+> **Task:** Explain what patterns are visible in the summary statistics I have pasted below, and identify which results are likely meaningful versus likely noise.
+>
+> **Context:** This is a staff engagement survey with 120 responses across four departments. I have mean scores and standard deviations for 12 questions on a 5-point Likert scale (a standard survey rating from 1 to 5). Two departments have notably different scores on three questions, but I am not sure if the differences are large enough to act on.
+>
+> **Format:** Start with a plain-language summary (no jargon). Then provide a table with columns: Question, Department A Mean, Department B Mean, Difference, and your assessment (meaningful / probably noise / need more data). End with two recommended next steps.
+
+Without RTCF, you would get a lecture on statistical concepts. With it, you get a direct assessment of your specific data, pitched at your skill level, in a format you can hand to a colleague or drop into a report. The context (120 responses, four departments, 5-point rating scale) tells the AI exactly what kind of analysis is appropriate. The format specification means you get a table you can actually use, not a wall of text you have to reorganise.
+
+
+### Professional and Workplace
+
+Workplace communication is where most people default to delegation. "Write me a project update" is the most natural thing in the world to type. But delegation produces generic output, and generic project updates waste everyone's time. The RTCF version turns the AI into a communications advisor who understands your audience and your situation.
+
+**Without RTCF:**
+
+> "Write a project update."
+
+**With RTCF:**
+
+> **Role:** You are a communications advisor who helps professionals write concise, action-oriented project updates for senior leadership.
+>
+> **Task:** Help me restructure the following draft update so that it leads with outcomes and decisions needed, not activity descriptions.
+>
+> **Context:** I am a mid-level project lead reporting to the executive team on a systems migration. The project is two weeks behind schedule due to a vendor delay, but the overall deadline is still achievable. The audience cares about risk, cost, and decisions they need to make. They do not want detail on technical steps.
+>
+> **Format:** Restructure into three sections: (1) Status summary in two sentences, (2) Key risks as a bullet list with mitigation actions, (3) Decisions required with recommended options. Total length under 250 words.
+
+The bare prompt would produce a generic update template. The RTCF version produces a restructured version of *your* draft that leads with what the executive team actually cares about: risk, cost, and what they need to decide. The context about the vendor delay and the recoverable deadline gives the AI the nuance it needs to frame the message correctly, acknowledging the problem without sounding the alarm.
+
+Notice what is happening across all three examples. The RTCF version is longer, yes. But it is longer because the person has thought more clearly about what they need. The AI's response will be more useful because the request was more useful. In each case, the person is not asking the AI to think for them. They are giving the AI enough information to think *with* them.
+
+
+## RTCF Quick Reference Card
+
+```
++-----------------------------------------------+
+|            RTCF PROMPT FRAMEWORK              |
++---------------+-------------------------------+
+| R - ROLE      | Who should the AI be?         |
+|               | "You are a [expert type]..."  |
++---------------+-------------------------------+
+| T - TASK      | What should it do?            |
+|               | Use action verbs: Analyse,    |
+|               | Compare, Create, Evaluate...  |
++---------------+-------------------------------+
+| C - CONTEXT   | What does it need to know?    |
+|               | Domain, constraints, audience |
++---------------+-------------------------------+
+| F - FORMAT    | How should output look?       |
+|               | Structure, length, style      |
++---------------+-------------------------------+
+```
+
+
+## RTCF and the Prompt Engineering Trap
+
+If you have spent any time reading about AI, you have encountered the term "prompt engineering." It describes the practice of crafting a single, carefully worded prompt to extract the best possible response from the AI in one shot.
+
+There is nothing wrong with this. A well-structured prompt is better than a vague one. RTCF is itself a form of prompt engineering, a condensed, intentional way of giving the AI what it needs upfront. In that sense, everything in this chapter so far has been about writing better single prompts. And it works for a reason worth understanding: the strategies behind RTCF (writing a clear brief, specifying who the audience is, stating constraints) are strategies you already use in professional and academic life. They transfer to AI because the model learned from the output of human cognition that used those same strategies (@sec-conversation-loop).
+
+But here is the problem with stopping there.
+
+Prompt engineering, as it is typically taught, treats the interaction as a transaction. You craft the perfect input and receive a finished output. One shot, one response. If the output is not good enough, you engineer a better prompt and try again. The mental model is a vending machine: put in the right coins, get out the right product.
+
+This is delegation dressed up as skill. The person is still outsourcing the thinking. They are just outsourcing it more precisely.
+
+The conversation approach is different. You start with a prompt, and yes, a well-structured prompt using RTCF gives you a better starting point than a vague one. But the starting point is not the destination. The first response is material to work with, not a deliverable to accept. You push back, refine, redirect. You bring your expertise to bear on what the AI produces. The value is generated in the exchange, not in the initial prompt.
+
+This is why one-shot prompting tends toward average output. When you ask a single question and take the first answer, you get the most probable response: polished, plausible, and generic. It is the median of everything the model has learned. Your specific context, your particular constraints, your hard-won expertise: none of that shapes the output beyond whatever you managed to compress into the initial prompt.
+
+Conversation changes this. Each exchange narrows the space. Each piece of feedback moves the output from generic toward specific, from probable toward useful. By the third or fourth exchange, you are in territory that no one-shot prompt, however carefully engineered, could have reached.
+
+So when should you use a one-shot prompt? When the task is genuinely simple. When you need a quick definition, a format conversion, a brainstormed list to react to. Not everything requires a conversation. Sometimes you just need the vending machine.
+
+But when the work matters, when it involves judgement, nuance, or decisions with consequences, a single prompt is a starting point. RTCF helps you start well. The conversation is what makes the output worth using.
+
+Think of it this way. RTCF is how you open the conversation. Prompt chaining (@sec-prompt-chaining) is how you sustain it. The techniques in @sec-techniques are specific shapes the conversation can take. And the critical habits in @sec-staying-critical are how you evaluate what comes back. None of them work in isolation. Together, they turn a transaction into a thinking partnership.
+
+
+## RTCF Is a Scaffold, Not a Script
+
+Here is the thing about frameworks: the good ones teach you how to think, then get out of the way.
+
+When you first use RTCF, treat it as a checklist. Literally write out each letter and fill in the component. This feels mechanical. That is fine. The mechanical stage is how you build the habit.
+
+After a few dozen prompts, something shifts. You stop thinking "R, then T, then C, then F." You start thinking: "What does the AI need to know to help me here?" You consider role, task, context, and format naturally, the same way an experienced cook stops measuring and starts tasting.
+
+At that point, you will not always write out all four components explicitly. Sometimes the role is implicit. Sometimes the format does not matter. Sometimes you lead with context because that is where the complexity lives. The framework becomes a mental model rather than a template.
+
+This is the goal. RTCF is not a permanent set of training wheels. It is a scaffold you build with, then internalise, then leave behind. The four questions remain, but they become part of how you think about AI conversations, not a form you fill out.
+
+You will know you have internalised RTCF when you can feel that a prompt is missing something before you send it. That instinct, the sense that the AI does not yet have what it needs, is worth more than any framework. RTCF just gets you there faster.
+
+
+::: {.callout-tip title="Remember"}
+RTCF is a scaffold, not a script. Use it as a checklist until the four questions become second nature, then let it go.
+:::
+
+
+## Key Takeaways
+
+1. **Structure improves quality.** Unstructured prompts get generic results. RTCF gives the AI what it needs to be specific.
+2. **Context is the most skipped component, and the most important.** AI cannot read your mind. Tell it what it needs to know.
+3. **Format saves time.** Specifying your desired output structure upfront eliminates rounds of "that is not quite what I meant."
+4. **Iteration is still normal.** RTCF improves your opening prompt, not every prompt. The conversation loop still applies. Refine based on what comes back.
+5. **The goal is to outgrow the template.** Use RTCF as a scaffold until the four questions become second nature.

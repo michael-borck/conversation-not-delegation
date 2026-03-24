@@ -1,0 +1,104 @@
+# Prompt Structuring Frameworks {#sec-prompt-frameworks .appendix}
+
+RTCF is not the only prompt structuring framework. A family of mnemonics emerged in 2023-24 as practitioners and educators figured out what makes a good opening prompt. They all capture the same insight: telling the AI who to be, what to do, what background it needs, and how to format the output produces dramatically better results than an unstructured request.
+
+This appendix compares the most widely used frameworks side by side, using the same task so you can see how each one shapes the prompt differently. The task: getting AI to help analyse student feedback data.
+
+None of these frameworks have a single academic source. They are practitioner knowledge, patterns that emerged from use, were shared in workshops and online communities, and proved useful enough to stick. The underlying principle (structured communication outperforms unstructured communication) is well-established. The mnemonics are packaging, not discovery.
+
+We chose RTCF for this book because it has the fewest elements to remember and covers the ground that matters most. But if a different framework clicks better for how you think, use that one. The letters do not matter. The habit of thinking before prompting does.
+
+
+## RTCF: Before and After
+
+To see why structure matters, compare these two prompts for the same task.
+
+::: {.callout-warning title="Weak prompt"}
+"What can you tell me about student feedback?"
+:::
+
+::: {.callout-tip title="RTCF prompt"}
+"You are an experienced higher education analyst **(R)**. Identify the three strongest themes and two areas of concern in the student feedback data I will paste below **(T)**. This is from a second-year undergraduate unit with 85 responses across two campuses **(C)**. Present findings as a summary paragraph followed by a table with columns: Theme, Evidence, and Recommended Action **(F)**."
+:::
+
+You do not need all four elements every time; use what is relevant. But when a prompt feels vague and you are not sure why, checking against RTCF will almost always reveal what is missing.
+
+
+## The Family
+
+### RTCF: Role, Task, Context, Format
+
+The framework used throughout this book. Four elements, no extras. Role sets the expertise. Task specifies the action. Context provides the background. Format defines the output structure.
+
+**Same task:**
+
+> "You are an experienced higher education analyst **(R)**. Identify the three strongest themes and two areas of concern in this student feedback data **(T)**. This is from a second-year undergraduate unit with 85 responses across two campuses **(C)**. Present as a summary paragraph followed by a themed table **(F)**."
+
+
+### CRAFT: Context, Role, Action, Format, Tone/Target
+
+Adds a fifth element: Tone or Target audience. Useful when the same content needs to be pitched differently for different readers, such as a board summary versus a team debrief.
+
+**Same task:**
+
+> "This is student feedback data from a second-year undergraduate unit with 85 responses across two campuses **(C)**. You are an experienced higher education analyst **(R)**. Identify the three strongest themes and two areas of concern **(A)**. Present as a summary paragraph followed by a themed table **(F)**. Use clear, non-technical language suitable for a faculty teaching committee **(T)**."
+
+
+### CO-STAR: Context, Objective, Style, Tone, Audience, Response
+
+Six elements. Splits what RTCF bundles into Context and Format into finer-grained components. Useful for communication-heavy tasks where style, tone, and audience are genuinely distinct decisions.
+
+**Same task:**
+
+> "I have student feedback data from a second-year undergraduate unit, 85 responses across two campuses **(C)**. Identify the three strongest themes and two areas of concern **(O)**. Write in the style of an institutional quality report **(S)**. Professional but accessible, avoiding jargon **(T)**. For a faculty teaching committee that includes both academics and professional staff **(A)**. Summary paragraph followed by a themed table with columns: Theme, Evidence, Recommended Action **(R)**."
+
+
+### RISEN: Role, Instructions, Steps, End goal, Narrowing
+
+Five elements with a distinctive feature: it asks you to specify the steps the AI should follow and the end goal you are working toward. Useful for multi-stage tasks where the process matters as much as the output.
+
+**Same task:**
+
+> "You are an experienced higher education analyst **(R)**. Analyse the student feedback data I will paste below **(I)**. First, read all responses and identify recurring themes. Then, categorise each theme as a strength or concern. Finally, assess which findings are actionable **(S)**. The end goal is a briefing document for a faculty teaching review **(E)**. Focus only on themes that appear in at least 10% of responses **(N)**."
+
+
+### CREATE: Character, Request, Examples, Adjustment, Type, Extras
+
+Six elements with a distinctive feature: it builds iteration directly into the framework. The Adjustment step acknowledges that the first response is rarely the final one, and the Examples step lets you show the AI what you want rather than just describing it.
+
+**Same task:**
+
+> "Act as an experienced higher education analyst **(Character)**. Analyse this student feedback data and identify the strongest themes and areas of concern **(Request)**. Here is an example of the format I want: 'Theme: Student engagement | Evidence: 15 responses mentioned limited interaction | Action: Introduce weekly discussion activities' **(Examples)**. The initial output should focus on the three most prominent themes; I will refine the scope after reviewing **(Adjustment)**. Present as a themed table **(Type)**. Include a brief note on statistical confidence where relevant **(Extras)**."
+
+### APE: Action, Purpose, Expectation
+
+Three elements. The most minimal framework. Useful for quick, low-stakes prompts where brevity matters more than precision.
+
+**Same task:**
+
+> "Analyse this student feedback data **(A)** to help me prepare for a teaching review meeting **(P)**. I expect a short summary of key themes and a table of findings with recommended actions **(E)**."
+
+
+## Choosing a Framework
+
+| Framework | Elements | Best for |
+|---|---|---|
+| **APE** | 3 | Quick tasks where speed matters more than precision |
+| **RTCF** | 4 | General-purpose prompting that covers most situations |
+| **CRAFT** | 5 | Communication tasks where tone and audience are distinct decisions |
+| **RISEN** | 5 | Multi-step tasks where the process matters |
+| **CREATE** | 6 | Tasks where you can show examples and expect to iterate |
+| **CO-STAR** | 6 | High-stakes communication with specific style and audience requirements |
+
+: Prompt structuring frameworks compared. More elements give finer control but take longer to compose. {.striped}
+
+The frameworks are listed from simplest to most detailed. Start with RTCF. If you find yourself repeatedly needing to specify tone separately from context, try CRAFT. If you need to define a multi-step process, try RISEN. If you have a clear example of what good output looks like, try CREATE. If you never need more than three elements, APE is fine.
+
+The goal is not to memorise all six. It is to build the habit of structuring your thinking before you type. Any of these frameworks will get you there. Pick one, use it until it becomes instinct, then let it go.
+
+
+## The Caveat
+
+Every one of these frameworks improves your *opening* prompt. None of them replace the conversation that follows. A perfectly structured RTCF or CO-STAR prompt is still a single prompt. It is still one shot. The real value comes from what you do with the response: iterate, push back, refine, and make the output yours.
+
+Structured prompts are a better starting point. They are not a substitute for staying in the conversation.

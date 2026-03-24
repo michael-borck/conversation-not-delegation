@@ -1,0 +1,65 @@
+project:
+  type: book
+  output-dir: _book
+book:
+  title: Conversation, Not Delegation
+  subtitle: How to Think With AI, Not Just Use It
+  author: Michael Borck
+  date: today
+  license: CC BY
+  downloads:
+  - pdf
+  - epub
+  chapters:
+  - index.qmd
+  - part: 'Part 1: Understanding the Landscape'
+    chapters:
+    - chapters/what-is-ai.qmd
+    - chapters/what-are-llms.qmd
+    - chapters/the-delegation-trap.qmd
+    - chapters/does-ai-make-us-dumber.qmd
+  - part: 'Part 2: Principles'
+    chapters:
+    - chapters/the-conversation-loop.qmd
+    - chapters/ai-last.qmd
+    - chapters/staying-critical.qmd
+  - part: 'Part 3: The Methodology'
+    chapters:
+    - chapters/rtcf.qmd
+    - chapters/prompt-chaining.qmd
+    - chapters/seven-techniques.qmd
+    - chapters/using-ai-to-help-you-use-ai.qmd
+    - chapters/vet-your-ai.qmd
+  - part: 'Part 4: Putting It Together'
+    chapters:
+    - chapters/conversations-across-disciplines.qmd
+    - chapters/becoming-more-capable.qmd
+  appendices:
+  - appendices/a-craft-framework.qmd
+  - appendices/b-quick-reference.qmd
+  - appendices/c-further-reading.qmd
+  - appendices/d-interactive-tools.qmd
+  - about-author.qmd
+format:
+  pdf:
+    documentclass: book
+    classoption:
+    - 6in:9in
+    toc: true
+    toc-depth: 1
+    number-sections: true
+    hyperrefoptions: draft
+    geometry:
+    - paperwidth=6in
+    - paperheight=9in
+    - inner=1in
+    - outer=0.625in
+    - top=0.75in
+    - bottom=0.75in
+    include-in-header: pdf-header.tex
+    include-before-body:
+    - copyright-page.tex
+  epub:
+    toc: true
+    toc-depth: 1
+    css: epub-styles.css
