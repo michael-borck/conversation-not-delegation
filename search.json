@@ -4,49 +4,29 @@
     "href": "index.html",
     "title": "Conversation, Not Delegation",
     "section": "",
-    "text": "About This Book\nThis book is for anyone who uses AI as a thinking tool.\nStudents, professionals, researchers, educators: if you interact with large language models as part of your work or study, this book will change how you approach those interactions.\nThe core argument is simple. Most people use AI to get outputs. They delegate tasks, collect answers, and move on. That approach gets you something, but it costs you something too. It costs you the thinking that would have made you better at your work.\nThere is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it.\nThis book teaches you how.\nIf you are feeling uncertain about AI, that is worth naming. Many people experience a quiet anxiety: a sense that everyone else has figured this out already, that the technology is moving too fast, that they are falling behind. That feeling is nearly universal and rarely admitted. You are not behind. The technology is genuinely new, it is genuinely confusing, and the people who appear to have it all figured out are mostly just a few weeks ahead. This book meets you wherever you are.\nPart 1 gives you enough understanding of AI and large language models to use them well. Part 2 establishes the principles that make AI conversations productive rather than passive. Part 3 gives you practical tools and techniques you can use immediately. Part 4 shows it all working together across disciplines, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.",
+    "text": "Preface",
     "crumbs": [
-      "About This Book"
+      "Preface"
     ]
   },
   {
-    "objectID": "index.html#how-to-read-this-book",
-    "href": "index.html#how-to-read-this-book",
+    "objectID": "index.html#why-this-book-exists",
+    "href": "index.html#why-this-book-exists",
     "title": "Conversation, Not Delegation",
-    "section": "How to Read This Book",
-    "text": "How to Read This Book\nThis is not a textbook and it is not a research paper. The ideas here reflect one practitioner’s perspective, informed by research, experience, and ongoing experimentation. They are starting points, baselines to work from as you discover your own approach to AI.\nWhere claims rest on published research, you will find pointers in the Further Reading appendix (Appendix C — Further Reading). Where they rest on practice and observation, that should be obvious from the writing. In both cases, the advice in this book applies to itself: engage with it critically, push back where your experience says otherwise, and make the ideas your own. A book about not delegating your thinking to AI would be contradicting itself if it asked you to accept its arguments uncritically.",
+    "section": "Why This Book Exists",
+    "text": "Why This Book Exists\nI wrote this book because I kept watching smart people use AI badly.\nNot badly in a technical sense. They could find the tools, type the prompts, and get outputs. But they were delegating their thinking to a machine and accepting whatever came back. The AI was doing the work, and the human was doing the clicking. The outputs looked polished. The thinking behind them was hollow.\nThere is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it.\nThis book teaches you how.",
     "crumbs": [
-      "About This Book"
+      "Preface"
     ]
   },
   {
-    "objectID": "index.html#conventions-used-in-this-book",
-    "href": "index.html#conventions-used-in-this-book",
+    "objectID": "index.html#who-this-book-is-for",
+    "href": "index.html#who-this-book-is-for",
     "title": "Conversation, Not Delegation",
-    "section": "Conventions Used in This Book",
-    "text": "Conventions Used in This Book\nThroughout the book you will encounter coloured callout boxes. Each serves a different purpose.\n\n\n\n\n\n\nTipTry this\n\n\n\nGreen boxes are hands-on exercises you can do right now, usually in two to ten minutes. They give you a way to experience the concept rather than just read about it.\n\n\n\n\n\n\n\n\nNoteKey idea\n\n\n\nBlue boxes highlight important observations, ready-to-use prompts, or ideas worth pausing on.\n\n\n\n\n\n\n\n\nWarningWatch out\n\n\n\nYellow boxes flag common mistakes, weak examples, or things that look right but are not.\n\n\n\n\n\n\n\n\nImportantCritical point\n\n\n\nRed boxes mark habits or principles that are essential. Do not skip these.\n\n\nYou will also find tables throughout the book that compare approaches, map strategies across domains, or summarise frameworks. These are reference material, worth bookmarking, not just reading once.",
+    "section": "Who This Book Is For",
+    "text": "Who This Book Is For\nThis book is for anyone who uses AI as a thinking tool. Students, professionals, researchers, educators: if you interact with large language models as part of your work or study, this book will change how you approach those interactions.\nYou do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.\nIf you work with AI in any capacity, or plan to, this book will give you a framework for doing it well.",
     "crumbs": [
-      "About This Book"
-    ]
-  },
-  {
-    "objectID": "index.html#how-this-book-was-written",
-    "href": "index.html#how-this-book-was-written",
-    "title": "Conversation, Not Delegation",
-    "section": "How This Book Was Written",
-    "text": "How This Book Was Written\nThis book was written using the methodology it describes.\nIt began as a set of Python notebooks on computational thinking, practical exercises developed for teaching. Those notebooks evolved, through multiple conversation loops with AI, into the sibling book Converse Python, Partner AI. That process surfaced a methodology that was broader than programming: the principles of conversation over delegation, of staying critical, of using AI to amplify thinking rather than replace it. This book is the result of extracting and generalising that methodology for a wider audience.\nAt every stage, the process looked like what you will read about in 5  The Conversation Loop. Ideas were brainstormed, challenged, restructured, and refined across dozens of conversations. AI drafted, the author pushed back. AI suggested structures, the author broke them and rebuilt them. The frameworks in this book (RTCF, VET, the eight techniques) were tested in the writing of the book itself. Where AI was sycophantic, it was told to stop. Where it was generic, it was pressed for specifics. Where it was wrong, it was corrected.\nYou may be thinking: if this book was written with AI, why should I trust it? That reaction is understandable, and this book has a name for it: the AI Dismissal Fallacy (7  Staying Critical). The quality of an idea does not depend on whether a human or a machine contributed to its development. What matters is whether the author can explain, defend, and stand behind every sentence. The answer is yes, because conversation, real conversation with pushback and judgement, is how the thinking was done.\nTransparency about process is more important than the comfort of pretending AI was not involved. Every professional will face this question soon enough. This book’s answer is to show the work.\nTools used in producing this book:\n\nClaude (Anthropic): conversational AI partner for drafting, iterating, and refining text\nClaude Code: command-line tool for managing files, building, and publishing\nGoogle Gemini (Nano Banana 2): generative AI for creating the comic strip illustrations (Chapters 1–8)\nFLUX Playground (Black Forest Labs): generative AI for creating the comic strip illustrations (Chapters 9–14)\nPython and Jupyter Notebooks: the original medium in which the ideas were developed and tested; also used to generate the cover image (create_cover.py)\nQuarto: open-source publishing system used to produce the HTML, PDF, and epub editions\nGit and GitHub: version control and hosting, including GitHub Pages for the web edition",
-    "crumbs": [
-      "About This Book"
-    ]
-  },
-  {
-    "objectID": "index.html#ways-to-engage-with-this-book",
-    "href": "index.html#ways-to-engage-with-this-book",
-    "title": "Conversation, Not Delegation",
-    "section": "Ways to Engage with This Book",
-    "text": "Ways to Engage with This Book\nA book about conversation should be available in more than one form. Pick the format that fits how you think and learn.\n\nRead it online. The full book is freely available at the companion website, with dark mode, search, and navigation.\nRead it on paper or e-reader. Available as a paperback and ebook through Amazon KDP, for those who prefer to read offline or away from a screen.\nDownload the PDF or epub. Generated from the same source, available from the website.\nConverse with it. The online edition includes a chatbot grounded in the book’s content. Ask it questions, challenge its answers, and practise the methodology on the methodology itself. You can also use the llm.txt file to paste the entire book into ChatGPT, Claude, or any AI tool for a deeper conversation.\nListen to it. Upload the llm.txt file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content.\nExplore the source. The full source is on GitHub, including every chapter, the build system, and the revision history. DeepWiki provides an AI-navigable view of the repository.\nPractise the frameworks. Interactive tools on the companion site let you build RTCF prompts, analyse your existing prompts, and assess your AI readiness (see Appendix D — Interactive Tools).\nBrowse all books. This book is part of a series. See all titles at books.borck.education.\n\nThe online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.",
-    "crumbs": [
-      "About This Book"
+      "Preface"
     ]
   },
   {
@@ -56,27 +36,77 @@
     "section": "What This Book Is Not",
     "text": "What This Book Is Not\nThis is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not.\nIt is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt is the beginning of the conversation, not the point of it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.\nIt is not about AI apps that embed intelligence into other software, such as writing assistants, email autocompletes, and coding copilots. Those tools run on prompts someone else wrote. This book is about conversations you control yourself. Both have their place, but they are different activities.\nAnd it is not a book that tells you AI will solve your problems. It is a book that argues the opposite: you will solve your problems, and AI can help you think more clearly along the way.",
     "crumbs": [
-      "About This Book"
+      "Preface"
     ]
   },
   {
-    "objectID": "index.html#who-this-book-is-for",
-    "href": "index.html#who-this-book-is-for",
+    "objectID": "index.html#if-you-are-feeling-uncertain",
+    "href": "index.html#if-you-are-feeling-uncertain",
     "title": "Conversation, Not Delegation",
-    "section": "Who This Book Is For",
-    "text": "Who This Book Is For\nYou do not need a technical background. You do not need to write code. You need curiosity, a willingness to think critically, and a problem worth solving.\nIf you work with AI in any capacity, or plan to, this book will give you a framework for doing it well.",
+    "section": "If You Are Feeling Uncertain",
+    "text": "If You Are Feeling Uncertain\nThat is worth naming. Many people experience a quiet anxiety: a sense that everyone else has figured this out already, that the technology is moving too fast, that they are falling behind. That feeling is nearly universal and rarely admitted. You are not behind. The technology is genuinely new, it is genuinely confusing, and the people who appear to have it all figured out are mostly just a few weeks ahead. This book meets you wherever you are.",
     "crumbs": [
-      "About This Book"
+      "Preface"
     ]
   },
   {
-    "objectID": "index.html#a-note-on-the-sibling-book",
-    "href": "index.html#a-note-on-the-sibling-book",
+    "objectID": "index.html#how-this-book-is-structured",
+    "href": "index.html#how-this-book-is-structured",
     "title": "Conversation, Not Delegation",
-    "section": "A Note on the Sibling Book",
-    "text": "A Note on the Sibling Book\nThis book has a companion: Converse Python, Partner AI, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place.\nBoth books are independently complete. You do not need one to benefit from the other.",
+    "section": "How This Book Is Structured",
+    "text": "How This Book Is Structured\nPart 1 gives you enough understanding of AI and large language models to use them well. Part 2 establishes the principles that make AI conversations productive rather than passive. Part 3 gives you practical tools and techniques you can use immediately. Part 4 shows it all working together across disciplines, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.",
     "crumbs": [
-      "About This Book"
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-read-this-book",
+    "href": "index.html#how-to-read-this-book",
+    "title": "Conversation, Not Delegation",
+    "section": "How to Read This Book",
+    "text": "How to Read This Book\nThis is not a textbook and it is not a research paper. The ideas here reflect one practitioner’s perspective, informed by research, experience, and ongoing experimentation. They are starting points, baselines to work from as you discover your own approach to AI.\nWhere claims rest on published research, you will find pointers in the Further Reading appendix (Appendix C — Further Reading). Where they rest on practice and observation, that should be obvious from the writing. In both cases, the advice in this book applies to itself: engage with it critically, push back where your experience says otherwise, and make the ideas your own. A book about not delegating your thinking to AI would be contradicting itself if it asked you to accept its arguments uncritically.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#conventions-used-in-this-book",
+    "href": "index.html#conventions-used-in-this-book",
+    "title": "Conversation, Not Delegation",
+    "section": "Conventions Used in This Book",
+    "text": "Conventions Used in This Book\nThroughout the book you will encounter coloured callout boxes. Each serves a different purpose.\n\n\n\n\n\n\nTipTry this\n\n\n\nGreen boxes are hands-on exercises you can do right now, usually in two to ten minutes. They give you a way to experience the concept rather than just read about it.\n\n\n\n\n\n\n\n\nNoteKey idea\n\n\n\nBlue boxes highlight important observations, ready-to-use prompts, or ideas worth pausing on.\n\n\n\n\n\n\n\n\nWarningWatch out\n\n\n\nYellow boxes flag common mistakes, weak examples, or things that look right but are not.\n\n\n\n\n\n\n\n\nImportantCritical point\n\n\n\nRed boxes mark habits or principles that are essential. Do not skip these.\n\n\nYou will also find tables throughout the book that compare approaches, map strategies across domains, or summarise frameworks. These are reference material, worth bookmarking, not just reading once.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-this-book-was-written",
+    "href": "index.html#how-this-book-was-written",
+    "title": "Conversation, Not Delegation",
+    "section": "How This Book Was Written",
+    "text": "How This Book Was Written\nThis book was written using the methodology it describes.\nIt began as a set of Python notebooks on computational thinking, practical exercises developed for teaching. Those notebooks evolved, through multiple conversation loops with AI, into the sibling book Converse Python, Partner AI. That process surfaced a methodology that was broader than programming: the principles of conversation over delegation, of staying critical, of using AI to amplify thinking rather than replace it. This book is the result of extracting and generalising that methodology for a wider audience.\nAt every stage, the process looked like what you will read about in 5  The Conversation Loop. Ideas were brainstormed, challenged, restructured, and refined across dozens of conversations. AI drafted, the author pushed back. AI suggested structures, the author broke them and rebuilt them. The frameworks in this book (RTCF, VET, the eight techniques) were tested in the writing of the book itself. Where AI was sycophantic, it was told to stop. Where it was generic, it was pressed for specifics. Where it was wrong, it was corrected.\nYou may be thinking: if this book was written with AI, why should I trust it? That reaction is understandable, and this book has a name for it: the AI Dismissal Fallacy (7  Staying Critical). The quality of an idea does not depend on whether a human or a machine contributed to its development. What matters is whether the author can explain, defend, and stand behind every sentence. The answer is yes, because conversation, real conversation with pushback and judgement, is how the thinking was done.\nTransparency about process is more important than the comfort of pretending AI was not involved. Every professional will face this question soon enough. This book’s answer is to show the work.\nTools used in producing this book:\n\nClaude (Anthropic): conversational AI partner for drafting, iterating, and refining text\nClaude Code: command-line tool for managing files, building, and publishing\nGoogle Gemini (Nano Banana 2): generative AI for creating the comic strip illustrations (Chapters 1–8)\nFLUX Playground (Black Forest Labs): generative AI for creating the comic strip illustrations (Chapters 9–14)\nPython and Jupyter Notebooks: the original medium in which the ideas were developed and tested; also used to generate the cover image (create_cover.py)\nQuarto: open-source publishing system used to produce the HTML, PDF, and epub editions\nGit and GitHub: version control and hosting, including GitHub Pages for the web edition",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#ways-to-engage-with-this-book",
+    "href": "index.html#ways-to-engage-with-this-book",
+    "title": "Conversation, Not Delegation",
+    "section": "Ways to Engage with This Book",
+    "text": "Ways to Engage with This Book\nA book about conversation should be available in more than one form. Pick the format that fits how you think and learn.\n\nRead it online. The full book is freely available at the companion website, with dark mode, search, and navigation.\nRead it on paper or e-reader. Available as a paperback and ebook through Amazon KDP, for those who prefer to read offline or away from a screen.\nDownload the PDF or epub. Generated from the same source, available from the website.\nConverse with it. The online edition includes a chatbot grounded in the book’s content. Ask it questions, challenge its answers, and practise the methodology on the methodology itself. You can also use the llm.txt file to paste the entire book into ChatGPT, Claude, or any AI tool for a deeper conversation.\nListen to it. Upload the llm.txt file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content.\nExplore the source. The full source is on GitHub, including every chapter, the build system, and the revision history. DeepWiki provides an AI-navigable view of the repository.\nPractise the frameworks. Interactive tools on the companion site let you build RTCF prompts, analyse your existing prompts, and assess your AI readiness (see Appendix D — Interactive Tools).\nBrowse all books. This book is part of a series. See all titles at books.borck.education.\n\nThe online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#the-sibling-book",
+    "href": "index.html#the-sibling-book",
+    "title": "Conversation, Not Delegation",
+    "section": "The Sibling Book",
+    "text": "The Sibling Book\nThis book has a companion: Converse Python, Partner AI, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place.\nBoth books are independently complete. You do not need one to benefit from the other.",
+    "crumbs": [
+      "Preface"
     ]
   },
   {
@@ -656,7 +686,7 @@
     "href": "chapters/staying-critical.html#watch-what-you-share",
     "title": "7  Staying Critical",
     "section": "7.5 Watch What You Share",
-    "text": "7.5 Watch What You Share\nStaying critical is not only about evaluating what the AI gives you. It is also about being careful with what you give it.\nWhen you type a prompt into a consumer AI tool, that text leaves your device. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.\nThe practical rules are simple:\n\nNever paste confidential information into a free or consumer AI tool. If you would not post it on social media, do not paste it into a prompt.\nDe-identify before you prompt. Replace real names with “Client A.” Replace specific figures with ranges. Remove anything that could identify a person or organisation.\nKnow the difference between consumer and enterprise tools. Enterprise AI platforms (your organisation’s licensed tools) typically offer data protection guarantees. Free-tier consumer tools typically do not. If you are unsure which you are using, treat it as consumer.\nWhen in doubt, use fictional scenarios. You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.\n\nThis is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.\nBut it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.\n\n7.5.1 What the Risks Are Not\nThe most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model’s behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users’ conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack.\nYou will also hear stories of convergent development mistaken for theft: “I was working on an idea using AI, and then the company released something similar.” Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.\n\n\n7.5.2 What the Risks Are\nThe risks that matter are practical and specific. Pasting personally identifiable information into any external tool is a genuine compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) is subject to legislation that applies to AI tools just as it applies to email. Credentials and access tokens pasted into a prompt are an immediate security exposure. And using unverified AI output in high-stakes professional contexts is a liability issue, though that is a verification problem, not a data leakage problem.\n\n\n7.5.3 The Risk of Not Using It\nThe “non-zero risk means do not use it” stance deserves scrutiny. Every professional tool involves trade-offs. Email can be intercepted. Cloud storage can be breached. We manage these risks through policy and practice, not prohibition. Refusing to engage with AI because of overestimated data risks carries consequences of its own: skills that do not develop, workflows that stay manual, and a widening gap between those who learned to use the tools thoughtfully and those who waited for certainty that never arrived.\nThe question is not whether there is risk. It is whether the risk is proportionate to the concern, and whether avoidance creates risks of its own.",
+    "text": "7.5 Watch What You Share\nStaying critical is not only about evaluating what the AI gives you. It is also about being careful with what you give it.\nWhen you type a prompt into a consumer AI tool, that text leaves your device. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.\nThe practical rules are simple:\n\nNever paste confidential information into a free or consumer AI tool. If you would not post it on social media, do not paste it into a prompt.\nDe-identify before you prompt. Replace real names with “Client A.” Replace specific figures with ranges. Remove anything that could identify a person or organisation.\nKnow the difference between consumer and enterprise tools. Enterprise AI platforms (your organisation’s licensed tools) typically offer data protection guarantees. Free-tier consumer tools typically do not. If you are unsure which you are using, treat it as consumer.\nWhen in doubt, use fictional scenarios. You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.\n\nThis is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.\nBut it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.\n\n7.5.1 What the Risks Are Not\nThe most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model’s behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users’ conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack. And recall the key point from Chapter 2: LLMs interpolate, they do not retrieve. There is no mechanism by which another user could query the model and get your document back, because the model never stored it as a document in the first place.\nYou will also hear stories of convergent development mistaken for theft: “I was working on an idea using AI, and then the company released something similar.” Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.\n\n\n7.5.2 What the Risks Are\nThe risks that matter are practical and specific. Pasting personally identifiable information into any external tool is a genuine compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) is subject to legislation that applies to AI tools just as it applies to email. Credentials and access tokens pasted into a prompt are an immediate security exposure. And using unverified AI output in high-stakes professional contexts is a liability issue, though that is a verification problem, not a data leakage problem.\n\n\n7.5.3 The Risk of Not Using It\nThe “non-zero risk means do not use it” stance deserves scrutiny. Every professional tool involves trade-offs. Email can be intercepted. Cloud storage can be breached. We manage these risks through policy and practice, not prohibition. Refusing to engage with AI because of overestimated data risks carries consequences of its own: skills that do not develop, workflows that stay manual, and a widening gap between those who learned to use the tools thoughtfully and those who waited for certainty that never arrived.\nThe question is not whether there is risk. It is whether the risk is proportionate to the concern, and whether avoidance creates risks of its own.",
     "crumbs": [
       "Part 2: Principles",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Staying Critical</span>"

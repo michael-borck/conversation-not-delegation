@@ -299,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">About This Book</span></a>
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -718,7 +718,7 @@ ul.task-list li input[type="checkbox"] {
 <p>But it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.</p>
 <section id="what-the-risks-are-not" class="level3" data-number="7.5.1">
 <h3 data-number="7.5.1" class="anchored" data-anchor-id="what-the-risks-are-not"><span class="header-section-number">7.5.1</span> What the Risks Are Not</h3>
-<p>The most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model’s behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users’ conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack.</p>
+<p>The most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model’s behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users’ conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack. And recall the key point from <a href="what-are-llms.html" class="quarto-xref"><span>Chapter 2</span></a>: LLMs interpolate, they do not retrieve. There is no mechanism by which another user could query the model and get your document back, because the model never stored it as a document in the first place.</p>
 <p>You will also hear stories of convergent development mistaken for theft: “I was working on an idea using AI, and then the company released something similar.” Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.</p>
 </section>
 <section id="what-the-risks-are" class="level3" data-number="7.5.2">

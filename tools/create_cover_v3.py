@@ -5,14 +5,14 @@ Generate KDP ebook cover for 'Conversation, Not Delegation'.
 White background, Comic Sans title (leaning into the comic aesthetic),
 tightly cropped comic panel filling more of the space.
 
-Output: images/cover-v3.png (1600 x 2560 px, KDP ebook standard portrait)
+Output: images/cover-v3.png (1800 x 2700 px, 300 DPI at 6x9 print)
 """
 
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-WIDTH = 1600
-HEIGHT = 2560
+WIDTH = 1875
+HEIGHT = 2775
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 COMIC_PATH = PROJECT_ROOT / "images" / "comic-strip" / "00-panel1.png"
@@ -50,16 +50,16 @@ def main():
     comic_reg = "/System/Library/Fonts/Supplemental/Comic Sans MS.ttf"
     system_font = "/System/Library/Fonts/Helvetica.ttc"
 
-    title_font = load_font(comic_bold, 140)
-    subtitle_font = load_font(comic_reg, 48)
-    author_font = load_font(comic_reg, 140)
+    title_font = load_font(comic_bold, 158)
+    subtitle_font = load_font(comic_reg, 54)
+    author_font = load_font(comic_reg, 158)
 
     # Title — big, bold, Comic Sans, owning it
-    y = 160
+    y = 180
     for line in ["Conversation,", "Not Delegation"]:
         w = text_width(draw, line, title_font)
         draw.text(((WIDTH - w) // 2, y), line, fill=TITLE_COLOUR, font=title_font)
-        y += 170
+        y += 190
 
     # Subtitle — clean system font for contrast
     subtitle = "How to Think With AI, Not Just Use It"
@@ -78,9 +78,9 @@ def main():
 
     # Scale comic to fill most of the available space
     comic_top = y + 100
-    comic_bottom = HEIGHT - 160
+    comic_bottom = HEIGHT - 280
     available_h = comic_bottom - comic_top
-    available_w = WIDTH - 100  # 50px margin each side
+    available_w = WIDTH - 120
 
     ratio = min(available_w / comic.width, available_h / comic.height)
     new_w = int(comic.width * ratio)
@@ -101,7 +101,7 @@ def main():
     # Author — at the bottom
     author = "Michael Borck"
     aw = text_width(draw, author, author_font)
-    draw.text(((WIDTH - aw) // 2, HEIGHT - 220), author, fill=AUTHOR_COLOUR, font=author_font)
+    draw.text(((WIDTH - aw) // 2, HEIGHT - 250), author, fill=AUTHOR_COLOUR, font=author_font)
 
     # Save
     img.save(OUTPUT_PATH, "PNG", dpi=(300, 300))
