@@ -78,3 +78,20 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 ## Contact
 
 Michael Borck — [GitHub](https://github.com/michael-borck)
+
+## Repository Structure
+
+This book is part of the [books.borck.education](https://books.borck.education) series. Publishing (PDF, EPUB, llm.txt, chatbot, cover generation) is handled by the [book-publisher](https://github.com/michael-borck/book-publisher) repo.
+
+| Path | Purpose |
+|---|---|
+| `index.qmd` | Preface (landing page) |
+| `_quarto.yml` | HTML-only Quarto config |
+| `cover.png` | Cover image |
+| `copyright-page.tex` | Copyright page for PDF |
+| `pdf-header.tex` | LaTeX header for PDF |
+| `epub-styles.css` | EPUB styles |
+| `tools/` | Downloadable resources referenced in the book (quizzes, interactive tools) |
+| `rag-documents/` | Generated RAG chunks for chatbot |
+| `_book/` | Rendered output (gitignored) |
+| `_print_source/` | Generated print source (gitignored) |
