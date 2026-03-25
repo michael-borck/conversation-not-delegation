@@ -121,3 +121,7 @@ When you verify a claim, you know it is true because you checked, not because th
 The difference between someone who uses AI well and someone who uses AI carelessly is not the quality of their prompts. It is what they do after the AI responds.
 
 VET is what you do after.
+
+::: {.callout-tip title="Analyse your prompts"}
+The **[RTCF Prompt Analyser](../tools/rtcf-analyser.html){target="_blank"}** on the companion website can help here too. If an AI response was vague or unhelpful, paste your original prompt and check which RTCF elements were missing. A weak prompt often produces output that is harder to VET — because the AI was never given enough context to be specific. Improving the prompt and improving the verification often go hand in hand.
+:::
