@@ -97,7 +97,7 @@ A book about conversation should be available in more than one form. Pick the fo
 - Converse with it. The online edition includes a chatbot grounded in the book's content. Ask it questions, challenge its answers, and practise the methodology on the methodology itself. You can also use the `llm.txt` file to paste the entire book into ChatGPT, Claude, or any AI tool for a deeper conversation.
 - Listen to it. Upload the `llm.txt` file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content.
 - Explore the source. The full source is on GitHub, including every chapter, the build system, and the revision history. DeepWiki provides an AI-navigable view of the repository.
-- Practise the frameworks. Interactive tools on the companion site let you build RTCF prompts, analyse your existing prompts, and assess your AI readiness (see ).
+- Practise the frameworks. The companion site includes three interactive tools that run in your browser — no login, no data stored. The RTCF Prompt Builder walks you through constructing prompts step by step using the framework from . The RTCF Prompt Analyser lets you paste any prompt and get instant feedback on which elements are present, partial, or missing — useful for diagnosing why a prompt gave a vague response. The AI Readiness Assessment is a short quiz that maps your current experience level and recommends which chapters to prioritise. See  for details.
 - Browse all books. This book is part of a series. See all titles at books.borck.education.
 
 The online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.
@@ -214,6 +214,8 @@ This is not a reason to avoid those tools. It is a reason to understand what you
 For anything that matters, start with a tool where you write the prompt yourself. Use the embedded tools for routine work where the hidden defaults are good enough. The distinction between the two is itself a judgement call, and one worth making deliberately.
 
 The most transformative AI technology today is the large language model. That is what the next chapter is about.
+
+If you are not sure which parts of this book are most relevant to your current experience level, the AI Readiness Assessment{target="_blank"} on the companion website is a short quiz (3--4 minutes) that maps where you are and recommends which chapters to prioritise.
 
 ============================================================
 SOURCE: chapters/what-are-llms.qmd
@@ -1376,6 +1378,8 @@ You will know you have internalised RTCF when you can feel that a prompt is miss
 
 RTCF is a scaffold, not a script. Use it as a checklist until the four questions become second nature, then let it go.
 
+The companion website includes two tools for practising RTCF in your browser. The RTCF Prompt Builder{target="_blank"} walks you through each component step by step and assembles a structured prompt you can copy into any AI tool. The RTCF Prompt Analyser{target="_blank"} lets you paste any prompt and get instant feedback on which elements are present, partial, or missing — useful for diagnosing why a prompt gave you a vague response. No login required, no data stored.
+
 ## Key Takeaways
 
 1. Structure improves quality. Unstructured prompts get generic results. RTCF gives the AI what it needs to be specific.
@@ -1912,6 +1916,8 @@ When you verify a claim, you know it is true because you checked, not because th
 The difference between someone who uses AI well and someone who uses AI carelessly is not the quality of their prompts. It is what they do after the AI responds.
 
 VET is what you do after.
+
+The RTCF Prompt Analyser{target="_blank"} on the companion website can help here too. If an AI response was vague or unhelpful, paste your original prompt and check which RTCF elements were missing. A weak prompt often produces output that is harder to VET — because the AI was never given enough context to be specific. Improving the prompt and improving the verification often go hand in hand.
 
 ============================================================
 SOURCE: chapters/conversations-across-disciplines.qmd
@@ -2470,11 +2476,11 @@ Take the AI Readiness Assessment{target="_blank"}
 
 A book about conversation with AI should be available as a conversation with AI.
 
-The `prepare_for_ai.py` script in the `tools/` folder strips the formatting from every chapter and produces a single clean text file you can paste into ChatGPT, Claude, NotebookLM, or any other AI tool. Then ask it questions, challenge its interpretation of the ideas, or use it to explore how the frameworks apply to your specific situation.
+The `llm.txt` file (available from the sidebar or the companion website) provides a clean text version of the entire book that you can paste into ChatGPT, Claude, NotebookLM, or any other AI tool. Then ask it questions, challenge its interpretation of the ideas, or use it to explore how the frameworks apply to your specific situation.
 
-To generate the file, run:
+You can also upload `llm.txt` to Google NotebookLM to generate an audio overview or podcast-style discussion of the content.
 
-This creates `conversation-not-delegation.txt` (~31,000 words) in the project root. The book's own methodology applies: do not accept the AI's summary of the book uncritically. Push back. VET the answers. Stay in the conversation.
+The book's own methodology applies: do not accept the AI's summary of the book uncritically. Push back. VET the answers. Stay in the conversation.
 
 ============================================================
 SOURCE: about-author.qmd
