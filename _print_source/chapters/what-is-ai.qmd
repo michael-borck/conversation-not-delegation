@@ -104,3 +104,7 @@ This is not a reason to avoid those tools. It is a reason to understand what you
 For anything that matters, start with a tool where you write the prompt yourself. Use the embedded tools for routine work where the hidden defaults are good enough. The distinction between the two is itself a judgement call, and one worth making deliberately.
 
 The most transformative AI technology today is the large language model. That is what the next chapter is about.
+
+::: {.callout-tip title="Where should you start?"}
+If you are not sure which parts of this book are most relevant to your current experience level, the **AI Readiness Assessment{target="_blank"}** on the companion website is a short quiz (3--4 minutes) that maps where you are and recommends which chapters to prioritise.
+:::

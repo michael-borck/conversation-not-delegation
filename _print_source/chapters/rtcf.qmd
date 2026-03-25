@@ -251,6 +251,10 @@ RTCF is a scaffold, not a script. Use it as a checklist until the four questions
 :::
 
 
+::: {.callout-tip title="Try the interactive tools"}
+The companion website includes two tools for practising RTCF in your browser. The **RTCF Prompt Builder{target="_blank"}** walks you through each component step by step and assembles a structured prompt you can copy into any AI tool. The **RTCF Prompt Analyser{target="_blank"}** lets you paste any prompt and get instant feedback on which elements are present, partial, or missing — useful for diagnosing why a prompt gave you a vague response. No login required, no data stored.
+:::
+
 ## Key Takeaways
 
 1. **Structure improves quality.** Unstructured prompts get generic results. RTCF gives the AI what it needs to be specific.
