@@ -10,7 +10,6 @@ book:
   author: "Michael Borck"
   date: today
   license: "CC BY"
-  cover-image: cover.png
   favicon: favicon.svg
   chapters:
     - index.qmd
