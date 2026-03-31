@@ -1,0 +1,7 @@
+# Print dimensions for KDP (6x9 prose book)
+paperwidth: 6in
+paperheight: 9in
+inner: 1in
+outer: 0.625in
+top: 0.75in
+bottom: 0.75in
