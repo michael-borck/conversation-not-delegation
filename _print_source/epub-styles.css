@@ -1,6 +1,0 @@
-/* Invert line-art images in dark mode for EPUB readers that support it */
-@media (prefers-color-scheme: dark) {
-  img {
-    filter: invert(1) hue-rotate(180deg);
-  }
-}
