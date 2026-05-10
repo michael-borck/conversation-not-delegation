@@ -84,3 +84,19 @@ The loop is not linear. You can jump from Iterate back to Brainstorm when you re
 : Eight techniques for deeper thinking with AI. {.striped}
 
 Each technique is a different way to stay in conversation rather than delegating. Pick the one that matches your task. See @sec-techniques for detailed walkthroughs and examples.
+
+
+## One Idea, Several Names
+
+The same principle appears across disciplines under different vocabularies. Whichever language fits your audience, the practice is the same.
+
+| Name | Where you will hear it | What it means |
+|------|------------------------|---------------|
+| **Conversation** | This book | Stay engaged at every stage; push back, iterate, own the output. |
+| **Judgement** | Professional practice, education | The capacity to weigh, decide, and stand behind a conclusion. |
+| **Agency** | Philosophy, ethics, policy | The capacity to choose, act, and be accountable for the outcome. |
+| **Human-in-the-loop (HIL)** | AI governance, system design | A person remains an active participant in decisions a system could otherwise automate. |
+
+: One idea, four vocabularies. {.striped}
+
+Conversation is the practice. Judgement is what you exercise during it. Agency is what you preserve by exercising judgement. Human-in-the-loop is what the same stance looks like from a system designer's perspective. Four words, one stance, four angles on the same thing.

@@ -95,6 +95,8 @@ Judgement cannot be delegated to something that has read everything but experien
 
 That sentence is not a limitation of AI. It is a statement about what makes you irreplaceable. Your experience. Your judgement. Your ability to weigh competing priorities, read a room, know when the data is pointing in the right direction and when it is lying to you. No model has that. No model will.
 
+Different traditions name this differently. Philosophers call it agency. AI policy calls it human-in-the-loop. This book has called it conversation. They all point at the same thing: the moment of weighing, choosing, and standing behind the outcome that only you can do. Agency is what is at stake. Human-in-the-loop is what it looks like from the system's view. Conversation is how you keep it in practice.
+
 What a model can do is help you sharpen those capacities. It can surface what you had not considered. It can pressure-test your reasoning. It can show you the gap between what you think you know and what you actually know. But only if you stay in the conversation. Only if you do the thinking.
 
 The goal was never to get AI to do more.

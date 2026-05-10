@@ -12,6 +12,8 @@ There is a different way. Instead of delegating to AI, you can converse with it.
 
 This book teaches you how.
 
+The academic literature has other names for what gets preserved when you do this. Philosophers and ethicists call it **agency**: your capacity to choose, weigh, and own the outcome. AI policy and system design call it **human-in-the-loop** (HIL): the principle that a person remains an active participant in decisions a system could otherwise automate. This book uses a different word, **conversation**, because the academic terms describe *what* you keep, and the conversational frame describes *how* you keep it. Same idea, three vocabularies. If you came in looking for guidance on human agency or HIL, you are in the right place. See @sec-quick-reference for the terms map.
+
 ## Who This Book Is For
 
 This book is for anyone who uses AI as a thinking tool. Students, professionals, researchers, educators: if you interact with large language models as part of your work or study, this book will change how you approach those interactions.
@@ -25,6 +27,8 @@ If you work with AI in any capacity, or plan to, this book will give you a frame
 This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not.
 
 It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt is the beginning of the conversation, not the point of it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.
+
+A related warning: conversation, in this book, is not a string of zero-shot prompts run back-to-back. That is just delegation in volume. Real conversation requires pushback, course correction, and your judgement woven through each exchange. @sec-conversation-loop draws the distinction carefully.
 
 It is not about AI apps that embed intelligence into other software, such as writing assistants, email autocompletes, and coding copilots. Those tools run on prompts someone else wrote. This book is about conversations you control yourself. Both have their place, but they are different activities.
 

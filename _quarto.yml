@@ -9,7 +9,7 @@ book:
   subtitle: "How to Think With AI, Not Just Use It"
   author: "Michael Borck"
   date: today
-  license: "CC BY"
+  license: "CC BY-SA"
   favicon: favicon.svg
   chapters:
     - index.qmd
