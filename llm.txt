@@ -19,6 +19,8 @@ There is a different way. Instead of delegating to AI, you can converse with it.
 
 This book teaches you how.
 
+The academic literature has other names for what gets preserved when you do this. Philosophers and ethicists call it agency: your capacity to choose, weigh, and own the outcome. AI policy and system design call it human-in-the-loop (HIL): the principle that a person remains an active participant in decisions a system could otherwise automate. This book uses a different word, conversation, because the academic terms describe what you keep, and the conversational frame describes how you keep it. Same idea, three vocabularies. If you came in looking for guidance on human agency or HIL, you are in the right place. See  for the terms map.
+
 ## Who This Book Is For
 
 This book is for anyone who uses AI as a thinking tool. Students, professionals, researchers, educators: if you interact with large language models as part of your work or study, this book will change how you approach those interactions.
@@ -32,6 +34,8 @@ If you work with AI in any capacity, or plan to, this book will give you a frame
 This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not.
 
 It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt is the beginning of the conversation, not the point of it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.
+
+A related warning: conversation, in this book, is not a string of zero-shot prompts run back-to-back. That is just delegation in volume. Real conversation requires pushback, course correction, and your judgement woven through each exchange.  draws the distinction carefully.
 
 It is not about AI apps that embed intelligence into other software, such as writing assistants, email autocompletes, and coding copilots. Those tools run on prompts someone else wrote. This book is about conversations you control yourself. Both have their place, but they are different activities.
 
@@ -413,6 +417,8 @@ Here is the line you need to sit with:
 
 Judgement cannot be delegated to a system that has no stake in the outcome.
 
+Judgement is the everyday name for what philosophers call agency: your capacity to choose, weigh, and stand behind the outcome. To delegate one is to give up the other. The two words name the same thing from different rooms.
+
 An AI has processed more text than any human being will ever encounter. It can retrieve, recombine, and rephrase with extraordinary fluency. But it has never made a decision under pressure. It has never felt the weight of getting something wrong. It has never had a stake in the outcome.
 
 This matters because judgement is not pattern matching. Judgement is knowing which pattern applies here, now, given everything you know about this situation that cannot be written down. It is the product of experience, consequence, and reflection. It cannot be downloaded. It cannot be generated. It can only be built.
@@ -474,6 +480,8 @@ A clarification worth making: not all delegation is a trap. Asking AI to reforma
 If you remember nothing else from this chapter, remember the table. Look at which column you spend most of your time in. Then decide which column you want to live in.
 
 The delegation trap is comfortable. The conversation path is harder. But only one of them makes you better.
+
+Conversation amplifies your thinking. Delegation amplifies the hallucinations.
 
 Choose accordingly.
 
@@ -2113,6 +2121,8 @@ Judgement cannot be delegated to something that has read everything but experien
 
 That sentence is not a limitation of AI. It is a statement about what makes you irreplaceable. Your experience. Your judgement. Your ability to weigh competing priorities, read a room, know when the data is pointing in the right direction and when it is lying to you. No model has that. No model will.
 
+Different traditions name this differently. Philosophers call it agency. AI policy calls it human-in-the-loop. This book has called it conversation. They all point at the same thing: the moment of weighing, choosing, and standing behind the outcome that only you can do. Agency is what is at stake. Human-in-the-loop is what it looks like from the system's view. Conversation is how you keep it in practice.
+
 What a model can do is help you sharpen those capacities. It can surface what you had not considered. It can pressure-test your reasoning. It can show you the gap between what you think you know and what you actually know. But only if you stay in the conversation. Only if you do the thinking.
 
 The goal was never to get AI to do more.
@@ -2285,6 +2295,21 @@ The loop is not linear. You can jump from Iterate back to Brainstorm when you re
 : Eight techniques for deeper thinking with AI. 
 
 Each technique is a different way to stay in conversation rather than delegating. Pick the one that matches your task. See  for detailed walkthroughs and examples.
+
+## One Idea, Several Names
+
+The same principle appears across disciplines under different vocabularies. Whichever language fits your audience, the practice is the same.
+
+| Name | Where you will hear it | What it means |
+|------|------------------------|---------------|
+| Conversation | This book | Stay engaged at every stage; push back, iterate, own the output. |
+| Judgement | Professional practice, education | The capacity to weigh, decide, and stand behind a conclusion. |
+| Agency | Philosophy, ethics, policy | The capacity to choose, act, and be accountable for the outcome. |
+| Human-in-the-loop (HIL) | AI governance, system design | A person remains an active participant in decisions a system could otherwise automate. |
+
+: One idea, four vocabularies. 
+
+Conversation is the practice. Judgement is what you exercise during it. Agency is what you preserve by exercising judgement. Human-in-the-loop is what the same stance looks like from a system designer's perspective. Four words, one stance, four angles on the same thing.
 
 ============================================================
 SOURCE: appendices/c-further-reading.qmd
