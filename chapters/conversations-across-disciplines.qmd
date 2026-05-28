@@ -8,7 +8,7 @@ The tools are in place. You know the Conversation Loop (@sec-conversation-loop).
 
 Now let's see it work.
 
-This chapter walks through four complete examples across four different domains. Each one follows a realistic starting point through a real conversation to a result the human owns. None of them are transcripts. They are summaries of what happened, with the key steering decisions called out.
+This chapter walks through four complete examples across four different domains. Each one follows a realistic starting point through a real conversation to a result the human owns. The summaries below capture the shape of each conversation rather than reproducing every exchange in full. One scenario (the team lead's, below) includes a sample of the actual back-and-forth at its steering moment, to show what that turn looks like in practice.
 
 Pay attention to those steering decisions. They are the difference between conversation and delegation. They are always human. They are always specific. And they always make the output better than the AI would have produced alone.
 
@@ -62,6 +62,24 @@ In the **Amplify** stage, she builds her board summary around the refined findin
 The AI produces a four-phase plan: discovery, mapping, migration, validation. It is textbook. It is also the plan he ran last time, the one that went over. He says so. "This looks like every migration plan ever written. What specifically goes wrong in phase two when you don't have a dedicated data engineer?"
 
 This prompt, a direct challenge born from experience, is the steering decision that transforms the conversation. The AI responds with five specific risks around data mapping when domain expertise is split across team members. Two of them match what went wrong last time.
+
+::: {.callout-note title="What the steering moment actually looks like"}
+The exchange after the textbook plan landed:
+
+> **You:** This looks like every migration plan ever written. We ran almost exactly this last time and went 40% over. What specifically goes wrong in phase two when you don't have a dedicated data engineer?
+>
+> **AI:** Without a dedicated data engineer, phase two (mapping) typically fails in five specific ways:
+>
+> 1. **Schema drift goes unnoticed.** Source-system fields change mid-mapping and no one owns watching for it.
+> 2. **Domain knowledge gets fragmented.** Team members map different tables on their own assumptions, producing inconsistent transformations.
+> 3. **Edge cases become rework.** Without one person holding the full mapping model, unusual records get handled inconsistently and surface during validation.
+> 4. **Validation criteria get written after the fact.** The team validates against what came out, not against what should have come out.
+> 5. **The mapping document becomes stale.** It is treated as a deliverable, not a living artefact, so by phase three it no longer reflects what was built.
+>
+> **You:** Items 2 and 3 are exactly what happened last time. What would a "dedicated mapping sprint" look like for a team of four with no full-time engineer?
+
+*The first prompt got a textbook plan. The second prompt named the constraint that actually mattered. Same model, same session — and the difference was something only he could bring.*
+:::
 
 In the **Ideate** stage, he asks the AI to propose three ways to mitigate the mapping bottleneck without hiring. The options range from automated schema comparison tools to a dedicated mapping sprint before the main project starts. He knows option three is realistic for his team. The others require tools they don't have budget for.
 

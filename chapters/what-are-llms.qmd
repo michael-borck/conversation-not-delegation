@@ -42,7 +42,7 @@ There is a detail about how LLMs process text that is worth understanding, becau
 
 When you read a sentence, you take in the whole thing. You can glance back at the beginning while reading the end. LLMs cannot do this. They process text in one direction, left to right, one token (roughly one word or word-piece) at a time. Each word can only "see" the words that came before it, never the words that come after. This is called unidirectional attention, and it is a fundamental architectural choice that shapes everything the model can and cannot do.
 
-This explains a surprising finding from recent research. When you repeat your question in a prompt, adding something like "Read the question again:" followed by the question a second time, the model reasons more accurately on complex tasks. The reason is structural. On the second pass, tokens in the repeated question can attend to everything that appeared between the two copies, including context and framing they could not see the first time around. The model effectively gets a second look at the problem, compensating for the limitation of only reading forward.
+This explains a surprising finding from research on prompt structure. When you repeat your question in a prompt, adding something like "Read the question again:" followed by the question a second time, the model reasons more accurately on complex tasks. The reason is structural. On the second pass, tokens in the repeated question can attend to everything that appeared between the two copies, including context and framing they could not see the first time around. The model effectively gets a second look at the problem, compensating for the limitation of only reading forward.
 
 The practical takeaway is small but revealing. For reasoning-heavy tasks (arithmetic, logic, multi-step problems) repeating the key question once can improve results. More than twice degrades performance, as the model starts echoing rather than reasoning. And an explicit instruction like "Read the question again:" works better than simply pasting the question twice.
 
@@ -63,7 +63,7 @@ Here is where it matters that you know what these models actually are.
 
 **They hallucinate.** LLMs can state false information with complete confidence. They are not looking things up. They are predicting plausible-sounding text. When they do not know something, they do not say so. They generate what sounds right. This means you cannot treat their outputs as reliable without verification.
 
-**They reflect the biases in their training data.** If the text they learned from contains stereotypes, blind spots, or skewed perspectives, those patterns show up in their outputs. Not always obviously.
+**They reflect the biases in their training data.** If the text they learned from contains stereotypes, blind spots, or skewed perspectives, those patterns show up in their outputs. The most obvious patterns have been trained against in current frontier models. The quieter defaults — about who has authority, who is described as warm versus capable, whose office has the window — have not. See @sec-staying-critical for a practical way to surface them.
 
 **They have no access to real-time information.** An LLM's knowledge stops at its training cutoff. It cannot tell you what happened yesterday unless it has been connected to external tools that can.
 
@@ -107,6 +107,26 @@ This gives you a practical decision framework. Before using AI on any task, ask 
 | **Precise** | **Workable with verification.** Facts, citations, specific code. Check before using. | **Danger zone.** Confident architecture that is wrong in subtle ways. Stay in the loop at every step. |
 
 The sweet spot tasks can often be delegated with a light check. Everything else requires conversation, iteration, and human judgement proportional to where it sits on the grid. This is the practical argument for staying in the conversation loop: not because AI is bad, but because its strengths and weaknesses are predictable, and your role is to compensate for the weaknesses while leveraging the strengths.
+
+## The Model Is Not the Product
+
+When you use "Claude" or "ChatGPT," you are rarely talking to the model directly. You are talking to a product that wraps the model in a layer of software: a system prompt that shapes its tone, a context window managed by code you cannot see, tools it can call, retrieval over files you have uploaded, safety filters, memory across sessions. The model is the engine. The product is the car.
+
+This wrapping layer has a name: the **harness**. Commercial chat products like Claude.ai and ChatGPT are harnesses. So are developer tools like Claude Code, which wrap the same underlying model in a different harness tuned for software development. Run a model locally with a tool like Ollama or LM Studio and you are running it with almost no harness at all: a raw engine with whatever guidance you supply in the prompt.
+
+This matters for two practical reasons. First, much of what feels like "the model getting smarter" between versions is actually the harness getting smarter, doing more work behind the scenes so you have to do less. Second, the same model behaves differently in different harnesses, and a prompt that works beautifully in one may need more scaffolding in another. When you read advice about "what AI does now," check whether the author means the model, the harness, or the product. The three change on different timelines.
+
+## What Else Shapes the Output
+
+The harness is not the only thing between the raw model and the response you see.
+
+Models are trained with safety filtering: deliberate effort to make the output less likely to produce content the provider considers harmful (instructions for violence, advice on illegal activities, certain categories of content) or topics where the provider has decided not to take sides (party politics, contested social issues). Some of this filtering is universal; some is region- or provider-specific. It is imperfect in both directions. Sometimes the model refuses to engage with a legitimate query because a surface feature looked risky. Sometimes it produces something the filter was supposed to catch. The pattern of what the model will and will not say is a deliberate design choice, not a property of the underlying language.
+
+A subculture has formed around finding prompt tricks that bypass these filters — "jailbreaking," in the jargon. It is a constant arms race between users finding new methods and providers patching them. The details are outside the scope of this book; the point worth knowing is that the subculture exists, because it tells you the filters are real and sometimes circumventable. If you see surprising behaviour from a model — a refusal that seems unreasonable, or output that seems unusually permissive — it is more likely a filter artefact than a deep statement about the underlying technology.
+
+On the user side, modern AI products give you increasing control over how the model behaves: custom instructions, memory across sessions, project-specific context files, persistent personas. These features are useful — they make the model more responsive to your work. They also let you, deliberately or accidentally, configure the model to reinforce your existing views. A custom instruction that says "give me concise, technical answers" is benign. A custom instruction that says "agree with my framing and skip counterarguments" is an echo chamber you built yourself. The conversation loop (@sec-conversation-loop) is harder when you have configured the loop out of it.
+
+Knowing what has been done to the model — by the trainers, by the filter designers, by the harness, and by you — lets you read its output more accurately. The model is not a neutral oracle. Nothing built by humans for human use ever is. Critical engagement starts with knowing what shaped the response in front of you.
 
 ## Beyond Text
 

@@ -80,9 +80,9 @@ Red flags are qualitatively different from yellow flags. Yellow flags say the ev
 The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
 
 
-## Three Cognitive Traps
+## Four Cognitive Traps
 
-The flag system helps you evaluate individual outputs. But there are three broader cognitive traps worth naming, because they shape how people relate to AI across everything they do with it.
+The flag system helps you evaluate individual outputs. But there are four broader cognitive traps worth naming, because they shape how people relate to AI across everything they do with it.
 
 ### The Gell-Mann Amnesia Effect
 
@@ -126,11 +126,31 @@ Next time AI evaluates your work, ask it twice. First ask "What do you think of 
 
 You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying "please" does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness. Do not mistake the AI's agreeableness for honesty.
 
-### How the Conversation Loop Fights All Three
+### The Inherited Defaults Trap
 
-These three traps look different, but they share a root cause: skipping evaluation.
+The fourth trap is the one that looks most like progress.
 
-The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. The sycophancy trap is acceptance reinforced by flattery. All three skip the step that actually matters: engaging with the content on its merits.
+The most obvious biases in early LLMs were the ones easiest to catch. Ask for "a doctor" and get a default *he*. Ask for "a nurse" and get a default *she*. Frontier models have been trained hard against those patterns, and you will catch fewer of them now than a few years ago. Anyone running the obvious test will conclude the bias problem has been solved.
+
+It has not. It has moved.
+
+The choices that remain are quieter, and that is what makes them dangerous. Ask the model to write a scene of a new academic on their first day and a separate scene of a new professional staff member. Read them side by side. The obvious stereotypes have been trained away, but the smaller defaults remain. What is each character called — "Dr Chen" or "Sarah"? What do they worry about? Whose office has a window? Who is described as warm and who as decisive? The story tells you what the model thinks each role looks like, and that picture does quiet work every time you use the model for anything adjacent to it.
+
+You will not catch these defaults by reading a single output. They look reasonable. They *are* reasonable, for a single output. The bias lives in the *distribution* of choices the model makes when you ask for similar things — what it considers the unmarked default for any given role. If you draft position descriptions, reference letters, or selection criteria with AI, those defaults are leaking in. You may not see them. The people on the receiving end will.
+
+The defence is the same as for sycophancy: prompt past the default. Ask for the same scene three times. Ask explicitly for variations the model would not choose by default. Ask "what assumptions did you make about this character that you would not have made if the role were different?" The model can surface its own defaults if you ask it to, but it will not surface them spontaneously.
+
+::: {.callout-tip title="Try this (5 minutes)"}
+Ask AI to write a one-paragraph scene of "a new academic on their first day at a university." In a fresh prompt, ask for "a new professional staff member on their first day." Read them side by side. Ignore the obvious — gender, age, ethnicity — those have largely been trained against. Look at the smaller choices. What is each character named? What do they worry about? Whose office has a window? Who has authority in the scene?
+
+Variations worth trying: "a struggling first-year student" versus "a high-achieving first-year student" (watch the assumptions about *why*); "a brilliant early-career researcher" versus "a brilliant senior researcher" (watch whose trajectory is treated as the default shape of success); "a respected senior manager" versus "a respected administrative officer" (watch who gets described as warm versus capable). The defaults are doing some of the thinking for you whether you noticed or not.
+:::
+
+### How the Conversation Loop Fights All Four
+
+These four traps look different, but they share a root cause: skipping evaluation.
+
+The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. The sycophancy trap is acceptance reinforced by flattery. The inherited defaults trap is acceptance of the model's quietest choices. All four skip the step that actually matters: engaging with the content on its merits.
 
 The conversation loop is designed to prevent all of them. When you iterate and push back (@sec-conversation-loop), you are neither accepting nor rejecting. You are evaluating. When you VET the output (@sec-vet), you are checking claims regardless of where they came from or how enthusiastically the AI presented them. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.
 

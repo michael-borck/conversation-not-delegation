@@ -24,7 +24,7 @@ If you work with AI in any capacity, or plan to, this book will give you a frame
 
 ## What This Book Is Not
 
-This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not.
+This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not. Where the book names a specific tool or describes how current models behave, those details will date faster than the surrounding ideas. The principles are the point.
 
 It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt is the beginning of the conversation, not the point of it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.
 

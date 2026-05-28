@@ -42,7 +42,7 @@ AI is not one thing. It is a family of technologies, each suited to different pr
 
 **Deep learning** extends machine learning with multiple layers of pattern recognition, loosely inspired by how neurons work. The first layer might detect edges in an image. The second combines edges into shapes. The third combines shapes into objects. The fourth recognises that the object is a golden retriever. This layered approach handles very complex tasks: understanding speech, translating languages, driving cars, and generating text.
 
-**Large language models** are the most recent breakthrough, and the focus of this book. They are covered in depth in the next chapter.
+**Large language models** are the branch this book focuses on. They are covered in depth in the next chapter.
 
 Each of these approaches builds on the one before it. Rule-based systems gave way to machine learning, which gave way to deep learning, which produced large language models. The progression is toward systems that need less hand-coding and can handle more ambiguity.
 
@@ -103,7 +103,7 @@ This is not a reason to avoid those tools. It is a reason to understand what you
 
 For anything that matters, start with a tool where you write the prompt yourself. Use the embedded tools for routine work where the hidden defaults are good enough. The distinction between the two is itself a judgement call, and one worth making deliberately.
 
-The most transformative AI technology today is the large language model. That is what the next chapter is about.
+Large language models are the AI technology this book is about. That is what the next chapter covers.
 
 ::: {.callout-tip title="Where should you start?"}
 If you are not sure which parts of this book are most relevant to your current experience level, the **[AI Readiness Assessment](../tools/ai-readiness-quiz.html){target="_blank"}** on the companion website is a short quiz (3--4 minutes) that maps where you are and recommends which chapters to prioritise.

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/michael/Projects/presentations -type f \\\\\\( -name \"*.qmd\" -o -name \"*.md\" -o -name \"*.html\" -o -name \"*.pptx\" \\\\\\) 2>/dev/null | head -50)",
+      "Bash(grep -r \"conversation\" /Users/michael/Projects/books/partner-dont-police/*.qmd)",
+      "Bash(grep -i \"brainstorm\\\\|ideate\\\\|iterate\\\\|amplify\" /Users/michael/Projects/books/partner-dont-police/*.qmd)"
+    ]
+  }
+}

@@ -139,6 +139,18 @@ Consider the difference between asking for generic help and telling the AI exact
 
 The bare prompt would produce a generic overview of how literature reviews work. The RTCF version gets feedback on *your specific draft*, tailored to your discipline, addressing the exact weakness your supervisor identified. The AI is not doing the work for you; it is showing you where your thinking shifted from synthesis to summary, which is a distinction you will carry into every review you write from now on.
 
+::: {.callout-note title="What happens after the RTCF prompt"}
+The structured prompt is the start of the conversation, not the end. Here is what the next exchange might look like:
+
+> **AI:** [In response to the RTCF prompt above, identifies three paragraph-level problems. Paragraph 2 critique: "You introduce three studies but treat each as a self-contained summary. Restructure: open with the shared question — 'How does urban density mediate flood resilience?' — then bring each study in as a different angle on that question."]
+>
+> **You:** The paragraph 2 restructure is good, but the question you proposed isn't actually what those three studies share. Two of them are about heat resilience, not flooding. The common thread is *which dimension of resilience the framework prioritises*. Try again with that as the organising question.
+>
+> **AI:** That shifts the restructure. Open paragraph 2 with: "Each framework foregrounds a different dimension of resilience, which shapes what counts as success." Then Smith (heat), Chen (flood), and Patel (multi-hazard) become three angles on that single question. The synthesis move is making the framework's *priorities* visible, not comparing their findings.
+
+*The RTCF prompt got a competent first pass. The conversation got the right one. The AI was working from generic patterns about literature synthesis; the student was working from her actual reading. The correction is small but it is the difference between a paragraph that synthesises and one that pretends to.*
+:::
+
 
 ### Data and Analysis
 
@@ -248,6 +260,13 @@ You will know you have internalised RTCF when you can feel that a prompt is miss
 
 ::: {.callout-tip title="Remember"}
 RTCF is a scaffold, not a script. Use it as a checklist until the four questions become second nature, then let it go.
+:::
+
+
+::: {.callout-note title="A note on Role and frontier models"}
+On the most capable models — current-frontier Claude, GPT, Gemini and similar — the **Role** component carries less weight than it used to. These models' defaults are strong enough that a sharply specified task often beats an elaborate persona ("You are a world-class strategist…"). On smaller or locally-run models, R still moves the needle.
+
+Treat the Role question as a thinking prompt regardless: *what kind of expert would I want here?* That mental step is useful even when you do not always type it out. See @sec-what-are-llms on the model-versus-harness distinction for why this shift is happening.
 :::
 
 

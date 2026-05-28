@@ -89,6 +89,19 @@ There is a real danger on the other end. The more fluent and confident a model s
 The practical implication is freeing. You do not need the most expensive subscription to get value from this approach. Any general-purpose language model, free or paid, is sufficient for the kind of conversational work described in this book. What matters is not which model you use. It is whether you stay in the conversation.
 
 
+## Same Method, Different Calibration
+
+The methodology in this book works across the full range of models you will encounter, but the texture of the conversation shifts depending on what you are using. The loop is constant. The amount of scaffolding you bring to it is not.
+
+On a smaller or local model — anything you run yourself, anything below the current frontier — heavier scaffolding pays off. A clear role, an explicit task, well-chosen context, and a specified format are doing real work. Without them, the model guesses, and its guesses come from a smaller distribution of patterns. Structure compensates for capability.
+
+On a current frontier model running inside a thick product harness (@sec-what-are-llms), some of that scaffolding becomes optional. The model's defaults are strong, and the harness has already done part of the role-setting before your prompt arrives. A sharply specified task with the right context often outperforms an elaborate persona invocation.
+
+The temptation is to read this as "RTCF is for beginners; frontier users can skip it." That misses the point. RTCF (@sec-rtcf) is a thinking discipline as much as a prompting one. Asking *who would the right expert be, what exactly am I asking for, what do they need to know, how should the answer be shaped* sharpens your own thinking before the model touches it. That is valuable whether or not the model still needs all four to perform well.
+
+The practical rule: scaffold heavily when the model is small or the stakes are high. Scaffold lightly when the model is capable and the harness is doing work for you. The model class changes how you open the conversation. It does not change whether you should have one.
+
+
 ## Why Conversation Scales
 
 There is a reason we listen to podcasts, watch interviews, and find panel discussions more engaging than monologues. Conversation reveals things that prepared statements do not. When someone pushes back, follows up, or asks "why?", the thinking deepens. Ideas get tested in real time. Gaps surface. What survives the exchange is stronger than what either party brought in alone.

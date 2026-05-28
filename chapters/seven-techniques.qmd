@@ -303,6 +303,16 @@ The most valuable output from this technique is usually in question 1, the risks
 
 After the initial analysis, try: "If this initiative fails 6 months from now, what is the most likely cause?" This "pre-mortem" framing often surfaces risks that a forward-looking analysis misses.
 
+::: {.callout-note title="What a pre-mortem actually surfaces"}
+After running the Risk Deep-Dive on a proposed quarterly metric overhaul, the follow-up "If this initiative fails 6 months from now, what is the most likely cause?" landed this:
+
+> **AI:** Most likely cause of failure in 6 months: the new metrics will technically launch on schedule, but middle managers will quietly continue reporting against the old metrics in their team reviews because the old ones map to bonuses that the metric change did not touch. By month four, leadership will be reading the new dashboard while the organisation is still being run on the old incentives. The failure will not be visible as a failure — it will look like adoption working but outcomes not moving.
+>
+> **You:** That is exactly what happened the last two times we changed metrics. We never touched the bonus tie-in because it sits with HR, not us. I need to talk to HR before launch, not after.
+
+*The forward-looking risk list had been about adoption, training, and dashboard tooling — all standard. The pre-mortem reframe surfaced the structural problem the forward list missed: the new metric and the existing incentive were owned by different teams. The fix is now a phone call, not a post-mortem.*
+:::
+
 
 ## Combining Techniques
 

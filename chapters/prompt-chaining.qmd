@@ -101,6 +101,18 @@ in Step 1.
 
 The value here is in the pauses. Each review point is a chance to correct course, add something the AI missed, or redirect entirely.
 
+::: {.callout-note title="What the pause between steps looks like"}
+Returning to the funding-proposal chain, here is the moment between Step 1 (Analysis) and Step 2 (Structure):
+
+> **AI (Step 1 response):** Three strongest arguments for funding: (1) the catchment area shows measurable health-outcome gaps that match the programme's targets; (2) the delivery model has been piloted at smaller scale with documented uptake; (3) the partner organisations bring infrastructure that reduces the funder's operational risk. Two gaps in evidence: the pilot data is from a single site, and there is no formal cost-per-outcome figure yet.
+>
+> **You (pause, thinking):** The single-site pilot point is the one that will sink the proposal if Step 2 builds on the current framing. I cannot fix the data, but I can change how I structure around it.
+>
+> **You (Step 2 prompt):** Outline a proposal structure that addresses the three strongest arguments — but treat the single-site evidence as a known weakness up front, not a hidden risk. Put a short "Evidence base and its limits" section before the proposed approach. The structure should make the funder feel we have already done their scepticism for them.
+
+*Without the pause, Step 2 would have produced a generic four-section outline. With it, the chain absorbs an evidence weakness the human spotted and turns it into a structural feature of the proposal. The AI did not know which of its findings was the load-bearing one. The human did.*
+:::
+
 
 ### Approach 3: Interactive Chain
 
