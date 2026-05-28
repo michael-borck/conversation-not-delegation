@@ -472,7 +472,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#professional-communication-getting-the-tone-right-when-the-stakes-are-high" id="toc-professional-communication-getting-the-tone-right-when-the-stakes-are-high" class="nav-link" data-scroll-target="#professional-communication-getting-the-tone-right-when-the-stakes-are-high"><span class="header-section-number">13.4</span> Professional Communication: Getting the Tone Right When the Stakes Are High</a></li>
   <li><a href="#the-pattern-across-all-four" id="toc-the-pattern-across-all-four" class="nav-link" data-scroll-target="#the-pattern-across-all-four"><span class="header-section-number">13.5</span> The Pattern Across All Four</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="../tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="../tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="../tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -508,7 +508,7 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <p>The tools are in place. You know the Conversation Loop (<a href="the-conversation-loop.html" class="quarto-xref"><span>Chapter 5</span></a>). You know how to start well with RTCF (<a href="rtcf.html" class="quarto-xref"><span>Chapter 8</span></a>). You know how to push back with VET (<a href="vet-your-ai.html" class="quarto-xref"><span>Chapter 12</span></a>). You know how to chain prompts into a sustained line of thinking (<a href="prompt-chaining.html" class="quarto-xref"><span>Chapter 9</span></a>).</p>
 <p>Now let’s see it work.</p>
-<p>This chapter walks through four complete examples across four different domains. Each one follows a realistic starting point through a real conversation to a result the human owns. None of them are transcripts. They are summaries of what happened, with the key steering decisions called out.</p>
+<p>This chapter walks through four complete examples across four different domains. Each one follows a realistic starting point through a real conversation to a result the human owns. The summaries below capture the shape of each conversation rather than reproducing every exchange in full. One scenario (the team lead’s, below) includes a sample of the actual back-and-forth at its steering moment, to show what that turn looks like in practice.</p>
 <p>Pay attention to those steering decisions. They are the difference between conversation and delegation. They are always human. They are always specific. And they always make the output better than the AI would have produced alone.</p>
 <blockquote class="blockquote">
 <p>The human brought something the AI could not. The AI brought something the human could not match. Neither was sufficient alone.</p>
@@ -541,6 +541,32 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>The conversation.</strong> He opens at the <strong>Brainstorm</strong> stage using RTCF: role (experienced project manager who has run data migration projects), task (help me build a realistic project scope), context (number of records, source and destination systems, team size of four, no dedicated data engineer), format (a phased project plan with risk flags).</p>
 <p>The AI produces a four-phase plan: discovery, mapping, migration, validation. It is textbook. It is also the plan he ran last time, the one that went over. He says so. “This looks like every migration plan ever written. What specifically goes wrong in phase two when you don’t have a dedicated data engineer?”</p>
 <p>This prompt, a direct challenge born from experience, is the steering decision that transforms the conversation. The AI responds with five specific risks around data mapping when domain expertise is split across team members. Two of them match what went wrong last time.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="What the steering moment actually looks like">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What the steering moment actually looks like
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The exchange after the textbook plan landed:</p>
+<blockquote class="blockquote">
+<p><strong>You:</strong> This looks like every migration plan ever written. We ran almost exactly this last time and went 40% over. What specifically goes wrong in phase two when you don’t have a dedicated data engineer?</p>
+<p><strong>AI:</strong> Without a dedicated data engineer, phase two (mapping) typically fails in five specific ways:</p>
+<ol type="1">
+<li><strong>Schema drift goes unnoticed.</strong> Source-system fields change mid-mapping and no one owns watching for it.</li>
+<li><strong>Domain knowledge gets fragmented.</strong> Team members map different tables on their own assumptions, producing inconsistent transformations.</li>
+<li><strong>Edge cases become rework.</strong> Without one person holding the full mapping model, unusual records get handled inconsistently and surface during validation.</li>
+<li><strong>Validation criteria get written after the fact.</strong> The team validates against what came out, not against what should have come out.</li>
+<li><strong>The mapping document becomes stale.</strong> It is treated as a deliverable, not a living artefact, so by phase three it no longer reflects what was built.</li>
+</ol>
+<p><strong>You:</strong> Items 2 and 3 are exactly what happened last time. What would a “dedicated mapping sprint” look like for a team of four with no full-time engineer?</p>
+</blockquote>
+<p><em>The first prompt got a textbook plan. The second prompt named the constraint that actually mattered. Same model, same session — and the difference was something only he could bring.</em></p>
+</div>
+</div>
 <p>In the <strong>Ideate</strong> stage, he asks the AI to propose three ways to mitigate the mapping bottleneck without hiring. The options range from automated schema comparison tools to a dedicated mapping sprint before the main project starts. He knows option three is realistic for his team. The others require tools they don’t have budget for.</p>
 <p>He moves to <strong>Iterate</strong> with prompt chaining. He takes the mapping sprint idea and asks the AI to help him estimate effort for each phase, then applies VET: do the estimates assume full-time allocation? (They do. His team is not full-time on this.) He corrects the assumption and the AI recalculates. The project timeline grows by three weeks, but now it is honest.</p>
 <p>In the <strong>Amplify</strong> stage, he writes the proposal with the revised timeline, the explicit risk register, and the mapping sprint as a pre-phase. He flags the three-week extension to his manager before it becomes a surprise.</p>
@@ -576,7 +602,7 @@ ul.task-list li input[type="checkbox"] {
 <p>In every example, the turning point was a moment where the human rejected or redirected the AI’s output based on something only they knew. That is the method. Not a formula. A way of working.</p>
 </div>
 </div>
-<p>Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases, and the human was the bridge between them. This is the two-chat workflow (<a href="the-conversation-loop.html#sec-two-chat-workflow" class="quarto-xref"><span>Section 5.7.2</span></a>) in action, whether or not the person literally used two sessions.</p>
+<p>Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases, and the human was the bridge between them. This is the two-chat workflow (<a href="the-conversation-loop.html#sec-two-chat-workflow" class="quarto-xref"><span>Section 5.8.2</span></a>) in action, whether or not the person literally used two sessions.</p>
 
 
 </section>

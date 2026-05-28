@@ -490,7 +490,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices"><span class="header-section-number">9.7</span> Best Practices</a></li>
   <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">9.8</span> Key Takeaways</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="../tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="../tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="../tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -591,6 +591,25 @@ Emphasise the points we identified
 in Step 1.</code></pre>
 <p><em>Review, revise, continue with remaining sections.</em></p>
 <p>The value here is in the pauses. Each review point is a chance to correct course, add something the AI missed, or redirect entirely.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="What the pause between steps looks like">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What the pause between steps looks like
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Returning to the funding-proposal chain, here is the moment between Step 1 (Analysis) and Step 2 (Structure):</p>
+<blockquote class="blockquote">
+<p><strong>AI (Step 1 response):</strong> Three strongest arguments for funding: (1) the catchment area shows measurable health-outcome gaps that match the programme’s targets; (2) the delivery model has been piloted at smaller scale with documented uptake; (3) the partner organisations bring infrastructure that reduces the funder’s operational risk. Two gaps in evidence: the pilot data is from a single site, and there is no formal cost-per-outcome figure yet.</p>
+<p><strong>You (pause, thinking):</strong> The single-site pilot point is the one that will sink the proposal if Step 2 builds on the current framing. I cannot fix the data, but I can change how I structure around it.</p>
+<p><strong>You (Step 2 prompt):</strong> Outline a proposal structure that addresses the three strongest arguments — but treat the single-site evidence as a known weakness up front, not a hidden risk. Put a short “Evidence base and its limits” section before the proposed approach. The structure should make the funder feel we have already done their scepticism for them.</p>
+</blockquote>
+<p><em>Without the pause, Step 2 would have produced a generic four-section outline. With it, the chain absorbs an evidence weakness the human spotted and turns it into a structural feature of the proposal. The AI did not know which of its findings was the load-bearing one. The human did.</em></p>
+</div>
+</div>
 </section>
 <section id="approach-3-interactive-chain" class="level3" data-number="9.2.3">
 <h3 data-number="9.2.3" class="anchored" data-anchor-id="approach-3-interactive-chain"><span class="header-section-number">9.2.3</span> Approach 3: Interactive Chain</h3>
