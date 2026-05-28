@@ -158,6 +158,19 @@ Next time you use AI for something substantial, open two sessions. In the first,
 :::
 
 
+## The Output Worth Reading
+
+When you ask AI to produce something — a draft, a plan, an analysis, a piece of code — there are two outputs in front of you. There is the artefact: the thing you asked for. And there is the natural language around it: the model's framing, its reasoning, its caveats, its assumptions about what you actually want.
+
+Most people read the artefact and skim the language. That is exactly backwards.
+
+The artefact is downstream. It is what the model produced given its understanding of your request. If the understanding is wrong, the artefact will be wrong in ways the artefact alone will not reveal. You will get something that looks right, that you cannot quite explain, and that subtly misses what you actually needed. The natural language is where the model tells you what understanding it arrived at. That is where you catch misalignment, before it hardens into a deliverable you then have to take apart.
+
+The implication is concrete: read the words. If the model's explanation of what it did does not match what you wanted, the artefact is wrong even if it looks correct. Steer the conversation by responding to the words, not just by revising the artefact. If the framing is verbose, tell it to be brief. If it is making assumptions you do not share, name them. If it is wrong, do not just delete the output — explain why it is wrong, and let the next attempt be informed by a shared understanding rather than a fresh start.
+
+This holds whether you have deep expertise or none at all. The expert uses the conversation to direct: here is the constraint, here is what you missed, this is why the obvious approach is wrong. The newcomer uses it to understand: explain that, break this down, what would happen if. Both are reading the words. Both are using the natural language as the place where alignment happens. The artefact is what arrives at the end. It is not what you should be watching most closely along the way.
+
+
 ## Why Your Existing Skills Already Transfer
 
 You might have noticed something familiar about the techniques in this book. Breaking a project into milestones. Writing a clear brief. Showing your working. Checking your answers. These are not new skills invented for AI. They are strategies humans have used to manage complexity for decades, in classrooms, in boardrooms, in software teams.
