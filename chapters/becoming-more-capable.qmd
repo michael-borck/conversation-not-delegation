@@ -62,6 +62,25 @@ The formula only works when both sides contribute. Strip out the AI and you lose
 This is why the conversational approach matters more than any specific technique. Techniques are useful. They give you structure, starting points, ways to get unstuck. But the real leverage comes from the relationship between your knowledge and the model's range. That relationship deepens every time you engage with it honestly.
 
 
+## When Competence Becomes Free
+
+There is an economic version of this argument, and it has become hard to ignore. We met its hard edge in @sec-agentic-loops; here is its fuller form.
+
+For most of working life, competent execution was scarce and therefore valuable. The clean report, the solid analysis, the well-built deck took skill and time, and being able to produce them reliably was a career. AI is collapsing that. It produces competent execution on demand, for everyone, at once. The thing that used to be scarce is becoming free.
+
+Follow that to its conclusion. If an AI can run your work brilliantly, it can run your competitor's work just as brilliantly, in the same way, with the same instincts. Generically high-quality output, available to everybody, is an advantage to nobody. When everyone has the same competence, competence stops being the differentiator. The middle of the distribution — the reliable, the professional, the average-done-well — is exactly what the model produces best, and exactly what is now worth least.
+
+What is left is variation. The model is built to produce the convincing centre of the distribution (@sec-what-are-llms); it cannot reliably produce the genuine edge, because the edge is not sitting in the training data as a pattern to interpolate. Your particular judgement, your point of view, the call that runs against the obvious answer, the taste that says *this one, not that one* — these are the things the average cannot generate, and so they are the things with value in a market full of competent averages. You end up caring far more about the taste of the person than about the entire apparatus built to deliver the work. The apparatus is commoditised. The judgement is not.
+
+> When competence is free, the only thing worth paying for is the judgement that competence cannot supply.
+
+Here is where the two arguments of this book turn out to be one. The cognitive case — that conversation compounds your capability and delegation erodes it — and the economic case — that variation is the only durable edge — are the same case from two directions. The capability that conversation builds in you *is* the variation the market cannot get from the model. Every time you push back instead of accepting, draft before you ask, and make the output yours, you are building the one asset that does not commoditise: a point of view the average does not contain.
+
+The risk runs the other way too, and it is worth naming plainly. The person who delegates everything becomes a conduit, passing along polished output they did not shape and cannot defend. A conduit adds no variation, because there is nothing of them in the work. In a world where the polished output is free, the conduit is the most replaceable person in the room — not because AI replaced them, but because they stopped adding the only thing that was ever theirs to add.
+
+There is an honest difficulty here, and the book will not pretend it away. The judgement that becomes so valuable was, for most of us, built by doing exactly the entry-level work that AI now does first and cheapest. If the rungs of the ladder are the first thing automated, how the next generation climbs to the judgement that the market will pay for is a genuine open problem — one this book cannot solve, only flag. What it can say is that the answer, whatever it turns out to be, will involve people doing the effortful thinking deliberately rather than having it forced on them by necessity. Which is, in the end, what this whole book has been asking you to do.
+
+
 ## What Does Not Compound
 
 Delegation does not compound.

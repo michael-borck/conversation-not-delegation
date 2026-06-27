@@ -99,6 +99,21 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 - Bender, E.M. et al. (2021). "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" *FAccT 2021*. A widely discussed paper on how training data biases propagate through LLMs, relevant to the book's warnings about not taking AI output at face value.
 
 
+### When the Loop Runs Itself
+
+**The jagged frontier and the evaluator's advantage:**
+
+- Dell'Acqua, F. et al. (2023). "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality." *Harvard Business School Working Paper 24-013*. The field experiment (with Boston Consulting Group) that named the "jagged frontier" — AI excelling at some tasks and failing unpredictably at adjacent ones — and showed that more experienced workers are better placed to tell which is which.
+
+**Agentic loops and harnesses (practitioner sources):**
+
+- Anthropic. "Effective Harnesses for Long-Running Agents." *Anthropic Engineering* (anthropic.com/engineering). How an external harness — structured files, end-to-end verification, persistent progress notes — compensates for an agent's lack of memory and reliable self-assessment across long-running tasks.
+
+- Karpathy, A. (2026). *autoresearch* [software]. GitHub. A minimal autonomous research loop: the agent edits training code, is scored by an evaluation it is forbidden to modify, and keeps or reverts each change. A clean illustration of an external, verifiable fitness function.
+
+- Huntley, G. "Ralph." *ghuntley.com/ralph*. The simplest possible agent loop and an honest practitioner account of where it works, where it fails, and why senior judgement remains essential.
+
+
 ## Part 3: The Methodology
 
 ### RTCF, VET, and the Prompt Structuring Frameworks
@@ -127,6 +142,10 @@ The underlying principles, however, are well-supported:
 
 - Madaan, A. et al. (2023). "Self-Refine: Iterative Refinement with Self-Feedback." *NeurIPS 2023*. Shows that iterative refinement consistently outperforms single-pass generation, supporting the book's argument that structured prompts are a starting point, not a destination.
 
+**The shift from prompt-craft to clear instruction:**
+
+- Mollick, E. (2024). *Co-Intelligence: Living and Working with AI*. New York: Portfolio. Argues that as models improve, the premium on specialised "prompt engineering" falls and the ability to give clear, human-style instructions becomes the transferable skill. This is the basis for the chapter's claim that briefing a capable frontier model is like briefing a competent colleague. (Listed again under *General Background*.)
+
 ### Prompt Chaining
 
 **Task decomposition:**
@@ -146,6 +165,17 @@ The underlying principles, however, are well-supported:
 **Formative self-testing (retrieval practice):**
 
 - Roediger, H.L. and Butler, A.C. (2011). "The Critical Role of Retrieval Practice in Long-Term Retention." *Trends in Cognitive Sciences*. The research basis for why testing yourself improves learning more than re-reading, the principle behind the Formative Self-Testing technique.
+
+
+## Part 4: Putting It Together
+
+### Becoming More Capable
+
+**The commoditisation of competence and the value of variation:**
+
+- Mollick, E. (2024). *Co-Intelligence: Living and Working with AI*. New York: Portfolio. Develops the argument that when AI makes high-quality output available to everyone, generic excellence stops being a competitive edge and human taste, judgement, and variation become the differentiators. The basis for this chapter's economic argument. (Also listed under *General Background* and Part 3.)
+
+- Dell'Acqua, F. et al. (2023). "Navigating the Jagged Technological Frontier." *Harvard Business School Working Paper 24-013*. Also relevant here: its finding that domain expertise determines who can evaluate AI output well underpins the chapter's claim that the expert, not the conduit, captures the value. (Full entry under Part 2, *When the Loop Runs Itself*.)
 
 
 ## General Background

@@ -116,6 +116,8 @@ This wrapping layer has a name: the **harness**. Commercial chat products like C
 
 This matters for two practical reasons. First, much of what feels like "the model getting smarter" between versions is actually the harness getting smarter, doing more work behind the scenes so you have to do less. Second, the same model behaves differently in different harnesses, and a prompt that works beautifully in one may need more scaffolding in another. When you read advice about "what AI does now," check whether the author means the model, the harness, or the product. The three change on different timelines.
 
+The harness is also where the most consequential development in AI is happening: harnesses that let the model *act* — run code, search, edit files — and increasingly do so in loops with little or no human involvement. This is what people mean by "agents." It raises the sharpest version of every question in this book, and @sec-agentic-loops takes it up directly.
+
 ## What Else Shapes the Output
 
 The harness is not the only thing between the raw model and the response you see.

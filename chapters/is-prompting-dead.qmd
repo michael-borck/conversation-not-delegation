@@ -1,0 +1,234 @@
+# Is Prompting Dead? {#sec-rtcf}
+
+![The spell stopped working. The clear question never needed one.](../images/comic-strip/08-rtcf.png){fig-alt="Comic strip: In panel one a stick figure dressed as a wizard waves a wand and chants an elaborate magic prompt at a computer — you are a world-class expert, take a deep breath, I will tip you 200 dollars — and gets a mediocre answer. In panel two a plain stick figure simply states what they need, the way you would brief a colleague, and gets an excellent answer. In panel three the wizard's hat falls off. Punchline: prompting is not dead, the magic words are."}
+
+> The clever prompt is dying. The clear question is not.
+
+You have probably heard it: prompt engineering is dead. The carefully worded incantations, the magic phrasings, the "you are a world-class expert" openers — all obsolete. The newest models, people say, just understand what you mean. Why learn a framework for talking to a machine that no longer needs one?
+
+There is something true in this, and something badly wrong. Both halves matter, because the part that is true changes how you should prompt, and the part that is wrong is the part this whole book depends on.
+
+So let's take the claim seriously and sort it out.
+
+> A clear prompt is not about pleasing the AI. It is evidence that you have thought clearly about what you need.
+
+
+## What Is Actually Dying
+
+The thing that is dying is **prompting as incantation**: the belief that there are secret words, and if you find them, the model performs better.
+
+For a while, this was partly real. Early models were brittle. They responded to surface tricks — elaborate personas, "take a deep breath and work step by step," threats and bribes, rigid templates. People traded these phrasings like spells, because the model's defaults were weak enough that the wrapping did real work.
+
+That era is closing on the frontier models. A current top-tier model running inside a thick product harness (@sec-what-are-llms) has strong defaults and has already done part of the role-setting before your prompt arrives. Stacking an elaborate persona on top of that often does nothing. The magic words have lost their magic, because the model no longer needs the spell.
+
+If "prompt engineering" means hunting for the phrasing that unlocks a better answer, then yes — for the best models, that game is mostly over. Good riddance. It was always closer to superstition than skill.
+
+But notice what that leaves untouched.
+
+
+## What Is Not Dying
+
+Two things survive, and they are the two that were ever worth anything.
+
+**The thinking behind the prompt.** A good prompt was never good because of its words. It was good because the person writing it had figured out who the right expert would be, what exactly they were asking for, what background mattered, and what shape the answer should take. That thinking is not a trick for the model. It is clarity for you. A model that no longer needs the scaffolding still cannot rescue a request from a person who has not decided what they actually want.
+
+**Supplying what the model cannot know.** The model has read more than you ever will. What it has not got is *your* situation: your deadline, your audience, the history behind the decision, the constraint that makes the obvious answer wrong, the voice you write in. No improvement in model capability closes that gap, because the gap is not about capability. It is about information the model has no access to until you provide it. As the models get better at everything else, this becomes the *whole* job.
+
+Put those together and you get the real answer to "is prompting dead?" The formatting half is fading. The thinking half is becoming more important, not less. What used to be a skill for handling a fussy machine is turning into the older, more durable skill of saying clearly what you need and what only you know.
+
+RTCF is how you do that. It is not a spell. It is a checklist for thinking.
+
+
+## RTCF: The Thinking Behind the Prompt
+
+RTCF is one of a family of prompt-structuring mnemonics that emerged as people worked out how to brief AI well. Others exist — CRAFT, CO-STAR, RISEN, and more — and they all capture the same insight: structured requests outperform unstructured ones, because structure forces you to supply what the model is missing. We use RTCF in this book because it is the simplest to remember and the quickest to apply. @sec-prompt-frameworks compares the alternatives.
+
+None of these frameworks are original inventions. They package practices professionals and educators have used for decades: writing a clear brief, specifying the audience, stating constraints. The contribution is in joining the dots for AI, not in discovering anything new. That is exactly why they survive the "prompting is dead" turn — they were never tricks in the first place.
+
+Four components, four questions.
+
+| Component | Question | Example |
+|---|---|---|
+| **Role** | Who should AI be? | "You are an experienced editor of academic writing..." |
+| **Task** | What should it do? | "Review my argument structure and identify weak transitions..." |
+| **Context** | What background? | "Final-year thesis, 8000 words, comparative politics..." |
+| **Format** | How should output look? | "Numbered list with specific paragraph references..." |
+
+: The RTCF framework: four questions that make you supply what the model is missing. {.striped}
+
+Role, Task, Context, Format. Before we recalibrate them for the model you are actually using, there is a principle worth naming: **one prompt, one job.**
+
+When you ask AI to do ten things at once, you get ten shallow results. When you ask it to do one thing well, you get depth. This is less about running out of space than about calibration: a prompt with ten tasks reads as a checklist, and the model answers in checklist mode — one thin line per item. A single focused task signals that it deserves real attention. Any time you catch yourself writing a prompt with "and" in it three times, consider splitting it. This connects to prompt chaining (@sec-prompt-chaining), but the principle holds even when you are not chaining.
+
+Now the part that the "prompting is dead" debate gets half-right.
+
+
+## Scaffold to the Model You Are Using
+
+Here is the rule that dissolves the whole argument: **the scaffolding you bring scales inversely with the model's capability.**
+
+A prompt framework is a kind of external structure you wrap around the model to make it dependable — a way of supplying the clarity, the constraints, and the shape the model will not reliably supply for itself. The weaker the model, the more of that structure it needs from you. The stronger the model, the more of it the model already brings.
+
+That gives you a practical sliding scale rather than a yes-or-no answer.
+
+| What you are using | How much RTCF to write | Why |
+|---|---|---|
+| A small or local model (anything you run yourself, anything below the frontier) | **All four, explicitly.** Role, task, context, format, spelled out. | Its defaults come from a smaller range of patterns. Without structure it guesses, and guesses narrowly. Structure compensates for capability. |
+| A current frontier model in a thick harness | **As much as you would give a competent human.** Often task and context are enough; role and format can stay implicit. | Its defaults are strong and the harness has done some of the role-setting already. A sharp brief beats an elaborate persona. |
+
+The frontier-model heuristic is the most useful thing to remember: **if you could hand this to a capable colleague and trust them to do it well, that same briefing is enough for a frontier model.** You would not tell a senior colleague "you are an experienced analyst" — you would tell them what you need, what it is for, and what you have already tried. Do that. The model can fill in the rest.
+
+This is why "prompting is dead" feels true to people who use the best models and false to people who run smaller ones. They are both reporting their experience accurately. The method has not changed. The amount of scaffolding has.
+
+But notice the trap in reading this as "frontier users can skip RTCF." The four questions are a *thinking* discipline as much as a prompting one. Asking *who would the right expert be, what exactly am I asking for, what do they need to know, how should this be shaped* sharpens your own thinking before the model touches the problem. That is valuable whether or not you type all four out. You can outgrow the template. You do not outgrow the questions.
+
+::: {.callout-note title="A note on Role and frontier models"}
+The **Role** component has lost the most ground. On current-frontier models, "You are a world-class strategist…" rarely beats a sharply specified task — the model's defaults are already strong, and an invented persona can even narrow its range. On smaller or locally-run models, Role still moves the needle. Either way, keep the *question* — *what kind of expert would I want here?* — as a thinking step, even when you no longer type the answer. See @sec-what-are-llms on the model-versus-harness distinction for why this shift is happening.
+:::
+
+
+## The Component That Survives Everything: Your Voice
+
+Of the four components, one does not fade no matter how good the model gets: **Context**. The model's capability has nothing to do with whether it knows your situation. And the deepest piece of context you can supply — the one that becomes more valuable precisely as the models converge on the same competent defaults — is your own voice.
+
+Recall what frontier models are good at: the average (@sec-what-are-llms). Ask for a blog post and you get something that reads like the median of every blog post the model absorbed. That is genuinely useful, and it is also why so much AI-assisted writing sounds the same: the staccato three-sentence rhythm, the fondness for em-dashes, the dramatic one-line paragraph, the tidy "it's not X, it's Y" construction. These are the tells of writing pulled toward the centre of the distribution. They are nobody's voice, which is to say they are the model's.
+
+Your voice is precisely what the model cannot infer and cannot generate. So supply it — deliberately, as context. There is a simple, reusable method for this.
+
+::: {.callout-note title="The voice profile method"}
+**Step 1 — Extract.** Paste a sample of your own writing (an email, an essay, a few paragraphs you are happy with) and ask the model to extract a *style profile* across five dimensions:
+
+```
+You are an expert writing style analyst. Read the text I provide
+and extract a detailed style profile across these dimensions:
+
+- Tone: the overall register (e.g. dry, warm, authoritative, playful)
+- Structure: sentence length, complexity, paragraph habits
+- Vocabulary: word-choice patterns (plain, academic, domain-specific)
+- Grammar: syntax quirks, active vs passive, punctuation habits
+- Quirks: the human fingerprints — contractions, favourite
+  transitions, anything that makes it sound like a person
+
+Here is my writing sample:
+[paste 300+ words of your own writing]
+```
+
+**Step 2 — Save it.** Keep the profile in a note. This is your reusable "style DNA" — you build it once.
+
+**Step 3 — Generate against it.** When you want a draft in your voice, paste the profile back in first:
+
+```
+Match this style profile exactly. [paste profile]
+Now draft a [format] about [topic].
+```
+
+**Iterate on the profile, not just the output.** If a draft sounds off, edit a dimension and regenerate. Combine several samples for a richer profile. On models that support custom instructions or memory, paste the profile there once and every future draft inherits your voice by default.
+:::
+
+This is the highest-leverage context you can give, and it gets more valuable as models improve, not less. When everyone has access to the same model producing the same competent average, the variation you inject — your voice, your perspective, the choices only you would make — is the thing that is still yours. We return to why that matters for your work, and not just your writing, in @sec-becoming-capable.
+
+One honest caveat, because it matters. This method circulated for years as a way to "beat AI detectors" — to disguise machine-written text as human. That is not what it is for here, and that use fails the test in @sec-staying-critical: if you could not comfortably explain how you produced something, you should not be producing it that way. The voice profile is for the opposite purpose — making AI-assisted drafts sound like *you* so you can own them honestly, edit them as your own, and stand behind them. You are not hiding the tool. You are keeping the writing yours.
+
+::: {.callout-tip title="Try the voice profile"}
+[**Style Mirror**](https://stylemirror.eduserver.au){target="_blank"} runs this workflow for you — paste your writing, extract your style DNA, edit any dimension, and generate against it. It is client-side, provider-agnostic (it works with free Gemini keys or a local model through Ollama), and stores nothing. Or just run the three prompts above by hand in any chat tool. The method matters more than the tool.
+:::
+
+
+## A Worked Example
+
+The difference between a bare prompt and an RTCF brief is not length. It is clarity of thought. Here is a postgraduate student getting help with a literature review.
+
+**Without RTCF:**
+
+> "Help me with my literature review."
+
+**With RTCF:**
+
+> **Role:** You are an academic writing mentor experienced in helping postgraduate students develop critical literature reviews.
+>
+> **Task:** Review the following three-paragraph draft and identify where I am summarising sources instead of synthesising them. Suggest how to restructure each paragraph around a theme rather than a source.
+>
+> **Context:** This is for a Master's dissertation in environmental policy, on competing frameworks for measuring urban resilience. My supervisor said the current draft reads like a list of summaries.
+>
+> **Format:** For each paragraph, give: (1) the problem in one sentence, (2) a suggested restructure, (3) a model opening sentence that demonstrates synthesis. Keep it under 500 words.
+
+The bare prompt produces a generic explainer on how literature reviews work. The RTCF version gets feedback on *her* draft, in her discipline, addressing the exact weakness her supervisor flagged. None of that came from clever phrasing. It came from her deciding what she actually needed before she asked.
+
+And — this is the part the "perfect prompt" mindset misses — the structured prompt is the *start* of the conversation, not the end.
+
+::: {.callout-note title="What happens after the RTCF prompt"}
+> **AI:** [Identifies three paragraph-level problems. On paragraph 2:] "You introduce three studies but treat each as a self-contained summary. Restructure: open with the shared question — 'How does urban density mediate flood resilience?' — then bring each study in as a different angle on it."
+>
+> **You:** The paragraph 2 restructure is good, but that isn't actually what those three studies share. Two of them are about heat resilience, not flooding. The common thread is *which dimension of resilience the framework prioritises*. Try again with that as the organising question.
+>
+> **AI:** That shifts it. Open paragraph 2 with: "Each framework foregrounds a different dimension of resilience, which shapes what counts as success." Then Smith (heat), Chen (flood), and Patel (multi-hazard) become three angles on that one question. The synthesis move is making the framework's *priorities* visible, not comparing findings.
+
+*The RTCF prompt got a competent first pass. The conversation got the right one. The AI was working from generic patterns about synthesis; the student was working from her actual reading. No prompt, however well engineered, could have supplied that correction in advance.*
+:::
+
+
+## RTCF Is a Scaffold, Not a Script
+
+The good frameworks teach you how to think, then get out of the way.
+
+When you first use RTCF, treat it as a literal checklist. Write out each letter, fill in the component. It feels mechanical. That is fine — the mechanical stage is how the habit forms. After a few dozen prompts, something shifts. You stop thinking "R, then T, then C, then F" and start thinking "what does the model need from me to help here?" You weigh role, task, context, and format the way an experienced cook stops measuring and starts tasting.
+
+This is the same arc as the "prompting is dead" story, seen from the inside. Frontier-model users who feel they have moved past prompt frameworks have not abandoned the questions — they have internalised them. They still supply the context. They still scope to one job. They just no longer type the labels. That is not the death of the skill. It is the skill becoming fluent.
+
+You will know you have internalised RTCF when you can feel that a prompt is missing something before you send it. That instinct is worth more than any framework. RTCF just gets you there faster.
+
+::: {.callout-tip title="Remember"}
+RTCF is a scaffold, not a script. Write it out until the four questions become second nature, then let the labels go. The questions stay.
+:::
+
+
+## From Prompt to Conversation
+
+There is a deeper reason the "perfect prompt" mindset was always a dead end, and it has nothing to do with which model you use.
+
+Prompt engineering, as it was usually taught, treated the interaction as a transaction: craft the perfect input, receive the finished output. One shot, one response. If the output was not good enough, you engineered a better prompt and tried again. The mental model was a vending machine — put in the right coins, get the right product.
+
+This is delegation dressed up as skill. The thinking is still being outsourced; it is just outsourced more precisely. And it is why one-shot prompting tends toward average output: when you ask one question and take the first answer, you get the most probable response — polished, plausible, generic. The median of everything the model learned. Your specific context shapes it only as far as you managed to compress into that single prompt.
+
+Conversation changes this. RTCF gives you a strong opening, but the opening is not the destination. The first response is material to work with, not a deliverable to accept. You push back, refine, redirect. Each exchange narrows the space, moving the output from generic toward yours. By the third or fourth turn you are in territory no one-shot prompt, however engineered, could have reached.
+
+So when do you stop at one prompt? When the task is genuinely simple — a quick definition, a format conversion, a list to react to. Sometimes you just need the vending machine. But when the work involves judgement, nuance, or consequences, a single prompt is a starting point. RTCF helps you start well. The conversation is what makes the output worth using.
+
+Think of it as a sequence. RTCF is how you open the conversation. Prompt chaining (@sec-prompt-chaining) is how you sustain it. The techniques in @sec-techniques are specific shapes it can take. The critical habits in @sec-staying-critical are how you judge what comes back. So: is prompting dead? The spell-casting is. The thinking — opening a conversation well and supplying what only you can — has never mattered more.
+
+
+## RTCF Quick Reference Card
+
+```
++-----------------------------------------------+
+|            RTCF PROMPT FRAMEWORK              |
++---------------+-------------------------------+
+| R - ROLE      | Who should the AI be?         |
+|               | (Frontier model? Often skip.) |
++---------------+-------------------------------+
+| T - TASK      | What should it do?            |
+|               | Use action verbs: Analyse,    |
+|               | Compare, Create, Evaluate...  |
++---------------+-------------------------------+
+| C - CONTEXT   | What does it need to know?    |
+|               | The one that never fades.     |
+|               | Domain, constraints, audience,|
+|               | your voice.                   |
++---------------+-------------------------------+
+| F - FORMAT    | How should output look?       |
+|               | Structure, length, style      |
++---------------+-------------------------------+
+```
+
+::: {.callout-tip title="Try the interactive tools"}
+The companion website includes two tools for practising RTCF in your browser. The [**RTCF Prompt Builder**](../tools/prompt-builder.html){target="_blank"} walks you through each component and assembles a structured prompt you can copy anywhere. The [**RTCF Prompt Analyser**](../tools/rtcf-analyser.html){target="_blank"} lets you paste any prompt and see which elements are present, partial, or missing — useful for diagnosing why a prompt gave you a vague answer. No login, no data stored.
+:::
+
+
+## Key Takeaways
+
+1. **The clever prompt is dying; the clear question is not.** What is fading is prompting-as-incantation. What survives is the thinking behind the prompt and the context only you can supply.
+2. **Scaffold to the model.** Full RTCF for small and local models; for a frontier model, brief it as you would a capable colleague. Same method, different amount of structure.
+3. **Context is the component that never fades** — and your voice is its highest-leverage form. Build a reusable style profile and supply what the model cannot infer.
+4. **RTCF is a thinking discipline, not a template.** Outgrow the labels, keep the four questions.
+5. **The prompt is the start of a conversation, not the end of a transaction.** When the work matters, one shot is an opening move.

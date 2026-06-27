@@ -24,9 +24,10 @@ book:
         - chapters/the-conversation-loop.qmd
         - chapters/ai-last.qmd
         - chapters/staying-critical.qmd
+        - chapters/when-the-loop-runs-itself.qmd
     - part: "Part 3: The Methodology"
       chapters:
-        - chapters/rtcf.qmd
+        - chapters/is-prompting-dead.qmd
         - chapters/prompt-chaining.qmd
         - chapters/seven-techniques.qmd
         - chapters/using-ai-to-help-you-use-ai.qmd

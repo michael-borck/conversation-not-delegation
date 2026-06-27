@@ -28,9 +28,10 @@ The book is organized into the following sections:
 - The Conversation Loop
 - AI Last
 - Staying Critical
+- When the Loop Runs Itself
 
 ### Part 3: The Methodology
-- RTCF: Starting Conversations Well
+- Is Prompting Dead?
 - Prompt Chaining: Building on What You Started
 - Eight Techniques for Deeper Thinking
 - Using AI to Help You Use AI
