@@ -109,6 +109,36 @@ The online version is always the most current. The printed and ebook editions ar
 
 ## The Sibling Book
 
+```{mermaid}
+%%| fig-width: 4
+flowchart TD
+    CND["Conversation,<br/>Not Delegation<br/>(no code needed)"]
+    Think["Think Python,<br/>Direct AI<br/>(complete beginners)"]
+    CPPA["Converse Python,<br/>Partner AI<br/>(methodology)"]
+    Code["Code Python,<br/>Consult AI"]
+    Ship["Ship Python,<br/>Orchestrate AI"]
+    Web["Build Web,<br/>Guide AI"]
+    CND --> CPPA
+    Think --> Code
+    CPPA -. read alongside .-> Code
+    Code --> Ship
+    CND --> Web
+    Think --> Web
+```
+
+Two ways in: start with *Conversation, Not Delegation* if you want the ideas before (or without) code, or start with *Think Python, Direct AI* if you want to code from your first page. The methodology in *Converse Python, Partner AI* enhances every path.
+
+- **Conversation, Not Delegation** — the general methodology for working with AI across any discipline. No code required; the broadest entry point.
+- **Think Python, Direct AI** — computational thinking for absolute beginners. The entry point if you want to code from the start.
+- **Converse Python, Partner AI** — the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.
+- **Code Python, Consult AI** — focused Python fundamentals through AI conversation.
+- **Ship Python, Orchestrate AI** — professional Python development practices and tooling.
+- **Build Web, Guide AI** — web development with AI as your development partner.
+
+All titles are available at [books.borck.education](https://books.borck.education).
+
+You are reading *Conversation, Not Delegation*, the general methodology that underpins the series.
+
 This book has a companion: *Converse Python, Partner AI*, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place.
 
 Both books are independently complete. You do not need one to benefit from the other.
