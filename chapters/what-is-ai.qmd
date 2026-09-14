@@ -105,13 +105,9 @@ For anything that matters, start with a tool where you write the prompt yourself
 
 Large language models are the AI technology this book is about. That is what the next chapter covers.
 
-::: {.callout-tip title="Where should you start?"}
-If you are not sure which parts of this book are most relevant to your current experience level, the **[AI Readiness Assessment](../tools/ai-readiness-quiz.html){target="_blank"}** on the companion website is a short quiz (3--4 minutes) that maps where you are and recommends which chapters to prioritise.
-:::
+## Check Your Mental Model
 
-## Take it to the AI
-
-**Where to start.** Three questions worth arguing about rather than looking up:
+Use these questions to find where your current picture of AI is still vague:
 
 1. Ask the AI to describe something it cannot do, then ask it to attempt that thing anyway. Compare what it does to the disclaimer it just gave you.
 2. Ask what kind of AI is actually inside three products you use daily. Some will be rule-based, some machine learning, some a language model, and the marketing will not tell you which.

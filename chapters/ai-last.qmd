@@ -110,9 +110,9 @@ The average-versus-precise, small-versus-large framework from @sec-what-are-llms
 Give AI a vague prompt, then rewrite it with specific context, audience, and purpose. Compare the two outputs. The difference between them is not the AI getting smarter. It is your thinking making the AI useful.
 :::
 
-## Take it to the AI
+## Work Before Prompting
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Pick a current problem and spend ten uninterrupted minutes on it first. Only then use these questions:
 
 1. Solve something yourself first, then ask the AI, then ask what it would have produced from a cold start. Compare the two and notice which one sounds like you.
 2. Ask it to name the sticking point in a problem you describe. If it can name the sticking point for you, you had not narrowed the problem enough yourself.

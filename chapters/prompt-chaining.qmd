@@ -301,9 +301,9 @@ Not every task needs a chain. Skip it when:
 
 The power of prompt chaining is not in any individual step. It is in how each step builds on the previous one, refining your thinking as you go. That is what makes the output yours, not the AI's.
 
-## Take it to the AI
+## Practise the Checkpoints
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Use one ongoing task and preserve the intermediate answers rather than jumping to the end:
 
 1. Take a chain you have run and ask the AI which link carried the most weight. That is where your review time should have gone, and it is rarely where it went.
 2. In a long conversation, ask what it has dropped since the early exchanges. Context loss is invisible until you ask about it directly.

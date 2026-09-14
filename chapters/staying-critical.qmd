@@ -167,24 +167,34 @@ When you type a prompt into a consumer AI tool, that text leaves your device. De
 
 The practical rules are simple:
 
-- **Never paste confidential information into a free or consumer AI tool.** If you would not post it on social media, do not paste it into a prompt.
+- **Never paste confidential information into an unapproved AI tool.** Price is not the test. Use the tools and data classifications your organisation has approved.
 - **De-identify before you prompt.** Replace real names with "Client A." Replace specific figures with ranges. Remove anything that could identify a person or organisation.
-- **Know the difference between consumer and enterprise tools.** Enterprise AI platforms (your organisation's licensed tools) typically offer data protection guarantees. Free-tier consumer tools typically do not. If you are unsure which you are using, treat it as consumer.
+- **Check the product, plan, settings, and connected services.** Consumer products may let you opt out of model training; business products commonly make no-training commitments by default. Retention, administrator access, memories, connectors, and third-party actions are separate questions. Read the current terms rather than inferring protection from an "enterprise" label.
 - **When in doubt, use fictional scenarios.** You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.
 
 This is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.
 
 But it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.
 
-### What the Risks Are Not
+### Keep the Risks Distinct
 
-The most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model's behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users' conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack. And recall the key point from @sec-what-are-llms: LLMs interpolate, they do not retrieve. There is no mechanism by which another user could query the model and get your document back, because the model never stored it as a document in the first place.
+Jailbreaking a model is not the same thing as opening a database of every user's conversations. That distinction is useful, but it does not make disclosure impossible. A service may retain prompts, expose them through account or workspace permissions, pass selected content to connected tools, or use eligible conversations for training. Prompt injection can also make an AI system disclose information that its tools or retrieval layer can access. Separately, researchers have demonstrated that language models can sometimes reproduce memorised training examples when prompted appropriately ([Carlini et al., 2021](https://arxiv.org/abs/2012.07805)). The likelihood and mechanism differ, but "the model does not store files like a document database" is not a privacy guarantee.
+
+Provider policy also depends on the product and settings. [OpenAI's current
+business-data guidance](https://openai.com/business-data/) says its business
+products and API are not used for training by default, while [its consumer
+guidance](https://openai.com/policies/how-your-data-is-used-to-improve-model-performance/)
+describes opt-out controls. [Anthropic's commercial privacy guidance](https://privacy.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
+makes a similar no-training-by-default commitment for commercial products.
+Those policies can change and they do not answer every question about retention
+or access. Check the current terms, your organisation's policy, and the
+sensitivity of the data before you submit it.
 
 You will also hear stories of convergent development mistaken for theft: "I was working on an idea using AI, and then the company released something similar." Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.
 
 ### What the Risks Are
 
-The risks that matter are practical and specific. Pasting personally identifiable information into any external tool is a genuine compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) is subject to legislation that applies to AI tools just as it applies to email. Credentials and access tokens pasted into a prompt are an immediate security exposure. And using unverified AI output in high-stakes professional contexts is a liability issue, though that is a verification problem, not a data leakage problem.
+The risks that matter are practical and specific. Pasting personally identifiable information into an unapproved external tool can create a compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) remains subject to the rules that govern it. Credentials and access tokens pasted into a prompt are an immediate security exposure. Connected tools create another path: a model may be able to retrieve or transmit material that the base model could not access on its own. Using unverified AI output in high-stakes professional contexts adds a separate reliability and accountability risk.
 
 ### The Risk of Not Using It
 
@@ -225,9 +235,9 @@ Before acting on AI output that matters, ask: Can I verify the key claims? Can I
 
 Stay in the conversation. Stay critical. They are the same instruction.
 
-## Take it to the AI
+## Run the Self-Check
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Apply the table above to a real output, then probe the warning signs:
 
 1. Ask the AI to evaluate the same piece of your work twice: once with "what do you think?" and once with "what are the three weakest points?" The gap between the two answers is the sycophancy you normally never see.
 2. Run the inherited-defaults exercise from this chapter, then ask the model what assumptions it made about the character that it would not have made for a different role. It can surface its own defaults, but only when asked.

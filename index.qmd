@@ -40,7 +40,15 @@ That is worth naming. Many people experience a quiet anxiety: a sense that every
 
 ## How This Book Is Structured
 
-Part 1 gives you enough understanding of AI and large language models to use them well. Part 2 establishes the principles that make AI conversations productive rather than passive. Part 3 gives you practical tools and techniques you can use immediately. Part 4 shows it all working together across disciplines, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.
+Part 1 begins with the delegation trap, then gives you enough understanding of AI and large language models to recognise why that trap is so tempting. Part 2 establishes the principles that make AI conversations productive rather than passive: think first, work in a conversation loop, stay critical, and verify what matters. Part 3 turns those principles into practical prompting methods and techniques you can use immediately. Part 4 shows the approach working across disciplines, offers an optional advanced chapter on autonomous loops, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.
+
+By the end, you should be able to:
+
+- decide whether a task calls for mechanical delegation, conversation, a more reliable non-AI tool, or no AI at all;
+- frame a useful starting request without mistaking prompt structure for judgement;
+- identify and redirect a plausible but unsuitable response;
+- verify the claims that carry real consequences; and
+- produce a record showing which parts came from the tool, which decisions were yours, and why you can defend the result.
 
 ## How to Read This Book
 
@@ -70,7 +78,7 @@ Throughout the book you will encounter coloured callout boxes. Each serves a dif
 
 You will also find tables throughout the book that compare approaches, map strategies across domains, or summarise frameworks. These are reference material, worth bookmarking, not just reading once.
 
-Every chapter closes with **Take it to the AI**. A book about conversation should end each chapter by handing you one. Each section gives you a few questions worth arguing about, the keywords that let you steer a conversation you cannot yet phrase, and a starting prompt written out in full. Those prompts use RTCF (Role, Task, Context, Format), which @sec-rtcf covers properly; you do not need to have read that chapter first, because the four labels do most of the explaining themselves. Write all four if you are running a small model on your own machine, the kind with a few billion parameters that fits on a laptop; its defaults come from a narrower range, and the structure is doing work the model will not do for you. On a current frontier model the Task and Context lines are usually enough on their own, and the rest is a checklist for your own thinking. Either way, the first answer is where the conversation starts. Push back on it. That is the whole book in one habit.
+Most chapters close with a short practice section. Early chapters provide complete RTCF starting prompts; later chapters increasingly ask you to begin without AI, evaluate evidence, or transfer the method to your own work. RTCF (Role, Task, Context, Format) is covered properly in @sec-rtcf and summarised in @sec-quick-reference. The structure is scaffolding, not a ritual. Use only the elements that clarify your task, then push back on the first answer.
 
 ## How This Book Was Written
 
@@ -104,7 +112,6 @@ A book about conversation should be available in more than one form. Pick the fo
 - **Converse with it.** The online edition includes a chatbot grounded in the book's content. Ask it questions, challenge its answers, and practise the methodology on the methodology itself. You can also use the `llm.txt` file to paste the entire book into ChatGPT, Claude, or any AI tool for a deeper conversation.
 - **Listen to it.** Upload the `llm.txt` file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content.
 - **Explore the source.** The full source is on [GitHub](https://github.com/michael-borck/conversation-not-delegation), including every chapter, the build system, and the revision history. [DeepWiki](https://deepwiki.com/michael-borck/conversation-not-delegation) provides an AI-navigable view of the repository.
-- **Practise the frameworks.** The companion site includes three interactive tools that run in your browser: no login, no data stored. The **RTCF Prompt Builder** walks you through constructing prompts step by step using the framework from @sec-rtcf. The **RTCF Prompt Analyser** lets you paste any prompt and get instant feedback on which elements are present, partial, or missing. That is useful for diagnosing why a prompt gave a vague response. The **AI Readiness Assessment** is a short quiz that maps your current experience level and recommends which chapters to prioritise. See @sec-interactive-tools for details.
 - **Browse all books.** This book is part of a series. See all titles at [books.borck.education](https://books.borck.education).
 
 The online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.

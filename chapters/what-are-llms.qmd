@@ -163,9 +163,9 @@ The difference between someone who uses AI well and someone who uses it poorly i
 
 That understanding is exactly what the next chapter builds on. Knowing what LLMs are, and are not, is the foundation for learning how to work with them. The question is not "what can AI do for me?" but "how should I think alongside this thing?" Chapter 3 takes up that question directly.
 
-## Take it to the AI
+## Test the Boundary
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Choose a task you know well enough to judge, then test these distinctions:
 
 1. Ask for a citation on something in your own field, then go and look it up. This is the cheapest possible way to feel what "fluency and accuracy come from the same process" actually means.
 2. Ask it to explain the difference between interpolation and retrieval using an example from your work rather than a generic one.

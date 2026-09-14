@@ -330,9 +330,9 @@ You do not need to master all eight techniques. Pick the one that fits your curr
 
 Start with whichever technique matches the kind of thinking you need to do right now. Try it once. Modify the prompt. Try it again. These are conversation starters, not scripts.
 
-## Take it to the AI
+## Choose One Technique
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Do not run all eight. Choose the one that addresses a real weakness in your current task:
 
 1. Pick one technique and run it on a decision you are actually facing. Then ask the AI which of the other seven would have suited the problem better, and why yours was the wrong first choice.
 2. Run the Expert Panel, then ask which panellist it found hardest to write. The thin one marks a perspective the model does not hold well, and that is where you should be most sceptical of it.

@@ -220,11 +220,6 @@ Think of it as a sequence. RTCF is how you open the conversation. Prompt chainin
 +---------------+-------------------------------+
 ```
 
-::: {.callout-tip title="Try the interactive tools"}
-The companion website includes two tools for practising RTCF in your browser. The [**RTCF Prompt Builder**](../tools/prompt-builder.html){target="_blank"} walks you through each component and assembles a structured prompt you can copy anywhere. The [**RTCF Prompt Analyser**](../tools/rtcf-analyser.html){target="_blank"} lets you paste any prompt and see which elements are present, partial, or missing. That is useful for diagnosing why a prompt gave you a vague answer. No login, no data stored.
-:::
-
-
 ## Key Takeaways
 
 1. **The clever prompt is dying; the clear question is not.** What is fading is prompting-as-incantation. What survives is the thinking behind the prompt and the context only you can supply.

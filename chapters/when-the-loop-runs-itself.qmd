@@ -5,9 +5,13 @@ Comic strip for this chapter: generate the image from the prompt recorded in ima
 ![The loop ran all night. Nobody told it what better meant.](../images/comic-strip/when-the-loop-runs-itself.png){fig-alt="Comic strip: In panel one a stick figure types a vague goal (make it better, go) then sets a loop running, and walks off to bed looking pleased. In panel two, overnight, a small robot spins through an endless cycle of arrows while a token counter ticks upward, confidently improving something with no one checking. In panel three it is morning and the figure returns to a tall stack of polished output stamped done that is subtly, completely wrong. Punchline: a loop is only as good as the test it can't talk its way past."}
 -->
 
-# When the Loop Runs Itself {#sec-agentic-loops}
+# When the Loop Runs Itself (Advanced and Optional) {#sec-agentic-loops}
 
 > A loop is only as good as the test it cannot talk its way past.
+
+::: {.callout-note title="An optional advanced chapter"}
+This chapter extends the book's conversation-loop principles to autonomous agents and unattended workflows. You can skip it on a first reading without losing the thread; continue to @sec-becoming-capable if you want to stay with the book's core method.
+:::
 
 There is a claim moving through the AI world that sounds like the natural next step after everything in this book so far: stop prompting, start looping. Do not write prompts at all. Write a *loop* (a goal, a trigger, and a way to check the result) and let an agent run it until the goal is met. You stop being the operator and become the architect of a fleet of self-correcting workers. The human bottleneck disappears.
 
@@ -43,7 +47,7 @@ Notice what all three share. The model proposes; something *outside the model* d
 
 Here is the question that decides whether a loop is sound or a slow-motion disaster: **when the loop checks its own work, what is doing the checking?**
 
-There are only two answers, and your CST instinct, the difference between verifying against the world and asking the model to grade itself, is exactly the right lens.
+There are only two answers, and the critical-thinking instinct developed in the previous chapters—the difference between verifying against the world and asking the model to grade itself—is exactly the right lens.
 
 **An external, verifiable oracle.** A test suite that passes or fails. A page that loads in under two seconds or does not. A validation metric computed by code the agent cannot edit. A browser script that completes a checkout or errors. These are oracles the model *cannot talk its way past*. When the fitness function is one of these, the loop is genuinely powerful, and you should use it. This is delegation of the right kind, mechanical and bounded and checkable, at a scale no human could match.
 
@@ -120,9 +124,9 @@ Ask what the loop is optimising and who can check it. If the answer is a real, e
 
 We do not know how far the automation goes. That uncertainty is honest and worth holding. But in every version of the future that is actually being built, two things stay true: you automate freely on the verifiable side of the line, and on the other side, the variation only you can bring is the whole of your edge. The rest of this book (the methods that follow, and the argument it closes on, @sec-becoming-capable) is about building exactly that.
 
-## Take it to the AI
+## Stress-Test an Automated Loop
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Sketch the trigger, judge, stopping condition, and human override before discussing implementation:
 
 1. Take a task you would like to automate and ask what external oracle could judge the result. If the only available judge is another model, you already have your answer.
 2. Ask it to manufacture a hard check for a soft goal. That translation, from "is this good?" into something a machine can fail, is where the real work sits.

@@ -126,22 +126,27 @@ In every example, the turning point was a moment where the human rejected or red
 
 Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases, and the human was the bridge between them. This is the two-chat workflow (@sec-two-chat-workflow) in action, whether or not the person literally used two sessions.
 
-## Take it to the AI
+## Your Capstone: Produce an Owned Decision
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Choose one real task whose outcome matters to you. It should be small enough to finish, but consequential enough that you would not accept a plausible answer blindly. Your deliverable is not the AI output. It is a one-page record of the judgement you exercised.
 
-1. Run the loop on a real task from your own field and note the exact point where you rejected the AI's output. That rejection point *is* the method; everything else is scaffolding around it.
-2. Ask it to walk your discipline's version of one of the four worked examples, then check whether its account of how your field actually works rings true. Where it does not is where you will need to supply the most context.
-3. Ask what it would need to know about your situation to stop giving you the generic version. Then supply exactly that, and run the same request again.
+Begin without AI:
 
-**Keywords to steer with.** brainstorm, ideate, iterate, amplify across domains · domain knowledge as the input · the steering decision · rejecting the first draft · thinking versus building phases · the human as bridge
+1. State the decision or outcome you need.
+2. Write your starting position and what you already know.
+3. Name what must be precise, what evidence would change your mind, and what you will not delegate.
 
-**A starting prompt.**
+Then run the task through the Conversation Loop. Keep only the exchanges that changed the work. Your record should show:
 
-> **Role:** You are a practitioner in my field who has used AI on this kind of work and is willing to say where it did not help.
->
-> **Task:** Walk me through how you would run the conversation loop on the task I describe, stopping at the point where your own judgement would override the model.
->
-> **Context:** I have read a chapter showing the loop applied across writing, analysis, planning and communication, and arguing that the turning point is always a moment where the human rejects the output for a reason only they hold. My field is [name it]. My task is [describe it].
->
-> **Format:** The four stages in order, with what you would ask at each. Mark the stage where you would expect to reject the AI's output, and say what knowledge that rejection would rest on.
+- your initial RTCF request;
+- one response you rejected or materially redirected;
+- the knowledge or value behind that intervention;
+- one consequential claim you verified independently;
+- the final decision in your own words; and
+- what you can now explain or do without the AI that you could not before.
+
+::: {.callout-tip title="Capstone success check"}
+The work is complete when another person can see where the AI contributed, where your judgement overruled or redirected it, what evidence you checked, and why you are prepared to own the result. A polished output without that trail does not pass.
+:::
+
+If you cannot use an AI tool, run the same exercise with a colleague, a published argument, or two deliberately opposed drafts. The capability being assessed is critical conversation, not access to a particular product.

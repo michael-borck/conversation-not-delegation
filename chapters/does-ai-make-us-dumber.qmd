@@ -215,9 +215,9 @@ But it's the honest position. And honest positions, in the long run, serve us be
 
 > Cognitive offload isn't the enemy. Cognitive abdication is.
 
-## Take it to the AI
+## Audit One Habit
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Before opening an AI tool, write down one task you now offload routinely. Then consider:
 
 1. Ask the AI to make the strongest case that it is deskilling you. Then ask what evidence would settle the question, and whether that evidence exists yet. The honest answer is that it mostly does not.
 2. Ask what the calculator analogy gets right and what it gets wrong. The second half is where the argument actually lives.

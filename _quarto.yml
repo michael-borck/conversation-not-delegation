@@ -1,8 +1,6 @@
 project:
   type: book
   output-dir: _book
-  resources:
-    - tools/**
 
 book:
   title: "Conversation, Not Delegation"
@@ -20,32 +18,31 @@ book:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"
       chapters:
+        - chapters/the-delegation-trap.qmd
         - chapters/what-is-ai.qmd
         - chapters/what-are-llms.qmd
-        - chapters/the-delegation-trap.qmd
         - chapters/does-ai-make-us-dumber.qmd
     - part: "Part 2: Principles"
       chapters:
-        - chapters/the-conversation-loop.qmd
         - chapters/ai-last.qmd
+        - chapters/the-conversation-loop.qmd
         - chapters/staying-critical.qmd
-        - chapters/when-the-loop-runs-itself.qmd
+        - chapters/vet-your-ai.qmd
     - part: "Part 3: The Methodology"
       chapters:
         - chapters/is-prompting-dead.qmd
         - chapters/prompt-chaining.qmd
         - chapters/seven-techniques.qmd
         - chapters/using-ai-to-help-you-use-ai.qmd
-        - chapters/vet-your-ai.qmd
     - part: "Part 4: Putting It Together"
       chapters:
         - chapters/conversations-across-disciplines.qmd
+        - chapters/when-the-loop-runs-itself.qmd
         - chapters/becoming-more-capable.qmd
   appendices:
     - appendices/a-craft-framework.qmd
     - appendices/b-quick-reference.qmd
     - appendices/c-further-reading.qmd
-    - appendices/d-interactive-tools.qmd
     - about-author.qmd
   other-links:
     - text: Download PDF
@@ -66,15 +63,6 @@ book:
     - text: All Books
       icon: collection
       href: https://books.borck.education
-    - text: RTCF Prompt Builder
-      icon: pencil-square
-      href: tools/prompt-builder.html
-    - text: RTCF Prompt Analyser
-      icon: clipboard-check
-      href: tools/rtcf-analyser.html
-    - text: AI Readiness Quiz
-      icon: question-circle
-      href: tools/ai-readiness-quiz.html
     - text: Amazon
       icon: cart
       href: https://www.amazon.com.au/dp/B0GTF9F4Q2

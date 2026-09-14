@@ -161,9 +161,9 @@ But start here. Let AI help you figure out what you actually need.
 
 Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.
 
-## Take it to the AI
+## Ask for a Consultation
 
-**Where to start.** Three questions worth arguing about rather than looking up:
+Bring a real task, but make the first exchange about diagnosing how AI could help:
 
 1. Run the consultation prompt, then notice which of its questions was hardest to answer. That difficulty is telling you something about your work, not about the prompt.
 2. Let it interview you, then ask what it thinks your actual job is. The mismatch between its description and yours is the interesting part.

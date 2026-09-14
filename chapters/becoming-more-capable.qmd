@@ -124,22 +124,12 @@ It was to become more capable yourself.
 
 That is the practice. That is the point. And if you have read this far, you already know how to begin.
 
-## Take it to the AI
+## Take Stock Without AI
 
-**Where to start.** Three questions worth arguing about rather than looking up. They are the last ones the book asks, so make them count:
+Return to the capstone record from @sec-across-disciplines. Without opening an AI tool, answer three questions:
 
-1. Ask the AI what you would still be able to do if it disappeared tomorrow. It can only answer from what you tell it, which is itself the exercise.
-2. Ask it to argue that the compound-capability claim in this chapter is unproven. The chapter concedes as much; see whether the AI finds the same limits or invents different ones.
-3. Ask what your own variation is: the judgement that competent averages cannot supply. Reject the first answer, which will be generic, and the second, which will be flattering.
+1. What can you now explain or do that you could not at the beginning?
+2. Which intervention depended on your experience, values, or knowledge?
+3. If the tool disappeared tomorrow, which capability would remain?
 
-**Keywords to steer with.** the compound loop · augmentation versus dependence · your expertise plus AI's breadth · competence becoming free · variation as the edge · the conduit · the ladder problem · deliberate practice · agency and human-in-the-loop
-
-**A starting prompt.**
-
-> **Role:** You are a career coach who does not deal in reassurance and has read the same predictions everybody else has.
->
-> **Task:** Help me work out what my variation actually is: the judgement in my work that a competent average could not supply. Interrogate my first three answers before accepting any of them.
->
-> **Context:** I have read a chapter arguing that when competent execution becomes free, the only durable edge is the point of view a model cannot generate. My role is [describe it]. My first answer to "what is my variation" is [state it], and I already suspect it is too generic.
->
-> **Format:** Push back on each answer I give, naming why it is still generic. When something survives three rounds of challenge, state it back to me in one sentence, and tell me what evidence would prove I actually have it.
+Write the answers before discussing them with anyone or asking a model to evaluate them. This is the book's final test because the capability was always meant to become yours.
