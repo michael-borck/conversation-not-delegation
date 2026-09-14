@@ -77,7 +77,7 @@ When you ask AI to interview you before making recommendations, several useful t
 
 **AI can evaluate its own suggestions.** Once it generates a list, you can ask it to assess which are most feasible, identify trade-offs, refine implementation steps, or suggest variations. This lets you iterate toward something practical rather than accepting the first answer.
 
-**It is a conversation, not a lecture.** Unlike reading a guide or sitting through a workshop, you are actively shaping the advice by answering questions honestly, pushing back on ideas that do not fit, and exploring what is actually possible. The back-and-forth is where the useful stuff tends to surface. And because you are in control of the conversation, you can steer it toward the parts of your work that matter most.
+**It is a conversation, not a lecture.** Unlike reading a guide or sitting through a workshop, you shape the advice as it forms. You answer honestly, push back on ideas that do not fit, and explore what is actually possible. The back-and-forth is where the useful stuff tends to surface. And because you are in control of the conversation, you can steer it toward the parts of your work that matter most.
 
 
 ## A Real Example
@@ -160,3 +160,23 @@ If you want to structure the prompts that come out of this consultation, the RTC
 But start here. Let AI help you figure out what you actually need.
 
 Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Run the consultation prompt, then notice which of its questions was hardest to answer. That difficulty is telling you something about your work, not about the prompt.
+2. Let it interview you, then ask what it thinks your actual job is. The mismatch between its description and yours is the interesting part.
+3. After it recommends, ask which recommendation it is least confident about and what it would need to know to be sure. Models rarely volunteer their own weak spots.
+
+**Keywords to steer with.** meta-prompting · the consultation prompt · obvious versus non-obvious opportunities · interviewing yourself · AI as a mirror · articulation · iterate and report back
+
+**A starting prompt.**
+
+> **Role:** You are a consultant who bills by the insight and would rather ask ten questions than give one generic answer.
+>
+> **Task:** Interview me one question at a time until you understand my role, my workflows, my objectives and my constraints. Only then recommend anything.
+>
+> **Context:** I have read a chapter on meta-prompting, and on why the clarity I get from answering the questions often matters more than the recommendations themselves. Keep asking until you could describe my week to someone else. Do not stop early to be helpful.
+>
+> **Format:** One question per turn. When you have enough, give the obvious opportunities and the non-obvious ones in separate lists. Then tell me which recommendation you are least confident about, and what you would need to know to be sure.

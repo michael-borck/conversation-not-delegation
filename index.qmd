@@ -70,6 +70,8 @@ Throughout the book you will encounter coloured callout boxes. Each serves a dif
 
 You will also find tables throughout the book that compare approaches, map strategies across domains, or summarise frameworks. These are reference material, worth bookmarking, not just reading once.
 
+Every chapter closes with **Take it to the AI**. A book about conversation should end each chapter by handing you one. Each section gives you a few questions worth arguing about, the keywords that let you steer a conversation you cannot yet phrase, and a starting prompt written out in full. Those prompts use RTCF (Role, Task, Context, Format), which @sec-rtcf covers properly; you do not need to have read that chapter first, because the four labels do most of the explaining themselves. Write all four if you are running a small model on your own machine, the kind with a few billion parameters that fits on a laptop; its defaults come from a narrower range, and the structure is doing work the model will not do for you. On a current frontier model the Task and Context lines are usually enough on their own, and the rest is a checklist for your own thinking. Either way, the first answer is where the conversation starts. Push back on it. That is the whole book in one habit.
+
 ## How This Book Was Written
 
 This book was written using the methodology it describes.
@@ -102,7 +104,7 @@ A book about conversation should be available in more than one form. Pick the fo
 - **Converse with it.** The online edition includes a chatbot grounded in the book's content. Ask it questions, challenge its answers, and practise the methodology on the methodology itself. You can also use the `llm.txt` file to paste the entire book into ChatGPT, Claude, or any AI tool for a deeper conversation.
 - **Listen to it.** Upload the `llm.txt` file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content.
 - **Explore the source.** The full source is on [GitHub](https://github.com/michael-borck/conversation-not-delegation), including every chapter, the build system, and the revision history. [DeepWiki](https://deepwiki.com/michael-borck/conversation-not-delegation) provides an AI-navigable view of the repository.
-- **Practise the frameworks.** The companion site includes three interactive tools that run in your browser — no login, no data stored. The **RTCF Prompt Builder** walks you through constructing prompts step by step using the framework from @sec-rtcf. The **RTCF Prompt Analyser** lets you paste any prompt and get instant feedback on which elements are present, partial, or missing — useful for diagnosing why a prompt gave a vague response. The **AI Readiness Assessment** is a short quiz that maps your current experience level and recommends which chapters to prioritise. See @sec-interactive-tools for details.
+- **Practise the frameworks.** The companion site includes three interactive tools that run in your browser: no login, no data stored. The **RTCF Prompt Builder** walks you through constructing prompts step by step using the framework from @sec-rtcf. The **RTCF Prompt Analyser** lets you paste any prompt and get instant feedback on which elements are present, partial, or missing. That is useful for diagnosing why a prompt gave a vague response. The **AI Readiness Assessment** is a short quiz that maps your current experience level and recommends which chapters to prioritise. See @sec-interactive-tools for details.
 - **Browse all books.** This book is part of a series. See all titles at [books.borck.education](https://books.borck.education).
 
 The online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.
@@ -128,12 +130,12 @@ flowchart TD
 
 Two ways in: start with *Conversation, Not Delegation* if you want the ideas before (or without) code, or start with *Think Python, Direct AI* if you want to code from your first page. The methodology in *Converse Python, Partner AI* enhances every path.
 
-- **Conversation, Not Delegation** — the general methodology for working with AI across any discipline. No code required; the broadest entry point.
-- **Think Python, Direct AI** — computational thinking for absolute beginners. The entry point if you want to code from the start.
-- **Converse Python, Partner AI** — the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.
-- **Code Python, Consult AI** — focused Python fundamentals through AI conversation.
-- **Ship Python, Orchestrate AI** — professional Python development practices and tooling.
-- **Build Web, Guide AI** — web development with AI as your development partner.
+- **Conversation, Not Delegation**: the general methodology for working with AI across any discipline. No code required; the broadest entry point.
+- **Think Python, Direct AI**: computational thinking for absolute beginners. The entry point if you want to code from the start.
+- **Converse Python, Partner AI**: the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.
+- **Code Python, Consult AI**: focused Python fundamentals through AI conversation.
+- **Ship Python, Orchestrate AI**: professional Python development practices and tooling.
+- **Build Web, Guide AI**: web development with AI as your development partner.
 
 All titles are available at [books.borck.education](https://books.borck.education).
 

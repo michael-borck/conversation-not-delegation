@@ -8,9 +8,14 @@ book:
   title: "Conversation, Not Delegation"
   subtitle: "How to Think With AI, Not Just Use It"
   author: "Michael Borck"
+  isbn: "979-8-2528-2455-0"
   date: today
   license: "CC BY-SA"
   favicon: favicon.svg
+  sidebar:
+    footer: |
+      Paperback ISBN 979-8-2528-2455-0<br>
+      [Support the open edition](https://www.amazon.com.au/dp/B0GTF9F4Q2)
   chapters:
     - index.qmd
     - part: "Part 1: Understanding the Landscape"

@@ -57,7 +57,7 @@ The conversation below has every surface feature of a useful research exchange. 
 >
 > The real elements: Ravi S. Gajendran, David A. Harrison, and Kelly Delaney-Klinger are real, frequent collaborators. They did publish a highly cited paper together, but in 2015 ("Are Telecommuters Remotely Good Citizens?"), and it focused on job performance and organisational citizenship behaviour, not a 2024 meta-analysis on well-being.
 >
-> The fake elements: I invented a 2024 update by that specific trio to make it look like they had refreshed their 2007 foundational work. Gajendran did publish a new remote work meta-analysis in 2024, but with different co-authors. The specific paper in number 3 — title, journal, volume, page range, citation count — does not exist.
+> The fake elements: I invented a 2024 update by that specific trio to make it look like they had refreshed their 2007 foundational work. Gajendran did publish a new remote work meta-analysis in 2024, but with different co-authors. The specific paper in number 3 (title, journal, volume, page range, citation count) does not exist.
 >
 > The first two citations are real, and their findings about autonomy and the curvilinear drop-off are accurate.
 
@@ -153,5 +153,25 @@ The difference between someone who uses AI well and someone who uses AI careless
 VET is what you do after.
 
 ::: {.callout-tip title="Analyse your prompts"}
-The **[RTCF Prompt Analyser](../tools/rtcf-analyser.html){target="_blank"}** on the companion website can help here too. If an AI response was vague or unhelpful, paste your original prompt and check which RTCF elements were missing. A weak prompt often produces output that is harder to VET — because the AI was never given enough context to be specific. Improving the prompt and improving the verification often go hand in hand.
+The **[RTCF Prompt Analyser](../tools/rtcf-analyser.html){target="_blank"}** on the companion website can help here too. If an AI response was vague or unhelpful, paste your original prompt and check which RTCF elements were missing. A weak prompt often produces output that is harder to VET, because the AI was never given enough context to be specific. Improving the prompt and improving the verification often go hand in hand.
 :::
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Ask for three citations in your field and check all three. The worked example in this chapter had one fabrication among three real references; find out what your own rate looks like on your own topics.
+2. Explain an AI answer back to it in your own words and ask what you got wrong. That is the Explain step, made external and checkable.
+3. Change one variable in a scenario and ask whether the answer still holds. Fragile answers break under "what if." Robust ones flex.
+
+**Keywords to steer with.** verify, explain, test · fabricated citation · cross-reference · rewrite in your own words · teach it to someone · devil's advocate · edge cases · what-if · calibrate your effort · owning the output
+
+**A starting prompt.**
+
+> **Role:** You are a fact-checker who assumes every citation is fabricated until proved otherwise.
+>
+> **Task:** Take the claims in what I paste, separate the checkable ones from the unfalsifiable ones, and tell me exactly how to check each.
+>
+> **Context:** I have read a chapter on VET, and on how a fabricated citation carries every surface feature of a real one: plausible authors, a real journal, a realistic citation count. Here is the output I want checked: [paste it]. For anything you cannot verify, say so rather than filling the gap.
+>
+> **Format:** A table: claim | checkable or not | where I would check it | how confident you are that it is real. Then name the single claim I should check first, because the rest depends on it.

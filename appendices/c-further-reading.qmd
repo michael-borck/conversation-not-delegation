@@ -103,11 +103,11 @@ This is not a comprehensive literature review. It is a trail of breadcrumbs for 
 
 **The jagged frontier and the evaluator's advantage:**
 
-- Dell'Acqua, F. et al. (2023). "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality." *Harvard Business School Working Paper 24-013*. The field experiment (with Boston Consulting Group) that named the "jagged frontier" — AI excelling at some tasks and failing unpredictably at adjacent ones — and showed that more experienced workers are better placed to tell which is which.
+- Dell'Acqua, F. et al. (2023). "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality." *Harvard Business School Working Paper 24-013*. The field experiment (with Boston Consulting Group) that named the "jagged frontier" (AI excelling at some tasks and failing unpredictably at adjacent ones) and showed that more experienced workers are better placed to tell which is which.
 
 **Agentic loops and harnesses (practitioner sources):**
 
-- Anthropic. "Effective Harnesses for Long-Running Agents." *Anthropic Engineering* (anthropic.com/engineering). How an external harness — structured files, end-to-end verification, persistent progress notes — compensates for an agent's lack of memory and reliable self-assessment across long-running tasks.
+- Anthropic. "Effective Harnesses for Long-Running Agents." *Anthropic Engineering* (anthropic.com/engineering). How an external harness (structured files, end-to-end verification, persistent progress notes) compensates for an agent's lack of memory and reliable self-assessment across long-running tasks.
 
 - Karpathy, A. (2026). *autoresearch* [software]. GitHub. A minimal autonomous research loop: the agent edits training code, is scored by an evaluation it is forbidden to modify, and keeps or reverts each change. A clean illustration of an external, verifiable fitness function.
 

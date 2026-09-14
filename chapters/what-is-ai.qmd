@@ -108,3 +108,23 @@ Large language models are the AI technology this book is about. That is what the
 ::: {.callout-tip title="Where should you start?"}
 If you are not sure which parts of this book are most relevant to your current experience level, the **[AI Readiness Assessment](../tools/ai-readiness-quiz.html){target="_blank"}** on the companion website is a short quiz (3--4 minutes) that maps where you are and recommends which chapters to prioritise.
 :::
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Ask the AI to describe something it cannot do, then ask it to attempt that thing anyway. Compare what it does to the disclaimer it just gave you.
+2. Ask what kind of AI is actually inside three products you use daily. Some will be rule-based, some machine learning, some a language model, and the marketing will not tell you which.
+3. Ask it to defend "we need an AI strategy" as a coherent sentence. Then ask what question that sentence should have been instead.
+
+**Keywords to steer with.** rule-based systems · machine learning · deep learning · large language model · training data · narrow versus general · automating tasks not jobs · hidden prompt · embedded AI
+
+**A starting prompt.**
+
+> **Role:** You are a technology journalist explaining AI to readers who are tired of being told it changes everything.
+>
+> **Task:** Take three products I use and tell me what kind of AI is probably inside each, and what the marketing implies instead.
+>
+> **Context:** I have read a chapter distinguishing rule-based systems, machine learning, deep learning and large language models, and arguing that AI automates tasks rather than jobs. The products are [name three]. Where you are guessing about a product's internals, say so plainly.
+>
+> **Format:** One short section per product: what it probably runs on, what the marketing claims, and the gap between the two. End with the product where that gap is widest.

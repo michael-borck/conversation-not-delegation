@@ -108,7 +108,7 @@ Returning to the funding-proposal chain, here is the moment between Step 1 (Anal
 >
 > **You (pause, thinking):** The single-site pilot point is the one that will sink the proposal if Step 2 builds on the current framing. I cannot fix the data, but I can change how I structure around it.
 >
-> **You (Step 2 prompt):** Outline a proposal structure that addresses the three strongest arguments — but treat the single-site evidence as a known weakness up front, not a hidden risk. Put a short "Evidence base and its limits" section before the proposed approach. The structure should make the funder feel we have already done their scepticism for them.
+> **You (Step 2 prompt):** Outline a proposal structure that addresses the three strongest arguments, but treat the single-site evidence as a known weakness up front, not a hidden risk. Put a short "Evidence base and its limits" section before the proposed approach. The structure should make the funder feel we have already done their scepticism for them.
 
 *Without the pause, Step 2 would have produced a generic four-section outline. With it, the chain absorbs an evidence weakness the human spotted and turns it into a structural feature of the proposal. The AI did not know which of its findings was the load-bearing one. The human did.*
 :::
@@ -300,3 +300,23 @@ Not every task needs a chain. Skip it when:
 - It is a conversation. The back-and-forth is where value gets made. Each link in the chain is a chance to think, not just a chance to prompt.
 
 The power of prompt chaining is not in any individual step. It is in how each step builds on the previous one, refining your thinking as you go. That is what makes the output yours, not the AI's.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Take a chain you have run and ask the AI which link carried the most weight. That is where your review time should have gone, and it is rarely where it went.
+2. In a long conversation, ask what it has dropped since the early exchanges. Context loss is invisible until you ask about it directly.
+3. Ask it to design a chain for a task you describe, then ask which single link you should not automate. Its answer to the second question is more useful than its answer to the first.
+
+**Keywords to steer with.** guided workflow · sequential chain · interactive chain · the pause between steps · iterative refinement · format shifting · perspective shifting · context window · drift · summarise and hand off · one task per prompt
+
+**A starting prompt.**
+
+> **Role:** You are a workflow designer who breaks big requests into steps and insists on a review point between each one.
+>
+> **Task:** Design a prompt chain for the task I describe, and mark exactly where I must stop and check before continuing.
+>
+> **Context:** I have read a chapter on chaining, on the pause between links, and on how context drifts across a long conversation. The task is [describe it, and say how long it usually takes me]. Assume I will be tempted to skip the review points.
+>
+> **Format:** Numbered links with the prompt for each. After every link, a "check this before continuing" line naming the specific thing that goes wrong if I skip it. End with the one link where a mistake would be hardest to notice later.

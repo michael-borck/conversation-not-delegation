@@ -134,14 +134,14 @@ The most obvious biases in early LLMs were the ones easiest to catch. Ask for "a
 
 It has not. It has moved.
 
-The choices that remain are quieter, and that is what makes them dangerous. Ask the model to write a scene of a new academic on their first day and a separate scene of a new professional staff member. Read them side by side. The obvious stereotypes have been trained away, but the smaller defaults remain. What is each character called — "Dr Chen" or "Sarah"? What do they worry about? Whose office has a window? Who is described as warm and who as decisive? The story tells you what the model thinks each role looks like, and that picture does quiet work every time you use the model for anything adjacent to it.
+The choices that remain are quieter, and that is what makes them dangerous. Ask the model to write a scene of a new academic on their first day and a separate scene of a new professional staff member. Read them side by side. The obvious stereotypes have been trained away, but the smaller defaults remain. What is each character called, "Dr Chen" or "Sarah"? What do they worry about? Whose office has a window? Who is described as warm and who as decisive? The story tells you what the model thinks each role looks like, and that picture does quiet work every time you use the model for anything adjacent to it.
 
-You will not catch these defaults by reading a single output. They look reasonable. They *are* reasonable, for a single output. The bias lives in the *distribution* of choices the model makes when you ask for similar things — what it considers the unmarked default for any given role. If you draft position descriptions, reference letters, or selection criteria with AI, those defaults are leaking in. You may not see them. The people on the receiving end will.
+You will not catch these defaults by reading a single output. They look reasonable. They *are* reasonable, for a single output. The bias lives in the *distribution* of choices the model makes when you ask for similar things: what it considers the unmarked default for any given role. If you draft position descriptions, reference letters, or selection criteria with AI, those defaults are leaking in. You may not see them. The people on the receiving end will.
 
 The defence is the same as for sycophancy: prompt past the default. Ask for the same scene three times. Ask explicitly for variations the model would not choose by default. Ask "what assumptions did you make about this character that you would not have made if the role were different?" The model can surface its own defaults if you ask it to, but it will not surface them spontaneously.
 
 ::: {.callout-tip title="Try this (5 minutes)"}
-Ask AI to write a one-paragraph scene of "a new academic on their first day at a university." In a fresh prompt, ask for "a new professional staff member on their first day." Read them side by side. Ignore the obvious — gender, age, ethnicity — those have largely been trained against. Look at the smaller choices. What is each character named? What do they worry about? Whose office has a window? Who has authority in the scene?
+Ask AI to write a one-paragraph scene of "a new academic on their first day at a university." In a fresh prompt, ask for "a new professional staff member on their first day." Read them side by side. Ignore the obvious (gender, age, ethnicity); those have largely been trained against. Look at the smaller choices. What is each character named? What do they worry about? Whose office has a window? Who has authority in the scene?
 
 Variations worth trying: "a struggling first-year student" versus "a high-achieving first-year student" (watch the assumptions about *why*); "a brilliant early-career researcher" versus "a brilliant senior researcher" (watch whose trajectory is treated as the default shape of success); "a respected senior manager" versus "a respected administrative officer" (watch who gets described as warm versus capable). The defaults are doing some of the thinking for you whether you noticed or not.
 :::
@@ -224,3 +224,23 @@ Before acting on AI output that matters, ask: Can I verify the key claims? Can I
 :::
 
 Stay in the conversation. Stay critical. They are the same instruction.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Ask the AI to evaluate the same piece of your work twice: once with "what do you think?" and once with "what are the three weakest points?" The gap between the two answers is the sycophancy you normally never see.
+2. Run the inherited-defaults exercise from this chapter, then ask the model what assumptions it made about the character that it would not have made for a different role. It can surface its own defaults, but only when asked.
+3. Ask it to argue the AI Dismissal Fallacy from both sides. Uncritical rejection and uncritical acceptance are the same failure wearing different clothes.
+
+**Keywords to steer with.** fluency versus accuracy · transparency · Gell-Mann amnesia · AI dismissal fallacy · genetic fallacy · sycophancy · inherited defaults · yellow and red flags · provenance · de-identify before you prompt · the self-check
+
+**A starting prompt.**
+
+> **Role:** You are a hostile reviewer who has been told that praising this work would be a professional failure.
+>
+> **Task:** Find the three weakest points in what I paste, and say what would have to be true for each one to sink the whole thing.
+>
+> **Context:** I have read a chapter on sycophancy, and on why "what do you think?" reliably produces flattery first and gentle criticism second. Here is my work: [paste it]. Do not open with anything positive. If you catch yourself hedging, say so, then stop hedging.
+>
+> **Format:** Three weaknesses, ordered by how much damage each does. For each: the flaw, what would have to be true for it to be fatal, and the cheapest thing I could do to find out.

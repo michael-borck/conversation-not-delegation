@@ -14,9 +14,9 @@ Michael applies these principles across software development, education, and cre
 
 **Connect**
 
-- [michaelborck.dev](https://michaelborck.dev) --- Professional work and projects
-- [michaelborck.education](https://michaelborck.education) --- Educational software and resources
-- [8020workshop.com](https://8020workshop.com) --- Passion projects and workshops
+- [michaelborck.dev](https://michaelborck.dev): professional work and projects
+- [michaelborck.education](https://michaelborck.education): educational software and resources
+- [8020workshop.com](https://8020workshop.com): passion projects and workshops
 - [LinkedIn](https://linkedin.com/in/michaelborck)
 
 ---

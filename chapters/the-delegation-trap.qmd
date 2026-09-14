@@ -128,3 +128,23 @@ The delegation trap is comfortable. The conversation path is harder. But only on
 Conversation amplifies your thinking. Delegation amplifies the hallucinations.
 
 Choose accordingly.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Take a task you handed to AI this week and ask what you would have learned by doing it yourself. Then decide whether the trade was worth it. Sometimes it was.
+2. Ask it to rewrite three of your delegation-shaped prompts as conversation-shaped ones. The pattern usually becomes visible by the second.
+3. Ask where the line falls between mechanical delegation, which is fine, and delegating judgement, which is the trap, using examples from your actual job rather than generic ones.
+
+**Keywords to steer with.** delegation versus conversation mindset · judgement · agency · process over product · output volume · cognitive offload · the delegation test · mechanical versus expert tasks
+
+**A starting prompt.**
+
+> **Role:** You are a mentor who has watched capable people quietly deskill themselves, and you are not gentle about it.
+>
+> **Task:** Sort the tasks I list into three piles: safe to delegate, worth conversing about, and the ones I should be doing entirely alone.
+>
+> **Context:** I have read a chapter arguing that mechanical delegation is fine and delegating judgement is the trap, and that the test is whether a task requires my expertise. Here is what I handed to AI in the last week: [list it]. My role is [describe it].
+>
+> **Format:** Three lists, one line of reasoning against each item. Then name the single task I delegated that I most needed to do myself, and say what I lost by not doing it.

@@ -33,9 +33,9 @@ Three steps to run before you trust any AI output that matters.
 
 | Step | Question | What you do |
 |------|----------|-------------|
-| **V** -- Verify | Can I find this independently? | Cross-reference claims against credible sources. If the AI cites something, look it up. |
-| **E** -- Explain | Can I explain this in my own words? | If you cannot walk someone through the reasoning, you do not understand it well enough to use it. |
-| **T** -- Test | Does this hold up under scrutiny? | Challenge the output. Change the assumptions. Ask "what if the opposite were true?" |
+| **V**, Verify | Can I find this independently? | Cross-reference claims against credible sources. If the AI cites something, look it up. |
+| **E**, Explain | Can I explain this in my own words? | If you cannot walk someone through the reasoning, you do not understand it well enough to use it. |
+| **T**, Test | Does this hold up under scrutiny? | Challenge the output. Change the assumptions. Ask "what if the opposite were true?" |
 
 : The VET framework: Verify, Explain, Test. {.striped}
 

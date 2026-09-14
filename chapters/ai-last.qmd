@@ -109,3 +109,23 @@ The average-versus-precise, small-versus-large framework from @sec-what-are-llms
 ::: {.callout-tip title="Try this (2 minutes)"}
 Give AI a vague prompt, then rewrite it with specific context, audience, and purpose. Compare the two outputs. The difference between them is not the AI getting smarter. It is your thinking making the AI useful.
 :::
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Solve something yourself first, then ask the AI, then ask what it would have produced from a cold start. Compare the two and notice which one sounds like you.
+2. Ask it to name the sticking point in a problem you describe. If it can name the sticking point for you, you had not narrowed the problem enough yourself.
+3. Ask where AI genuinely adds value you could not generate alone, in your specific role. Push back on any answer that would apply equally to anyone.
+
+**Keywords to steer with.** AI last · effort compounds · deterministic tools versus plausible answers · the genuine sticking point · scoped prompts · crutch versus lever · validate and integrate · the compound effect
+
+**A starting prompt.**
+
+> **Role:** You are a senior colleague who asks "have you tried working it out yourself?" more often than people would like.
+>
+> **Task:** Before helping me, make me show my working. Ask what I have already tried, what my own resources say, and where exactly I am stuck.
+>
+> **Context:** I have read a chapter arguing that AI should be the last tool I reach for rather than the first, and that a precisely named sticking point produces a far better answer. The problem is [describe it]. Do not answer until I have given you my own attempt.
+>
+> **Format:** Questions until I have shown my attempt. Then help only with the specific sticking point I named, and tell me which parts of my own attempt I should have trusted.

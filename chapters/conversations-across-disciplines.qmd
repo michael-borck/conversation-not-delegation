@@ -78,7 +78,7 @@ The exchange after the textbook plan landed:
 >
 > **You:** Items 2 and 3 are exactly what happened last time. What would a "dedicated mapping sprint" look like for a team of four with no full-time engineer?
 
-*The first prompt got a textbook plan. The second prompt named the constraint that actually mattered. Same model, same session — and the difference was something only he could bring.*
+*The first prompt got a textbook plan. The second prompt named the constraint that actually mattered. Same model, same session. The difference was something only he could bring.*
 :::
 
 In the **Ideate** stage, he asks the AI to propose three ways to mitigate the mapping bottleneck without hiring. The options range from automated schema comparison tools to a dedicated mapping sprint before the main project starts. He knows option three is realistic for his team. The others require tools they don't have budget for.
@@ -125,3 +125,23 @@ In every example, the turning point was a moment where the human rejected or red
 
 
 Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases, and the human was the bridge between them. This is the two-chat workflow (@sec-two-chat-workflow) in action, whether or not the person literally used two sessions.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Run the loop on a real task from your own field and note the exact point where you rejected the AI's output. That rejection point *is* the method; everything else is scaffolding around it.
+2. Ask it to walk your discipline's version of one of the four worked examples, then check whether its account of how your field actually works rings true. Where it does not is where you will need to supply the most context.
+3. Ask what it would need to know about your situation to stop giving you the generic version. Then supply exactly that, and run the same request again.
+
+**Keywords to steer with.** brainstorm, ideate, iterate, amplify across domains · domain knowledge as the input · the steering decision · rejecting the first draft · thinking versus building phases · the human as bridge
+
+**A starting prompt.**
+
+> **Role:** You are a practitioner in my field who has used AI on this kind of work and is willing to say where it did not help.
+>
+> **Task:** Walk me through how you would run the conversation loop on the task I describe, stopping at the point where your own judgement would override the model.
+>
+> **Context:** I have read a chapter showing the loop applied across writing, analysis, planning and communication, and arguing that the turning point is always a moment where the human rejects the output for a reason only they hold. My field is [name it]. My task is [describe it].
+>
+> **Format:** The four stages in order, with what you would ask at each. Mark the stage where you would expect to reject the AI's output, and say what knowledge that rejection would rest on.

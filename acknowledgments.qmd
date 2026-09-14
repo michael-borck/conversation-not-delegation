@@ -2,7 +2,7 @@
 
 This book started as a set of teaching notebooks and became something larger because people kept asking the same question: "How should I actually be using this?"
 
-The students who sat through early versions of these ideas deserve credit for their patience and their honesty. When an approach did not work, they said so. When it did, they showed me why — often in ways I had not anticipated. The frameworks in this book were tested in classrooms before they were tested on paper.
+The students who sat through early versions of these ideas deserve credit for their patience and their honesty. When an approach did not work, they said so. When it did, they showed me why, often in ways I had not anticipated. The frameworks in this book were tested in classrooms before they were tested on paper.
 
 Several colleagues provided feedback on drafts, pushed back on arguments that were not yet strong enough, and challenged me to be clearer about what I was actually claiming. The book is sharper for those conversations. You know who you are, and I am grateful.
 

@@ -306,11 +306,11 @@ After the initial analysis, try: "If this initiative fails 6 months from now, wh
 ::: {.callout-note title="What a pre-mortem actually surfaces"}
 After running the Risk Deep-Dive on a proposed quarterly metric overhaul, the follow-up "If this initiative fails 6 months from now, what is the most likely cause?" landed this:
 
-> **AI:** Most likely cause of failure in 6 months: the new metrics will technically launch on schedule, but middle managers will quietly continue reporting against the old metrics in their team reviews because the old ones map to bonuses that the metric change did not touch. By month four, leadership will be reading the new dashboard while the organisation is still being run on the old incentives. The failure will not be visible as a failure — it will look like adoption working but outcomes not moving.
+> **AI:** Most likely cause of failure in 6 months: the new metrics will technically launch on schedule, but middle managers will quietly continue reporting against the old metrics in their team reviews because the old ones map to bonuses that the metric change did not touch. By month four, leadership will be reading the new dashboard while the organisation is still being run on the old incentives. The failure will not be visible as a failure: it will look like adoption working but outcomes not moving.
 >
 > **You:** That is exactly what happened the last two times we changed metrics. We never touched the bonus tie-in because it sits with HR, not us. I need to talk to HR before launch, not after.
 
-*The forward-looking risk list had been about adoption, training, and dashboard tooling — all standard. The pre-mortem reframe surfaced the structural problem the forward list missed: the new metric and the existing incentive were owned by different teams. The fix is now a phone call, not a post-mortem.*
+*The forward-looking risk list had been about adoption, training, and dashboard tooling, all of it standard. The pre-mortem reframe surfaced the structural problem the forward list missed: the new metric and the existing incentive were owned by different teams. The fix is now a phone call, not a post-mortem.*
 :::
 
 
@@ -329,3 +329,23 @@ You do not need to master all eight techniques. Pick the one that fits your curr
 :::
 
 Start with whichever technique matches the kind of thinking you need to do right now. Try it once. Modify the prompt. Try it again. These are conversation starters, not scripts.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Pick one technique and run it on a decision you are actually facing. Then ask the AI which of the other seven would have suited the problem better, and why yours was the wrong first choice.
+2. Run the Expert Panel, then ask which panellist it found hardest to write. The thin one marks a perspective the model does not hold well, and that is where you should be most sceptical of it.
+3. After a pre-mortem, ask what it would need to know about your organisation to make the answer specific rather than generic. Then supply exactly that and run it again.
+
+**Keywords to steer with.** reverse prompting · pros and cons · stepwise chain of thought · role play · debating · formative self-testing · the expert panel · risk deep-dive · pre-mortem · combining techniques · adversarial framing
+
+**A starting prompt.**
+
+> **Role:** You are a facilitator who owns a toolkit of thinking techniques and picks the one that fits rather than the one you like best.
+>
+> **Task:** Ask me about my problem, then recommend which of these eight techniques to use, and tell me why the other seven are wrong for it.
+>
+> **Context:** I have read a chapter covering reverse prompting, pros and cons, stepwise chain of thought, role play, debating, formative self-testing, the expert panel, and the risk deep-dive. My problem is [describe it]. Ask questions before recommending anything.
+>
+> **Format:** Your questions first. Then one recommended technique with the reason, a runner-up, and a one-line dismissal of each of the remaining six. Then run the recommended technique with me.

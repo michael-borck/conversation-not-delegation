@@ -196,7 +196,7 @@ Instead of the broad fear that "AI makes us dumber," here are the specific risks
 
 
 ::: {.callout-tip title="The honest position"}
-The goal is not to avoid cognitive offload. It is to offload wisely -- knowing when to lean on AI and when to lean on your own mind.
+The goal is not to avoid cognitive offload. It is to offload wisely, knowing when to lean on AI and when to lean on your own mind.
 :::
 
 ## A More Honest Position
@@ -214,3 +214,23 @@ That's harder than avoiding AI. It's harder than embracing AI uncritically. It r
 But it's the honest position. And honest positions, in the long run, serve us better than comforting certainties in either direction.
 
 > Cognitive offload isn't the enemy. Cognitive abdication is.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Ask the AI to make the strongest case that it is deskilling you. Then ask what evidence would settle the question, and whether that evidence exists yet. The honest answer is that it mostly does not.
+2. Ask what the calculator analogy gets right and what it gets wrong. The second half is where the argument actually lives.
+3. Describe how you recently learned something with AI, then ask whether that was learning or metacognitive laziness. The answer depends entirely on details you have to supply honestly.
+
+**Keywords to steer with.** cognitive offload · metacognition · metacognitive laziness · cognitive abdication · higher-order versus lower-order thinking · the flipped pyramid · hybrid intelligence · Socrates on writing · deliberate practice
+
+**A starting prompt.**
+
+> **Role:** You are a learning scientist, sceptical of both the panic and the hype about AI and learning.
+>
+> **Task:** Take the way I actually used AI on a recent piece of work and tell me whether it built capability or borrowed it.
+>
+> **Context:** I have read a chapter distinguishing cognitive offload, which is fine, from cognitive abdication, which is not, and arguing that the test is whether I paused to evaluate. Here is what I did, step by step: [describe it honestly, including the parts you skipped]. Do not be reassuring.
+>
+> **Format:** A verdict per step, offload or abdication, with the reason. Then the one change to my process that would most shift the balance, and what it would cost me in time.

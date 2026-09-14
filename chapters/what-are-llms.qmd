@@ -63,7 +63,7 @@ Here is where it matters that you know what these models actually are.
 
 **They hallucinate.** LLMs can state false information with complete confidence. They are not looking things up. They are predicting plausible-sounding text. When they do not know something, they do not say so. They generate what sounds right. This means you cannot treat their outputs as reliable without verification.
 
-**They reflect the biases in their training data.** If the text they learned from contains stereotypes, blind spots, or skewed perspectives, those patterns show up in their outputs. The most obvious patterns have been trained against in current frontier models. The quieter defaults — about who has authority, who is described as warm versus capable, whose office has the window — have not. See @sec-staying-critical for a practical way to surface them.
+**They reflect the biases in their training data.** If the text they learned from contains stereotypes, blind spots, or skewed perspectives, those patterns show up in their outputs. The most obvious patterns have been trained against in current frontier models. The quieter defaults (about who has authority, who is described as warm versus capable, whose office has the window) have not. See @sec-staying-critical for a practical way to surface them.
 
 **They have no access to real-time information.** An LLM's knowledge stops at its training cutoff. It cannot tell you what happened yesterday unless it has been connected to external tools that can.
 
@@ -116,7 +116,7 @@ This wrapping layer has a name: the **harness**. Commercial chat products like C
 
 This matters for two practical reasons. First, much of what feels like "the model getting smarter" between versions is actually the harness getting smarter, doing more work behind the scenes so you have to do less. Second, the same model behaves differently in different harnesses, and a prompt that works beautifully in one may need more scaffolding in another. When you read advice about "what AI does now," check whether the author means the model, the harness, or the product. The three change on different timelines.
 
-The harness is also where the most consequential development in AI is happening: harnesses that let the model *act* — run code, search, edit files — and increasingly do so in loops with little or no human involvement. This is what people mean by "agents." It raises the sharpest version of every question in this book, and @sec-agentic-loops takes it up directly.
+The harness is also where the most consequential development in AI is happening: harnesses that let the model *act* (run code, search, edit files) and increasingly do so in loops with little or no human involvement. This is what people mean by "agents." It raises the sharpest version of every question in this book, and @sec-agentic-loops takes it up directly.
 
 ## What Else Shapes the Output
 
@@ -124,11 +124,11 @@ The harness is not the only thing between the raw model and the response you see
 
 Models are trained with safety filtering: deliberate effort to make the output less likely to produce content the provider considers harmful (instructions for violence, advice on illegal activities, certain categories of content) or topics where the provider has decided not to take sides (party politics, contested social issues). Some of this filtering is universal; some is region- or provider-specific. It is imperfect in both directions. Sometimes the model refuses to engage with a legitimate query because a surface feature looked risky. Sometimes it produces something the filter was supposed to catch. The pattern of what the model will and will not say is a deliberate design choice, not a property of the underlying language.
 
-A subculture has formed around finding prompt tricks that bypass these filters — "jailbreaking," in the jargon. It is a constant arms race between users finding new methods and providers patching them. The details are outside the scope of this book; the point worth knowing is that the subculture exists, because it tells you the filters are real and sometimes circumventable. If you see surprising behaviour from a model — a refusal that seems unreasonable, or output that seems unusually permissive — it is more likely a filter artefact than a deep statement about the underlying technology.
+A subculture has formed around finding prompt tricks that bypass these filters, known in the jargon as "jailbreaking." It is a constant arms race between users finding new methods and providers patching them. The details are outside the scope of this book; the point worth knowing is that the subculture exists, because it tells you the filters are real and sometimes circumventable. If you see surprising behaviour from a model (a refusal that seems unreasonable, or output that seems unusually permissive), it is more likely a filter artefact than a deep statement about the underlying technology.
 
-On the user side, modern AI products give you increasing control over how the model behaves: custom instructions, memory across sessions, project-specific context files, persistent personas. These features are useful — they make the model more responsive to your work. They also let you, deliberately or accidentally, configure the model to reinforce your existing views. A custom instruction that says "give me concise, technical answers" is benign. A custom instruction that says "agree with my framing and skip counterarguments" is an echo chamber you built yourself. The conversation loop (@sec-conversation-loop) is harder when you have configured the loop out of it.
+On the user side, modern AI products give you increasing control over how the model behaves: custom instructions, memory across sessions, project-specific context files, persistent personas. These features are useful: they make the model more responsive to your work. They also let you, deliberately or accidentally, configure the model to reinforce your existing views. A custom instruction that says "give me concise, technical answers" is benign. A custom instruction that says "agree with my framing and skip counterarguments" is an echo chamber you built yourself. The conversation loop (@sec-conversation-loop) is harder when you have configured the loop out of it.
 
-Knowing what has been done to the model — by the trainers, by the filter designers, by the harness, and by you — lets you read its output more accurately. The model is not a neutral oracle. Nothing built by humans for human use ever is. Critical engagement starts with knowing what shaped the response in front of you.
+Knowing what has been done to the model (by the trainers, by the filter designers, by the harness, and by you) lets you read its output more accurately. The model is not a neutral oracle. Nothing built by humans for human use ever is. Critical engagement starts with knowing what shaped the response in front of you.
 
 ## Beyond Text
 
@@ -162,3 +162,23 @@ You will not hand over a task and trust the output. You will use the model to ge
 The difference between someone who uses AI well and someone who uses it poorly is rarely about technical skill. It is about understanding what the tool actually is and what it is not.
 
 That understanding is exactly what the next chapter builds on. Knowing what LLMs are, and are not, is the foundation for learning how to work with them. The question is not "what can AI do for me?" but "how should I think alongside this thing?" Chapter 3 takes up that question directly.
+
+## Take it to the AI
+
+**Where to start.** Three questions worth arguing about rather than looking up:
+
+1. Ask for a citation on something in your own field, then go and look it up. This is the cheapest possible way to feel what "fluency and accuracy come from the same process" actually means.
+2. Ask it to explain the difference between interpolation and retrieval using an example from your work rather than a generic one.
+3. Place three tasks you did this week on the average/precise by small/large grid, then ask the AI where it would put them. The disagreements are worth arguing out.
+
+**Keywords to steer with.** next-token prediction · parameters · training cutoff · hallucination · interpolation versus retrieval · unidirectional attention · average versus precise · small versus large · harness · system prompt · safety filtering · custom instructions
+
+**A starting prompt.**
+
+> **Role:** You are a machine-learning researcher who explains models to non-technical people and refuses to use the word "magic."
+>
+> **Task:** Take the task I describe and tell me whether it needs interpolation or retrieval, and therefore whether a language model is the right tool at all.
+>
+> **Context:** I have read a chapter arguing that LLMs interpolate rather than retrieve, and that most mistakes come from treating them as lookup engines. The task is [describe it, including how precise the answer must be and what happens if it is wrong].
+>
+> **Format:** A verdict (interpolation, retrieval, or a mix), the reasoning in three sentences, and, where it is retrieval, what tool or source should be doing that part instead of the model.
