@@ -93,7 +93,6 @@ This book is part of the [books.borck.education](https://books.borck.education) 
 | `pdf-header.tex` | LaTeX header for PDF |
 | `epub-styles.css` | EPUB styles |
 | `scripts/` | Build scripts (`preprocess.py` = print preprocessing hook) |
-| `tools/` | Downloadable resources referenced in the book (quizzes, interactive tools) |
 | `notes/` | Working notes, outlines, planning docs (not published) |
 | `rag-documents/` | Generated RAG chunks for chatbot |
 | `_book/` | Rendered output (gitignored) |
