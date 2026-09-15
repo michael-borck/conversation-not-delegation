@@ -1,130 +1,123 @@
-# A Conversation Across Disciplines {#sec-across-disciplines}
+# Conversations Across Disciplines {#sec-across-disciplines}
 
-![Same AI, different disciplines. Understanding is still our job.](../images/comic-strip/13-across-disciplines.png){fig-alt="Comic strip: Different professionals (scientist, strategist, student) all use the same AI. Same request, different contexts. Punchline: Same AI, different disciplines. Understanding is still our job."}
+A framework becomes useful when you can see the moment it changes a decision. This chapter follows one small community task from a first attempt through a bad AI proposal, a correction, an independent check, and a final plan. Every input is supplied. You can audit the exchange without opening an AI tool.
 
-> The method does not change when the discipline does. Only the examples change.
+The scenario and dialogue are **constructed teaching examples**, not a transcript of a real event. The source cards below are authoritative within this fictional case; in a real project you would obtain the corresponding venue rules, quotations, and confirmations.
 
-The tools are in place. You know the Conversation Loop (@sec-conversation-loop). You know how to start well with RTCF (@sec-rtcf). You know how to push back with VET (@sec-vet). You know how to chain prompts into a sustained line of thinking (@sec-prompt-chaining).
+## The task: a community seed workshop
 
-Now let's see it work.
+Maya volunteers at a neighbourhood seed-sharing group. Eighteen people want a short workshop, and two volunteers will facilitate. She has a small budget and a ninety-minute room booking. She wants a plan she can explain to the other volunteer, not an attractive timetable with hidden assumptions.
 
-This chapter walks through four complete examples across four different domains. Each one follows a realistic starting point through a real conversation to a result the human owns. The summaries below capture the shape of each conversation rather than reproducing every exchange in full. One scenario (the team lead's, below) includes a sample of the actual back-and-forth at its steering moment, to show what that turn looks like in practice.
+Before asking AI, she writes:
 
-Pay attention to those steering decisions. They are the difference between conversation and delegation. They are always human. They are always specific. And they always make the output better than the AI would have produced alone.
+> We need to serve 18 participants in 90 minutes. I think two groups could work. I have not checked whether the room limit includes us, and I need to preserve time to reset the tables.
 
-> The human brought something the AI could not. The AI brought something the human could not match. Neither was sufficient alone.
+That is her AI Last attempt: the goal, an initial approach, and the uncertainty. She is not required to solve the whole problem before asking for help.
 
+### Source cards
 
-## Writing and Research: Building an Argument That Holds Up
+| Card | Supplied fact |
+|---|---|
+| V1: venue booking | Room available 14:00–15:30; maximum 12 people in the room, including facilitators |
+| V2: volunteer agreement | Two facilitators present for each session; minimum workshop duration 35 minutes; reset between groups takes 10 minutes |
+| B1: budget | Maximum AUD 80; room costs AUD 30; shared supplies cost AUD 10; seed packs cost AUD 2 per participant |
+| P1: attendance | 18 participants; each attends one session; no participants enter early while another group is inside |
 
-**The situation.** A postgraduate student is writing a 3,000-word essay on whether social media regulation should follow the tobacco precedent. She has a position but no structure. Her reading list is long and unsorted. She has three days.
+The cards prevent the model from deciding what “capacity” or “budget” means. Maya can still change her approach, but she cannot change those facts merely because the timetable would be easier.
 
-**The conversation.** She opens with RTCF: role (academic writing advisor familiar with media regulation), task (help me organise my argument), context (essay question, word limit, three sources she has already read), format (an outline with a thesis statement and three supporting claims).
+## Brainstorm: make the request inspectable
 
-The AI returns a clean five-section outline. It is competent and entirely predictable. This is the **Brainstorm** stage, and it has done its job: given her something concrete to react to.
+Maya uses RTCF:
 
-She reacts. "The third section is too broad. I don't want to argue that all regulation works. I want to argue that the specific mechanism of restricting advertising to minors is transferable." This is the steering decision that matters. The AI did not know her argument. She does.
-
-They move into **Ideate**. She asks the AI to suggest three counterarguments to her revised thesis. Two are useful. One is a straw man. She tells it so, and asks for a stronger version. The replacement is genuinely challenging. She had not considered the platform liability angle.
-
-Now she chains prompts (@sec-prompt-chaining) through the **Iterate** stage. For each section, she pastes her rough notes and asks the AI to identify gaps in her evidence. She runs VET on the citations it suggests: two check out, one is a real paper with a fabricated finding. She drops it and finds a better source herself.
-
-In the **Amplify** stage, she writes the essay. Not the AI. She writes it, using the structure they built together and the sharpened argument that emerged from iteration.
-
-**What made this conversation, not delegation.** She brought her own position and sharpened it through pushback. She caught a fabricated citation because she verified rather than trusted. The AI never wrote a sentence of the essay. It helped her think about what to write.
-
-
-## Data and Analysis: Making Sense of Results That Don't Cooperate
-
-**The situation.** A market analyst has just pulled quarterly sales figures for six product lines across four regions. Two regions are up. Two are flat. But the product-level numbers tell a different story, and the patterns are not obvious. Her manager wants a narrative for the board by Friday.
-
-**The conversation.** She starts at **Brainstorm** with RTCF: role (data analyst experienced in retail trends), task (help me identify the most important patterns in this data), context (she pastes a summary table of the figures with year-on-year changes), format (a ranked list of the three most significant findings).
-
-The AI identifies three patterns. The first is obvious: she already knew Region A was up. The second is interesting: a product line growing in flat markets, suggesting it is taking share rather than riding a rising tide. The third is wrong. It claims Region D is declining, but the flat number masks a seasonal effect she knows about from experience.
-
-She corrects the AI and tells it why the seasonality matters. This is the steering decision. She is the one who knows the business. The AI is the one scanning for patterns. Neither could do this alone.
-
-In the **Ideate** stage, she asks the AI to generate three possible explanations for the share-taking pattern. One involves pricing. One involves channel mix. One involves a competitor withdrawal she happens to know is true but had not connected to this data. Now she has a hypothesis worth testing.
-
-She moves to **Iterate** by chaining prompts. She feeds in additional context, asks the AI to stress-test the competitor-withdrawal explanation, and applies VET: can she verify the timeline? Does the explanation hold across all four regions, or only where the competitor was strong? The AI helps her find the edge case. The pattern holds in three regions, not four. She adjusts the narrative accordingly.
-
-In the **Amplify** stage, she builds her board summary around the refined finding, with appropriate caveats. The insight is hers. The AI helped her find it faster than she would have alone.
-
-**What made this conversation, not delegation.** She corrected the AI's misread of her data because she knew the seasonal context. She tested the hypothesis against edge cases before presenting it. The board narrative is grounded in her judgement, not in the AI's first pass.
-
-
-## Planning and Decision-Making: Scoping a Project Without Fooling Yourself
-
-**The situation.** A team lead has been asked to propose a plan for migrating his department's client records from a legacy system to a new platform. He knows the destination system. He does not know how to estimate the effort, and his last migration project ran 40% over time.
-
-**The conversation.** He opens at the **Brainstorm** stage using RTCF: role (experienced project manager who has run data migration projects), task (help me build a realistic project scope), context (number of records, source and destination systems, team size of four, no dedicated data engineer), format (a phased project plan with risk flags).
-
-The AI produces a four-phase plan: discovery, mapping, migration, validation. It is textbook. It is also the plan he ran last time, the one that went over. He says so. "This looks like every migration plan ever written. What specifically goes wrong in phase two when you don't have a dedicated data engineer?"
-
-This prompt, a direct challenge born from experience, is the steering decision that transforms the conversation. The AI responds with five specific risks around data mapping when domain expertise is split across team members. Two of them match what went wrong last time.
-
-::: {.callout-note title="What the steering moment actually looks like"}
-The exchange after the textbook plan landed:
-
-> **You:** This looks like every migration plan ever written. We ran almost exactly this last time and went 40% over. What specifically goes wrong in phase two when you don't have a dedicated data engineer?
+> **Role:** Help me plan a small community workshop.
 >
-> **AI:** Without a dedicated data engineer, phase two (mapping) typically fails in five specific ways:
+> **Task:** Propose group sizes and a timetable that satisfy the four source cards. Show the capacity, time, and cost calculations.
 >
-> 1. **Schema drift goes unnoticed.** Source-system fields change mid-mapping and no one owns watching for it.
-> 2. **Domain knowledge gets fragmented.** Team members map different tables on their own assumptions, producing inconsistent transformations.
-> 3. **Edge cases become rework.** Without one person holding the full mapping model, unusual records get handled inconsistently and surface during validation.
-> 4. **Validation criteria get written after the fact.** The team validates against what came out, not against what should have come out.
-> 5. **The mapping document becomes stale.** It is treated as a deliverable, not a living artefact, so by phase three it no longer reflects what was built.
+> **Context:** There are 18 participants and two facilitators. Use V1, V2, B1, and P1 above. Do not invent a different room or extra money.
 >
-> **You:** Items 2 and 3 are exactly what happened last time. What would a "dedicated mapping sprint" look like for a team of four with no full-time engineer?
+> **Format:** A short timetable, calculations, and any unresolved question. Do not draft the public invitation yet.
 
-*The first prompt got a textbook plan. The second prompt named the constraint that actually mattered. Same model, same session. The difference was something only he could bring.*
-:::
+This separates planning from publishing. Asking for calculations does not ensure they will be right; it makes them easier to examine.
 
-In the **Ideate** stage, he asks the AI to propose three ways to mitigate the mapping bottleneck without hiring. The options range from automated schema comparison tools to a dedicated mapping sprint before the main project starts. He knows option three is realistic for his team. The others require tools they don't have budget for.
+## Ideate: a plausible proposal fails
 
-He moves to **Iterate** with prompt chaining. He takes the mapping sprint idea and asks the AI to help him estimate effort for each phase, then applies VET: do the estimates assume full-time allocation? (They do. His team is not full-time on this.) He corrects the assumption and the AI recalculates. The project timeline grows by three weeks, but now it is honest.
+The constructed first answer says:
 
-In the **Amplify** stage, he writes the proposal with the revised timeline, the explicit risk register, and the mapping sprint as a pre-phase. He flags the three-week extension to his manager before it becomes a surprise.
+> Run two groups of 12 and 6 participants, with both volunteers present. Each session lasts 45 minutes, with a 10-minute reset. This fits the 90-minute booking. Cost: 18 × 2 + 30 + 10 = AUD 76.
 
-**What made this conversation, not delegation.** He rejected the generic plan because he had lived through its failure. He forced the AI to address his specific constraint. The resulting plan is more realistic because he insisted on honest assumptions rather than accepting optimistic defaults.
+One part is correct. The cost is 76. Two parts fail:
 
+- Twelve participants plus two facilitators means **14 people**, above the limit of 12.
+- Two 45-minute sessions plus a 10-minute reset means **100 minutes**, not 90.
 
-## Professional Communication: Getting the Tone Right When the Stakes Are High
+Maya does not ask, “Are you sure?” She compares the proposed quantities with the cards. The budget answer's correctness does not transfer to the timetable or capacity answer.
 
-**The situation.** A department head needs to email her team about a restructure. Two roles are being eliminated. Three people are moving to new teams. Everyone else stays, but morale is fragile. She needs to be honest without being brutal, and reassuring without being dishonest.
+Three levels of steering show the difference:
 
-**The conversation.** She starts at the **Brainstorm** stage with RTCF: role (communications advisor experienced in organisational change), task (help me draft an internal email announcing a team restructure), context (she outlines the changes, the reasons, and the emotional state of the team), format (professional email, 300 words, direct but empathetic).
+| Response | What it changes |
+|---|---|
+| “Try again; make it better.” | Signals dissatisfaction but leaves the actual errors unnamed |
+| “Your timing is too long.” | Identifies one failure, but leaves capacity unresolved |
+| “V1 includes facilitators, so 12 participants makes 14 people. V2 makes your timetable 100 minutes. Recalculate both without changing the source cards.” | Identifies the evidence, the errors, and the boundary for revision |
 
-The AI's first draft is polished and empty. It reads like every corporate restructure email ever sent. "We are excited about the opportunities ahead." She is not excited, and neither is her team. She tells the AI: "Remove anything that sounds like it came from a press release. These people will read this email looking for whether they can still trust me. Write for that audience."
+The strongest intervention is specific enough that a different person could check it.
 
-This is the steering decision. She knows her audience in a way no prompt can fully convey. The AI can adjust tone, but only she can tell it which tone is right.
+## Iterate: repair one dependency at a time
 
-In the **Ideate** stage, she asks the AI to produce three different opening lines: one that leads with the facts, one that leads with acknowledgement of difficulty, one that leads with the reason for the change. She picks the second and asks the AI to develop it.
+Maya first asks for feasible group sizes. With two facilitators and a twelve-person limit, there can be at most ten participants at once. Two groups of nine fit: each session has eleven people in the room.
 
-She moves to **Iterate** by reading each paragraph aloud. Two sound right. One is still too corporate. She rewrites that paragraph herself and asks the AI to check whether the overall message is internally consistent: does the tone of the opening match the tone of the close? The AI spots a disconnect. The opening is empathetic, but the closing pivots to optimism too quickly. She adjusts.
+She checks that result before requesting a timetable. The next proposal is:
 
-She applies VET to the factual claims in the email. Are the timelines accurate? Has she described the support available to affected staff correctly? She checks with HR before sending.
+| Period | Activity |
+|---|---|
+| 14:00–14:35 | Group 1: nine participants and two facilitators |
+| 14:35–14:45 | Reset; first group leaves before the second enters |
+| 14:45–15:20 | Group 2: nine participants and two facilitators |
+| 15:20–15:30 | Pack-up/buffer within the booking |
 
-In the **Amplify** stage, she sends the email in her voice, with her name on it, confident that every word reflects what she actually means.
+The chain makes the dependency visible: group size first, timing second, invitation last. If Maya lets the model draft the invitation before the checks, she risks polishing a plan that must be withdrawn.
 
-**What made this conversation, not delegation.** She rejected the AI's first draft entirely because she knew what her team needed to hear. She wrote the hardest paragraph herself. The email went out as hers because she made it hers, not because the AI wrote something she happened to agree with.
+A remaining practical question is how the second group will know when to arrive. P1 says no early entry, but does not provide an accessible waiting area or a steward. Maya chooses to give the groups separate arrival times and asks the organiser to confirm the arrangement. She records that confirmation as outstanding rather than inventing it.
 
+## Verify, Explain, Test
 
-## The Pattern Across All Four
+**Verify:** Maya uses the cards and her own arithmetic, not the model's reassurance. Occupancy is 9 + 2 = 11, within 12. Time is 35 + 10 + 35 + 10 = 90 minutes. Cost is 18 × 2 + 30 + 10 = 76, leaving 4.
 
-Look at what stayed constant.
+**Explain:** she tells the other volunteer why the first proposal failed, why facilitators count, and why reset time must appear in the schedule. She can explain the plan in speech, notes, or a sketch; fluent presentation is not the criterion.
 
-The human brought something the AI could not: a position, domain knowledge, a lived constraint, an understanding of audience. The AI brought something the human could not match: speed across alternatives, tireless iteration, the ability to generate options without ego.
+**Test:** she changes one assumption. If one extra person arrives in each group, occupancy reaches 12 and the seed cost rises by 4, using the whole budget. The timetable still fits, but there is no spare budget. An additional arrival beyond that cannot simply be waved in. The plan needs a booking limit and an agreed response to walk-ins.
 
-Every example used the Conversation Loop. Every one involved a moment where the human rejected or redirected the AI's output based on something only they knew. Every one ended with an output the human could put their name on and defend.
+This is a small test of the plan's boundary, not a safety certification for a real event. A real organiser would also check relevant accessibility and venue requirements.
 
-::: {.callout-note title="The pattern"}
-In every example, the turning point was a moment where the human rejected or redirected the AI's output based on something only they knew. That is the method. Not a formula. A way of working.
-:::
+## Amplify: own the final communication
 
+Maya writes the final note:
 
-Notice how each example naturally separates thinking from building. The student explored her argument before writing the essay. The analyst tested her hypothesis before presenting to the board. The team lead challenged the generic plan before proposing his own. The department head rejected the corporate tone before sending the email. In each case, the thinking and the building were distinct phases, and the human was the bridge between them. This is the two-chat workflow (@sec-two-chat-workflow) in action, whether or not the person literally used two sessions.
+> Two groups of nine, starting at 14:00 and 14:45. Each workshop lasts 35 minutes. Please arrive for your allocated session; the room limit includes the two facilitators. Planned cost is AUD 76 within the AUD 80 budget. Arrival arrangements still need the organiser's confirmation before we send invitations.
+
+The note is less complete-looking than an invitation with invented assurances. It is more useful: another volunteer can see what is fixed and what is pending.
+
+Her decision record keeps the initial attempt, the failed AI proposal, the source cards, the corrected calculations, the boundary test, and the outstanding confirmation. She does not need the entire chat transcript to show the important judgement.
+
+## Transfer to other kinds of work
+
+A student can use the same sequence when a suggested argument claims more than its cited passage supports: name the claim, inspect the source, then decide whether to revise the argument.
+
+A project lead can use it when an estimate assumes full-time staffing that is not available: correct the capacity before asking for a new delivery date.
+
+A carer or community volunteer can use it to organise non-clinical schedules or communications while leaving health, safeguarding, and other specialist decisions with qualified people. The method helps expose dependencies; it does not supply professional authority.
+
+In each setting, keep the distinction between generating an option, checking it, and authorising action. The conversation earns its place where it changes the work in a way you can explain.
+
+## Independent task: a changed workshop
+
+**Time:** 25 minutes. No AI required. Use the same cards with these changes: **20 participants**, a **100-minute booking**, and a **minimum 40-minute session**. Keep the two facilitators, twelve-person room limit, ten-minute reset, and AUD 80 budget.
+
+Prepare the plan before consulting the answer check. Show occupancy, timing, cost, and one boundary beyond which you would need to renegotiate a constraint. You may use a calculator, dictation, large print, or a sketch. If the task feels large, complete capacity first and leave the other calculations for a second sitting.
+
+**Answer check:** two groups of ten give 12 people per session. Two 40-minute sessions plus a 10-minute reset leave a 10-minute buffer. Cost is 20 × 2 + 30 + 10 = 80. There is no spare capacity or budget for another participant under that plan. Recognising a limit is part of the answer.
+
+**Success:** all three calculations are visible, the original failed proposal is not reused, and the remaining practical confirmation is not invented. A polished timetable with an unexplained assumption does not pass.
 
 ## Your Capstone: Produce an Owned Decision
 

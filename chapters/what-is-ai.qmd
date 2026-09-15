@@ -4,7 +4,7 @@
 
 > The gap between what AI appears to do and what it actually does is where good decisions begin.
 
-You might be wondering why a book about working with AI starts with a chapter about what AI is. The reason is practical: every framework in this book, every technique for prompting, verifying, and staying critical, exists because of something specific about how these tools work. If you understand the mechanics, even at a high level, the techniques stop feeling like arbitrary rules and start feeling obvious. You will know *why* you need to verify AI output, not just that you should.
+You might be wondering why this book pauses after the opening problem to explain what AI is. The reason is practical: every framework in this book, every technique for prompting, verifying, and staying critical, exists because of something specific about how these tools work. If you understand the mechanics, even at a high level, the techniques stop feeling like arbitrary rules and start feeling obvious. You will know *why* you need to verify AI output, not just that you should.
 
 Artificial intelligence is software that can perform tasks that typically require human intelligence.
 
@@ -14,17 +14,17 @@ When we say "intelligence" here, we mean specific capabilities: recognising patt
 
 ## Why Now?
 
-AI is not new. The term was coined in 1956. Researchers have been working on it for decades. So why is it suddenly everywhere?
+AI is not new. The 1956 Dartmouth workshop was an early milestone. Researchers have been working on it for decades. So why is it suddenly everywhere?
 
 Three things converged.
 
 ### We have massive amounts of data
 
-Every click, purchase, photo, and search creates data. Organisations now have billions of examples to learn from. Netflix has billions of viewing decisions. Wikipedia has millions of articles. The entire public web has been scraped, indexed, and fed into training pipelines. The raw material for AI to learn from went from scarce to effectively unlimited.
+Every click, purchase, photo, and search creates data. Organisations now have billions of examples to learn from. Netflix has billions of viewing decisions. Wikipedia has millions of articles. Large collections have enabled new training approaches, but access, quality, permissions, and representation still constrain useful data.
 
 ### Computing power got cheap and fast
 
-What took a supercomputer in 2000 now runs on a phone. Cloud computing made massive processing power available to anyone with a credit card. Training an AI model that would have cost millions a decade ago now costs a fraction of that. The hardware barrier dropped.
+Specialised hardware and shared computing infrastructure have made many kinds of training and inference more practical. Cost still depends on the model and workload; large-scale training is not equally accessible to everyone.
 
 ### Better algorithms were discovered
 
@@ -44,7 +44,7 @@ AI is not one thing. It is a family of technologies, each suited to different pr
 
 **Large language models** are the branch this book focuses on. They are covered in depth in the next chapter.
 
-Each of these approaches builds on the one before it. Rule-based systems gave way to machine learning, which gave way to deep learning, which produced large language models. The progression is toward systems that need less hand-coding and can handle more ambiguity.
+These approaches coexist. Deep learning is a family within machine learning, and many language models use deep neural networks. A single application can combine explicit rules, learned models, and conventional software.
 
 ## What AI Can and Cannot Do
 
@@ -59,11 +59,12 @@ AI is strong where humans are slow and slow where humans are fast.
 
 **AI struggles with:**
 
-- Common sense reasoning that any five-year-old can do
-- Truly novel situations it has never seen in training data
-- Explaining why it reached a particular conclusion
-- Ethical judgement, social context, and nuance
-- Genuine creativity, the kind that comes from lived experience and original insight
+- Inputs or conditions poorly represented in an evaluation
+- Claims needing current, authoritative evidence that the system lacks
+- Explanations whose faithfulness to the underlying computation is unknown
+- Decisions needing contextual knowledge, value choices, or human authority
+
+These are evaluation questions, not fixed claims that machines can never reason, generalise, or create something novel.
 
 This asymmetry matters. AI is not a replacement for human thinking. It is a tool that is extraordinarily capable in some domains and brittle in others. The people who use it well are the ones who understand where that line falls.
 
@@ -71,16 +72,16 @@ This asymmetry matters. AI is not a replacement for human thinking. It is a tool
 
 You will hear that AI will replace all jobs, that it is smarter than humans, that it can solve any problem. None of this is accurate.
 
-AI automates tasks, not jobs. Most jobs are bundles of tasks. Some of those tasks get automated. New tasks emerge. The radiologist still reads the scan, but AI flags the areas worth examining. The writer still shapes the argument, but AI helps with research and drafts.
+AI can automate tasks within jobs, and this can also change or eliminate roles. New tasks may emerge, but the net outcome depends on the setting. The radiologist still reads the scan, but AI flags the areas worth examining. The writer still shapes the argument, but AI helps with research and drafts.
 
-AI is narrow, not general. An AI that writes well cannot drive a car. An AI that plays chess at a superhuman level cannot recognise a face. Each system is trained for a specific kind of work.
+Some AI systems are specialised; others support many tasks and modalities. A system's name or performance on one task does not establish its suitability or permissions for another.
 
 AI is a tool, not a strategy. Saying "we need an AI strategy" is like saying "we need a spreadsheet strategy." The real question is always: what problem are you solving? AI is one way to solve it.
 
 And AI reflects its training data. If that data contains biases, the AI learns those biases. It is not objective. It is a mirror of the information it was trained on, with all the distortions that implies.
 
 ::: {.callout-tip title="Key insight"}
-AI automates tasks, not jobs. It is one tool among many. Start with the problem, not the technology.
+Automating tasks can also change jobs. AI is one tool among many. Start with the problem, not the technology.
 :::
 
 ## The Practical Framing
@@ -89,7 +90,7 @@ Here is the most useful way to think about AI as you read this book: it is a cap
 
 Capable, because it can process information, generate text, spot patterns, and respond to instructions at a speed and scale no human can match. Literal, because it does exactly what the patterns in its training suggest, not what you meant, not what would be wise, not what the situation actually calls for.
 
-This means the quality of what you get from AI depends almost entirely on how you work with it. Give it a vague instruction, and you get a generic response. Work with it through a structured conversation, and you get something genuinely useful.
+Clear instructions and useful context can help. Results also depend on the model, application, data, and task. A structured conversation does not guarantee a correct or useful result.
 
 That is what this book is about. Not how to get AI to do your work, but how to think better with AI as a partner.
 
@@ -97,30 +98,14 @@ That is what this book is about. Not how to get AI to do your work, but how to t
 
 You will increasingly encounter AI not as a blank conversation window but embedded inside other tools: a writing assistant in your word processor, an autocomplete in your email, a copilot in your spreadsheet. These tools are convenient, and many are genuinely useful.
 
-But they are all running on prompts you cannot see. Someone else wrote those prompts. Someone else decided what role the AI should play, what context to provide, what constraints to apply. You get the output, but you do not get the conversation. You cannot push back on framing you did not choose. You cannot redirect the AI's approach based on something only you know about your situation.
+Their instructions and available controls vary. Some expose editable prompts or context; others offer only a few settings. Inspect what you can supply, change, and verify instead of assuming every embedded tool prevents meaningful steering.
 
-This is not a reason to avoid those tools. It is a reason to understand what you are giving up when you use them. The principles in this book (staying in the conversation, shaping the exchange, applying your judgement at every step) depend on you being able to see and control the prompt. When the prompt is hidden, your agency is limited to accepting or rejecting the output. That is better than nothing, but it is not conversation.
-
-For anything that matters, start with a tool where you write the prompt yourself. Use the embedded tools for routine work where the hidden defaults are good enough. The distinction between the two is itself a judgement call, and one worth making deliberately.
+Choose an interface suited to the task and its data constraints. Direct chat is useful for open-ended dialogue; a constrained interface may be preferable for a well-defined workflow. In either case, check the result and understand what an acceptance button will do.
 
 Large language models are the AI technology this book is about. That is what the next chapter covers.
 
-## Check Your Mental Model
+## Independent practice: classify a task
 
-Use these questions to find where your current picture of AI is still vague:
+**Time:** 15–20 minutes. Write three tasks: sorting a supplied list, drafting an announcement, and deciding whether an organisation may share personal records. For each, name the required capability, permission, and evidence. Do not infer how a product works from its branding.
 
-1. Ask the AI to describe something it cannot do, then ask it to attempt that thing anyway. Compare what it does to the disclaimer it just gave you.
-2. Ask what kind of AI is actually inside three products you use daily. Some will be rule-based, some machine learning, some a language model, and the marketing will not tell you which.
-3. Ask it to defend "we need an AI strategy" as a coherent sentence. Then ask what question that sentence should have been instead.
-
-**Keywords to steer with.** rule-based systems · machine learning · deep learning · large language model · training data · narrow versus general · automating tasks not jobs · hidden prompt · embedded AI
-
-**A starting prompt.**
-
-> **Role:** You are a technology journalist explaining AI to readers who are tired of being told it changes everything.
->
-> **Task:** Take three products I use and tell me what kind of AI is probably inside each, and what the marketing implies instead.
->
-> **Context:** I have read a chapter distinguishing rule-based systems, machine learning, deep learning and large language models, and arguing that AI automates tasks rather than jobs. The products are [name three]. Where you are guessing about a product's internals, say so plainly.
->
-> **Format:** One short section per product: what it probably runs on, what the marketing claims, and the gap between the two. End with the product where that gap is widest.
+**Artefact:** a three-row task map. **Success:** distinguish a possible output from permission to act; identify a non-AI or specialist route where appropriate. No AI account is needed to complete the independent version.

@@ -4,7 +4,7 @@ RTCF is not the only prompt structuring framework. A family of mnemonics emerged
 
 This appendix compares the most widely used frameworks side by side, using the same task so you can see how each one shapes the prompt differently. The task: getting AI to help analyse student feedback data.
 
-None of these frameworks have a single academic source. They are practitioner knowledge, patterns that emerged from use, were shared in workshops and online communities, and proved useful enough to stick. The underlying principle (structured communication outperforms unstructured communication) is well-established. The mnemonics are packaging, not discovery.
+None of these frameworks have a single academic source. They are practitioner knowledge, patterns that emerged from use, were shared in workshops and online communities, and proved useful enough to stick. Use them as reminders to supply relevant information, not as a guarantee that a longer or more structured prompt performs better. The mnemonics are packaging, not discovery.
 
 We chose RTCF for this book because it has the fewest elements to remember and covers the ground that matters most. But if a different framework clicks better for how you think, use that one. The letters do not matter. The habit of thinking before prompting does.
 
@@ -21,7 +21,7 @@ To see why structure matters, compare these two prompts for the same task.
 "You are an experienced higher education analyst **(R)**. Identify the three strongest themes and two areas of concern in the student feedback data I will paste below **(T)**. This is from a second-year undergraduate unit with 85 responses across two campuses **(C)**. Present findings as a summary paragraph followed by a table with columns: Theme, Evidence, and Recommended Action **(F)**."
 :::
 
-You do not need all four elements every time; use what is relevant. But when a prompt feels vague and you are not sure why, checking against RTCF will almost always reveal what is missing.
+You do not need all four elements every time; use what is relevant. But when a prompt feels vague and you are not sure why, checking against RTCF may help identify missing information.
 
 
 ## The Family

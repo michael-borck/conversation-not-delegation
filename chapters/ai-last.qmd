@@ -8,23 +8,16 @@ There is a temptation, once you have access to a powerful AI, to reach for it im
 
 Resist that.
 
-The best results come when AI is the last tool you use, not the first. Not because AI is bad at what it does. Because you are better than you think, and the habit of reaching for AI before you have tried anything else will quietly erode the skills that make you valuable.
+Use AI after a short first attempt when that helps you identify the question and preserve the skill you want to practise. This is a default for deliberate work, not a ban on early assistance.
 
 This chapter is about a simple discipline: solve as much as you can before you involve AI. Then hand it the part you genuinely cannot handle alone.
 
-> The best prompt is the one you almost did not need, because you did most of the thinking yourself.
 
-## Why "AI Last" Works
+## A useful default, with exceptions
 
-Four reasons. Each reinforces the others.
+The evidence and limits belong in @sec-cognitive-offload. Here the aim is operational: arrive with a purpose, preserve a first attempt where useful, and check what changes.
 
-**You already know more than you think.** Most problems you encounter in your daily work have well-understood solutions. You have notes from last time. You have experience. You have colleagues, reference materials, and search engines. The vast majority of what you need to accomplish does not require a large language model. It requires you, doing the work you are already capable of doing.
-
-**Effort compounds.** This one cuts both ways. The more thinking you do, the more capable you become. The less thinking you do, the less capable you become. Every time you skip the hard part and hand it straight to AI, you lose a small opportunity to strengthen your own understanding. One skipped opportunity is nothing. A thousand of them over a year is a noticeable decline in your ability to reason through problems independently.
-
-**Smaller, focused prompts produce better results.** When you have already narrowed a problem down to the specific hard part, the AI has less ambiguity to deal with. You are not dumping an entire mess into the conversation and hoping for the best. You are asking a precise question. Precise questions get precise answers. Vague ones get generic output you will spend twenty minutes fixing.
-
-**You stay the expert.** You are the one who understands your work, your context, your goals. AI does not know what you had for lunch, let alone why your project matters or what trade-offs are acceptable. When you do the groundwork yourself, you maintain the deep understanding that lets you evaluate whether AI's contribution is actually good.
+“Last” does not mean exhausting yourself before accepting help. If you lack the vocabulary to begin, need an accessible format, or are dealing with an unfamiliar task, ask early for orientation or a small next step. Do not turn a learning habit into a test of worthiness. You can obtain help and still make the decisions.
 
 ## The Five-Step Workflow
 
@@ -40,7 +33,7 @@ This is not about proving something. It is about activating what you already kno
 
 You have tools that are faster, more reliable, and more precise than AI for most routine tasks. Your notes from previous projects. Your bookmarks. A quick search. A conversation with a colleague. Reference materials and style guides. Templates you have built over time.
 
-These resources are deterministic. They give you the same right answer every time. AI gives you a plausible answer that might be right. For anything you can solve with a known method, use the known method.
+A calculator can reliably execute a specified calculation; notes, searches, and colleagues can still be mistaken or out of date. Prefer a known, checkable method when it suits the task, and inspect the inputs as well as the result.
 
 ### 3. Identify the genuine sticking point
 
@@ -62,7 +55,7 @@ Versus:
 
 "I am writing a presentation on supply chain disruptions for a non-technical audience. I have three case studies ready but I am struggling to connect them into a single narrative. Here are the three cases. What is the through-line?"
 
-The first prompt will get you a generic presentation outline you do not need. The second will get you a genuine insight you can use.
+The second prompt identifies the actual difficulty and supplies material to work with. Check whether the resulting through-line fits the cases; the additional context does not guarantee a useful insight.
 
 The difference is that in the second case, you did the work first. You gathered the case studies. You structured the presentation. You identified exactly where you were stuck. The AI is handling the one part where it can add value you could not easily generate yourself.
 
@@ -72,10 +65,10 @@ AI gives you a draft, not a finished product. You still own the result.
 
 Read what it gives you critically. Does it actually answer your question? Is it accurate? Does it fit with the rest of your work? AI can sound confident while being wrong. It can produce something grammatically perfect that misses the point entirely.
 
-Your job is to take what is useful, discard what is not, and integrate the result into your own work in a way that holds together. If you cannot evaluate whether the AI's output is good, that is a sign you skipped steps one through three.
+Your job is to take what is useful, discard what is not, and integrate the result into your own work in a way that holds together. If you cannot evaluate the output, identify the missing knowledge or ask a qualified person to review it. Sometimes the task needs expertise you have not yet acquired.
 
 ::: {.callout-tip title="Try this (2 minutes)"}
-Take something you have already written, such as an email draft, meeting notes, or a paragraph from a report. Paste it into AI and ask "Help me tighten this up." Compare the result to what you would get from a blank prompt asking AI to write the same thing from scratch. The version that started with your voice will sound like you. The version from scratch will sound like a machine. AI is far better at refining your thinking than generating from nothing.
+Take something you have already written, such as an email draft, meeting notes, or a paragraph from a report. Paste it into AI and ask "Help me tighten this up." Compare the result to what you would get from a blank prompt asking AI to write the same thing from scratch. Compare which version preserves your intended meaning and style. Record any invented detail or lost qualification; neither route is guaranteed to be better.
 :::
 
 ## Where AI Earns Its Keep
@@ -84,48 +77,16 @@ This principle is not "never use AI." It is "use AI where it adds value you cann
 
 That includes exploring unfamiliar domains where you lack expertise. It includes processing or transforming information at a scale that would take you hours to do manually. It includes brainstorming approaches to genuinely novel problems, the ones where your own experience and your usual resources do not give you enough to work with.
 
-The key distinction is between using AI as a crutch for laziness versus using it as a lever for capability.
+## Stop when the useful work is done
 
-A crutch replaces effort you should be making. It feels efficient in the moment. Over time, it weakens you. You lose the ability to do the thing yourself, and you become dependent on a tool that does not always get it right.
+Set a completion test before asking for another revision: the answer addresses the sticking point, the consequential claims are checked, and you can explain the change you are accepting. More turns are not inherently better.
 
-A lever multiplies effort you are already making. You have done the thinking. You have narrowed the problem. You bring in AI to push past a specific barrier. The result is better than what you could have done alone, and you understand why it is better because you did the groundwork.
+Keep your first attempt beside the final version. Note one contribution you accepted and one you rejected or changed, with a reason for each. This record is more informative than whether the final prose “sounds human.”
 
-## The Compound Effect
+## Independent practice: show the sticking point
 
-This is worth saying plainly: how you use AI today shapes what you are capable of tomorrow.
+**Time:** 15 minutes. Pick a task small enough to begin now. Work for five minutes with your usual notes or tools. Write the part you can already handle and one question you cannot yet answer.
 
-If you use it as a crutch, you will gradually lose the ability to work without it. You will not notice this happening. It will feel like efficiency right up until the moment you face a problem AI cannot help with, and you realise you have forgotten how to think it through.
+Draft a request that asks for help with that question only. You do not need to send it. Compare it with a request to do the entire task and identify what judgement you would lose visibility into.
 
-If you use it as a lever, you get the opposite effect. You stay sharp. Your own skills keep developing. And because you bring better questions to the AI, you get better answers. The human gets stronger. The collaboration gets better. The work improves.
-
-::: {.callout-tip title="The compound effect"}
-How you use AI today shapes what you are capable of tomorrow. Use it as a crutch and your skills erode. Use it as a lever and they compound.
-:::
-
-AI Last is not about doing things the hard way. It is about doing things the smart way: you handle what you can, AI handles what you cannot, and the line between those two stays honest.
-
-The average-versus-precise, small-versus-large framework from @sec-what-are-llms helps you judge where that line sits for any given task. AI Last matters least in the sweet spot (small, average tasks where a draft is all you need) and most in the danger zone (large, precise tasks where confident-looking output masks structural problems). The more a task demands precision and the more complex its dependencies, the more important it is that you have done your own thinking before bringing AI into the conversation. That is not a rule about AI. It is a rule about the kind of work that matters.
-
-::: {.callout-tip title="Try this (2 minutes)"}
-Give AI a vague prompt, then rewrite it with specific context, audience, and purpose. Compare the two outputs. The difference between them is not the AI getting smarter. It is your thinking making the AI useful.
-:::
-
-## Work Before Prompting
-
-Pick a current problem and spend ten uninterrupted minutes on it first. Only then use these questions:
-
-1. Solve something yourself first, then ask the AI, then ask what it would have produced from a cold start. Compare the two and notice which one sounds like you.
-2. Ask it to name the sticking point in a problem you describe. If it can name the sticking point for you, you had not narrowed the problem enough yourself.
-3. Ask where AI genuinely adds value you could not generate alone, in your specific role. Push back on any answer that would apply equally to anyone.
-
-**Keywords to steer with.** AI last · effort compounds · deterministic tools versus plausible answers · the genuine sticking point · scoped prompts · crutch versus lever · validate and integrate · the compound effect
-
-**A starting prompt.**
-
-> **Role:** You are a senior colleague who asks "have you tried working it out yourself?" more often than people would like.
->
-> **Task:** Before helping me, make me show my working. Ask what I have already tried, what my own resources say, and where exactly I am stuck.
->
-> **Context:** I have read a chapter arguing that AI should be the last tool I reach for rather than the first, and that a precisely named sticking point produces a far better answer. The problem is [describe it]. Do not answer until I have given you my own attempt.
->
-> **Format:** Questions until I have shown my attempt. Then help only with the specific sticking point I named, and tell me which parts of my own attempt I should have trusted.
+**Artefact:** your attempt, the scoped request, and a completion test. **Success:** another person can identify the actual difficulty and how you intend to check the help. If you finish without AI, that is a successful outcome.

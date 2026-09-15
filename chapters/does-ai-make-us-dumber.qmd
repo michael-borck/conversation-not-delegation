@@ -4,233 +4,74 @@
 
 > The question is not whether AI changes how we think. It is whether we notice.
 
-## The Honest Version
+## Ask which capability, under which conditions
 
-I advocate for AI loudly and unapologetically. But advocacy without nuance is reckless.
+You finish a task more quickly with AI. Did you learn more, less, or something different? The finished artefact cannot answer that question on its own.
 
-So let's talk about the thing that worries people most. The thing that, if we're being honest, should worry us a little too.
+This chapter separates three outcomes: performance while help is available, understanding that transfers to another task, and capability retained when the help is removed. They can move in different directions. A polished answer may accompany weak understanding; a difficult practice session may produce useful learning without an impressive deliverable.
 
-Does AI reduce critical thinking?
+That distinction is more useful than declaring that AI makes people either smarter or dumber. It also makes the question testable in your own work.
 
-The concern goes like this: when people use AI, they stop doing the hard cognitive work. They offload the thinking that actually builds understanding. They get better outputs but develop weaker minds. Over time, AI doesn't make them smarter. It makes them dependent.
+## Offloading can be sensible
 
-This isn't a fringe concern. There's genuine research behind it. And anyone who's caught themselves pasting a question into ChatGPT without pausing to think has felt the truth of it.
+We already distribute mental work across notes, calculators, reminders, diagrams, and other people. Remembering every appointment is not a prerequisite for good judgement. Nor does needing a tool make someone's reasoning less valid.
 
-It is also not a new concern. In 2008, Nicholas Carr asked "Is Google Making Us Stupid?" in *The Atlantic*, arguing that the internet was eroding our capacity for deep reading and sustained concentration. A decade earlier, similar fears accompanied the arrival of calculators in classrooms. Two millennia before that, Socrates argued against writing itself, warning that it would "create forgetfulness in the learners' souls, because they will not use their memories." Every powerful cognitive tool provokes the same fear: that by making thinking easier, we will stop thinking altogether.
+What matters is the capability you intend to practise. If the goal is to learn how to evaluate an argument, a supplied draft can be useful material. If the goal is to learn to construct that argument independently, having a model supply the entire structure may remove some of the practice you need.
 
-So: is it true?
+The same assistance can therefore be appropriate for one task and counterproductive for another. State the learning goal before deciding what to offload.
 
-> The same tool that can deepen your understanding can make it effortless to avoid understanding altogether. The difference is not the tool. It is you.
+## What the evidence does and does not say
 
-The answer is more interesting than yes or no.
+A 2025 study by Lee and colleagues surveyed knowledge workers about their use of generative AI and critical thinking. Its self-reported associations are useful evidence about perceived effort and checking practices. They are not a direct measurement of lost intelligence or proof that using AI causes cognitive decline. The design and outcome measure matter. [Lee et al., study and methods](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf)
 
+Bastani and colleagues studied AI assistance in high-school mathematics, including performance after assistance was removed. Their findings support concern about some unguarded uses and the importance of how help is designed. They do not establish that every learner, subject, or tool has the same outcome. [Generative AI without guardrails can harm learning](https://doi.org/10.1073/pnas.2422633122)
 
-## What Cognitive Offload Actually Is
+Read both kinds of evidence at the level they support. A survey can identify reported behaviour without isolating causation. A controlled educational study can test a particular intervention without settling its effects in every setting. Neither licenses the claim that one copied answer permanently damages a person's mind.
 
-Cognitive offload is when you use an external tool to reduce the mental effort required for a task. You do it constantly:
+My practical recommendation follows from that distinction: preserve some occasions to attempt, explain, and transfer the work yourself. Treat conversation as a way to organise that practice, not as a scientifically proven guarantee that every AI exchange builds skill.
 
-- Writing a shopping list instead of memorising it
-- Using a calculator instead of doing long division
-- Checking a map instead of navigating from memory
-- Setting a reminder instead of trying to remember
+## The risk is invisible completion
 
-None of these make you "dumber." They free up cognitive resources for other things. The shopping list lets you think about recipes. The calculator lets you focus on the problem structure. The map lets you pay attention to traffic.
+The warning sign is not that you received help. It is that completion has become your only test.
 
-AI is the latest, and most powerful, cognitive offload tool we've encountered. And that's precisely why it feels different. Previous tools offloaded specific, well-defined tasks. AI can offload *thinking itself*. The drafting, the analysing, the reasoning, the evaluating.
+You submit a summary but cannot identify its main claim. You reuse code but cannot predict what a changed input will do. You accept a recommendation but cannot say which source supports it. The artefact may be useful, yet the learning outcome remains unestablished.
 
-That's what makes the question urgent.
+A short explanation exposes that gap. It can be spoken, drawn, demonstrated, or written. Do not confuse verbal fluency with understanding: a hesitant explanation with correct reasoning can be stronger than a confident recital.
 
+If you cannot yet explain the result, ask for a smaller example or a hint. Then attempt that example yourself. Asking the model whether you understand is less informative than demonstrating the relevant action.
 
-## The Real Risk: Metacognitive Laziness
+## Assistance can keep someone in the task
 
-The concern isn't really about cognitive offload. It's about what happens to metacognition: the ability to monitor, evaluate, and regulate your own thinking.
+There is also a cost to withholding help. A learner who is blocked by an unfamiliar term, an inaccessible format, or an overwhelming blank page may abandon the task entirely. Assistance that makes the next step manageable can preserve engagement.
 
-When people use AI well, they:
+That is why “always struggle alone first” is a poor universal rule. Start with enough independent thought to identify the purpose when possible. If even that is difficult, ask for orientation, a question, or a simplified representation. You can still own the subsequent judgement.
 
-- Generate a draft, then **evaluate** it against their own understanding
-- Get AI feedback, then **decide** what to accept and what to reject
-- Use AI to explore options, then **judge** which options make sense
-- Read AI output, then **question** whether it's actually correct
+Imagine a volunteer faced with a room-booking rule. They ask for it in plain language, then use the original rule to check the explanation and calculate capacity themselves. The model helped with access to the problem; it did not have to make the decision.
 
-When people use AI poorly, they:
+## Projects and fundamentals can support each other
 
-- Generate a draft and submit it
-- Get AI feedback and accept it
-- Ask AI for the answer and copy it
-- Read AI output and assume it's correct
+An interesting project can reveal a knowledge gap worth filling. Someone planning a community workshop discovers that they need to distinguish participants from total occupancy. Someone analysing feedback discovers that a label and a verified outcome are different things.
 
-The difference isn't whether they used AI. It's whether they **paused to think** about what AI gave them.
+Working from a project into a fundamental idea can be productive. It is not proof that foundational practice is obsolete. Keep returning to the underlying calculation, concept, or evidence so that the project's success does not depend on a chain of unexplained suggestions.
 
-This is metacognitive laziness. Not a failure of intelligence, but a failure of self-monitoring. You stop asking "Do I understand this?" and start asking "Does this look right?"
+Similarly, evaluation and creation are not always the final rungs of a fixed learning ladder. A beginner can attempt a creative task while still needing explicit instruction in its components. Choose the sequence that exposes and addresses the gap, rather than treating a taxonomy as a universal order.
 
-And yes, this is a genuine risk.
+## A small comparison you can run
 
+**Time:** two sessions of 15 minutes, preferably on different days. **Inputs:** two modest tasks of similar difficulty, such as explaining two related concepts or planning two short activities.
 
-## But Here's What We're Getting Wrong
+For the first task, work from your own notes and record where you get stuck. For the second, use AI assistance if available, preserving what it contributed. Do not pretend the tasks are perfectly matched; this is a personal learning check, not an experiment establishing causation.
 
-The metacognitive laziness risk is real. What's *not* justified is the leap from "this risk exists" to "AI makes us dumber."
+In the later session, close both drafts and attempt a new variant of each task. Check the result against a source, worked answer, or knowledgeable person. Record what you can now do, what you still need help with, and which parts you merely recognised when the answer was visible.
 
-That leap assumes something worth scrutinising: that the way we've always learned is the only way learning works.
+Without AI, compare an independently attempted task with one for which you first read a worked example. The question remains whether you can use the idea on a new problem.
 
-Many of us learned through grinding. Rote memorisation. Extensive worked examples. Long hours of solitary struggle. Repetitive practice until concepts stuck.
+**Success:** the record distinguishes assisted completion from independent transfer. An honest “I cannot yet do this” is more useful than awarding yourself understanding because the first output looked good.
 
-This worked. It built understanding, and those who went through it understandably value it. But when we see people *not* doing these things, we assume learning isn't happening.
+## Decide what to keep practising
 
-That assumption is worth questioning.
+Choose one capability that matters to you: constructing an argument, estimating time, inspecting a claim, or noticing a hidden constraint. Protect a small amount of practice in that capability while using assistance for work that is not the learning target.
 
-When someone uses AI to explore a concept, asks follow-up questions, gets confused, tries a different angle, and eventually builds understanding through an iterative conversation, that's learning. It doesn't look like sitting alone with a textbook for three hours, but it's genuine engagement with material.
+You do not need to prove that all offloading is harmful to justify this choice. You need a reason to care about the capability and a way to observe whether it is developing.
 
-When someone uses AI to generate a first draft, then spends their time evaluating, restructuring, and improving it, they're doing higher-order thinking (evaluation, synthesis) earlier in the process. They skipped some lower-order work. That's not the same as skipping the thinking.
-
-When someone uses AI to get unstuck on a problem they'd otherwise abandon, they continue engaging with the material. Without AI, they might have given up entirely. With AI, they kept going. Which outcome produced more understanding?
-
-The question isn't whether you're doing the *same* cognitive work. It's whether you're doing *valuable* cognitive work.
-
-
-## Learning Slower, Learning Different
-
-Here's a reframe that might be more accurate than "AI reduces critical thinking":
-
-AI changes the path to understanding.
-
-You might learn certain things more slowly when you use AI as a crutch for recall. But you might learn *other* things faster, like how to evaluate arguments, synthesise perspectives, and exercise judgement about quality.
-
-Consider calculators. When they became widespread, people stopped memorising multiplication tables as thoroughly. Some argued this was catastrophic. But people who used calculators could engage with more complex mathematical problems earlier, problems that would have been inaccessible if they'd had to do every calculation by hand.
-
-Did calculators "make people dumber at arithmetic"? In some narrow sense, yes. Did calculators reduce mathematical capability overall? No. They redirected it. People lost some computational fluency but gained access to higher-level mathematical thinking.
-
-AI may be doing something similar at a much larger scale. You may develop less capacity for certain types of unaided recall and composition. But you may develop *more* capacity for evaluation, judgement, synthesis, and critical analysis.
-
-That outcome, though, is not automatic. It depends entirely on how you use the tool.
-
-
-## The Flipped Pyramid
-
-There is something happening in practice that the "making us dumber" framing completely misses.
-
-For decades, education has followed a predictable sequence. You spend your first years learning fundamentals: definitions, formulas, procedures, foundational concepts. You memorise, you practise, you drill. Only later, sometimes much later in a final-year capstone project or a postgraduate thesis, do you get to do something genuinely creative with what you have learned. The interesting work is the reward for years of grinding through the basics.
-
-Bloom's taxonomy describes this progression. At the base: remember, understand. In the middle: apply, analyse. At the top: evaluate, create. The traditional path moves upward, one level at a time.
-
-AI flips the pyramid upside down.
-
-With AI as a thinking partner, a first-year student can begin at the creative level. They can design, prototype, and build things that would previously have required years of accumulated skill. They can explore concepts by making things with them, not just reading about them. And when their creative ambition runs into a gap in their foundational knowledge, when they need to understand something to make their idea work, they dig down and learn it. Not because a syllabus told them to, but because their own project demands it.
-
-This is student-push rather than syllabus-pull. The student's curiosity and creative ambition drive them into the fundamentals, rather than the curriculum dragging them through fundamentals toward a distant promise of creative work. The learning still happens. The order is different.
-
-An educator might set a creative assignment: represent a methodology from your discipline as a narrative comic strip. Before AI, this was nearly impossible for most students; they did not have illustration skills. With AI, they can generate images that are good enough to carry a concept; not professional-grade, but sufficient for visual storytelling. The assignment becomes about understanding the methodology deeply enough to explain it as a narrative, not about drawing ability. AI lowered the barrier to entry. The thinking got harder, not easier.
-
-But here is the critical variable. When students delegate the creative assignment to AI (paste the brief, accept the output, submit) the result is mediocre. AI is exceptionally good at producing the average. It generates text, images, and ideas that sit comfortably in the middle of every distribution: competent, plausible, and indistinguishable from everyone else's delegated output.
-
-When students converse with AI, iterating, pushing back, bringing their own perspective, and demanding specifics, the results are extraordinary. The conversation forces them into the material. They have to evaluate what AI produces, decide what works, identify what is missing, and articulate what they actually want. That is higher-order thinking happening in real time, driven by the student's own engagement, not by a textbook's sequence of chapters.
-
-The difference between mediocre and extraordinary is not whether AI was used. It is whether the student stayed in the conversation.
-
-This points to something that the "making us dumber" debate consistently misses. The question is not whether AI changes how we learn. It obviously does. The question is whether the new way of learning produces genuine understanding. And the evidence from practice suggests that it can, but only when the learner remains an active participant rather than a passive consumer of AI output.
-
-We are all learning to navigate this. Educators, professionals, students: nobody has a settled answer yet. But the early signs are clear: AI does not make us dumber. It makes it possible to learn differently. Whether "differently" means "better" or "worse" depends entirely on whether you stay in the conversation.
-
-
-## Toward Hybrid Intelligence
-
-Maybe the framing of "AI vs. human thinking" is itself the problem.
-
-What if the future isn't about preserving *unaided* human cognition in its traditional form, but about developing hybrid intelligence: the ability to think effectively in partnership with AI?
-
-What hybrid intelligence looks like:
-
-- Knowing when to think independently and when to think with AI
-- Being able to evaluate AI output with genuine understanding
-- Using AI to extend your capabilities without losing your foundation
-- Maintaining metacognitive awareness while leveraging cognitive offload
-- Developing judgement about *when* offloading is appropriate and when it's not
-
-This isn't a lesser form of intelligence. It's a different, and arguably more relevant, form of intelligence for a world where AI is everywhere.
-
-The most effective AI users aren't those who delegate everything to AI, nor those who refuse to use it. They're the ones who've developed a symbiotic relationship. They know what they bring (context, judgement, values, experience) and what AI brings (breadth, speed, pattern recognition, tirelessness).
-
-This symbiosis is itself a skill. It requires self-awareness about your own strengths and blind spots. Understanding of AI's capabilities and limitations. The discipline to pause and think before accepting AI output. The humility to recognise when AI has a better perspective. The confidence to override AI when your judgement says otherwise.
-
-
-## What History Actually Shows
-
-There is a fear underneath the "AI makes us dumber" question that is worth naming directly: the fear that AI will make us obsolete. That the skills we have spent years building will stop mattering.
-
-History suggests the opposite.
-
-When ATMs arrived, people predicted the end of bank tellers. Instead, cheaper branches meant more branches, and total teller employment rose. The job changed. Tellers spent less time counting cash and more time advising customers. The human skill that mattered shifted from processing to judgement.
-
-When spreadsheets arrived, people predicted the end of accountants. Instead, the cost of financial analysis dropped so far that demand for it exploded. Every department wanted forecasts, models, scenarios. There were more accounting jobs after spreadsheets, not fewer. The work was different, but there was more of it.
-
-When containerised shipping arrived, people predicted the end of dock workers. Instead, global trade expanded so dramatically that port employment grew. The containers did not eliminate the work. They changed its shape and multiplied its volume.
-
-This pattern has a name: the Jevons Paradox. When a technology makes something cheaper or more efficient, demand for that thing tends to increase, not decrease. The technology does not replace the work. It refactors it. The routine parts get absorbed by the tool. The parts that require judgement, context, creativity, and trust become more central, not less.
-
-AI is following the same pattern. The people who will thrive are not the ones who resist AI or the ones who delegate everything to it. They are the ones who develop the skill of working alongside it: knowing when to lean on it, when to override it, and when to do the hard thinking themselves.
-
-That skill is not threatened by AI. It is amplified by it.
-
-
-## The Conversation, Not Delegation Connection
-
-This whole discussion circles back to a foundational idea from @sec-delegation-trap: conversation, not delegation.
-
-When you delegate to AI, "just give me the answer," cognitive offload becomes cognitive abdication. You get output without understanding. Over time, your own capabilities erode.
-
-When you converse with AI, "help me think through this," cognitive offload becomes cognitive amplification. You engage with material at a deeper level, with AI as a thinking partner that challenges, extends, and enriches your understanding.
-
-The difference between offload that harms and offload that helps is whether the human stays in the loop. Not just approving output, but actively thinking alongside the tool.
-
-
-## What to Actually Worry About
-
-Instead of the broad fear that "AI makes us dumber," here are the specific risks worth paying attention to.
-
-**Loss of productive struggle.** Some difficulty is valuable. When you wrestle with a concept and eventually break through, that struggle builds durable understanding. If AI eliminates *all* struggle, it may eliminate the understanding that comes with it. The fix is simple in principle: attempt the hard thing first. Use AI to get unstuck, not to avoid getting stuck.
-
-**Illusion of understanding.** You may *feel* you understand something because you've read AI's clear explanation, without having built genuine comprehension. You can parrot the explanation but can't apply it to a new context. The test: can you explain it in your own words? Can you use it in a situation you haven't seen before?
-
-**Erosion of foundational skills.** Some skills serve as foundations for higher-order thinking. If you skip the foundations, you may struggle with the complex work that depends on them. The nuance: not every traditional skill is equally foundational. Be intentional about which foundations matter. Protect those. Let go of the ones technology has genuinely superseded.
-
-**Metacognitive atrophy.** The biggest risk. You stop monitoring your own understanding because AI gives you a false sense of competence. The antidote is the simplest thing in the world, and the hardest to maintain: keep asking yourself, "Do I actually understand this, or does it just sound right?"
-
-
-::: {.callout-tip title="The honest position"}
-The goal is not to avoid cognitive offload. It is to offload wisely, knowing when to lean on AI and when to lean on your own mind.
-:::
-
-## A More Honest Position
-
-Here's where I land.
-
-AI doesn't make us dumber. But it does make it easier to *be* dumber. To coast, to accept, to stop thinking.
-
-The same tool that can deepen understanding can also provide a comfortable path to intellectual laziness. The difference is self-awareness and intentional practice.
-
-The goal isn't to avoid cognitive offload. It's to offload wisely. To know when to lean on AI and when to lean on your own mind. To maintain the metacognitive habits that turn AI from a crutch into a catalyst.
-
-That's harder than avoiding AI. It's harder than embracing AI uncritically. It requires ongoing attention and honest self-reflection.
-
-But it's the honest position. And honest positions, in the long run, serve us better than comforting certainties in either direction.
-
-> Cognitive offload isn't the enemy. Cognitive abdication is.
-
-## Audit One Habit
-
-Before opening an AI tool, write down one task you now offload routinely. Then consider:
-
-1. Ask the AI to make the strongest case that it is deskilling you. Then ask what evidence would settle the question, and whether that evidence exists yet. The honest answer is that it mostly does not.
-2. Ask what the calculator analogy gets right and what it gets wrong. The second half is where the argument actually lives.
-3. Describe how you recently learned something with AI, then ask whether that was learning or metacognitive laziness. The answer depends entirely on details you have to supply honestly.
-
-**Keywords to steer with.** cognitive offload · metacognition · metacognitive laziness · cognitive abdication · higher-order versus lower-order thinking · the flipped pyramid · hybrid intelligence · Socrates on writing · deliberate practice
-
-**A starting prompt.**
-
-> **Role:** You are a learning scientist, sceptical of both the panic and the hype about AI and learning.
->
-> **Task:** Take the way I actually used AI on a recent piece of work and tell me whether it built capability or borrowed it.
->
-> **Context:** I have read a chapter distinguishing cognitive offload, which is fine, from cognitive abdication, which is not, and arguing that the test is whether I paused to evaluate. Here is what I did, step by step: [describe it honestly, including the parts you skipped]. Do not be reassuring.
->
-> **Format:** A verdict per step, offload or abdication, with the reason. Then the one change to my process that would most shift the balance, and what it would cost me in time.
+The next chapter, AI Last, turns that intention into a workflow. Its job is to help you decide when and how to ask, not to repeat a claim that every shortcut erodes your future.

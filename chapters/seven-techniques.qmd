@@ -14,7 +14,6 @@ For each technique, you will find a short explanation of what it does, when to r
 
 Pick the one that fits. Modify it. Make it yours.
 
-> The right technique is not the cleverest one. It is the one that matches the kind of thinking you need to do right now.
 
 
 ## 1. Reverse Prompting
@@ -23,7 +22,7 @@ Pick the one that fits. Modify it. Make it yours.
 
 **When to use it.** You are starting a new project, scoping a problem, or planning something complex and you know you have not thought of everything yet.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 I'm planning [describe your project,
 decision, or problem].
@@ -41,7 +40,6 @@ aspects of this.
 
 Begin with your first question.
 ```
-:::
 
 The key is to answer honestly, especially when a question catches you off guard. That discomfort is the technique working. If the AI asks something you cannot answer, that is a gap in your thinking you just discovered.
 
@@ -56,7 +54,7 @@ Reverse Prompting works best at the start of something, when the shape of the pr
 
 **When to use it.** You are choosing between approaches, tools, strategies, or solutions and you want to think through trade-offs methodically rather than going with your gut.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 I'm deciding between these options
 for [describe the decision]:
@@ -79,7 +77,6 @@ Conclude with which option you'd recommend
 and why, but flag the strongest argument
 against your recommendation.
 ```
-:::
 
 Do not accept the AI's recommendation uncritically. The real value is in the structured comparison. Challenge at least one of the listed pros. Ask yourself what disadvantage the AI missed. Argue for a different option than the one AI recommended and see if your reasoning holds up.
 
@@ -92,7 +89,7 @@ Pros and Cons gives you a snapshot of the decision landscape. But some decisions
 
 **When to use it.** You are learning a new process, preparing for something with many sequential steps, or working through a procedure where skipping a step could cause problems.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 I need to understand the process
 for [describe the task or procedure].
@@ -112,7 +109,6 @@ the entire process at once.
 
 Begin with Step 1.
 ```
-:::
 
 At any step, you can ask the AI to go deeper: "What if the client pushes back at this stage?" or "What happens if I skip this step?" These side conversations are where the real learning happens. You are not just memorizing a sequence. You are understanding why each step matters.
 
@@ -125,7 +121,7 @@ The first three techniques help you think through problems, weigh options, and u
 
 **When to use it.** You have a difficult conversation coming up, you want to practice a presentation to a tough audience, or you need to rehearse handling objections.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 You are [describe the persona: e.g.,
 a senior executive who is skeptical
@@ -155,7 +151,6 @@ on:
 
 Let's begin. I'll speak first.
 ```
-:::
 
 The feedback at the end is critical. It turns the exercise from mere practice into a structured debrief. Pay special attention to moments where the AI pushed back and you felt stuck. Those are the moments to rehearse differently.
 
@@ -170,7 +165,7 @@ This technique combines well with using multiple AI tools. Give one model the "a
 
 **When to use it.** You are facing a decision with valid arguments on both sides and you suspect you are leaning one way without fully examining the alternative.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 I'm considering [describe the decision].
 
@@ -195,7 +190,6 @@ in my decision, and what additional
 information would I need to be
 confident either way?
 ```
-:::
 
 Watch for arguments that surprise you. If the Skeptic raises a point you had not considered, sit with that. The purpose is not to "win" the debate, but to make sure you are not ignoring a perspective that matters.
 
@@ -210,7 +204,7 @@ The previous five techniques help you explore, decide, learn processes, practise
 
 **When to use it.** You are studying a new subject, preparing for a certification, onboarding into a new role, or just want to pressure-test how well you actually understand something you think you know.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 I'm studying [topic or subject area].
 Test my understanding.
@@ -231,7 +225,6 @@ Wait for my answer before moving to the next question.
 
 Start with Question 1.
 ```
-:::
 
 Be honest with your answers. Do not look things up first. The point is to find out what you actually know versus what you think you know. Pay close attention to the "partially correct" answers. That is where the most useful learning lives, in the gap between what you said and what you missed.
 
@@ -244,7 +237,7 @@ Self-testing reveals what you know and what you do not. But even when you unders
 
 **When to use it.** You are making a decision that affects multiple domains and you want to make sure you are not thinking about it from only one angle.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 I need to make a decision about [describe the situation].
 
@@ -264,7 +257,6 @@ After all four experts have spoken, provide a synthesis:
 what do they agree on, where do they disagree, and what
 should I investigate further?
 ```
-:::
 
 The synthesis at the end matters most. Look for where the experts disagree. That tension usually points to the hardest part of your decision, the part that requires your judgement, not more AI output.
 
@@ -279,7 +271,7 @@ The Expert Panel broadens your perspective. But there is a particular kind of bl
 
 **When to use it.** You have a plan you are fairly confident about and you want someone to stress-test it before you commit.
 
-::: {.callout-note title="Try this prompt"}
+**A prompt to adapt:**
 ```
 I'm planning to [describe the initiative or decision].
 
@@ -297,7 +289,6 @@ Help me think deeper:
 
 Challenge my assumptions. Be specific and concrete.
 ```
-:::
 
 The most valuable output from this technique is usually in question 1, the risks you are missing. We all have blind spots shaped by our experience, our role, and our optimism about our own plans. The AI does not share those blind spots.
 
@@ -330,22 +321,8 @@ You do not need to master all eight techniques. Pick the one that fits your curr
 
 Start with whichever technique matches the kind of thinking you need to do right now. Try it once. Modify the prompt. Try it again. These are conversation starters, not scripts.
 
-## Choose One Technique
+## Practice: choose, then justify
 
-Do not run all eight. Choose the one that addresses a real weakness in your current task:
+**Time:** 15–20 minutes. Choose one difficulty in a current task and select one technique from this chapter. Write why it fits and what would count as useful progress. Try it with a model, a colleague, or your own contrasting drafts, then record one change it produced.
 
-1. Pick one technique and run it on a decision you are actually facing. Then ask the AI which of the other seven would have suited the problem better, and why yours was the wrong first choice.
-2. Run the Expert Panel, then ask which panellist it found hardest to write. The thin one marks a perspective the model does not hold well, and that is where you should be most sceptical of it.
-3. After a pre-mortem, ask what it would need to know about your organisation to make the answer specific rather than generic. Then supply exactly that and run it again.
-
-**Keywords to steer with.** reverse prompting · pros and cons · stepwise chain of thought · role play · debating · formative self-testing · the expert panel · risk deep-dive · pre-mortem · combining techniques · adversarial framing
-
-**A starting prompt.**
-
-> **Role:** You are a facilitator who owns a toolkit of thinking techniques and picks the one that fits rather than the one you like best.
->
-> **Task:** Ask me about my problem, then recommend which of these eight techniques to use, and tell me why the other seven are wrong for it.
->
-> **Context:** I have read a chapter covering reverse prompting, pros and cons, stepwise chain of thought, role play, debating, formative self-testing, the expert panel, and the risk deep-dive. My problem is [describe it]. Ask questions before recommending anything.
->
-> **Format:** Your questions first. Then one recommended technique with the reason, a runner-up, and a one-line dismissal of each of the remaining six. Then run the recommended technique with me.
+**Artefact:** a technique choice and one before/after example. **Success:** explain why that technique was useful; do not use all eight merely to finish the checklist. No AI account is needed to complete the independent version.

@@ -50,6 +50,19 @@ By the end, you should be able to:
 - verify the claims that carry real consequences; and
 - produce a record showing which parts came from the tool, which decisions were yours, and why you can defend the result.
 
+## Evidence of progress, part by part
+
+| Part | What you should be able to show |
+|---|---|
+| Understanding the landscape | Classify a task, distinguish a model from its surrounding tools, and explain why a plausible answer needs checking |
+| Principles | Preserve a first attempt, identify a consequential error, and complete Verify–Explain–Test against independent evidence |
+| Methodology | Write a scoped brief, choose a technique for a specific difficulty, and place a check between dependent steps |
+| Putting it together | Produce an owned decision with source support, a rejected or revised suggestion, and a boundary test |
+
+Keep a small learning record as you read. Start with one task and your unaided attempt; add the evidence or correction each part makes possible. The worked community workshop in @sec-across-disciplines shows the complete record and supplies a parallel task with an answer check.
+
+You can complete the independent activities without an AI account. “Unaided” here means without handing the judgement to AI; calculators, assistive technology, notes, dictation, and help accessing the material are welcome. Shorten a session or explain with a diagram if that lets you inspect the reasoning more clearly. The advanced loop chapter is optional, not a gate to completing the book.
+
 ## How to Read This Book
 
 This is not a textbook and it is not a research paper. The ideas here reflect one practitioner's perspective, informed by research, experience, and ongoing experimentation. They are starting points, baselines to work from as you discover your own approach to AI.
@@ -78,7 +91,7 @@ Throughout the book you will encounter coloured callout boxes. Each serves a dif
 
 You will also find tables throughout the book that compare approaches, map strategies across domains, or summarise frameworks. These are reference material, worth bookmarking, not just reading once.
 
-Most chapters close with a short practice section. Early chapters provide complete RTCF starting prompts; later chapters increasingly ask you to begin without AI, evaluate evidence, or transfer the method to your own work. RTCF (Role, Task, Context, Format) is covered properly in @sec-rtcf and summarised in @sec-quick-reference. The structure is scaffolding, not a ritual. Use only the elements that clarify your task, then push back on the first answer.
+Most chapters close with a short practice section. Selected chapters provide complete RTCF starting prompts; other chapters ask you to begin without AI, evaluate evidence, or transfer the method to your own work. RTCF (Role, Task, Context, Format) is covered properly in @sec-rtcf and summarised in @sec-quick-reference. The structure is scaffolding, not a ritual. Use only the elements that clarify your task, then push back on the first answer.
 
 ## How This Book Was Written
 
@@ -114,26 +127,15 @@ A book about conversation should be available in more than one form. Pick the fo
 - **Explore the source.** The full source is on [GitHub](https://github.com/michael-borck/conversation-not-delegation), including every chapter, the build system, and the revision history. [DeepWiki](https://deepwiki.com/michael-borck/conversation-not-delegation) provides an AI-navigable view of the repository.
 - **Browse all books.** This book is part of a series. See all titles at [books.borck.education](https://books.borck.education).
 
-The online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.
+The online version is always the most current. The printed and ebook editions are updated periodically. Use the free online edition and its downloads for the latest available revision. A purchased ebook is not guaranteed to update automatically.
 
 ## The Sibling Book
 
-```{mermaid}
-%%| fig-width: 4
-flowchart TD
-    CND["Conversation,<br/>Not Delegation<br/>(no code needed)"]
-    Think["Think Python,<br/>Direct AI<br/>(complete beginners)"]
-    CPPA["Converse Python,<br/>Partner AI<br/>(methodology)"]
-    Code["Code Python,<br/>Consult AI"]
-    Ship["Ship Python,<br/>Orchestrate AI"]
-    Web["Build Web,<br/>Guide AI"]
-    CND --> CPPA
-    Think --> Code
-    CPPA -. read alongside .-> Code
-    Code --> Ship
-    CND --> Web
-    Think --> Web
-```
+| Route | Start here | Continue with |
+|---|---|---|
+| Concepts before code | Conversation, Not Delegation | Converse Python, Partner AI; apply its method alongside the appropriate programming level |
+| Python from the beginning | Think Python, Direct AI | Code Python, Consult AI, then Ship Python, Orchestrate AI |
+| Web development | Think Python, Direct AI | Build Web, Guide AI |
 
 Two ways in: start with *Conversation, Not Delegation* if you want the ideas before (or without) code, or start with *Think Python, Direct AI* if you want to code from your first page. The methodology in *Converse Python, Partner AI* enhances every path.
 

@@ -210,13 +210,9 @@ before we continue.
 
 Once you are comfortable with basic chaining, these techniques let you extract more from the same conversation.
 
-### Iterative Refinement
+### Refinement at a checkpoint
 
-After completing a chain, push deeper without starting over:
-
-> "That analysis is helpful. Now go deeper on [specific theme]. Add statistical evidence or examples, implications for [your context], and one alternative perspective."
-
-This is the Conversation Loop in miniature. You have already iterated once. Now you iterate again, on a narrower target.
+Iteration is already part of the Conversation Loop. Chaining adds a dependency: decide what this step has established before passing its result onwards. Repeating “improve this” without checking the assumptions can propagate the same error through cleaner drafts.
 
 ### Format Shifting
 
@@ -248,9 +244,7 @@ This is one of the most underused techniques. It forces the AI to stress-test it
 
 There is a practical reality that prompt chaining runs into: AI has a finite memory.
 
-Every AI conversation has a context window, a limit on how much text the model can hold in its head at once. Early in a conversation, the AI has your full prompt and its full response. Twenty exchanges later, the earliest parts of the conversation are fading. The model does not forget all at once. It loses precision gradually, like a person trying to remember the first thing said in a two-hour meeting.
-
-This matters for chaining because long chains are long conversations. If your chain runs to fifteen or twenty exchanges, the AI may lose track of decisions you made in step two while it works on step twelve. The output starts to drift, contradict earlier work, or quietly drop constraints you set at the beginning.
+A model receives a bounded context, which the surrounding product may truncate or summarise. It can also fail to use information that is present. There is no universal number of exchanges after which a conversation becomes unreliable; length, content, model, and application behaviour all matter. Research on long-context tasks found sensitivity to where relevant information appeared. [Liu et al., Lost in the Middle](https://arxiv.org/abs/2307.03172)
 
 A few practical habits keep this under control:
 
@@ -258,11 +252,11 @@ A few practical habits keep this under control:
 
 **One task per prompt.** When you ask the AI to do three things at once, it divides its attention across all three. The result is three shallow responses instead of one deep one. Break it up.
 
-**Summarise and hand off.** When a conversation is getting long (roughly fifty exchanges or more), ask the AI to summarise everything you have accomplished and decided so far. Copy that summary into a new conversation and continue from there. You reset the AI's attention without losing the thread.
+**Summarise and hand off.** When a conversation is getting long or key constraints become hard to track, ask the AI to summarise everything you have accomplished and decided so far. Copy that summary into a new conversation and continue from there. You reset the AI's attention without losing the thread.
 
 **Make context explicit every time.** Do not assume the AI remembers what you said earlier. If a constraint matters for this step, state it again. "Remember, we are working within a six-week timeline and a team of four" takes five seconds to type and prevents the AI from drifting back to generic assumptions.
 
-**Watch for signs of drift.** If the AI starts contradicting something it said earlier, or produces output that ignores a constraint you set, the context window is likely the problem. Summarise, hand off, and continue in a fresh session.
+**Watch for signs of drift.** If the AI starts contradicting something it said earlier, or produces output that ignores a constraint you set, inspect the handover and sources; context management is one possible cause, not the only one. Summarise, hand off, and continue in a fresh session.
 
 These are not advanced techniques. They are housekeeping. But they make the difference between a chain that holds together over ten steps and one that quietly falls apart at step six.
 
@@ -288,35 +282,11 @@ Not every task needs a chain. Skip it when:
 3. **Provide feedback.** Tell the AI what is working and what needs adjustment.
 4. **Build incrementally.** Small steps beat big jumps.
 5. **Save your chains.** A good chain is reusable. Document the ones that work.
-6. **Know when to stop.** Iteration has diminishing returns. Three rounds of refinement usually beats seven.
+6. **Know when to stop.** Iteration has diminishing returns. Stop when the acceptance criteria are met or further revision stops producing a useful change.
 
 
-## Key Takeaways
+## Independent practice: inspect the handover
 
-- Prompt chaining breaks complexity into steps. Each step is simpler and produces better output.
-- You maintain control. Review after each step. Adjust direction when needed.
-- It works for analysis, writing, planning, and argument-building. Not just content generation.
-- Quality compounds. Good output at step 1 becomes better input at step 2.
-- It is a conversation. The back-and-forth is where value gets made. Each link in the chain is a chance to think, not just a chance to prompt.
+**Time:** 15–20 minutes. Sketch a three-step workflow: select group sizes, prepare the timetable, draft the invitation. Use @sec-across-disciplines. For each step, write the input, output, and a check that must pass before the next step starts. Decide where an unconfirmed assumption must stop the chain.
 
-The power of prompt chaining is not in any individual step. It is in how each step builds on the previous one, refining your thinking as you go. That is what makes the output yours, not the AI's.
-
-## Practise the Checkpoints
-
-Use one ongoing task and preserve the intermediate answers rather than jumping to the end:
-
-1. Take a chain you have run and ask the AI which link carried the most weight. That is where your review time should have gone, and it is rarely where it went.
-2. In a long conversation, ask what it has dropped since the early exchanges. Context loss is invisible until you ask about it directly.
-3. Ask it to design a chain for a task you describe, then ask which single link you should not automate. Its answer to the second question is more useful than its answer to the first.
-
-**Keywords to steer with.** guided workflow · sequential chain · interactive chain · the pause between steps · iterative refinement · format shifting · perspective shifting · context window · drift · summarise and hand off · one task per prompt
-
-**A starting prompt.**
-
-> **Role:** You are a workflow designer who breaks big requests into steps and insists on a review point between each one.
->
-> **Task:** Design a prompt chain for the task I describe, and mark exactly where I must stop and check before continuing.
->
-> **Context:** I have read a chapter on chaining, on the pause between links, and on how context drifts across a long conversation. The task is [describe it, and say how long it usually takes me]. Assume I will be tempted to skip the review points.
->
-> **Format:** Numbered links with the prompt for each. After every link, a "check this before continuing" line naming the specific thing that goes wrong if I skip it. End with the one link where a mistake would be hardest to notice later.
+**Artefact:** a three-step handover map. **Success:** check capacity before timing and both before communicating an invitation. No AI account is needed to complete the independent version.

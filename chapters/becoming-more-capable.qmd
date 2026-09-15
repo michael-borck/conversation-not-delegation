@@ -4,132 +4,67 @@
 
 > The goal was never to get AI to do more. It was to become more capable yourself.
 
-This book was never about AI.
+## Show the change, do not assume it
 
-It was about you.
+Return to the first attempt you kept near the beginning of this book. Put it beside the final version and explain what changed.
 
-The tools will change. The models will get faster, cheaper, more capable. The interfaces will shift. The names will change. None of that matters as much as what happens to the person sitting across from the machine.
+Perhaps you narrowed the question. Perhaps you rejected a confident assertion, checked a source, or noticed a limit that the proposed answer concealed. Those are observable actions. Finishing the chapters, holding a long conversation, or producing polished prose is not enough to establish them.
 
-In fact, better models make the practices in this book more important, not less. A model that produces more convincing output raises the cost of uncritical acceptance. When the average output was obviously rough, people naturally reviewed it. When the average output reads like something a competent professional wrote, the temptation to accept it without thinking increases, and so does the cost of the errors you miss.
+The evidence should be small enough to inspect: a starting position, an intervention, an independent check, and the decision you made. That is what the capstone asked you to produce.
 
-The better AI gets at producing convincing averages, the more you need the habits of verification, critical engagement, and staying in the conversation that this book describes.
+## The workshop, revisited
 
-The question this book has been answering, from the first page, is not "how do I use AI well?" It is "how do I become more capable by thinking alongside it?"
+In the community-workshop case, the first proposal exceeded both the room capacity and the available time. The budget calculation happened to be right. Maya did not accept or reject the whole answer as a unit. She checked the parts against the source cards.
 
-Those are different questions. The first one makes you a better operator. The second one makes you better at your work, with or without the tool.
+The corrected plan served eighteen participants in two groups of nine. It counted the facilitators, allowed reset time, and left the organiser's confirmation outstanding. The final message was useful because it preserved that limit.
 
-> You started this book learning how to work with AI. You are finishing it having learned how to think more clearly. That was always the point.
+The independent version changed the numbers. If you solved it without copying the worked timetable, you demonstrated transfer: the method survived a new case. If you missed a constraint, the check showed where to practise next. Both are more informative than whether an assistant congratulated you.
 
+## What remains yours
 
-## The Compound Loop
+You choose the task and the standards that matter. You contribute knowledge of the setting, ask for missing evidence, decide what to accept, and identify who has authority to act.
 
-Better questions produce better conversations.
+AI can contribute candidate explanations, alternatives, transformations, and challenges. Sometimes it will supply an idea you would not have found alone. Sometimes a calculator, source document, colleague, or specialist will be the better resource. Choosing among them is part of the capability this book is trying to build.
 
-Better conversations produce deeper understanding.
+Do not interpret “own the result” as “I must perform every operation unaided.” Good work often depends on tools and other people. Ownership means that the limits and responsibilities are visible and that your claim does not exceed what you can support.
 
-Deeper understanding produces better questions.
+## A review of your own practice
 
-This is not a metaphor. It is what actually happens when you adopt the practices in this book. You start by learning to frame a precise question instead of dumping a vague request. That precision forces you to clarify your own thinking before the conversation begins. The conversation that follows is sharper because you were sharper going in. And what you learn from that sharper conversation makes your next question even better.
+Choose one piece of work from the last month. Ask four questions:
 
-Each loop through the cycle leaves you slightly more capable than you were before. Not because the AI taught you something. Because the act of thinking alongside it forced you to articulate what you know, confront what you do not, and make decisions about what matters.
+1. What did I believe before receiving assistance?
+2. Which suggestion did I accept, reject, or materially change, and why?
+3. Which consequential claim did I check somewhere other than the answer itself?
+4. What can I now explain or do on a new example?
 
-This is the compound interest of the conversational approach. Delegation produces outputs that sit in folders. Conversation produces understanding that compounds in your head.
+If you cannot answer one, identify a next action rather than writing a more flattering account of the process. You may need a source check, a simpler exercise, more domain knowledge, or another person's review.
 
+Keep uncertainty in the record. “The source supports the schedule, but the organiser has not confirmed access” is stronger than pretending everything is settled.
 
-## What You Actually Built
+## A sustainable next habit
 
-If you have been practising what this book describes, something has already changed. You may not have noticed it yet.
+Choose one habit for the coming week, not a promise to use every technique on every task.
 
-You think before you prompt. You draft before you ask for feedback. You iterate instead of accepting the first response. You push back when something sounds plausible but feels wrong. You ask the AI to challenge your reasoning, not just validate it.
+You might begin important work with a five-minute first attempt. You might keep a claim/source column beside a draft. You might place a deliberate pause between planning and execution, or explain a result in your own words before sharing it.
 
-These are not AI skills. They are thinking skills. The AI was the catalyst, but the capability is yours.
+Choose a task where the habit has a visible completion test. At the end of the week, examine one example. Did the pause expose a real issue? Did the source support the claim? Did you understand the change you accepted? Adjust the habit using that evidence.
 
-A professional who has spent six months in genuine conversation with AI is not someone who has learned to use a tool. They are someone who has learned to think more precisely, evaluate more critically, and articulate more clearly. Take the AI away and those skills remain. They are yours now.
+There is no guarantee that each exchange compounds into lasting expertise. That is why the learning chapter separated assisted performance from independent transfer. Continue practising the capabilities you want to retain and check them on work that matters.
 
-That is the difference between augmentation and dependence. Dependence means you need the tool to function. Augmentation means the tool made you better, and "better" persists after the tool is gone.
+## Capability is not an employment forecast
 
+These habits do not establish what employers will value, which roles will change, or what future models will do. Promises that human judgement is permanently unautomatable are as difficult to defend as promises that every role will disappear.
 
-## Your Expertise, Its Breadth
+The narrower reason to practise is already sufficient: today you need to make decisions under uncertainty, communicate clearly, and avoid giving unsupported outputs more authority than they deserve. Those are useful aims without an economic guarantee attached.
 
-The subtitle of this book is a formula: your expertise plus AI's breadth equals amplified thinking.
+If a task is routine, well specified, permitted, and independently checkable, sensible delegation may be appropriate. If it needs discussion, converse. If the evidence or permission is missing, stop or use another method. The decision map in the quick reference keeps all of those options available.
 
-Notice what comes first. Your expertise. Not the model's capability. Not the prompt technique. You.
+## Take stock without AI
 
-AI brings breadth no human can match. It has processed more text, seen more patterns, encountered more framings than any individual could absorb in a lifetime. That breadth is genuinely valuable. But breadth without direction is noise. It is your expertise that turns breadth into insight. Your context, your judgement, your experience of what actually works in the specific situation you are facing.
+**Time:** 20 minutes. Close the chat and choose a new, small task. Write the goal, relevant constraints, an initial approach, and how you would check it. You may use notes, a calculator, assistive tools, or an accessible format.
 
-The formula only works when both sides contribute. Strip out the AI and you lose the breadth. Strip out your expertise and you lose the direction. The amplification happens in the space between.
+Compare your attempt with the record you made at the start of the book. Identify one improvement with evidence and one capability that still needs practice. Ask a colleague to challenge your explanation if someone is available; otherwise perform a second review after a break.
 
-This is why the conversational approach matters more than any specific technique. Techniques are useful. They give you structure, starting points, ways to get unstuck. But the real leverage comes from the relationship between your knowledge and the model's range. That relationship deepens every time you engage with it honestly.
+**Success:** you can show a specific change in how you approached or checked the work. You do not need to claim that the book transformed your intelligence or made you irreplaceable.
 
-
-## When Competence Becomes Free
-
-There is an economic version of this argument, and it has become hard to ignore. We met its hard edge in @sec-agentic-loops; here is its fuller form.
-
-For most of working life, competent execution was scarce and therefore valuable. The clean report, the solid analysis, the well-built deck took skill and time, and being able to produce them reliably was a career. AI is collapsing that. It produces competent execution on demand, for everyone, at once. The thing that used to be scarce is becoming free.
-
-Follow that to its conclusion. If an AI can run your work brilliantly, it can run your competitor's work just as brilliantly, in the same way, with the same instincts. Generically high-quality output, available to everybody, is an advantage to nobody. When everyone has the same competence, competence stops being the differentiator. The middle of the distribution (the reliable, the professional, the average-done-well) is exactly what the model produces best, and exactly what is now worth least.
-
-What is left is variation. The model is built to produce the convincing centre of the distribution (@sec-what-are-llms); it cannot reliably produce the genuine edge, because the edge is not sitting in the training data as a pattern to interpolate. Your particular judgement, your point of view, the call that runs against the obvious answer, the taste that says *this one, not that one*: these are the things the average cannot generate, and so they are the things with value in a market full of competent averages. You end up caring far more about the taste of the person than about the entire apparatus built to deliver the work. The apparatus is commoditised. The judgement is not.
-
-> When competence is free, the only thing worth paying for is the judgement that competence cannot supply.
-
-Here is where the two arguments of this book turn out to be one. The cognitive case, that conversation compounds your capability and delegation erodes it, and the economic case, that variation is the only durable edge, are the same case from two directions. The capability that conversation builds in you *is* the variation the market cannot get from the model. Every time you push back instead of accepting, draft before you ask, and make the output yours, you are building the one asset that does not commoditise: a point of view the average does not contain.
-
-The risk runs the other way too, and it is worth naming plainly. The person who delegates everything becomes a conduit, passing along polished output they did not shape and cannot defend. A conduit adds no variation, because there is nothing of them in the work. In a world where the polished output is free, the conduit is the most replaceable person in the room, not because AI replaced them, but because they stopped adding the only thing that was ever theirs to add.
-
-There is an honest difficulty here, and the book will not pretend it away. The judgement that becomes so valuable was, for most of us, built by doing exactly the entry-level work that AI now does first and cheapest. If the rungs of the ladder are the first thing automated, how the next generation climbs to the judgement that the market will pay for is a genuine open problem, and one this book cannot solve, only flag. What it can say is that the answer, whatever it turns out to be, will involve people doing the effortful thinking deliberately rather than having it forced on them by necessity. Which is, in the end, what this whole book has been asking you to do.
-
-
-## What Does Not Compound
-
-Delegation does not compound.
-
-If you spent the last year asking AI to write your emails, draft your reports, and generate your analyses, you have a year's worth of polished outputs. You do not have a year's worth of growth. The outputs were consumed, forgotten, replaced by next week's outputs. Nothing accumulated in you.
-
-Conversation compounds. Delegation does not. That distinction is worth more than every prompting trick in every guide ever written.
-
-An honest note: the compound effect described here is a claim grounded in pedagogical theory, professional experience, and the well-documented benefits of reflective practice. It is not yet backed by multi-year longitudinal studies of AI-assisted thinking. Those studies are underway, but the technology is too new for definitive long-term evidence. The argument rests on the same foundation as any claim about deliberate practice: that structured engagement with challenging material builds capability, and passive consumption does not. If that principle holds (and centuries of evidence from education, music, medicine, and sport suggest it does) then the conversational approach should compound. But should is not proof. The honest position is confidence in the principle, humility about the timeline for evidence, and a commitment to revising the claim if the data says otherwise.
-
-
-## The Loop, One Last Time
-
-The Conversation Loop is simple. Define your question. Explore possibilities. Push back and refine. Make the result yours. Go around again.
-
-That loop is not a technique. It is a description of what thinking with another mind looks like. The AI is the other mind. You are the one deciding when to explore, when to push back, when to stop, and when the output is truly yours. Every time you make those decisions well, you get better at making them. That is the compound effect in action.
-
-The loop does not require AI. You can run it with a colleague, a mentor, a blank page. But AI makes it available on demand, at any hour, on any problem. The practice becomes as frequent as you want it to be. And frequency is what turns a technique into a capability.
-
-
-::: {.callout-tip title="The compound test"}
-Take the AI away. Are you better at your work than you were six months ago? If yes, you have been conversing. If no, you have been delegating.
-:::
-
-
-## The Closing Argument
-
-There is a line that has appeared twice before in this book, and it belongs here at the end.
-
-Judgement cannot be delegated to something that has read everything but experienced nothing.
-
-That sentence is not a limitation of AI. It is a statement about what makes you irreplaceable. Your experience. Your judgement. Your ability to weigh competing priorities, read a room, know when the data is pointing in the right direction and when it is lying to you. No model has that. No model will.
-
-Different traditions name this differently. Philosophers call it agency. AI policy calls it human-in-the-loop. This book has called it conversation. They all point at the same thing: the moment of weighing, choosing, and standing behind the outcome that only you can do. Agency is what is at stake. Human-in-the-loop is what it looks like from the system's view. Conversation is how you keep it in practice.
-
-What a model can do is help you sharpen those capacities. It can surface what you had not considered. It can pressure-test your reasoning. It can show you the gap between what you think you know and what you actually know. But only if you stay in the conversation. Only if you do the thinking.
-
-The goal was never to get AI to do more.
-
-It was to become more capable yourself.
-
-That is the practice. That is the point. And if you have read this far, you already know how to begin.
-
-## Take Stock Without AI
-
-Return to the capstone record from @sec-across-disciplines. Without opening an AI tool, answer three questions:
-
-1. What can you now explain or do that you could not at the beginning?
-2. Which intervention depended on your experience, values, or knowledge?
-3. If the tool disappeared tomorrow, which capability would remain?
-
-Write the answers before discussing them with anyone or asking a model to evaluate them. This is the book's final test because the capability was always meant to become yours.
+The next useful conversation begins with that honest account of where you are.

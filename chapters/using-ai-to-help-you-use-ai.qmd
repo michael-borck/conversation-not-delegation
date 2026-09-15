@@ -161,22 +161,8 @@ But start here. Let AI help you figure out what you actually need.
 
 Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.
 
-## Ask for a Consultation
+## Practice: evaluate the consultant
 
-Bring a real task, but make the first exchange about diagnosing how AI could help:
+**Time:** 15–20 minutes. Write your own short brief before asking a model or colleague to improve it. Compare the revised brief against the original goal. Mark an assumption the consultant introduced, and retain it only if you can justify it.
 
-1. Run the consultation prompt, then notice which of its questions was hardest to answer. That difficulty is telling you something about your work, not about the prompt.
-2. Let it interview you, then ask what it thinks your actual job is. The mismatch between its description and yours is the interesting part.
-3. After it recommends, ask which recommendation it is least confident about and what it would need to know to be sure. Models rarely volunteer their own weak spots.
-
-**Keywords to steer with.** meta-prompting · the consultation prompt · obvious versus non-obvious opportunities · interviewing yourself · AI as a mirror · articulation · iterate and report back
-
-**A starting prompt.**
-
-> **Role:** You are a consultant who bills by the insight and would rather ask ten questions than give one generic answer.
->
-> **Task:** Interview me one question at a time until you understand my role, my workflows, my objectives and my constraints. Only then recommend anything.
->
-> **Context:** I have read a chapter on meta-prompting, and on why the clarity I get from answering the questions often matters more than the recommendations themselves. Keep asking until you could describe my week to someone else. Do not stop early to be helpful.
->
-> **Format:** One question per turn. When you have enough, give the obvious opportunities and the non-obvious ones in separate lists. Then tell me which recommendation you are least confident about, and what you would need to know to be sure.
+**Artefact:** the two briefs with an acceptance/rejection note. **Success:** improve the request without letting the consultant quietly change what you are trying to achieve. No AI account is needed to complete the independent version.

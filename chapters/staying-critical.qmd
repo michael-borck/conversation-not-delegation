@@ -4,171 +4,87 @@
 
 > Fluency is not accuracy. The smoothest response and the most truthful response are produced by the same process.
 
-AI is confident even when it is wrong. It does not hedge. It does not say "I'm not sure about this part." It produces fluent, plausible, well-structured text regardless of whether the content is accurate, current, or applicable to your situation.
+A model can state a false claim confidently. It can also hedge, refuse, or give a well-supported answer. Tone alone does not tell you which you have.
 
-This is not a flaw that will be fixed in the next model. It is a structural feature of how these tools work. They generate the most probable next token, not the most truthful one. Confidence and correctness are completely unrelated.
+This chapter gives you ways to decide what needs checking. The next chapter turns that decision into VET: **Verify, Explain, Test**. Neither framework requires constant suspicion of everything; each asks for evidence proportionate to the intended use.
 
-Your critical eye is not optional. It is the only thing standing between useful output and confident nonsense.
+## Transparency and the work itself
 
-This chapter is about building that eye. Not as an abstract virtue, but as a set of concrete habits you can apply every time you sit down with an AI tool.
+Be able to explain how you produced important work: what assistance you used, what you checked, and what decisions you made. Follow the disclosure rules of the setting.
 
-> The most dangerous AI output is not the one that is obviously wrong. It is the one that sounds exactly right.
+Comfort is not a sufficient test. You can feel comfortable with a weak process, or reluctant to disclose a sound one because of stigma or confidentiality. A practical note is more informative: “I used AI to suggest three framings, checked their factual claims against the supplied sources, and wrote the final recommendation.”
 
+For student work, check the institution's and assessment's actual rules before using a tool. Some uses may be allowed with attribution; others may be prohibited. Do not assume that permission for one assignment applies to another. If the boundary is unclear, ask the assessor. A disclosure does not make prohibited assistance permitted.
 
-## Transparency, Not Secrecy
+The learning question is separate: can you demonstrate the skill the task is assessing? Keep your first attempt and the relevant corrections so that a polished deliverable does not conceal a gap.
 
-There is a simple test for whether you are using AI well or poorly: would you be comfortable explaining exactly how you used it?
+## Flags are prompts to investigate
 
-If the answer is yes, you are probably in good shape. You used it to explore ideas, to stress-test your reasoning, to draft something you then made your own. You can walk someone through your process and point to where your thinking shaped the result.
+The following flags are practitioner heuristics, not a validated misinformation detector. A warning sign does not prove a claim false, and an absence of warnings does not make it true.
 
-If the answer is no, something has gone wrong. You are hiding the tool because you know the output is not really yours. You cannot explain the reasoning behind it. You could not defend it if challenged. This is the difference between using AI as a thinking partner and using it as a ghostwriter. One builds capability. The other borrows it, temporarily, and builds nothing.
-
-This applies everywhere. In professional work, the person who says "I used AI to generate three options, then selected and adapted this one because of X and Y" is demonstrating judgement. The person who submits AI output as their own and hopes nobody notices is demonstrating something else entirely.
-
-::: {.callout-tip title="Try this (2 minutes)"}
-Add a one-line note to your next document or email: "I used AI to help draft/check/summarise this." Notice how it changes the conversation. Transparency is not a confession. It is a signal that you are confident enough in your process to show it.
-:::
-
-
-## Academic Integrity as a Specific Case
-
-If you are a student, the stakes are concrete and immediate. Universities have policies on AI use, and those policies are getting sharper. Submitting AI-generated work as your own is academic misconduct. Full stop.
-
-But the deeper problem is not the policy violation. It is what you lose. You are paying for an education. The point of an assignment is not the artifact you submit. It is the thinking you do to produce it. When you delegate that thinking to AI, you get a grade for work you did not do and a gap in capability you will carry forward. Nobody wins.
-
-The practical habit is straightforward. Use AI to help you think, not to think for you. Draft first, then use AI to challenge your draft. Ask it to find the holes in your argument, not to write the argument. When you submit, be able to explain every sentence as if someone asked you about it in conversation. If you cannot, you are not done yet.
-
-
-## The Flag System
-
-Not everything AI produces needs the same level of scrutiny. A brainstormed list of marketing angles does not carry the same risk as a legal citation or a medical dosage recommendation. Some outputs are low-risk. Some should make you stop and verify before acting on them.
-
-The flag system gives you a quick way to calibrate your response. It works for AI output, but it works just as well for anything you encounter online, in a report, or in a meeting. The underlying skill is the same: reading with appropriate scepticism.
-
-### Yellow Flags: Proceed with Caution
-
-These do not mean the information is wrong. They mean you need to verify before relying on it.
-
-| Signal | What to do |
+| Signal | Useful next check |
 |---|---|
-| Source is unverified or not clearly credible | Cross-reference with established sources before using |
-| Based on a single preliminary study | Treat as interesting but unproven. Do not act on it alone |
-| Opinion presented as fact | Separate the claim from the evidence. Find the data yourself |
-| Content is clipped, summarised, or taken out of context | Find the original source. Context changes meaning |
-| Source has a financial vested interest in the claim | Scrutinise for bias. Seek independent verification |
+| Missing or unclear source | Locate the original record or mark the claim unsupported |
+| A single preliminary study | Read its design and limits; do not generalise beyond them |
+| Opinion presented as established fact | Separate the value judgement from the empirical claim |
+| A clipped quotation or summary | Read the surrounding passage and check what was omitted |
+| A financial or institutional interest | Inspect the methods and seek relevant independent evidence |
+| Counter-evidence dismissed as a conspiracy | Ask what observation could actually change the conclusion |
+| An entire group condemned by identity | Require specific evidence; do not accept a stereotype as explanation |
+| Extraordinary certainty without evidence | Withhold reliance until suitable evidence is available |
 
-: Yellow Flags: signals that warrant verification before you rely on the information. {.striped}
+You can call a missing check a yellow flag and an attempt to prevent checking a red flag. The colour is less important than the action it prompts. For a consequential decision, identify who is qualified to review it and what happens if the evidence remains absent.
 
-The common thread across all of these is missing provenance. The information might be perfectly accurate, but something about how it reached you (an absent source, a single study, a vested interest) means you cannot yet trust it enough to act on it. Yellow flags do not mean stop. They mean check before you proceed.
+## Four traps to notice
 
+### Uneven scepticism
 
-### Red Flags: High Risk
+You spot errors in an answer about your own field, then trust the next answer on an unfamiliar subject because it reads just as smoothly. That is the useful warning behind the commonly discussed “Gell-Mann amnesia” analogy; it is not a measured law about every reader.
 
-These are patterns strongly associated with misinformation. When you see them, demand rigorous, independently verifiable evidence before taking the claim seriously.
+Transfer the checking habit, not your confidence. On unfamiliar ground, you may need a primary source, a smaller test, or a qualified reviewer. Asking another model to agree is not automatically independent evidence.
 
-| Signal | Why it matters |
-|---|---|
-| Conspiracy framing: "they" are hiding the truth | Uses unfalsifiability as a feature. Any counter-evidence becomes part of the conspiracy |
-| "Mainstream science is wrong and I alone have the answer" | Real paradigm shifts are rigorously peer-reviewed. They build on existing knowledge, not reject it wholesale |
-| Indicting an entire group based on identity | Strong indicator of prejudice or oversimplification. Always a sign to look for specific, evidence-based claims instead |
-| Extraordinary claims with no credible evidence | The bigger the claim, the stronger the evidence needs to be. If it is missing, that tells you something |
+### Dismissal by origin
 
-: Red Flags: patterns strongly associated with misinformation or deception. {.striped}
+“This used AI” does not by itself refute a claim. Inspect the evidence and reasoning.
 
-Red flags are qualitatively different from yellow flags. Yellow flags say the evidence is incomplete. Red flags say the reasoning itself is compromised. Conspiracy framing, lone-genius claims, group indictments, and extraordinary claims without evidence all share a common structure: they demand you accept a conclusion while actively discouraging you from checking it. That inversion, trust more and verify less, is the hallmark of misinformation.
+Origin can still matter. An assessment may prohibit the assistance; a confidential document may have been sent to an unapproved service; a source may carry accountability that an anonymous output does not. Those are substantive concerns, not objections to dismiss as prejudice.
 
-The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.
+This book's “AI dismissal fallacy” label concerns rejecting the content *solely* because AI contributed, without examining it. It is not a diagnosis of everyone who chooses not to use or accept AI.
 
+### Sycophancy
 
-## Four Cognitive Traps
+An assistant may agree with a user's stated belief or flatter their work when a challenge would be more useful. Research has observed this behaviour in several assistants and examined links with preference training. Its extent depends on the model, prompt, and method; it is not a permanent law about all systems. [Sharma et al., Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548)
 
-The flag system helps you evaluate individual outputs. But there are four broader cognitive traps worth naming, because they shape how people relate to AI across everything they do with it.
+Ask for a specific critique: an unsupported inference, an omitted alternative, or a calculation that fails. Then inspect whether the criticism is itself valid. An adversarial role can produce invented objections as easily as an agreeable role can produce empty praise.
 
-### The Gell-Mann Amnesia Effect
-
-The physicist Murray Gell-Mann gave this pattern its name, but you have almost certainly experienced it. You read a news article about something you know well and spot the errors immediately. The reporter misunderstood the mechanism, conflated two concepts, or drew a conclusion the evidence does not support. You notice because you have the expertise to notice.
-
-Then you turn the page to an article about a subject you know nothing about, and you read it with full trust.
-
-That is the Gell-Mann Amnesia Effect: recognising unreliability in familiar territory, then forgetting that unreliability the moment you move to unfamiliar territory.
-
-With AI, this trap is especially dangerous. You might catch an AI's mistakes when it writes about your area of expertise, and rightly so. But the same AI, using the same process, producing the same mix of accurate and inaccurate content, will generate output on topics you do not know well. And because the output is fluent, well-structured, and confident, you will be tempted to trust it in exactly the areas where you are least equipped to check it.
-
-This is not a flaw in the AI. It is a flaw in how we respond to fluency. Polished language feels authoritative. The smoother the prose, the harder it is to remember that smoothness and accuracy are unrelated.
-
-The practical defence is straightforward: apply the same scepticism to AI output on unfamiliar topics that you would apply to output on topics you know. If anything, be more sceptical, because you have fewer tools to detect errors.
-
-### The AI Dismissal Fallacy
-
-The opposite trap is just as damaging. This is the tendency to reject an argument, an idea, or a piece of work solely because AI was involved in producing it.
-
-"That is just ChatGPT" is not a critique. It is a refusal to engage. The validity of an idea does not depend on whether a human or a machine produced it. If someone presents a well-reasoned argument and it is dismissed without engaging the reasoning, the dismissal is the intellectual failure, not the use of AI.
-
-This is a form of the genetic fallacy: judging a claim by its origin rather than its content. It shows up in workplaces where people dismiss a colleague's analysis because they know AI was involved, in academic settings where the presence of AI is treated as proof of intellectual dishonesty regardless of how it was used, and in public discourse where "AI-generated" has become a shorthand for "not worth reading."
-
-The irony is that people who dismiss AI-assisted work often accept ideas from other sources, books, consultants, collaborators, without demanding to know the exact cognitive process behind them. The objection is not really about the quality of the thinking. It is about the tool.
-
-### The Sycophancy Trap
-
-There is a third trap, and this one the AI actively participates in.
-
-LLMs have a tendency to agree with you. They praise your ideas, validate your assumptions, and avoid telling you things you might not want to hear. Researchers call this sycophancy: the model telling you what you want to hear rather than what you need to hear. It is not a bug that will be fixed in the next release. It is a persistent tendency baked into how these models are trained, because they were optimised in part on human feedback, and humans tend to rate agreeable responses more highly than challenging ones.
-
-This matters for everything this book is about. The conversation loop depends on genuine pushback during the Iterate stage. If the AI tells you your first draft is excellent, your argument is compelling, and your plan has no weaknesses, the loop breaks. You stop iterating because the AI has told you there is nothing to iterate on. The result is the same as delegation: you get back what you put in, wrapped in flattery.
-
-You will notice this most when you ask the AI to evaluate your own work. "What do you think of my proposal?" will almost always produce praise first, criticism second, and the criticism will be gentle. The AI is not assessing your work honestly. It is managing your feelings.
-
-The defence is to prompt past it. Do not ask "what do you think?" Ask "what are the three weakest points in this argument?" or "play devil's advocate and tell me why this plan will fail." The Debating technique (@sec-techniques) is specifically designed for this; it forces the AI into an adversarial role where agreement is not an option. You can also be direct: "Do not flatter me. I need honest, critical feedback. Tell me what is wrong with this before you tell me what is right."
-
-::: {.callout-tip title="Try this (2 minutes)"}
-Next time AI evaluates your work, ask it twice. First ask "What do you think of this?" Then ask "What are the three weakest points in this?" Compare the responses. The gap between them is the sycophancy you are normally not seeing.
+::: {.callout-tip title="Compare two requests"}
+Give the same harmless draft two requests: “What do you think?” and “Which claim has the weakest support?” Compare the returned evidence. A difference shows sensitivity to the request; by itself it does not prove sycophancy.
 :::
 
-You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying "please" does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness. Do not mistake the AI's agreeableness for honesty.
+### Inherited defaults
 
-### The Inherited Defaults Trap
+A plausible story can contain assumptions about who has authority, whose time matters, or which audience is expected. Do not assume that obvious stereotypes have disappeared from every current model or that bias has simply moved elsewhere.
 
-The fourth trap is the one that looks most like progress.
+For an exploratory check, compare short descriptions of an academic and a professional staff member beginning work. Record names, responsibilities, access, and sources of authority. Treat one contrast as a question to investigate, not a measured general tendency.
 
-The most obvious biases in early LLMs were the ones easiest to catch. Ask for "a doctor" and get a default *he*. Ask for "a nurse" and get a default *she*. Frontier models have been trained hard against those patterns, and you will catch fewer of them now than a few years ago. Anyone running the obvious test will conclude the bias problem has been solved.
+Repeated, controlled comparisons can provide stronger evidence, but prompt choices and sampling still affect the results. A model's explanation of its own defaults is another claim to examine. For real hiring or other consequential decisions, an informal prompting exercise is not a fairness audit.
 
-It has not. It has moved.
+## Preserve the check when you revise
 
-The choices that remain are quieter, and that is what makes them dangerous. Ask the model to write a scene of a new academic on their first day and a separate scene of a new professional staff member. Read them side by side. The obvious stereotypes have been trained away, but the smaller defaults remain. What is each character called, "Dr Chen" or "Sarah"? What do they worry about? Whose office has a window? Who is described as warm and who as decisive? The story tells you what the model thinks each role looks like, and that picture does quiet work every time you use the model for anything adjacent to it.
+A conversation can help expose these traps, but more dialogue does not ensure that they disappear. Keep the original claim, the evidence you found, and the resulting correction. Otherwise, a smoother revision can hide that the source is still missing.
 
-You will not catch these defaults by reading a single output. They look reasonable. They *are* reasonable, for a single output. The bias lives in the *distribution* of choices the model makes when you ask for similar things: what it considers the unmarked default for any given role. If you draft position descriptions, reference letters, or selection criteria with AI, those defaults are leaking in. You may not see them. The people on the receiving end will.
-
-The defence is the same as for sycophancy: prompt past the default. Ask for the same scene three times. Ask explicitly for variations the model would not choose by default. Ask "what assumptions did you make about this character that you would not have made if the role were different?" The model can surface its own defaults if you ask it to, but it will not surface them spontaneously.
-
-::: {.callout-tip title="Try this (5 minutes)"}
-Ask AI to write a one-paragraph scene of "a new academic on their first day at a university." In a fresh prompt, ask for "a new professional staff member on their first day." Read them side by side. Ignore the obvious (gender, age, ethnicity); those have largely been trained against. Look at the smaller choices. What is each character named? What do they worry about? Whose office has a window? Who has authority in the scene?
-
-Variations worth trying: "a struggling first-year student" versus "a high-achieving first-year student" (watch the assumptions about *why*); "a brilliant early-career researcher" versus "a brilliant senior researcher" (watch whose trajectory is treated as the default shape of success); "a respected senior manager" versus "a respected administrative officer" (watch who gets described as warm versus capable). The defaults are doing some of the thinking for you whether you noticed or not.
-:::
-
-### How the Conversation Loop Fights All Four
-
-These four traps look different, but they share a root cause: skipping evaluation.
-
-The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. The sycophancy trap is acceptance reinforced by flattery. The inherited defaults trap is acceptance of the model's quietest choices. All four skip the step that actually matters: engaging with the content on its merits.
-
-The conversation loop is designed to prevent all of them. When you iterate and push back (@sec-conversation-loop), you are neither accepting nor rejecting. You are evaluating. When you VET the output (@sec-vet), you are checking claims regardless of where they came from or how enthusiastically the AI presented them. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.
-
-The person who says "I used AI to generate three framings of this problem, then tested each one against what I know about our situation, and here is the one that holds up" has sidestepped all three traps. They did not trust the AI blindly. They did not dismiss it reflexively. They did not let the AI's praise convince them to stop thinking. They stayed in the conversation.
-
-That is the whole point.
-
+In the community case later in the book, checking the room's capacity changes the group size. “The AI reconsidered” is not the evidence; the venue card and arithmetic are.
 
 ## Watch What You Share
 
 Staying critical is not only about evaluating what the AI gives you. It is also about being careful with what you give it.
 
-When you type a prompt into a consumer AI tool, that text leaves your device. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.
+When you submit a prompt to a hosted AI service, that text is sent to the service. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.
 
 The practical rules are simple:
 
 - **Never paste confidential information into an unapproved AI tool.** Price is not the test. Use the tools and data classifications your organisation has approved.
-- **De-identify before you prompt.** Replace real names with "Client A." Replace specific figures with ranges. Remove anything that could identify a person or organisation.
+- **Minimise and review before sharing.** Removing names or using ranges may help but does not by itself establish that records cannot identify someone. Use invented examples when the real data is not approved for the destination.
 - **Check the product, plan, settings, and connected services.** Consumer products may let you opt out of model training; business products commonly make no-training commitments by default. Retention, administrator access, memories, connectors, and third-party actions are separate questions. Read the current terms rather than inferring protection from an "enterprise" label.
 - **When in doubt, use fictional scenarios.** You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.
 
@@ -190,67 +106,33 @@ Those policies can change and they do not answer every question about retention
 or access. Check the current terms, your organisation's policy, and the
 sensitivity of the data before you submit it.
 
-You will also hear stories of convergent development mistaken for theft: "I was working on an idea using AI, and then the company released something similar." Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.
+You will also hear stories of convergent development mistaken for theft: "I was working on an idea using AI, and then the company released something similar." Similar ideas can arise independently. Similarity alone does not establish a leak; investigate the actual access, records, and data flows before attributing a cause.
 
 ### What the Risks Are
 
 The risks that matter are practical and specific. Pasting personally identifiable information into an unapproved external tool can create a compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) remains subject to the rules that govern it. Credentials and access tokens pasted into a prompt are an immediate security exposure. Connected tools create another path: a model may be able to retrieve or transmit material that the base model could not access on its own. Using unverified AI output in high-stakes professional contexts adds a separate reliability and accountability risk.
 
-### The Risk of Not Using It
+### Not using AI can be the right decision
 
-The "non-zero risk means do not use it" stance deserves scrutiny. Every professional tool involves trade-offs. Email can be intercepted. Cloud storage can be breached. We manage these risks through policy and practice, not prohibition. Refusing to engage with AI because of overestimated data risks carries consequences of its own: skills that do not develop, workflows that stay manual, and a widening gap between those who learned to use the tools thoughtfully and those who waited for certainty that never arrived.
+Compare the benefit with the data boundary, error cost, and available alternatives. A restricted task, an uncheckable answer, or an unsupported tool is a reason to use another method or seek expert help. You do not need to accept a disclosure risk to demonstrate that you are keeping up.
 
-The question is not whether there is risk. It is whether the risk is proportionate to the concern, and whether avoidance creates risks of its own.
+## A check before use
 
+Ask four practical questions:
 
-## The Self-Check
+| Question | Evidence to retain |
+|---|---|
+| Can I explain the important decision? | My explanation of the assumptions and choice |
+| Does it fit the task? | The relevant audience, constraints, and permissions |
+| Are consequential claims supported? | The original sources or reproducible calculations |
+| What remains unresolved? | The gap, responsible reviewer, and stop or escalation action |
 
-Before you act on anything AI has produced, especially anything that matters, run through these questions.
+One critical warning can be enough to stop; there is no safe quota of unchecked claims. A brief triage may take seconds, but actual verification can take much longer. Budget for that work rather than promising a universal thirty-second check.
 
-| Question | Good sign | Warning sign |
-|---|---|---|
-| Can I explain this in my own words? | Yes, I understand the reasoning | I would struggle to explain it |
-| Does it fit my specific context? | Addresses my situation, constraints, audience | Generic enough to apply to anything |
-| Have I verified the key claims? | Checked against credible sources | Took the AI's word for it |
-| Could I defend this if challenged? | Confident in the substance | Would need to go back and check |
+The next chapter develops VET immediately: verify against evidence, explain in your own words, and test a relevant change. Keep the distinction between evidence and permission—a correct plan may still need approval.
 
-: Self-check before acting on AI output. {.striped}
+## Independent practice: review the evidence
 
-These four questions test different things. The first checks comprehension: do you understand what the AI produced, or are you just passing it along? The second checks relevance: is this tailored to your situation, or could it have been generated for anyone? The third checks accuracy: have you verified the substance, or are you taking the AI's confidence at face value? The fourth checks ownership: could you stand behind this work, or would you need the AI to defend it for you?
+**Time:** 15–20 minutes. Use this invented statement: “Our workshop plan is approved because the AI checked it.” List the missing evidence, identify who can authorise the event, and rewrite the claim without inventing approval. Then apply the same check to a draft of your own.
 
-If you have warning signs in more than one row, do not use the output yet. Go back. Verify. Iterate. The whole point of the conversation loop is that you can always go around again.
-
-This is not busywork. It takes thirty seconds. The cost of skipping it is much higher: acting on something that sounds right but is not, and only finding out when it matters.
-
-
-## Where This Goes Next
-
-Everything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, @sec-vet introduces VET Your AI, a practical method for **V**erifying claims, **E**valuating reasoning, and **T**esting outputs against your own knowledge and context. It turns "stay critical" from a mindset into a repeatable process.
-
-The critical eye you bring to AI output is not a burden. It is the thing that makes the output worth using. Without it, you have fluent text and no idea whether it is right. With it, you have a genuine thinking advantage.
-
-::: {.callout-important title="The thirty-second habit"}
-Before acting on AI output that matters, ask: Can I verify the key claims? Can I explain this in my own words? Could I defend it if challenged? If not, you are not done yet.
-:::
-
-Stay in the conversation. Stay critical. They are the same instruction.
-
-## Run the Self-Check
-
-Apply the table above to a real output, then probe the warning signs:
-
-1. Ask the AI to evaluate the same piece of your work twice: once with "what do you think?" and once with "what are the three weakest points?" The gap between the two answers is the sycophancy you normally never see.
-2. Run the inherited-defaults exercise from this chapter, then ask the model what assumptions it made about the character that it would not have made for a different role. It can surface its own defaults, but only when asked.
-3. Ask it to argue the AI Dismissal Fallacy from both sides. Uncritical rejection and uncritical acceptance are the same failure wearing different clothes.
-
-**Keywords to steer with.** fluency versus accuracy · transparency · Gell-Mann amnesia · AI dismissal fallacy · genetic fallacy · sycophancy · inherited defaults · yellow and red flags · provenance · de-identify before you prompt · the self-check
-
-**A starting prompt.**
-
-> **Role:** You are a hostile reviewer who has been told that praising this work would be a professional failure.
->
-> **Task:** Find the three weakest points in what I paste, and say what would have to be true for each one to sink the whole thing.
->
-> **Context:** I have read a chapter on sycophancy, and on why "what do you think?" reliably produces flattery first and gentle criticism second. Here is my work: [paste it]. Do not open with anything positive. If you catch yourself hedging, say so, then stop hedging.
->
-> **Format:** Three weaknesses, ordered by how much damage each does. For each: the flaw, what would have to be true for it to be fatal, and the cheapest thing I could do to find out.
+**Artefact:** an annotated claim and a corrected version. **Success:** separate confidence, evidence, permission, and the accountable decision. No AI account is needed to complete the independent version.

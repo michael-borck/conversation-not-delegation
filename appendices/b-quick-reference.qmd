@@ -100,3 +100,15 @@ The same principle appears across disciplines under different vocabularies. Whic
 : One idea, four vocabularies. {.striped}
 
 Conversation is the practice. Judgement is what you exercise during it. Agency is what you preserve by exercising judgement. Human-in-the-loop is what the same stance looks like from a system designer's perspective. Four words, one stance, four angles on the same thing.
+
+## Choose the mode before the prompt
+
+| Situation | Starting mode | Required check |
+|---|---|---|
+| Routine calculation or exact transformation with a known method | Use a calculator, script, or established non-AI tool | Validate inputs and result |
+| Well-specified, permitted task with an independent acceptance test | Delegate a bounded operation | Keep permissions narrow, inspect failures, preserve a stop rule |
+| Ambiguous goal, competing values, or a judgement you need to develop | Converse | Preserve alternatives, evidence, and your decision |
+| Repeated task with protected checks and recoverable actions | Consider automation | Test the evaluator, budget, access boundaries, and rollback |
+| Data use is unapproved, evidence is missing, or consequences exceed your expertise | Avoid that AI use or seek qualified help | Obtain permission or expertise before proceeding |
+
+These are starting decisions, not permanent labels. Reconsider when the data, use, or consequences change.

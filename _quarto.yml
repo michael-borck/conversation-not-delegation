@@ -47,10 +47,10 @@ book:
   other-links:
     - text: Download PDF
       icon: file-pdf
-      href: conversation-not-delegation.pdf
+      href: /conversation-not-delegation.pdf
     - text: Download EPUB
       icon: book
-      href: conversation-not-delegation.epub
+      href: /conversation-not-delegation.epub
     - text: Download llm.txt
       icon: robot
       href: llm.txt

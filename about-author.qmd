@@ -14,8 +14,8 @@ Michael applies these principles across software development, education, and cre
 
 **Connect**
 
-- [michaelborck.dev](https://michaelborck.dev): professional work and projects
-- [michaelborck.education](https://michaelborck.education): educational software and resources
+- [GitHub projects](https://github.com/michael-borck): software and educational resources
+- [Free book collection](https://books.borck.education): current online editions and downloads
 - [8020workshop.com](https://8020workshop.com): passion projects and workshops
 - [LinkedIn](https://linkedin.com/in/michaelborck)
 

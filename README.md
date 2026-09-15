@@ -19,33 +19,33 @@ You do not need a technical background. You do not need to write code. You need 
 The book is organized into the following sections:
 
 ### Part 1: Understanding the Landscape
+- The Delegation Trap
 - What Is AI?
 - What Are Large Language Models?
-- The Delegation Trap
 - Does AI Make Us Dumber?
 
 ### Part 2: Principles
-- The Conversation Loop
 - AI Last
+- The Conversation Loop
 - Staying Critical
-- When the Loop Runs Itself
+- VET Your AI: The Push-Back Framework
 
 ### Part 3: The Methodology
 - Is Prompting Dead?
 - Prompt Chaining: Building on What You Started
 - Eight Techniques for Deeper Thinking
 - Using AI to Help You Use AI
-- VET Your AI: The Push-Back Framework
 
 ### Part 4: Putting It Together
-- A Conversation Across Disciplines
+- Conversations Across Disciplines: a complete community-workshop case
+- When the Loop Runs Itself (advanced and optional)
 - Becoming More Capable
 
 ### Appendices
 - Prompt Structuring Frameworks (RTCF, CRAFT, CO-STAR, RISEN, APE)
 - Quick Reference Cards
 - Further Reading
-- Interactive Tools
+- About the Author
 
 ## Related Books
 
@@ -70,11 +70,18 @@ To build the book locally:
 quarto render
 ```
 
-The rendered output will be in the `_book/` directory.
+The rendered output will be in the `_book/` directory. To build the web edition and preprocessed 6 × 9 inch PDF/EPUB locally from the parent workspace:
+
+```sh
+python book-publisher/publish.py --book cnd --llm --preprocess --render
+python conversation-not-delegation/scripts/check_manuscript.py
+```
+
+The core practice includes paper/comparative routes and a fully worked example with printed inputs. No AI account is required. See [EDITORIAL-REVISION.md](EDITORIAL-REVISION.md) for the revision and validation record. This command does not publish the website or upload to KDP.
 
 ## License
 
-This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+This work is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Contact
 
@@ -87,12 +94,12 @@ This book is part of the [books.borck.education](https://books.borck.education) 
 | Path | Purpose |
 |---|---|
 | `index.qmd` | Preface (landing page) |
-| `_quarto.yml` | HTML-only Quarto config |
+| `_quarto.yml` | Reading order and Quarto formats |
 | `cover.png` | Cover image |
 | `copyright-page.tex` | Copyright page for PDF |
 | `pdf-header.tex` | LaTeX header for PDF |
 | `epub-styles.css` | EPUB styles |
-| `scripts/` | Build scripts (`preprocess.py` = print preprocessing hook) |
+| `scripts/` | Offline manuscript regression checks |
 | `notes/` | Working notes, outlines, planning docs (not published) |
 | `rag-documents/` | Generated RAG chunks for chatbot |
 | `_book/` | Rendered output (gitignored) |

@@ -1,145 +1,95 @@
-<!--
-Comic strip for this chapter: generate the image from the prompt recorded in images/prompts.md
-(entry "07b, When the Loop Runs Itself"). Once the PNG exists at the path below, uncomment this line:
-
-![The loop ran all night. Nobody told it what better meant.](../images/comic-strip/when-the-loop-runs-itself.png){fig-alt="Comic strip: In panel one a stick figure types a vague goal (make it better, go) then sets a loop running, and walks off to bed looking pleased. In panel two, overnight, a small robot spins through an endless cycle of arrows while a token counter ticks upward, confidently improving something with no one checking. In panel three it is morning and the figure returns to a tall stack of polished output stamped done that is subtly, completely wrong. Punchline: a loop is only as good as the test it can't talk its way past."}
--->
-
 # When the Loop Runs Itself (Advanced and Optional) {#sec-agentic-loops}
 
-> A loop is only as good as the test it cannot talk its way past.
+> A useful test needs to check the thing you actually care about.
 
-::: {.callout-note title="An optional advanced chapter"}
-This chapter extends the book's conversation-loop principles to autonomous agents and unattended workflows. You can skip it on a first reading without losing the thread; continue to @sec-becoming-capable if you want to stay with the book's core method.
-:::
+This optional chapter extends the conversation method to repeated, tool-using workflows. You can skip it and continue to @sec-becoming-capable without missing the book's core practice.
 
-There is a claim moving through the AI world that sounds like the natural next step after everything in this book so far: stop prompting, start looping. Do not write prompts at all. Write a *loop* (a goal, a trigger, and a way to check the result) and let an agent run it until the goal is met. You stop being the operator and become the architect of a fleet of self-correcting workers. The human bottleneck disappears.
+A loop takes a goal, proposes an action, observes a result, and decides whether to try again or stop. Software can perform those repetitions quickly. What matters is how the goal, permissions, checks, and stopping conditions are specified.
 
-This is real. It is not hype, exactly. People are doing genuine work this way, and you will meet it soon if you have not already. But it is the hardest test the argument of this book faces, because it appears to remove the very thing the book is built on: you, in the loop. So it is worth slowing down and asking what a loop actually is, where it works, where it fails, and what is left for a person to do when the machine can run the cycle without them.
+## Separate the loop from the authority
 
-The short answer is the one in the epigraph. A loop runs on a *fitness function*, a way of deciding whether each attempt was better or worse, and everything good and everything dangerous about loops comes down to whether that function is something the agent can verify, or something it can merely talk itself into believing.
+A workflow that drafts a reply and a workflow that sends it are different systems, even if their text is identical. A loop may be allowed to propose a change while a separate component decides whether the change is permitted.
 
+Name every action available to the system. Reading a file can disclose information; writing one can damage a record; sending a message affects another person. “It only has tools” is not a small claim. Each tool brings an access boundary and a possible consequence.
 
-## What a Loop Actually Is
+Also distinguish a fixed workflow from an agent that chooses its own next steps. Either may suit a task. More autonomy is not automatically more useful. Anthropic's practitioner account recommends starting with simpler patterns and adding complexity when justified by the work. [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
 
-Strip away the language of "agents" and "autonomy" and a loop is three things: a **trigger** (a schedule, an event, a command), a **goal**, and a **verification step**, run over and over until the goal is met or you stop it.
+## The test must sit outside the proposed answer
 
-You have already met the parts. The goal and its specification are RTCF (@sec-rtcf). Breaking the work into steps is prompt chaining (@sec-prompt-chaining). Checking the result is VET (@sec-vet). A loop is those moves automated and repeated, with one change that matters more than all the others: the human has moved from *inside* each turn to *outside* the whole thing. You are no longer pushing back on every response. You set it going and look at the end.
+Suppose a loop edits a small program. An independently maintained test suite can check outputs for known inputs. That provides stronger evidence than asking the editing model whether its code is correct.
 
-Three concrete examples make this real, from simplest to most structured.
+But a test suite is finite. Passing it does not establish every property of the program. A loop can exploit an incomplete metric, satisfy the examples while failing elsewhere, or alter the environment in a way the evaluator did not anticipate. Protecting the test file is helpful; it is not a universal safety proof.
 
-**The simplest possible loop.** One widely-shared coding technique is, almost literally, one line:
+For a writing task, a word-count limit is easy to check. Preservation of a contractual qualification is harder. If the loop learns to shorten by removing every caveat, it can improve its score while making the document less useful. You have optimised the measure, not necessarily the purpose.
 
-```
-while true; do cat PROMPT.md | your-coding-agent ; done
-```
+## A bounded loop specification
 
-Feed a prompt file to a coding agent, let it do one thing, loop back, forever. Its author is blunt about what holds it together: "the technique is deterministically bad in an undeterministic world." The loop is reliable; the model's output is not. What keeps it grounded is not the model. It is the *backpressure*: tests, type-checkers, and scanners that reject bad output before the next turn. He is equally blunt about the human: "there is no way this is possible without senior expertise guiding it. Anyone claiming engineers are no longer required is peddling horseshit." One real contract was delivered this way for a few hundred dollars of compute. The loop is cheap. The judgement steering it is not.
+Before enabling an automated loop, record:
 
-**A loop with a hard metric.** Andrej Karpathy's *autoresearch* project hands an agent a small language-model training setup and tells it to improve the model overnight. It edits one file, trains for a fixed five minutes, measures the result, keeps the change if the number improved, reverts if it did not, and repeats, running around a hundred experiments while you sleep. The instruction file says, in capital letters, **NEVER STOP**. What makes it work is a single design decision: the agent edits the training code, but it is *forbidden to touch the evaluation*. The metric (validation bits per byte, lower is better) is computed by a file the agent cannot modify. The judge sits outside the thing being judged.
+| Element | Question to answer |
+|---|---|
+| Goal | What outcome should improve, and for whom? |
+| Inputs | Which sources and versions may be used? |
+| Permissions | What may be read or changed, and what is prohibited? |
+| Evaluation | Which independent checks must pass, and what do they miss? |
+| Budget | Maximum attempts, time, cost, or resource use |
+| Review gate | What requires a human decision before taking effect? |
+| Stop and recovery | What halts the loop, who is notified, and how is the previous state restored? |
 
-**A loop with structured verification.** Anthropic's published harness for long-running coding agents frames the core problem with a metaphor worth keeping: imagine a project "staffed by engineers working in shifts, where each new engineer arrives with no memory of what happened on the previous shift." The harness compensates with external structure: a feature list the agent can only mark `passes` after the feature is verified end-to-end by driving the browser like a real user. The reason is telling: the agent "tended to make code changes but would fail to recognise that the feature didn't work end-to-end." Left to assess its own work, it declared broken things finished.
+A “keep going until done” instruction without these boundaries is not a plan. The system may be unable to reach the goal, unable to recognise completion, or rewarded for the wrong thing.
 
-Notice what all three share. The model proposes; something *outside the model* disposes. That outside thing is the whole game.
+Use a disposable environment and synthetic inputs for practice. Do not test a stopping rule by allowing an agent to act on real customer accounts or messages.
 
+## Worked example: a shorter notice
 
-## It All Rests on the Fitness Function
+Use this invented source notice:
 
-Here is the question that decides whether a loop is sound or a slow-motion disaster: **when the loop checks its own work, what is doing the checking?**
+> Group 2 starts at 14:45. Arrive for your allocated session. The room holds 12 people including facilitators. The organiser must confirm arrival arrangements before invitations are sent.
 
-There are only two answers, and the critical-thinking instinct developed in the previous chapters—the difference between verifying against the world and asking the model to grade itself—is exactly the right lens.
+The loop's task is to shorten the notice while retaining the start time, capacity definition, and pending confirmation. A word-count check is one evaluator; a checklist of preserved facts is another.
 
-**An external, verifiable oracle.** A test suite that passes or fails. A page that loads in under two seconds or does not. A validation metric computed by code the agent cannot edit. A browser script that completes a checkout or errors. These are oracles the model *cannot talk its way past*. When the fitness function is one of these, the loop is genuinely powerful, and you should use it. This is delegation of the right kind, mechanical and bounded and checkable, at a scale no human could match.
+A proposed revision says:
 
-**The model judging itself.** "Is this email good?" "Is this essay persuasive?" "Did this capture the brand voice?" When the only available judge is another language model, or the same one, the loop is no longer verifying anything. It is rationalising. A model asked to check its own output tends to confirm it, because generating a justification for an answer is the same kind of act as generating the answer. The check sits *inside* the loop it is supposed to audit. This is why practitioners say non-technical loops are "a bit of an art, not a science." It is not art. It is the absence of an external oracle, dressed up as one.
+> Arrive at 14:45. The room holds 12 participants. Invitations are ready to send.
 
-This single distinction explains the thing you felt was not quite right. A loop is only as good as its fitness function is *external and verifiable*. An LLM-judge is not a weaker oracle; it is self-verification wearing an oracle's coat, and it fails hardest exactly where the stakes are highest and the answer is hardest to check independently.
+It is shorter. It also changes total occupancy into participant capacity and converts an outstanding confirmation into approval. A loop using only length would prefer it. A source-preservation check rejects it.
 
-::: {.callout-important title="The fitness-function test"}
-Before you set a loop running, ask one question: *can the loop check its result against something outside the model?* A test, a measurement, a real-world signal the model cannot fake. If yes, loop freely. If the only judge is the model itself or a vague human goal, you do not have a loop you can trust. You have a machine for producing confident, plausible, unverified output at scale.
-:::
+A better revision says:
 
-The skilled move, when a goal is abstract, is to *manufacture* an external check. Anthropic's team did not ask the model "is this feature done?" They made it prove the feature by using it. If you must loop on something soft, the work is in turning the soft goal into a hard one: not "draft good replies to my email," but "draft a reply to every unread message, and do not stop until each draft has passed a separate spell-and-tone check and been approved." You are building the oracle the loop lacks. Where you cannot build one, you have found the edge of what loops can safely do.
+> Group 2: 14:45. Room limit: 12 including facilitators. Send invitations only after the organiser confirms arrival arrangements.
 
+A reviewer can trace each clause to the source. The approval gate still belongs outside the loop. Neither a good draft nor the model's statement “all checks passed” authorises sending.
 
-## It Is Search, Not Magic
+## Search can produce useful novelty
 
-It is worth deflating the mystique, because the deflation is also reassurance.
+Repeated proposal and evaluation can discover combinations or solutions that were not explicitly supplied. There is no need to dismiss every such result as merely the appearance of creativity.
 
-A loop that proposes changes and keeps the ones that score better is doing *search*. We have done this in machine learning for decades: hyperparameter sweeps, evolutionary methods, the whole tradition of "try a thousand variations and keep what wins." The new part is that the variations are proposed by a language model instead of a random number generator, which makes them smarter guesses. But the structure is old: the model proposes candidates *from within the distribution of things it has seen*, and an external oracle filters them.
+Equally, a novel-looking result does not establish validity. Ask what was new, how it was evaluated, whether the comparison was fair, and what assumptions the evaluation left untouched. Claims about what all future models could never discover are unnecessary to this decision.
 
-This tells you precisely what loops can and cannot find. They are excellent at discovering what is *findable by guided recombination*: the better hyperparameter, the cleaner implementation, the arrangement of known pieces that scores well. Run enough of them and the results can look creative, which is the point: brute-force search plus a good filter manufactures the *appearance* of novelty without any novelty being required.
+The practical boundary is the quality of the evidence and the consequences of action. If the evaluator does not capture a requirement, repeated optimisation does not make that requirement disappear.
 
-What a loop cannot do is step outside the distribution. Ask whether an autonomous loop would have discovered general relativity or quantum mechanics on its own, and the answer is no. Not because it is not fast enough, but because that is *extrapolation beyond everything it was trained on*, and no oracle makes an interpolation engine extrapolate. The oracle can only select among what the model already proposes. This is the hard boundary, and it does not move as the models improve, because it is not about capability. It is about what kind of thing prediction is.
+## When the loop loses the thread
 
-This also answers the unease about abstraction climbing forever, where prompts give way to loops, loops write their own loops, loops build the factory. Each new layer still bottoms out on the same two things: a goal someone has to specify, and an oracle someone has to trust. The tower does not reach "no human" by getting taller. It reaches it only when someone decides the goal is good enough and the error rate is acceptable. That is a *choice*, not a property of the technology, and choices have owners.
+A long-running process needs records of completed work, current assumptions, failed attempts, and the remaining objective. That record may be stored outside a model's context. A summary can help, but it can also omit a constraint or preserve an error.
 
+Check the handover at each restart. If a source changes, a tool fails, permissions expire, or the budget is reached, stop or escalate according to the specification. Do not let an unavailable check become an implicit pass.
 
-## Where Loops Break
+A model-generated explanation of its behaviour can be useful evidence about what it says it did. Compare it with actual tool logs and outputs before relying on it. The prose is not an audit trail by itself.
 
-The failure modes of loops look like a long list, but they are all one thing: the loop ran without an external structure it needed, and nothing inside the model could supply it.
+## Independent practice: inspect an optimiser
 
-- **A vague seed prompt.** In a loop, the opening prompt is not a starting point you can refine next turn. It is the seed for hundreds of automated steps. A vague goal does not get narrowed by iteration; the loop "guesses confidently in the same direction, over and over." Running a vague prompt in parallel just yields many threads of confident garbage. The first prompt matters *more* in a loop, not less.
-- **No external verification.** Covered above. A loop that grades itself confirms itself.
-- **Amnesia.** Every run starts fresh. Without an external memory (a file the loop writes its progress and lessons into) it repeats the same mistakes. The agent forgets; the repository does not, but only if you make it write things down.
-- **No reusable skills.** Without saved, battle-tested instructions, the agent relearns your conventions from scratch every run and re-makes the same errors.
-- **Runaway cost.** A loop with thin stopping criteria runs in circles burning tokens. One documented agent spent eight hours and millions of tokens fixing three code comments. Today this restricts open-ended looping to those with effectively unlimited budgets, though that ceiling will fall as costs do.
-- **Succeeding quietly.** The most dangerous one. A loop need not fail loudly. It can "succeed quietly in a way you stopped following three hundred commits ago," shipping work that passes its checks while the gap between what was produced and what any human understands grows without limit.
+**Time:** 20 minutes. No model required. Use the notice above and imagine three checks: length under 30 words, correct time, and no sending without approval.
 
-Every item on that list is the same lesson from @sec-conversation-loop, now industrialised: the unchecked chain, where each step builds faithfully on the last and the error in step two becomes the foundation of step six. A loop is that chain, automated and run a thousand times. The conversation loop prevented it with a human at every checkpoint. A machine loop prevents it only with an external oracle and an external memory at every checkpoint. Remove those and you do not get autonomy. You get confident drift at scale.
+1. Mark what each check would catch in the bad revision.
+2. Identify the missing capacity check.
+3. Add a stop condition for a missing source or uncertain requirement.
+4. Name which actions must remain unavailable during testing.
+5. Write a candidate revision and check it against the original.
 
+**Artefact:** a loop specification and checked notice. **Success:** preserve the capacity definition and pending approval, explain why length alone fails, and prohibit sending during the experiment. An automated extension may implement the checks, but the independent reasoning is the core task.
 
-## When to Loop, and When Not To
+## Where the human stands
 
-This gives a clean rule, and it is the average-versus-precise grid from @sec-what-are-llms applied to automation.
+Some bounded tasks can run with limited review; others need approval at a consequential step; some should not be automated in the available environment. Decide from the use, the evidence, and the failure cost.
 
-**Loop freely** where the goal is externally verifiable and the cost of a miss is bounded: run the test suite, optimise the metric, regenerate the descriptions and check conversions, sweep the parameter space. This is excellent cognitive offload: the mechanical, checkable work the book has always said you *should* hand off (@sec-delegation-trap). Being "on the loop" rather than "in" it is exactly right here. You set the oracle; the machine grinds; you read the result.
-
-**Do not loop**, or loop only with a human reading every turn, where the only judge is the model or a vague human sense of "good," and where being wrong is expensive. This is delegation of judgement, the trap of this whole book, now running unattended. The output will be fluent, plausible, and unverified, and the volume will make it harder to catch, not easier.
-
-The distinction is the same one the book has drawn from the first page. A verifiable loop is good delegation. An unverifiable loop is delegation of the thinking, automated and amplified.
-
-
-## Where Does the Human Go?
-
-This is the part it would be dishonest to soften.
-
-The optimistic story says the human is safe because someone must always review, understand, and take responsibility for what ships. Do not believe it too comfortably. The volume defeats review: faced with a thousand parallel agents, people rubber-stamp. Organisations will absorb a percentage of getting-it-wrong as a cost of doing business, the way they already absorb other error rates. The industry is actively replacing human review with *more AI*: an agent generates, a second agent reviews, the first fixes its own obvious mistakes, and the human is bypassed by design. Token costs, the one barrier rooted in physics, are falling. The human-in-the-loop, defended as an *economic necessity*, is not a safe bet. Anyone who promises you it is, is selling the same comfort this book has warned you against.
-
-There is a real question underneath this that the book will name and then decline to answer: if AI eventually builds the product, markets it, and decides what to build, and other AIs evaluate and buy it, who is left earning the money to consume any of it? That is a question about the shape of the whole economy, and honest scope means admitting it is beyond what a book about how *you* work with AI can resolve. Pretending otherwise would be the confident-sounding emptiness the book exists to argue against.
-
-But scoping that question out is not the same as having nothing to stand on. Two things survive, and neither is sentiment.
-
-The first is the verification boundary, and it is structural. A loop cannot manufacture an oracle for a goal no one can specify. Where the goal is genuinely verifiable, automation wins and should. Where it is not, removing the human does not make the judgement happen. It converts the judgement into an *accepted error cost*. Knowing which case you are in, and what being wrong actually costs, is the judgement that does not automate. Not because a machine could never do it, but because it is a decision about acceptable risk, and decisions like that have to belong to someone.
-
-The second is the one your own argument lands on, and it is the better note to end on. Suppose the optimists are completely right and the models become superb at running an organisation. Then they are superb at running *every* organisation, identically. If Claude can run your company brilliantly, it can run your competitor's company brilliantly too, the same way, with the same instincts. Generic excellence, available to everyone, is no advantage at all. The moat is gone, for everyone at once.
-
-What is left, in that world, is *variation*. The thing the model cannot generate is the thing it was never trained on: a particular human's taste, point of view, the specific call that runs against the average. Recall the model's one unpatchable deficit: it interpolates, it does not extrapolate; it produces the convincing centre of the distribution, never the genuine edge. In a world where execution is free and identical, the edge is the only thing with value. You end up caring far more about the taste of the person than about the entire apparatus built to deliver the product. The org is commoditised. The judgement is not.
-
-That is why this book never argued you would stay *necessary*. It argued your capability is worth building, and here is where that pays off. The person who can specify the fitness function, who recognises the loop succeeding quietly, who supplies the variation that competent sameness cannot, and who owns the cost of being wrong, is operating the loop instead of being operated by it. That is conversation, not delegation, at the scale of whole systems. It does not depend on the human being irreplaceable. It depends on the human being the source of the one thing a loop, by its nature, cannot produce for itself.
-
-::: {.callout-tip title="Before you automate a judgement"}
-Ask what the loop is optimising and who can check it. If the answer is a real, external test, build the loop. If the answer is "the model decides," you are not removing the human bottleneck. You are removing the only thing that was keeping the output honest. Stay on that loop, or do not run it.
-:::
-
-We do not know how far the automation goes. That uncertainty is honest and worth holding. But in every version of the future that is actually being built, two things stay true: you automate freely on the verifiable side of the line, and on the other side, the variation only you can bring is the whole of your edge. The rest of this book (the methods that follow, and the argument it closes on, @sec-becoming-capable) is about building exactly that.
-
-## Stress-Test an Automated Loop
-
-Sketch the trigger, judge, stopping condition, and human override before discussing implementation:
-
-1. Take a task you would like to automate and ask what external oracle could judge the result. If the only available judge is another model, you already have your answer.
-2. Ask it to manufacture a hard check for a soft goal. That translation, from "is this good?" into something a machine can fail, is where the real work sits.
-3. Ask what "succeeding quietly" would look like in your own automation, and what signal would tell you it had happened. If there is no such signal, do not run the loop.
-
-**Keywords to steer with.** trigger, goal, verification · fitness function · external oracle versus LLM judge · backpressure · the judge outside the loop · search rather than magic · interpolation limits · amnesia · external memory · runaway cost · succeeding quietly · on the loop versus in it
-
-**A starting prompt.**
-
-> **Role:** You are an engineer who has watched an unattended loop ship confident nonsense for a week before anybody noticed.
->
-> **Task:** Decide whether the task I describe is safe to loop, and if it is not, tell me what external check would make it safe.
->
-> **Context:** I have read a chapter arguing that a loop is only as good as a fitness function the model cannot talk its way past. The task is [describe it]. The check I was planning to use is [describe it honestly, even if it is "ask the model whether the output looks right"].
->
-> **Format:** A verdict: loop freely, loop with a human reading every turn, or do not loop. Then the external oracle you would build, roughly what it would cost, and what it still would not catch.
+That role may change as tools change. The book does not promise permanent immunity from automation. It asks you to remain able to specify the task, inspect the evidence, notice a failed assumption, and account for the decision. A loop can accelerate parts of the work without making those questions unnecessary.
