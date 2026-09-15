@@ -1,6 +1,10 @@
 project:
   type: book
   output-dir: _book
+  resources:
+    - LICENSE
+    - LICENSE-CONTENT.md
+    - LICENSE-CODE.md
 
 book:
   title: "Conversation, Not Delegation"
@@ -8,7 +12,7 @@ book:
   author: "Michael Borck"
   isbn: "979-8-2528-2455-0"
   date: today
-  license: "CC BY-SA"
+  license: "CC BY 4.0 International"
   favicon: favicon.svg
   sidebar:
     footer: |
@@ -16,6 +20,7 @@ book:
       [Support the open edition](https://www.amazon.com.au/dp/B0GTF9F4Q2)
   chapters:
     - index.qmd
+    - copyright.qmd
     - part: "Part 1: Understanding the Landscape"
       chapters:
         - chapters/the-delegation-trap.qmd

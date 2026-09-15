@@ -8,7 +8,7 @@ Partner AI*) covers the programming audience. This book targets anyone who uses 
 as a thinking tool — students, professionals, researchers, educators — across any
 discipline.
 
-The book is authored by Michael Borck, published under MIT licence, and will be
+The book is authored by Michael Borck, published under CC BY 4.0 International for content and MIT for original code examples, and will be
 released as both a free Quarto website (GitHub Pages) and a KDP paperback. All
 content must be discipline-agnostic. Python-specific examples belong in the sibling
 book, not here.

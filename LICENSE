@@ -1,30 +1,12 @@
-Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+# Licensing
 
-Copyright (c) 2026 Michael Borck
+"Conversation, Not Delegation" by Michael Borck uses separate licences for content and code:
 
-You are free to:
+- Book text and original educational material: **CC BY 4.0 International**. The official legal text is in [LICENSE-CONTENT.md](LICENSE-CONTENT.md); see also https://creativecommons.org/licenses/by/4.0/.
+- Original code examples and accompanying software: **MIT License**, in [LICENSE-CODE.md](LICENSE-CODE.md).
 
-  Share -- copy and redistribute the material in any medium or format
-  Adapt -- remix, transform, and build upon the material for any purpose,
-           including commercially
+These grants apply only to material the author has authority to license. Separately credited third-party material and dependencies retain their own terms; this notice does not grant rights in third-party trademarks, images or personal information.
 
-Under the following terms:
+For content reuse, credit Michael Borck and the book, link the licence, and indicate changes. For code reuse, retain the MIT copyright and permission notice. Consult the full licence texts for their conditions and disclaimers.
 
-  Attribution -- You must give appropriate credit, provide a link to the
-                 license, and indicate if changes were made. You may do so
-                 in any reasonable manner, but not in any way that suggests
-                 the licensor endorses you or your use.
-
-  ShareAlike  -- If you remix, transform, or build upon the material, you
-                 must distribute your contributions under the same license
-                 as the original.
-
-  No additional restrictions -- You may not apply legal terms or
-                                technological measures that legally restrict
-                                others from doing anything the license permits.
-
-Attribution example:
-"Conversation, Not Delegation: How to Think With AI, Not Just Use It" by
-Michael Borck is licensed under CC BY-SA 4.0.
-
-Full license text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+The author approved this collection-wide policy on 2026-09-15. It does not withdraw permissions already granted for earlier copies under other licences.

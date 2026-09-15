@@ -17,7 +17,8 @@ def sources():
 class ManuscriptChecks(unittest.TestCase):
     def test_reading_order(self):
         files = sources()
-        self.assertEqual(len(files), 20)
+        self.assertEqual(len(files), 21)
+        self.assertEqual(list(files)[:2], ['index.qmd', 'copyright.qmd'])
         chapters = [Path(p).stem for p in files if p.startswith('chapters/')]
         self.assertEqual(chapters, [
             'the-delegation-trap', 'what-is-ai', 'what-are-llms',

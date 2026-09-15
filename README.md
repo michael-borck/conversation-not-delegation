@@ -79,9 +79,15 @@ python conversation-not-delegation/scripts/check_manuscript.py
 
 The core practice includes paper/comparative routes and a fully worked example with printed inputs. No AI account is required. See [EDITORIAL-REVISION.md](EDITORIAL-REVISION.md) for the revision and validation record. This command does not publish the website or upload to KDP.
 
-## License
+## Licence
 
-This work is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+Book content is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0 International)](https://creativecommons.org/licenses/by/4.0/). Original code examples and accompanying software are licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+These grants cover material the author has authority to license. Separately credited third-party material retains its stated terms. Give appropriate credit, link the content licence and indicate changes; retain the MIT notice when reusing code.
+
+See [LICENSE](LICENSE), [LICENSE-CONTENT.md](LICENSE-CONTENT.md) and [LICENSE-CODE.md](LICENSE-CODE.md) for scope and full terms.
+
+
 
 ## Contact
 
