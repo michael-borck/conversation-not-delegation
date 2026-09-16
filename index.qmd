@@ -144,6 +144,7 @@ Two ways in: start with *Conversation, Not Delegation* if you want the ideas bef
 - **Converse Python, Partner AI**: the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.
 - **Code Python, Consult AI**: focused Python fundamentals through AI conversation.
 - **Ship Python, Orchestrate AI**: professional Python development practices and tooling.
+- **The Absolute Minimum You Must Know**: the free, always-current web companion at [minimum.borck.education](https://minimum.borck.education) — quick primers on every topic this series covers in depth.
 - **Build Web, Guide AI**: web development with AI as your development partner.
 
 All titles are available at [books.borck.education](https://books.borck.education).
