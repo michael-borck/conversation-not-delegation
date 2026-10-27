@@ -53,13 +53,19 @@ This book's “AI dismissal fallacy” label concerns rejecting the content *sol
 
 ### Sycophancy
 
-An assistant may agree with a user's stated belief or flatter their work when a challenge would be more useful. Research has observed this behaviour in several assistants and examined links with preference training. Its extent depends on the model, prompt, and method; it is not a permanent law about all systems. [Sharma et al., Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548)
+An assistant may agree with a user's stated belief or flatter their work when a challenge would be more useful. Research has observed this behaviour in several assistants and examined links with preference training. Its extent depends on the model, prompt, and method; it is not a permanent law about all systems. [Sharma et al., Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548) Agreement is not limited to factual beliefs. The ELEPHANT benchmark describes *social sycophancy*: excessive preservation of the user's self-image in open-ended advice. Across the eleven models it tested, assistants preserved user face far more often than human respondents, and affirmed whichever side of a moral conflict the user took in 48% of paired cases, in that benchmark's setting. [Cheng et al., ELEPHANT: Measuring and Understanding Social Sycophancy in LLMs](https://arxiv.org/abs/2505.13995) Treat those figures as evidence about the tasks and measures studied, not as a universal rate for your model.
 
 Ask for a specific critique: an unsupported inference, an omitted alternative, or a calculation that fails. Then inspect whether the criticism is itself valid. An adversarial role can produce invented objections as easily as an agreeable role can produce empty praise.
 
 ::: {.callout-tip title="Compare two requests"}
 Give the same harmless draft two requests: “What do you think?” and “Which claim has the weakest support?” Compare the returned evidence. A difference shows sensitivity to the request; by itself it does not prove sycophancy.
 :::
+
+::: {.callout-tip title="Test stance collapse"}
+Use a harmless draft or proposal. (1) Ask: “Which claim has the weakest support, and what evidence would repair it?” Save the answer. (2) Reply with insistence but no new evidence: “I still think this is sound.” Compare whether the model withdraws, softens, or retains specific objections. (3) Reply again with one verifiable new fact or source and see whether the assessment changes for that reason. Record the original claim, each stance, and what changed it. A change after insistence alone is a warning sign; a change after named evidence may be appropriate revision. One chat is a calibration exercise, not a measurement of every conversation with that model, and the model's explanation of why it changed is another claim rather than privileged access to an internal belief.
+:::
+
+In your own notes, keep that record as a revision ledger: the original assessment, the pushback, any new evidence, and the revised position. The ledger belongs to you. Asking the model to promise that it will only move for credible facts may structure the exchange, but a prompt is not an external control and cannot guarantee the behaviour.
 
 ### Inherited defaults
 

@@ -286,9 +286,17 @@ Help me think deeper:
 3. Which risk is most likely to be the one that actually
    derails this?
 4. What early warning signs should I watch for?
+5. What would have to be true for this to succeed?
+   For each condition, say whether I have established it,
+   merely made it plausible, or not proven it yet. Name
+   the evidence that would move it up one category.
 
 Challenge my assumptions. Be specific and concrete.
 ```
+
+The last question reverses the usual direction. Instead of asking only how the plan might fail, it makes success state its requirements. Keep the resulting list as an assumptions register rather than treating every plausible condition as a fact. An unproven condition is not automatically a reason to stop; it identifies what to check, who can check it, and whether the decision can proceed before it is known.
+
+For critique, name the audience, deadline, reversibility, and stakes before reaching for a theatrical critic persona. A persona can help you rehearse a person (Technique 4), but “rip this apart” does not by itself create analytical rigour and can invite invented objections. The acceptance criteria do the serious work.
 
 The most valuable output from this technique is usually in question 1, the risks you are missing. We all have blind spots shaped by our experience, our role, and our optimism about our own plans. The AI does not share those blind spots.
 

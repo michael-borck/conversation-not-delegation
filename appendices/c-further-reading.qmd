@@ -19,6 +19,7 @@ These sources motivate separating task performance, learning, and later independ
 ## Checking agreement and protecting information
 
 - **Sharma et al. (2023), [Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548).** Studies agreement with user beliefs and preference-training effects. Treat sycophancy as a behaviour to test, not an unchangeable property of all assistants.
+- **Cheng et al. (2025), [ELEPHANT: Measuring and Understanding Social Sycophancy in LLMs](https://arxiv.org/abs/2505.13995).** Measures face-preserving responses in open-ended advice across eleven models, including affirmation of either side in paired moral-conflict prompts. Useful for distinguishing social affirmation from factual agreement; its rates describe the benchmark's datasets and measures, not every workplace conversation.
 - **OAIC, [Guidance on privacy and commercially available AI products](https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products).** Australian regulatory guidance for assessing personal information and AI use. It is not a product certification or advice about your particular obligations.
 - **OAIC, [De-identification and the Privacy Act](https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/handling-personal-information/de-identification-and-the-privacy-act).** Explains why identifiability depends on context. Replacing a name is not sufficient evidence that a record is anonymous.
 

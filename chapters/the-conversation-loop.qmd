@@ -88,6 +88,14 @@ Before sending that brief, compare it with the original sources. Summarising can
 
 Separate sessions are optional. A short task may need only one exchange, and some applications support explicit stages in one workspace. The useful element is a controlled handover, not the number of chat windows.
 
+#### Variant: hand over for evaluation
+
+The same separation can protect a judgement rather than a production step. Explore a proposal in the first conversation, then consolidate it into a short, self-contained brief: the decision, audience, deadline or irreversibility, supplied evidence, constraints, and assumptions still unproven. Check that brief against the original sources. Open a fresh session, supply only the brief, and ask for the strongest objections, the evidence that would change them, and the conditions required for success.
+
+This removes pressure from the exploratory turns, including your own earlier enthusiasm and phrasing. It does not create a “zero-bias” room. Bias can survive inside the brief, the selected evidence, the question, and the model. Provider features with names such as temporary, private, or incognito chat also need checking in the current product guidance: they may limit saved history or personalisation, but the label alone does not establish what is retained, who can access it, or whether memories and connected tools are inactive. If the data is not approved for the service, a fresh chat is not a remedy.
+
+For a consequential evaluation, you can give the identical brief to a second approved model or a qualified human reviewer and compare which risks recur. Overlap is a prompt to investigate, not independent proof: models may share sources, training pressures, and every bias already present in the brief. Keep your own revision ledger from @sec-staying-critical as positions change.
+
 ## Read the explanation and inspect the artefact
 
 A task summary can reveal that the model is solving the wrong problem. Read it, but also examine the actual result. Either can contradict the other.

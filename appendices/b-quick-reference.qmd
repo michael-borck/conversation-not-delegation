@@ -52,6 +52,29 @@ Three steps to run before you trust any AI output that matters.
 If you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See @sec-vet for the full chapter.
 
 
+## Objective Review of a Proposal
+
+Use this compact sequence when a fresh evaluation matters more than continuing the conversation that produced the idea. It combines the controlled handover in @sec-two-chat-workflow, VET in @sec-vet, and the risk work in @sec-techniques.
+
+| Step | Do this | Keep |
+|---|---|---|
+| 1. Consolidate | From the exploratory work, write a short brief: decision, audience, deadline or reversibility, supplied evidence, constraints, unknowns | Brief checked against original sources |
+| 2. Reset context | Start a fresh approved session and supply only the brief | No exploratory turns or discarded framing |
+| 3. Surface omissions | Ask diagnostic questions one at a time about material left out | Answers, including “unknown” |
+| 4. Stress-test | Ask for the strongest specific objections and what evidence would change them | Objections tied to claims, not theatrical criticism |
+| 5. Name success conditions | Ask what would have to be true; mark each condition established, plausible, or unproven | Assumptions register with an owner and next check |
+| 6. Compare, then revise | Optionally give the identical brief to a second approved model or qualified reviewer; investigate recurring and divergent risks | Comparison notes; overlap treated as a lead, not independent proof |
+| 7. Record movement | When you or the reviewer changes position, name the new evidence that caused it | Revision ledger: original claim, pushback, evidence, revised claim |
+
+: An objective review need not use every step. Choose the shortest sequence that exposes the decision's weak point. {.striped}
+
+::: {.callout-tip title="A prompt to adapt"}
+“Above is a self-contained brief for a decision. Write for the named audience and take its deadline and reversibility seriously. First ask me one material question at a time about information the brief omits. Then make the strongest specific case against the proposal, distinguishing supplied evidence from hypotheses. Finally, list what would have to be true for it to succeed and mark each condition established, plausible, or unproven, with the evidence that would move it up one category. If a later claim changes your assessment, name that claim; I will record the change in my own revision ledger and verify it independently.”
+:::
+
+A fresh session is not a zero-bias room: the brief can carry the original framing with it. Check current product guidance for any temporary/private/incognito label before relying on what it disables, and never move unapproved data into a second service merely to obtain another opinion.
+
+
 ## The Conversation Loop
 
 Four stages. One feedback arc. Most good work passes through more than once.
