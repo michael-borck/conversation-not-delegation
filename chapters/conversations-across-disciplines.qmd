@@ -103,9 +103,9 @@ Her decision record keeps the initial attempt, the failed AI proposal, the sourc
 
 A student can use the same sequence when a suggested argument claims more than its cited passage supports: name the claim, inspect the source, then decide whether to revise the argument.
 
-A project lead can use it when an estimate assumes full-time staffing that is not available: correct the capacity before asking for a new delivery date.
+For a project lead, the same sequence applies when an estimate assumes full-time staffing that is not available: correct the capacity before asking for a new delivery date.
 
-A carer or community volunteer can use it to organise non-clinical schedules or communications while leaving health, safeguarding, and other specialist decisions with qualified people. The method helps expose dependencies; it does not supply professional authority.
+It also helps a carer or community volunteer organise non-clinical schedules or communications while leaving health, safeguarding, and other specialist decisions with qualified people. The method helps expose dependencies; it does not supply professional authority.
 
 In each setting, keep the distinction between generating an option, checking it, and authorising action. The conversation earns its place where it changes the work in a way you can explain.
 

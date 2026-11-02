@@ -94,9 +94,9 @@ The practical rules are simple:
 - **Check the product, plan, settings, and connected services.** Consumer products may let you opt out of model training; business products commonly make no-training commitments by default. Retention, administrator access, memories, connectors, and third-party actions are separate questions. Read the current terms rather than inferring protection from an "enterprise" label.
 - **When in doubt, use fictional scenarios.** You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.
 
-This is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.
+This is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.
 
-But it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.
+That is not the whole picture, though. The conversation about AI and data has become fear-driven, so it is worth separating the actual risks from the assumed ones.
 
 ### Keep the Risks Distinct
 
@@ -135,7 +135,7 @@ Ask four practical questions:
 
 One critical warning can be enough to stop; there is no safe quota of unchecked claims. A brief triage may take seconds, but actual verification can take much longer. Budget for that work rather than promising a universal thirty-second check.
 
-The next chapter develops VET immediately: verify against evidence, explain in your own words, and test a relevant change. Keep the distinction between evidence and permission—a correct plan may still need approval.
+The next chapter develops VET immediately: verify against evidence, explain in your own words, and test a relevant change. Keep the distinction between evidence and permission: a correct plan may still need approval.
 
 ## Independent practice: review the evidence
 

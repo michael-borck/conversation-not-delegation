@@ -28,7 +28,7 @@ These sources motivate separating task performance, learning, and later independ
 - **Wei et al. (2022), [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903).** Reports improvements with worked reasoning examples on the tasks and models tested. It does not show that generated explanations faithfully reveal internal reasoning.
 - **Zhou et al. (2023), [Least-to-Most Prompting Enables Complex Reasoning in Large Language Models](https://arxiv.org/abs/2205.10625).** Tests decomposition into ordered subproblems. Relevant to chaining, while leaving open whether a particular real-world task benefits from more stages.
 - **Madaan et al. (2023), [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651).** Evaluates an iterative feedback method on several tasks. Improvements in those evaluations do not guarantee that repeated self-critique finds factual mistakes.
-- **Anthropic, [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents).** Practitioner engineering guidance on workflows and agents. Use it to inspect permissions, tool execution, and evaluation—not as independent evidence of a universal productivity gain.
+- **Anthropic, [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents).** Practitioner engineering guidance on workflows and agents. Use it to inspect permissions, tool execution, and evaluation, not as independent evidence of a universal productivity gain.
 
 ## What belongs to this book
 

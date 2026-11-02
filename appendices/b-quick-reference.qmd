@@ -1,6 +1,6 @@
 # Quick Reference Cards {#sec-quick-reference .appendix}
 
-Tear-out summaries of the key frameworks, tools, and techniques in this book. Pin them next to your screen or keep them open in a tab.
+Tear-out summaries of the frameworks, tools, and techniques in this book. Pin them next to your screen or keep them open in a tab.
 
 
 ## RTCF Prompt Framework
@@ -122,7 +122,7 @@ The same principle appears across disciplines under different vocabularies. Whic
 
 : One idea, four vocabularies. {.striped}
 
-Conversation is the practice. Judgement is what you exercise during it. Agency is what you preserve by exercising judgement. Human-in-the-loop is what the same stance looks like from a system designer's perspective. Four words, one stance, four angles on the same thing.
+Conversation is the practice. Judgement is what you exercise during it. Agency is what you preserve by exercising judgement. Human-in-the-loop is what the same stance looks like from a system designer's perspective.
 
 ## Choose the mode before the prompt
 

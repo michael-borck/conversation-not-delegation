@@ -1,12 +1,12 @@
 # Prompt Structuring Frameworks {#sec-prompt-frameworks .appendix}
 
-RTCF is not the only prompt structuring framework. A family of mnemonics emerged in 2023-24 as practitioners and educators figured out what makes a good opening prompt. They all capture the same insight: telling the AI who to be, what to do, what background it needs, and how to format the output produces dramatically better results than an unstructured request.
+RTCF is not the only prompt structuring framework. A family of mnemonics emerged in 2023-24 as practitioners and educators figured out what makes a good opening prompt. They all capture the same insight: telling the AI who to be, what to do, what background it needs, and how to format the output produces better results than an unstructured request.
 
 This appendix compares the most widely used frameworks side by side, using the same task so you can see how each one shapes the prompt differently. The task: getting AI to help analyse student feedback data.
 
 None of these frameworks have a single academic source. They are practitioner knowledge, patterns that emerged from use, were shared in workshops and online communities, and proved useful enough to stick. Use them as reminders to supply relevant information, not as a guarantee that a longer or more structured prompt performs better. The mnemonics are packaging, not discovery.
 
-We chose RTCF for this book because it has the fewest elements to remember and covers the ground that matters most. But if a different framework clicks better for how you think, use that one. The letters do not matter. The habit of thinking before prompting does.
+We chose RTCF for this book because it has the fewest elements to remember and covers the ground that matters most. But if a different framework clicks better for how you think, use that one. What matters is the habit of thinking before prompting.
 
 
 ## RTCF: Before and After
@@ -94,11 +94,9 @@ Three elements. The most minimal framework. Useful for quick, low-stakes prompts
 
 The frameworks are listed from simplest to most detailed. Start with RTCF. If you find yourself repeatedly needing to specify tone separately from context, try CRAFT. If you need to define a multi-step process, try RISEN. If you have a clear example of what good output looks like, try CREATE. If you never need more than three elements, APE is fine.
 
-The goal is not to memorise all six. It is to build the habit of structuring your thinking before you type. Any of these frameworks will get you there. Pick one, use it until it becomes instinct, then let it go.
+The goal is to build the habit of structuring your thinking before you type. Any of these frameworks will get you there. Pick one, use it until it becomes instinct, then let it go.
 
 
 ## The Caveat
 
-Every one of these frameworks improves your *opening* prompt. None of them replace the conversation that follows. A perfectly structured RTCF or CO-STAR prompt is still a single prompt. It is still one shot. The real value comes from what you do with the response: iterate, push back, refine, and make the output yours.
-
-Structured prompts are a better starting point. They are not a substitute for staying in the conversation.
+Every one of these frameworks improves your *opening* prompt. None of them replace the conversation that follows. A perfectly structured RTCF or CO-STAR prompt is still a single prompt. It is still one shot. The value comes from what you do with the response: iterate, push back, refine, and make the output yours.

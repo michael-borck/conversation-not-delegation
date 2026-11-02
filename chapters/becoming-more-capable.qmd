@@ -45,7 +45,7 @@ Keep uncertainty in the record. “The source supports the schedule, but the org
 
 Choose one habit for the coming week, not a promise to use every technique on every task.
 
-You might begin important work with a five-minute first attempt. You might keep a claim/source column beside a draft. You might place a deliberate pause between planning and execution, or explain a result in your own words before sharing it.
+You might begin important work with a five-minute first attempt, keep a claim/source column beside a draft, place a deliberate pause between planning and execution, or explain a result in your own words before sharing it.
 
 Choose a task where the habit has a visible completion test. At the end of the week, examine one example. Did the pause expose a real issue? Did the source support the claim? Did you understand the change you accepted? Adjust the habit using that evidence.
 

@@ -14,7 +14,7 @@ Try the smallest clear brief, inspect the result, and add the structure that the
 
 RTCF is one of a family of prompt-structuring mnemonics that emerged as people worked out how to brief AI well. Others exist (CRAFT, CO-STAR, RISEN, and more) and they offer related reminders to state the task, audience, constraints, and expected result. Their usefulness depends on the task and how you apply them. We use RTCF in this book because it is the simplest to remember and the quickest to apply. @sec-prompt-frameworks compares the alternatives.
 
-None of these frameworks are original inventions. They package practices professionals and educators have used for decades: writing a clear brief, specifying the audience, stating constraints. The contribution is in joining the dots for AI, not in discovering anything new. That is exactly why they survive the "prompting is dead" turn: they were never tricks in the first place.
+None of these frameworks are original inventions. They package practices professionals and educators have used for decades: writing a clear brief, specifying the audience, stating constraints. The contribution is in joining the dots for AI, not in discovering anything new. That is why they survive the "prompting is dead" turn: they were never tricks in the first place.
 
 Four components, four questions.
 
@@ -27,11 +27,9 @@ Four components, four questions.
 
 : The RTCF framework: four questions that make you supply what the model is missing. {.striped}
 
-Role, Task, Context, Format. Before we recalibrate them for the model you are actually using, there is a principle worth naming: **one prompt, one job.**
+Before we recalibrate them for the model you are actually using, there is a principle worth naming: **one prompt, one job.**
 
 Split a request when its stages need different evidence or separate checks. A compact, well-specified multi-part request may work perfectly well; the word “and” is not a diagnostic test. See @sec-prompt-chaining for dependencies and handovers.
-
-Now the part that the "prompting is dead" debate gets half-right.
 
 
 ## Test the amount of structure
@@ -100,7 +98,7 @@ The difference between a bare prompt and an RTCF brief is not length. It is clar
 
 The bare prompt leaves the intended help unspecified. The RTCF version identifies the draft, discipline, and weakness the supervisor flagged. None of that came from clever phrasing. It came from her deciding what she actually needed before she asked.
 
-And this is the part the "perfect prompt" mindset misses: the structured prompt is the *start* of the conversation, not the end.
+The structured prompt only starts the conversation.
 
 ::: {.callout-note title="What happens after the RTCF prompt"}
 > **AI:** [Identifies three paragraph-level problems. On paragraph 2:] "You introduce three studies but treat each as a self-contained summary. Restructure: open with the shared question, 'How does urban density mediate flood resilience?', then bring each study in as a different angle on it."

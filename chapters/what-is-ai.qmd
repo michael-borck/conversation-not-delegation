@@ -6,9 +6,7 @@
 
 You might be wondering why this book pauses after the opening problem to explain what AI is. The reason is practical: every framework in this book, every technique for prompting, verifying, and staying critical, exists because of something specific about how these tools work. If you understand the mechanics, even at a high level, the techniques stop feeling like arbitrary rules and start feeling obvious. You will know *why* you need to verify AI output, not just that you should.
 
-Artificial intelligence is software that can perform tasks that typically require human intelligence.
-
-That is it. No magic. No consciousness. Just software that can do things that used to require a human brain.
+Artificial intelligence is software that can perform tasks that typically require human intelligence. There is no magic or consciousness in that, just software that can do things that used to require a human brain.
 
 When we say "intelligence" here, we mean specific capabilities: recognising patterns in images, making predictions from data, understanding language, generating text. AI does not "think" the way you do. It processes data using mathematical patterns. But the results can look remarkably intelligent, and that gap between appearance and reality is worth understanding from the start.
 
@@ -66,7 +64,7 @@ AI is strong where humans are slow and slow where humans are fast.
 
 These are evaluation questions, not fixed claims that machines can never reason, generalise, or create something novel.
 
-This asymmetry matters. AI is not a replacement for human thinking. It is a tool that is extraordinarily capable in some domains and brittle in others. The people who use it well are the ones who understand where that line falls.
+AI is not a replacement for human thinking. It is a tool that is extraordinarily capable in some domains and brittle in others. The people who use it well are the ones who understand where that line falls.
 
 ## Hype Versus Reality
 
@@ -76,7 +74,7 @@ AI can automate tasks within jobs, and this can also change or eliminate roles. 
 
 Some AI systems are specialised; others support many tasks and modalities. A system's name or performance on one task does not establish its suitability or permissions for another.
 
-AI is a tool, not a strategy. Saying "we need an AI strategy" is like saying "we need a spreadsheet strategy." The real question is always: what problem are you solving? AI is one way to solve it.
+AI is a tool, not a strategy. Saying "we need an AI strategy" is like saying "we need a spreadsheet strategy." The question is always: what problem are you solving? AI is one way to solve it.
 
 And AI reflects its training data. If that data contains biases, the AI learns those biases. It is not objective. It is a mirror of the information it was trained on, with all the distortions that implies.
 
@@ -86,13 +84,13 @@ Automating tasks can also change jobs. AI is one tool among many. Start with the
 
 ## The Practical Framing
 
-Here is the most useful way to think about AI as you read this book: it is a capable but literal collaborator.
+Think of AI, as you read this book, as a capable but literal collaborator.
 
 Capable, because it can process information, generate text, spot patterns, and respond to instructions at a speed and scale no human can match. Literal, because it does exactly what the patterns in its training suggest, not what you meant, not what would be wise, not what the situation actually calls for.
 
 Clear instructions and useful context can help. Results also depend on the model, application, data, and task. A structured conversation does not guarantee a correct or useful result.
 
-That is what this book is about. Not how to get AI to do your work, but how to think better with AI as a partner.
+This book is about thinking better with AI as a partner.
 
 ### A Note on AI Apps and Hidden Prompts
 
@@ -101,8 +99,6 @@ You will increasingly encounter AI not as a blank conversation window but embedd
 Their instructions and available controls vary. Some expose editable prompts or context; others offer only a few settings. Inspect what you can supply, change, and verify instead of assuming every embedded tool prevents meaningful steering.
 
 Choose an interface suited to the task and its data constraints. Direct chat is useful for open-ended dialogue; a constrained interface may be preferable for a well-defined workflow. In either case, check the result and understand what an acceptance button will do.
-
-Large language models are the AI technology this book is about. That is what the next chapter covers.
 
 ## Independent practice: classify a task
 

@@ -6,15 +6,11 @@
 
 ## The One Thing AI Can Do That Other Tools Can't
 
-AI can teach you how to use itself.
-
-Excel cannot teach you how to use Excel. PowerPoint cannot walk you through making better slides. Email cannot help you write better emails.
+AI can teach you how to use itself. Excel cannot teach you how to use Excel, PowerPoint cannot walk you through making better slides, and email cannot help you write better emails.
 
 But AI can, because it can ask you questions, understand your context, evaluate its own suggestions, and adjust based on your feedback.
 
 This means you do not need a course or a manual to get started. You can use AI to figure out how AI fits into your work.
-
-> The most useful thing AI can do is not answer your question. It is help you figure out what question to ask.
 
 
 ## The Core Idea: Meta-Prompting
@@ -27,7 +23,7 @@ Instead of asking AI to solve a problem directly, ask AI to help you figure out 
 | "Give me strategies for using AI." | "Ask me questions to understand my context, then recommend both obvious and unexpected ways I could use AI." |
 | "How do I improve my workflow?" | "Interview me about my role and responsibilities, then suggest AI tools and strategies I might not have considered." |
 
-The meta approach works better because AI asks clarifying questions first, learns your context, and gives you recommendations that fit your actual situation. Not generic advice aimed at nobody in particular.
+The meta approach works better because AI asks clarifying questions first, learns your context, and gives you recommendations that fit your actual situation rather than generic advice aimed at nobody in particular.
 
 
 ## The Consultation Prompt: Your Starting Point
@@ -63,8 +59,6 @@ provide TWO types of recommendations:
 Format your recommendations clearly
 with implementation tips for each.
 ```
-
-That is it. Paste it, start answering questions, and see what comes back.
 
 
 ## Why This Works
@@ -104,12 +98,10 @@ Here is a simplified version of how this conversation might go.
 >
 > **Non-obvious opportunities:** Use AI to analyse your incoming faculty questions and identify common gaps in understanding, then create targeted guidance before people ask. Use AI as a quality-check tool: paste a unit outline and ask it to flag compliance risks or unclear learning outcomes. Use AI to build a simple FAQ that handles the routine questions so you can focus on the ones that actually need your judgement.
 
-Notice what happened. Three questions. Honest answers. Targeted recommendations. The AI did not give generic suggestions about "leveraging AI for productivity." It understood the specific role, constraints, and frustrations, so the recommendations are grounded in something real. You could act on any of them this week.
+The AI did not give generic suggestions about "leveraging AI for productivity." It understood the specific role, constraints, and frustrations, so the recommendations are grounded in something real. You could act on any of them this week.
 
 
 ## The Deeper Principle: AI as a Mirror
-
-Here is what is actually going on when you ask AI to interview you.
 
 **It forces you to articulate your own work clearly.**
 
@@ -124,7 +116,7 @@ Often, the most useful part of this conversation is not the AI's recommendations
 
 People regularly say things like: "I did not realise how much time I was spending on that until the AI asked about it." Or: "Just explaining my challenges helped me see a solution on my own." Or: "The recommendations were fine, but the real value was the clarity I got about what I actually needed."
 
-This is not a side effect. It is the point. The consultation prompt works because it puts you in the position of expert and the AI in the position of interviewer. You know the answers. It just asks the right questions. And in answering those questions, you often discover that you already knew what to do. You just had not said it out loud yet.
+That clarity is the point. The consultation prompt works because it puts you in the position of expert and the AI in the position of interviewer. You know the answers. It just asks the right questions. And in answering those questions, you often discover that you already knew what to do. You just had not said it out loud yet.
 
 
 ## Practical Tips for Your Consultation
@@ -137,8 +129,7 @@ This is not a side effect. It is the point. The consultation prompt works becaus
 
 **Come back periodically.** This is not a one-off exercise. Your context changes. Your needs shift. The tools themselves change. Run this consultation again in a few months. Each time, you will be ready for different ideas, and you will ask sharper questions because you have more experience to draw on.
 
-**Share what you learn.** If something works, tell a colleague. "I asked AI to help me figure out how to use AI, and it suggested this. Here is how it went." Others might try their own version and find something entirely different that is useful for their context. That is the point.
-
+**Share what you learn.** If something works, tell a colleague. "I asked AI to help me figure out how to use AI, and it suggested this. Here is how it went." Others might try their own version and find something entirely different that is useful for their context.
 
 ::: {.callout-note title="The real value"}
 Often, the most useful part of asking AI to interview you is not the recommendations it gives. It is the clarity you gain about your own work by having to explain it.
@@ -155,11 +146,7 @@ Often, the most useful part of asking AI to interview you is not the recommendat
 
 This works with any AI tool and in any role. The skill you are building is not prompt engineering. It is the ability to think clearly about your own work, explain it precisely, and evaluate whether what comes back is useful. That skill transfers everywhere.
 
-If you want to structure the prompts that come out of this consultation, the RTCF framework (@sec-rtcf) gives you a reliable way to build them. If you want to break complex problems into stages, prompt chaining (@sec-prompt-chaining) shows you how.
-
-But start here. Let AI help you figure out what you actually need.
-
-Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.
+If you want to structure the prompts that come out of this consultation, the RTCF framework (@sec-rtcf) gives you a reliable way to build them. If you want to break complex problems into stages, prompt chaining (@sec-prompt-chaining) shows you how. Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.
 
 ## Practice: evaluate the consultant
 

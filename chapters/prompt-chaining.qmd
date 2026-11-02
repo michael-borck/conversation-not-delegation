@@ -229,7 +229,7 @@ Prompt 2: "Now turn that analysis into:
 - A set of action items for the project team"
 ```
 
-Same thinking, three audiences. The analysis does the heavy lifting. The format shift makes it useful.
+The analysis does the work once; shifting the format makes it usable for three audiences.
 
 ### Perspective Shifting
 
@@ -237,7 +237,7 @@ Rerun analysis from different viewpoints:
 
 > "Now redo that analysis from the perspective of: a new customer encountering this product for the first time, a support team handling complaints, and a competitor evaluating the market. How does each perspective change the recommendations?"
 
-This is one of the most underused techniques. It forces the AI to stress-test its own output, and it often surfaces blind spots you would not have found otherwise.
+It forces the AI to stress-test its own output, and it often surfaces blind spots you would not have found otherwise.
 
 
 ## Managing Long Conversations
@@ -258,7 +258,7 @@ A few practical habits keep this under control:
 
 **Watch for signs of drift.** If the AI starts contradicting something it said earlier, or produces output that ignores a constraint you set, inspect the handover and sources; context management is one possible cause, not the only one. Summarise, hand off, and continue in a fresh session.
 
-These are not advanced techniques. They are housekeeping. But they make the difference between a chain that holds together over ten steps and one that quietly falls apart at step six.
+These habits are housekeeping, and they are what keep a chain holding together over ten steps rather than quietly falling apart at step six.
 
 
 ::: {.callout-tip title="The golden rule of chaining"}

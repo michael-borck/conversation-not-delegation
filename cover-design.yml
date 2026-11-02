@@ -1,0 +1,13 @@
+version: 1
+style: editorial-c
+art: cover-art.png
+family: JUDGEMENT / CONVERSATION
+accent: '#614C69'
+background: '#EEE5EF'
+title_lines:
+- Conversation,
+- Not Delegation
+dark: false
+pixel: false
+scene: conversation
+art_origin: Locally constructed editable vector illustration.

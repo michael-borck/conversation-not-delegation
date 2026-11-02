@@ -4,9 +4,7 @@
 
 > The best time to use AI is after you have done enough thinking to know what to ask.
 
-There is a temptation, once you have access to a powerful AI, to reach for it immediately. Problem appears, AI gets asked. Every time.
-
-Resist that.
+There is a temptation, once you have access to a powerful AI, to reach for it immediately whenever a problem appears. Resist that.
 
 Use AI after a short first attempt when that helps you identify the question and preserve the skill you want to practise. This is a default for deliberate work, not a ban on early assistance.
 
@@ -31,7 +29,7 @@ This is not about proving something. It is about activating what you already kno
 
 ### 2. Use your own tools for routine problems
 
-You have tools that are faster, more reliable, and more precise than AI for most routine tasks. Your notes from previous projects. Your bookmarks. A quick search. A conversation with a colleague. Reference materials and style guides. Templates you have built over time.
+You have tools that are faster, more reliable, and more precise than AI for most routine tasks: your notes from previous projects, your bookmarks, a quick search, a conversation with a colleague, reference materials and style guides, templates you have built over time.
 
 A calculator can reliably execute a specified calculation; notes, searches, and colleagues can still be mistaken or out of date. Prefer a known, checkable method when it suits the task, and inspect the inputs as well as the result.
 
@@ -45,7 +43,7 @@ The more precisely you can name the sticking point, the more useful the next ste
 
 ### 4. Now bring in AI, scoped tightly
 
-Give the AI the specific problem, the relevant context, and a clear question. Not your entire project. Not a vague plea for help. The particular thing you are stuck on, framed in a way that makes it easy for the model to give you something useful.
+Give the AI the specific problem, the relevant context, and a clear question: the particular thing you are stuck on, framed in a way that makes it easy for the model to give you something useful, rather than your entire project or a vague plea for help.
 
 Compare these two approaches:
 
@@ -57,7 +55,7 @@ Versus:
 
 The second prompt identifies the actual difficulty and supplies material to work with. Check whether the resulting through-line fits the cases; the additional context does not guarantee a useful insight.
 
-The difference is that in the second case, you did the work first. You gathered the case studies. You structured the presentation. You identified exactly where you were stuck. The AI is handling the one part where it can add value you could not easily generate yourself.
+The difference is that in the second case, you did the work first: you gathered the case studies, structured the presentation, and identified where you were stuck. The AI is handling the one part where it can add value you could not easily generate yourself.
 
 ### 5. Validate and integrate the output yourself
 
@@ -75,7 +73,7 @@ Take something you have already written, such as an email draft, meeting notes, 
 
 This principle is not "never use AI." It is "use AI where it adds value you cannot easily generate yourself."
 
-That includes exploring unfamiliar domains where you lack expertise. It includes processing or transforming information at a scale that would take you hours to do manually. It includes brainstorming approaches to genuinely novel problems, the ones where your own experience and your usual resources do not give you enough to work with.
+That includes exploring unfamiliar domains where you lack expertise, processing or transforming information at a scale that would take you hours to do manually, and brainstorming approaches to genuinely novel problems, the ones where your own experience and your usual resources do not give you enough to work with.
 
 ## Stop when the useful work is done
 

@@ -8,9 +8,7 @@ I wrote this book because I kept watching smart people use AI badly.
 
 Not badly in a technical sense. They could find the tools, type the prompts, and get outputs. But they were delegating their thinking to a machine and accepting whatever came back. The AI was doing the work, and the human was doing the clicking. The outputs looked polished. The thinking behind them was hollow.
 
-There is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it.
-
-This book teaches you how.
+There is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it. This book teaches you how.
 
 The academic literature has other names for what gets preserved when you do this. Philosophers and ethicists call it **agency**: your capacity to choose, weigh, and own the outcome. AI policy and system design call it **human-in-the-loop** (HIL): the principle that a person remains an active participant in decisions a system could otherwise automate. This book uses a different word, **conversation**, because the academic terms describe *what* you keep, and the conversational frame describes *how* you keep it. Same idea, three vocabularies. If you came in looking for guidance on human agency or HIL, you are in the right place. See @sec-quick-reference for the terms map.
 
@@ -137,20 +135,18 @@ The online version is always the most current. The printed and ebook editions ar
 | Python from the beginning | Think Python, Direct AI | Code Python, Consult AI, then Ship Python, Orchestrate AI |
 | Web development | Think Python, Direct AI | Build Web, Guide AI |
 
-Two ways in: start with *Conversation, Not Delegation* if you want the ideas before (or without) code, or start with *Think Python, Direct AI* if you want to code from your first page. The methodology in *Converse Python, Partner AI* enhances every path.
+Two ways in: start with *Conversation, Not Delegation* if you want the ideas before (or without) code, or start with *Think Python, Direct AI* if you want to code from your first page. The methodology in *Converse Python, Partner AI* applies to every path.
 
 - **Conversation, Not Delegation**: the general methodology for working with AI across any discipline. No code required; the broadest entry point.
 - **Think Python, Direct AI**: computational thinking for absolute beginners. The entry point if you want to code from the start.
 - **Converse Python, Partner AI**: the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.
 - **Code Python, Consult AI**: focused Python fundamentals through AI conversation.
 - **Ship Python, Orchestrate AI**: professional Python development practices and tooling.
-- **The Absolute Minimum You Must Know**: the free, always-current web companion at [minimum.borck.education](https://minimum.borck.education) — quick primers on every topic this series covers in depth.
+- **The Absolute Minimum You Must Know**: the free, always-current web companion at [minimum.borck.education](https://minimum.borck.education): quick primers on every topic this series covers in depth.
 - **Build Web, Guide AI**: web development with AI as your development partner.
 
 All titles are available at [books.borck.education](https://books.borck.education).
 
 You are reading *Conversation, Not Delegation*, the general methodology that underpins the series.
 
-This book has a companion: *Converse Python, Partner AI*, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place.
-
-Both books are independently complete. You do not need one to benefit from the other.
+This book has a companion: *Converse Python, Partner AI*, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place. Both books are independently complete. You do not need one to benefit from the other.

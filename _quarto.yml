@@ -7,6 +7,7 @@ project:
     - LICENSE-CODE.md
 
 book:
+  cover-image: cover.png
   title: "Conversation, Not Delegation"
   subtitle: "How to Think With AI, Not Just Use It"
   author: "Michael Borck"
@@ -77,13 +78,16 @@ format:
     theme:
       light: cosmo
       dark: darkly
-    css: styles.css
+    css: [styles.css, book-design.css]
     include-after-body: chatbot.html
     toc: true
     toc-depth: 3
     number-sections: true
     mermaid-format: js
   pdf:
+    pdf-engine: lualatex
+    fontsize: 11pt
+    linestretch: 1.08
     documentclass: book
     toc: true
     toc-depth: 1
@@ -96,10 +100,11 @@ format:
       - outer=0.625in
       - top=0.75in
       - bottom=0.75in
-    include-in-header: pdf-header.tex
+    include-in-header: [pdf-header.tex, book-design.tex]
     include-before-body:
       - copyright-page.tex
   epub:
+    epub-cover-image: cover.png
     toc: true
     toc-depth: 1
-    css: epub-styles.css
+    css: [epub-styles.css, book-design-epub.css]

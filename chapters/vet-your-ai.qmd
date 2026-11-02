@@ -6,9 +6,9 @@
 
 The most dangerous AI output is the one that sounds right.
 
-Not the obvious hallucination. Not the garbled sentence. Not the response that makes you squint and say "that can't be correct." Those are easy to catch. You catch them because they feel wrong.
+It is not the obvious hallucination, the garbled sentence, or the response that makes you squint and say "that can't be correct." Those are easy to catch because they feel wrong.
 
-The dangerous output is the one that reads smoothly, cites plausible-sounding sources, and fits neatly into your expectations. You nod along. You accept it. You paste it into your document. And you never check, because nothing triggered your suspicion.
+The dangerous output is the one that reads smoothly, cites plausible-sounding sources, and fits neatly into your expectations. You nod along, accept it, paste it into your document, and never check, because nothing triggered your suspicion.
 
 This is where critical evaluation fails most often. Not when AI is obviously wrong, but when it is subtly wrong in a way that sounds completely right.
 
@@ -34,7 +34,7 @@ The first question is about sources. AI presents claims with absolute confidence
 
 - **Look up citations.** This bears repeating because it is the most common failure point. AI will produce beautifully formatted references that do not exist. It will attribute findings to real researchers who never conducted those studies. The only way to know is to look.
 
-Verification is not about distrust. It is about due diligence. You would not submit a report based on a single anonymous source. Do not submit one based on unverified AI output.
+Verification is due diligence. You would not submit a report based on a single anonymous source. Do not submit one based on unverified AI output.
 
 ::: {.callout-note title="Check the source, then the claim"}
 Consider this deliberately constructed answer: “Retrieval-augmented generation eliminates factual errors; see Lewis et al., 2020.”
@@ -51,11 +51,11 @@ The second question is about understanding. There is a difference between having
 
 - **If you cannot explain it, you do not understand it.** This is a hard rule. If someone asked you to explain the AI's output without looking at it, could you? If the answer is no, you are holding words, not knowledge. You are carrying a bag someone else packed, and you do not know what is inside.
 
-- **Rewrite it in your own language.** Take the AI's output and translate it into your words, your framing, your way of explaining things. This is not about style. It is a comprehension test. The act of rewriting forces you to process the content rather than skim it. Where you struggle to rephrase, that is where your understanding has a gap.
+- **Rewrite it in your own language.** Take the AI's output and translate it into your words, your framing, your way of explaining things. This works as a comprehension test: rewriting forces you to process the content rather than skim it. Where you struggle to rephrase, that is where your understanding has a gap.
 
 - **Teach it to someone.** The best test of understanding is explanation. If you can teach the concept to a colleague who is unfamiliar with it, you understand it. If you find yourself falling back on the AI's exact phrasing because you cannot find your own, you have memorised, not learned.
 
-This step is where the Conversation Loop earns its name. You are not just receiving information. You are processing it, internalising it, making it yours. Without this step, you are a conduit, not a thinker.
+This step is where the Conversation Loop earns its name. You are not just receiving information. You are processing it, internalising it, making it yours.
 
 
 ### Test: Does this hold up under scrutiny?
@@ -73,7 +73,7 @@ Testing is where you discover whether the AI gave you something genuinely useful
 
 ## VET in Practice
 
-Abstract frameworks are easy to nod along to. Concrete application is harder. Here is what VET looks like when applied to real AI output.
+Applied to real AI output, VET looks like this:
 
 | AI says... | V: Verify | E: Explain | T: Test |
 |---|---|---|---|
@@ -83,7 +83,7 @@ Abstract frameworks are easy to nod along to. Concrete application is harder. He
 
 : Applying VET to AI claims: each column asks a different kind of question. {.striped}
 
-Notice the pattern. Verify asks "is this real?" Explain asks "do I understand this?" Test asks "is this the whole picture?" Each question catches a different kind of failure.
+Verify asks "is this real?" Explain asks "do I understand this?" Test asks "is this the whole picture?" Each question catches a different kind of failure.
 
 The first column catches fabrication. The second catches shallow acceptance. The third catches overconfidence. Together, they cover the three most common ways people get burned by AI output.
 
@@ -104,11 +104,11 @@ The higher the stakes, the more thorough your VET should be. A casual brainstorm
 
 ## The Habit
 
-VET works best when it becomes automatic. Not a procedure you consciously invoke, but a reflex. You read AI output and your mind naturally asks: can I verify this, can I explain this, does this hold up?
+VET works best when it becomes an automatic reflex. You read AI output and your mind naturally asks: can I verify this, can I explain this, does this hold up?
 
 Building this habit takes deliberate practice at first. For the next week, try this: every time you use AI output in your work, pause and run through the three questions. Write your answers down if that helps. After a few dozen repetitions, you will stop needing to write them down. The questions will just be there, running in the background every time you read AI-generated text.
 
-This is the Iterate stage of the Conversation Loop made concrete. When you VET, you are not passively consuming output. You are actively evaluating it, pushing back on it, strengthening it. You are in conversation, not delegation.
+This is the Iterate stage of the Conversation Loop made concrete. When you VET, you are not passively consuming output. You are actively evaluating it, pushing back on it, strengthening it.
 
 ::: {.callout-tip title="Try this (10 minutes)"}
 Ask AI a factual question about your field, something you can check. Then VET the response fully. Verify one claim independently. Explain the answer in your own words. Test it with an edge case or a changed variable. The whole process takes ten minutes. What you learn about the AI's reliability in your domain is worth far more.
@@ -122,13 +122,9 @@ Not everything needs the full VET treatment. A casual brainstorm gets a light pa
 
 ## Owning the Output
 
-VET is not about distrusting AI. It is about owning the output.
-
 When you verify a claim, you know it is true because you checked, not because the AI sounded confident. When you can explain something in your own words, you understand it, not because you read it, but because you processed it. When you test an idea and it holds up, you know its limits and its strengths.
 
 The difference between someone who uses AI well and someone who uses AI carelessly is not the quality of their prompts. It is what they do after the AI responds.
-
-VET is what you do after.
 
 ## Independent practice: Verify, Explain, Test
 

@@ -6,7 +6,7 @@
 
 The opening comic exaggerates for effect: no model has read everything. Its training material and the information available in a particular conversation are limited.
 
-This chapter matters more than it might seem. Understanding how LLMs actually work is not academic background. It is the foundation for every practical decision you will make when using them. Why do they hallucinate? Because they predict plausible text, not true text. Why does a structured prompt work better? Because it gives the model better patterns to predict from. Why do you need to verify output? Because an answer's fluency does not establish its accuracy. The frameworks later in this book (RTCF, VET, the two-chat workflow, the average-versus-precise grid) all follow directly from what you learn here.
+Understanding how LLMs actually work is not academic background. It is the foundation for every practical decision you will make when using them. Why do they hallucinate? Because they predict plausible text, not true text. Why does a structured prompt work better? Because it gives the model better patterns to predict from. Why do you need to verify output? Because an answer's fluency does not establish its accuracy. The frameworks later in this book (RTCF, VET, the two-chat workflow, the average-versus-precise grid) all follow directly from what you learn here.
 
 A common language-model training task is predicting the next token, a piece of text. Conversational systems may also undergo further training for instruction following and other behaviours. Prediction is an important foundation, not a complete description of every model or application.
 
@@ -24,7 +24,7 @@ Think about what it takes to predict the next word well.
 
 "The patient presented with fever, joint pain, and a butterfly-shaped rash, which is consistent with ___." Now you need specialised knowledge and the ability to connect symptoms to diagnoses.
 
-Each of these is still word prediction. But to predict well, the model had to learn grammar, facts, reasoning patterns, argumentation structures, and different styles of communication. The training objective was simple. What emerged was not.
+Each of these is still word prediction. But to predict well, the model had to learn grammar, facts, reasoning patterns, argumentation structures, and different styles of communication. The training objective was simple, but what emerged from it was not.
 
 LLMs were trained on enormous amounts of text: books, articles, websites, academic papers, forums, code repositories. Billions of documents. By learning to predict what comes next across all of that text, they built an internal model of how language works, and of much of what language describes.
 
@@ -44,13 +44,11 @@ The product also decides what context reaches the model: instructions, conversat
 
 LLMs are strong at tasks that involve language and pattern recognition.
 
-They can generate text in nearly any style or format: emails, reports, stories, technical documentation. They can summarise long documents and extract key points. They can explain complex ideas at different levels of sophistication. They can translate between languages, not just word by word, but with awareness of meaning and context. They can write and debug code, because code is a language with patterns too.
+They can generate text in nearly any style or format: emails, reports, stories, technical documentation. They can also summarise long documents, extract key points, and explain complex ideas at different levels of sophistication. Translation between languages goes beyond word-by-word substitution to meaning and context. And because code is a language with patterns too, they can write and debug it.
 
 An explanation of photosynthesis may be generated from learned patterns, supplied sources, or retrieved material. You need information about the application to distinguish these routes. A readable explanation is useful, but its content still needs checking.
 
 ## What They Cannot Do
-
-Here is where it matters that you know what these models actually are.
 
 **They can hallucinate.** Models may state false information confidently, with or without access to sources. They can also express uncertainty or refuse. Neither fluency nor a cautious tone establishes whether the answer is correct; check consequential claims.
 
@@ -58,7 +56,7 @@ Here is where it matters that you know what these models actually are.
 
 **They have no access to real-time information.** An LLM's knowledge stops at its training cutoff. Recent information must arrive through an update, supplied context, or an external source; a training cutoff alone does not describe everything available in a conversation.
 
-These are not minor caveats. They are fundamental to what these systems are. An LLM is a model of language, not a model of truth.
+These limits are fundamental to what these systems are: an LLM is a model of language, not a model of truth.
 
 ## Generation is not verification
 
@@ -102,11 +100,9 @@ Knowing what has been done to the model (by the trainers, by the filter designer
 
 Modern LLMs are no longer text-only. Many can process images, PDFs, spreadsheets, and other files as inputs. Some can generate images. Some can speak and listen through audio interfaces.
 
-This matters, but it is worth being precise about how.
-
 Images, PDFs, and data files are inputs. They provide context. You can upload a chart and ask the AI to interpret it, or attach a contract and ask it to summarise the key terms. This is useful, and the same principles in this book apply: you still need to verify the output, still need to bring your own judgement, still need to stay in the conversation.
 
-But context is not conversation. Uploading a document is closer to handing someone a file than to thinking alongside them. The conversational techniques in this book, pushing back, iterating, challenging, are fundamentally about the back-and-forth of language.
+But context is not conversation. Uploading a document is closer to handing someone a file than to thinking alongside them. The conversational techniques in this book, pushing back, iterating, challenging, are about the back-and-forth of language.
 
 Where multimodal AI may change the nature of conversation itself is voice. Audio interfaces let you talk with AI rather than type. The rhythm is different. You interrupt. You think out loud. You correct yourself mid-sentence. For many people, this is closer to how they actually think, and it may turn out to be a more natural way to stay in the conversation loop than typing prompts into a text box.
 
