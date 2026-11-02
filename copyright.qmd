@@ -22,7 +22,7 @@ First edition, 2025.
 **AI disclosure:** This book was written using the methodology it describes. AI tools were used as thinking partners throughout the drafting, iterating, and refining process. The author reviewed, challenged, and took responsibility for every sentence. Full details of the tools used are in the front matter.
 
 **Companion website:** [https://michael-borck.github.io/conversation-not-delegation](https://michael-borck.github.io/conversation-not-delegation)\
-**Amazon:** *(add your Amazon listing URL here)*\
+**Amazon:** [https://www.amazon.com.au/dp/B0GTF9F4Q2](https://www.amazon.com.au/dp/B0GTF9F4Q2)\
 **Source:** [https://github.com/michael-borck/conversation-not-delegation](https://github.com/michael-borck/conversation-not-delegation)
 
 :::
