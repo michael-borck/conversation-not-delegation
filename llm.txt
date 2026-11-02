@@ -29,19 +29,19 @@ If you work with AI in any capacity, or plan to, this book will give you a frame
 
 ## What This Book Is Not
 
-This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not. Where the book names a specific tool or describes how current models behave, those details will date faster than the surrounding ideas. The principles are the point.
+This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not. Where the book names a specific tool or describes how current models behave, those details will date faster than the surrounding ideas. Keep the principles and expect the interfaces to change.
 
-It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt is the beginning of the conversation, not the point of it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.
+It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt begins the conversation; it does not replace it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.
 
 A related warning: conversation, in this book, is not a string of zero-shot prompts run back-to-back. That is just delegation in volume. Real conversation requires pushback, course correction, and your judgement woven through each exchange.  draws the distinction carefully.
 
 It is not about AI apps that embed intelligence into other software, such as writing assistants, email autocompletes, and coding copilots. Those tools run on prompts someone else wrote. This book is about conversations you control yourself. Both have their place, but they are different activities.
 
-And it is not a book that tells you AI will solve your problems. It is a book that argues the opposite: you will solve your problems, and AI can help you think more clearly along the way.
+This book argues the opposite: you will solve your problems, and AI can help you think more clearly along the way.
 
 ## If You Are Feeling Uncertain
 
-That is worth naming. Many people experience a quiet anxiety: a sense that everyone else has figured this out already, that the technology is moving too fast, that they are falling behind. That feeling is nearly universal and rarely admitted. You are not behind. The technology is genuinely new, it is genuinely confusing, and the people who appear to have it all figured out are mostly just a few weeks ahead. This book meets you wherever you are.
+Many people experience a quiet anxiety: a sense that everyone else has figured this out already, that the technology is moving too fast, that they are falling behind. That feeling is nearly universal and rarely admitted. You are not behind. The technology is genuinely new, it is genuinely confusing, and the people who appear to have it all figured out are mostly just a few weeks ahead. This book meets you wherever you are.
 
 ## How This Book Is Structured
 
@@ -126,7 +126,11 @@ A book about conversation should be available in more than one form. Pick the fo
 
 The online version is always the most current. The printed and ebook editions are updated periodically. Use the free online edition and its downloads for the latest available revision. A purchased ebook is not guaranteed to update automatically.
 
-## The Sibling Book
+## The Series
+
+The series began as a set of conversations and domain books. The trunk became visible as those books were written: the same habits kept returning under different names. Naming the trunk now makes the relationship explicit. It does not make the series a hierarchy.
+
+Conversation, Not Delegation is the method. The Human Edge is the practice, applying that judgement to everyday professional work. The domain books are branches: each takes the same habits into a particular craft. The order below is one reading path.
 
 | Route | Start here | Continue with |
 |---|---|---|
@@ -143,12 +147,14 @@ Two ways in: start with Conversation, Not Delegation if you want the ideas befor
 - Ship Python, Orchestrate AI: professional Python development practices and tooling.
 - The Absolute Minimum You Must Know: the free, always-current web companion at minimum.borck.education: quick primers on every topic this series covers in depth.
 - Build Web, Guide AI: web development with AI as your development partner.
+- The Human Edge: the workplace companion, applying the same judgement to everyday professional work, briefing, checking, and delivery.
+- Speak Software: programming at the natural-language layer, for readers who want to direct agents and build with them.
 
 All titles are available at books.borck.education.
 
-You are reading Conversation, Not Delegation, the general methodology that underpins the series.
+You are reading Conversation, Not Delegation, the methodological trunk of the series.
 
-This book has a companion: Converse Python, Partner AI, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place. Both books are independently complete. You do not need one to benefit from the other.
+In the Python track, this book has a companion: Converse Python, Partner AI, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place. Both books are independently complete. You do not need one to benefit from the other.
 
 ============================================================
 SOURCE: copyright.qmd
@@ -390,7 +396,7 @@ SOURCE: chapters/what-are-llms.qmd
 
 The opening comic exaggerates for effect: no model has read everything. Its training material and the information available in a particular conversation are limited.
 
-Understanding how LLMs actually work is not academic background. It is the foundation for every practical decision you will make when using them. Why do they hallucinate? Because they predict plausible text, not true text. Why does a structured prompt work better? Because it gives the model better patterns to predict from. Why do you need to verify output? Because an answer's fluency does not establish its accuracy. The frameworks later in this book (RTCF, VET, the two-chat workflow, the average-versus-precise grid) all follow directly from what you learn here.
+Understanding how LLMs actually work is the foundation for every practical decision you will make when using them. Why do they hallucinate? Because they predict plausible text, not true text. Why does a structured prompt work better? Because it gives the model better patterns to predict from. Why do you need to verify output? Because an answer's fluency does not establish its accuracy. The frameworks later in this book (RTCF, VET, the two-chat workflow, the average-versus-precise grid) all follow directly from what you learn here.
 
 A common language-model training task is predicting the next token, a piece of text. Conversational systems may also undergo further training for instruction following and other behaviours. Prediction is an important foundation, not a complete description of every model or application.
 
@@ -474,7 +480,7 @@ The harness is not the only thing between the raw model and the response you see
 
 Models are trained with safety filtering: deliberate effort to make the output less likely to produce content the provider considers harmful (instructions for violence, advice on illegal activities, certain categories of content) or topics where the provider has decided not to take sides (party politics, contested social issues). These choices vary by provider, product, and deployment. It is imperfect in both directions. Sometimes the model refuses to engage with a legitimate query because a surface feature looked risky. Sometimes it produces something the filter was supposed to catch. The pattern of what the model will and will not say is a deliberate design choice, not a property of the underlying language.
 
-A subculture has formed around finding prompt tricks that bypass these filters, known in the jargon as "jailbreaking." It is a constant arms race between users finding new methods and providers patching them. The details are outside the scope of this book; the point worth knowing is that the subculture exists, because it tells you the filters are real and sometimes circumventable. If you see surprising behaviour from a model (a refusal that seems unreasonable, or output that seems unusually permissive), do not infer its cause from the wording alone; training, application rules, context, and other mechanisms may contribute.
+A subculture has formed around finding prompt tricks that bypass these filters, known in the jargon as "jailbreaking." It is a constant arms race between users finding new methods and providers patching them. The details are outside the scope of this book; the useful fact is that the subculture exists, because it tells you the filters are real and sometimes circumventable. If you see surprising behaviour from a model (a refusal that seems unreasonable, or output that seems unusually permissive), do not infer its cause from the wording alone; training, application rules, context, and other mechanisms may contribute.
 
 On the user side, modern AI products give you increasing control over how the model behaves: custom instructions, memory across sessions, project-specific context files, persistent personas. These features are useful: they make the model more responsive to your work. They also let you, deliberately or accidentally, configure the model to reinforce your existing views. A custom instruction that says "give me concise, technical answers" is benign. A custom instruction that says "agree with my framing and skip counterarguments" is an echo chamber you built yourself. The conversation loop () is harder when you have configured the loop out of it.
 
@@ -556,6 +562,26 @@ That is why “always struggle alone first” is a poor universal rule. Start wi
 
 Imagine a volunteer faced with a room-booking rule. They ask for it in plain language, then use the original rule to check the explanation and calculate capacity themselves. The model helped with access to the problem; it did not have to make the decision.
 
+## What active use looks like
+
+Passive delegation accepts the output without framing the problem, checking the claim, or making the decision. Active use puts the effort where it builds capability. The tool is the same in both cases. The use is what differs.
+
+The mechanism is the right amount of challenge, with feedback and a way to test whether the capability transfers. Struggle for its own sake is not the goal. If AI removes every difficult step, you lose the reps that build memory, judgement and skill. If it takes over the low-value production and leaves you time for framing, checking, deciding and connecting, it can protect the capacities people worry about. The saved time has to go somewhere useful. The Human Edge, Chapter 9, makes the same point: the hour you save gets reinvested before you notice.
+
+Five patterns of active use matter:
+
+| Pattern | What it looks like | What it protects |
+|---|---|---|
+| Build | Do a rough pass first, then compare it with AI | Retrieval, generation and calibration |
+| Explore | Generate alternatives, challenge assumptions and surface what you missed | Flexibility and breadth |
+| Collaborate | Use AI to widen who can take part, and keep the person on the other side | Perspective-taking and coordination |
+| Converse | Prepare better questions and keep the human conversation | Listening and relational judgement |
+| Judge | Keep the decision, accountability and final check with a person | Consequence reasoning and ownership |
+
+These patterns overlap. Each is a way to keep the thinking in the work. A workflow that removes all five may be faster and still leave you less capable. A workflow that uses AI to raise the level of framing, checking, deciding or connecting can do the opposite.
+
+The tool does not decide whether you become more capable or more dependent. The use does.
+
 ## Projects and fundamentals can support each other
 
 An interesting project can reveal a knowledge gap worth filling. Someone planning a community workshop discovers that they need to distinguish participants from total occupancy. Someone analysing feedback discovers that a label and a verified outcome are different things.
@@ -606,13 +632,13 @@ The evidence and limits belong in . Here the aim is operational: arrive with a p
 
 ## The Five-Step Workflow
 
-This is not a rigid process. It is a habit of mind. Once it becomes natural, you will not think about the steps. You will just work this way.
+The process is a habit of mind. Once it becomes natural, you will not think about the steps. You will just work this way.
 
 ### 1. Start with what you know
 
 Before you open any AI tool, start working. Write your first draft. Sketch your plan. Outline your argument. Organise your data. Get as far as you can on your own.
 
-This is not about proving something. It is about activating what you already know. You will often surprise yourself with how far you get. And even when you get stuck, the work you have done gives you a much clearer picture of where the real difficulty lies.
+The aim is to activate what you already know. You will often surprise yourself with how far you get. And even when you get stuck, the work you have done gives you a much clearer picture of where the real difficulty lies.
 
 ### 2. Use your own tools for routine problems
 
@@ -622,7 +648,7 @@ A calculator can reliably execute a specified calculation; notes, searches, and 
 
 ### 3. Identify the genuine sticking point
 
-This is the critical step. After you have done your own work and used your own resources, ask yourself: what specifically am I stuck on?
+After you have done your own work and used your own resources, ask yourself: what specifically am I stuck on?
 
 Not "this is hard." Not "I don't feel like figuring this out." But a concrete, specific question. What do I not understand? What am I missing? What is the piece I cannot reason through on my own?
 
@@ -984,7 +1010,7 @@ It is not the obvious hallucination, the garbled sentence, or the response that 
 
 The dangerous output is the one that reads smoothly, cites plausible-sounding sources, and fits neatly into your expectations. You nod along, accept it, paste it into your document, and never check, because nothing triggered your suspicion.
 
-This is where critical evaluation fails most often. Not when AI is obviously wrong, but when it is subtly wrong in a way that sounds completely right.
+Critical evaluation fails most often when AI is subtly wrong in a way that sounds completely right.
 
 > If you cannot explain it in your own words, you do not understand it well enough to use it.
 
@@ -992,7 +1018,7 @@ This is where critical evaluation fails most often. Not when AI is obviously wro
 
 ## The VET Framework
 
-VET stands for Verify, Explain, Test. It is not a checklist you laminate and pin to your wall. It is a thinking habit you run through every time you receive AI output that matters.
+VET stands for Verify, Explain, Test. It is a thinking habit you run through every time you receive AI output that matters.
 
 Each step asks a single question. Answering all three gives you an explicit basis for review; it is not a guarantee of correctness or a substitute for specialist approval. If you cannot, you do not understand it well enough to use it.
 
@@ -1024,7 +1050,7 @@ The second question is about understanding. There is a difference between having
 
 - Teach it to someone. The best test of understanding is explanation. If you can teach the concept to a colleague who is unfamiliar with it, you understand it. If you find yourself falling back on the AI's exact phrasing because you cannot find your own, you have memorised, not learned.
 
-This step is where the Conversation Loop earns its name. You are not just receiving information. You are processing it, internalising it, making it yours.
+This step is where the Conversation Loop earns its name. You are processing the information, internalising it, making it yours.
 
 ### Test: Does this hold up under scrutiny?
 
@@ -1083,7 +1109,7 @@ Not everything needs the full VET treatment. A casual brainstorm gets a light pa
 
 When you verify a claim, you know it is true because you checked, not because the AI sounded confident. When you can explain something in your own words, you understand it, not because you read it, but because you processed it. When you test an idea and it holds up, you know its limits and its strengths.
 
-The difference between someone who uses AI well and someone who uses AI carelessly is not the quality of their prompts. It is what they do after the AI responds.
+What separates someone who uses AI well from someone who uses it carelessly is what they do after the AI responds.
 
 ## Independent practice: Verify, Explain, Test
 
@@ -1125,6 +1151,16 @@ Four components, four questions.
 Before we recalibrate them for the model you are actually using, there is a principle worth naming: one prompt, one job.
 
 Split a request when its stages need different evidence or separate checks. A compact, well-specified multi-part request may work perfectly well; the word “and” is not a diagnostic test. See  for dependencies and handovers.
+
+## What a brief cannot hold
+
+RTCF captures the context you can state before the work begins. It cannot capture what arrives after the brief: the late constraint, the change in the room, the competing value that only becomes visible when someone has to decide. A brief is a photograph of the task. The decision is the room you walk into.
+
+The limit belongs to any written brief. The four questions make the stable part of the task inspectable, which is exactly what a model needs. The live part stays with the person who has to act.
+
+Use the brief to prepare the decision, then check whether its assumptions still hold. When the facts have moved, say so and brief again. A fluent answer to an old brief is still an answer to an old brief, so rebrief when the facts move.
+
+The workplace version of this distinction is in The Human Edge, Chapter 8, where decision rules draft the call and the person still makes it. Read The Human Edge.
 
 ## Test the amount of structure
 
@@ -1168,7 +1204,7 @@ Use the three prompts by hand; no separate style service is required. Review the
 
 ## A Worked Example
 
-The difference between a bare prompt and an RTCF brief is not length. It is clarity of thought. Here is a constructed exchange showing a postgraduate student getting help with a literature review. The named papers below are placeholders, not bibliography entries.
+An RTCF brief adds clarity of thought; the extra length is a side effect. Here is a constructed exchange showing a postgraduate student getting help with a literature review. The named papers below are placeholders, not bibliography entries.
 
 Without RTCF:
 
@@ -1492,7 +1528,7 @@ SOURCE: chapters/seven-techniques.qmd
 
 # Eight Techniques for Deeper Thinking 
 
-> The right technique is not the cleverest one. It is the one that matches the kind of thinking you need to do.
+> The right technique is the one that matches the kind of thinking you need to do.
 
 AI works best as a thinking partner, not an answer machine, and your own thinking comes first. But what does that conversation actually look like?
 
@@ -1531,7 +1567,7 @@ Reverse Prompting works best at the start of something, when the shape of the pr
 
 ## 2. Pros and Cons
 
-What it does. The AI systematically evaluates multiple options against specific criteria you care about. This is not about getting the "right answer" from AI. It is about generating a structured comparison that makes your own reasoning more rigorous. You bring the judgement. The AI brings the structure and breadth.
+What it does. The AI systematically evaluates multiple options against specific criteria you care about. The goal is a structured comparison that makes your own reasoning more rigorous. You bring the judgement. The AI brings the structure and breadth.
 
 When to use it. You are choosing between approaches, tools, strategies, or solutions and you want to think through trade-offs methodically rather than going with your gut.
 
@@ -1627,7 +1663,7 @@ Let's begin. I'll speak first.
 
 The feedback at the end is critical. It turns the exercise from mere practice into a structured debrief. Pay special attention to moments where the AI pushed back and you felt stuck. Those are the moments to rehearse differently.
 
-Role Play prepares you for a specific conversation. But sometimes the challenge is not a person. It is a decision where you already have a preference and you suspect you have not fully examined the other side. That calls for a different kind of pressure.
+Role Play prepares you for a specific conversation. But sometimes the challenge is a decision where you already have a preference and you suspect you have not fully examined the other side. That calls for a different kind of pressure.
 
 ## 5. Debating
 
@@ -1669,7 +1705,7 @@ The previous five techniques help you explore, decide, learn processes, practise
 
 ## 6. Formative Self-Testing
 
-What it does. The AI generates questions that test your understanding of a topic, then gives you immediate feedback on your answers. This is not about memorizing facts. It is about discovering where your understanding is solid and where it is shakier than you thought. The act of retrieving knowledge and articulating it is one of the most effective ways to deepen your understanding.
+What it does. The AI generates questions that test your understanding of a topic, then gives you immediate feedback on your answers. The goal is to discover where your understanding is solid and where it is shakier than you thought. The act of retrieving knowledge and articulating it is one of the most effective ways to deepen your understanding.
 
 When to use it. You are studying a new subject, preparing for a certification, onboarding into a new role, or just want to pressure-test how well you actually understand something you think you know.
 
@@ -1693,7 +1729,7 @@ Wait for my answer before moving to the next question.
 
 Start with Question 1.
 
-Be honest with your answers. Do not look things up first. The point is to find out what you actually know versus what you think you know. Pay close attention to the "partially correct" answers. That is where the most useful learning lives, in the gap between what you said and what you missed.
+Be honest with your answers. Do not look things up first. The aim is to find out what you actually know versus what you think you know. Pay close attention to the "partially correct" answers. The gap between what you said and what you missed is where the most useful learning sits.
 
 Self-testing reveals what you know and what you do not. But even when you understand a topic well, you are still seeing it from one vantage point: your own expertise, your own role, your own assumptions. Some problems need more than one perspective.
 
@@ -1889,22 +1925,22 @@ AI synthesises:
 
 The AI did not give generic suggestions about "leveraging AI for productivity." It understood the specific role, constraints, and frustrations, so the recommendations are grounded in something real. You could act on any of them this week.
 
-## The Deeper Principle: AI as a Mirror
+## What the Interview Makes You Say
 
-It forces you to articulate your own work clearly.
+Answering the questions forces you to articulate your own work.
 
-By answering its questions, you end up spelling out:
+By answering, you end up spelling out:
 
 - What you actually do (versus what you think you do)
 - What matters most (versus what is just urgent)
 - What is possible (versus what feels impossible)
 - What you have not tried (because you did not know it was an option)
 
-Often, the most useful part of this conversation is not the AI's recommendations. It is the clarity you gain about your own work by having to explain it to something that knows nothing about you.
+The recommendations are often less useful than the explanation itself. Explaining your work to something that knows nothing about you makes you name the constraints, the trade-offs, and the parts you usually leave implicit.
 
-People regularly say things like: "I did not realise how much time I was spending on that until the AI asked about it." Or: "Just explaining my challenges helped me see a solution on my own." Or: "The recommendations were fine, but the real value was the clarity I got about what I actually needed."
+People say this in different ways. "I did not realise how much time I was spending on that until the AI asked about it." "Just explaining my challenges helped me see a solution on my own." "The recommendations were fine, but the clarity about what I actually needed was the useful part."
 
-That clarity is the point. The consultation prompt works because it puts you in the position of expert and the AI in the position of interviewer. You know the answers. It just asks the right questions. And in answering those questions, you often discover that you already knew what to do. You just had not said it out loud yet.
+The consultation prompt puts you in the position of expert and the AI in the position of interviewer. You know the answers. It asks the questions. Answering them often shows that you already knew what to do, and had not said it out loud.
 
 ## Practical Tips for Your Consultation
 
@@ -1918,7 +1954,7 @@ Come back periodically. This is not a one-off exercise. Your context changes. Yo
 
 Share what you learn. If something works, tell a colleague. "I asked AI to help me figure out how to use AI, and it suggested this. Here is how it went." Others might try their own version and find something entirely different that is useful for their context.
 
-Often, the most useful part of asking AI to interview you is not the recommendations it gives. It is the clarity you gain about your own work by having to explain it.
+The recommendations are often less useful than the explanation. Explaining your own work to something that knows nothing about you is what produces the clarity.
 
 ## Getting Started Right Now
 
@@ -1928,7 +1964,7 @@ Often, the most useful part of asking AI to interview you is not the recommendat
 4. Review the recommendations and pick one or two to try.
 5. Come back with what you learned and keep going.
 
-This works with any AI tool and in any role. The skill you are building is not prompt engineering. It is the ability to think clearly about your own work, explain it precisely, and evaluate whether what comes back is useful. That skill transfers everywhere.
+This works with any AI tool and in any role. The skill you are building is the ability to think clearly about your own work, explain it precisely, and evaluate whether what comes back is useful. That skill transfers everywhere.
 
 If you want to structure the prompts that come out of this consultation, the RTCF framework () gives you a reliable way to build them. If you want to break complex problems into stages, prompt chaining () shows you how. Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.
 

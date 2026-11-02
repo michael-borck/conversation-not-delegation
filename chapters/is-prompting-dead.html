@@ -479,11 +479,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#rtcf-the-thinking-behind-the-prompt" id="toc-rtcf-the-thinking-behind-the-prompt" class="nav-link active" data-scroll-target="#rtcf-the-thinking-behind-the-prompt"><span class="header-section-number">9.1</span> RTCF: The Thinking Behind the Prompt</a></li>
-  <li><a href="#test-the-amount-of-structure" id="toc-test-the-amount-of-structure" class="nav-link" data-scroll-target="#test-the-amount-of-structure"><span class="header-section-number">9.2</span> Test the amount of structure</a></li>
-  <li><a href="#supply-a-usable-voice-sample" id="toc-supply-a-usable-voice-sample" class="nav-link" data-scroll-target="#supply-a-usable-voice-sample"><span class="header-section-number">9.3</span> Supply a usable voice sample</a></li>
-  <li><a href="#a-worked-example" id="toc-a-worked-example" class="nav-link" data-scroll-target="#a-worked-example"><span class="header-section-number">9.4</span> A Worked Example</a></li>
-  <li><a href="#carry-the-brief-into-the-next-step" id="toc-carry-the-brief-into-the-next-step" class="nav-link" data-scroll-target="#carry-the-brief-into-the-next-step"><span class="header-section-number">9.5</span> Carry the brief into the next step</a></li>
-  <li><a href="#take-it-to-the-ai" id="toc-take-it-to-the-ai" class="nav-link" data-scroll-target="#take-it-to-the-ai"><span class="header-section-number">9.6</span> Take it to the AI</a></li>
+  <li><a href="#what-a-brief-cannot-hold" id="toc-what-a-brief-cannot-hold" class="nav-link" data-scroll-target="#what-a-brief-cannot-hold"><span class="header-section-number">9.2</span> What a brief cannot hold</a></li>
+  <li><a href="#test-the-amount-of-structure" id="toc-test-the-amount-of-structure" class="nav-link" data-scroll-target="#test-the-amount-of-structure"><span class="header-section-number">9.3</span> Test the amount of structure</a></li>
+  <li><a href="#supply-a-usable-voice-sample" id="toc-supply-a-usable-voice-sample" class="nav-link" data-scroll-target="#supply-a-usable-voice-sample"><span class="header-section-number">9.4</span> Supply a usable voice sample</a></li>
+  <li><a href="#a-worked-example" id="toc-a-worked-example" class="nav-link" data-scroll-target="#a-worked-example"><span class="header-section-number">9.5</span> A Worked Example</a></li>
+  <li><a href="#carry-the-brief-into-the-next-step" id="toc-carry-the-brief-into-the-next-step" class="nav-link" data-scroll-target="#carry-the-brief-into-the-next-step"><span class="header-section-number">9.6</span> Carry the brief into the next step</a></li>
+  <li><a href="#take-it-to-the-ai" id="toc-take-it-to-the-ai" class="nav-link" data-scroll-target="#take-it-to-the-ai"><span class="header-section-number">9.7</span> Take it to the AI</a></li>
   </ul>
 <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
@@ -567,14 +568,21 @@ ul.task-list li input[type="checkbox"] {
 <p>Before we recalibrate them for the model you are actually using, there is a principle worth naming: <strong>one prompt, one job.</strong></p>
 <p>Split a request when its stages need different evidence or separate checks. A compact, well-specified multi-part request may work perfectly well; the word “and” is not a diagnostic test. See <a href="prompt-chaining.html" class="quarto-xref"><span>Chapter 10</span></a> for dependencies and handovers.</p>
 </section>
-<section id="test-the-amount-of-structure" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="test-the-amount-of-structure"><span class="header-section-number">9.2</span> Test the amount of structure</h2>
+<section id="what-a-brief-cannot-hold" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="what-a-brief-cannot-hold"><span class="header-section-number">9.2</span> What a brief cannot hold</h2>
+<p>RTCF captures the context you can state before the work begins. It cannot capture what arrives after the brief: the late constraint, the change in the room, the competing value that only becomes visible when someone has to decide. A brief is a photograph of the task. The decision is the room you walk into.</p>
+<p>The limit belongs to any written brief. The four questions make the stable part of the task inspectable, which is exactly what a model needs. The live part stays with the person who has to act.</p>
+<p>Use the brief to prepare the decision, then check whether its assumptions still hold. When the facts have moved, say so and brief again. A fluent answer to an old brief is still an answer to an old brief, so rebrief when the facts move.</p>
+<p>The workplace version of this distinction is in <em>The Human Edge</em>, Chapter 8, where decision rules draft the call and the person still makes it. <a href="https://michael-borck.github.io/the-human-edge-using/">Read The Human Edge</a>.</p>
+</section>
+<section id="test-the-amount-of-structure" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="test-the-amount-of-structure"><span class="header-section-number">9.3</span> Test the amount of structure</h2>
 <p>Use a short brief and a more explicit RTCF version on the same harmless task. Compare whether they preserve constraints, use the right evidence, and produce the required format. Repeat enough to notice unstable results; a model’s explanation of which prompt it prefers is not a performance measurement.</p>
 <p>Do not equate “local” with “weak” or assume that a frontier label removes the need for constraints. Model, application, task, and available context all matter. Specify consequential requirements explicitly on either route.</p>
 <p>The prompt-research literature contains measured improvements for particular methods and tasks, including <a href="https://arxiv.org/abs/2201.11903">Wei et al.’s chain-of-thought experiments</a>. Those results do not validate every persona, prove that RTCF always wins, or make generated explanations a trustworthy account of internal reasoning.</p>
 </section>
-<section id="supply-a-usable-voice-sample" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="supply-a-usable-voice-sample"><span class="header-section-number">9.3</span> Supply a usable voice sample</h2>
+<section id="supply-a-usable-voice-sample" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="supply-a-usable-voice-sample"><span class="header-section-number">9.4</span> Supply a usable voice sample</h2>
 <p>A model may infer style from examples and imitate it imperfectly. If your draft sounds generic, supply a sample of your own writing that you have permission to share, and describe what you want to retain. Do not treat an em-dash or sentence rhythm as evidence that someone used AI.</p>
 <p>A style profile is a reusable editing aid. It is not your identity, a guarantee of authentic authorship, or a substitute for checking what a draft says.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="The voice profile method">
@@ -609,9 +617,9 @@ Now draft a [format] about [topic].</code></pre>
 </div>
 <p>Use the three prompts by hand; no separate style service is required. Review the profile for clichés, inaccuracies, and private details before reuse. Follow the disclosure rules of your setting. Sounding like you does not make an unsupported claim yours to publish.</p>
 </section>
-<section id="a-worked-example" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="a-worked-example"><span class="header-section-number">9.4</span> A Worked Example</h2>
-<p>The difference between a bare prompt and an RTCF brief is not length. It is clarity of thought. Here is a constructed exchange showing a postgraduate student getting help with a literature review. The named papers below are placeholders, not bibliography entries.</p>
+<section id="a-worked-example" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="a-worked-example"><span class="header-section-number">9.5</span> A Worked Example</h2>
+<p>An RTCF brief adds clarity of thought; the extra length is a side effect. Here is a constructed exchange showing a postgraduate student getting help with a literature review. The named papers below are placeholders, not bibliography entries.</p>
 <p><strong>Without RTCF:</strong></p>
 <blockquote class="blockquote">
 <p>“Help me with my literature review.”</p>
@@ -644,14 +652,14 @@ Now draft a [format] about [topic].</code></pre>
 </div>
 </div>
 </section>
-<section id="carry-the-brief-into-the-next-step" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="carry-the-brief-into-the-next-step"><span class="header-section-number">9.5</span> Carry the brief into the next step</h2>
+<section id="carry-the-brief-into-the-next-step" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="carry-the-brief-into-the-next-step"><span class="header-section-number">9.6</span> Carry the brief into the next step</h2>
 <p>Write the four questions out when that helps. Leave a component implicit only when the result remains clear and checkable. If a first response already meets the task’s criteria, extra turns are not a requirement.</p>
 <p>When it does not, identify the defect before asking for another version. Missing context calls for context; an unsupported factual claim calls for evidence; a prohibited action calls for an external control, not merely a more forceful persona.</p>
 <p>Prompt chaining in the next chapter makes these handovers explicit. Keep your original brief alongside the revised output so that improving the wording does not quietly change the job.</p>
 </section>
-<section id="take-it-to-the-ai" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="take-it-to-the-ai"><span class="header-section-number">9.6</span> Take it to the AI</h2>
+<section id="take-it-to-the-ai" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="take-it-to-the-ai"><span class="header-section-number">9.7</span> Take it to the AI</h2>
 <p><strong>Where to start.</strong> Three questions worth arguing about rather than looking up:</p>
 <ol type="1">
 <li>Write the same request twice, once as a bare sentence and once in full RTCF, then ask the AI which one it could answer better and why. Compare the actual outputs against your criteria; the model’s preference is only a suggestion.</li>
