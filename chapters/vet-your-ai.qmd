@@ -10,7 +10,7 @@ It is not the obvious hallucination, the garbled sentence, or the response that 
 
 The dangerous output is the one that reads smoothly, cites plausible-sounding sources, and fits neatly into your expectations. You nod along, accept it, paste it into your document, and never check, because nothing triggered your suspicion.
 
-This is where critical evaluation fails most often. Not when AI is obviously wrong, but when it is subtly wrong in a way that sounds completely right.
+Critical evaluation fails most often when AI is subtly wrong in a way that sounds completely right.
 
 > If you cannot explain it in your own words, you do not understand it well enough to use it.
 
@@ -19,7 +19,7 @@ This is where critical evaluation fails most often. Not when AI is obviously wro
 
 ## The VET Framework
 
-VET stands for Verify, Explain, Test. It is not a checklist you laminate and pin to your wall. It is a thinking habit you run through every time you receive AI output that matters.
+VET stands for Verify, Explain, Test. It is a thinking habit you run through every time you receive AI output that matters.
 
 Each step asks a single question. Answering all three gives you an explicit basis for review; it is not a guarantee of correctness or a substitute for specialist approval. If you cannot, you do not understand it well enough to use it.
 
@@ -55,7 +55,7 @@ The second question is about understanding. There is a difference between having
 
 - **Teach it to someone.** The best test of understanding is explanation. If you can teach the concept to a colleague who is unfamiliar with it, you understand it. If you find yourself falling back on the AI's exact phrasing because you cannot find your own, you have memorised, not learned.
 
-This step is where the Conversation Loop earns its name. You are not just receiving information. You are processing it, internalising it, making it yours.
+This step is where the Conversation Loop earns its name. You are processing the information, internalising it, making it yours.
 
 
 ### Test: Does this hold up under scrutiny?
@@ -124,7 +124,7 @@ Not everything needs the full VET treatment. A casual brainstorm gets a light pa
 
 When you verify a claim, you know it is true because you checked, not because the AI sounded confident. When you can explain something in your own words, you understand it, not because you read it, but because you processed it. When you test an idea and it holds up, you know its limits and its strengths.
 
-The difference between someone who uses AI well and someone who uses AI carelessly is not the quality of their prompts. It is what they do after the AI responds.
+What separates someone who uses AI well from someone who uses it carelessly is what they do after the AI responds.
 
 ## Independent practice: Verify, Explain, Test
 

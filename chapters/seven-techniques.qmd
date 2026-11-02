@@ -2,7 +2,7 @@
 
 ![More techniques, fewer stuck problems.](../images/comic-strip/10-eight-techniques.png){fig-alt="Comic strip: A stick figure uses one trick for everything and nothing works. Another has a full toolbox of eight techniques. Punchline: Different problems, different tools. Use all eight."}
 
-> The right technique is not the cleverest one. It is the one that matches the kind of thinking you need to do.
+> The right technique is the one that matches the kind of thinking you need to do.
 
 AI works best as a thinking partner, not an answer machine, and your own thinking comes first. But what does that conversation actually look like?
 
@@ -46,7 +46,7 @@ Reverse Prompting works best at the start of something, when the shape of the pr
 
 ## 2. Pros and Cons
 
-**What it does.** The AI systematically evaluates multiple options against specific criteria you care about. This is not about getting the "right answer" from AI. It is about generating a structured comparison that makes your own reasoning more rigorous. You bring the judgement. The AI brings the structure and breadth.
+**What it does.** The AI systematically evaluates multiple options against specific criteria you care about. The goal is a structured comparison that makes your own reasoning more rigorous. You bring the judgement. The AI brings the structure and breadth.
 
 **When to use it.** You are choosing between approaches, tools, strategies, or solutions and you want to think through trade-offs methodically rather than going with your gut.
 
@@ -150,7 +150,7 @@ Let's begin. I'll speak first.
 
 The feedback at the end is critical. It turns the exercise from mere practice into a structured debrief. Pay special attention to moments where the AI pushed back and you felt stuck. Those are the moments to rehearse differently.
 
-Role Play prepares you for a specific conversation. But sometimes the challenge is not a person. It is a decision where you already have a preference and you suspect you have not fully examined the other side. That calls for a different kind of pressure.
+Role Play prepares you for a specific conversation. But sometimes the challenge is a decision where you already have a preference and you suspect you have not fully examined the other side. That calls for a different kind of pressure.
 
 
 ## 5. Debating
@@ -196,7 +196,7 @@ The previous five techniques help you explore, decide, learn processes, practise
 
 ## 6. Formative Self-Testing
 
-**What it does.** The AI generates questions that test your understanding of a topic, then gives you immediate feedback on your answers. This is not about memorizing facts. It is about discovering where your understanding is solid and where it is shakier than you thought. The act of retrieving knowledge and articulating it is one of the most effective ways to deepen your understanding.
+**What it does.** The AI generates questions that test your understanding of a topic, then gives you immediate feedback on your answers. The goal is to discover where your understanding is solid and where it is shakier than you thought. The act of retrieving knowledge and articulating it is one of the most effective ways to deepen your understanding.
 
 **When to use it.** You are studying a new subject, preparing for a certification, onboarding into a new role, or just want to pressure-test how well you actually understand something you think you know.
 
@@ -222,7 +222,7 @@ Wait for my answer before moving to the next question.
 Start with Question 1.
 ```
 
-Be honest with your answers. Do not look things up first. The point is to find out what you actually know versus what you think you know. Pay close attention to the "partially correct" answers. That is where the most useful learning lives, in the gap between what you said and what you missed.
+Be honest with your answers. Do not look things up first. The aim is to find out what you actually know versus what you think you know. Pay close attention to the "partially correct" answers. The gap between what you said and what you missed is where the most useful learning sits.
 
 Self-testing reveals what you know and what you do not. But even when you understand a topic well, you are still seeing it from one vantage point: your own expertise, your own role, your own assumptions. Some problems need more than one perspective.
 

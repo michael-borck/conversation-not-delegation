@@ -31,6 +31,15 @@ Before we recalibrate them for the model you are actually using, there is a prin
 
 Split a request when its stages need different evidence or separate checks. A compact, well-specified multi-part request may work perfectly well; the word “and” is not a diagnostic test. See @sec-prompt-chaining for dependencies and handovers.
 
+## What a brief cannot hold
+
+RTCF captures the context you can state before the work begins. It cannot capture what arrives after the brief: the late constraint, the change in the room, the competing value that only becomes visible when someone has to decide. A brief is a photograph of the task. The decision is the room you walk into.
+
+The limit belongs to any written brief. The four questions make the stable part of the task inspectable, which is exactly what a model needs. The live part stays with the person who has to act.
+
+Use the brief to prepare the decision, then check whether its assumptions still hold. When the facts have moved, say so and brief again. A fluent answer to an old brief is still an answer to an old brief, so rebrief when the facts move.
+
+The workplace version of this distinction is in *The Human Edge*, Chapter 8, where decision rules draft the call and the person still makes it. [Read The Human Edge](https://michael-borck.github.io/the-human-edge-using/).
 
 ## Test the amount of structure
 
@@ -80,7 +89,7 @@ Use the three prompts by hand; no separate style service is required. Review the
 
 ## A Worked Example
 
-The difference between a bare prompt and an RTCF brief is not length. It is clarity of thought. Here is a constructed exchange showing a postgraduate student getting help with a literature review. The named papers below are placeholders, not bibliography entries.
+An RTCF brief adds clarity of thought; the extra length is a side effect. Here is a constructed exchange showing a postgraduate student getting help with a literature review. The named papers below are placeholders, not bibliography entries.
 
 **Without RTCF:**
 

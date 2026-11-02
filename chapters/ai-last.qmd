@@ -19,13 +19,13 @@ The evidence and limits belong in @sec-cognitive-offload. Here the aim is operat
 
 ## The Five-Step Workflow
 
-This is not a rigid process. It is a habit of mind. Once it becomes natural, you will not think about the steps. You will just work this way.
+The process is a habit of mind. Once it becomes natural, you will not think about the steps. You will just work this way.
 
 ### 1. Start with what you know
 
 Before you open any AI tool, start working. Write your first draft. Sketch your plan. Outline your argument. Organise your data. Get as far as you can on your own.
 
-This is not about proving something. It is about activating what you already know. You will often surprise yourself with how far you get. And even when you get stuck, the work you have done gives you a much clearer picture of where the real difficulty lies.
+The aim is to activate what you already know. You will often surprise yourself with how far you get. And even when you get stuck, the work you have done gives you a much clearer picture of where the real difficulty lies.
 
 ### 2. Use your own tools for routine problems
 
@@ -35,7 +35,7 @@ A calculator can reliably execute a specified calculation; notes, searches, and 
 
 ### 3. Identify the genuine sticking point
 
-This is the critical step. After you have done your own work and used your own resources, ask yourself: what specifically am I stuck on?
+After you have done your own work and used your own resources, ask yourself: what specifically am I stuck on?
 
 Not "this is hard." Not "I don't feel like figuring this out." But a concrete, specific question. What do I not understand? What am I missing? What is the piece I cannot reason through on my own?
 

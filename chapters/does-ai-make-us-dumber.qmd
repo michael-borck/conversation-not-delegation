@@ -48,6 +48,26 @@ That is why “always struggle alone first” is a poor universal rule. Start wi
 
 Imagine a volunteer faced with a room-booking rule. They ask for it in plain language, then use the original rule to check the explanation and calculate capacity themselves. The model helped with access to the problem; it did not have to make the decision.
 
+## What active use looks like
+
+Passive delegation accepts the output without framing the problem, checking the claim, or making the decision. Active use puts the effort where it builds capability. The tool is the same in both cases. The use is what differs.
+
+The mechanism is the right amount of challenge, with feedback and a way to test whether the capability transfers. Struggle for its own sake is not the goal. If AI removes every difficult step, you lose the reps that build memory, judgement and skill. If it takes over the low-value production and leaves you time for framing, checking, deciding and connecting, it can protect the capacities people worry about. The saved time has to go somewhere useful. *The Human Edge*, Chapter 9, makes the same point: the hour you save gets reinvested before you notice.
+
+Five patterns of active use matter:
+
+| Pattern | What it looks like | What it protects |
+|---|---|---|
+| **Build** | Do a rough pass first, then compare it with AI | Retrieval, generation and calibration |
+| **Explore** | Generate alternatives, challenge assumptions and surface what you missed | Flexibility and breadth |
+| **Collaborate** | Use AI to widen who can take part, and keep the person on the other side | Perspective-taking and coordination |
+| **Converse** | Prepare better questions and keep the human conversation | Listening and relational judgement |
+| **Judge** | Keep the decision, accountability and final check with a person | Consequence reasoning and ownership |
+
+These patterns overlap. Each is a way to keep the thinking in the work. A workflow that removes all five may be faster and still leave you less capable. A workflow that uses AI to raise the level of framing, checking, deciding or connecting can do the opposite.
+
+The tool does not decide whether you become more capable or more dependent. The use does.
+
 ## Projects and fundamentals can support each other
 
 An interesting project can reveal a knowledge gap worth filling. Someone planning a community workshop discovers that they need to distinguish participants from total occupancy. Someone analysing feedback discovers that a label and a verified outcome are different things.

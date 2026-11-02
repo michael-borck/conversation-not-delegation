@@ -101,22 +101,22 @@ Here is a simplified version of how this conversation might go.
 The AI did not give generic suggestions about "leveraging AI for productivity." It understood the specific role, constraints, and frustrations, so the recommendations are grounded in something real. You could act on any of them this week.
 
 
-## The Deeper Principle: AI as a Mirror
+## What the Interview Makes You Say
 
-**It forces you to articulate your own work clearly.**
+**Answering the questions forces you to articulate your own work.**
 
-By answering its questions, you end up spelling out:
+By answering, you end up spelling out:
 
 - What you actually do (versus what you think you do)
 - What matters most (versus what is just urgent)
 - What is possible (versus what feels impossible)
 - What you have not tried (because you did not know it was an option)
 
-Often, the most useful part of this conversation is not the AI's recommendations. It is the clarity you gain about your own work by having to explain it to something that knows nothing about you.
+The recommendations are often less useful than the explanation itself. Explaining your work to something that knows nothing about you makes you name the constraints, the trade-offs, and the parts you usually leave implicit.
 
-People regularly say things like: "I did not realise how much time I was spending on that until the AI asked about it." Or: "Just explaining my challenges helped me see a solution on my own." Or: "The recommendations were fine, but the real value was the clarity I got about what I actually needed."
+People say this in different ways. "I did not realise how much time I was spending on that until the AI asked about it." "Just explaining my challenges helped me see a solution on my own." "The recommendations were fine, but the clarity about what I actually needed was the useful part."
 
-That clarity is the point. The consultation prompt works because it puts you in the position of expert and the AI in the position of interviewer. You know the answers. It just asks the right questions. And in answering those questions, you often discover that you already knew what to do. You just had not said it out loud yet.
+The consultation prompt puts you in the position of expert and the AI in the position of interviewer. You know the answers. It asks the questions. Answering them often shows that you already knew what to do, and had not said it out loud.
 
 
 ## Practical Tips for Your Consultation
@@ -131,8 +131,8 @@ That clarity is the point. The consultation prompt works because it puts you in 
 
 **Share what you learn.** If something works, tell a colleague. "I asked AI to help me figure out how to use AI, and it suggested this. Here is how it went." Others might try their own version and find something entirely different that is useful for their context.
 
-::: {.callout-note title="The real value"}
-Often, the most useful part of asking AI to interview you is not the recommendations it gives. It is the clarity you gain about your own work by having to explain it.
+::: {.callout-note title="What the interview gives you"}
+The recommendations are often less useful than the explanation. Explaining your own work to something that knows nothing about you is what produces the clarity.
 :::
 
 
@@ -144,7 +144,7 @@ Often, the most useful part of asking AI to interview you is not the recommendat
 4. Review the recommendations and pick one or two to try.
 5. Come back with what you learned and keep going.
 
-This works with any AI tool and in any role. The skill you are building is not prompt engineering. It is the ability to think clearly about your own work, explain it precisely, and evaluate whether what comes back is useful. That skill transfers everywhere.
+This works with any AI tool and in any role. The skill you are building is the ability to think clearly about your own work, explain it precisely, and evaluate whether what comes back is useful. That skill transfers everywhere.
 
 If you want to structure the prompts that come out of this consultation, the RTCF framework (@sec-rtcf) gives you a reliable way to build them. If you want to break complex problems into stages, prompt chaining (@sec-prompt-chaining) shows you how. Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.
 

@@ -22,19 +22,19 @@ If you work with AI in any capacity, or plan to, this book will give you a frame
 
 ## What This Book Is Not
 
-This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not. Where the book names a specific tool or describes how current models behave, those details will date faster than the surrounding ideas. The principles are the point.
+This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not. Where the book names a specific tool or describes how current models behave, those details will date faster than the surrounding ideas. Keep the principles and expect the interfaces to change.
 
-It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt is the beginning of the conversation, not the point of it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.
+It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt begins the conversation; it does not replace it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.
 
 A related warning: conversation, in this book, is not a string of zero-shot prompts run back-to-back. That is just delegation in volume. Real conversation requires pushback, course correction, and your judgement woven through each exchange. @sec-conversation-loop draws the distinction carefully.
 
 It is not about AI apps that embed intelligence into other software, such as writing assistants, email autocompletes, and coding copilots. Those tools run on prompts someone else wrote. This book is about conversations you control yourself. Both have their place, but they are different activities.
 
-And it is not a book that tells you AI will solve your problems. It is a book that argues the opposite: you will solve your problems, and AI can help you think more clearly along the way.
+This book argues the opposite: you will solve your problems, and AI can help you think more clearly along the way.
 
 ## If You Are Feeling Uncertain
 
-That is worth naming. Many people experience a quiet anxiety: a sense that everyone else has figured this out already, that the technology is moving too fast, that they are falling behind. That feeling is nearly universal and rarely admitted. You are not behind. The technology is genuinely new, it is genuinely confusing, and the people who appear to have it all figured out are mostly just a few weeks ahead. This book meets you wherever you are.
+Many people experience a quiet anxiety: a sense that everyone else has figured this out already, that the technology is moving too fast, that they are falling behind. That feeling is nearly universal and rarely admitted. You are not behind. The technology is genuinely new, it is genuinely confusing, and the people who appear to have it all figured out are mostly just a few weeks ahead. This book meets you wherever you are.
 
 ## How This Book Is Structured
 
@@ -127,7 +127,11 @@ A book about conversation should be available in more than one form. Pick the fo
 
 The online version is always the most current. The printed and ebook editions are updated periodically. Use the free online edition and its downloads for the latest available revision. A purchased ebook is not guaranteed to update automatically.
 
-## The Sibling Book
+## The Series
+
+The series began as a set of conversations and domain books. The trunk became visible as those books were written: the same habits kept returning under different names. Naming the trunk now makes the relationship explicit. It does not make the series a hierarchy.
+
+*Conversation, Not Delegation* is the method. [*The Human Edge*](https://michael-borck.github.io/the-human-edge-using/) is the practice, applying that judgement to everyday professional work. The domain books are branches: each takes the same habits into a particular craft. The order below is one reading path.
 
 | Route | Start here | Continue with |
 |---|---|---|
@@ -144,9 +148,11 @@ Two ways in: start with *Conversation, Not Delegation* if you want the ideas bef
 - **Ship Python, Orchestrate AI**: professional Python development practices and tooling.
 - **The Absolute Minimum You Must Know**: the free, always-current web companion at [minimum.borck.education](https://minimum.borck.education): quick primers on every topic this series covers in depth.
 - **Build Web, Guide AI**: web development with AI as your development partner.
+- **The Human Edge**: the workplace companion, applying the same judgement to everyday professional work, briefing, checking, and delivery.
+- **Speak Software**: programming at the natural-language layer, for readers who want to direct agents and build with them.
 
 All titles are available at [books.borck.education](https://books.borck.education).
 
-You are reading *Conversation, Not Delegation*, the general methodology that underpins the series.
+You are reading *Conversation, Not Delegation*, the methodological trunk of the series.
 
-This book has a companion: *Converse Python, Partner AI*, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place. Both books are independently complete. You do not need one to benefit from the other.
+In the Python track, this book has a companion: *Converse Python, Partner AI*, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place. Both books are independently complete. You do not need one to benefit from the other.
