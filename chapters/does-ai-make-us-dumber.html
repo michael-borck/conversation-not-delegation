@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/the-conversation-loop.html" rel="next">
-<link href="../chapters/the-delegation-trap.html" rel="prev">
+<link href="../chapters/ai-last.html" rel="next">
+<link href="../chapters/what-are-llms.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/does-ai-make-us-dumber.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/does-ai-make-us-dumber.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,25 +478,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-honest-version" id="toc-the-honest-version" class="nav-link active" data-scroll-target="#the-honest-version"><span class="header-section-number">4.1</span> The Honest Version</a></li>
-  <li><a href="#what-cognitive-offload-actually-is" id="toc-what-cognitive-offload-actually-is" class="nav-link" data-scroll-target="#what-cognitive-offload-actually-is"><span class="header-section-number">4.2</span> What Cognitive Offload Actually Is</a></li>
-  <li><a href="#the-real-risk-metacognitive-laziness" id="toc-the-real-risk-metacognitive-laziness" class="nav-link" data-scroll-target="#the-real-risk-metacognitive-laziness"><span class="header-section-number">4.3</span> The Real Risk: Metacognitive Laziness</a></li>
-  <li><a href="#but-heres-what-were-getting-wrong" id="toc-but-heres-what-were-getting-wrong" class="nav-link" data-scroll-target="#but-heres-what-were-getting-wrong"><span class="header-section-number">4.4</span> But Here’s What We’re Getting Wrong</a></li>
-  <li><a href="#learning-slower-learning-different" id="toc-learning-slower-learning-different" class="nav-link" data-scroll-target="#learning-slower-learning-different"><span class="header-section-number">4.5</span> Learning Slower, Learning Different</a></li>
-  <li><a href="#the-flipped-pyramid" id="toc-the-flipped-pyramid" class="nav-link" data-scroll-target="#the-flipped-pyramid"><span class="header-section-number">4.6</span> The Flipped Pyramid</a></li>
-  <li><a href="#toward-hybrid-intelligence" id="toc-toward-hybrid-intelligence" class="nav-link" data-scroll-target="#toward-hybrid-intelligence"><span class="header-section-number">4.7</span> Toward Hybrid Intelligence</a></li>
-  <li><a href="#what-history-actually-shows" id="toc-what-history-actually-shows" class="nav-link" data-scroll-target="#what-history-actually-shows"><span class="header-section-number">4.8</span> What History Actually Shows</a></li>
-  <li><a href="#the-conversation-not-delegation-connection" id="toc-the-conversation-not-delegation-connection" class="nav-link" data-scroll-target="#the-conversation-not-delegation-connection"><span class="header-section-number">4.9</span> The Conversation, Not Delegation Connection</a></li>
-  <li><a href="#what-to-actually-worry-about" id="toc-what-to-actually-worry-about" class="nav-link" data-scroll-target="#what-to-actually-worry-about"><span class="header-section-number">4.10</span> What to Actually Worry About</a></li>
-  <li><a href="#a-more-honest-position" id="toc-a-more-honest-position" class="nav-link" data-scroll-target="#a-more-honest-position"><span class="header-section-number">4.11</span> A More Honest Position</a></li>
+  <li><a href="#ask-which-capability-under-which-conditions" id="toc-ask-which-capability-under-which-conditions" class="nav-link active" data-scroll-target="#ask-which-capability-under-which-conditions"><span class="header-section-number">4.1</span> Ask which capability, under which conditions</a></li>
+  <li><a href="#offloading-can-be-sensible" id="toc-offloading-can-be-sensible" class="nav-link" data-scroll-target="#offloading-can-be-sensible"><span class="header-section-number">4.2</span> Offloading can be sensible</a></li>
+  <li><a href="#what-the-evidence-does-and-does-not-say" id="toc-what-the-evidence-does-and-does-not-say" class="nav-link" data-scroll-target="#what-the-evidence-does-and-does-not-say"><span class="header-section-number">4.3</span> What the evidence does and does not say</a></li>
+  <li><a href="#the-risk-is-invisible-completion" id="toc-the-risk-is-invisible-completion" class="nav-link" data-scroll-target="#the-risk-is-invisible-completion"><span class="header-section-number">4.4</span> The risk is invisible completion</a></li>
+  <li><a href="#assistance-can-keep-someone-in-the-task" id="toc-assistance-can-keep-someone-in-the-task" class="nav-link" data-scroll-target="#assistance-can-keep-someone-in-the-task"><span class="header-section-number">4.5</span> Assistance can keep someone in the task</a></li>
+  <li><a href="#projects-and-fundamentals-can-support-each-other" id="toc-projects-and-fundamentals-can-support-each-other" class="nav-link" data-scroll-target="#projects-and-fundamentals-can-support-each-other"><span class="header-section-number">4.6</span> Projects and fundamentals can support each other</a></li>
+  <li><a href="#a-small-comparison-you-can-run" id="toc-a-small-comparison-you-can-run" class="nav-link" data-scroll-target="#a-small-comparison-you-can-run"><span class="header-section-number">4.7</span> A small comparison you can run</a></li>
+  <li><a href="#decide-what-to-keep-practising" id="toc-decide-what-to-keep-practising" class="nav-link" data-scroll-target="#decide-what-to-keep-practising"><span class="header-section-number">4.8</span> Decide what to keep practising</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/does-ai-make-us-dumber.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/does-ai-make-us-dumber.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span id="sec-cognitive-offload" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></span></h1>
 </div>
@@ -512,157 +521,57 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>The question is not whether AI changes how we think. It is whether we notice.</p>
 </blockquote>
-<section id="the-honest-version" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="the-honest-version"><span class="header-section-number">4.1</span> The Honest Version</h2>
-<p>I advocate for AI loudly and unapologetically. But advocacy without nuance is reckless.</p>
-<p>So let’s talk about the thing that worries people most. The thing that, if we’re being honest, should worry us a little too.</p>
-<p>Does AI reduce critical thinking?</p>
-<p>The concern goes like this: when people use AI, they stop doing the hard cognitive work. They offload the thinking that actually builds understanding. They get better outputs but develop weaker minds. Over time, AI doesn’t make them smarter. It makes them dependent.</p>
-<p>This isn’t a fringe concern. There’s genuine research behind it. And anyone who’s caught themselves pasting a question into ChatGPT without pausing to think has felt the truth of it.</p>
-<p>It is also not a new concern. In 2008, Nicholas Carr asked “Is Google Making Us Stupid?” in <em>The Atlantic</em>, arguing that the internet was eroding our capacity for deep reading and sustained concentration. A decade earlier, similar fears accompanied the arrival of calculators in classrooms. Two millennia before that, Socrates argued against writing itself, warning that it would “create forgetfulness in the learners’ souls, because they will not use their memories.” Every powerful cognitive tool provokes the same fear: that by making thinking easier, we will stop thinking altogether.</p>
-<p>So: is it true?</p>
-<blockquote class="blockquote">
-<p>The same tool that can deepen your understanding can make it effortless to avoid understanding altogether. The difference is not the tool. It is you.</p>
-</blockquote>
-<p>The answer is more interesting than yes or no.</p>
+<section id="ask-which-capability-under-which-conditions" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="ask-which-capability-under-which-conditions"><span class="header-section-number">4.1</span> Ask which capability, under which conditions</h2>
+<p>You finish a task more quickly with AI. Did you learn more, less, or something different? The finished artefact cannot answer that question on its own.</p>
+<p>This chapter separates three outcomes: performance while help is available, understanding that transfers to another task, and capability retained when the help is removed. They can move in different directions. A polished answer may accompany weak understanding; a difficult practice session may produce useful learning without an impressive deliverable.</p>
+<p>That distinction is more useful than declaring that AI makes people either smarter or dumber. It also makes the question testable in your own work.</p>
 </section>
-<section id="what-cognitive-offload-actually-is" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="what-cognitive-offload-actually-is"><span class="header-section-number">4.2</span> What Cognitive Offload Actually Is</h2>
-<p>Cognitive offload is when you use an external tool to reduce the mental effort required for a task. You do it constantly:</p>
-<ul>
-<li>Writing a shopping list instead of memorising it</li>
-<li>Using a calculator instead of doing long division</li>
-<li>Checking a map instead of navigating from memory</li>
-<li>Setting a reminder instead of trying to remember</li>
-</ul>
-<p>None of these make you “dumber.” They free up cognitive resources for other things. The shopping list lets you think about recipes. The calculator lets you focus on the problem structure. The map lets you pay attention to traffic.</p>
-<p>AI is the latest, and most powerful, cognitive offload tool we’ve encountered. And that’s precisely why it feels different. Previous tools offloaded specific, well-defined tasks. AI can offload <em>thinking itself</em>. The drafting, the analysing, the reasoning, the evaluating.</p>
-<p>That’s what makes the question urgent.</p>
+<section id="offloading-can-be-sensible" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="offloading-can-be-sensible"><span class="header-section-number">4.2</span> Offloading can be sensible</h2>
+<p>We already distribute mental work across notes, calculators, reminders, diagrams, and other people. Remembering every appointment is not a prerequisite for good judgement. Nor does needing a tool make someone’s reasoning less valid.</p>
+<p>What matters is the capability you intend to practise. If the goal is to learn how to evaluate an argument, a supplied draft can be useful material. If the goal is to learn to construct that argument independently, having a model supply the entire structure may remove some of the practice you need.</p>
+<p>The same assistance can therefore be appropriate for one task and counterproductive for another. State the learning goal before deciding what to offload.</p>
 </section>
-<section id="the-real-risk-metacognitive-laziness" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="the-real-risk-metacognitive-laziness"><span class="header-section-number">4.3</span> The Real Risk: Metacognitive Laziness</h2>
-<p>The concern isn’t really about cognitive offload. It’s about what happens to metacognition: the ability to monitor, evaluate, and regulate your own thinking.</p>
-<p>When people use AI well, they:</p>
-<ul>
-<li>Generate a draft, then <strong>evaluate</strong> it against their own understanding</li>
-<li>Get AI feedback, then <strong>decide</strong> what to accept and what to reject</li>
-<li>Use AI to explore options, then <strong>judge</strong> which options make sense</li>
-<li>Read AI output, then <strong>question</strong> whether it’s actually correct</li>
-</ul>
-<p>When people use AI poorly, they:</p>
-<ul>
-<li>Generate a draft and submit it</li>
-<li>Get AI feedback and accept it</li>
-<li>Ask AI for the answer and copy it</li>
-<li>Read AI output and assume it’s correct</li>
-</ul>
-<p>The difference isn’t whether they used AI. It’s whether they <strong>paused to think</strong> about what AI gave them.</p>
-<p>This is metacognitive laziness. Not a failure of intelligence, but a failure of self-monitoring. You stop asking “Do I understand this?” and start asking “Does this look right?”</p>
-<p>And yes, this is a genuine risk.</p>
+<section id="what-the-evidence-does-and-does-not-say" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="what-the-evidence-does-and-does-not-say"><span class="header-section-number">4.3</span> What the evidence does and does not say</h2>
+<p>A 2025 study by Lee and colleagues surveyed knowledge workers about their use of generative AI and critical thinking. Its self-reported associations are useful evidence about perceived effort and checking practices. They are not a direct measurement of lost intelligence or proof that using AI causes cognitive decline. The design and outcome measure matter. <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf">Lee et al., study and methods</a></p>
+<p>Bastani and colleagues studied AI assistance in high-school mathematics, including performance after assistance was removed. Their findings support concern about some unguarded uses and the importance of how help is designed. They do not establish that every learner, subject, or tool has the same outcome. <a href="https://doi.org/10.1073/pnas.2422633122">Generative AI without guardrails can harm learning</a></p>
+<p>Read both kinds of evidence at the level they support. A survey can identify reported behaviour without isolating causation. A controlled educational study can test a particular intervention without settling its effects in every setting. Neither licenses the claim that one copied answer permanently damages a person’s mind.</p>
+<p>My practical recommendation follows from that distinction: preserve some occasions to attempt, explain, and transfer the work yourself. Treat conversation as a way to organise that practice, not as a scientifically proven guarantee that every AI exchange builds skill.</p>
 </section>
-<section id="but-heres-what-were-getting-wrong" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="but-heres-what-were-getting-wrong"><span class="header-section-number">4.4</span> But Here’s What We’re Getting Wrong</h2>
-<p>The metacognitive laziness risk is real. What’s <em>not</em> justified is the leap from “this risk exists” to “AI makes us dumber.”</p>
-<p>That leap assumes something worth scrutinising: that the way we’ve always learned is the only way learning works.</p>
-<p>Many of us learned through grinding. Rote memorisation. Extensive worked examples. Long hours of solitary struggle. Repetitive practice until concepts stuck.</p>
-<p>This worked. It built understanding, and those who went through it understandably value it. But when we see people <em>not</em> doing these things, we assume learning isn’t happening.</p>
-<p>That assumption is worth questioning.</p>
-<p>When someone uses AI to explore a concept, asks follow-up questions, gets confused, tries a different angle, and eventually builds understanding through an iterative conversation, that’s learning. It doesn’t look like sitting alone with a textbook for three hours, but it’s genuine engagement with material.</p>
-<p>When someone uses AI to generate a first draft, then spends their time evaluating, restructuring, and improving it, they’re doing higher-order thinking (evaluation, synthesis) earlier in the process. They skipped some lower-order work. That’s not the same as skipping the thinking.</p>
-<p>When someone uses AI to get unstuck on a problem they’d otherwise abandon, they continue engaging with the material. Without AI, they might have given up entirely. With AI, they kept going. Which outcome produced more understanding?</p>
-<p>The question isn’t whether you’re doing the <em>same</em> cognitive work. It’s whether you’re doing <em>valuable</em> cognitive work.</p>
+<section id="the-risk-is-invisible-completion" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="the-risk-is-invisible-completion"><span class="header-section-number">4.4</span> The risk is invisible completion</h2>
+<p>The warning sign is not that you received help. It is that completion has become your only test.</p>
+<p>You submit a summary but cannot identify its main claim. You reuse code but cannot predict what a changed input will do. You accept a recommendation but cannot say which source supports it. The artefact may be useful, yet the learning outcome remains unestablished.</p>
+<p>A short explanation exposes that gap. It can be spoken, drawn, demonstrated, or written. Do not confuse verbal fluency with understanding: a hesitant explanation with correct reasoning can be stronger than a confident recital.</p>
+<p>If you cannot yet explain the result, ask for a smaller example or a hint. Then attempt that example yourself. Asking the model whether you understand is less informative than demonstrating the relevant action.</p>
 </section>
-<section id="learning-slower-learning-different" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="learning-slower-learning-different"><span class="header-section-number">4.5</span> Learning Slower, Learning Different</h2>
-<p>Here’s a reframe that might be more accurate than “AI reduces critical thinking”:</p>
-<p>AI changes the path to understanding.</p>
-<p>You might learn certain things more slowly when you use AI as a crutch for recall. But you might learn <em>other</em> things faster, like how to evaluate arguments, synthesise perspectives, and exercise judgement about quality.</p>
-<p>Consider calculators. When they became widespread, people stopped memorising multiplication tables as thoroughly. Some argued this was catastrophic. But people who used calculators could engage with more complex mathematical problems earlier, problems that would have been inaccessible if they’d had to do every calculation by hand.</p>
-<p>Did calculators “make people dumber at arithmetic”? In some narrow sense, yes. Did calculators reduce mathematical capability overall? No.&nbsp;They redirected it. People lost some computational fluency but gained access to higher-level mathematical thinking.</p>
-<p>AI may be doing something similar at a much larger scale. You may develop less capacity for certain types of unaided recall and composition. But you may develop <em>more</em> capacity for evaluation, judgement, synthesis, and critical analysis.</p>
-<p>That outcome, though, is not automatic. It depends entirely on how you use the tool.</p>
+<section id="assistance-can-keep-someone-in-the-task" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="assistance-can-keep-someone-in-the-task"><span class="header-section-number">4.5</span> Assistance can keep someone in the task</h2>
+<p>There is also a cost to withholding help. A learner who is blocked by an unfamiliar term, an inaccessible format, or an overwhelming blank page may abandon the task entirely. Assistance that makes the next step manageable can preserve engagement.</p>
+<p>That is why “always struggle alone first” is a poor universal rule. Start with enough independent thought to identify the purpose when possible. If even that is difficult, ask for orientation, a question, or a simplified representation. You can still own the subsequent judgement.</p>
+<p>Imagine a volunteer faced with a room-booking rule. They ask for it in plain language, then use the original rule to check the explanation and calculate capacity themselves. The model helped with access to the problem; it did not have to make the decision.</p>
 </section>
-<section id="the-flipped-pyramid" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="the-flipped-pyramid"><span class="header-section-number">4.6</span> The Flipped Pyramid</h2>
-<p>There is something happening in practice that the “making us dumber” framing completely misses.</p>
-<p>For decades, education has followed a predictable sequence. You spend your first years learning fundamentals: definitions, formulas, procedures, foundational concepts. You memorise, you practise, you drill. Only later, sometimes much later in a final-year capstone project or a postgraduate thesis, do you get to do something genuinely creative with what you have learned. The interesting work is the reward for years of grinding through the basics.</p>
-<p>Bloom’s taxonomy describes this progression. At the base: remember, understand. In the middle: apply, analyse. At the top: evaluate, create. The traditional path moves upward, one level at a time.</p>
-<p>AI flips the pyramid upside down.</p>
-<p>With AI as a thinking partner, a first-year student can begin at the creative level. They can design, prototype, and build things that would previously have required years of accumulated skill. They can explore concepts by making things with them, not just reading about them. And when their creative ambition runs into a gap in their foundational knowledge, when they need to understand something to make their idea work, they dig down and learn it. Not because a syllabus told them to, but because their own project demands it.</p>
-<p>This is student-push rather than syllabus-pull. The student’s curiosity and creative ambition drive them into the fundamentals, rather than the curriculum dragging them through fundamentals toward a distant promise of creative work. The learning still happens. The order is different.</p>
-<p>An educator might set a creative assignment: represent a methodology from your discipline as a narrative comic strip. Before AI, this was nearly impossible for most students; they did not have illustration skills. With AI, they can generate images that are good enough to carry a concept; not professional-grade, but sufficient for visual storytelling. The assignment becomes about understanding the methodology deeply enough to explain it as a narrative, not about drawing ability. AI lowered the barrier to entry. The thinking got harder, not easier.</p>
-<p>But here is the critical variable. When students delegate the creative assignment to AI (paste the brief, accept the output, submit) the result is mediocre. AI is exceptionally good at producing the average. It generates text, images, and ideas that sit comfortably in the middle of every distribution: competent, plausible, and indistinguishable from everyone else’s delegated output.</p>
-<p>When students converse with AI, iterating, pushing back, bringing their own perspective, and demanding specifics, the results are extraordinary. The conversation forces them into the material. They have to evaluate what AI produces, decide what works, identify what is missing, and articulate what they actually want. That is higher-order thinking happening in real time, driven by the student’s own engagement, not by a textbook’s sequence of chapters.</p>
-<p>The difference between mediocre and extraordinary is not whether AI was used. It is whether the student stayed in the conversation.</p>
-<p>This points to something that the “making us dumber” debate consistently misses. The question is not whether AI changes how we learn. It obviously does. The question is whether the new way of learning produces genuine understanding. And the evidence from practice suggests that it can, but only when the learner remains an active participant rather than a passive consumer of AI output.</p>
-<p>We are all learning to navigate this. Educators, professionals, students: nobody has a settled answer yet. But the early signs are clear: AI does not make us dumber. It makes it possible to learn differently. Whether “differently” means “better” or “worse” depends entirely on whether you stay in the conversation.</p>
+<section id="projects-and-fundamentals-can-support-each-other" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="projects-and-fundamentals-can-support-each-other"><span class="header-section-number">4.6</span> Projects and fundamentals can support each other</h2>
+<p>An interesting project can reveal a knowledge gap worth filling. Someone planning a community workshop discovers that they need to distinguish participants from total occupancy. Someone analysing feedback discovers that a label and a verified outcome are different things.</p>
+<p>Working from a project into a fundamental idea can be productive. It is not proof that foundational practice is obsolete. Keep returning to the underlying calculation, concept, or evidence so that the project’s success does not depend on a chain of unexplained suggestions.</p>
+<p>Similarly, evaluation and creation are not always the final rungs of a fixed learning ladder. A beginner can attempt a creative task while still needing explicit instruction in its components. Choose the sequence that exposes and addresses the gap, rather than treating a taxonomy as a universal order.</p>
 </section>
-<section id="toward-hybrid-intelligence" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="toward-hybrid-intelligence"><span class="header-section-number">4.7</span> Toward Hybrid Intelligence</h2>
-<p>Maybe the framing of “AI vs.&nbsp;human thinking” is itself the problem.</p>
-<p>What if the future isn’t about preserving <em>unaided</em> human cognition in its traditional form, but about developing hybrid intelligence: the ability to think effectively in partnership with AI?</p>
-<p>What hybrid intelligence looks like:</p>
-<ul>
-<li>Knowing when to think independently and when to think with AI</li>
-<li>Being able to evaluate AI output with genuine understanding</li>
-<li>Using AI to extend your capabilities without losing your foundation</li>
-<li>Maintaining metacognitive awareness while leveraging cognitive offload</li>
-<li>Developing judgement about <em>when</em> offloading is appropriate and when it’s not</li>
-</ul>
-<p>This isn’t a lesser form of intelligence. It’s a different, and arguably more relevant, form of intelligence for a world where AI is everywhere.</p>
-<p>The most effective AI users aren’t those who delegate everything to AI, nor those who refuse to use it. They’re the ones who’ve developed a symbiotic relationship. They know what they bring (context, judgement, values, experience) and what AI brings (breadth, speed, pattern recognition, tirelessness).</p>
-<p>This symbiosis is itself a skill. It requires self-awareness about your own strengths and blind spots. Understanding of AI’s capabilities and limitations. The discipline to pause and think before accepting AI output. The humility to recognise when AI has a better perspective. The confidence to override AI when your judgement says otherwise.</p>
+<section id="a-small-comparison-you-can-run" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="a-small-comparison-you-can-run"><span class="header-section-number">4.7</span> A small comparison you can run</h2>
+<p><strong>Time:</strong> two sessions of 15 minutes, preferably on different days. <strong>Inputs:</strong> two modest tasks of similar difficulty, such as explaining two related concepts or planning two short activities.</p>
+<p>For the first task, work from your own notes and record where you get stuck. For the second, use AI assistance if available, preserving what it contributed. Do not pretend the tasks are perfectly matched; this is a personal learning check, not an experiment establishing causation.</p>
+<p>In the later session, close both drafts and attempt a new variant of each task. Check the result against a source, worked answer, or knowledgeable person. Record what you can now do, what you still need help with, and which parts you merely recognised when the answer was visible.</p>
+<p>Without AI, compare an independently attempted task with one for which you first read a worked example. The question remains whether you can use the idea on a new problem.</p>
+<p><strong>Success:</strong> the record distinguishes assisted completion from independent transfer. An honest “I cannot yet do this” is more useful than awarding yourself understanding because the first output looked good.</p>
 </section>
-<section id="what-history-actually-shows" class="level2" data-number="4.8">
-<h2 data-number="4.8" class="anchored" data-anchor-id="what-history-actually-shows"><span class="header-section-number">4.8</span> What History Actually Shows</h2>
-<p>There is a fear underneath the “AI makes us dumber” question that is worth naming directly: the fear that AI will make us obsolete. That the skills we have spent years building will stop mattering.</p>
-<p>History suggests the opposite.</p>
-<p>When ATMs arrived, people predicted the end of bank tellers. Instead, cheaper branches meant more branches, and total teller employment rose. The job changed. Tellers spent less time counting cash and more time advising customers. The human skill that mattered shifted from processing to judgement.</p>
-<p>When spreadsheets arrived, people predicted the end of accountants. Instead, the cost of financial analysis dropped so far that demand for it exploded. Every department wanted forecasts, models, scenarios. There were more accounting jobs after spreadsheets, not fewer. The work was different, but there was more of it.</p>
-<p>When containerised shipping arrived, people predicted the end of dock workers. Instead, global trade expanded so dramatically that port employment grew. The containers did not eliminate the work. They changed its shape and multiplied its volume.</p>
-<p>This pattern has a name: the Jevons Paradox. When a technology makes something cheaper or more efficient, demand for that thing tends to increase, not decrease. The technology does not replace the work. It refactors it. The routine parts get absorbed by the tool. The parts that require judgement, context, creativity, and trust become more central, not less.</p>
-<p>AI is following the same pattern. The people who will thrive are not the ones who resist AI or the ones who delegate everything to it. They are the ones who develop the skill of working alongside it: knowing when to lean on it, when to override it, and when to do the hard thinking themselves.</p>
-<p>That skill is not threatened by AI. It is amplified by it.</p>
-</section>
-<section id="the-conversation-not-delegation-connection" class="level2" data-number="4.9">
-<h2 data-number="4.9" class="anchored" data-anchor-id="the-conversation-not-delegation-connection"><span class="header-section-number">4.9</span> The Conversation, Not Delegation Connection</h2>
-<p>This whole discussion circles back to a foundational idea from <a href="the-delegation-trap.html" class="quarto-xref"><span>Chapter 3</span></a>: conversation, not delegation.</p>
-<p>When you delegate to AI, “just give me the answer,” cognitive offload becomes cognitive abdication. You get output without understanding. Over time, your own capabilities erode.</p>
-<p>When you converse with AI, “help me think through this,” cognitive offload becomes cognitive amplification. You engage with material at a deeper level, with AI as a thinking partner that challenges, extends, and enriches your understanding.</p>
-<p>The difference between offload that harms and offload that helps is whether the human stays in the loop. Not just approving output, but actively thinking alongside the tool.</p>
-</section>
-<section id="what-to-actually-worry-about" class="level2" data-number="4.10">
-<h2 data-number="4.10" class="anchored" data-anchor-id="what-to-actually-worry-about"><span class="header-section-number">4.10</span> What to Actually Worry About</h2>
-<p>Instead of the broad fear that “AI makes us dumber,” here are the specific risks worth paying attention to.</p>
-<p><strong>Loss of productive struggle.</strong> Some difficulty is valuable. When you wrestle with a concept and eventually break through, that struggle builds durable understanding. If AI eliminates <em>all</em> struggle, it may eliminate the understanding that comes with it. The fix is simple in principle: attempt the hard thing first. Use AI to get unstuck, not to avoid getting stuck.</p>
-<p><strong>Illusion of understanding.</strong> You may <em>feel</em> you understand something because you’ve read AI’s clear explanation, without having built genuine comprehension. You can parrot the explanation but can’t apply it to a new context. The test: can you explain it in your own words? Can you use it in a situation you haven’t seen before?</p>
-<p><strong>Erosion of foundational skills.</strong> Some skills serve as foundations for higher-order thinking. If you skip the foundations, you may struggle with the complex work that depends on them. The nuance: not every traditional skill is equally foundational. Be intentional about which foundations matter. Protect those. Let go of the ones technology has genuinely superseded.</p>
-<p><strong>Metacognitive atrophy.</strong> The biggest risk. You stop monitoring your own understanding because AI gives you a false sense of competence. The antidote is the simplest thing in the world, and the hardest to maintain: keep asking yourself, “Do I actually understand this, or does it just sound right?”</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="The honest position">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>The honest position
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The goal is not to avoid cognitive offload. It is to offload wisely – knowing when to lean on AI and when to lean on your own mind.</p>
-</div>
-</div>
-</section>
-<section id="a-more-honest-position" class="level2" data-number="4.11">
-<h2 data-number="4.11" class="anchored" data-anchor-id="a-more-honest-position"><span class="header-section-number">4.11</span> A More Honest Position</h2>
-<p>Here’s where I land.</p>
-<p>AI doesn’t make us dumber. But it does make it easier to <em>be</em> dumber. To coast, to accept, to stop thinking.</p>
-<p>The same tool that can deepen understanding can also provide a comfortable path to intellectual laziness. The difference is self-awareness and intentional practice.</p>
-<p>The goal isn’t to avoid cognitive offload. It’s to offload wisely. To know when to lean on AI and when to lean on your own mind. To maintain the metacognitive habits that turn AI from a crutch into a catalyst.</p>
-<p>That’s harder than avoiding AI. It’s harder than embracing AI uncritically. It requires ongoing attention and honest self-reflection.</p>
-<p>But it’s the honest position. And honest positions, in the long run, serve us better than comforting certainties in either direction.</p>
-<blockquote class="blockquote">
-<p>Cognitive offload isn’t the enemy. Cognitive abdication is.</p>
-</blockquote>
+<section id="decide-what-to-keep-practising" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="decide-what-to-keep-practising"><span class="header-section-number">4.8</span> Decide what to keep practising</h2>
+<p>Choose one capability that matters to you: constructing an argument, estimating time, inspecting a claim, or noticing a hidden constraint. Protect a small amount of practice in that capability while using assistance for work that is not the learning target.</p>
+<p>You do not need to prove that all offloading is harmful to justify this choice. You need a reason to care about the capability and a way to observe whether it is developing.</p>
+<p>The next chapter, AI Last, turns that intention into a workflow. Its job is to help you decide when and how to ask, not to repeat a claim that every shortcut erodes your future.</p>
 
 
 </section>
@@ -1085,13 +994,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/the-delegation-trap.html" class="pagination-link" aria-label="The Delegation Trap">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span>
+      <a href="../chapters/what-are-llms.html" class="pagination-link" aria-label="What Are Large Language Models?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/the-conversation-loop.html" class="pagination-link" aria-label="The Conversation Loop">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/ai-last.html" class="pagination-link" aria-label="AI Last">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

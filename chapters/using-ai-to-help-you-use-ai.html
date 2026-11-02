@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Using AI to Help You Use AI – Conversation, Not Delegation</title>
+<title>12&nbsp; Using AI to Help You Use AI – Conversation, Not Delegation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/vet-your-ai.html" rel="next">
+<link href="../chapters/conversations-across-disciplines.html" rel="next">
 <link href="../chapters/seven-techniques.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/rtcf.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/using-ai-to-help-you-use-ai.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/is-prompting-dead.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/using-ai-to-help-you-use-ai.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,24 +478,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-one-thing-ai-can-do-that-other-tools-cant" id="toc-the-one-thing-ai-can-do-that-other-tools-cant" class="nav-link active" data-scroll-target="#the-one-thing-ai-can-do-that-other-tools-cant"><span class="header-section-number">11.1</span> The One Thing AI Can Do That Other Tools Can’t</a></li>
-  <li><a href="#the-core-idea-meta-prompting" id="toc-the-core-idea-meta-prompting" class="nav-link" data-scroll-target="#the-core-idea-meta-prompting"><span class="header-section-number">11.2</span> The Core Idea: Meta-Prompting</a></li>
-  <li><a href="#the-consultation-prompt-your-starting-point" id="toc-the-consultation-prompt-your-starting-point" class="nav-link" data-scroll-target="#the-consultation-prompt-your-starting-point"><span class="header-section-number">11.3</span> The Consultation Prompt: Your Starting Point</a></li>
-  <li><a href="#why-this-works" id="toc-why-this-works" class="nav-link" data-scroll-target="#why-this-works"><span class="header-section-number">11.4</span> Why This Works</a></li>
-  <li><a href="#a-real-example" id="toc-a-real-example" class="nav-link" data-scroll-target="#a-real-example"><span class="header-section-number">11.5</span> A Real Example</a></li>
-  <li><a href="#the-deeper-principle-ai-as-a-mirror" id="toc-the-deeper-principle-ai-as-a-mirror" class="nav-link" data-scroll-target="#the-deeper-principle-ai-as-a-mirror"><span class="header-section-number">11.6</span> The Deeper Principle: AI as a Mirror</a></li>
-  <li><a href="#practical-tips-for-your-consultation" id="toc-practical-tips-for-your-consultation" class="nav-link" data-scroll-target="#practical-tips-for-your-consultation"><span class="header-section-number">11.7</span> Practical Tips for Your Consultation</a></li>
-  <li><a href="#getting-started-right-now" id="toc-getting-started-right-now" class="nav-link" data-scroll-target="#getting-started-right-now"><span class="header-section-number">11.8</span> Getting Started Right Now</a></li>
+  <li><a href="#the-one-thing-ai-can-do-that-other-tools-cant" id="toc-the-one-thing-ai-can-do-that-other-tools-cant" class="nav-link active" data-scroll-target="#the-one-thing-ai-can-do-that-other-tools-cant"><span class="header-section-number">12.1</span> The One Thing AI Can Do That Other Tools Can’t</a></li>
+  <li><a href="#the-core-idea-meta-prompting" id="toc-the-core-idea-meta-prompting" class="nav-link" data-scroll-target="#the-core-idea-meta-prompting"><span class="header-section-number">12.2</span> The Core Idea: Meta-Prompting</a></li>
+  <li><a href="#the-consultation-prompt-your-starting-point" id="toc-the-consultation-prompt-your-starting-point" class="nav-link" data-scroll-target="#the-consultation-prompt-your-starting-point"><span class="header-section-number">12.3</span> The Consultation Prompt: Your Starting Point</a></li>
+  <li><a href="#why-this-works" id="toc-why-this-works" class="nav-link" data-scroll-target="#why-this-works"><span class="header-section-number">12.4</span> Why This Works</a></li>
+  <li><a href="#a-real-example" id="toc-a-real-example" class="nav-link" data-scroll-target="#a-real-example"><span class="header-section-number">12.5</span> A Real Example</a></li>
+  <li><a href="#the-deeper-principle-ai-as-a-mirror" id="toc-the-deeper-principle-ai-as-a-mirror" class="nav-link" data-scroll-target="#the-deeper-principle-ai-as-a-mirror"><span class="header-section-number">12.6</span> The Deeper Principle: AI as a Mirror</a></li>
+  <li><a href="#practical-tips-for-your-consultation" id="toc-practical-tips-for-your-consultation" class="nav-link" data-scroll-target="#practical-tips-for-your-consultation"><span class="header-section-number">12.7</span> Practical Tips for Your Consultation</a></li>
+  <li><a href="#getting-started-right-now" id="toc-getting-started-right-now" class="nav-link" data-scroll-target="#getting-started-right-now"><span class="header-section-number">12.8</span> Getting Started Right Now</a></li>
+  <li><a href="#practice-evaluate-the-consultant" id="toc-practice-evaluate-the-consultant" class="nav-link" data-scroll-target="#practice-evaluate-the-consultant"><span class="header-section-number">12.9</span> Practice: evaluate the consultant</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/rtcf.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/using-ai-to-help-you-use-ai.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/is-prompting-dead.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/using-ai-to-help-you-use-ai.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-meta-prompting" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></h1>
+<h1 class="title"><span id="sec-meta-prompting" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></h1>
 </div>
 
 
@@ -509,18 +522,14 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>The most useful thing AI can do is help you figure out what you actually need to ask.</p>
 </blockquote>
-<section id="the-one-thing-ai-can-do-that-other-tools-cant" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="the-one-thing-ai-can-do-that-other-tools-cant"><span class="header-section-number">11.1</span> The One Thing AI Can Do That Other Tools Can’t</h2>
-<p>AI can teach you how to use itself.</p>
-<p>Excel cannot teach you how to use Excel. PowerPoint cannot walk you through making better slides. Email cannot help you write better emails.</p>
+<section id="the-one-thing-ai-can-do-that-other-tools-cant" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="the-one-thing-ai-can-do-that-other-tools-cant"><span class="header-section-number">12.1</span> The One Thing AI Can Do That Other Tools Can’t</h2>
+<p>AI can teach you how to use itself. Excel cannot teach you how to use Excel, PowerPoint cannot walk you through making better slides, and email cannot help you write better emails.</p>
 <p>But AI can, because it can ask you questions, understand your context, evaluate its own suggestions, and adjust based on your feedback.</p>
 <p>This means you do not need a course or a manual to get started. You can use AI to figure out how AI fits into your work.</p>
-<blockquote class="blockquote">
-<p>The most useful thing AI can do is not answer your question. It is help you figure out what question to ask.</p>
-</blockquote>
 </section>
-<section id="the-core-idea-meta-prompting" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="the-core-idea-meta-prompting"><span class="header-section-number">11.2</span> The Core Idea: Meta-Prompting</h2>
+<section id="the-core-idea-meta-prompting" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="the-core-idea-meta-prompting"><span class="header-section-number">12.2</span> The Core Idea: Meta-Prompting</h2>
 <p>Instead of asking AI to solve a problem directly, ask AI to help you figure out how to approach the problem.</p>
 <table class="caption-top table">
 <colgroup>
@@ -548,10 +557,10 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>The meta approach works better because AI asks clarifying questions first, learns your context, and gives you recommendations that fit your actual situation. Not generic advice aimed at nobody in particular.</p>
+<p>The meta approach works better because AI asks clarifying questions first, learns your context, and gives you recommendations that fit your actual situation rather than generic advice aimed at nobody in particular.</p>
 </section>
-<section id="the-consultation-prompt-your-starting-point" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="the-consultation-prompt-your-starting-point"><span class="header-section-number">11.3</span> The Consultation Prompt: Your Starting Point</h2>
+<section id="the-consultation-prompt-your-starting-point" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="the-consultation-prompt-your-starting-point"><span class="header-section-number">12.3</span> The Consultation Prompt: Your Starting Point</h2>
 <p>Here is a prompt you can use right now. Copy it, paste it into any AI tool, and start the conversation.</p>
 <pre><code>You are an AI expert consultant.
 I would like your help understanding
@@ -580,18 +589,17 @@ provide TWO types of recommendations:
 
 Format your recommendations clearly
 with implementation tips for each.</code></pre>
-<p>That is it. Paste it, start answering questions, and see what comes back.</p>
 </section>
-<section id="why-this-works" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="why-this-works"><span class="header-section-number">11.4</span> Why This Works</h2>
+<section id="why-this-works" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="why-this-works"><span class="header-section-number">12.4</span> Why This Works</h2>
 <p>When you ask AI to interview you before making recommendations, several useful things happen.</p>
 <p><strong>It gets your actual context.</strong> AI does not know anything about you at the start. By asking sequential questions, it builds up a picture of your discipline, your constraints, and what success looks like for you. Generic advice does not account for the fact that you manage compliance for a large team, or support early-career researchers, or run a small business with no IT budget. Context changes the recommendations entirely.</p>
 <p><strong>You get both obvious and non-obvious ideas.</strong> AI tends to suggest the predictable stuff first: automating reports, generating ideas, answering questions. Those are useful, but you have probably already thought of them. By explicitly asking for non-obvious recommendations, you push the model past its defaults. It starts connecting your specific constraints and workflows to capabilities you had not considered. The non-obvious ideas tend to be more useful, and they are the ones you would never have found by reading a generic “top ten AI tips” article.</p>
 <p><strong>AI can evaluate its own suggestions.</strong> Once it generates a list, you can ask it to assess which are most feasible, identify trade-offs, refine implementation steps, or suggest variations. This lets you iterate toward something practical rather than accepting the first answer.</p>
-<p><strong>It is a conversation, not a lecture.</strong> Unlike reading a guide or sitting through a workshop, you are actively shaping the advice by answering questions honestly, pushing back on ideas that do not fit, and exploring what is actually possible. The back-and-forth is where the useful stuff tends to surface. And because you are in control of the conversation, you can steer it toward the parts of your work that matter most.</p>
+<p><strong>It is a conversation, not a lecture.</strong> Unlike reading a guide or sitting through a workshop, you shape the advice as it forms. You answer honestly, push back on ideas that do not fit, and explore what is actually possible. The back-and-forth is where the useful stuff tends to surface. And because you are in control of the conversation, you can steer it toward the parts of your work that matter most.</p>
 </section>
-<section id="a-real-example" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="a-real-example"><span class="header-section-number">11.5</span> A Real Example</h2>
+<section id="a-real-example" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="a-real-example"><span class="header-section-number">12.5</span> A Real Example</h2>
 <p>Here is a simplified version of how this conversation might go.</p>
 <p><strong>You paste the consultation prompt.</strong></p>
 <p><strong>AI asks:</strong> “What is your primary role, and what does a typical week look like?”</p>
@@ -605,11 +613,10 @@ with implementation tips for each.</code></pre>
 <p><strong>Obvious opportunities:</strong> Use AI to draft plain-language policy summaries. Use AI to help faculty write learning outcomes. Use AI to generate assessment design templates.</p>
 <p><strong>Non-obvious opportunities:</strong> Use AI to analyse your incoming faculty questions and identify common gaps in understanding, then create targeted guidance before people ask. Use AI as a quality-check tool: paste a unit outline and ask it to flag compliance risks or unclear learning outcomes. Use AI to build a simple FAQ that handles the routine questions so you can focus on the ones that actually need your judgement.</p>
 </blockquote>
-<p>Notice what happened. Three questions. Honest answers. Targeted recommendations. The AI did not give generic suggestions about “leveraging AI for productivity.” It understood the specific role, constraints, and frustrations, so the recommendations are grounded in something real. You could act on any of them this week.</p>
+<p>The AI did not give generic suggestions about “leveraging AI for productivity.” It understood the specific role, constraints, and frustrations, so the recommendations are grounded in something real. You could act on any of them this week.</p>
 </section>
-<section id="the-deeper-principle-ai-as-a-mirror" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="the-deeper-principle-ai-as-a-mirror"><span class="header-section-number">11.6</span> The Deeper Principle: AI as a Mirror</h2>
-<p>Here is what is actually going on when you ask AI to interview you.</p>
+<section id="the-deeper-principle-ai-as-a-mirror" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="the-deeper-principle-ai-as-a-mirror"><span class="header-section-number">12.6</span> The Deeper Principle: AI as a Mirror</h2>
 <p><strong>It forces you to articulate your own work clearly.</strong></p>
 <p>By answering its questions, you end up spelling out:</p>
 <ul>
@@ -620,15 +627,15 @@ with implementation tips for each.</code></pre>
 </ul>
 <p>Often, the most useful part of this conversation is not the AI’s recommendations. It is the clarity you gain about your own work by having to explain it to something that knows nothing about you.</p>
 <p>People regularly say things like: “I did not realise how much time I was spending on that until the AI asked about it.” Or: “Just explaining my challenges helped me see a solution on my own.” Or: “The recommendations were fine, but the real value was the clarity I got about what I actually needed.”</p>
-<p>This is not a side effect. It is the point. The consultation prompt works because it puts you in the position of expert and the AI in the position of interviewer. You know the answers. It just asks the right questions. And in answering those questions, you often discover that you already knew what to do. You just had not said it out loud yet.</p>
+<p>That clarity is the point. The consultation prompt works because it puts you in the position of expert and the AI in the position of interviewer. You know the answers. It just asks the right questions. And in answering those questions, you often discover that you already knew what to do. You just had not said it out loud yet.</p>
 </section>
-<section id="practical-tips-for-your-consultation" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="practical-tips-for-your-consultation"><span class="header-section-number">11.7</span> Practical Tips for Your Consultation</h2>
+<section id="practical-tips-for-your-consultation" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="practical-tips-for-your-consultation"><span class="header-section-number">12.7</span> Practical Tips for Your Consultation</h2>
 <p><strong>Be honest and specific.</strong> Do not give polished answers. The more honest you are about your constraints and challenges, the better the recommendations. “We have no budget,” “I do not have time to learn new tools,” “My organisation is sceptical of AI.” These are all useful context.</p>
 <p><strong>Ask follow-up questions.</strong> After getting recommendations, push further. “How would I actually implement the non-obvious ones?” “Which of these could I start with this week?” “What are the risks or drawbacks?”</p>
 <p><strong>Test one thing.</strong> Pick one obvious and one non-obvious recommendation. Try them for a week or two. Come back to the same conversation and report what happened. “I tried your suggestion about X. Here is what worked and what did not.” The AI will adjust. Iterate from there.</p>
 <p><strong>Come back periodically.</strong> This is not a one-off exercise. Your context changes. Your needs shift. The tools themselves change. Run this consultation again in a few months. Each time, you will be ready for different ideas, and you will ask sharper questions because you have more experience to draw on.</p>
-<p><strong>Share what you learn.</strong> If something works, tell a colleague. “I asked AI to help me figure out how to use AI, and it suggested this. Here is how it went.” Others might try their own version and find something entirely different that is useful for their context. That is the point.</p>
+<p><strong>Share what you learn.</strong> If something works, tell a colleague. “I asked AI to help me figure out how to use AI, and it suggested this. Here is how it went.” Others might try their own version and find something entirely different that is useful for their context.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="The real value">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -643,8 +650,8 @@ with implementation tips for each.</code></pre>
 </div>
 </div>
 </section>
-<section id="getting-started-right-now" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="getting-started-right-now"><span class="header-section-number">11.8</span> Getting Started Right Now</h2>
+<section id="getting-started-right-now" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="getting-started-right-now"><span class="header-section-number">12.8</span> Getting Started Right Now</h2>
 <ol type="1">
 <li>Open your AI tool.</li>
 <li>Copy the consultation prompt from this chapter.</li>
@@ -653,9 +660,12 @@ with implementation tips for each.</code></pre>
 <li>Come back with what you learned and keep going.</li>
 </ol>
 <p>This works with any AI tool and in any role. The skill you are building is not prompt engineering. It is the ability to think clearly about your own work, explain it precisely, and evaluate whether what comes back is useful. That skill transfers everywhere.</p>
-<p>If you want to structure the prompts that come out of this consultation, the RTCF framework (<a href="rtcf.html" class="quarto-xref"><span>Chapter 8</span></a>) gives you a reliable way to build them. If you want to break complex problems into stages, prompt chaining (<a href="prompt-chaining.html" class="quarto-xref"><span>Chapter 9</span></a>) shows you how.</p>
-<p>But start here. Let AI help you figure out what you actually need.</p>
-<p>Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.</p>
+<p>If you want to structure the prompts that come out of this consultation, the RTCF framework (<a href="is-prompting-dead.html" class="quarto-xref"><span>Chapter 9</span></a>) gives you a reliable way to build them. If you want to break complex problems into stages, prompt chaining (<a href="prompt-chaining.html" class="quarto-xref"><span>Chapter 10</span></a>) shows you how. Once AI has helped you figure out what to ask, VET helps you make sure you can stand behind the answer.</p>
+</section>
+<section id="practice-evaluate-the-consultant" class="level2" data-number="12.9">
+<h2 data-number="12.9" class="anchored" data-anchor-id="practice-evaluate-the-consultant"><span class="header-section-number">12.9</span> Practice: evaluate the consultant</h2>
+<p><strong>Time:</strong> 15–20 minutes. Write your own short brief before asking a model or colleague to improve it. Compare the revised brief against the original goal. Mark an assumption the consultant introduced, and retain it only if you can justify it.</p>
+<p><strong>Artefact:</strong> the two briefs with an acceptance/rejection note. <strong>Success:</strong> improve the request without letting the consultant quietly change what you are trying to achieve. No AI account is needed to complete the independent version.</p>
 
 
 </section>
@@ -1079,12 +1089,12 @@ with implementation tips for each.</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../chapters/seven-techniques.html" class="pagination-link" aria-label="Eight Techniques for Deeper Thinking">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/vet-your-ai.html" class="pagination-link" aria-label="VET Your AI: The Push-Back Framework">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/conversations-across-disciplines.html" class="pagination-link" aria-label="Conversations Across Disciplines">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

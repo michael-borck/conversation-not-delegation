@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix D — Interactive Tools – Conversation, Not Delegation</title>
+<title>9&nbsp; Is Prompting Dead? – Conversation, Not Delegation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../about-author.html" rel="next">
-<link href="../appendices/c-further-reading.html" rel="prev">
+<link href="../chapters/prompt-chaining.html" rel="next">
+<link href="../chapters/vet-your-ai.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/d-interactive-tools.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/is-prompting-dead.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/is-prompting-dead.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,20 +478,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#rtcf-prompt-builder" id="toc-rtcf-prompt-builder" class="nav-link active" data-scroll-target="#rtcf-prompt-builder"><span class="header-section-number">D.1</span> RTCF Prompt Builder</a></li>
-  <li><a href="#rtcf-prompt-analyser" id="toc-rtcf-prompt-analyser" class="nav-link" data-scroll-target="#rtcf-prompt-analyser"><span class="header-section-number">D.2</span> RTCF Prompt Analyser</a></li>
-  <li><a href="#ai-readiness-assessment" id="toc-ai-readiness-assessment" class="nav-link" data-scroll-target="#ai-readiness-assessment"><span class="header-section-number">D.3</span> AI Readiness Assessment</a></li>
-  <li><a href="#converse-with-this-book" id="toc-converse-with-this-book" class="nav-link" data-scroll-target="#converse-with-this-book"><span class="header-section-number">D.4</span> Converse with This Book</a></li>
+  <li><a href="#rtcf-the-thinking-behind-the-prompt" id="toc-rtcf-the-thinking-behind-the-prompt" class="nav-link active" data-scroll-target="#rtcf-the-thinking-behind-the-prompt"><span class="header-section-number">9.1</span> RTCF: The Thinking Behind the Prompt</a></li>
+  <li><a href="#test-the-amount-of-structure" id="toc-test-the-amount-of-structure" class="nav-link" data-scroll-target="#test-the-amount-of-structure"><span class="header-section-number">9.2</span> Test the amount of structure</a></li>
+  <li><a href="#supply-a-usable-voice-sample" id="toc-supply-a-usable-voice-sample" class="nav-link" data-scroll-target="#supply-a-usable-voice-sample"><span class="header-section-number">9.3</span> Supply a usable voice sample</a></li>
+  <li><a href="#a-worked-example" id="toc-a-worked-example" class="nav-link" data-scroll-target="#a-worked-example"><span class="header-section-number">9.4</span> A Worked Example</a></li>
+  <li><a href="#carry-the-brief-into-the-next-step" id="toc-carry-the-brief-into-the-next-step" class="nav-link" data-scroll-target="#carry-the-brief-into-the-next-step"><span class="header-section-number">9.5</span> Carry the brief into the next step</a></li>
+  <li><a href="#take-it-to-the-ai" id="toc-take-it-to-the-ai" class="nav-link" data-scroll-target="#take-it-to-the-ai"><span class="header-section-number">9.6</span> Take it to the AI</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/a-craft-framework.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/d-interactive-tools.html"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/is-prompting-dead.html">Part 3: The Methodology</a></li><li class="breadcrumb-item"><a href="../chapters/is-prompting-dead.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-interactive-tools" class="quarto-section-identifier">Appendix D — Interactive Tools</span></h1>
+<h1 class="title"><span id="sec-rtcf" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></h1>
 </div>
 
 
@@ -496,28 +510,162 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These companion tools let you practise the frameworks from this book in your browser. No login required, no data stored. Everything runs locally in your browser.</p>
-<section id="rtcf-prompt-builder" class="level2" data-number="D.1">
-<h2 data-number="D.1" class="anchored" data-anchor-id="rtcf-prompt-builder"><span class="header-section-number">D.1</span> RTCF Prompt Builder</h2>
-<p>Build prompts step by step using the RTCF framework. Fill in Role, Task, Context, and Format, and the tool assembles a structured prompt you can copy and paste into any AI tool. Includes templates for Reverse Prompting, Devil’s Advocate, VET checks, and more.</p>
-<p><strong><a href="tools/prompt-builder.html" target="_blank">Open the RTCF Prompt Builder</a></strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/comic-strip/08-rtcf.png" class="img-fluid figure-img" alt="Comic strip: In panel one a stick figure dressed as a wizard waves a wand and chants an elaborate magic prompt at a computer (you are a world-class expert, take a deep breath, I will tip you 200 dollars) and gets a mediocre answer. In panel two a plain stick figure simply states what they need, the way you would brief a colleague, and gets an excellent answer. In panel three the wizard's hat falls off. Punchline: prompting is not dead, the magic words are."></p>
+<figcaption>The spell stopped working. The clear question never needed one.</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>The clever prompt is dying. The clear question is not.</p>
+</blockquote>
+<p>“Prompting is dead” is a poor basis for a working method. What matters is whether your request supplies enough information to produce a useful, checkable result.</p>
+<p>This chapter treats RTCF as a briefing checklist, not a benchmark claim about which model needs how much scaffolding. A role label can help specify a perspective; it does not grant expertise. A precise format can support a downstream task; an elaborate template can also add noise.</p>
+<p>Try the smallest clear brief, inspect the result, and add the structure that the task needs. Keep the same acceptance criteria when comparing alternatives. The goal is clearer work, not winning an argument about magic words.</p>
+<section id="rtcf-the-thinking-behind-the-prompt" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="rtcf-the-thinking-behind-the-prompt"><span class="header-section-number">9.1</span> RTCF: The Thinking Behind the Prompt</h2>
+<p>RTCF is one of a family of prompt-structuring mnemonics that emerged as people worked out how to brief AI well. Others exist (CRAFT, CO-STAR, RISEN, and more) and they offer related reminders to state the task, audience, constraints, and expected result. Their usefulness depends on the task and how you apply them. We use RTCF in this book because it is the simplest to remember and the quickest to apply. <a href="../appendices/a-craft-framework.html" class="quarto-xref"><span>Appendix A</span></a> compares the alternatives.</p>
+<p>None of these frameworks are original inventions. They package practices professionals and educators have used for decades: writing a clear brief, specifying the audience, stating constraints. The contribution is in joining the dots for AI, not in discovering anything new. That is why they survive the “prompting is dead” turn: they were never tricks in the first place.</p>
+<p>Four components, four questions.</p>
+<table class="table-striped caption-top table">
+<caption>The RTCF framework: four questions that make you supply what the model is missing.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Question</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Role</strong></td>
+<td>Who should AI be?</td>
+<td>“You are an experienced editor of academic writing…”</td>
+</tr>
+<tr class="even">
+<td><strong>Task</strong></td>
+<td>What should it do?</td>
+<td>“Review my argument structure and identify weak transitions…”</td>
+</tr>
+<tr class="odd">
+<td><strong>Context</strong></td>
+<td>What background?</td>
+<td>“Final-year thesis, 8000 words, comparative politics…”</td>
+</tr>
+<tr class="even">
+<td><strong>Format</strong></td>
+<td>How should output look?</td>
+<td>“Numbered list with specific paragraph references…”</td>
+</tr>
+</tbody>
+</table>
+<p>Before we recalibrate them for the model you are actually using, there is a principle worth naming: <strong>one prompt, one job.</strong></p>
+<p>Split a request when its stages need different evidence or separate checks. A compact, well-specified multi-part request may work perfectly well; the word “and” is not a diagnostic test. See <a href="prompt-chaining.html" class="quarto-xref"><span>Chapter 10</span></a> for dependencies and handovers.</p>
 </section>
-<section id="rtcf-prompt-analyser" class="level2" data-number="D.2">
-<h2 data-number="D.2" class="anchored" data-anchor-id="rtcf-prompt-analyser"><span class="header-section-number">D.2</span> RTCF Prompt Analyser</h2>
-<p>Paste any prompt and get instant feedback on which RTCF elements are present, partial, or missing. Useful for diagnosing why a prompt gave you a vague or unhelpful response; the answer is usually a missing element.</p>
-<p><strong><a href="tools/rtcf-analyser.html" target="_blank">Open the RTCF Prompt Analyser</a></strong></p>
+<section id="test-the-amount-of-structure" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="test-the-amount-of-structure"><span class="header-section-number">9.2</span> Test the amount of structure</h2>
+<p>Use a short brief and a more explicit RTCF version on the same harmless task. Compare whether they preserve constraints, use the right evidence, and produce the required format. Repeat enough to notice unstable results; a model’s explanation of which prompt it prefers is not a performance measurement.</p>
+<p>Do not equate “local” with “weak” or assume that a frontier label removes the need for constraints. Model, application, task, and available context all matter. Specify consequential requirements explicitly on either route.</p>
+<p>The prompt-research literature contains measured improvements for particular methods and tasks, including <a href="https://arxiv.org/abs/2201.11903">Wei et al.’s chain-of-thought experiments</a>. Those results do not validate every persona, prove that RTCF always wins, or make generated explanations a trustworthy account of internal reasoning.</p>
 </section>
-<section id="ai-readiness-assessment" class="level2" data-number="D.3">
-<h2 data-number="D.3" class="anchored" data-anchor-id="ai-readiness-assessment"><span class="header-section-number">D.3</span> AI Readiness Assessment</h2>
-<p>A short quiz (3-4 minutes) that maps your current AI experience level and recommends which chapters of this book to prioritise. Whether you are a newcomer or a power user, it points you to the sections that will be most useful for where you are now.</p>
-<p><strong><a href="tools/ai-readiness-quiz.html" target="_blank">Take the AI Readiness Assessment</a></strong></p>
+<section id="supply-a-usable-voice-sample" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="supply-a-usable-voice-sample"><span class="header-section-number">9.3</span> Supply a usable voice sample</h2>
+<p>A model may infer style from examples and imitate it imperfectly. If your draft sounds generic, supply a sample of your own writing that you have permission to share, and describe what you want to retain. Do not treat an em-dash or sentence rhythm as evidence that someone used AI.</p>
+<p>A style profile is a reusable editing aid. It is not your identity, a guarantee of authentic authorship, or a substitute for checking what a draft says.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="The voice profile method">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The voice profile method
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Step 1, Extract.</strong> Paste a sample of your own writing (an email, an essay, a few paragraphs you are happy with) and ask the model to extract a <em>style profile</em> across five dimensions:</p>
+<pre><code>You are an expert writing style analyst. Read the text I provide
+and extract a detailed style profile across these dimensions:
+
+- Tone: the overall register (e.g. dry, warm, authoritative, playful)
+- Structure: sentence length, complexity, paragraph habits
+- Vocabulary: word-choice patterns (plain, academic, domain-specific)
+- Grammar: syntax quirks, active vs passive, punctuation habits
+- Quirks: the human fingerprints — contractions, favourite
+  transitions, anything that makes it sound like a person
+
+Here is my writing sample:
+[paste 300+ words of your own writing]</code></pre>
+<p><strong>Step 2, Save it.</strong> Keep the profile in a note. This is your reusable “style DNA,” and you build it once.</p>
+<p><strong>Step 3, Generate against it.</strong> When you want a draft in your voice, paste the profile back in first:</p>
+<pre><code>Match this style profile exactly. [paste profile]
+Now draft a [format] about [topic].</code></pre>
+<p><strong>Iterate on the profile, not just the output.</strong> If a draft sounds off, edit a dimension and regenerate. Combine several samples for a richer profile. On models that support custom instructions or memory, check the current product settings and test whether the profile is applied; do not assume every future session will use it.</p>
+</div>
+</div>
+<p>Use the three prompts by hand; no separate style service is required. Review the profile for clichés, inaccuracies, and private details before reuse. Follow the disclosure rules of your setting. Sounding like you does not make an unsupported claim yours to publish.</p>
 </section>
-<section id="converse-with-this-book" class="level2" data-number="D.4">
-<h2 data-number="D.4" class="anchored" data-anchor-id="converse-with-this-book"><span class="header-section-number">D.4</span> Converse with This Book</h2>
-<p>A book about conversation with AI should be available as a conversation with AI.</p>
-<p>The <code>llm.txt</code> file (available from the sidebar or the companion website) provides a clean text version of the entire book that you can paste into ChatGPT, Claude, NotebookLM, or any other AI tool. Then ask it questions, challenge its interpretation of the ideas, or use it to explore how the frameworks apply to your specific situation.</p>
-<p>You can also upload <code>llm.txt</code> to Google NotebookLM to generate an audio overview or podcast-style discussion of the content.</p>
-<p>The book’s own methodology applies: do not accept the AI’s summary of the book uncritically. Push back. VET the answers. Stay in the conversation.</p>
+<section id="a-worked-example" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="a-worked-example"><span class="header-section-number">9.4</span> A Worked Example</h2>
+<p>The difference between a bare prompt and an RTCF brief is not length. It is clarity of thought. Here is a constructed exchange showing a postgraduate student getting help with a literature review. The named papers below are placeholders, not bibliography entries.</p>
+<p><strong>Without RTCF:</strong></p>
+<blockquote class="blockquote">
+<p>“Help me with my literature review.”</p>
+</blockquote>
+<p><strong>With RTCF:</strong></p>
+<blockquote class="blockquote">
+<p><strong>Role:</strong> You are an academic writing mentor experienced in helping postgraduate students develop critical literature reviews.</p>
+<p><strong>Task:</strong> Review the following three-paragraph draft and identify where I am summarising sources instead of synthesising them. Suggest how to restructure each paragraph around a theme rather than a source.</p>
+<p><strong>Context:</strong> This is for a Master’s dissertation in environmental policy, on competing frameworks for measuring urban resilience. My supervisor said the current draft reads like a list of summaries.</p>
+<p><strong>Format:</strong> For each paragraph, give: (1) the problem in one sentence, (2) a suggested restructure, (3) a model opening sentence that demonstrates synthesis. Keep it under 500 words.</p>
+</blockquote>
+<p>The bare prompt leaves the intended help unspecified. The RTCF version identifies the draft, discipline, and weakness the supervisor flagged. None of that came from clever phrasing. It came from her deciding what she actually needed before she asked.</p>
+<p>The structured prompt only starts the conversation.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="What happens after the RTCF prompt">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What happens after the RTCF prompt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p><strong>AI:</strong> [Identifies three paragraph-level problems. On paragraph 2:] “You introduce three studies but treat each as a self-contained summary. Restructure: open with the shared question, ‘How does urban density mediate flood resilience?’, then bring each study in as a different angle on it.”</p>
+<p><strong>You:</strong> The paragraph 2 restructure is good, but that isn’t actually what those three studies share. Two of them are about heat resilience, not flooding. The common thread is <em>which dimension of resilience the framework prioritises</em>. Try again with that as the organising question.</p>
+<p><strong>AI:</strong> That shifts it. Open paragraph 2 with: “Each framework foregrounds a different dimension of resilience, which shapes what counts as success.” Then Smith (heat), Chen (flood), and Patel (multi-hazard) become three angles on that one question. The synthesis move is making the framework’s <em>priorities</em> visible, not comparing findings.</p>
+</blockquote>
+<p><em>The constructed error illustrates why source knowledge matters. The student corrects an unsupported grouping; she still needs to check the revised synthesis against the papers.</em></p>
+</div>
+</div>
+</section>
+<section id="carry-the-brief-into-the-next-step" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="carry-the-brief-into-the-next-step"><span class="header-section-number">9.5</span> Carry the brief into the next step</h2>
+<p>Write the four questions out when that helps. Leave a component implicit only when the result remains clear and checkable. If a first response already meets the task’s criteria, extra turns are not a requirement.</p>
+<p>When it does not, identify the defect before asking for another version. Missing context calls for context; an unsupported factual claim calls for evidence; a prohibited action calls for an external control, not merely a more forceful persona.</p>
+<p>Prompt chaining in the next chapter makes these handovers explicit. Keep your original brief alongside the revised output so that improving the wording does not quietly change the job.</p>
+</section>
+<section id="take-it-to-the-ai" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="take-it-to-the-ai"><span class="header-section-number">9.6</span> Take it to the AI</h2>
+<p><strong>Where to start.</strong> Three questions worth arguing about rather than looking up:</p>
+<ol type="1">
+<li>Write the same request twice, once as a bare sentence and once in full RTCF, then ask the AI which one it could answer better and why. Compare the actual outputs against your criteria; the model’s preference is only a suggestion.</li>
+<li>Ask what it inferred about you from your prompt. Check those proposed assumptions against the task; some may be unnecessary or invented.</li>
+<li>Strip one RTCF element at a time and watch which removal hurts most. Record what changes; do not assume the same element matters most for every task.</li>
+</ol>
+<p><strong>Keywords to steer with.</strong> RTCF · role, task, context, format · CRAFT, CO-STAR, RISEN · scaffolding to the model · style profile · voice · scaffold not script · from prompt to conversation</p>
+<p><strong>A starting prompt.</strong></p>
+<blockquote class="blockquote">
+<p><strong>Role:</strong> You are a prompt reviewer who has read ten thousand bad briefs and can tell what was missing from the answer alone.</p>
+<p><strong>Task:</strong> Read my prompt, tell me which RTCF elements are present, partial or missing, and what you had to assume in order to answer at all.</p>
+<p><strong>Context:</strong> I have read a chapter arguing that RTCF is a thinking discipline rather than a template, and that Context is the component that never stops mattering. My prompt is: [paste it]. Do not answer the prompt itself yet.</p>
+<p><strong>Format:</strong> Four rows, one per element: present, partial or missing, and what a better version would say. Then list every assumption you would have made, so I can see the context I failed to supply.</p>
+</blockquote>
 
 
 </section>
@@ -940,13 +1088,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../appendices/c-further-reading.html" class="pagination-link" aria-label="Further Reading">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Further Reading</span></span>
+      <a href="../chapters/vet-your-ai.html" class="pagination-link" aria-label="VET Your AI: The Push-Back Framework">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../about-author.html" class="pagination-link" aria-label="About the Author">
-        <span class="nav-page-text">About the Author</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/prompt-chaining.html" class="pagination-link" aria-label="Prompt Chaining: Building on What You Started">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

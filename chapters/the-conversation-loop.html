@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; The Conversation Loop – Conversation, Not Delegation</title>
+<title>6&nbsp; The Conversation Loop – Conversation, Not Delegation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/ai-last.html" rel="next">
-<link href="../chapters/does-ai-make-us-dumber.html" rel="prev">
+<link href="../chapters/staying-critical.html" rel="next">
+<link href="../chapters/ai-last.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ai-last.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,31 +478,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#brainstorm-define-your-question" id="toc-brainstorm-define-your-question" class="nav-link active" data-scroll-target="#brainstorm-define-your-question"><span class="header-section-number">5.1</span> Brainstorm: Define Your Question</a></li>
-  <li><a href="#ideate-explore-possibilities" id="toc-ideate-explore-possibilities" class="nav-link" data-scroll-target="#ideate-explore-possibilities"><span class="header-section-number">5.2</span> Ideate: Explore Possibilities</a></li>
-  <li><a href="#iterate-push-back-and-refine" id="toc-iterate-push-back-and-refine" class="nav-link" data-scroll-target="#iterate-push-back-and-refine"><span class="header-section-number">5.3</span> Iterate: Push Back and Refine</a></li>
-  <li><a href="#amplify-make-it-yours" id="toc-amplify-make-it-yours" class="nav-link" data-scroll-target="#amplify-make-it-yours"><span class="header-section-number">5.4</span> Amplify: Make It Yours</a></li>
-  <li><a href="#repeat-go-around-again" id="toc-repeat-go-around-again" class="nav-link" data-scroll-target="#repeat-go-around-again"><span class="header-section-number">5.5</span> Repeat: Go Around Again</a></li>
-  <li><a href="#you-do-not-need-the-best-model" id="toc-you-do-not-need-the-best-model" class="nav-link" data-scroll-target="#you-do-not-need-the-best-model"><span class="header-section-number">5.6</span> You Do Not Need the Best Model</a></li>
-  <li><a href="#same-method-different-calibration" id="toc-same-method-different-calibration" class="nav-link" data-scroll-target="#same-method-different-calibration"><span class="header-section-number">5.7</span> Same Method, Different Calibration</a></li>
-  <li><a href="#why-conversation-scales" id="toc-why-conversation-scales" class="nav-link" data-scroll-target="#why-conversation-scales"><span class="header-section-number">5.8</span> Why Conversation Scales</a>
+  <li><a href="#brainstorm-define-your-question" id="toc-brainstorm-define-your-question" class="nav-link active" data-scroll-target="#brainstorm-define-your-question"><span class="header-section-number">6.1</span> Brainstorm: define your question</a></li>
+  <li><a href="#ideate-explore-possibilities" id="toc-ideate-explore-possibilities" class="nav-link" data-scroll-target="#ideate-explore-possibilities"><span class="header-section-number">6.2</span> Ideate: explore possibilities</a></li>
+  <li><a href="#iterate-identify-the-defect" id="toc-iterate-identify-the-defect" class="nav-link" data-scroll-target="#iterate-identify-the-defect"><span class="header-section-number">6.3</span> Iterate: identify the defect</a></li>
+  <li><a href="#amplify-produce-an-owned-result" id="toc-amplify-produce-an-owned-result" class="nav-link" data-scroll-target="#amplify-produce-an-owned-result"><span class="header-section-number">6.4</span> Amplify: produce an owned result</a></li>
+  <li><a href="#repeator-stop" id="toc-repeator-stop" class="nav-link" data-scroll-target="#repeator-stop"><span class="header-section-number">6.5</span> Repeat—or stop</a></li>
+  <li><a href="#choose-support-you-can-evaluate" id="toc-choose-support-you-can-evaluate" class="nav-link" data-scroll-target="#choose-support-you-can-evaluate"><span class="header-section-number">6.6</span> Choose support you can evaluate</a></li>
+  <li><a href="#check-the-handover-not-just-the-final-draft" id="toc-check-the-handover-not-just-the-final-draft" class="nav-link" data-scroll-target="#check-the-handover-not-just-the-final-draft"><span class="header-section-number">6.7</span> Check the handover, not just the final draft</a>
   <ul class="collapse">
-  <li><a href="#amplify-your-thinking-not-the-hallucinations" id="toc-amplify-your-thinking-not-the-hallucinations" class="nav-link" data-scroll-target="#amplify-your-thinking-not-the-hallucinations"><span class="header-section-number">5.8.1</span> Amplify Your Thinking, Not the Hallucinations</a></li>
-  <li><a href="#sec-two-chat-workflow" id="toc-sec-two-chat-workflow" class="nav-link" data-scroll-target="#sec-two-chat-workflow"><span class="header-section-number">5.8.2</span> The Two-Chat Workflow</a></li>
+  <li><a href="#sec-two-chat-workflow" id="toc-sec-two-chat-workflow" class="nav-link" data-scroll-target="#sec-two-chat-workflow"><span class="header-section-number">6.7.1</span> The two-chat workflow</a></li>
   </ul></li>
-  <li><a href="#the-output-worth-reading" id="toc-the-output-worth-reading" class="nav-link" data-scroll-target="#the-output-worth-reading"><span class="header-section-number">5.9</span> The Output Worth Reading</a></li>
-  <li><a href="#why-your-existing-skills-already-transfer" id="toc-why-your-existing-skills-already-transfer" class="nav-link" data-scroll-target="#why-your-existing-skills-already-transfer"><span class="header-section-number">5.10</span> Why Your Existing Skills Already Transfer</a></li>
-  <li><a href="#the-two-things-to-remember" id="toc-the-two-things-to-remember" class="nav-link" data-scroll-target="#the-two-things-to-remember"><span class="header-section-number">5.11</span> The Two Things to Remember</a></li>
+  <li><a href="#read-the-explanation-and-inspect-the-artefact" id="toc-read-the-explanation-and-inspect-the-artefact" class="nav-link" data-scroll-target="#read-the-explanation-and-inspect-the-artefact"><span class="header-section-number">6.8</span> Read the explanation and inspect the artefact</a></li>
+  <li><a href="#familiar-practices-adapted-carefully" id="toc-familiar-practices-adapted-carefully" class="nav-link" data-scroll-target="#familiar-practices-adapted-carefully"><span class="header-section-number">6.9</span> Familiar practices, adapted carefully</a></li>
+  <li><a href="#guided-practice-find-the-changed-assumption" id="toc-guided-practice-find-the-changed-assumption" class="nav-link" data-scroll-target="#guided-practice-find-the-changed-assumption"><span class="header-section-number">6.10</span> Guided practice: find the changed assumption</a></li>
+  <li><a href="#take-it-to-the-ai" id="toc-take-it-to-the-ai" class="nav-link" data-scroll-target="#take-it-to-the-ai"><span class="header-section-number">6.11</span> Take it to the AI</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ai-last.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-conversation-loop" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></h1>
+<h1 class="title"><span id="sec-conversation-loop" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></h1>
 </div>
 
 
@@ -514,204 +525,158 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <blockquote class="blockquote">
-<p>A single prompt gets you an answer. A conversation gets you understanding.</p>
+<p>Keep the question, the correction, and the evidence visible.</p>
 </blockquote>
-<p>You now know what AI is and what it is not. You know that large language models are fluent without being truthful, and capable without being experienced. You know the trap: delegation feels productive but erodes your capability over time. And you know that the protective practice is conversation, not delegation.</p>
-<p>The question becomes: what does that conversation actually look like?</p>
-<p>This is the model. Not a framework with twelve steps and a certification programme. A loop with four stages and one rule: you stay in the conversation.</p>
-<div id="fig-conversation-loop" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Hand-drawn diagram showing four boxes (Brainstorm, Ideate, Iterate, Amplify) connected by arrows flowing left to right, with a Repeat arrow looping back from Amplify to Brainstorm.">
+<p>AI Last gave you a starting point: the purpose, a first attempt where useful, and a sticking point. The conversation loop describes what to do with the help that follows. It does not promise that talking longer will make you wiser or that every task needs all four stages.</p>
+<div id="fig-conversation-loop" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Four stages: Brainstorm, Ideate, Iterate, Amplify. A feedback arrow allows a return to an earlier stage when needed.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-conversation-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/conversation-loop.png" class="img-fluid figure-img" alt="Hand-drawn diagram showing four boxes (Brainstorm, Ideate, Iterate, Amplify) connected by arrows flowing left to right, with a Repeat arrow looping back from Amplify to Brainstorm.">
+<img src="../images/conversation-loop.png" class="img-fluid figure-img" alt="Four stages: Brainstorm, Ideate, Iterate, Amplify. A feedback arrow allows a return to an earlier stage when needed.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-conversation-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5.1: The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Repeat.
+Figure&nbsp;6.1: The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Repeat.
 </figcaption>
 </figure>
 </div>
-<p>Four stages. One feedback arc. Most good work passes through the loop more than once. That is the whole picture. Now let’s walk through it.</p>
+<p>The labels are this book’s organising vocabulary. Their value is whether they help you improve and check a real piece of work.</p>
+<section id="brainstorm-define-your-question" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="brainstorm-define-your-question"><span class="header-section-number">6.1</span> Brainstorm: define your question</h2>
+<p>Begin with the purpose rather than only your attempted fix. “How do I make this spreadsheet sort by colour?” may conceal a more useful question: “How can my team see which tasks are overdue?”</p>
+<p>A model may suggest another framing, but it cannot be relied on to discover a purpose you have not supplied. Write what the work is for, who will use it, and what constraint makes the obvious answer inadequate.</p>
+<p>An uncertain starting point is acceptable. “I need to fit a community workshop into a short room booking, but I have not checked the capacity” exposes something useful to investigate. It does not pretend the problem is already solved.</p>
+</section>
+<section id="ideate-explore-possibilities" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="ideate-explore-possibilities"><span class="header-section-number">6.2</span> Ideate: explore possibilities</h2>
+<p>Ask for alternatives when you need them. For the workshop, these might be smaller groups, shorter sessions, or a different booking. Keep them as proposals until you check them against the actual constraints.</p>
+<p>More alternatives are not necessarily better. Two meaningfully different options can be more useful than ten variations on an impossible plan. If an option assumes a different budget or permission, label that dependency.</p>
+<p>Your contribution is to notice which alternatives deserve investigation and which do not fit. You may find that the first feasible option is sufficient; novelty is not a requirement.</p>
+</section>
+<section id="iterate-identify-the-defect" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="iterate-identify-the-defect"><span class="header-section-number">6.3</span> Iterate: identify the defect</h2>
+<p>A useful correction names a problem:</p>
 <blockquote class="blockquote">
-<p>A good conversation with AI does not end with a better output. It ends with a better question.</p>
+<p>“That plan assumes we have six months. We have six weeks.”</p>
+<p>“You counted participants but omitted the facilitators from the room limit.”</p>
+<p>“The source says to check telemetry; it does not confirm congestion.”</p>
 </blockquote>
-<section id="brainstorm-define-your-question" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="brainstorm-define-your-question"><span class="header-section-number">5.1</span> Brainstorm: Define Your Question</h2>
-<p>You arrive with a question, a problem, or a half-formed idea. Not a task to outsource. Not a prompt engineered to extract a finished deliverable in one shot. You bring something you are genuinely thinking about.</p>
-<p>This matters more than it sounds. The quality of what comes out of the loop is bounded by what you bring into it. A vague “write me a strategy document” produces vague strategy. A specific “I’m stuck on how to position this product for buyers who already use a competitor” gives the conversation something to grip.</p>
-<p>You do not need a polished brief. You need a real starting point: a question worth exploring.</p>
-<p>Watch for a common trap: arriving with your attempted solution instead of your actual problem. Someone asks the AI “how do I make this spreadsheet sort by colour?” when their real question is “how do I show my team which tasks are overdue?” The AI will helpfully solve the spreadsheet problem. But the spreadsheet was never the point. A chart, a dashboard, or a simple filtered list might have been a better answer to the question they never asked.</p>
-<p>This happens constantly. You get stuck, you start down a path, and by the time you reach for AI you have already framed the problem as your solution. The AI cannot know you are asking the wrong question. It will answer the one you gave it.</p>
-<p>The fix is simple. Before you prompt, ask yourself: am I describing my problem, or am I describing my attempted fix? If it is the fix, step back one level. State the problem. Let the conversation find the solution.</p>
+<p>A correction can improve the next response, but it may also introduce an error. Compare the revision against the original brief and the supporting evidence. Do not substitute repeated reassurance for checking.</p>
+<p>Use VET, introduced after Staying Critical, when a consequential claim needs verification, your own explanation, and a relevant test. You do not need to learn the whole framework before beginning; for now, identify what would make the proposed answer fail.</p>
 </section>
-<section id="ideate-explore-possibilities" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="ideate-explore-possibilities"><span class="header-section-number">5.2</span> Ideate: Explore Possibilities</h2>
-<p>Brainstorm gave you a clear question. Ideate is where you and the AI go wide. This stage is generative and divergent. You are not looking for the answer. You are looking for more angles, adjacent ideas, framings you had not considered.</p>
-<p>Ask for alternatives. Ask for the version that would make your sceptical colleague pause. Ask what you might be missing. The AI’s breadth across domains is genuinely useful here, not because it knows your context better than you do, but because it can surface patterns and connections faster than you can scan for them alone.</p>
-<p>The temptation is to stop here, take the first interesting output, and move on. Resist that. Ideation is cheap. The next stage is where value gets made.</p>
+<section id="amplify-produce-an-owned-result" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="amplify-produce-an-owned-result"><span class="header-section-number">6.4</span> Amplify: produce an owned result</h2>
+<p>Select, edit, and integrate the useful material. Keep the qualifications that matter, even when removing them would make the result sound more decisive.</p>
+<p>Ownership is not a question of whether the prose sounds human. It means you can explain the important choices, identify the supporting evidence, and say what remains unresolved. Another person’s approval may still be needed before the result is used.</p>
+<p>For the workshop, the final note should contain the checked group sizes and timetable. It should not invent confirmation of an arrival arrangement that no organiser has approved.</p>
 </section>
-<section id="iterate-push-back-and-refine" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="iterate-push-back-and-refine"><span class="header-section-number">5.3</span> Iterate: Push Back and Refine</h2>
-<p>This is where conversation happens and where delegation is most tempting. You push back. You refine. You redirect.</p>
-<p>“That second option is closer, but it assumes we have six months. We have six weeks.”</p>
-<p>“The tone is wrong. Less corporate, more direct.”</p>
-<p>“You’re solving the wrong problem. The real constraint is budget, not timeline.”</p>
-<p>Every one of those responses sharpens the output. Every one requires your judgement. If you skip this stage, you are copying, not thinking. If you delegate here, you get something that is fluent, plausible, and not quite right in ways you will only notice later.</p>
-<p>Iteration is work. It is also the stage that makes the output yours. Stay in it longer than feels necessary.</p>
+<section id="repeator-stop" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="repeator-stop"><span class="header-section-number">6.5</span> Repeat—or stop</h2>
+<p>Return to an earlier stage when a check reveals a problem. A missing source may send you back to investigation; an impossible constraint may require a different option or a smaller scope.</p>
+<p>Set a completion test. Stop when the agreed task is satisfied and consequential checks are complete, or when further progress requires evidence, permission, or expertise you do not have. “The AI has more suggestions” is not a reason to continue indefinitely.</p>
+<p>Keep a short record of the change that mattered. This makes progress visible without requiring a transcript of every exchange.</p>
 </section>
-<section id="amplify-make-it-yours" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="amplify-make-it-yours"><span class="header-section-number">5.4</span> Amplify: Make It Yours</h2>
-<p>You take the best of what emerged and make it yours. You edit, restructure, combine, cut. You bring it into your voice, your context, your standards.</p>
-<p>Amplification is not “copy and paste with minor tweaks.” It is the act of owning the output. You know things the AI does not: your audience, your constraints, the political dynamics of the room you will present in, the history behind the decision. This is where all of that knowledge gets folded in.</p>
-<p>The result should be something you would put your name on without hesitation. If it is not, you are not done.</p>
+<section id="choose-support-you-can-evaluate" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="choose-support-you-can-evaluate"><span class="header-section-number">6.6</span> Choose support you can evaluate</h2>
+<p>The method does not require the most expensive account. The printed examples and independent activities work without any model. If you use one, choose an approved tool suitable for the task and your access needs.</p>
+<p>Do not infer that a smaller model is educationally better because it makes more mistakes. Correcting errors can involve useful practice, but it can also consume time or teach a false idea that the reader cannot detect. A fluent, capable model still needs checking.</p>
+<p>The same caution applies to scaffolding. Supply the constraints and evidence the task needs, then test the result. <a href="is-prompting-dead.html" class="quarto-xref"><span>Chapter 9</span></a> provides a briefing checklist; local versus hosted is not a reliable rule for deciding how much detail to provide.</p>
 </section>
-<section id="repeat-go-around-again" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="repeat-go-around-again"><span class="header-section-number">5.5</span> Repeat: Go Around Again</h2>
-<p>Most good work loops more than once. The first pass through gives you a draft, a direction, a clearer version of your own thinking. The second pass sharpens it. The third might transform it entirely.</p>
-<p>Knowing when to re-enter the loop is a skill. Sometimes you amplify and realise the framing is wrong, so you loop back to brainstorm with a better question. Sometimes iteration reveals a gap, so you return to ideation. The loop is not linear. The arrows point forward, but the feedback arc is always available.</p>
-<p>The sign that you are done is not that the AI has stopped producing output. It is that your thinking has landed somewhere solid.</p>
-</section>
-<section id="you-do-not-need-the-best-model" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="you-do-not-need-the-best-model"><span class="header-section-number">5.6</span> You Do Not Need the Best Model</h2>
-<p>There is a common assumption that better AI models produce better results. For lookup tasks, where you need a precise fact, an accurate citation, or a verified figure, this is largely true. A more capable model is more likely to get it right.</p>
-<p>But most of the work this book describes is not lookup work. It is thinking work: analysing a situation, weighing options, constructing an argument, identifying what you have missed. For thinking work, you do not need the AI to be right. You need it to be generative enough to be worth arguing with.</p>
-<p>A smaller model that surfaces three plausible but imperfect framings of a problem, challenged and refined through genuine conversation, may produce better thinking than a frontier model (the most advanced available) that delivers one polished answer you accept without question.</p>
-<p>This is not a hypothetical. It is what the conversation loop is designed to do. When you iterate, push back, and refine, you are compensating for whatever the model gets wrong. The friction of correcting an imperfect response is not a cost. It is the mechanism through which your own thinking sharpens. A “worse” model that forces you to think harder may serve you better than a “better” model that makes acceptance too easy.</p>
-<p>There is a real danger on the other end. The more fluent and confident a model sounds, the harder its errors are to detect. A frontier model that gets something subtly wrong can leave you holding a plausible, well-written, and incorrect conclusion that you absorbed without the friction that would have revealed its flaws. Uncritical acceptance of a capable model’s output can produce worse outcomes than no AI assistance at all.</p>
-<p>The practical implication is freeing. You do not need the most expensive subscription to get value from this approach. Any general-purpose language model, free or paid, is sufficient for the kind of conversational work described in this book. What matters is not which model you use. It is whether you stay in the conversation.</p>
-</section>
-<section id="same-method-different-calibration" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="same-method-different-calibration"><span class="header-section-number">5.7</span> Same Method, Different Calibration</h2>
-<p>The methodology in this book works across the full range of models you will encounter, but the texture of the conversation shifts depending on what you are using. The loop is constant. The amount of scaffolding you bring to it is not.</p>
-<p>On a smaller or local model — anything you run yourself, anything below the current frontier — heavier scaffolding pays off. A clear role, an explicit task, well-chosen context, and a specified format are doing real work. Without them, the model guesses, and its guesses come from a smaller distribution of patterns. Structure compensates for capability.</p>
-<p>On a current frontier model running inside a thick product harness (<a href="what-are-llms.html" class="quarto-xref"><span>Chapter 2</span></a>), some of that scaffolding becomes optional. The model’s defaults are strong, and the harness has already done part of the role-setting before your prompt arrives. A sharply specified task with the right context often outperforms an elaborate persona invocation.</p>
-<p>The temptation is to read this as “RTCF is for beginners; frontier users can skip it.” That misses the point. RTCF (<a href="rtcf.html" class="quarto-xref"><span>Chapter 8</span></a>) is a thinking discipline as much as a prompting one. Asking <em>who would the right expert be, what exactly am I asking for, what do they need to know, how should the answer be shaped</em> sharpens your own thinking before the model touches it. That is valuable whether or not the model still needs all four to perform well.</p>
-<p>The practical rule: scaffold heavily when the model is small or the stakes are high. Scaffold lightly when the model is capable and the harness is doing work for you. The model class changes how you open the conversation. It does not change whether you should have one.</p>
-</section>
-<section id="why-conversation-scales" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="why-conversation-scales"><span class="header-section-number">5.8</span> Why Conversation Scales</h2>
-<p>There is a reason we listen to podcasts, watch interviews, and find panel discussions more engaging than monologues. Conversation reveals things that prepared statements do not. When someone pushes back, follows up, or asks “why?”, the thinking deepens. Ideas get tested in real time. Gaps surface. What survives the exchange is stronger than what either party brought in alone.</p>
-<p>Universities have known this for centuries. The viva, an oral examination where a student defends their work in conversation with an examiner, remains the gold standard for assessing genuine understanding. You cannot bluff a viva. The examiner asks you to explain your reasoning, challenges your assumptions, changes the variables, and watches whether your understanding holds up or falls apart. Written exams test recall. Vivas test comprehension. The difference is the conversation.</p>
-<p>This is why universities are returning to vivas and oral assessments in the age of AI. When a student can submit AI-generated written work that is indistinguishable from their own, the conversation becomes the one assessment that still reveals whether real learning occurred. The examiner is the human in the loop.</p>
-<p>The conversation loop in this book works on exactly the same principle. When you iterate with AI, pushing back, asking “why?”, testing edge cases, and demanding explanations, you are conducting a viva on the AI’s output. You are the examiner. The AI’s responses reveal whether the reasoning holds up or falls apart under scrutiny, and the process of examining it deepens your own understanding.</p>
-<p>The difference is that vivas do not scale. One examiner, one student, thirty minutes. But conversations with AI scale infinitely. You get the benefits of viva-style engagement (the pushback, the “explain that differently,” the “what if I changed this constraint?”) any time you want, on any topic, without needing another human to be available.</p>
-<section id="amplify-your-thinking-not-the-hallucinations" class="level3" data-number="5.8.1">
-<h3 data-number="5.8.1" class="anchored" data-anchor-id="amplify-your-thinking-not-the-hallucinations"><span class="header-section-number">5.8.1</span> Amplify Your Thinking, Not the Hallucinations</h3>
-<p>There is an alternative to conversation, and it is increasingly popular. Instead of pushing back and iterating, you chain tasks together: “Do this. Good. Now using that, do this. Good. Now using that, do this.” Each step builds on the last. No pushback, no verification, no course correction. Just a sequence of delegated tasks.</p>
-<p>This is the most dangerous way to use AI.</p>
-<p>Every AI response carries some probability of error: a misunderstood nuance, a fabricated detail, a plausible-sounding conclusion that is subtly wrong. In a conversation, you catch these errors because you are engaged. You notice when something does not match your experience. You push back. You correct course.</p>
-<p>But in an unchecked chain, errors compound. The hallucination in step two becomes an assumption in step three, a foundation in step four, and a confident conclusion in step six. Each step builds faithfully on what came before, and what came before was wrong. The AI is not drifting randomly. It is drifting confidently, constructing an increasingly detailed edifice on a flawed foundation. By the end, you have something that looks thorough, reads well, and is built on sand.</p>
-<p>The conversation loop prevents this. Every iteration is a checkpoint. Every pushback is a correction. Every time you say “that doesn’t seem right” or “explain why you chose that approach,” you are keeping the work anchored to reality. You are not just improving the output. You are preventing the accumulation of errors that would make the output useless.</p>
-<p>This is what it means to be the human in the loop. Not a rubber stamp at the end of an automated process. Not a supervisor who checks the final output and hopes for the best. An active participant in every stage, whose judgement, expertise, and critical eye are woven into the work as it develops.</p>
-<p>The choice is straightforward. You can chain tasks and amplify the hallucinations. Or you can stay in the conversation and amplify your thinking. The process looks similar from the outside; both involve multiple exchanges with AI. The difference is whether you are thinking or just clicking.</p>
-</section>
-<section id="sec-two-chat-workflow" class="level3" data-number="5.8.2">
-<h3 data-number="5.8.2" class="anchored" data-anchor-id="sec-two-chat-workflow"><span class="header-section-number">5.8.2</span> The Two-Chat Workflow</h3>
-<p>One practical way to build this discipline into your workflow is to separate thinking from building entirely. Instead of doing everything in one session, run two.</p>
-<p><strong>Session 1: The Thinking Chat.</strong> This is where you explore. Ask for angles. Challenge assumptions. Clarify what your actual question is. Push back, change direction, follow tangents. This session is messy by design. It is disposable. Its purpose is not to produce anything; it is to sharpen your thinking until you know what you actually need.</p>
-<p><strong>Session 2: The Build Chat.</strong> This is where you produce. You arrive with a clear brief, not a vague question, because you have already done the thinking. The output is better because the input is better.</p>
-<p>The critical step is what happens between the two sessions. You do not copy and paste everything from session one into session two. You read through what emerged, decide what matters, discard what does not, and write a focused brief for the build session. This curation, deciding what crosses from thinking to building, is itself an act of thinking. It forces you to distil, to commit, to separate the insight from the noise. The transfer is where your judgement lives.</p>
-<p>Neither session has the full picture. The thinking chat does not know what you will build. The build chat does not know what you explored and discarded. Only you hold both. That is what makes you essential: not as a fact-checker at the end of an automated process, but as the one who holds the context, makes the judgement calls, and connects the dots.</p>
-<p>This is what “human in the loop” actually means. Not reviewing AI’s work after it is done. Staying in the conversation at every stage, and being the bridge between the stages that the AI cannot see.</p>
-<p>There is a connection worth making explicit. The average-versus-precise, small-versus-large framework from <a href="what-are-llms.html" class="quarto-xref"><span>Chapter 2</span></a> describes where a task sits. The two-chat workflow describes what to do about it. Tasks in the sweet spot (small, average) can often be handled in a single prompt. Everything else benefits from splitting thinking from building.</p>
-<p>But tasks do not stay in one quadrant. A project that starts in the danger zone (large, precise) gets decomposed during the thinking chat into components that each sit in different quadrants. The assessment redesign that felt overwhelming as a single task becomes a set of manageable pieces: some in the sweet spot, some needing verification, each with its own appropriate level of trust. The exploratory session is where you map the territory. The build session is where you execute with that map in hand. The two frameworks are the same insight from different angles.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Try this (5 minutes)">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Try this (5 minutes)
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Next time you use AI for something substantial, open two sessions. In the first, explore your question: ask for angles, push back, refine your thinking. Do not worry about producing anything clean. Then take what you have landed on and use it to brief the second session for the actual output. Notice two things: how much better the result is when you have done the thinking first, and how much clearer your own thinking became in the act of deciding what to carry across.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="The loop at a glance">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>The loop at a glance
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Brainstorm</strong> – define your real question, not your attempted solution. <strong>Ideate</strong> – go wide, explore angles you had not considered. <strong>Iterate</strong> – push back, refine, redirect. <strong>Amplify</strong> – make the result yours. <strong>Repeat</strong> – loop again when your thinking has not landed.</p>
-</div>
-</div>
+<section id="check-the-handover-not-just-the-final-draft" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="check-the-handover-not-just-the-final-draft"><span class="header-section-number">6.7</span> Check the handover, not just the final draft</h2>
+<p>In an unchecked sequence, an early error can become a later assumption. Suppose a planning step omits facilitators from capacity, the next step chooses group sizes from that number, and the final step drafts an invitation. Polishing the invitation does not repair the capacity error.</p>
+<p>Place a check where the dependency is introduced. Recheck any downstream result affected by a correction. This is how conversation and chaining can work together: chaining organises the stages, while explicit checks determine what may pass between them.</p>
+<p>A person participating at every stage can still miss an error. The safeguard is the quality of the evidence and test, not the number of human acknowledgements.</p>
+<section id="sec-two-chat-workflow" class="level3" data-number="6.7.1">
+<h3 data-number="6.7.1" class="anchored" data-anchor-id="sec-two-chat-workflow"><span class="header-section-number">6.7.1</span> The two-chat workflow</h3>
+<p>For a messy task, you may find it useful to separate exploration from production.</p>
+<p><strong>Thinking session:</strong> examine the purpose, alternatives, constraints, and uncertainties. Keep the decisions and relevant source references.</p>
+<p><strong>Build session:</strong> supply a concise brief describing the selected approach, evidence, required output, and acceptance checks. Exclude discarded assumptions unless they explain an important limit.</p>
+<p>The handover can be a note you write yourself. For example:</p>
+<blockquote class="blockquote">
+<p>Plan two seed-workshop groups within the supplied venue rules. Capacity includes both facilitators. Preserve the reset time and budget calculation. Arrival arrangements are still unconfirmed; do not draft an approved invitation.</p>
+</blockquote>
+<p>Before sending that brief, compare it with the original sources. Summarising can lose a qualification as easily as copying a whole conversation can bury it. A new chat does not make the content verified.</p>
+<p>Separate sessions are optional. A short task may need only one exchange, and some applications support explicit stages in one workspace. The useful element is a controlled handover, not the number of chat windows.</p>
+<section id="variant-hand-over-for-evaluation" class="level4" data-number="6.7.1.1">
+<h4 data-number="6.7.1.1" class="anchored" data-anchor-id="variant-hand-over-for-evaluation"><span class="header-section-number">6.7.1.1</span> Variant: hand over for evaluation</h4>
+<p>The same separation can protect a judgement rather than a production step. Explore a proposal in the first conversation, then consolidate it into a short, self-contained brief: the decision, audience, deadline or irreversibility, supplied evidence, constraints, and assumptions still unproven. Check that brief against the original sources. Open a fresh session, supply only the brief, and ask for the strongest objections, the evidence that would change them, and the conditions required for success.</p>
+<p>This removes pressure from the exploratory turns, including your own earlier enthusiasm and phrasing. It does not create a “zero-bias” room. Bias can survive inside the brief, the selected evidence, the question, and the model. Provider features with names such as temporary, private, or incognito chat also need checking in the current product guidance: they may limit saved history or personalisation, but the label alone does not establish what is retained, who can access it, or whether memories and connected tools are inactive. If the data is not approved for the service, a fresh chat is not a remedy.</p>
+<p>For a consequential evaluation, you can give the identical brief to a second approved model or a qualified human reviewer and compare which risks recur. Overlap is a prompt to investigate, not independent proof: models may share sources, training pressures, and every bias already present in the brief. Keep your own revision ledger from <a href="staying-critical.html" class="quarto-xref"><span>Chapter 7</span></a> as positions change.</p>
 </section>
 </section>
-<section id="the-output-worth-reading" class="level2" data-number="5.9">
-<h2 data-number="5.9" class="anchored" data-anchor-id="the-output-worth-reading"><span class="header-section-number">5.9</span> The Output Worth Reading</h2>
-<p>When you ask AI to produce something — a draft, a plan, an analysis, a piece of code — there are two outputs in front of you. There is the artefact: the thing you asked for. And there is the natural language around it: the model’s framing, its reasoning, its caveats, its assumptions about what you actually want.</p>
-<p>Most people read the artefact and skim the language. That is exactly backwards.</p>
-<p>The artefact is downstream. It is what the model produced given its understanding of your request. If the understanding is wrong, the artefact will be wrong in ways the artefact alone will not reveal. You will get something that looks right, that you cannot quite explain, and that subtly misses what you actually needed. The natural language is where the model tells you what understanding it arrived at. That is where you catch misalignment, before it hardens into a deliverable you then have to take apart.</p>
-<p>The implication is concrete: read the words. If the model’s explanation of what it did does not match what you wanted, the artefact is wrong even if it looks correct. Steer the conversation by responding to the words, not just by revising the artefact. If the framing is verbose, tell it to be brief. If it is making assumptions you do not share, name them. If it is wrong, do not just delete the output — explain why it is wrong, and let the next attempt be informed by a shared understanding rather than a fresh start.</p>
-<p>This holds whether you have deep expertise or none at all. The expert uses the conversation to direct: here is the constraint, here is what you missed, this is why the obvious approach is wrong. The newcomer uses it to understand: explain that, break this down, what would happen if. Both are reading the words. Both are using the natural language as the place where alignment happens. The artefact is what arrives at the end. It is not what you should be watching most closely along the way.</p>
 </section>
-<section id="why-your-existing-skills-already-transfer" class="level2" data-number="5.10">
-<h2 data-number="5.10" class="anchored" data-anchor-id="why-your-existing-skills-already-transfer"><span class="header-section-number">5.10</span> Why Your Existing Skills Already Transfer</h2>
-<p>You might have noticed something familiar about the techniques in this book. Breaking a project into milestones. Writing a clear brief. Showing your working. Checking your answers. These are not new skills invented for AI. They are strategies humans have used to manage complexity for decades, in classrooms, in boardrooms, in software teams.</p>
-<p>The reason they work with AI is not a coincidence. Large language models learned from the output of human cognition: millions of documents, textbooks, working papers, and problem solutions produced by people using exactly these strategies. When you tell a student “show your working” and their performance improves, then tell an AI “think step by step” and its performance also improves, you are activating the same underlying pattern. The model internalised structured human reasoning during training, and your prompt activates it.</p>
-<p>This means you already know more about effective AI interaction than you think.</p>
-<table class="table-striped caption-top table">
-<caption>Cognitive strategies transfer from human domains to AI interaction because the model learned from the output of those same strategies.</caption>
+<section id="read-the-explanation-and-inspect-the-artefact" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="read-the-explanation-and-inspect-the-artefact"><span class="header-section-number">6.8</span> Read the explanation and inspect the artefact</h2>
+<p>A task summary can reveal that the model is solving the wrong problem. Read it, but also examine the actual result. Either can contradict the other.</p>
+<p>If an explanation says the plan fits ninety minutes, add the durations. If it says every claim has a source, open the passages. An explanation is an output to test, not direct access to internal reasoning.</p>
+<p>For a newcomer, ask for a smaller example or an unfamiliar term to be explained. Then apply the explanation to a changed example. If you cannot evaluate a consequential answer, seek suitable expertise rather than accepting a more elaborate explanation.</p>
+</section>
+<section id="familiar-practices-adapted-carefully" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="familiar-practices-adapted-carefully"><span class="header-section-number">6.9</span> Familiar practices, adapted carefully</h2>
+<p>Several useful habits already have counterparts outside AI work:</p>
+<table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Human Domain</th>
-<th>Human Strategy</th>
-<th>AI Equivalent</th>
+<th>Familiar practice</th>
+<th>Use in this workflow</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Exam technique</td>
-<td>“Show your working”</td>
-<td>Chain-of-thought prompting (asking AI to reason step by step)</td>
+<td>A written brief</td>
+<td>State purpose, constraints, and expected result</td>
 </tr>
 <tr class="even">
-<td>Exam technique</td>
-<td>“Check your answers”</td>
-<td>Self-verification prompts (asking AI to review its own output)</td>
-</tr>
-<tr class="odd">
-<td>Management</td>
-<td>Written brief with clear objectives</td>
-<td>System prompts (initial instructions that set the AI’s role and goal)</td>
-</tr>
-<tr class="even">
-<td>Management</td>
-<td>Breaking projects into milestones</td>
-<td>Task decomposition / prompt chaining</td>
-</tr>
-<tr class="odd">
-<td>Teaching</td>
 <td>Worked examples</td>
-<td>Few-shot prompting (giving the AI examples of what you want)</td>
+<td>Show the kind of response needed and its limits</td>
+</tr>
+<tr class="odd">
+<td>Milestones</td>
+<td>Separate dependent stages and check the handovers</td>
 </tr>
 <tr class="even">
-<td>Teaching</td>
-<td>Rubrics and marking criteria</td>
-<td>Evaluation criteria in prompts</td>
+<td>A rubric</td>
+<td>Set observable acceptance criteria before reviewing</td>
+</tr>
+<tr class="odd">
+<td>Checking calculations</td>
+<td>Recompute from the supplied inputs</td>
+</tr>
+<tr class="even">
+<td>A follow-up question</td>
+<td>Test whether a claim survives a changed assumption</td>
 </tr>
 </tbody>
 </table>
-<p>The transfer works for a straightforward reason. Human cognition and AI inference face structurally similar challenges: limited working context, sensitivity to how a problem is framed, and difficulty with multi-step reasoning. The strategies humans developed to overcome those challenges (breaking problems into steps, making thinking explicit, providing clear criteria) address the same bottlenecks in both cases. Natural language is the shared medium, and scaffolding strategies are properties of the medium as much as the agent.</p>
-<p>This has a practical implication that matters. You do not need to learn a new discipline called “prompt engineering” from scratch. You need to recognise which of your existing professional and cognitive strategies apply, then translate them into the conversation. A project manager who writes good briefs already knows how to write good prompts. A teacher who designs clear rubrics already knows how to set evaluation criteria. A researcher who breaks a study into phases already knows how to chain prompts.</p>
-<p>The conversation loop works because it maps onto something you already do: think carefully, get feedback, refine, and repeat. The AI is a new interlocutor, but the shape of good thinking has not changed.</p>
+<p>These are practical analogies. They do not establish that human learning and model inference have the same mechanism. Research on particular prompting methods can inform experiments, but a model’s self-critique is not an independent source. See <a href="../appendices/c-further-reading.html" class="quarto-xref"><span>Appendix C</span></a> for the evidence and its scope.</p>
 </section>
-<section id="the-two-things-to-remember" class="level2" data-number="5.11">
-<h2 data-number="5.11" class="anchored" data-anchor-id="the-two-things-to-remember"><span class="header-section-number">5.11</span> The Two Things to Remember</h2>
-<p>The loop works because of a simple relationship. You bring expertise, context, and judgement. The AI brings breadth, speed, and tireless availability. Neither is sufficient alone.</p>
-<p><em>Your expertise + AI’s breadth = amplified thinking.</em></p>
-<p><em>The bottleneck is your thinking, not the model.</em></p>
-<p>A better model will not fix a lazy prompt. A faster response will not help if you skip iteration. The constraint on quality is always your willingness to stay in the conversation, to push back, to think harder, to loop again.</p>
-<p>Your expertise + AI’s breadth = amplified thinking. The bottleneck is your thinking, not the model.</p>
+<section id="guided-practice-find-the-changed-assumption" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="guided-practice-find-the-changed-assumption"><span class="header-section-number">6.10</span> Guided practice: find the changed assumption</h2>
+<p><strong>Time:</strong> 15 minutes. <strong>Input:</strong> a fictional requirement: “The room holds twelve people, including two facilitators.” A draft plan says: “Invite twelve participants.”</p>
+<p>Write the smallest useful correction. Then check this revision: “Invite ten participants and ask one facilitator to work outside.” Does it preserve the requirement that both facilitators take part in the room? What further source or clarification is needed?</p>
+<p>For the complete workshop case, the volunteer agreement explicitly requires two facilitators for each session. Ten participants with both facilitators fits; moving a facilitator outside is not an authorised repair. Without that agreement, the original short requirement alone leaves part of the staffing arrangement unspecified.</p>
+<p><strong>Artefact:</strong> the original claim, your correction, and a note separating supplied facts from assumptions. <strong>Success:</strong> count everyone in the room, avoid silently changing the task, and name the missing information. This practice needs no AI account.</p>
+<p>The full case in <a href="conversations-across-disciplines.html" class="quarto-xref"><span>Chapter 13</span></a> carries these checks through timing, cost, and a final communication. Keep your own learning record in the same form: what changed, why, and what evidence supports it.</p>
+</section>
+<section id="take-it-to-the-ai" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="take-it-to-the-ai"><span class="header-section-number">6.11</span> Take it to the AI</h2>
+<p><strong>Where to start.</strong> Three questions worth arguing about rather than looking up:</p>
+<ol type="1">
+<li>Take a prompt you wrote recently and ask the AI whether it describes your <em>problem</em> or your <em>attempted fix</em>. Check whether the restatement preserves your actual purpose.</li>
+<li>Run the same question through a frontier model and a small local one. Keep the task and criteria fixed. Compare useful contributions, failures, and checking effort; do not assume the cheaper or more difficult interaction teaches more.</li>
+<li>Before it answers anything, ask it to read back what it understood your request to be. A mismatch may become visible there. Check the actual artefact too.</li>
+</ol>
+<p><strong>Keywords to steer with.</strong> brainstorm, ideate, iterate, amplify, repeat · problem versus attempted fix · pushback · the two-chat workflow · checked handovers · unchecked chaining · explanation and artefact · completion criteria</p>
+<p><strong>A starting prompt.</strong></p>
+<blockquote class="blockquote">
+<p><strong>Role:</strong> You are a facilitator who runs thinking sessions and never lets people jump to solutions.</p>
+<p><strong>Task:</strong> Interrogate my problem statement until you are satisfied I am describing the problem rather than my attempted fix. Do not offer solutions.</p>
+<p><strong>Context:</strong> I have read a chapter on the conversation loop, and on the trap of arriving with a solution disguised as a question. My problem, as I currently frame it, is [state it]. Ask one question at a time and wait for my answer.</p>
+<p><strong>Format:</strong> One question per turn. When you are satisfied, restate my problem in the form you think I should have brought, and tell me exactly what changed between my version and yours.</p>
+</blockquote>
 
 
 </section>
@@ -1134,13 +1099,13 @@ Figure&nbsp;5.1: The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify, Re
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/does-ai-make-us-dumber.html" class="pagination-link" aria-label="Does AI Make Us Dumber?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></span>
+      <a href="../chapters/ai-last.html" class="pagination-link" aria-label="AI Last">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/ai-last.html" class="pagination-link" aria-label="AI Last">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/staying-critical.html" class="pagination-link" aria-label="Staying Critical">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

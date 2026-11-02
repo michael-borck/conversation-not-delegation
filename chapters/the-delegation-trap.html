@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; The Delegation Trap – Conversation, Not Delegation</title>
+<title>1&nbsp; The Delegation Trap – Conversation, Not Delegation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/does-ai-make-us-dumber.html" rel="next">
-<link href="../chapters/what-are-llms.html" rel="prev">
+<link href="../chapters/what-is-ai.html" rel="next">
+<link href="../copyright.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,22 +478,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-default-setting" id="toc-the-default-setting" class="nav-link active" data-scroll-target="#the-default-setting"><span class="header-section-number">3.1</span> The Default Setting</a></li>
-  <li><a href="#two-mindsets" id="toc-two-mindsets" class="nav-link" data-scroll-target="#two-mindsets"><span class="header-section-number">3.2</span> Two Mindsets</a></li>
-  <li><a href="#the-judgment-problem" id="toc-the-judgment-problem" class="nav-link" data-scroll-target="#the-judgment-problem"><span class="header-section-number">3.3</span> The Judgment Problem</a></li>
-  <li><a href="#process-over-product" id="toc-process-over-product" class="nav-link" data-scroll-target="#process-over-product"><span class="header-section-number">3.4</span> Process Over Product</a></li>
-  <li><a href="#the-comfortable-lie" id="toc-the-comfortable-lie" class="nav-link" data-scroll-target="#the-comfortable-lie"><span class="header-section-number">3.5</span> The Comfortable Lie</a></li>
-  <li><a href="#what-this-book-is-really-about" id="toc-what-this-book-is-really-about" class="nav-link" data-scroll-target="#what-this-book-is-really-about"><span class="header-section-number">3.6</span> What This Book Is Really About</a></li>
+  <li><a href="#the-result-you-cannot-explain" id="toc-the-result-you-cannot-explain" class="nav-link active" data-scroll-target="#the-result-you-cannot-explain"><span class="header-section-number">1.1</span> The result you cannot explain</a></li>
+  <li><a href="#two-ways-to-ask-for-help" id="toc-two-ways-to-ask-for-help" class="nav-link" data-scroll-target="#two-ways-to-ask-for-help"><span class="header-section-number">1.2</span> Two ways to ask for help</a></li>
+  <li><a href="#responsibility-stays-somewhere" id="toc-responsibility-stays-somewhere" class="nav-link" data-scroll-target="#responsibility-stays-somewhere"><span class="header-section-number">1.3</span> Responsibility stays somewhere</a></li>
+  <li><a href="#productivity-and-learning-are-different-outcomes" id="toc-productivity-and-learning-are-different-outcomes" class="nav-link" data-scroll-target="#productivity-and-learning-are-different-outcomes"><span class="header-section-number">1.4</span> Productivity and learning are different outcomes</a></li>
+  <li><a href="#decide-what-to-hand-over" id="toc-decide-what-to-hand-over" class="nav-link" data-scroll-target="#decide-what-to-hand-over"><span class="header-section-number">1.5</span> Decide what to hand over</a></li>
+  <li><a href="#begin-a-learning-record" id="toc-begin-a-learning-record" class="nav-link" data-scroll-target="#begin-a-learning-record"><span class="header-section-number">1.6</span> Begin a learning record</a></li>
+  <li><a href="#take-it-to-the-ai" id="toc-take-it-to-the-ai" class="nav-link" data-scroll-target="#take-it-to-the-ai"><span class="header-section-number">1.7</span> Take it to the AI</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-delegation-trap" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></h1>
+<h1 class="title"><span id="sec-delegation-trap" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></h1>
 </div>
 
 
@@ -507,23 +520,16 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>A single prompt gives you a single answer. A <strong>conversation</strong> gives you <strong>understanding</strong>.</p>
 </blockquote>
-<section id="the-default-setting" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="the-default-setting"><span class="header-section-number">3.1</span> The Default Setting</h2>
-<p>Most people, when they first sit down with an AI, ask it to do something for them.</p>
-<p>Write this email. summarise this article. Draft this report. Generate this code.</p>
-<p>This is natural. It is also a trap.</p>
-<p>Not because the outputs are bad. They are often good. Sometimes excellent. That is precisely what makes delegation so dangerous. When the output looks right, you stop thinking about whether it is right. You stop thinking altogether.</p>
-<p>Delegation feels productive. You hand off a task, you get a result, you move on to the next thing. Your to-do list shrinks. Your throughput increases. And somewhere in the process, quietly, your capacity to do the work yourself begins to erode.</p>
-<p>This is the delegation trap: the more you outsource your thinking, the less you are able to think.</p>
+<section id="the-result-you-cannot-explain" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="the-result-you-cannot-explain"><span class="header-section-number">1.1</span> The result you cannot explain</h2>
+<p>Imagine taking a finished proposal into a meeting. The writing is clear, the recommendation is confident, and it took you minutes to produce. Then someone asks why you ruled out the cheaper option. You cannot answer without reopening the chat.</p>
+<p>The problem is not that a tool helped write the proposal. It is that you accepted a decision without acquiring the understanding needed to defend it. This book calls that the <strong>delegation trap</strong>.</p>
+<p>A fluent conversation can leave you in the same position. Ten follow-up prompts are no guarantee of learning. The useful distinction is what you can check, explain, and decide after the interaction.</p>
 </section>
-<section id="two-mindsets" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="two-mindsets"><span class="header-section-number">3.2</span> Two Mindsets</h2>
-<p>There are two fundamentally different ways to approach AI.</p>
-<p>The <strong>delegation mindset</strong> asks: “How do I get AI to do this for me?”</p>
-<p>The <strong>conversation mindset</strong> asks: “How do I use AI to think better with me?”</p>
-<p>These sound similar. They are not. They lead to completely different outcomes, and over time, they produce completely different people.</p>
-<table class="table-striped caption-top table">
-<caption>Delegation vs.&nbsp;Conversation: what you ask, what you get, what you lose.</caption>
+<section id="two-ways-to-ask-for-help" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="two-ways-to-ask-for-help"><span class="header-section-number">1.2</span> Two ways to ask for help</h2>
+<p>Compare these requests. Neither column guarantees a particular outcome; the second makes your reasoning more visible.</p>
+<table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
 <col style="width: 33%">
@@ -531,105 +537,57 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th>Delegation Mindset</th>
-<th>Conversation Mindset</th>
+<th>Task</th>
+<th>Output request</th>
+<th>Request that invites scrutiny</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>What you ask</strong></td>
-<td>“Write me a marketing plan.”</td>
-<td>“What are the weaknesses in my marketing plan?”</td>
+<td>Marketing plan</td>
+<td>“Write a launch plan.”</td>
+<td>“Here is my proposed audience and budget. Which assumption most threatens the plan?”</td>
 </tr>
 <tr class="even">
-<td><strong>What you get</strong></td>
-<td>A finished artifact</td>
-<td>A sharper understanding of your own strategy</td>
+<td>Reading a paper</td>
+<td>“Summarise this paper.”</td>
+<td>“Compare my summary with the paper. Which claim did I overstate?”</td>
 </tr>
 <tr class="odd">
-<td><strong>What you lose</strong></td>
-<td>The thinking that would have made the plan yours</td>
-<td>Nothing. You gain capability you did not have before.</td>
-</tr>
-<tr class="even">
-<td><strong>What you ask</strong></td>
-<td>“summarise this research paper.”</td>
-<td>“What are the three strongest objections to this paper’s methodology?”</td>
-</tr>
-<tr class="odd">
-<td><strong>What you get</strong></td>
-<td>A paragraph you could have written in ten minutes</td>
-<td>A critical lens you might not have developed for years</td>
-</tr>
-<tr class="even">
-<td><strong>What you lose</strong></td>
-<td>The act of reading closely</td>
-<td>Nothing. You read more carefully, not less.</td>
-</tr>
-<tr class="odd">
-<td><strong>What you ask</strong></td>
-<td>“Generate a lesson plan for this topic.”</td>
-<td>“Here is my lesson plan. Where will students get stuck?”</td>
-</tr>
-<tr class="even">
-<td><strong>What you get</strong></td>
-<td>Something generic that fits no classroom</td>
-<td>Insight specific to your students, your context, your goals</td>
-</tr>
-<tr class="odd">
-<td><strong>What you lose</strong></td>
-<td>Your pedagogical judgment</td>
-<td>Nothing. Your judgment gets sharper.</td>
+<td>Community event</td>
+<td>“Plan the workshop.”</td>
+<td>“Check my timetable against room capacity, reset time, and budget. Mark anything you cannot establish.”</td>
 </tr>
 </tbody>
 </table>
-<p>The pattern is consistent. Delegation gets you an output. Conversation gets you understanding. And understanding compounds in ways that outputs never will.</p>
+<p>An output request may be entirely appropriate. A summary can make a difficult document accessible or help you decide whether to read it. A generated first draft can help someone who is unsure how to start. The question is whether the chosen help serves your purpose and leaves important checks with someone able to perform them.</p>
+<p>If your purpose is to learn, preserve opportunities to attempt, explain, and test. If your purpose is simply to reformat an already checked table, learning a new skill may not be the goal.</p>
 </section>
-<section id="the-judgment-problem" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="the-judgment-problem"><span class="header-section-number">3.3</span> The Judgment Problem</h2>
-<p>Here is the line you need to sit with:</p>
-<p><strong>Judgement cannot be delegated to a system that has no stake in the outcome.</strong></p>
-<p>Judgement is the everyday name for what philosophers call agency: your capacity to choose, weigh, and stand behind the outcome. To delegate one is to give up the other. The two words name the same thing from different rooms.</p>
-<p>An AI has processed more text than any human being will ever encounter. It can retrieve, recombine, and rephrase with extraordinary fluency. But it has never made a decision under pressure. It has never felt the weight of getting something wrong. It has never had a stake in the outcome.</p>
-<p>This matters because judgement is not pattern matching. Judgement is knowing which pattern applies here, now, given everything you know about this situation that cannot be written down. It is the product of experience, consequence, and reflection. It cannot be downloaded. It cannot be generated. It can only be built.</p>
-<p>When you delegate a task to AI and accept the result without interrogation, you are not exercising judgement. You are abdicating it. And every time you abdicate it, the muscle weakens.</p>
-<p>When you converse with AI, pushing back on its suggestions, asking it to defend its reasoning, using it to stress-test your own conclusions, you are exercising judgement. You are building the muscle, not letting it atrophy.</p>
+<section id="responsibility-stays-somewhere" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="responsibility-stays-somewhere"><span class="header-section-number">1.3</span> Responsibility stays somewhere</h2>
+<p>A model can propose a choice, score alternatives, or execute an authorised action. That does not settle who is accountable for the result. Decide who owns the decision, what they must inspect, and when another person’s expertise is needed.</p>
+<p>In the proposal example, you might ask the tool to list the alternatives it omitted. That list is a starting point for checking, not proof that it found them all. You still need the source prices, the client’s constraints, and a defensible comparison.</p>
+<p>Avoid treating a request for “reasoning” as access to the machine’s private workings. An explanation is another output. Check whether its claims and calculations support the recommendation.</p>
+<p>The practical standard is modest: can the responsible person give a defensible account of the decision using evidence outside the model’s assertion?</p>
 </section>
-<section id="process-over-product" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="process-over-product"><span class="header-section-number">3.4</span> Process Over Product</h2>
-<p>There is a seductive metric in the delegation world: output volume. How many blog posts did you produce? How many emails did you draft? How many reports did you generate?</p>
-<p>This metric is a mirage.</p>
-<p>The people who will thrive alongside AI are not the ones who produce the most. They are the ones who obsess over process.</p>
-<p>Process means asking: how did I arrive at this conclusion? What assumptions am I making? What have I not considered? What would change my mind?</p>
-<p>Product means asking: is it done yet?</p>
-<p>Those who obsess over process will always outperform those who collect outputs. Always. Because process builds capability, and capability is what you carry forward into every future problem. Outputs just sit in folders.</p>
-<p>Consider two professionals, both using AI daily.</p>
-<p>The first uses AI to generate deliverables. Reports, proposals, analyses. They are prolific. Their work is polished. Their clients are satisfied. But strip away the AI, and what remains? Someone who has practiced accepting, not thinking.</p>
-<p>The second uses AI to challenge their own reasoning. They draft something first, then ask the AI to find the holes. They use it to explore alternatives they had not considered. They argue with it. They are slower. Their output volume is lower. But every interaction has made them sharper. Strip away the AI, and what remains? Someone who is better at their job than they were six months ago.</p>
-<p>The first professional is dependent. The second is augmented.</p>
-<p>This is not a subtle distinction. It is the difference between using a tool and being used by one.</p>
+<section id="productivity-and-learning-are-different-outcomes" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="productivity-and-learning-are-different-outcomes"><span class="header-section-number">1.4</span> Productivity and learning are different outcomes</h2>
+<p>A finished deliverable matters. So do time, accessibility, quality, and the capability you need for later work. You do not have to pretend that output is worthless to care about learning.</p>
+<p>Keep these outcomes separate when comparing workflows:</p>
+<ul>
+<li>Did the task get completed to the required standard?</li>
+<li>How much time did drafting, checking, and correction actually take?</li>
+<li>Can you explain the important decisions?</li>
+<li>Can you apply the method to a new case with the support appropriate to that task?</li>
+</ul>
+<p>A fast draft followed by slow repair may not save time. A slower practice session may be worthwhile when you are learning. A trusted accessibility tool may remain useful indefinitely. None of those observations makes independence from every tool a moral test.</p>
+<p>Research does raise concerns about some kinds of reliance. It does not establish that every delegated task weakens a mental muscle or that conversation invariably improves skill. <a href="does-ai-make-us-dumber.html" class="quarto-xref"><span>Chapter 4</span></a> separates assisted performance from subsequent learning and discusses the evidence and its limits.</p>
 </section>
-<section id="the-comfortable-lie" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="the-comfortable-lie"><span class="header-section-number">3.5</span> The Comfortable Lie</h2>
-<p>There is a story people tell themselves: “I am saving time on the routine stuff so I can focus on the important stuff.”</p>
-<p>Sometimes this is true. Genuine cognitive offloading, where you hand off low-stakes mechanical tasks to free up attention for high-stakes creative ones, is real and valuable. We will discuss it properly in a later chapter.</p>
-<p>But be honest with yourself. How often is the “important stuff” just more delegation? How often does “saving time” mean “avoiding thought”?</p>
-<p>The comfortable lie is that delegation is efficiency. Sometimes it is. Often, it is avoidance dressed up as productivity.</p>
-<p>The test is simple: after using AI on a task, do you understand the problem better than you did before? If yes, you were conversing. If no, you were delegating. And if you cannot tell the difference, that should worry you.</p>
-<div class="callout callout-style-default callout-warning callout-titled" title="The delegation test">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>The delegation test
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>After using AI on a task, do you understand the problem better than before? If yes, you were conversing. If no, you were delegating. If you cannot tell the difference, that should worry you.</p>
-</div>
-</div>
+<section id="decide-what-to-hand-over" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="decide-what-to-hand-over"><span class="header-section-number">1.5</span> Decide what to hand over</h2>
+<p>Start with the intended use and consequences. For checkable mechanical work, delegation may be sensible: use a calculator for arithmetic, or a deterministic conversion tool for a file format when available. Check the result in proportion to the risk.</p>
+<p>For unfamiliar or consequential work, identify the missing knowledge before accepting an answer. Conversation can help you frame questions for a qualified person; it cannot manufacture that person’s approval. Some tasks should stay out of an unapproved AI service entirely.</p>
+<p>The decision map in <a href="../appendices/b-quick-reference.html" class="quarto-xref"><span>Appendix B</span></a> brings these choices together. For now, name one check that would catch a plausible failure in your current task.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Try this (2 minutes)">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -640,20 +598,32 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Next time you use AI, do not accept the first response. Reply with “What did you assume?” or “What is the weakest part of this?” and see how the output improves. That second exchange is the conversation starting. The first response was just the opening.</p>
+<p>Take a recent output and mark one claim you could independently verify. Find its supporting source or calculation. If you cannot, record the gap rather than asking the model to reassure you.</p>
 </div>
 </div>
 </section>
-<section id="what-this-book-is-really-about" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="what-this-book-is-really-about"><span class="header-section-number">3.6</span> What This Book Is Really About</h2>
-<p>This is not a book about getting more from AI. It is a book about getting more from yourself, with AI as the catalyst.</p>
-<p>The goal is not to get AI to do your work. It is to become more capable yourself, with AI as your thinking partner.</p>
-<p>Every technique in the chapters that follow serves this principle. Not “how to get better outputs” but “how to think better in the process of working with AI.” The output is a byproduct. The thinking is the point.</p>
-<p>A clarification worth making: not all delegation is a trap. Asking AI to reformat a table, convert units, or fix punctuation is delegation, and it is fine. You are not losing capability you need to build. The trap is delegating the thinking: the analysis, the judgement, the decisions that are your actual job. The test is always the same: does this task require my expertise, or is it mechanical? Delegate the mechanical. Converse on everything else.</p>
-<p>If you remember nothing else from this chapter, remember the table. Look at which column you spend most of your time in. Then decide which column you want to live in.</p>
-<p>The delegation trap is comfortable. The conversation path is harder. But only one of them makes you better.</p>
-<p>Conversation amplifies your thinking. Delegation amplifies the hallucinations.</p>
-<p>Choose accordingly.</p>
+<section id="begin-a-learning-record" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="begin-a-learning-record"><span class="header-section-number">1.6</span> Begin a learning record</h2>
+<p>Choose an ordinary task you will carry through the book. Write its purpose, what you already think, and what would count as a useful result. Keep the first attempt; it gives you something concrete to compare with the final work.</p>
+<p>You can use the community workshop in <a href="conversations-across-disciplines.html" class="quarto-xref"><span>Chapter 13</span></a> if you do not have a suitable task. Its printed constraints and deliberately flawed draft let you practise without an AI account.</p>
+<p>The aim is an owned result: useful work whose important claims you can check and whose decisions you can explain. The following chapters give you ways to build that habit.</p>
+</section>
+<section id="take-it-to-the-ai" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="take-it-to-the-ai"><span class="header-section-number">1.7</span> Take it to the AI</h2>
+<p><strong>Where to start.</strong> Three questions worth arguing about rather than looking up:</p>
+<ol type="1">
+<li>Take a task you handed to AI this week and ask what you would have learned by doing it yourself. Then decide whether the trade was worth it. Sometimes it was.</li>
+<li>Ask it to rewrite three of your delegation-shaped prompts as conversation-shaped ones. The pattern usually becomes visible by the second.</li>
+<li>Ask where the line falls between mechanical delegation, which is fine, and delegating judgement, which is the trap, using examples from your actual job rather than generic ones.</li>
+</ol>
+<p><strong>Keywords to steer with.</strong> delegation versus conversation mindset · judgement · agency · process over product · output volume · cognitive offload · the delegation test · mechanical versus expert tasks</p>
+<p><strong>A starting prompt.</strong></p>
+<blockquote class="blockquote">
+<p><strong>Role:</strong> You are a learning adviser helping me choose appropriate support and checks.</p>
+<p><strong>Task:</strong> Sort the tasks I list into three piles: safe to delegate, worth conversing about, and the ones I should be doing entirely alone.</p>
+<p><strong>Context:</strong> I have read a chapter arguing that mechanical delegation is fine and delegating judgement is the trap, and that the test is whether a task requires my expertise. Here is what I handed to AI in the last week: [list it]. My role is [describe it].</p>
+<p><strong>Format:</strong> Three lists, one line of reasoning against each item. Then identify one task worth practising independently and one where delegation may have been appropriate. Mark assumptions instead of diagnosing skill loss.</p>
+</blockquote>
 
 
 </section>
@@ -1076,13 +1046,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/what-are-llms.html" class="pagination-link" aria-label="What Are Large Language Models?">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span>
+      <a href="../copyright.html" class="pagination-link" aria-label="Copyright">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Copyright</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/does-ai-make-us-dumber.html" class="pagination-link" aria-label="Does AI Make Us Dumber?">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Does AI Make Us Dumber?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/what-is-ai.html" class="pagination-link" aria-label="What Is AI?">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

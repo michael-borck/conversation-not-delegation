@@ -2,22 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Michael Borck">
-<meta name="dcterms.date" content="2026-05-28">
+<meta name="dcterms.date" content="2026-11-02">
 
 <title>Conversation, Not Delegation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -35,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapters/what-is-ai.html" rel="next">
+<link href="./copyright.html" rel="next">
 <link href="./favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -43,14 +46,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -81,6 +84,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -288,6 +292,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -299,20 +309,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -334,20 +344,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="./chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="./chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -363,32 +379,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="./chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -405,13 +415,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -445,12 +461,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -459,7 +469,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -474,6 +486,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#what-this-book-is-not" id="toc-what-this-book-is-not" class="nav-link" data-scroll-target="#what-this-book-is-not">What This Book Is Not</a></li>
   <li><a href="#if-you-are-feeling-uncertain" id="toc-if-you-are-feeling-uncertain" class="nav-link" data-scroll-target="#if-you-are-feeling-uncertain">If You Are Feeling Uncertain</a></li>
   <li><a href="#how-this-book-is-structured" id="toc-how-this-book-is-structured" class="nav-link" data-scroll-target="#how-this-book-is-structured">How This Book Is Structured</a></li>
+  <li><a href="#evidence-of-progress-part-by-part" id="toc-evidence-of-progress-part-by-part" class="nav-link" data-scroll-target="#evidence-of-progress-part-by-part">Evidence of progress, part by part</a></li>
   <li><a href="#how-to-read-this-book" id="toc-how-to-read-this-book" class="nav-link" data-scroll-target="#how-to-read-this-book">How to Read This Book</a></li>
   <li><a href="#conventions-used-in-this-book" id="toc-conventions-used-in-this-book" class="nav-link" data-scroll-target="#conventions-used-in-this-book">Conventions Used in This Book</a></li>
   <li><a href="#how-this-book-was-written" id="toc-how-this-book-was-written" class="nav-link" data-scroll-target="#how-this-book-was-written">How This Book Was Written</a></li>
@@ -481,7 +494,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-sibling-book" id="toc-the-sibling-book" class="nav-link" data-scroll-target="#the-sibling-book">The Sibling Book</a></li>
   </ul></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -507,7 +520,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 28, 2026</p>
+      <p class="date">November 2, 2026</p>
     </div>
   </div>
   
@@ -519,8 +532,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+
 <section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
+<h1 class="unnumbered">Preface</h1><p><img src="cover.png" title="Conversation, Not Delegation" class="quarto-cover-image nolightbox img-fluid"></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/comic-strip/00-conversation-not-delegation.png" class="img-fluid figure-img" alt="Comic strip: A delegator demands 'AI! Write my entire book! Give me the chapters NOW!' while a conversationalist says 'Wait! Let's converse first. What's the core message? Who's the audience?' Three panels later, the delegator has generic junk they don't understand. The conversationalist has something they actually thought through. Punchline: AI is a conversation, not delegation. Think partner, not servant."></p>
@@ -531,8 +545,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="why-this-book-exists">Why This Book Exists</h2>
 <p>I wrote this book because I kept watching smart people use AI badly.</p>
 <p>Not badly in a technical sense. They could find the tools, type the prompts, and get outputs. But they were delegating their thinking to a machine and accepting whatever came back. The AI was doing the work, and the human was doing the clicking. The outputs looked polished. The thinking behind them was hollow.</p>
-<p>There is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it.</p>
-<p>This book teaches you how.</p>
+<p>There is a different way. Instead of delegating to AI, you can converse with it. You can use it to brainstorm, to challenge your assumptions, to stress-test your reasoning, to explore angles you would not have considered alone. When you do this, the AI does not replace your thinking. It amplifies it. This book teaches you how.</p>
 <p>The academic literature has other names for what gets preserved when you do this. Philosophers and ethicists call it <strong>agency</strong>: your capacity to choose, weigh, and own the outcome. AI policy and system design call it <strong>human-in-the-loop</strong> (HIL): the principle that a person remains an active participant in decisions a system could otherwise automate. This book uses a different word, <strong>conversation</strong>, because the academic terms describe <em>what</em> you keep, and the conversational frame describes <em>how</em> you keep it. Same idea, three vocabularies. If you came in looking for guidance on human agency or HIL, you are in the right place. See <a href="appendices/b-quick-reference.html" class="quarto-xref"><span>Appendix B — Quick Reference Cards</span></a> for the terms map.</p>
 </section>
 <section id="who-this-book-is-for" class="level2">
@@ -545,7 +558,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="what-this-book-is-not">What This Book Is Not</h2>
 <p>This is not a guide to specific AI tools. It does not teach you how to use ChatGPT, Claude, or any particular platform. Interfaces change; the principles here do not. Where the book names a specific tool or describes how current models behave, those details will date faster than the surrounding ideas. The principles are the point.</p>
 <p>It is not a prompt engineering manual. You will learn to structure prompts well, but the book argues that the prompt is the beginning of the conversation, not the point of it. If you are looking for a library of copy-paste prompts to get finished outputs in one shot, this is the wrong book.</p>
-<p>A related warning: conversation, in this book, is not a string of zero-shot prompts run back-to-back. That is just delegation in volume. Real conversation requires pushback, course correction, and your judgement woven through each exchange. <a href="chapters/the-conversation-loop.html" class="quarto-xref"><span>5&nbsp; The Conversation Loop</span></a> draws the distinction carefully.</p>
+<p>A related warning: conversation, in this book, is not a string of zero-shot prompts run back-to-back. That is just delegation in volume. Real conversation requires pushback, course correction, and your judgement woven through each exchange. <a href="chapters/the-conversation-loop.html" class="quarto-xref"><span>6&nbsp; The Conversation Loop</span></a> draws the distinction carefully.</p>
 <p>It is not about AI apps that embed intelligence into other software, such as writing assistants, email autocompletes, and coding copilots. Those tools run on prompts someone else wrote. This book is about conversations you control yourself. Both have their place, but they are different activities.</p>
 <p>And it is not a book that tells you AI will solve your problems. It is a book that argues the opposite: you will solve your problems, and AI can help you think more clearly along the way.</p>
 </section>
@@ -555,7 +568,50 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="how-this-book-is-structured" class="level2">
 <h2 class="anchored" data-anchor-id="how-this-book-is-structured">How This Book Is Structured</h2>
-<p>Part 1 gives you enough understanding of AI and large language models to use them well. Part 2 establishes the principles that make AI conversations productive rather than passive. Part 3 gives you practical tools and techniques you can use immediately. Part 4 shows it all working together across disciplines, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.</p>
+<p>Part 1 begins with the delegation trap, then gives you enough understanding of AI and large language models to recognise why that trap is so tempting. Part 2 establishes the principles that make AI conversations productive rather than passive: think first, work in a conversation loop, stay critical, and verify what matters. Part 3 turns those principles into practical prompting methods and techniques you can use immediately. Part 4 shows the approach working across disciplines, offers an optional advanced chapter on autonomous loops, and closes with the argument that matters most: the goal is not to get AI to do more, but to become more capable yourself.</p>
+<p>By the end, you should be able to:</p>
+<ul>
+<li>decide whether a task calls for mechanical delegation, conversation, a more reliable non-AI tool, or no AI at all;</li>
+<li>frame a useful starting request without mistaking prompt structure for judgement;</li>
+<li>identify and redirect a plausible but unsuitable response;</li>
+<li>verify the claims that carry real consequences; and</li>
+<li>produce a record showing which parts came from the tool, which decisions were yours, and why you can defend the result.</li>
+</ul>
+</section>
+<section id="evidence-of-progress-part-by-part" class="level2">
+<h2 class="anchored" data-anchor-id="evidence-of-progress-part-by-part">Evidence of progress, part by part</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Part</th>
+<th>What you should be able to show</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Understanding the landscape</td>
+<td>Classify a task, distinguish a model from its surrounding tools, and explain why a plausible answer needs checking</td>
+</tr>
+<tr class="even">
+<td>Principles</td>
+<td>Preserve a first attempt, identify a consequential error, and complete Verify–Explain–Test against independent evidence</td>
+</tr>
+<tr class="odd">
+<td>Methodology</td>
+<td>Write a scoped brief, choose a technique for a specific difficulty, and place a check between dependent steps</td>
+</tr>
+<tr class="even">
+<td>Putting it together</td>
+<td>Produce an owned decision with source support, a rejected or revised suggestion, and a boundary test</td>
+</tr>
+</tbody>
+</table>
+<p>Keep a small learning record as you read. Start with one task and your unaided attempt; add the evidence or correction each part makes possible. The worked community workshop in <a href="chapters/conversations-across-disciplines.html" class="quarto-xref"><span>13&nbsp; Conversations Across Disciplines</span></a> shows the complete record and supplies a parallel task with an answer check.</p>
+<p>You can complete the independent activities without an AI account. “Unaided” here means without handing the judgement to AI; calculators, assistive technology, notes, dictation, and help accessing the material are welcome. Shorten a session or explain with a diagram if that lets you inspect the reasoning more clearly. The advanced loop chapter is optional, not a gate to completing the book.</p>
 </section>
 <section id="how-to-read-this-book" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-read-this-book">How to Read This Book</h2>
@@ -618,12 +674,13 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>You will also find tables throughout the book that compare approaches, map strategies across domains, or summarise frameworks. These are reference material, worth bookmarking, not just reading once.</p>
+<p>Most chapters close with a short practice section. Selected chapters provide complete RTCF starting prompts; other chapters ask you to begin without AI, evaluate evidence, or transfer the method to your own work. RTCF (Role, Task, Context, Format) is covered properly in <a href="chapters/is-prompting-dead.html" class="quarto-xref"><span>9&nbsp; Is Prompting Dead?</span></a> and summarised in <a href="appendices/b-quick-reference.html" class="quarto-xref"><span>Appendix B — Quick Reference Cards</span></a>. The structure is scaffolding, not a ritual. Use only the elements that clarify your task, then push back on the first answer.</p>
 </section>
 <section id="how-this-book-was-written" class="level2">
 <h2 class="anchored" data-anchor-id="how-this-book-was-written">How This Book Was Written</h2>
 <p>This book was written using the methodology it describes.</p>
 <p>It began as a set of Python notebooks on computational thinking, practical exercises developed for teaching. Those notebooks evolved, through multiple conversation loops with AI, into the sibling book <em>Converse Python, Partner AI</em>. That process surfaced a methodology that was broader than programming: the principles of conversation over delegation, of staying critical, of using AI to amplify thinking rather than replace it. This book is the result of extracting and generalising that methodology for a wider audience.</p>
-<p>At every stage, the process looked like what you will read about in <a href="chapters/the-conversation-loop.html" class="quarto-xref"><span>5&nbsp; The Conversation Loop</span></a>. Ideas were brainstormed, challenged, restructured, and refined across dozens of conversations. AI drafted, the author pushed back. AI suggested structures, the author broke them and rebuilt them. The frameworks in this book (RTCF, VET, the eight techniques) were tested in the writing of the book itself. Where AI was sycophantic, it was told to stop. Where it was generic, it was pressed for specifics. Where it was wrong, it was corrected.</p>
+<p>At every stage, the process looked like what you will read about in <a href="chapters/the-conversation-loop.html" class="quarto-xref"><span>6&nbsp; The Conversation Loop</span></a>. Ideas were brainstormed, challenged, restructured, and refined across dozens of conversations. AI drafted, the author pushed back. AI suggested structures, the author broke them and rebuilt them. The frameworks in this book (RTCF, VET, the eight techniques) were tested in the writing of the book itself. Where AI was sycophantic, it was told to stop. Where it was generic, it was pressed for specifics. Where it was wrong, it was corrected.</p>
 <p>You may be thinking: if this book was written with AI, why should I trust it? That reaction is understandable, and this book has a name for it: the AI Dismissal Fallacy (<a href="chapters/staying-critical.html" class="quarto-xref"><span>7&nbsp; Staying Critical</span></a>). The quality of an idea does not depend on whether a human or a machine contributed to its development. What matters is whether the author can explain, defend, and stand behind every sentence. The answer is yes, because conversation, real conversation with pushback and judgement, is how the thinking was done.</p>
 <p>Transparency about process is more important than the comfort of pretending AI was not involved. Every professional will face this question soon enough. This book’s answer is to show the work.</p>
 <p><strong>Tools used in producing this book:</strong></p>
@@ -647,15 +704,56 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Converse with it.</strong> The online edition includes a chatbot grounded in the book’s content. Ask it questions, challenge its answers, and practise the methodology on the methodology itself. You can also use the <code>llm.txt</code> file to paste the entire book into ChatGPT, Claude, or any AI tool for a deeper conversation.</li>
 <li><strong>Listen to it.</strong> Upload the <code>llm.txt</code> file to Google NotebookLM and generate an audio overview or podcast-style discussion of the content.</li>
 <li><strong>Explore the source.</strong> The full source is on <a href="https://github.com/michael-borck/conversation-not-delegation">GitHub</a>, including every chapter, the build system, and the revision history. <a href="https://deepwiki.com/michael-borck/conversation-not-delegation">DeepWiki</a> provides an AI-navigable view of the repository.</li>
-<li><strong>Practise the frameworks.</strong> The companion site includes three interactive tools that run in your browser — no login, no data stored. The <strong>RTCF Prompt Builder</strong> walks you through constructing prompts step by step using the framework from <a href="chapters/rtcf.html" class="quarto-xref"><span>8&nbsp; RTCF: Starting Conversations Well</span></a>. The <strong>RTCF Prompt Analyser</strong> lets you paste any prompt and get instant feedback on which elements are present, partial, or missing — useful for diagnosing why a prompt gave a vague response. The <strong>AI Readiness Assessment</strong> is a short quiz that maps your current experience level and recommends which chapters to prioritise. See <a href="appendices/d-interactive-tools.html" class="quarto-xref"><span>Appendix D — Interactive Tools</span></a> for details.</li>
 <li><strong>Browse all books.</strong> This book is part of a series. See all titles at <a href="https://books.borck.education">books.borck.education</a>.</li>
 </ul>
-<p>The online version is always the most current. The printed and ebook editions are updated periodically. If you purchased a copy and want the latest version, re-download it; you get the current edition.</p>
+<p>The online version is always the most current. The printed and ebook editions are updated periodically. Use the free online edition and its downloads for the latest available revision. A purchased ebook is not guaranteed to update automatically.</p>
 </section>
 <section id="the-sibling-book" class="level2">
 <h2 class="anchored" data-anchor-id="the-sibling-book">The Sibling Book</h2>
-<p>This book has a companion: <em>Converse Python, Partner AI</em>, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place.</p>
-<p>Both books are independently complete. You do not need one to benefit from the other.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Route</th>
+<th>Start here</th>
+<th>Continue with</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Concepts before code</td>
+<td>Conversation, Not Delegation</td>
+<td>Converse Python, Partner AI; apply its method alongside the appropriate programming level</td>
+</tr>
+<tr class="even">
+<td>Python from the beginning</td>
+<td>Think Python, Direct AI</td>
+<td>Code Python, Consult AI, then Ship Python, Orchestrate AI</td>
+</tr>
+<tr class="odd">
+<td>Web development</td>
+<td>Think Python, Direct AI</td>
+<td>Build Web, Guide AI</td>
+</tr>
+</tbody>
+</table>
+<p>Two ways in: start with <em>Conversation, Not Delegation</em> if you want the ideas before (or without) code, or start with <em>Think Python, Direct AI</em> if you want to code from your first page. The methodology in <em>Converse Python, Partner AI</em> applies to every path.</p>
+<ul>
+<li><strong>Conversation, Not Delegation</strong>: the general methodology for working with AI across any discipline. No code required; the broadest entry point.</li>
+<li><strong>Think Python, Direct AI</strong>: computational thinking for absolute beginners. The entry point if you want to code from the start.</li>
+<li><strong>Converse Python, Partner AI</strong>: the intentional prompting methodology applied to software development. A companion you can read alongside any Python book.</li>
+<li><strong>Code Python, Consult AI</strong>: focused Python fundamentals through AI conversation.</li>
+<li><strong>Ship Python, Orchestrate AI</strong>: professional Python development practices and tooling.</li>
+<li><strong>The Absolute Minimum You Must Know</strong>: the free, always-current web companion at <a href="https://minimum.borck.education">minimum.borck.education</a>: quick primers on every topic this series covers in depth.</li>
+<li><strong>Build Web, Guide AI</strong>: web development with AI as your development partner.</li>
+</ul>
+<p>All titles are available at <a href="https://books.borck.education">books.borck.education</a>.</p>
+<p>You are reading <em>Conversation, Not Delegation</em>, the general methodology that underpins the series.</p>
+<p>This book has a companion: <em>Converse Python, Partner AI</em>, which covers the same methodology through the lens of Python programming. If you are a developer or data scientist, that book may be a better fit. If you are not, you are in the right place. Both books are independently complete. You do not need one to benefit from the other.</p>
 
 
 </section>
@@ -1081,8 +1179,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapters/what-is-ai.html" class="pagination-link" aria-label="What Is AI?">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./copyright.html" class="pagination-link" aria-label="Copyright">
+        <span class="nav-page-text">Copyright</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

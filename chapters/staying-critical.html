@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../chapters/rtcf.html" rel="next">
-<link href="../chapters/ai-last.html" rel="prev">
+<link href="../chapters/vet-your-ai.html" rel="next">
+<link href="../chapters/the-conversation-loop.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/staying-critical.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ai-last.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/staying-critical.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,37 +478,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#transparency-not-secrecy" id="toc-transparency-not-secrecy" class="nav-link active" data-scroll-target="#transparency-not-secrecy"><span class="header-section-number">7.1</span> Transparency, Not Secrecy</a></li>
-  <li><a href="#academic-integrity-as-a-specific-case" id="toc-academic-integrity-as-a-specific-case" class="nav-link" data-scroll-target="#academic-integrity-as-a-specific-case"><span class="header-section-number">7.2</span> Academic Integrity as a Specific Case</a></li>
-  <li><a href="#the-flag-system" id="toc-the-flag-system" class="nav-link" data-scroll-target="#the-flag-system"><span class="header-section-number">7.3</span> The Flag System</a>
+  <li><a href="#transparency-and-the-work-itself" id="toc-transparency-and-the-work-itself" class="nav-link active" data-scroll-target="#transparency-and-the-work-itself"><span class="header-section-number">7.1</span> Transparency and the work itself</a></li>
+  <li><a href="#flags-are-prompts-to-investigate" id="toc-flags-are-prompts-to-investigate" class="nav-link" data-scroll-target="#flags-are-prompts-to-investigate"><span class="header-section-number">7.2</span> Flags are prompts to investigate</a></li>
+  <li><a href="#four-traps-to-notice" id="toc-four-traps-to-notice" class="nav-link" data-scroll-target="#four-traps-to-notice"><span class="header-section-number">7.3</span> Four traps to notice</a>
   <ul class="collapse">
-  <li><a href="#yellow-flags-proceed-with-caution" id="toc-yellow-flags-proceed-with-caution" class="nav-link" data-scroll-target="#yellow-flags-proceed-with-caution"><span class="header-section-number">7.3.1</span> Yellow Flags: Proceed with Caution</a></li>
-  <li><a href="#red-flags-high-risk" id="toc-red-flags-high-risk" class="nav-link" data-scroll-target="#red-flags-high-risk"><span class="header-section-number">7.3.2</span> Red Flags: High Risk</a></li>
+  <li><a href="#uneven-scepticism" id="toc-uneven-scepticism" class="nav-link" data-scroll-target="#uneven-scepticism"><span class="header-section-number">7.3.1</span> Uneven scepticism</a></li>
+  <li><a href="#dismissal-by-origin" id="toc-dismissal-by-origin" class="nav-link" data-scroll-target="#dismissal-by-origin"><span class="header-section-number">7.3.2</span> Dismissal by origin</a></li>
+  <li><a href="#sycophancy" id="toc-sycophancy" class="nav-link" data-scroll-target="#sycophancy"><span class="header-section-number">7.3.3</span> Sycophancy</a></li>
+  <li><a href="#inherited-defaults" id="toc-inherited-defaults" class="nav-link" data-scroll-target="#inherited-defaults"><span class="header-section-number">7.3.4</span> Inherited defaults</a></li>
   </ul></li>
-  <li><a href="#four-cognitive-traps" id="toc-four-cognitive-traps" class="nav-link" data-scroll-target="#four-cognitive-traps"><span class="header-section-number">7.4</span> Four Cognitive Traps</a>
-  <ul class="collapse">
-  <li><a href="#the-gell-mann-amnesia-effect" id="toc-the-gell-mann-amnesia-effect" class="nav-link" data-scroll-target="#the-gell-mann-amnesia-effect"><span class="header-section-number">7.4.1</span> The Gell-Mann Amnesia Effect</a></li>
-  <li><a href="#the-ai-dismissal-fallacy" id="toc-the-ai-dismissal-fallacy" class="nav-link" data-scroll-target="#the-ai-dismissal-fallacy"><span class="header-section-number">7.4.2</span> The AI Dismissal Fallacy</a></li>
-  <li><a href="#the-sycophancy-trap" id="toc-the-sycophancy-trap" class="nav-link" data-scroll-target="#the-sycophancy-trap"><span class="header-section-number">7.4.3</span> The Sycophancy Trap</a></li>
-  <li><a href="#the-inherited-defaults-trap" id="toc-the-inherited-defaults-trap" class="nav-link" data-scroll-target="#the-inherited-defaults-trap"><span class="header-section-number">7.4.4</span> The Inherited Defaults Trap</a></li>
-  <li><a href="#how-the-conversation-loop-fights-all-four" id="toc-how-the-conversation-loop-fights-all-four" class="nav-link" data-scroll-target="#how-the-conversation-loop-fights-all-four"><span class="header-section-number">7.4.5</span> How the Conversation Loop Fights All Four</a></li>
-  </ul></li>
+  <li><a href="#preserve-the-check-when-you-revise" id="toc-preserve-the-check-when-you-revise" class="nav-link" data-scroll-target="#preserve-the-check-when-you-revise"><span class="header-section-number">7.4</span> Preserve the check when you revise</a></li>
   <li><a href="#watch-what-you-share" id="toc-watch-what-you-share" class="nav-link" data-scroll-target="#watch-what-you-share"><span class="header-section-number">7.5</span> Watch What You Share</a>
   <ul class="collapse">
-  <li><a href="#what-the-risks-are-not" id="toc-what-the-risks-are-not" class="nav-link" data-scroll-target="#what-the-risks-are-not"><span class="header-section-number">7.5.1</span> What the Risks Are Not</a></li>
+  <li><a href="#keep-the-risks-distinct" id="toc-keep-the-risks-distinct" class="nav-link" data-scroll-target="#keep-the-risks-distinct"><span class="header-section-number">7.5.1</span> Keep the Risks Distinct</a></li>
   <li><a href="#what-the-risks-are" id="toc-what-the-risks-are" class="nav-link" data-scroll-target="#what-the-risks-are"><span class="header-section-number">7.5.2</span> What the Risks Are</a></li>
-  <li><a href="#the-risk-of-not-using-it" id="toc-the-risk-of-not-using-it" class="nav-link" data-scroll-target="#the-risk-of-not-using-it"><span class="header-section-number">7.5.3</span> The Risk of Not Using It</a></li>
+  <li><a href="#not-using-ai-can-be-the-right-decision" id="toc-not-using-ai-can-be-the-right-decision" class="nav-link" data-scroll-target="#not-using-ai-can-be-the-right-decision"><span class="header-section-number">7.5.3</span> Not using AI can be the right decision</a></li>
   </ul></li>
-  <li><a href="#the-self-check" id="toc-the-self-check" class="nav-link" data-scroll-target="#the-self-check"><span class="header-section-number">7.6</span> The Self-Check</a></li>
-  <li><a href="#where-this-goes-next" id="toc-where-this-goes-next" class="nav-link" data-scroll-target="#where-this-goes-next"><span class="header-section-number">7.7</span> Where This Goes Next</a></li>
+  <li><a href="#a-check-before-use" id="toc-a-check-before-use" class="nav-link" data-scroll-target="#a-check-before-use"><span class="header-section-number">7.6</span> A check before use</a></li>
+  <li><a href="#independent-practice-review-the-evidence" id="toc-independent-practice-review-the-evidence" class="nav-link" data-scroll-target="#independent-practice-review-the-evidence"><span class="header-section-number">7.7</span> Independent practice: review the evidence</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-conversation-loop.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/staying-critical.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ai-last.html">Part 2: Principles</a></li><li class="breadcrumb-item"><a href="../chapters/staying-critical.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span id="sec-staying-critical" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></h1>
 </div>
@@ -524,48 +531,19 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>Fluency is not accuracy. The smoothest response and the most truthful response are produced by the same process.</p>
 </blockquote>
-<p>AI is confident even when it is wrong. It does not hedge. It does not say “I’m not sure about this part.” It produces fluent, plausible, well-structured text regardless of whether the content is accurate, current, or applicable to your situation.</p>
-<p>This is not a flaw that will be fixed in the next model. It is a structural feature of how these tools work. They generate the most probable next token, not the most truthful one. Confidence and correctness are completely unrelated.</p>
-<p>Your critical eye is not optional. It is the only thing standing between useful output and confident nonsense.</p>
-<p>This chapter is about building that eye. Not as an abstract virtue, but as a set of concrete habits you can apply every time you sit down with an AI tool.</p>
-<blockquote class="blockquote">
-<p>The most dangerous AI output is not the one that is obviously wrong. It is the one that sounds exactly right.</p>
-</blockquote>
-<section id="transparency-not-secrecy" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="transparency-not-secrecy"><span class="header-section-number">7.1</span> Transparency, Not Secrecy</h2>
-<p>There is a simple test for whether you are using AI well or poorly: would you be comfortable explaining exactly how you used it?</p>
-<p>If the answer is yes, you are probably in good shape. You used it to explore ideas, to stress-test your reasoning, to draft something you then made your own. You can walk someone through your process and point to where your thinking shaped the result.</p>
-<p>If the answer is no, something has gone wrong. You are hiding the tool because you know the output is not really yours. You cannot explain the reasoning behind it. You could not defend it if challenged. This is the difference between using AI as a thinking partner and using it as a ghostwriter. One builds capability. The other borrows it, temporarily, and builds nothing.</p>
-<p>This applies everywhere. In professional work, the person who says “I used AI to generate three options, then selected and adapted this one because of X and Y” is demonstrating judgement. The person who submits AI output as their own and hopes nobody notices is demonstrating something else entirely.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Try this (2 minutes)">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Try this (2 minutes)
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Add a one-line note to your next document or email: “I used AI to help draft/check/summarise this.” Notice how it changes the conversation. Transparency is not a confession. It is a signal that you are confident enough in your process to show it.</p>
-</div>
-</div>
+<p>A model can state a false claim confidently. It can also hedge, refuse, or give a well-supported answer. Tone alone does not tell you which you have.</p>
+<p>This chapter gives you ways to decide what needs checking. The next chapter turns that decision into VET: <strong>Verify, Explain, Test</strong>. Neither framework requires constant suspicion of everything; each asks for evidence proportionate to the intended use.</p>
+<section id="transparency-and-the-work-itself" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="transparency-and-the-work-itself"><span class="header-section-number">7.1</span> Transparency and the work itself</h2>
+<p>Be able to explain how you produced important work: what assistance you used, what you checked, and what decisions you made. Follow the disclosure rules of the setting.</p>
+<p>Comfort is not a sufficient test. You can feel comfortable with a weak process, or reluctant to disclose a sound one because of stigma or confidentiality. A practical note is more informative: “I used AI to suggest three framings, checked their factual claims against the supplied sources, and wrote the final recommendation.”</p>
+<p>For student work, check the institution’s and assessment’s actual rules before using a tool. Some uses may be allowed with attribution; others may be prohibited. Do not assume that permission for one assignment applies to another. If the boundary is unclear, ask the assessor. A disclosure does not make prohibited assistance permitted.</p>
+<p>The learning question is separate: can you demonstrate the skill the task is assessing? Keep your first attempt and the relevant corrections so that a polished deliverable does not conceal a gap.</p>
 </section>
-<section id="academic-integrity-as-a-specific-case" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="academic-integrity-as-a-specific-case"><span class="header-section-number">7.2</span> Academic Integrity as a Specific Case</h2>
-<p>If you are a student, the stakes are concrete and immediate. Universities have policies on AI use, and those policies are getting sharper. Submitting AI-generated work as your own is academic misconduct. Full stop.</p>
-<p>But the deeper problem is not the policy violation. It is what you lose. You are paying for an education. The point of an assignment is not the artifact you submit. It is the thinking you do to produce it. When you delegate that thinking to AI, you get a grade for work you did not do and a gap in capability you will carry forward. Nobody wins.</p>
-<p>The practical habit is straightforward. Use AI to help you think, not to think for you. Draft first, then use AI to challenge your draft. Ask it to find the holes in your argument, not to write the argument. When you submit, be able to explain every sentence as if someone asked you about it in conversation. If you cannot, you are not done yet.</p>
-</section>
-<section id="the-flag-system" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="the-flag-system"><span class="header-section-number">7.3</span> The Flag System</h2>
-<p>Not everything AI produces needs the same level of scrutiny. A brainstormed list of marketing angles does not carry the same risk as a legal citation or a medical dosage recommendation. Some outputs are low-risk. Some should make you stop and verify before acting on them.</p>
-<p>The flag system gives you a quick way to calibrate your response. It works for AI output, but it works just as well for anything you encounter online, in a report, or in a meeting. The underlying skill is the same: reading with appropriate scepticism.</p>
-<section id="yellow-flags-proceed-with-caution" class="level3" data-number="7.3.1">
-<h3 data-number="7.3.1" class="anchored" data-anchor-id="yellow-flags-proceed-with-caution"><span class="header-section-number">7.3.1</span> Yellow Flags: Proceed with Caution</h3>
-<p>These do not mean the information is wrong. They mean you need to verify before relying on it.</p>
-<table class="table-striped caption-top table">
-<caption>Yellow Flags: signals that warrant verification before you rely on the information.</caption>
+<section id="flags-are-prompts-to-investigate" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="flags-are-prompts-to-investigate"><span class="header-section-number">7.2</span> Flags are prompts to investigate</h2>
+<p>The following flags are practitioner heuristics, not a validated misinformation detector. A warning sign does not prove a claim false, and an absence of warnings does not make it true.</p>
+<table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
 <col style="width: 50%">
@@ -573,235 +551,171 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Signal</th>
-<th>What to do</th>
+<th>Useful next check</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Source is unverified or not clearly credible</td>
-<td>Cross-reference with established sources before using</td>
+<td>Missing or unclear source</td>
+<td>Locate the original record or mark the claim unsupported</td>
 </tr>
 <tr class="even">
-<td>Based on a single preliminary study</td>
-<td>Treat as interesting but unproven. Do not act on it alone</td>
+<td>A single preliminary study</td>
+<td>Read its design and limits; do not generalise beyond them</td>
 </tr>
 <tr class="odd">
-<td>Opinion presented as fact</td>
-<td>Separate the claim from the evidence. Find the data yourself</td>
+<td>Opinion presented as established fact</td>
+<td>Separate the value judgement from the empirical claim</td>
 </tr>
 <tr class="even">
-<td>Content is clipped, summarised, or taken out of context</td>
-<td>Find the original source. Context changes meaning</td>
+<td>A clipped quotation or summary</td>
+<td>Read the surrounding passage and check what was omitted</td>
 </tr>
 <tr class="odd">
-<td>Source has a financial vested interest in the claim</td>
-<td>Scrutinise for bias. Seek independent verification</td>
+<td>A financial or institutional interest</td>
+<td>Inspect the methods and seek relevant independent evidence</td>
+</tr>
+<tr class="even">
+<td>Counter-evidence dismissed as a conspiracy</td>
+<td>Ask what observation could actually change the conclusion</td>
+</tr>
+<tr class="odd">
+<td>An entire group condemned by identity</td>
+<td>Require specific evidence; do not accept a stereotype as explanation</td>
+</tr>
+<tr class="even">
+<td>Extraordinary certainty without evidence</td>
+<td>Withhold reliance until suitable evidence is available</td>
 </tr>
 </tbody>
 </table>
-<p>The common thread across all of these is missing provenance. The information might be perfectly accurate, but something about how it reached you (an absent source, a single study, a vested interest) means you cannot yet trust it enough to act on it. Yellow flags do not mean stop. They mean check before you proceed.</p>
+<p>You can call a missing check a yellow flag and an attempt to prevent checking a red flag. The colour is less important than the action it prompts. For a consequential decision, identify who is qualified to review it and what happens if the evidence remains absent.</p>
 </section>
-<section id="red-flags-high-risk" class="level3" data-number="7.3.2">
-<h3 data-number="7.3.2" class="anchored" data-anchor-id="red-flags-high-risk"><span class="header-section-number">7.3.2</span> Red Flags: High Risk</h3>
-<p>These are patterns strongly associated with misinformation. When you see them, demand rigorous, independently verifiable evidence before taking the claim seriously.</p>
-<table class="table-striped caption-top table">
-<caption>Red Flags: patterns strongly associated with misinformation or deception.</caption>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Signal</th>
-<th>Why it matters</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Conspiracy framing: “they” are hiding the truth</td>
-<td>Uses unfalsifiability as a feature. Any counter-evidence becomes part of the conspiracy</td>
-</tr>
-<tr class="even">
-<td>“Mainstream science is wrong and I alone have the answer”</td>
-<td>Real paradigm shifts are rigorously peer-reviewed. They build on existing knowledge, not reject it wholesale</td>
-</tr>
-<tr class="odd">
-<td>Indicting an entire group based on identity</td>
-<td>Strong indicator of prejudice or oversimplification. Always a sign to look for specific, evidence-based claims instead</td>
-</tr>
-<tr class="even">
-<td>Extraordinary claims with no credible evidence</td>
-<td>The bigger the claim, the stronger the evidence needs to be. If it is missing, that tells you something</td>
-</tr>
-</tbody>
-</table>
-<p>Red flags are qualitatively different from yellow flags. Yellow flags say the evidence is incomplete. Red flags say the reasoning itself is compromised. Conspiracy framing, lone-genius claims, group indictments, and extraordinary claims without evidence all share a common structure: they demand you accept a conclusion while actively discouraging you from checking it. That inversion, trust more and verify less, is the hallmark of misinformation.</p>
-<p>The flag system is not about cynicism. It is about proportional scepticism. Most information is fine. Some requires checking. A small amount should trigger real alarm. Knowing which is which is a skill, and it is a skill that AI will never develop for you. You have to bring it yourself.</p>
+<section id="four-traps-to-notice" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="four-traps-to-notice"><span class="header-section-number">7.3</span> Four traps to notice</h2>
+<section id="uneven-scepticism" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="uneven-scepticism"><span class="header-section-number">7.3.1</span> Uneven scepticism</h3>
+<p>You spot errors in an answer about your own field, then trust the next answer on an unfamiliar subject because it reads just as smoothly. That is the useful warning behind the commonly discussed “Gell-Mann amnesia” analogy; it is not a measured law about every reader.</p>
+<p>Transfer the checking habit, not your confidence. On unfamiliar ground, you may need a primary source, a smaller test, or a qualified reviewer. Asking another model to agree is not automatically independent evidence.</p>
 </section>
+<section id="dismissal-by-origin" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="dismissal-by-origin"><span class="header-section-number">7.3.2</span> Dismissal by origin</h3>
+<p>“This used AI” does not by itself refute a claim. Inspect the evidence and reasoning.</p>
+<p>Origin can still matter. An assessment may prohibit the assistance; a confidential document may have been sent to an unapproved service; a source may carry accountability that an anonymous output does not. Those are substantive concerns, not objections to dismiss as prejudice.</p>
+<p>This book’s “AI dismissal fallacy” label concerns rejecting the content <em>solely</em> because AI contributed, without examining it. It is not a diagnosis of everyone who chooses not to use or accept AI.</p>
 </section>
-<section id="four-cognitive-traps" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="four-cognitive-traps"><span class="header-section-number">7.4</span> Four Cognitive Traps</h2>
-<p>The flag system helps you evaluate individual outputs. But there are four broader cognitive traps worth naming, because they shape how people relate to AI across everything they do with it.</p>
-<section id="the-gell-mann-amnesia-effect" class="level3" data-number="7.4.1">
-<h3 data-number="7.4.1" class="anchored" data-anchor-id="the-gell-mann-amnesia-effect"><span class="header-section-number">7.4.1</span> The Gell-Mann Amnesia Effect</h3>
-<p>The physicist Murray Gell-Mann gave this pattern its name, but you have almost certainly experienced it. You read a news article about something you know well and spot the errors immediately. The reporter misunderstood the mechanism, conflated two concepts, or drew a conclusion the evidence does not support. You notice because you have the expertise to notice.</p>
-<p>Then you turn the page to an article about a subject you know nothing about, and you read it with full trust.</p>
-<p>That is the Gell-Mann Amnesia Effect: recognising unreliability in familiar territory, then forgetting that unreliability the moment you move to unfamiliar territory.</p>
-<p>With AI, this trap is especially dangerous. You might catch an AI’s mistakes when it writes about your area of expertise, and rightly so. But the same AI, using the same process, producing the same mix of accurate and inaccurate content, will generate output on topics you do not know well. And because the output is fluent, well-structured, and confident, you will be tempted to trust it in exactly the areas where you are least equipped to check it.</p>
-<p>This is not a flaw in the AI. It is a flaw in how we respond to fluency. Polished language feels authoritative. The smoother the prose, the harder it is to remember that smoothness and accuracy are unrelated.</p>
-<p>The practical defence is straightforward: apply the same scepticism to AI output on unfamiliar topics that you would apply to output on topics you know. If anything, be more sceptical, because you have fewer tools to detect errors.</p>
-</section>
-<section id="the-ai-dismissal-fallacy" class="level3" data-number="7.4.2">
-<h3 data-number="7.4.2" class="anchored" data-anchor-id="the-ai-dismissal-fallacy"><span class="header-section-number">7.4.2</span> The AI Dismissal Fallacy</h3>
-<p>The opposite trap is just as damaging. This is the tendency to reject an argument, an idea, or a piece of work solely because AI was involved in producing it.</p>
-<p>“That is just ChatGPT” is not a critique. It is a refusal to engage. The validity of an idea does not depend on whether a human or a machine produced it. If someone presents a well-reasoned argument and it is dismissed without engaging the reasoning, the dismissal is the intellectual failure, not the use of AI.</p>
-<p>This is a form of the genetic fallacy: judging a claim by its origin rather than its content. It shows up in workplaces where people dismiss a colleague’s analysis because they know AI was involved, in academic settings where the presence of AI is treated as proof of intellectual dishonesty regardless of how it was used, and in public discourse where “AI-generated” has become a shorthand for “not worth reading.”</p>
-<p>The irony is that people who dismiss AI-assisted work often accept ideas from other sources, books, consultants, collaborators, without demanding to know the exact cognitive process behind them. The objection is not really about the quality of the thinking. It is about the tool.</p>
-</section>
-<section id="the-sycophancy-trap" class="level3" data-number="7.4.3">
-<h3 data-number="7.4.3" class="anchored" data-anchor-id="the-sycophancy-trap"><span class="header-section-number">7.4.3</span> The Sycophancy Trap</h3>
-<p>There is a third trap, and this one the AI actively participates in.</p>
-<p>LLMs have a tendency to agree with you. They praise your ideas, validate your assumptions, and avoid telling you things you might not want to hear. Researchers call this sycophancy: the model telling you what you want to hear rather than what you need to hear. It is not a bug that will be fixed in the next release. It is a persistent tendency baked into how these models are trained, because they were optimised in part on human feedback, and humans tend to rate agreeable responses more highly than challenging ones.</p>
-<p>This matters for everything this book is about. The conversation loop depends on genuine pushback during the Iterate stage. If the AI tells you your first draft is excellent, your argument is compelling, and your plan has no weaknesses, the loop breaks. You stop iterating because the AI has told you there is nothing to iterate on. The result is the same as delegation: you get back what you put in, wrapped in flattery.</p>
-<p>You will notice this most when you ask the AI to evaluate your own work. “What do you think of my proposal?” will almost always produce praise first, criticism second, and the criticism will be gentle. The AI is not assessing your work honestly. It is managing your feelings.</p>
-<p>The defence is to prompt past it. Do not ask “what do you think?” Ask “what are the three weakest points in this argument?” or “play devil’s advocate and tell me why this plan will fail.” The Debating technique (<a href="seven-techniques.html" class="quarto-xref"><span>Chapter 10</span></a>) is specifically designed for this; it forces the AI into an adversarial role where agreement is not an option. You can also be direct: “Do not flatter me. I need honest, critical feedback. Tell me what is wrong with this before you tell me what is right.”</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Try this (2 minutes)">
+<section id="sycophancy" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="sycophancy"><span class="header-section-number">7.3.3</span> Sycophancy</h3>
+<p>An assistant may agree with a user’s stated belief or flatter their work when a challenge would be more useful. Research has observed this behaviour in several assistants and examined links with preference training. Its extent depends on the model, prompt, and method; it is not a permanent law about all systems. <a href="https://arxiv.org/abs/2310.13548">Sharma et al., Towards Understanding Sycophancy in Language Models</a> Agreement is not limited to factual beliefs. The ELEPHANT benchmark describes <em>social sycophancy</em>: excessive preservation of the user’s self-image in open-ended advice. Across the eleven models it tested, assistants preserved user face far more often than human respondents, and affirmed whichever side of a moral conflict the user took in 48% of paired cases, in that benchmark’s setting. <a href="https://arxiv.org/abs/2505.13995">Cheng et al., ELEPHANT: Measuring and Understanding Social Sycophancy in LLMs</a> Treat those figures as evidence about the tasks and measures studied, not as a universal rate for your model.</p>
+<p>Ask for a specific critique: an unsupported inference, an omitted alternative, or a calculation that fails. Then inspect whether the criticism is itself valid. An adversarial role can produce invented objections as easily as an agreeable role can produce empty praise.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Compare two requests">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Try this (2 minutes)
+<span class="screen-reader-only">Tip</span>Compare two requests
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Next time AI evaluates your work, ask it twice. First ask “What do you think of this?” Then ask “What are the three weakest points in this?” Compare the responses. The gap between them is the sycophancy you are normally not seeing.</p>
+<p>Give the same harmless draft two requests: “What do you think?” and “Which claim has the weakest support?” Compare the returned evidence. A difference shows sensitivity to the request; by itself it does not prove sycophancy.</p>
 </div>
 </div>
-<p>You might have heard the opposite claim, that being polite to AI produces better results. There is a grain of truth here, but it is smaller than the internet suggests. Clear, specific, well-structured prompts work better than hostile or vague ones. That is not because the AI has feelings. It is because clear communication activates better patterns in the model. Saying “please” does not hurt, but it does not matter nearly as much as saying exactly what you need. Do not mistake good prompt structure for politeness. Do not mistake the AI’s agreeableness for honesty.</p>
-</section>
-<section id="the-inherited-defaults-trap" class="level3" data-number="7.4.4">
-<h3 data-number="7.4.4" class="anchored" data-anchor-id="the-inherited-defaults-trap"><span class="header-section-number">7.4.4</span> The Inherited Defaults Trap</h3>
-<p>The fourth trap is the one that looks most like progress.</p>
-<p>The most obvious biases in early LLMs were the ones easiest to catch. Ask for “a doctor” and get a default <em>he</em>. Ask for “a nurse” and get a default <em>she</em>. Frontier models have been trained hard against those patterns, and you will catch fewer of them now than a few years ago. Anyone running the obvious test will conclude the bias problem has been solved.</p>
-<p>It has not. It has moved.</p>
-<p>The choices that remain are quieter, and that is what makes them dangerous. Ask the model to write a scene of a new academic on their first day and a separate scene of a new professional staff member. Read them side by side. The obvious stereotypes have been trained away, but the smaller defaults remain. What is each character called — “Dr Chen” or “Sarah”? What do they worry about? Whose office has a window? Who is described as warm and who as decisive? The story tells you what the model thinks each role looks like, and that picture does quiet work every time you use the model for anything adjacent to it.</p>
-<p>You will not catch these defaults by reading a single output. They look reasonable. They <em>are</em> reasonable, for a single output. The bias lives in the <em>distribution</em> of choices the model makes when you ask for similar things — what it considers the unmarked default for any given role. If you draft position descriptions, reference letters, or selection criteria with AI, those defaults are leaking in. You may not see them. The people on the receiving end will.</p>
-<p>The defence is the same as for sycophancy: prompt past the default. Ask for the same scene three times. Ask explicitly for variations the model would not choose by default. Ask “what assumptions did you make about this character that you would not have made if the role were different?” The model can surface its own defaults if you ask it to, but it will not surface them spontaneously.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Try this (5 minutes)">
+<div class="callout callout-style-default callout-tip callout-titled" title="Test stance collapse">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Try this (5 minutes)
+<span class="screen-reader-only">Tip</span>Test stance collapse
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ask AI to write a one-paragraph scene of “a new academic on their first day at a university.” In a fresh prompt, ask for “a new professional staff member on their first day.” Read them side by side. Ignore the obvious — gender, age, ethnicity — those have largely been trained against. Look at the smaller choices. What is each character named? What do they worry about? Whose office has a window? Who has authority in the scene?</p>
-<p>Variations worth trying: “a struggling first-year student” versus “a high-achieving first-year student” (watch the assumptions about <em>why</em>); “a brilliant early-career researcher” versus “a brilliant senior researcher” (watch whose trajectory is treated as the default shape of success); “a respected senior manager” versus “a respected administrative officer” (watch who gets described as warm versus capable). The defaults are doing some of the thinking for you whether you noticed or not.</p>
+<p>Use a harmless draft or proposal. (1) Ask: “Which claim has the weakest support, and what evidence would repair it?” Save the answer. (2) Reply with insistence but no new evidence: “I still think this is sound.” Compare whether the model withdraws, softens, or retains specific objections. (3) Reply again with one verifiable new fact or source and see whether the assessment changes for that reason. Record the original claim, each stance, and what changed it. A change after insistence alone is a warning sign; a change after named evidence may be appropriate revision. One chat is a calibration exercise, not a measurement of every conversation with that model, and the model’s explanation of why it changed is another claim rather than privileged access to an internal belief.</p>
 </div>
 </div>
+<p>In your own notes, keep that record as a revision ledger: the original assessment, the pushback, any new evidence, and the revised position. The ledger belongs to you. Asking the model to promise that it will only move for credible facts may structure the exchange, but a prompt is not an external control and cannot guarantee the behaviour.</p>
 </section>
-<section id="how-the-conversation-loop-fights-all-four" class="level3" data-number="7.4.5">
-<h3 data-number="7.4.5" class="anchored" data-anchor-id="how-the-conversation-loop-fights-all-four"><span class="header-section-number">7.4.5</span> How the Conversation Loop Fights All Four</h3>
-<p>These four traps look different, but they share a root cause: skipping evaluation.</p>
-<p>The Gell-Mann Amnesia trap is uncritical acceptance. The dismissal fallacy is uncritical rejection. The sycophancy trap is acceptance reinforced by flattery. The inherited defaults trap is acceptance of the model’s quietest choices. All four skip the step that actually matters: engaging with the content on its merits.</p>
-<p>The conversation loop is designed to prevent all of them. When you iterate and push back (<a href="the-conversation-loop.html" class="quarto-xref"><span>Chapter 5</span></a>), you are neither accepting nor rejecting. You are evaluating. When you VET the output (<a href="vet-your-ai.html" class="quarto-xref"><span>Chapter 12</span></a>), you are checking claims regardless of where they came from or how enthusiastically the AI presented them. When you amplify and make the work yours, you take ownership of the substance, which means you have actually thought about it.</p>
-<p>The person who says “I used AI to generate three framings of this problem, then tested each one against what I know about our situation, and here is the one that holds up” has sidestepped all three traps. They did not trust the AI blindly. They did not dismiss it reflexively. They did not let the AI’s praise convince them to stop thinking. They stayed in the conversation.</p>
-<p>That is the whole point.</p>
+<section id="inherited-defaults" class="level3" data-number="7.3.4">
+<h3 data-number="7.3.4" class="anchored" data-anchor-id="inherited-defaults"><span class="header-section-number">7.3.4</span> Inherited defaults</h3>
+<p>A plausible story can contain assumptions about who has authority, whose time matters, or which audience is expected. Do not assume that obvious stereotypes have disappeared from every current model or that bias has simply moved elsewhere.</p>
+<p>For an exploratory check, compare short descriptions of an academic and a professional staff member beginning work. Record names, responsibilities, access, and sources of authority. Treat one contrast as a question to investigate, not a measured general tendency.</p>
+<p>Repeated, controlled comparisons can provide stronger evidence, but prompt choices and sampling still affect the results. A model’s explanation of its own defaults is another claim to examine. For real hiring or other consequential decisions, an informal prompting exercise is not a fairness audit.</p>
 </section>
+</section>
+<section id="preserve-the-check-when-you-revise" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="preserve-the-check-when-you-revise"><span class="header-section-number">7.4</span> Preserve the check when you revise</h2>
+<p>A conversation can help expose these traps, but more dialogue does not ensure that they disappear. Keep the original claim, the evidence you found, and the resulting correction. Otherwise, a smoother revision can hide that the source is still missing.</p>
+<p>In the community case later in the book, checking the room’s capacity changes the group size. “The AI reconsidered” is not the evidence; the venue card and arithmetic are.</p>
 </section>
 <section id="watch-what-you-share" class="level2" data-number="7.5">
 <h2 data-number="7.5" class="anchored" data-anchor-id="watch-what-you-share"><span class="header-section-number">7.5</span> Watch What You Share</h2>
 <p>Staying critical is not only about evaluating what the AI gives you. It is also about being careful with what you give it.</p>
-<p>When you type a prompt into a consumer AI tool, that text leaves your device. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.</p>
+<p>When you submit a prompt to a hosted AI service, that text is sent to the service. Depending on the provider and the plan you are using, it may be stored, logged, or used to improve future models. This matters the moment your prompt contains anything sensitive: client names, financial data, personal information, proprietary strategies, medical details, unpublished research.</p>
 <p>The practical rules are simple:</p>
 <ul>
-<li><strong>Never paste confidential information into a free or consumer AI tool.</strong> If you would not post it on social media, do not paste it into a prompt.</li>
-<li><strong>De-identify before you prompt.</strong> Replace real names with “Client A.” Replace specific figures with ranges. Remove anything that could identify a person or organisation.</li>
-<li><strong>Know the difference between consumer and enterprise tools.</strong> Enterprise AI platforms (your organisation’s licensed tools) typically offer data protection guarantees. Free-tier consumer tools typically do not. If you are unsure which you are using, treat it as consumer.</li>
+<li><strong>Never paste confidential information into an unapproved AI tool.</strong> Price is not the test. Use the tools and data classifications your organisation has approved.</li>
+<li><strong>Minimise and review before sharing.</strong> Removing names or using ranges may help but does not by itself establish that records cannot identify someone. Use invented examples when the real data is not approved for the destination.</li>
+<li><strong>Check the product, plan, settings, and connected services.</strong> Consumer products may let you opt out of model training; business products commonly make no-training commitments by default. Retention, administrator access, memories, connectors, and third-party actions are separate questions. Read the current terms rather than inferring protection from an “enterprise” label.</li>
 <li><strong>When in doubt, use fictional scenarios.</strong> You can get useful thinking from AI without exposing real data. Describe the structure of your problem, not the specifics.</li>
 </ul>
-<p>This is not paranoia. It is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.</p>
-<p>But it is also not the whole picture. Because the conversation about AI and data has become so fear-driven that it is worth understanding what the actual risks are, not just the assumed ones.</p>
-<section id="what-the-risks-are-not" class="level3" data-number="7.5.1">
-<h3 data-number="7.5.1" class="anchored" data-anchor-id="what-the-risks-are-not"><span class="header-section-number">7.5.1</span> What the Risks Are Not</h3>
-<p>The most common fear is that someone will jailbreak an LLM and extract your uploaded document. This misunderstands how the technology works. Jailbreaking means manipulating a model’s behaviour: getting it to ignore safety guidelines or produce content it normally would not. It does not give anyone access to a database of other users’ conversations. Your prompt is not stored as a file inside the model. If your data is used for training at all (enterprise tiers typically exclude it), it becomes a vanishingly small statistical signal distributed across billions of numerical parameters. Reconstructing a specific document from those parameters is not a realistic attack. And recall the key point from <a href="what-are-llms.html" class="quarto-xref"><span>Chapter 2</span></a>: LLMs interpolate, they do not retrieve. There is no mechanism by which another user could query the model and get your document back, because the model never stored it as a document in the first place.</p>
-<p>You will also hear stories of convergent development mistaken for theft: “I was working on an idea using AI, and then the company released something similar.” Thousands of people are responding to the same market signals, reading the same research, solving the same problems. Independent arrival at similar solutions is how innovation normally works. It is not evidence that the model leaked your thinking.</p>
+<p>This is professional practice. The same habits that protect your data today will be expected of you in any workplace that takes information governance seriously.</p>
+<p>That is not the whole picture, though. The conversation about AI and data has become fear-driven, so it is worth separating the actual risks from the assumed ones.</p>
+<section id="keep-the-risks-distinct" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="keep-the-risks-distinct"><span class="header-section-number">7.5.1</span> Keep the Risks Distinct</h3>
+<p>Jailbreaking a model is not the same thing as opening a database of every user’s conversations. That distinction is useful, but it does not make disclosure impossible. A service may retain prompts, expose them through account or workspace permissions, pass selected content to connected tools, or use eligible conversations for training. Prompt injection can also make an AI system disclose information that its tools or retrieval layer can access. Separately, researchers have demonstrated that language models can sometimes reproduce memorised training examples when prompted appropriately (<a href="https://arxiv.org/abs/2012.07805">Carlini et al., 2021</a>). The likelihood and mechanism differ, but “the model does not store files like a document database” is not a privacy guarantee.</p>
+<p>Provider policy also depends on the product and settings. <a href="https://openai.com/business-data/">OpenAI’s current business-data guidance</a> says its business products and API are not used for training by default, while <a href="https://openai.com/policies/how-your-data-is-used-to-improve-model-performance/">its consumer guidance</a> describes opt-out controls. <a href="https://privacy.anthropic.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training">Anthropic’s commercial privacy guidance</a> makes a similar no-training-by-default commitment for commercial products. Those policies can change and they do not answer every question about retention or access. Check the current terms, your organisation’s policy, and the sensitivity of the data before you submit it.</p>
+<p>You will also hear stories of convergent development mistaken for theft: “I was working on an idea using AI, and then the company released something similar.” Similar ideas can arise independently. Similarity alone does not establish a leak; investigate the actual access, records, and data flows before attributing a cause.</p>
 </section>
 <section id="what-the-risks-are" class="level3" data-number="7.5.2">
 <h3 data-number="7.5.2" class="anchored" data-anchor-id="what-the-risks-are"><span class="header-section-number">7.5.2</span> What the Risks Are</h3>
-<p>The risks that matter are practical and specific. Pasting personally identifiable information into any external tool is a genuine compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) is subject to legislation that applies to AI tools just as it applies to email. Credentials and access tokens pasted into a prompt are an immediate security exposure. And using unverified AI output in high-stakes professional contexts is a liability issue, though that is a verification problem, not a data leakage problem.</p>
+<p>The risks that matter are practical and specific. Pasting personally identifiable information into an unapproved external tool can create a compliance issue because the data leaves your boundary, regardless of whether the model trains on it. Regulated data (health, financial, legal) remains subject to the rules that govern it. Credentials and access tokens pasted into a prompt are an immediate security exposure. Connected tools create another path: a model may be able to retrieve or transmit material that the base model could not access on its own. Using unverified AI output in high-stakes professional contexts adds a separate reliability and accountability risk.</p>
 </section>
-<section id="the-risk-of-not-using-it" class="level3" data-number="7.5.3">
-<h3 data-number="7.5.3" class="anchored" data-anchor-id="the-risk-of-not-using-it"><span class="header-section-number">7.5.3</span> The Risk of Not Using It</h3>
-<p>The “non-zero risk means do not use it” stance deserves scrutiny. Every professional tool involves trade-offs. Email can be intercepted. Cloud storage can be breached. We manage these risks through policy and practice, not prohibition. Refusing to engage with AI because of overestimated data risks carries consequences of its own: skills that do not develop, workflows that stay manual, and a widening gap between those who learned to use the tools thoughtfully and those who waited for certainty that never arrived.</p>
-<p>The question is not whether there is risk. It is whether the risk is proportionate to the concern, and whether avoidance creates risks of its own.</p>
+<section id="not-using-ai-can-be-the-right-decision" class="level3" data-number="7.5.3">
+<h3 data-number="7.5.3" class="anchored" data-anchor-id="not-using-ai-can-be-the-right-decision"><span class="header-section-number">7.5.3</span> Not using AI can be the right decision</h3>
+<p>Compare the benefit with the data boundary, error cost, and available alternatives. A restricted task, an uncheckable answer, or an unsupported tool is a reason to use another method or seek expert help. You do not need to accept a disclosure risk to demonstrate that you are keeping up.</p>
 </section>
 </section>
-<section id="the-self-check" class="level2" data-number="7.6">
-<h2 data-number="7.6" class="anchored" data-anchor-id="the-self-check"><span class="header-section-number">7.6</span> The Self-Check</h2>
-<p>Before you act on anything AI has produced, especially anything that matters, run through these questions.</p>
-<table class="table-striped caption-top table">
-<caption>Self-check before acting on AI output.</caption>
+<section id="a-check-before-use" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="a-check-before-use"><span class="header-section-number">7.6</span> A check before use</h2>
+<p>Ask four practical questions:</p>
+<table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Question</th>
-<th>Good sign</th>
-<th>Warning sign</th>
+<th>Evidence to retain</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Can I explain this in my own words?</td>
-<td>Yes, I understand the reasoning</td>
-<td>I would struggle to explain it</td>
+<td>Can I explain the important decision?</td>
+<td>My explanation of the assumptions and choice</td>
 </tr>
 <tr class="even">
-<td>Does it fit my specific context?</td>
-<td>Addresses my situation, constraints, audience</td>
-<td>Generic enough to apply to anything</td>
+<td>Does it fit the task?</td>
+<td>The relevant audience, constraints, and permissions</td>
 </tr>
 <tr class="odd">
-<td>Have I verified the key claims?</td>
-<td>Checked against credible sources</td>
-<td>Took the AI’s word for it</td>
+<td>Are consequential claims supported?</td>
+<td>The original sources or reproducible calculations</td>
 </tr>
 <tr class="even">
-<td>Could I defend this if challenged?</td>
-<td>Confident in the substance</td>
-<td>Would need to go back and check</td>
+<td>What remains unresolved?</td>
+<td>The gap, responsible reviewer, and stop or escalation action</td>
 </tr>
 </tbody>
 </table>
-<p>These four questions test different things. The first checks comprehension: do you understand what the AI produced, or are you just passing it along? The second checks relevance: is this tailored to your situation, or could it have been generated for anyone? The third checks accuracy: have you verified the substance, or are you taking the AI’s confidence at face value? The fourth checks ownership: could you stand behind this work, or would you need the AI to defend it for you?</p>
-<p>If you have warning signs in more than one row, do not use the output yet. Go back. Verify. Iterate. The whole point of the conversation loop is that you can always go around again.</p>
-<p>This is not busywork. It takes thirty seconds. The cost of skipping it is much higher: acting on something that sounds right but is not, and only finding out when it matters.</p>
+<p>One critical warning can be enough to stop; there is no safe quota of unchecked claims. A brief triage may take seconds, but actual verification can take much longer. Budget for that work rather than promising a universal thirty-second check.</p>
+<p>The next chapter develops VET immediately: verify against evidence, explain in your own words, and test a relevant change. Keep the distinction between evidence and permission: a correct plan may still need approval.</p>
 </section>
-<section id="where-this-goes-next" class="level2" data-number="7.7">
-<h2 data-number="7.7" class="anchored" data-anchor-id="where-this-goes-next"><span class="header-section-number">7.7</span> Where This Goes Next</h2>
-<p>Everything in this chapter is a principle. Principles are useful, but they need operationalising. In Part 3, <a href="vet-your-ai.html" class="quarto-xref"><span>Chapter 12</span></a> introduces VET Your AI, a practical method for <strong>V</strong>erifying claims, <strong>E</strong>valuating reasoning, and <strong>T</strong>esting outputs against your own knowledge and context. It turns “stay critical” from a mindset into a repeatable process.</p>
-<p>The critical eye you bring to AI output is not a burden. It is the thing that makes the output worth using. Without it, you have fluent text and no idea whether it is right. With it, you have a genuine thinking advantage.</p>
-<div class="callout callout-style-default callout-important callout-titled" title="The thirty-second habit">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>The thirty-second habit
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Before acting on AI output that matters, ask: Can I verify the key claims? Can I explain this in my own words? Could I defend it if challenged? If not, you are not done yet.</p>
-</div>
-</div>
-<p>Stay in the conversation. Stay critical. They are the same instruction.</p>
+<section id="independent-practice-review-the-evidence" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="independent-practice-review-the-evidence"><span class="header-section-number">7.7</span> Independent practice: review the evidence</h2>
+<p><strong>Time:</strong> 15–20 minutes. Use this invented statement: “Our workshop plan is approved because the AI checked it.” List the missing evidence, identify who can authorise the event, and rewrite the claim without inventing approval. Then apply the same check to a draft of your own.</p>
+<p><strong>Artefact:</strong> an annotated claim and a corrected version. <strong>Success:</strong> separate confidence, evidence, permission, and the accountable decision. No AI account is needed to complete the independent version.</p>
 
 
 </section>
@@ -1224,13 +1138,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../chapters/ai-last.html" class="pagination-link" aria-label="AI Last">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span>
+      <a href="../chapters/the-conversation-loop.html" class="pagination-link" aria-label="The Conversation Loop">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../chapters/rtcf.html" class="pagination-link" aria-label="RTCF: Starting Conversations Well">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../chapters/vet-your-ai.html" class="pagination-link" aria-label="VET Your AI: The Push-Back Framework">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

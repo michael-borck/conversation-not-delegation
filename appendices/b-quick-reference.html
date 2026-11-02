@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -468,11 +480,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#rtcf-prompt-framework" id="toc-rtcf-prompt-framework" class="nav-link active" data-scroll-target="#rtcf-prompt-framework"><span class="header-section-number">B.1</span> RTCF Prompt Framework</a></li>
   <li><a href="#vet-your-ai" id="toc-vet-your-ai" class="nav-link" data-scroll-target="#vet-your-ai"><span class="header-section-number">B.2</span> VET Your AI</a></li>
-  <li><a href="#the-conversation-loop" id="toc-the-conversation-loop" class="nav-link" data-scroll-target="#the-conversation-loop"><span class="header-section-number">B.3</span> The Conversation Loop</a></li>
-  <li><a href="#eight-techniques-at-a-glance" id="toc-eight-techniques-at-a-glance" class="nav-link" data-scroll-target="#eight-techniques-at-a-glance"><span class="header-section-number">B.4</span> Eight Techniques at a Glance</a></li>
-  <li><a href="#one-idea-several-names" id="toc-one-idea-several-names" class="nav-link" data-scroll-target="#one-idea-several-names"><span class="header-section-number">B.5</span> One Idea, Several Names</a></li>
+  <li><a href="#objective-review-of-a-proposal" id="toc-objective-review-of-a-proposal" class="nav-link" data-scroll-target="#objective-review-of-a-proposal"><span class="header-section-number">B.3</span> Objective Review of a Proposal</a></li>
+  <li><a href="#the-conversation-loop" id="toc-the-conversation-loop" class="nav-link" data-scroll-target="#the-conversation-loop"><span class="header-section-number">B.4</span> The Conversation Loop</a></li>
+  <li><a href="#eight-techniques-at-a-glance" id="toc-eight-techniques-at-a-glance" class="nav-link" data-scroll-target="#eight-techniques-at-a-glance"><span class="header-section-number">B.5</span> Eight Techniques at a Glance</a></li>
+  <li><a href="#one-idea-several-names" id="toc-one-idea-several-names" class="nav-link" data-scroll-target="#one-idea-several-names"><span class="header-section-number">B.6</span> One Idea, Several Names</a></li>
+  <li><a href="#choose-the-mode-before-the-prompt" id="toc-choose-the-mode-before-the-prompt" class="nav-link" data-scroll-target="#choose-the-mode-before-the-prompt"><span class="header-section-number">B.7</span> Choose the mode before the prompt</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -497,7 +511,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Tear-out summaries of the key frameworks, tools, and techniques in this book. Pin them next to your screen or keep them open in a tab.</p>
+<p>Tear-out summaries of the frameworks, tools, and techniques in this book. Pin them next to your screen or keep them open in a tab.</p>
 <section id="rtcf-prompt-framework" class="level2" data-number="B.1">
 <h2 data-number="B.1" class="anchored" data-anchor-id="rtcf-prompt-framework"><span class="header-section-number">B.1</span> RTCF Prompt Framework</h2>
 <pre><code>┌─────────────────────────────────────────────────┐
@@ -516,7 +530,7 @@ ul.task-list li input[type="checkbox"] {
 │  F - FORMAT   │ How should output look?         │
 │               │ Structure, length, style        │
 └─────────────────────────────────────────────────┘</code></pre>
-<p>Four components. Four questions. Answer them before you type your prompt, and the conversation starts in a much better place. See <a href="../chapters/rtcf.html" class="quarto-xref"><span>Chapter 8</span></a> for the full chapter.</p>
+<p>Four components. Four questions. Answer them before you type your prompt, and the conversation starts in a much better place. See <a href="../chapters/is-prompting-dead.html" class="quarto-xref"><span>Chapter 9</span></a> for the full chapter.</p>
 </section>
 <section id="vet-your-ai" class="level2" data-number="B.2">
 <h2 data-number="B.2" class="anchored" data-anchor-id="vet-your-ai"><span class="header-section-number">B.2</span> VET Your AI</h2>
@@ -537,17 +551,17 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>V</strong> – Verify</td>
+<td><strong>V</strong>, Verify</td>
 <td>Can I find this independently?</td>
 <td>Cross-reference claims against credible sources. If the AI cites something, look it up.</td>
 </tr>
 <tr class="even">
-<td><strong>E</strong> – Explain</td>
+<td><strong>E</strong>, Explain</td>
 <td>Can I explain this in my own words?</td>
 <td>If you cannot walk someone through the reasoning, you do not understand it well enough to use it.</td>
 </tr>
 <tr class="odd">
-<td><strong>T</strong> – Test</td>
+<td><strong>T</strong>, Test</td>
 <td>Does this hold up under scrutiny?</td>
 <td>Challenge the output. Change the assumptions. Ask “what if the opposite were true?”</td>
 </tr>
@@ -591,10 +605,80 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>If you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See <a href="../chapters/vet-your-ai.html" class="quarto-xref"><span>Chapter 12</span></a> for the full chapter.</p>
+<p>If you pass all three steps, the output is yours. If you fail any of them, go back into the conversation and iterate. See <a href="../chapters/vet-your-ai.html" class="quarto-xref"><span>Chapter 8</span></a> for the full chapter.</p>
 </section>
-<section id="the-conversation-loop" class="level2" data-number="B.3">
-<h2 data-number="B.3" class="anchored" data-anchor-id="the-conversation-loop"><span class="header-section-number">B.3</span> The Conversation Loop</h2>
+<section id="objective-review-of-a-proposal" class="level2" data-number="B.3">
+<h2 data-number="B.3" class="anchored" data-anchor-id="objective-review-of-a-proposal"><span class="header-section-number">B.3</span> Objective Review of a Proposal</h2>
+<p>Use this compact sequence when a fresh evaluation matters more than continuing the conversation that produced the idea. It combines the controlled handover in <a href="../chapters/the-conversation-loop.html#sec-two-chat-workflow" class="quarto-xref"><span>Section 6.7.1</span></a>, VET in <a href="../chapters/vet-your-ai.html" class="quarto-xref"><span>Chapter 8</span></a>, and the risk work in <a href="../chapters/seven-techniques.html" class="quarto-xref"><span>Chapter 11</span></a>.</p>
+<table class="table-striped caption-top table">
+<caption>An objective review need not use every step. Choose the shortest sequence that exposes the decision’s weak point.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Do this</th>
+<th>Keep</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Consolidate</td>
+<td>From the exploratory work, write a short brief: decision, audience, deadline or reversibility, supplied evidence, constraints, unknowns</td>
+<td>Brief checked against original sources</td>
+</tr>
+<tr class="even">
+<td>2. Reset context</td>
+<td>Start a fresh approved session and supply only the brief</td>
+<td>No exploratory turns or discarded framing</td>
+</tr>
+<tr class="odd">
+<td>3. Surface omissions</td>
+<td>Ask diagnostic questions one at a time about material left out</td>
+<td>Answers, including “unknown”</td>
+</tr>
+<tr class="even">
+<td>4. Stress-test</td>
+<td>Ask for the strongest specific objections and what evidence would change them</td>
+<td>Objections tied to claims, not theatrical criticism</td>
+</tr>
+<tr class="odd">
+<td>5. Name success conditions</td>
+<td>Ask what would have to be true; mark each condition established, plausible, or unproven</td>
+<td>Assumptions register with an owner and next check</td>
+</tr>
+<tr class="even">
+<td>6. Compare, then revise</td>
+<td>Optionally give the identical brief to a second approved model or qualified reviewer; investigate recurring and divergent risks</td>
+<td>Comparison notes; overlap treated as a lead, not independent proof</td>
+</tr>
+<tr class="odd">
+<td>7. Record movement</td>
+<td>When you or the reviewer changes position, name the new evidence that caused it</td>
+<td>Revision ledger: original claim, pushback, evidence, revised claim</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="A prompt to adapt">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>A prompt to adapt
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“Above is a self-contained brief for a decision. Write for the named audience and take its deadline and reversibility seriously. First ask me one material question at a time about information the brief omits. Then make the strongest specific case against the proposal, distinguishing supplied evidence from hypotheses. Finally, list what would have to be true for it to succeed and mark each condition established, plausible, or unproven, with the evidence that would move it up one category. If a later claim changes your assessment, name that claim; I will record the change in my own revision ledger and verify it independently.”</p>
+</div>
+</div>
+<p>A fresh session is not a zero-bias room: the brief can carry the original framing with it. Check current product guidance for any temporary/private/incognito label before relying on what it disables, and never move unapproved data into a second service merely to obtain another opinion.</p>
+</section>
+<section id="the-conversation-loop" class="level2" data-number="B.4">
+<h2 data-number="B.4" class="anchored" data-anchor-id="the-conversation-loop"><span class="header-section-number">B.4</span> The Conversation Loop</h2>
 <p>Four stages. One feedback arc. Most good work passes through more than once.</p>
 <table class="table-striped caption-top table">
 <caption>The Conversation Loop: Brainstorm, Ideate, Iterate, Amplify.</caption>
@@ -633,10 +717,10 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>The loop is not linear. You can jump from Iterate back to Brainstorm when you realise the question was wrong. You can loop from Amplify back to Ideate when a new angle emerges. The sign that you are done is not that the AI stopped producing output. It is that your thinking has landed somewhere solid. See <a href="../chapters/the-conversation-loop.html" class="quarto-xref"><span>Chapter 5</span></a> for the full chapter.</p>
+<p>The loop is not linear. You can jump from Iterate back to Brainstorm when you realise the question was wrong. You can loop from Amplify back to Ideate when a new angle emerges. The sign that you are done is not that the AI stopped producing output. It is that your thinking has landed somewhere solid. See <a href="../chapters/the-conversation-loop.html" class="quarto-xref"><span>Chapter 6</span></a> for the full chapter.</p>
 </section>
-<section id="eight-techniques-at-a-glance" class="level2" data-number="B.4">
-<h2 data-number="B.4" class="anchored" data-anchor-id="eight-techniques-at-a-glance"><span class="header-section-number">B.4</span> Eight Techniques at a Glance</h2>
+<section id="eight-techniques-at-a-glance" class="level2" data-number="B.5">
+<h2 data-number="B.5" class="anchored" data-anchor-id="eight-techniques-at-a-glance"><span class="header-section-number">B.5</span> Eight Techniques at a Glance</h2>
 <table class="table-striped caption-top table">
 <caption>Eight techniques for deeper thinking with AI.</caption>
 <colgroup>
@@ -694,10 +778,10 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Each technique is a different way to stay in conversation rather than delegating. Pick the one that matches your task. See <a href="../chapters/seven-techniques.html" class="quarto-xref"><span>Chapter 10</span></a> for detailed walkthroughs and examples.</p>
+<p>Each technique is a different way to stay in conversation rather than delegating. Pick the one that matches your task. See <a href="../chapters/seven-techniques.html" class="quarto-xref"><span>Chapter 11</span></a> for detailed walkthroughs and examples.</p>
 </section>
-<section id="one-idea-several-names" class="level2" data-number="B.5">
-<h2 data-number="B.5" class="anchored" data-anchor-id="one-idea-several-names"><span class="header-section-number">B.5</span> One Idea, Several Names</h2>
+<section id="one-idea-several-names" class="level2" data-number="B.6">
+<h2 data-number="B.6" class="anchored" data-anchor-id="one-idea-several-names"><span class="header-section-number">B.6</span> One Idea, Several Names</h2>
 <p>The same principle appears across disciplines under different vocabularies. Whichever language fits your audience, the practice is the same.</p>
 <table class="table-striped caption-top table">
 <caption>One idea, four vocabularies.</caption>
@@ -736,7 +820,52 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Conversation is the practice. Judgement is what you exercise during it. Agency is what you preserve by exercising judgement. Human-in-the-loop is what the same stance looks like from a system designer’s perspective. Four words, one stance, four angles on the same thing.</p>
+<p>Conversation is the practice. Judgement is what you exercise during it. Agency is what you preserve by exercising judgement. Human-in-the-loop is what the same stance looks like from a system designer’s perspective.</p>
+</section>
+<section id="choose-the-mode-before-the-prompt" class="level2" data-number="B.7">
+<h2 data-number="B.7" class="anchored" data-anchor-id="choose-the-mode-before-the-prompt"><span class="header-section-number">B.7</span> Choose the mode before the prompt</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Starting mode</th>
+<th>Required check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Routine calculation or exact transformation with a known method</td>
+<td>Use a calculator, script, or established non-AI tool</td>
+<td>Validate inputs and result</td>
+</tr>
+<tr class="even">
+<td>Well-specified, permitted task with an independent acceptance test</td>
+<td>Delegate a bounded operation</td>
+<td>Keep permissions narrow, inspect failures, preserve a stop rule</td>
+</tr>
+<tr class="odd">
+<td>Ambiguous goal, competing values, or a judgement you need to develop</td>
+<td>Converse</td>
+<td>Preserve alternatives, evidence, and your decision</td>
+</tr>
+<tr class="even">
+<td>Repeated task with protected checks and recoverable actions</td>
+<td>Consider automation</td>
+<td>Test the evaluator, budget, access boundaries, and rollback</td>
+</tr>
+<tr class="odd">
+<td>Data use is unapproved, evidence is missing, or consequences exceed your expertise</td>
+<td>Avoid that AI use or seek qualified help</td>
+<td>Obtain permission or expertise before proceeding</td>
+</tr>
+</tbody>
+</table>
+<p>These are starting decisions, not permanent labels. Reconsider when the data, use, or consequences change.</p>
 
 
 </section>

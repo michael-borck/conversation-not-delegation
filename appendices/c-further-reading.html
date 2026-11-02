@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -33,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../appendices/d-interactive-tools.html" rel="next">
+<link href="../about-author.html" rel="next">
 <link href="../appendices/b-quick-reference.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,25 +478,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#part-1-understanding-the-landscape" id="toc-part-1-understanding-the-landscape" class="nav-link active" data-scroll-target="#part-1-understanding-the-landscape"><span class="header-section-number">C.1</span> Part 1: Understanding the Landscape</a>
-  <ul class="collapse">
-  <li><a href="#what-are-large-language-models" id="toc-what-are-large-language-models" class="nav-link" data-scroll-target="#what-are-large-language-models"><span class="header-section-number">C.1.1</span> What Are Large Language Models?</a></li>
-  <li><a href="#does-ai-make-us-dumber" id="toc-does-ai-make-us-dumber" class="nav-link" data-scroll-target="#does-ai-make-us-dumber"><span class="header-section-number">C.1.2</span> Does AI Make Us Dumber?</a></li>
-  </ul></li>
-  <li><a href="#part-2-principles" id="toc-part-2-principles" class="nav-link" data-scroll-target="#part-2-principles"><span class="header-section-number">C.2</span> Part 2: Principles</a>
-  <ul class="collapse">
-  <li><a href="#the-conversation-loop" id="toc-the-conversation-loop" class="nav-link" data-scroll-target="#the-conversation-loop"><span class="header-section-number">C.2.1</span> The Conversation Loop</a></li>
-  <li><a href="#staying-critical" id="toc-staying-critical" class="nav-link" data-scroll-target="#staying-critical"><span class="header-section-number">C.2.2</span> Staying Critical</a></li>
-  </ul></li>
-  <li><a href="#part-3-the-methodology" id="toc-part-3-the-methodology" class="nav-link" data-scroll-target="#part-3-the-methodology"><span class="header-section-number">C.3</span> Part 3: The Methodology</a>
-  <ul class="collapse">
-  <li><a href="#rtcf-vet-and-the-prompt-structuring-frameworks" id="toc-rtcf-vet-and-the-prompt-structuring-frameworks" class="nav-link" data-scroll-target="#rtcf-vet-and-the-prompt-structuring-frameworks"><span class="header-section-number">C.3.1</span> RTCF, VET, and the Prompt Structuring Frameworks</a></li>
-  <li><a href="#prompt-chaining" id="toc-prompt-chaining" class="nav-link" data-scroll-target="#prompt-chaining"><span class="header-section-number">C.3.2</span> Prompt Chaining</a></li>
-  <li><a href="#eight-techniques-for-deeper-thinking" id="toc-eight-techniques-for-deeper-thinking" class="nav-link" data-scroll-target="#eight-techniques-for-deeper-thinking"><span class="header-section-number">C.3.3</span> Eight Techniques for Deeper Thinking</a></li>
-  </ul></li>
-  <li><a href="#general-background" id="toc-general-background" class="nav-link" data-scroll-target="#general-background"><span class="header-section-number">C.4</span> General Background</a></li>
+  <li><a href="#how-models-generate-and-use-information" id="toc-how-models-generate-and-use-information" class="nav-link active" data-scroll-target="#how-models-generate-and-use-information"><span class="header-section-number">C.1</span> How models generate and use information</a></li>
+  <li><a href="#learning-and-critical-thinking" id="toc-learning-and-critical-thinking" class="nav-link" data-scroll-target="#learning-and-critical-thinking"><span class="header-section-number">C.2</span> Learning and critical thinking</a></li>
+  <li><a href="#checking-agreement-and-protecting-information" id="toc-checking-agreement-and-protecting-information" class="nav-link" data-scroll-target="#checking-agreement-and-protecting-information"><span class="header-section-number">C.3</span> Checking agreement and protecting information</a></li>
+  <li><a href="#prompting-refinement-and-workflows" id="toc-prompting-refinement-and-workflows" class="nav-link" data-scroll-target="#prompting-refinement-and-workflows"><span class="header-section-number">C.4</span> Prompting, refinement, and workflows</a></li>
+  <li><a href="#what-belongs-to-this-book" id="toc-what-belongs-to-this-book" class="nav-link" data-scroll-target="#what-belongs-to-this-book"><span class="header-section-number">C.5</span> What belongs to this book</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -509,156 +509,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This book is practitioner-focused, but its ideas are grounded in research. The references below point to the studies, papers, and books behind the key claims. They are organised by chapter so you can follow up on whatever interests you most.</p>
-<p>This is not a comprehensive literature review. It is a trail of breadcrumbs for curious readers.</p>
-<section id="part-1-understanding-the-landscape" class="level2" data-number="C.1">
-<h2 data-number="C.1" class="anchored" data-anchor-id="part-1-understanding-the-landscape"><span class="header-section-number">C.1</span> Part 1: Understanding the Landscape</h2>
-<section id="what-are-large-language-models" class="level3" data-number="C.1.1">
-<h3 data-number="C.1.1" class="anchored" data-anchor-id="what-are-large-language-models"><span class="header-section-number">C.1.1</span> What Are Large Language Models?</h3>
-<p><strong>How LLMs work (prediction as the core mechanism):</strong></p>
+<p>This is a selective evidence trail, checked for this revision on 14 September 2026. Research findings below concern the settings studied; they are not guarantees about every learner or future model. Product documentation describes a changing implementation. Follow the direct links to inspect methods and limitations.</p>
+<section id="how-models-generate-and-use-information" class="level2" data-number="C.1">
+<h2 data-number="C.1" class="anchored" data-anchor-id="how-models-generate-and-use-information"><span class="header-section-number">C.1</span> How models generate and use information</h2>
 <ul>
-<li><p>Vaswani, A. et al.&nbsp;(2017). “Attention Is All You Need.” <em>Advances in Neural Information Processing Systems</em>. The foundational paper introducing the transformer architecture that underpins all modern LLMs.</p></li>
-<li><p>Bommasani, R. et al.&nbsp;(2021). “On the Opportunities and Risks of Foundation Models.” <em>arXiv preprint</em>. Defines the category of “foundation models,” large models trained on broad data that can be adapted to many tasks, and maps their capabilities, risks, and societal implications.</p></li>
-</ul>
-<p><strong>RE2 (Re-Reading) prompting and unidirectional attention:</strong></p>
-<ul>
-<li>Xu, X. et al.&nbsp;(2024). “RE2: Region-Enhanced Re-Reading Improves Large Language Models.” <em>EMNLP 2024</em>. Demonstrates that repeating a question in the prompt creates pseudo-bidirectional attention, improving reasoning accuracy. Twice is the sweet spot; more repetitions degrade performance.</li>
-</ul>
-<p><strong>Hallucination:</strong></p>
-<ul>
-<li>Ji, Z. et al.&nbsp;(2023). “Survey of Hallucination in Natural Language Generation.” <em>ACM Computing Surveys</em>. A comprehensive overview of why LLMs generate plausible but false content, and the structural reasons this problem persists across model generations.</li>
-</ul>
-<p><strong>Bias and fairness:</strong></p>
-<ul>
-<li>Gallegos, I.O. et al.&nbsp;(2024). “Bias and Fairness in Large Language Models: A Survey.” <em>Computational Linguistics</em>. A thorough survey of how biases in training data manifest in LLM outputs, and the limitations of current approaches to mitigating them.</li>
-</ul>
-<p><strong>Deep learning foundations:</strong></p>
-<ul>
-<li>LeCun, Y., Bengio, Y. and Hinton, G. (2015). “Deep Learning.” <em>Nature</em>. The landmark review by the three pioneers of deep learning, providing accessible context for the layered pattern recognition that makes LLMs possible.</li>
+<li><strong>Vaswani et al.&nbsp;(2017), <a href="https://arxiv.org/abs/1706.03762">Attention Is All You Need</a>.</strong> Introduces the transformer architecture. Useful background for attention and causal decoding, not evidence that a model cannot revisit earlier prompt tokens or that all present-day systems share one architecture.</li>
+<li><strong>Lewis et al.&nbsp;(2020), <a href="https://arxiv.org/abs/2005.11401">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a>.</strong> Describes a system combining a learned generator with retrieval. Supports distinguishing model parameters from retrieved context; it does not establish that retrieval eliminates false answers.</li>
+<li><strong>Carlini et al.&nbsp;(2021), <a href="https://arxiv.org/abs/2012.07805">Extracting Training Data from Large Language Models</a>.</strong> Demonstrates recoverable training examples in the studied setting. A reason to avoid claiming that generation can never reproduce stored material, not a claim that every response is a retrieved copy.</li>
+<li><strong>Liu et al.&nbsp;(2023), <a href="https://arxiv.org/abs/2307.03172">Lost in the Middle</a>.</strong> Tests how the position of relevant material affects performance in long contexts. Relevant to handover briefs and source placement; a large context window alone does not establish effective use of every passage.</li>
 </ul>
 </section>
-<section id="does-ai-make-us-dumber" class="level3" data-number="C.1.2">
-<h3 data-number="C.1.2" class="anchored" data-anchor-id="does-ai-make-us-dumber"><span class="header-section-number">C.1.2</span> Does AI Make Us Dumber?</h3>
-<p><strong>Cognitive offloading:</strong></p>
+<section id="learning-and-critical-thinking" class="level2" data-number="C.2">
+<h2 data-number="C.2" class="anchored" data-anchor-id="learning-and-critical-thinking"><span class="header-section-number">C.2</span> Learning and critical thinking</h2>
 <ul>
-<li><p>Risko, E.F. and Gilbert, S.J. (2016). “Cognitive Offloading.” <em>Trends in Cognitive Sciences</em>. The foundational paper on how humans use external tools to reduce cognitive demand, and when this helps versus hinders learning.</p></li>
-<li><p>Sparrow, B., Liu, J. and Wegner, D.M. (2011). “Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips.” <em>Science</em>. The classic study showing that access to searchable information changes what we bother to remember, a pre-AI demonstration of cognitive offloading that foreshadowed current concerns about AI dependency.</p></li>
+<li><strong>Lee et al.&nbsp;(2025), <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf">The Impact of Generative AI on Critical Thinking</a>.</strong> Survey evidence about knowledge workers’ reported effort and confidence. Self-report and association do not establish that AI caused a loss of general reasoning ability.</li>
+<li><strong>Bastani et al.&nbsp;(2025), <a href="https://doi.org/10.1073/pnas.2422633122">Generative AI without guardrails can harm learning</a>.</strong> Studies AI assistance in high-school mathematics, including performance when help is removed. The design of assistance matters; transfer to other subjects and workplace tasks requires further evidence.</li>
 </ul>
-<p><strong>The generation effect (producing information improves retention):</strong></p>
+<p>These sources motivate separating task performance, learning, and later independent performance in <a href="../chapters/does-ai-make-us-dumber.html" class="quarto-xref"><span>Chapter 4</span></a>. They do not prove that every copied answer harms learning, that every conversation helps, or that accessibility support should be withdrawn. If the PNAS publisher is inaccessible, the authors also provide an <a href="https://hamsabastani.github.io/education_llm.pdf">open manuscript</a>; check the version against the published record.</p>
+</section>
+<section id="checking-agreement-and-protecting-information" class="level2" data-number="C.3">
+<h2 data-number="C.3" class="anchored" data-anchor-id="checking-agreement-and-protecting-information"><span class="header-section-number">C.3</span> Checking agreement and protecting information</h2>
 <ul>
-<li>Slamecka, N.J. and Graf, P. (1978). “The Generation Effect: Delineation of a Phenomenon.” <em>Journal of Experimental Psychology: Human Learning and Memory</em>. Demonstrates that actively generating information leads to better memory than passively receiving it. This is the research basis for why doing your own thinking first matters.</li>
-</ul>
-<p><strong>AI and cognitive decline concerns:</strong></p>
-<ul>
-<li>Bastani, H. et al.&nbsp;(2025). “Generative AI Without Guardrails Can Harm Learning: Evidence from High School Mathematics.” <em>Proceedings of the National Academy of Sciences</em>. Evidence that students using AI without guardrails perform worse on subsequent unaided tasks, supporting the book’s argument for conversation over delegation.</li>
-</ul>
-<p><strong>Metacognitive laziness:</strong></p>
-<ul>
-<li><p>Fan, Y. et al.&nbsp;(2025). “Beware of Metacognitive Laziness: Effects of Generative Artificial Intelligence on Learning Motivation, Processes, and Performance.” <em>British Journal of Educational Technology</em>. Directly documents how AI use can erode the self-monitoring habits that distinguish deep learning from surface acceptance. This is the research behind the book’s discussion of metacognitive laziness.</p></li>
-<li><p>Gerlich, M. (2025). “AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking.” <em>Societies</em>. Examines how widespread AI tool use affects critical thinking capacity at a societal level.</p></li>
-</ul>
-<p><strong>Cognitive surrender:</strong></p>
-<ul>
-<li>Shaw, S.D. and Nave, G. (2026). “Thinking — Fast, Slow, and Artificial: How AI Is Reshaping Human Reasoning and the Rise of Cognitive Surrender.” <em>Working paper, The Wharton School</em>. Introduces “cognitive surrender,” essentially what this book calls delegation, as a distinct phenomenon where people defer to AI not because it is right, but because thinking is effortful.</li>
+<li><strong>Sharma et al.&nbsp;(2023), <a href="https://arxiv.org/abs/2310.13548">Towards Understanding Sycophancy in Language Models</a>.</strong> Studies agreement with user beliefs and preference-training effects. Treat sycophancy as a behaviour to test, not an unchangeable property of all assistants.</li>
+<li><strong>Cheng et al.&nbsp;(2025), <a href="https://arxiv.org/abs/2505.13995">ELEPHANT: Measuring and Understanding Social Sycophancy in LLMs</a>.</strong> Measures face-preserving responses in open-ended advice across eleven models, including affirmation of either side in paired moral-conflict prompts. Useful for distinguishing social affirmation from factual agreement; its rates describe the benchmark’s datasets and measures, not every workplace conversation.</li>
+<li><strong>OAIC, <a href="https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/guidance-on-privacy-and-the-use-of-commercially-available-ai-products">Guidance on privacy and commercially available AI products</a>.</strong> Australian regulatory guidance for assessing personal information and AI use. It is not a product certification or advice about your particular obligations.</li>
+<li><strong>OAIC, <a href="https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/handling-personal-information/de-identification-and-the-privacy-act">De-identification and the Privacy Act</a>.</strong> Explains why identifiability depends on context. Replacing a name is not sufficient evidence that a record is anonymous.</li>
 </ul>
 </section>
-</section>
-<section id="part-2-principles" class="level2" data-number="C.2">
-<h2 data-number="C.2" class="anchored" data-anchor-id="part-2-principles"><span class="header-section-number">C.2</span> Part 2: Principles</h2>
-<section id="the-conversation-loop" class="level3" data-number="C.2.1">
-<h3 data-number="C.2.1" class="anchored" data-anchor-id="the-conversation-loop"><span class="header-section-number">C.2.1</span> The Conversation Loop</h3>
-<p><strong>Cognitive strategy transfer:</strong></p>
+<section id="prompting-refinement-and-workflows" class="level2" data-number="C.4">
+<h2 data-number="C.4" class="anchored" data-anchor-id="prompting-refinement-and-workflows"><span class="header-section-number">C.4</span> Prompting, refinement, and workflows</h2>
 <ul>
-<li><p>Wei, J. et al.&nbsp;(2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” <em>NeurIPS 2022</em>. The paper that formalised “show your working” as a prompting strategy, demonstrating that step-by-step reasoning prompts dramatically improve performance on complex tasks.</p></li>
-<li><p>Wang, X. et al.&nbsp;(2023). “Self-Consistency Improves Chain of Thought Reasoning in Language Models.” <em>ICLR 2023</em>. Shows that sampling multiple reasoning paths and selecting the most consistent answer improves accuracy, the AI equivalent of “check your answers.”</p></li>
-</ul>
-<p><strong>Human-AI collaboration:</strong></p>
-<ul>
-<li>Wilson, H.J. and Daugherty, P.R. (2018). “Collaborative Intelligence: Humans and AI Are Joining Forces.” <em>Harvard Business Review</em>. Argues that the greatest performance gains come not from AI alone or humans alone, but from structured collaboration. This is the professional case for conversation over delegation.</li>
-</ul>
-<p><strong>Few-shot prompting (worked examples):</strong></p>
-<ul>
-<li>Brown, T. et al.&nbsp;(2020). “Language Models are Few-Shot Learners.” <em>NeurIPS 2020</em>. The GPT-3 paper that demonstrated giving a model a few examples in the prompt dramatically improves task performance. This is the research behind the “worked examples → few-shot prompting” transfer.</li>
+<li><strong>Wei et al.&nbsp;(2022), <a href="https://arxiv.org/abs/2201.11903">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a>.</strong> Reports improvements with worked reasoning examples on the tasks and models tested. It does not show that generated explanations faithfully reveal internal reasoning.</li>
+<li><strong>Zhou et al.&nbsp;(2023), <a href="https://arxiv.org/abs/2205.10625">Least-to-Most Prompting Enables Complex Reasoning in Large Language Models</a>.</strong> Tests decomposition into ordered subproblems. Relevant to chaining, while leaving open whether a particular real-world task benefits from more stages.</li>
+<li><strong>Madaan et al.&nbsp;(2023), <a href="https://arxiv.org/abs/2303.17651">Self-Refine: Iterative Refinement with Self-Feedback</a>.</strong> Evaluates an iterative feedback method on several tasks. Improvements in those evaluations do not guarantee that repeated self-critique finds factual mistakes.</li>
+<li><strong>Anthropic, <a href="https://www.anthropic.com/engineering/building-effective-agents">Building Effective Agents</a>.</strong> Practitioner engineering guidance on workflows and agents. Use it to inspect permissions, tool execution, and evaluation, not as independent evidence of a universal productivity gain.</li>
 </ul>
 </section>
-<section id="staying-critical" class="level3" data-number="C.2.2">
-<h3 data-number="C.2.2" class="anchored" data-anchor-id="staying-critical"><span class="header-section-number">C.2.2</span> Staying Critical</h3>
-<p><strong>The Gell-Mann Amnesia Effect:</strong></p>
-<ul>
-<li>Crichton, M. (2002). “Why Speculate?” Lecture. The original articulation of the phenomenon, attributed to physicist Murray Gell-Mann. Not a formal study, but a widely recognised observation about how we selectively apply scepticism.</li>
-</ul>
-<p><strong>Sycophancy in LLMs:</strong></p>
-<ul>
-<li><p>Sharma, M. et al.&nbsp;(2023). “Towards Understanding Sycophancy in Language Models.” <em>arXiv preprint</em>. Documents how LLMs systematically tailor responses to match user beliefs, even when those beliefs are incorrect. Demonstrates that sycophancy is a persistent feature of RLHF-trained models, not a bug that will be fixed.</p></li>
-<li><p>Perez, E. et al.&nbsp;(2023). “Discovering Language Model Behaviors with Model-Written Evaluations.” <em>ACL 2023</em>. Includes evidence of sycophantic behaviour across multiple model families and scales.</p></li>
-</ul>
-<p><strong>The AI Dismissal Fallacy:</strong></p>
-<ul>
-<li>Claessens, S., Veitch, P. and Everett, J.A.C. (2026). “Negative Perceptions of Outsourcing to Artificial Intelligence.” <em>Computers in Human Behavior</em>. Research documenting that people systematically devalue work when they learn AI was involved in producing it. This is the empirical basis for the AI Dismissal Fallacy discussed in this book.</li>
-</ul>
-<p><strong>Bias in training data:</strong></p>
-<ul>
-<li>Bender, E.M. et al.&nbsp;(2021). “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?” <em>FAccT 2021</em>. A widely discussed paper on how training data biases propagate through LLMs, relevant to the book’s warnings about not taking AI output at face value.</li>
-</ul>
-</section>
-</section>
-<section id="part-3-the-methodology" class="level2" data-number="C.3">
-<h2 data-number="C.3" class="anchored" data-anchor-id="part-3-the-methodology"><span class="header-section-number">C.3</span> Part 3: The Methodology</h2>
-<section id="rtcf-vet-and-the-prompt-structuring-frameworks" class="level3" data-number="C.3.1">
-<h3 data-number="C.3.1" class="anchored" data-anchor-id="rtcf-vet-and-the-prompt-structuring-frameworks"><span class="header-section-number">C.3.1</span> RTCF, VET, and the Prompt Structuring Frameworks</h3>
-<p>RTCF (Role, Task, Context, Format) and VET (Verify, Explain, Test) are not drawn from a single published source. They are practitioner frameworks that synthesise established practices into memorable mnemonics. The same is true of related frameworks like CRAFT, CO-STAR, RISEN, and APE. All emerged from the practitioner and educator community in 2023-24, none have a definitive academic origin, and all capture the same core insight about structured communication.</p>
-<p>The underlying principles, however, are well-supported:</p>
-<p><strong>Structured prompts outperform unstructured ones:</strong></p>
-<ul>
-<li><p>Zheng, H. et al.&nbsp;(2023). “Is ChatGPT a Good NLG Evaluator?” <em>arXiv preprint</em>. Among other findings, demonstrates that assigning specific roles to LLMs measurably changes output quality and focus. This is the research basis for the “R” in RTCF.</p></li>
-<li><p>Federiakin, D. et al.&nbsp;(2024). “Prompt Engineering as a New 21st Century Skill.” <em>Frontiers in Education</em>. Makes the case that structured prompting is a transferable professional skill, not a niche technical ability, supporting the book’s argument that prompt structuring draws on existing competencies.</p></li>
-<li><p>Sahoo, P. et al.&nbsp;(2024). “A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications.” <em>arXiv preprint</em>. A comprehensive survey of prompting techniques, providing the broader landscape in which frameworks like RTCF, CRAFT, and CO-STAR sit.</p></li>
-</ul>
-<p><strong>The Explain step in VET (the Feynman Technique):</strong></p>
-<ul>
-<li>Feynman, R. (1985). <em>“Surely You’re Joking, Mr.&nbsp;Feynman!”</em> The origin of the principle: if you cannot explain something in simple terms, you do not understand it. The “E” in VET is a direct application.</li>
-</ul>
-<p><strong>The Verify step in VET (information literacy):</strong></p>
-<ul>
-<li>Wineburg, S. et al.&nbsp;(2022). “Lateral Reading and the Nature of Expertise.” <em>Teachers College Record</em>. Demonstrates that experts verify claims by checking sources laterally rather than reading vertically, the same habit the Verify step builds.</li>
-</ul>
-<p><strong>One-shot vs iterative prompting:</strong></p>
-<ul>
-<li>Madaan, A. et al.&nbsp;(2023). “Self-Refine: Iterative Refinement with Self-Feedback.” <em>NeurIPS 2023</em>. Shows that iterative refinement consistently outperforms single-pass generation, supporting the book’s argument that structured prompts are a starting point, not a destination.</li>
-</ul>
-</section>
-<section id="prompt-chaining" class="level3" data-number="C.3.2">
-<h3 data-number="C.3.2" class="anchored" data-anchor-id="prompt-chaining"><span class="header-section-number">C.3.2</span> Prompt Chaining</h3>
-<p><strong>Task decomposition:</strong></p>
-<ul>
-<li>Zhou, D. et al.&nbsp;(2023). “Least-to-Most Prompting Enables Complex Reasoning in Large Language Models.” <em>ICLR 2023</em>. Demonstrates that breaking complex problems into sequential subproblems and solving them in order significantly improves accuracy. This is the formal basis for prompt chaining.</li>
-</ul>
-</section>
-<section id="eight-techniques-for-deeper-thinking" class="level3" data-number="C.3.3">
-<h3 data-number="C.3.3" class="anchored" data-anchor-id="eight-techniques-for-deeper-thinking"><span class="header-section-number">C.3.3</span> Eight Techniques for Deeper Thinking</h3>
-<p><strong>Debating and adversarial prompting:</strong></p>
-<ul>
-<li>Du, Y. et al.&nbsp;(2023). “Improving Factuality and Reasoning in Language Models through Multiagent Debate.” <em>arXiv preprint</em>. Shows that having multiple LLM instances debate produces more accurate and well-reasoned outputs than single-model generation.</li>
-</ul>
-<p><strong>Practical AI prompting strategies:</strong></p>
-<ul>
-<li>Mollick, E.R. and Mollick, L. (2023). “Assigning AI: Seven Approaches for Students, with Prompts.” <em>arXiv preprint</em>. Seven structured approaches to using AI for learning, several of which map directly onto the techniques in this book (role play, debate, self-testing).</li>
-</ul>
-<p><strong>Formative self-testing (retrieval practice):</strong></p>
-<ul>
-<li>Roediger, H.L. and Butler, A.C. (2011). “The Critical Role of Retrieval Practice in Long-Term Retention.” <em>Trends in Cognitive Sciences</em>. The research basis for why testing yourself improves learning more than re-reading, the principle behind the Formative Self-Testing technique.</li>
-</ul>
-</section>
-</section>
-<section id="general-background" class="level2" data-number="C.4">
-<h2 data-number="C.4" class="anchored" data-anchor-id="general-background"><span class="header-section-number">C.4</span> General Background</h2>
-<p>For readers who want a broader foundation in how AI systems work and how to think about their role in society:</p>
-<ul>
-<li><p>Mitchell, M. (2019). <em>Artificial Intelligence: A Guide for Thinking Humans</em>. New York: Farrar, Straus and Giroux. An accessible, rigorous introduction to AI for non-specialists.</p></li>
-<li><p>Christian, B. (2020). <em>The Alignment Problem</em>. New York: W.W. Norton. Explores the gap between what we want AI to do and what it actually does, relevant to understanding why sycophancy, hallucination, and bias persist.</p></li>
-<li><p>Mollick, E. (2024). <em>Co-Intelligence: Living and Working with AI</em>. New York: Portfolio. A practitioner-oriented book on integrating AI into professional work, with a similar emphasis on human judgement.</p></li>
-<li><p>Shneiderman, B. (2022). <em>Human-Centered AI</em>. Oxford University Press. Argues for AI systems designed around human control and oversight rather than full automation, the design philosophy that aligns with this book’s emphasis on staying in the conversation.</p></li>
-</ul>
+<section id="what-belongs-to-this-book" class="level2" data-number="C.5">
+<h2 data-number="C.5" class="anchored" data-anchor-id="what-belongs-to-this-book"><span class="header-section-number">C.5</span> What belongs to this book</h2>
+<p>RTCF (<strong>Role, Task, Context, Format</strong>), VET (<strong>Verify, Explain, Test</strong>), AI Last, and the conversation loop are practical organising frameworks in this book. They combine familiar briefing, checking, and reflective practices. This edition does not claim a unique historical origin, a clinical learning intervention, or universal experimental validation for any of them.</p>
+<p>The workshop in <a href="../chapters/conversations-across-disciplines.html" class="quarto-xref"><span>Chapter 13</span></a> and the short exchanges elsewhere are constructed teaching cases unless explicitly identified otherwise. Their arithmetic can be checked from the printed inputs; their dialogues are not transcripts or measured model performance.</p>
+<p>A useful next reading step is to choose one claim that matters to your own work, open its source, and record what the study actually measured and one thing it leaves unresolved.</p>
 
 
 </section>
@@ -1086,8 +977,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../appendices/d-interactive-tools.html" class="pagination-link" aria-label="Interactive Tools">
-        <span class="nav-page-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../about-author.html" class="pagination-link" aria-label="About the Author">
+        <span class="nav-page-text">About the Author</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

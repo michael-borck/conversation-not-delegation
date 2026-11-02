@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; What Is AI? – Conversation, Not Delegation</title>
+<title>2&nbsp; What Is AI? – Conversation, Not Delegation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../chapters/what-are-llms.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../chapters/the-delegation-trap.html" rel="prev">
 <link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-aa873432a3c62897e6c2091c0d30a948.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-37a0ccb6f5b9899fcb884e11bb6f7458.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,6 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../book-design.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -287,6 +291,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../copyright.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Copyright</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -298,20 +308,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../chapters/what-is-ai.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/what-are-llms.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/the-delegation-trap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -333,20 +343,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
+  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/ai-last.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">AI Last</span></span></a>
+  <a href="../chapters/the-conversation-loop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Conversation Loop</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/staying-critical.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Staying Critical</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
   </div>
 </li>
       </ul>
@@ -362,32 +378,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../chapters/rtcf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RTCF: Starting Conversations Well</span></span></a>
+  <a href="../chapters/is-prompting-dead.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Is Prompting Dead?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/prompt-chaining.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Prompt Chaining: Building on What You Started</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/seven-techniques.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Eight Techniques for Deeper Thinking</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/using-ai-to-help-you-use-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../chapters/vet-your-ai.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">VET Your AI: The Push-Back Framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Using AI to Help You Use AI</span></span></a>
   </div>
 </li>
       </ul>
@@ -404,13 +414,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/conversations-across-disciplines.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">A Conversation Across Disciplines</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Conversations Across Disciplines</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/when-the-loop-runs-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">When the Loop Runs Itself (Advanced and Optional)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/becoming-more-capable.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Becoming More Capable</span></span></a>
   </div>
 </li>
       </ul>
@@ -444,12 +460,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/d-interactive-tools.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Interactive Tools</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../about-author.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About the Author</span></a>
   </div>
@@ -458,7 +468,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
     </ul>
     </div>
-</nav>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<p>Paperback ISBN 979-8-2528-2455-0<br> <a href="https://www.amazon.com.au/dp/B0GTF9F4Q2">Support the open edition</a></p>
+</div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -466,29 +478,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#why-now" id="toc-why-now" class="nav-link active" data-scroll-target="#why-now"><span class="header-section-number">1.1</span> Why Now?</a>
+  <li><a href="#why-now" id="toc-why-now" class="nav-link active" data-scroll-target="#why-now"><span class="header-section-number">2.1</span> Why Now?</a>
   <ul class="collapse">
-  <li><a href="#we-have-massive-amounts-of-data" id="toc-we-have-massive-amounts-of-data" class="nav-link" data-scroll-target="#we-have-massive-amounts-of-data"><span class="header-section-number">1.1.1</span> We have massive amounts of data</a></li>
-  <li><a href="#computing-power-got-cheap-and-fast" id="toc-computing-power-got-cheap-and-fast" class="nav-link" data-scroll-target="#computing-power-got-cheap-and-fast"><span class="header-section-number">1.1.2</span> Computing power got cheap and fast</a></li>
-  <li><a href="#better-algorithms-were-discovered" id="toc-better-algorithms-were-discovered" class="nav-link" data-scroll-target="#better-algorithms-were-discovered"><span class="header-section-number">1.1.3</span> Better algorithms were discovered</a></li>
+  <li><a href="#we-have-massive-amounts-of-data" id="toc-we-have-massive-amounts-of-data" class="nav-link" data-scroll-target="#we-have-massive-amounts-of-data"><span class="header-section-number">2.1.1</span> We have massive amounts of data</a></li>
+  <li><a href="#computing-power-got-cheap-and-fast" id="toc-computing-power-got-cheap-and-fast" class="nav-link" data-scroll-target="#computing-power-got-cheap-and-fast"><span class="header-section-number">2.1.2</span> Computing power got cheap and fast</a></li>
+  <li><a href="#better-algorithms-were-discovered" id="toc-better-algorithms-were-discovered" class="nav-link" data-scroll-target="#better-algorithms-were-discovered"><span class="header-section-number">2.1.3</span> Better algorithms were discovered</a></li>
   </ul></li>
-  <li><a href="#the-ai-family-tree" id="toc-the-ai-family-tree" class="nav-link" data-scroll-target="#the-ai-family-tree"><span class="header-section-number">1.2</span> The AI Family Tree</a></li>
-  <li><a href="#what-ai-can-and-cannot-do" id="toc-what-ai-can-and-cannot-do" class="nav-link" data-scroll-target="#what-ai-can-and-cannot-do"><span class="header-section-number">1.3</span> What AI Can and Cannot Do</a></li>
-  <li><a href="#hype-versus-reality" id="toc-hype-versus-reality" class="nav-link" data-scroll-target="#hype-versus-reality"><span class="header-section-number">1.4</span> Hype Versus Reality</a></li>
-  <li><a href="#the-practical-framing" id="toc-the-practical-framing" class="nav-link" data-scroll-target="#the-practical-framing"><span class="header-section-number">1.5</span> The Practical Framing</a>
+  <li><a href="#the-ai-family-tree" id="toc-the-ai-family-tree" class="nav-link" data-scroll-target="#the-ai-family-tree"><span class="header-section-number">2.2</span> The AI Family Tree</a></li>
+  <li><a href="#what-ai-can-and-cannot-do" id="toc-what-ai-can-and-cannot-do" class="nav-link" data-scroll-target="#what-ai-can-and-cannot-do"><span class="header-section-number">2.3</span> What AI Can and Cannot Do</a></li>
+  <li><a href="#hype-versus-reality" id="toc-hype-versus-reality" class="nav-link" data-scroll-target="#hype-versus-reality"><span class="header-section-number">2.4</span> Hype Versus Reality</a></li>
+  <li><a href="#the-practical-framing" id="toc-the-practical-framing" class="nav-link" data-scroll-target="#the-practical-framing"><span class="header-section-number">2.5</span> The Practical Framing</a>
   <ul class="collapse">
-  <li><a href="#a-note-on-ai-apps-and-hidden-prompts" id="toc-a-note-on-ai-apps-and-hidden-prompts" class="nav-link" data-scroll-target="#a-note-on-ai-apps-and-hidden-prompts"><span class="header-section-number">1.5.1</span> A Note on AI Apps and Hidden Prompts</a></li>
+  <li><a href="#a-note-on-ai-apps-and-hidden-prompts" id="toc-a-note-on-ai-apps-and-hidden-prompts" class="nav-link" data-scroll-target="#a-note-on-ai-apps-and-hidden-prompts"><span class="header-section-number">2.5.1</span> A Note on AI Apps and Hidden Prompts</a></li>
   </ul></li>
+  <li><a href="#independent-practice-classify-a-task" id="toc-independent-practice-classify-a-task" class="nav-link" data-scroll-target="#independent-practice-classify-a-task"><span class="header-section-number">2.6</span> Independent practice: classify a task</a></li>
   </ul>
-<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="tools/prompt-builder.html"><i class="bi bi-pencil-square"></i>RTCF Prompt Builder</a></li><li><a href="tools/rtcf-analyser.html"><i class="bi bi-clipboard-check"></i>RTCF Prompt Analyser</a></li><li><a href="tools/ai-readiness-quiz.html"><i class="bi bi-question-circle"></i>AI Readiness Quiz</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="/conversation-not-delegation.pdf"><i class="bi bi-file-pdf"></i>Download PDF</a></li><li><a href="/conversation-not-delegation.epub"><i class="bi bi-book"></i>Download EPUB</a></li><li><a href="../llm.txt"><i class="bi bi-robot"></i>Download llm.txt</a></li><li><a href="https://github.com/michael-borck/conversation-not-delegation"><i class="bi bi-github"></i>GitHub</a></li><li><a href="https://deepwiki.com/michael-borck/conversation-not-delegation"><i class="bi bi-search"></i>DeepWiki</a></li><li><a href="https://books.borck.education"><i class="bi bi-collection"></i>All Books</a></li><li><a href="https://www.amazon.com.au/dp/B0GTF9F4Q2"><i class="bi bi-cart"></i>Amazon</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/the-delegation-trap.html">Part 1: Understanding the Landscape</a></li><li class="breadcrumb-item"><a href="../chapters/what-is-ai.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-what-is-ai" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></h1>
+<h1 class="title"><span id="sec-what-is-ai" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Is AI?</span></span></h1>
 </div>
 
 
@@ -514,39 +527,38 @@ ul.task-list li input[type="checkbox"] {
 <blockquote class="blockquote">
 <p>The gap between what AI appears to do and what it actually does is where good decisions begin.</p>
 </blockquote>
-<p>You might be wondering why a book about working with AI starts with a chapter about what AI is. The reason is practical: every framework in this book, every technique for prompting, verifying, and staying critical, exists because of something specific about how these tools work. If you understand the mechanics, even at a high level, the techniques stop feeling like arbitrary rules and start feeling obvious. You will know <em>why</em> you need to verify AI output, not just that you should.</p>
-<p>Artificial intelligence is software that can perform tasks that typically require human intelligence.</p>
-<p>That is it. No magic. No consciousness. Just software that can do things that used to require a human brain.</p>
+<p>You might be wondering why this book pauses after the opening problem to explain what AI is. The reason is practical: every framework in this book, every technique for prompting, verifying, and staying critical, exists because of something specific about how these tools work. If you understand the mechanics, even at a high level, the techniques stop feeling like arbitrary rules and start feeling obvious. You will know <em>why</em> you need to verify AI output, not just that you should.</p>
+<p>Artificial intelligence is software that can perform tasks that typically require human intelligence. There is no magic or consciousness in that, just software that can do things that used to require a human brain.</p>
 <p>When we say “intelligence” here, we mean specific capabilities: recognising patterns in images, making predictions from data, understanding language, generating text. AI does not “think” the way you do. It processes data using mathematical patterns. But the results can look remarkably intelligent, and that gap between appearance and reality is worth understanding from the start.</p>
-<section id="why-now" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="why-now"><span class="header-section-number">1.1</span> Why Now?</h2>
-<p>AI is not new. The term was coined in 1956. Researchers have been working on it for decades. So why is it suddenly everywhere?</p>
+<section id="why-now" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="why-now"><span class="header-section-number">2.1</span> Why Now?</h2>
+<p>AI is not new. The 1956 Dartmouth workshop was an early milestone. Researchers have been working on it for decades. So why is it suddenly everywhere?</p>
 <p>Three things converged.</p>
-<section id="we-have-massive-amounts-of-data" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="we-have-massive-amounts-of-data"><span class="header-section-number">1.1.1</span> We have massive amounts of data</h3>
-<p>Every click, purchase, photo, and search creates data. Organisations now have billions of examples to learn from. Netflix has billions of viewing decisions. Wikipedia has millions of articles. The entire public web has been scraped, indexed, and fed into training pipelines. The raw material for AI to learn from went from scarce to effectively unlimited.</p>
+<section id="we-have-massive-amounts-of-data" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="we-have-massive-amounts-of-data"><span class="header-section-number">2.1.1</span> We have massive amounts of data</h3>
+<p>Every click, purchase, photo, and search creates data. Organisations now have billions of examples to learn from. Netflix has billions of viewing decisions. Wikipedia has millions of articles. Large collections have enabled new training approaches, but access, quality, permissions, and representation still constrain useful data.</p>
 </section>
-<section id="computing-power-got-cheap-and-fast" class="level3" data-number="1.1.2">
-<h3 data-number="1.1.2" class="anchored" data-anchor-id="computing-power-got-cheap-and-fast"><span class="header-section-number">1.1.2</span> Computing power got cheap and fast</h3>
-<p>What took a supercomputer in 2000 now runs on a phone. Cloud computing made massive processing power available to anyone with a credit card. Training an AI model that would have cost millions a decade ago now costs a fraction of that. The hardware barrier dropped.</p>
+<section id="computing-power-got-cheap-and-fast" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="computing-power-got-cheap-and-fast"><span class="header-section-number">2.1.2</span> Computing power got cheap and fast</h3>
+<p>Specialised hardware and shared computing infrastructure have made many kinds of training and inference more practical. Cost still depends on the model and workload; large-scale training is not equally accessible to everyone.</p>
 </section>
-<section id="better-algorithms-were-discovered" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="better-algorithms-were-discovered"><span class="header-section-number">1.1.3</span> Better algorithms were discovered</h3>
+<section id="better-algorithms-were-discovered" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="better-algorithms-were-discovered"><span class="header-section-number">2.1.3</span> Better algorithms were discovered</h3>
 <p>New mathematical techniques, particularly a family called “deep learning,” dramatically improved what AI could do with data and compute. Researchers figured out how to stack layers of pattern recognition so that each layer builds on the one below it. The result was AI that could handle far more complex tasks than previous approaches allowed.</p>
 <p><strong>These three forces fed each other.</strong> More data made better algorithms worthwhile. Cheaper compute made bigger models practical. Better algorithms made use of both. The result is that AI which was science fiction ten years ago is now practical, affordable, and widely deployed.</p>
 </section>
 </section>
-<section id="the-ai-family-tree" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="the-ai-family-tree"><span class="header-section-number">1.2</span> The AI Family Tree</h2>
+<section id="the-ai-family-tree" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="the-ai-family-tree"><span class="header-section-number">2.2</span> The AI Family Tree</h2>
 <p>AI is not one thing. It is a family of technologies, each suited to different problems.</p>
 <p><strong>Rule-based systems</strong> are the oldest approach. Programmers write explicit rules: if this condition, then that action. These work well for clear, logical decisions that do not change much. Tax software and simple chatbots use this approach. The limitation is obvious: someone has to anticipate every scenario in advance.</p>
 <p><strong>Machine learning</strong> flips the process. Instead of writing rules, you show the system thousands of examples and let it figure out the patterns. Show it ten thousand photos labelled “cat” and ten thousand labelled “not cat,” and it learns to tell the difference. This works well for pattern recognition, predictions, and problems where the rules are too complex to write by hand. The catch is that it needs lots of good examples and it is only as good as the data you give it.</p>
 <p><strong>Deep learning</strong> extends machine learning with multiple layers of pattern recognition, loosely inspired by how neurons work. The first layer might detect edges in an image. The second combines edges into shapes. The third combines shapes into objects. The fourth recognises that the object is a golden retriever. This layered approach handles very complex tasks: understanding speech, translating languages, driving cars, and generating text.</p>
 <p><strong>Large language models</strong> are the branch this book focuses on. They are covered in depth in the next chapter.</p>
-<p>Each of these approaches builds on the one before it. Rule-based systems gave way to machine learning, which gave way to deep learning, which produced large language models. The progression is toward systems that need less hand-coding and can handle more ambiguity.</p>
+<p>These approaches coexist. Deep learning is a family within machine learning, and many language models use deep neural networks. A single application can combine explicit rules, learned models, and conventional software.</p>
 </section>
-<section id="what-ai-can-and-cannot-do" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="what-ai-can-and-cannot-do"><span class="header-section-number">1.3</span> What AI Can and Cannot Do</h2>
+<section id="what-ai-can-and-cannot-do" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="what-ai-can-and-cannot-do"><span class="header-section-number">2.3</span> What AI Can and Cannot Do</h2>
 <p>AI is strong where humans are slow and slow where humans are fast.</p>
 <p><strong>AI handles well:</strong></p>
 <ul>
@@ -557,20 +569,20 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><strong>AI struggles with:</strong></p>
 <ul>
-<li>Common sense reasoning that any five-year-old can do</li>
-<li>Truly novel situations it has never seen in training data</li>
-<li>Explaining why it reached a particular conclusion</li>
-<li>Ethical judgement, social context, and nuance</li>
-<li>Genuine creativity, the kind that comes from lived experience and original insight</li>
+<li>Inputs or conditions poorly represented in an evaluation</li>
+<li>Claims needing current, authoritative evidence that the system lacks</li>
+<li>Explanations whose faithfulness to the underlying computation is unknown</li>
+<li>Decisions needing contextual knowledge, value choices, or human authority</li>
 </ul>
-<p>This asymmetry matters. AI is not a replacement for human thinking. It is a tool that is extraordinarily capable in some domains and brittle in others. The people who use it well are the ones who understand where that line falls.</p>
+<p>These are evaluation questions, not fixed claims that machines can never reason, generalise, or create something novel.</p>
+<p>AI is not a replacement for human thinking. It is a tool that is extraordinarily capable in some domains and brittle in others. The people who use it well are the ones who understand where that line falls.</p>
 </section>
-<section id="hype-versus-reality" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="hype-versus-reality"><span class="header-section-number">1.4</span> Hype Versus Reality</h2>
+<section id="hype-versus-reality" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="hype-versus-reality"><span class="header-section-number">2.4</span> Hype Versus Reality</h2>
 <p>You will hear that AI will replace all jobs, that it is smarter than humans, that it can solve any problem. None of this is accurate.</p>
-<p>AI automates tasks, not jobs. Most jobs are bundles of tasks. Some of those tasks get automated. New tasks emerge. The radiologist still reads the scan, but AI flags the areas worth examining. The writer still shapes the argument, but AI helps with research and drafts.</p>
-<p>AI is narrow, not general. An AI that writes well cannot drive a car. An AI that plays chess at a superhuman level cannot recognise a face. Each system is trained for a specific kind of work.</p>
-<p>AI is a tool, not a strategy. Saying “we need an AI strategy” is like saying “we need a spreadsheet strategy.” The real question is always: what problem are you solving? AI is one way to solve it.</p>
+<p>AI can automate tasks within jobs, and this can also change or eliminate roles. New tasks may emerge, but the net outcome depends on the setting. The radiologist still reads the scan, but AI flags the areas worth examining. The writer still shapes the argument, but AI helps with research and drafts.</p>
+<p>Some AI systems are specialised; others support many tasks and modalities. A system’s name or performance on one task does not establish its suitability or permissions for another.</p>
+<p>AI is a tool, not a strategy. Saying “we need an AI strategy” is like saying “we need a spreadsheet strategy.” The question is always: what problem are you solving? AI is one way to solve it.</p>
 <p>And AI reflects its training data. If that data contains biases, the AI learns those biases. It is not objective. It is a mirror of the information it was trained on, with all the distortions that implies.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Key insight">
 <div class="callout-header d-flex align-content-center">
@@ -582,39 +594,29 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>AI automates tasks, not jobs. It is one tool among many. Start with the problem, not the technology.</p>
+<p>Automating tasks can also change jobs. AI is one tool among many. Start with the problem, not the technology.</p>
 </div>
 </div>
 </section>
-<section id="the-practical-framing" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="the-practical-framing"><span class="header-section-number">1.5</span> The Practical Framing</h2>
-<p>Here is the most useful way to think about AI as you read this book: it is a capable but literal collaborator.</p>
+<section id="the-practical-framing" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="the-practical-framing"><span class="header-section-number">2.5</span> The Practical Framing</h2>
+<p>Think of AI, as you read this book, as a capable but literal collaborator.</p>
 <p>Capable, because it can process information, generate text, spot patterns, and respond to instructions at a speed and scale no human can match. Literal, because it does exactly what the patterns in its training suggest, not what you meant, not what would be wise, not what the situation actually calls for.</p>
-<p>This means the quality of what you get from AI depends almost entirely on how you work with it. Give it a vague instruction, and you get a generic response. Work with it through a structured conversation, and you get something genuinely useful.</p>
-<p>That is what this book is about. Not how to get AI to do your work, but how to think better with AI as a partner.</p>
-<section id="a-note-on-ai-apps-and-hidden-prompts" class="level3" data-number="1.5.1">
-<h3 data-number="1.5.1" class="anchored" data-anchor-id="a-note-on-ai-apps-and-hidden-prompts"><span class="header-section-number">1.5.1</span> A Note on AI Apps and Hidden Prompts</h3>
+<p>Clear instructions and useful context can help. Results also depend on the model, application, data, and task. A structured conversation does not guarantee a correct or useful result.</p>
+<p>This book is about thinking better with AI as a partner.</p>
+<section id="a-note-on-ai-apps-and-hidden-prompts" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="a-note-on-ai-apps-and-hidden-prompts"><span class="header-section-number">2.5.1</span> A Note on AI Apps and Hidden Prompts</h3>
 <p>You will increasingly encounter AI not as a blank conversation window but embedded inside other tools: a writing assistant in your word processor, an autocomplete in your email, a copilot in your spreadsheet. These tools are convenient, and many are genuinely useful.</p>
-<p>But they are all running on prompts you cannot see. Someone else wrote those prompts. Someone else decided what role the AI should play, what context to provide, what constraints to apply. You get the output, but you do not get the conversation. You cannot push back on framing you did not choose. You cannot redirect the AI’s approach based on something only you know about your situation.</p>
-<p>This is not a reason to avoid those tools. It is a reason to understand what you are giving up when you use them. The principles in this book (staying in the conversation, shaping the exchange, applying your judgement at every step) depend on you being able to see and control the prompt. When the prompt is hidden, your agency is limited to accepting or rejecting the output. That is better than nothing, but it is not conversation.</p>
-<p>For anything that matters, start with a tool where you write the prompt yourself. Use the embedded tools for routine work where the hidden defaults are good enough. The distinction between the two is itself a judgement call, and one worth making deliberately.</p>
-<p>Large language models are the AI technology this book is about. That is what the next chapter covers.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Where should you start?">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Where should you start?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you are not sure which parts of this book are most relevant to your current experience level, the <strong><a href="../tools/ai-readiness-quiz.html" target="_blank">AI Readiness Assessment</a></strong> on the companion website is a short quiz (3–4 minutes) that maps where you are and recommends which chapters to prioritise.</p>
-</div>
-</div>
-
-
+<p>Their instructions and available controls vary. Some expose editable prompts or context; others offer only a few settings. Inspect what you can supply, change, and verify instead of assuming every embedded tool prevents meaningful steering.</p>
+<p>Choose an interface suited to the task and its data constraints. Direct chat is useful for open-ended dialogue; a constrained interface may be preferable for a well-defined workflow. In either case, check the result and understand what an acceptance button will do.</p>
 </section>
+</section>
+<section id="independent-practice-classify-a-task" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="independent-practice-classify-a-task"><span class="header-section-number">2.6</span> Independent practice: classify a task</h2>
+<p><strong>Time:</strong> 15–20 minutes. Write three tasks: sorting a supplied list, drafting an announcement, and deciding whether an organisation may share personal records. For each, name the required capability, permission, and evidence. Do not infer how a product works from its branding.</p>
+<p><strong>Artefact:</strong> a three-row task map. <strong>Success:</strong> distinguish a possible output from permission to act; identify a non-AI or specialist route where appropriate. No AI account is needed to complete the independent version.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1035,13 +1037,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="../chapters/the-delegation-trap.html" class="pagination-link" aria-label="The Delegation Trap">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Delegation Trap</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../chapters/what-are-llms.html" class="pagination-link" aria-label="What Are Large Language Models?">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">What Are Large Language Models?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
